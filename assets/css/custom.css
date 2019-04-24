@@ -1,0 +1,206 @@
+/* Add here all your css styles (customizations) */
+.no-padding{
+    padding: 0!important;
+}
+
+.g-font-nunito{
+    font-family: 'Nunito', sans-serif!important;
+}
+
+.g-font-asap{
+    font-family: 'Asap', sans-serif!important;
+}
+
+/* Color Blue W4C */
+.g-bg-bluew {
+    background-color: rgba(21, 156, 189, 1) !important; }
+
+.g-bg-bluew-opacity-0_1 {
+    background-color: rgba(21, 156, 189, 0.1) !important; }
+
+.g-bg-bluew-opacity-0_7 {
+    background-color: rgba(21, 156, 189, 0.7) !important; }
+
+.g-bg-blue-opacity-0_9 {
+    background-color: rgba(21, 156, 189, 0.9) !important; }
+
+.g-bg-bluew--hover:hover {
+    background-color: #3398dc !important; }
+
+.display-inline-table{
+    display: inline-table!important;
+}
+
+.d-zap{
+    opacity: 0!important;
+}
+
+.image-opacity-0{
+    filter: opacity(0)!important;
+}
+
+.bg-w4c{
+    background: radial-gradient(circle farthest-side at 80% 60%, rgba(21, 189, 119, 0.9), rgba(11, 141, 192, 0.9));
+}
+
+.g-color-blue-important{
+    color: #3b98ff !important;
+}
+
+.g-color-white-transparent-important{
+    color: rgba(83, 255, 0, 0.5) !important;
+}
+
+.g-bg-info--hover:hover {
+    background-color: #17a2b8 !important;
+}
+
+.g-color-black-important{
+    color: rgba(256, 256, 256, 0.5) !important;
+}
+
+.g-bg-primary--before::before, .g-bg-primary--after::after {
+    background-color: #62b1ff !important;
+}
+
+.slick-active .g-brd-primary--active{
+    border-color: #62b1ff !important;
+}
+.nav-arrow-left{
+    padding: 6px 11px 6px 9.5px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-arrow-right{
+    padding: 6px 9.5px 6px 11px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-arrow-left-box{
+    padding: 6px 11px 6px 9.5px;
+    background: #ffffff;
+    border-radius: 5%;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-arrow-right-box{
+    padding: 6px 9.5px 6px 11px;
+    background: #ffffff;
+    border-radius: 5%;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-hover-paper-1:hover{
+    -webkit-box-shadow: 0px 18px 24px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 18px 24px 0px rgba(0,0,0,0.1);
+}
+
+.g-color-info{
+    color: #17a2b8!important;
+}
+
+.g-bg-info{
+    background-color: #17a2b8;
+    color: white;
+}
+
+.language-active-dark{
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 3px 5px 4px 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.language-active-light{
+    border: 1px solid rgba(248, 248, 248, 0.7);
+    padding: 3px 5px 4px 5px;
+    border-radius: 5px;
+    color: white;
+}
+@media (max-width: 767px) {
+    [data-tabs-mobile-type="accordion"] {
+        display: flex!important;
+    }
+
+    [data-tabs-mobile-type="accordion"] {
+        display: flex!important;
+    }
+}
+
+.u-nav-v2-1 .cbp-filter-item-active .nav-link {
+    background-color: #eee!important;
+}
+
+.u-nav-v4-1.u-nav-primary .nav-link {
+    background: #f2f2f2 !important;
+    min-height:70px!important;
+}
+
+.u-nav-v4-1.u-nav-primary .nav-link.active {
+    border-color: #17a2b8 #eee #fff;
+    color: #17a2b8;
+    background: white!important;
+}
+
+.u-nav-v4-1 .nav-link {
+    border-style: solid;
+    border-color: transparent;
+}
+
+.tab-shadow{
+    /*box-shadow: 3px 7px 8px 0 rgba(0, 0, 0, 0.03);*/
+    border: none!important;
+}
+
+.tab-active{
+    box-shadow: none!important;
+    border-top: 8px solid #17a2b8!important;
+    color: #17a2b8!important;
+    background: white!important;
+}
+
+.box-shadow-down{
+    box-shadow: 1px 6px 20px 2px rgba(0, 0, 0, 0.05);
+}
+
+.u-ns-bg-v1-top.g-bg-primary::before,
+.g-parent.g-bg-primary .u-ns-bg-v1-top::before {
+    border-bottom-color: #17a2b8;
+}
+
+::selection {
+    color: #fff;
+    background-color: #17a2b8;
+}
+
+.my_tab{
+    transition-property: color, background-color, border-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+    border-top: 8px solid #ededed;
+    background-color: #ededed;
+}
+
+.g-bg-white-all{
+    background: white!important;
+}
+
+.g-bg-white-all .g-bg-white-all::before .g-bg-white-all::after{
+    background: white!important;
+}
+
+.text-black-important{
+    color: #000!important;
+}
+
+.cursor-text{
+    cursor: text;
+}
+
+.g-brd-black-opacity-0_05{
+    border-color: rgba(8, 8, 8, 0.05) !important;
+}
