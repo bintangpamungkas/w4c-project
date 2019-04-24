@@ -43,7 +43,7 @@ class Brand extends MY_Controller
         ];
 
         if($param=='cocacola' || $param=='tetrapak'){
-            $this->render_page('brands/detail', $data, 'brand');
+            $this->render_page('brands/'.$param.'/index', $data, 'brand');
         }else{
             show_404();
         }
