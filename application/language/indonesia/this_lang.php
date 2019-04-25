@@ -183,6 +183,8 @@ $lang['nav_program_b']="YANG DIIKUTI";
 //navigation brand
 $lang['nav_achievement_a']="PENCAPAIAN";
 $lang['nav_achievement_b']="DAUR ULANG";
+$lang['nav_story_a']="CERITA KAMI";
+$lang['nav_story_b']="MENDAUR ULANG";
 $lang['nav_cta_brand_a']="KIRIMKAN SAMPAH";
 $lang['nav_cta_brand_b']="";
 $lang['sustainability_page']="Halaman Sustainability";

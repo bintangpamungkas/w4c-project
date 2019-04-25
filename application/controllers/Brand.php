@@ -25,6 +25,10 @@ class Brand extends MY_Controller
                 'url' => '#counter',
             ],
             [
+                'title' => lang('nav_story_a').'<div><small>'.lang('nav_story_b').'</small></div>',
+                'url' => '#story',
+            ],
+            [
                 'title' => lang('nav_program_a').'<div><small>'.lang('nav_program_b').'</small></div>',
                 'url' => '#program',
             ],

@@ -16,7 +16,7 @@
                             <?php
                             if($brand_id=='tetrapak'){
                                 $subtitle_id='melakukan aksi nyata dalam upaya pengelolaan kemasan karton bekas minuman secara bertanggung jawab dan berkelanjutan melalui program pengumpulan bersama Waste4Change dan memastikan daur ulang bersama mitra pendaur';
-                                $subtitle_en='melakukan aksi nyata dalam upaya pengelolaan kemasan karton bekas minuman secara bertanggung jawab dan berkelanjutan melalui program pengumpulan bersama Waste4Change dan memastikan daur ulang bersama mitra pendaur';
+                                $subtitle_en='take a real action to manage all components of beverage cartons in responsible and sustainable way through the Waste4Change collection program and ensure the recyling with our patners';
                                 if($this->session->userdata('language')=='en'){
                                     $subtitle=$subtitle_en;
                                 }else{
