@@ -183,6 +183,8 @@ $lang['nav_program_b']="THAT WE JOIN";
 //navigation brand
 $lang['nav_achievement_a']="ACHIEVEMENT";
 $lang['nav_achievement_b']="OF RECYCLING";
+$lang['nav_story_a']="RECYCLING";
+$lang['nav_story_b']="STORY";
 $lang['nav_cta_brand_a']="SEND THE WASTE";
 $lang['nav_cta_brand_b']="";
 $lang['sustainability_page']="Sustainability Page";
