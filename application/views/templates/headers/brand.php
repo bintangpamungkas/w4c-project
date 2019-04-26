@@ -2,6 +2,17 @@
     <div id="navigation-block" class="navbar-toggle-btn u-header__section u-header__section--light pb-10 g-bg-white">
         <nav class="js-mega-menu navbar navbar-expand-lg">
             <div class="container">
+                <div class="g-brd-none g-pa-0 g-pos-abs g-top-10" style="right: 60px;">
+                    <?php
+                    if(!$this->session->userdata('language') || $this->session->userdata('language')=='id'):
+                        ?>
+                        <img src="<?= base_url('assets/img/icons/flag_indonesia.png') ?>" style="border: 1px solid rgba(0,0,0,0.1);height: 20px;margin-top: -5px">
+                        <span class="text_lang" style="margin-top: 10px">ID <i class="icon-arrow-down"></i></span>
+                    <?php else: ?>
+                        <img src="<?= base_url('assets/img/icons/flag_england.png') ?>" style="border: 1px solid rgba(0,0,0,0.1);height: 20px;margin-top: -5px">
+                        <span class="text_lang" style="margin-top: 10px">EN <i class="icon-arrow-down"></i></span>
+                    <?php endif; ?>
+                </div>
                 <!-- Responsive Toggle Button -->
                 <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
                       <span class="hamburger g-pa-0 <?= $this->agent->is_mobile() ? 'g-pt-4' : 'g-pt-10' ?> hamburger--slider">
