@@ -35,6 +35,7 @@ $(window).scroll(function () {
 });
 
 $(document).on('click', '.navbar-toggler', function () {
+    $('.text_lang').toggleClass('g-color-black');
     $('#menus').hide(function () {
         $(this).toggleClass('icon-close').fadeIn();
     });
