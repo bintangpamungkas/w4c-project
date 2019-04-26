@@ -10,43 +10,7 @@
         <div class="col-md-9">
             <div id="waste-carousel" class="col-md-12 owl-theme" style="margin: 0 0 30px 0!important;">
                 <?php
-                $cocacola = [
-                    [
-                        'title' => 'Kemasan 390 ml',
-                        'img' => 'coke_bottle_plastic.jpg',
-                        'subtitle' => 'Botol Plastik',
-                    ],
-                    [
-                        'title' => 'Kemasan 330 ml',
-                        'img' => 'coke_can.jpg',
-                        'subtitle' => 'Kaleng',
-                    ],
-                    [
-                        'title' => 'Kemasan 330 ml',
-                        'img' => 'coke_bottle_glass.jpg',
-                        'subtitle' => 'Botol Kaca',
-                    ],
-                    [
-                        'title' => 'Kemasan Box',
-                        'img' => 'coke_box.jpg',
-                        'subtitle' => 'Kardus',
-                    ],
-                    [
-                        'title' => 'Kemasan 200 ml',
-                        'img' => 'coke_bottle_glass.jpg',
-                        'subtitle' => 'Botol Kaca',
-                    ],
-                    [
-                        'title' => 'Kemasan 1.5 lt',
-                        'img' => 'coke_larga.jpg',
-                        'subtitle' => 'Botol Plastik',
-                    ],
-                    [
-                        'title' => 'Zero 330 ml',
-                        'img' => 'Kaleng_Zero_330ml_Tinggi.jpg',
-                        'subtitle' => 'Kaleng',
-                    ],
-                ];
+                
                 $tetrapak = [
                     [
                         'title' => 'Tetra Pak #1',
@@ -94,11 +58,7 @@
                         'subtitle' => '',
                     ],
                 ];
-                if($brand_id=='tetrapak'){
-                    $xa=$tetrapak;
-                }else{
-                    $xa=$cocacola;
-                }
+                $xa=$tetrapak;
                 $number = 1;
 
                 foreach($xa as $x) :

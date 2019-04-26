@@ -16,17 +16,13 @@
                         </h2>
                         <p class="g-font-weight-300 text-muted <?= $this->agent->is_mobile() ? 'g-font-size-14' : 'g-font-size-16' ?>">
                             <?php
-                            if($brand_id=='tetrapak'){
-                                $subtitle_id='Sebelum mengirimkan kemasan bekas minuman, ketahui dahulu 3L (Lipat, Letak, Lepas) untuk menyiapkannya agar mudah untuk didaur ulang';
+                            $subtitle_id='Sebelum mengirimkan kemasan bekas minuman, ketahui dahulu 3L (Lipat, Letak, Lepas) untuk menyiapkannya agar mudah untuk didaur ulang';
                                 $subtitle_en='Sebelum mengirimkan kemasan bekas minuman, ketahui dahulu 3L (Lipat, Letak, Lepas) untuk menyiapkannya agar mudah untuk didaur ulang';
                                 if($this->session->userdata('language')=='en'){
                                     $subtitle=$subtitle_en;
                                 }else{
                                     $subtitle=$subtitle_id;
                                 }
-                            }else{
-                                $subtitle=lang('treat_subtitle');
-                            }
                             ?>
                             <?= $subtitle ?>
                         </p>
@@ -37,20 +33,7 @@
                 <div id="carousel2" class="js-carousel" data-infinite="true">
                     <?php
                     $treat_id = [
-                        [
-                            'type' => 'BOTOL PLASTIK',
-                            'title' => 'Remas Botol Plastik',
-                            'image' => 'cocacola_squeeze.jpg',
-                            'for' => 'cocacola',
-                            'description' => 'Pastikan botol plastik dalam kondisi kosong. Lalu remas botol plastik, untuk menghemat volume.',
-                        ],
-                        [
-                            'type' => 'KALENG',
-                            'title' => 'Crush the Can',
-                            'image' => 'cocacola_can.jpg',
-                            'for' => 'cocacola',
-                            'description' => 'Crush the can to maximize the volume of your box.',
-                        ],
+                        
                         [
                             'type' => 'LIPAT',
                             'title' => 'Buka Lipatan',
@@ -74,20 +57,7 @@
                         ],
                     ];
                     $treat_en = [
-                        [
-                            'type' => 'PLASTIC BOTTLE',
-                            'title' => strtoupper('Squezee plastic bottle'),
-                            'image' => 'cocacola_squeeze.jpg',
-                            'for' => 'cocacola',
-                            'description' => 'Squezee plastic bottle to maximazing box volume.',
-                        ],
-                        [
-                            'type' => 'CAN',
-                            'title' => 'Crush the Can',
-                            'image' => 'cocacola_can.jpg',
-                            'for' => 'cocacola',
-                            'description' => 'Crush the can to maximize the volume of your box.',
-                        ],
+                        
                         [
                             'type' => 'KARTON #1',
                             'title' => 'Empty The Packaging',

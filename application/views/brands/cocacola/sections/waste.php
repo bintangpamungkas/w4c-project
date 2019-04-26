@@ -47,58 +47,7 @@
                         'subtitle' => 'Kaleng',
                     ],
                 ];
-                $tetrapak = [
-                    [
-                        'title' => 'Tetra Pak #1',
-                        'img' => 'Kemasan_Tetra_Pak_1_Tetra_Wedge_125_200ml.png',
-                        'subtitle' => '',
-                    ],
-                    [
-                        'title' => 'Tetra Pak #1',
-                        'img' => 'Kemasan_Tetra_Pak_2_Tetra_Top_200_250_330_400_500ml.png',
-                        'subtitle' => '',
-                    ],
-                    [
-                        'title' => 'Tetra Pak #1',
-                        'img' => 'Kemasan_Tetra_Pak_3_Tetra_Rex_237_250_300_315_375_473_500_600_750_946_1000ml.png',
-                        'subtitle' => '',
-                    ],
-                    [
-                        'title' => 'Tetra Pak #1',
-                        'img' => 'Kemasan_Tetra_Pak_4_Tetra_Recart_200ml.png',
-                        'subtitle' => '',
-                    ],
-                    [
-                        'title' => 'Tetra Pak #1',
-                        'img' => 'Kemasan_Tetra_Pak_5_Tetra_Prisma_Aseptic_200_250_500ml.png',
-                        'subtitle' => '',
-                    ],
-                    [
-                        'title' => 'Tetra Pak #1',
-                        'img' => 'Kemasan_Tetra_Pak_6_Tetra_Gemina_500_750_1000_1500ml.png',
-                        'subtitle' => '',
-                    ],
-                    [
-                        'title' => 'Tetra Pak #1',
-                        'img' => 'Kemasan_Tetra_Pak_7_Tetra_Fino_70_100_150_200_220_250_500_1000ml.png',
-                        'subtitle' => '',
-                    ],
-                    [
-                        'title' => 'Tetra Pak #1',
-                        'img' => 'Kemasan_Tetra_Pak_8_Tetra_Classic_200ml.png',
-                        'subtitle' => '',
-                    ],
-                    [
-                        'title' => 'Tetra Pak #1',
-                        'img' => 'Kemasan_Tetra_Pak_9_Tetra_Brik_200_250_500_1000ml.png',
-                        'subtitle' => '',
-                    ],
-                ];
-                if($brand_id=='tetrapak'){
-                    $xa=$tetrapak;
-                }else{
-                    $xa=$cocacola;
-                }
+                $xa=$cocacola;
                 $number = 1;
 
                 foreach($xa as $x) :

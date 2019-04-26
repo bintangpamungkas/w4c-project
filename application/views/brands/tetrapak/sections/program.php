@@ -14,17 +14,13 @@
                         <p class="g-font-weight-300 text-muted <?= $this->agent->is_mobile() ? 'g-font-size-14' : 'g-font-size-16' ?>">
                             <?= ucwords($brand_name) ?>
                             <?php
-                            if($brand_id=='tetrapak'){
-                                $subtitle_id='melakukan aksi nyata dalam upaya pengelolaan kemasan karton bekas minuman secara bertanggung jawab dan berkelanjutan melalui program pengumpulan bersama Waste4Change dan memastikan daur ulang bersama mitra pendaur';
+                            $subtitle_id='melakukan aksi nyata dalam upaya pengelolaan kemasan karton bekas minuman secara bertanggung jawab dan berkelanjutan melalui program pengumpulan bersama Waste4Change dan memastikan daur ulang bersama mitra pendaur';
                                 $subtitle_en='take a real action to manage all components of beverage cartons in responsible and sustainable way through the Waste4Change collection program and ensure the recyling with our patners';
                                 if($this->session->userdata('language')=='en'){
                                     $subtitle=$subtitle_en;
                                 }else{
                                     $subtitle=$subtitle_id;
                                 }
-                            }else{
-                                $subtitle=lang('program_brand_subtitle');
-                            }
                             ?>
                             <?= $subtitle ?>
                         </p>

@@ -16,17 +16,8 @@
                         </h2>
                         <p class="g-font-weight-300 text-muted <?= $this->agent->is_mobile() ? 'g-font-size-14' : 'g-font-size-16' ?>">
                             <?php
-                            if($brand_id=='tetrapak'){
-                                $subtitle_id='Sebelum mengirimkan kemasan bekas minuman, ketahui dahulu 3L (Lipat, Letak, Lepas) untuk menyiapkannya agar mudah untuk didaur ulang';
-                                $subtitle_en='Sebelum mengirimkan kemasan bekas minuman, ketahui dahulu 3L (Lipat, Letak, Lepas) untuk menyiapkannya agar mudah untuk didaur ulang';
-                                if($this->session->userdata('language')=='en'){
-                                    $subtitle=$subtitle_en;
-                                }else{
-                                    $subtitle=$subtitle_id;
-                                }
-                            }else{
-                                $subtitle=lang('treat_subtitle');
-                            }
+                            $subtitle=lang('treat_subtitle');
+                            
                             ?>
                             <?= $subtitle ?>
                         </p>
@@ -51,27 +42,7 @@
                             'for' => 'cocacola',
                             'description' => 'Crush the can to maximize the volume of your box.',
                         ],
-                        [
-                            'type' => 'LIPAT',
-                            'title' => 'Buka Lipatan',
-                            'image' => 'TetraPak_1.jpg',
-                            'for' => 'tetrapak',
-                            'description' => 'Pastikan Anda telah mengkonsumsi produk terbaik dalam kemasan Tetra Pak dan mengosongkannya untuk kemudian membuka lipatan atas dan bawah.',
-                        ],
-                        [
-                            'type' => 'LETAK',
-                            'title' => 'Letakkan Sedotan ke dalam Kemasan',
-                            'image' => 'TetraPak_3.jpg',
-                            'for' => 'tetrapak',
-                            'description' => 'Letakkan sedotan dan tutup kemasan untuk memasikan sedotan ikut terkirim dan terdaur ulang dengan benar',
-                        ],
-                        [
-                            'type' => 'LEPAS',
-                            'title' => 'Pipihkan dan Lepaskan di Tempat Sampah Terpilah',
-                            'image' => 'TetraPak_2.jpg',
-                            'for' => 'tetrapak',
-                            'description' => 'Kemasan karton bekas minuman perlu dipipihkan dan dipilah, untuk membantu meningkatkan kualitas pengiriman',
-                        ],
+                        
                     ];
                     $treat_en = [
                         [
@@ -88,27 +59,7 @@
                             'for' => 'cocacola',
                             'description' => 'Crush the can to maximize the volume of your box.',
                         ],
-                        [
-                            'type' => 'KARTON #1',
-                            'title' => 'Empty The Packaging',
-                            'image' => 'TetraPak_1.jpg',
-                            'for' => 'tetrapak',
-                            'description' => 'Make sure all the waste is dry, not moist or wet.',
-                        ],
-                        [
-                            'type' => 'KARTON #2',
-                            'title' => 'Push The Straw',
-                            'image' => 'TetraPak_3.jpg',
-                            'for' => 'tetrapak',
-                            'description' => 'Push the straw back in to make sure the straw is also recycled.',
-                        ],
-                        [
-                            'type' => 'KARTON #3',
-                            'title' => 'Flatten The Carton',
-                            'image' => 'TetraPak_2.jpg',
-                            'for' => 'tetrapak',
-                            'description' => 'Unfold Tetra Pak used packaging and flatten it.',
-                        ],
+                        
                     ];
 
                     if($this->session->userdata('language')=='en'){
