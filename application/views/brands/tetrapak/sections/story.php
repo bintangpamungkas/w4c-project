@@ -42,6 +42,15 @@
                 [
                     'story_bg' => base_url('assets/img/bg/brands/tetrapak/Event_Visit_Aisle.jpg'),
                 ],
+                [
+                    'story_bg' => base_url('assets/img/bg/brands/tetrapak/Hasil_Key_Chain.jpg'),
+                ],
+                [
+                    'story_bg' => base_url('assets/img/bg/brands/tetrapak/Hasil_Note_Book.jpg'),
+                ],
+                [
+                    'story_bg' => base_url('assets/img/bg/brands/tetrapak/Hasil_Rumah_Baca_1.jpg'),
+                ],
             ];
             ?>
             <div class="row no-gutters">
