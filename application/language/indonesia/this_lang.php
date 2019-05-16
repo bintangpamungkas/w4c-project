@@ -54,7 +54,7 @@ $lang["fact_description"]="Ketahui alasannya melalui fakta-fakta tentang sampah 
 $lang["services_title"]="Layanan Kami";
 $lang["services_subtitle"]="Buat perubahan mulai dari hal yang terdekat di sekitarmu dan lakukan aksi nyata bersama Waste4Change";
 
-$lang["services_individu_tab"]="Perumahan";
+$lang["services_individu_tab"]="Individu";
 $lang["services_individu_title"]="Mulai Dari Diri Sendiri";
 $lang["services_individu_subtitle"]="Awali dengan hal yang sederhana, pilah sampahmu dan kelola melalui berbagai program daur ulang dari Waste4Change";
 $lang["services_corporate_tab"]="Perusahaan";
@@ -64,12 +64,12 @@ $lang["services_esr_tab"]="Brand/Merk";
 $lang["services_esr_title"]="Jadilah Bagian Dari Perubahan";
 $lang["services_esr_subtitle"]="Wujudkan Indonesia yang bebas sampah dengan menjadi bagian dari solusi untuk permasalahan sampah di negeri ini";
 
-$lang["services_send_your_waste"]="Melalui program Send Your Waste, Anda dapat mengirimkan sampah anorganik kepada kami untuk memastikan sampah Anda didaur ulang dengan baik";
-$lang["services_send_your_waste_corp"]="adalah sistem pengumpulan sampah kemasan dimana konsumen dapat mengirimkan sampah mereka melalui jasa pengiriman ke alamat mitra pendaur ulang Waste4Change";
-//$lang["services_dropbox"]="Layanan pengumpulan sampah kemasan dimana konsumen secara sukarela dapat menaruh sampah di lokasi Dropping Box terdekat untuk mendukung upaya kolaborasi yang diinisiasi oleh sektor industri dan pengelola sampah.";
+$lang["services_send_your_waste"]="Melalui program Send Your Waste, Anda dapat mengirimkan kemasan bekas kepada kami untuk memastikan kemasan bekas Anda didaur ulang dengan baik";
+$lang["services_send_your_waste_corp"]="adalah sistem pengumpulan kemasan bekas dimana konsumen dapat mengirimkan sampah mereka melalui jasa pengiriman ke alamat mitra pendaur ulang Waste4Change";
+//$lang["services_dropbox"]="Layanan pengumpulan kemasan bekas dimana konsumen secara sukarela dapat menaruh sampah di lokasi Dropping Box terdekat untuk mendukung upaya kolaborasi yang diinisiasi oleh sektor industri dan pengelola sampah.";
 $lang["services_waste_management"]="Kami menerapkan jasa pengelolaan sampah bertanggung jawab yang juga memenuhi regulasi pemerintah dan memfasilitasi klien yang mau mengelola sampahnya secara lebih bertanggung jawab melalui sistem kolaborasi dan teknologi.";
-$lang["services_dropbox"]="Adalah sistem pengumpulan sampah kemasan dimana konsumen dapat memasukkan sampah mereka ke dalam dropbox terdekat untuk mendukung upaya daur ulang kemasan secara kolaboratif bersama sektor informal dan industri";
-$lang["services_dropbox_corp"]="adalah sistem pengumpulan sampah kemasan dimana konsumen dapat memasukan sampah mereka ke dalam drop box terdekat untuk mendukung upaya daur ulang kemasan kolaboratif yang diprakarsai oleh sektor industri dan pemulung";
+$lang["services_dropbox"]="Adalah sistem pengumpulan kemasan bekas dimana konsumen dapat memasukkan kemasan bekas mereka ke dalam dropbox terdekat untuk mendukung upaya daur ulang kemasan secara kolaboratif bersama sektor informal dan industri";
+$lang["services_dropbox_corp"]="adalah sistem pengumpulan kemasan bekas dimana konsumen dapat memasukkan kemasan bekas mereka ke dalam drop box terdekat untuk mendukung upaya daur ulang kemasan kolaboratif yang diprakarsai oleh sektor industri dan pemulung";
 $lang["services_personal_waste_management"]="Kami mengumpulkan sampah Anda dengan melakukan penjemputan ke lokasi rumah dan memastikan sampah akan dikelola secara bertanggung jawab";
 $lang["services_feasibility_study"]="Kami memberikan laporan berdasar penelitian mendalam tentang pengelolaan sampah perusahaan Anda serta memberikan rekomendasi pengelolaan sampah yang bertanggung jawab untuk perusahaan Anda";
 $lang["services_3r"]="Kami menawarkan jasa edukasi dan penerapan 3R di komunitas atau sekolah sebagai bagian dari  program Tanggung Jawab Sosial Perusahaan dan keberlanjutan bisnis anda";
@@ -165,10 +165,10 @@ $lang["cta_service_title_brand_2"]=" Sekarang";
 $lang['nav_home']="BERANDA";
 $lang['nav_how_it_a']="CARA KERJA";
 $lang['nav_how_it_b']="PROGRAM";
-$lang['nav_what_a']="SAMPAH";
+$lang['nav_what_a']="KEMASAN BEKAS";
 $lang['nav_what_b']="YANG DITERIMA";
 $lang['nav_treat_a']="CARA KEMAS";
-$lang['nav_treat_b']="SAMPAH";
+$lang['nav_treat_b']="KEMASAN BEKAS";
 $lang['nav_where_a']="LOKASI";
 $lang['nav_where_b']="PENGIRIMAN";
 $lang['nav_partner_a']="MITRA";
@@ -245,7 +245,7 @@ $lang["accepted_waste_modal_title"]="CONTOH SAMPAH";
 
 //drop point
 $lang['droppoint_title']="LOKASI PENGIRIMAN";
-$lang['droppoint_subtitle']="Lokasi Mitra Penerima Sampah & Pendaur Ulang yang bisa Anda jadikan sebagai alamat pengiriman.";
+$lang['droppoint_subtitle']="Lokasi Mitra Penerima Kemasan Bekas & Pendaur Ulang yang bisa Anda jadikan sebagai alamat pengiriman.";
 
 //join program user
 $lang['join']="Bergabung dalam Program";
@@ -254,7 +254,7 @@ $lang['join_subtitle']="Bergabung dalam program pengelolaan sampah dari Waste4Ch
 
 $lang['join_user_small_title']="Mulai Sekarang dengan";
 $lang['join_user_title']="Bergabung di Program Kami";
-$lang['join_user_subtitle']="Buat perubahan untuk lingkungan dimulai dengan memilah sampah Anda dan bergabung dalam program daur ulang di bawah ini";
+$lang['join_user_subtitle']="Buat perubahan untuk lingkungan dimulai dengan memilah kemasan bekas Anda dan bergabung dalam program daur ulang di bawah ini";
 $lang['join_user_btn']="KIRIMKAN SAMPAH";
 
 //join program brand
@@ -289,7 +289,7 @@ $lang['brand_accepted_waste_title']="KEMASAN BEKAS BRAND";
 $lang['brand_accepted_waste_title_tetrapak']="KEMASAN KARTON BEKAS MINUMAN";
 $lang['brand_accepted_waste_subtitle']="Kami menerima kemasan bekas sesuai jenis dibawah ini.";
 $lang['brand_accepted_waste_wanna']="Ingin Mengirim";
-$lang['brand_accepted_waste_other']="Sampah<br>Jenis Lain?";
+$lang['brand_accepted_waste_other']="Kemasan Bekas<br>Jenis Lain?";
 
 //footer
 $lang['career']="karir";

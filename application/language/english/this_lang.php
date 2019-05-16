@@ -54,7 +54,7 @@ $lang["fact_description"]="Find out why through these waste facts below";
 $lang["services_title"]="Our Services";
 $lang["services_subtitle"]="Create changes starting from the things arround you and engage in conrete actions with Waste4Change";
 
-$lang["services_individu_tab"]="for Residences";
+$lang["services_individu_tab"]="for Individu";
 $lang["services_individu_title"]="STARTING FROM OURSELVES";
 $lang["services_individu_subtitle"]="Start from the simple things, segregate your waste and recycle it by utilizing Waste4Change's various recycling programs.";
 $lang["services_corporate_tab"]="for Company";

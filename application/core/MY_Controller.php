@@ -251,7 +251,7 @@ class MY_Controller extends CI_Controller{
                 'content' => lang('services_send_your_waste_corp'),
                 'recomendation' => ['General'],
                 'image' => 'default.jpg',
-                'visible' => true,
+                'visible' => false,
             ],
             [
                 'title' => 'Drop Box',
@@ -263,7 +263,7 @@ class MY_Controller extends CI_Controller{
                 'content' => lang('services_dropbox_corp'),
                 'recomendation' => ['General'],
                 'image' => 'default.jpg',
-                'visible' => true,
+                'visible' => false,
             ],
             [
                 'title' => lang('recycling-with-us'),

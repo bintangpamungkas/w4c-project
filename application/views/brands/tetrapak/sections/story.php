@@ -6,11 +6,11 @@
         <!-- Info Image -->
         <?php
         $en=[
-                'description' => 'We commit to bring sustainibility towards <strong>Circular Economy</strong> by working with industry partners to ensure recycling solutions are in place for all components of beverage cartons, substantially increasing the use of plastics made from renewable feedstocks and using recycled plastics once they are validated​ as safe and legally acceptable for food contact material.',
+                'description' => 'We commit to bring sustainibility towards <strong>Circular Economy</strong> by working with industry partners to ensure recycling solutions are in place for all components of beverage cartons, substantially increasing the use of plastics made from renewable feedstocks and using recycled plastics once they are validated  as safe and legally acceptable for food contact material.',
                 'content_1_title' => 'Increasing Recycling',
                 'content_1_content' => 'Recycling helps keep valuable materials in the economy. By collaboration with patrners we want to increase recycle rate of our product and keep our commitment on <strong>Circular Economy</strong>.',
                 'content_2_title' => 'Responsible Sourcing of Materials',
-                'content_2_content' => 'Designing product by using materials from responsible source, all our paperboard is sourced from Forest Stewardship Council<sup><small>R</small></sup> (FSC<sup><small>R</small></sup>) certified forests and other controlled sources',
+                'content_2_content' => 'Designing product by using materials from responsible source, all our paperboard is sourced from Forest Stewardship Council<sup><small>®</small></sup> (FSC<sup><small>®</small></sup>) certified forests and other controlled sources',
             ];
 
             $id=[
@@ -18,7 +18,7 @@
                 'content_1_title' => 'Meningkatkan Daur Ulang',
                 'content_1_content' => 'Daur ulang membantu menjaga bahan berharga dalam perekonomian. Dengan berkolaborasi bersama mitra, kami ingin meningkatkan tingkat daur ulang produk kami dan menjaga komitmen kami terhadap circular economy.',
                 'content_2_title' => 'Sumber Material yang Bertanggung Jawab',
-                'content_2_content' => 'Merancang produk dengan menggunakan bahan dari sumber daya terbarukan yang bertanggung jawab. Semua kertas karton Tetra Pak bersumber dari hutan tersertifikasi Forest Stewardship Council (FSC) dan sumber terkontrol lainnya',
+                'content_2_content' => 'Merancang produk dengan menggunakan bahan dari sumber daya terbarukan yang bertanggung jawab. Semua kertas karton Tetra Pak bersumber dari hutan tersertifikasi Forest Stewardship Council<sup><small>®</small></sup> (FSC<sup><small>®</small></sup>) dan sumber terkontrol lainnya',
             ];
 
             $story=$this->session->userdata('language')=='en' ? $en : $id;

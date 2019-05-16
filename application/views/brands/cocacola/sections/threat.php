@@ -37,10 +37,10 @@
                         ],
                         [
                             'type' => 'KALENG',
-                            'title' => 'Crush the Can',
+                            'title' => 'Pipihkan Kaleng',
                             'image' => 'cocacola_can.jpg',
                             'for' => 'cocacola',
-                            'description' => 'Crush the can to maximize the volume of your box.',
+                            'description' => 'Pipihkan kaleng untuk memaksimalkan volume kotak Anda',
                         ],
                         
                     ];
