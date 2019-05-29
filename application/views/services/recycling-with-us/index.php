@@ -18,7 +18,7 @@
                         'en' => [
                             'small_title' => 'Daur Ulang Sampahmu Melalui',
                             'title' => lang($service_id),
-                            'subtitle' => 'Bersama melakukan upaya pengelolaan sampah kemasan brand secara bertanggung jawab dengan mengedukasi & melibatkan masyarakat dengan lebih masif',
+                            'subtitle' => 'Together make efforts to manage brand packaging waste responsibly by educating and involving the community more massively',
                         ],
                     ];
                     $welcome=$this->session->userdata('language')=='en' ? $welcome['en'] : $welcome['id'];

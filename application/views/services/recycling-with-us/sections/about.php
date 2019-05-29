@@ -1,12 +1,12 @@
 <?php
 $about=[
     'id' => [
-        'title' => 'educate & collect more massively',
+        'title' => 'mengedukasi & mengumpulkan lebih masif',
         'subtitle' => 'Melalui '.lang($service_id).', brand bersama Waste4Change melakukan upaya kampanye pengelolaan sampah kemasan brand secara bertanggung jawab melalui edukasi & program-program pengumpulan sampah kemasan brand ke lokasi mitra Waste4Change yang tersedia di berbagai kota di Indonesia',
     ],
     'en' => [
-        'title' => 'mengedukasi & mengumpulkan lebih masif',
-        'subtitle' => 'Melalui '.lang($service_id).', brand bersama Waste4Change melakukan upaya kampanye pengelolaan sampah kemasan brand secara bertanggung jawab melalui edukasi & program-program pengumpulan sampah kemasan brand ke lokasi mitra Waste4Change yang tersedia di berbagai kota di Indonesia',
+        'title' => 'educate & collect more massively',
+        'subtitle' => 'Through '.lang($service_id).', the brand with Waste4Change is responsible for carrying out a campaign of brand packaging waste management through education & brand packaging waste collection programs to Waste4Change partner locations that available in various cities in Indonesia.',
     ],
 ];
 $about=$this->session->userdata('language')=='en' ? $about['en'] : $about['id'];

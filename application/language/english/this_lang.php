@@ -69,7 +69,7 @@ $lang["services_send_your_waste_corp"]="Is a packaging-waste collecting system w
 //$lang["services_dropbox"]="A packaging waste collection service in which consumers can voluntarily submit their waste to the nearest dropping box in their neighborhood to support the collaborative packaging recycle effort initiated by industry sectors and waste collectors.";
 $lang["services_waste_management"]="We are implementing responsible municipal solid waste management services in accordance with government regulation and facilitating educated clients who want to manage their waste responsibly with collaboration system and technology.";
 $lang["services_dropbox"]="Recycle your inorganic waste and used packaging by putting in Waste4change's Drop Box";
-$lang["services_dropbox_corp"]="Is a packaging-waste collecting system where consumers can dispose their waste into the nearest dropbox in order to support efforts in recycling packaging waste collaboratively with both the informal sectors as well as industries.";
+$lang["services_dropbox_corp"]="program for brand with Waste4Change is carrying out a brand used packaging management campaign responsibly by providing used packaging drop/collection access through dropping points that available";
 $lang["services_personal_waste_management"]="We collect your waste by picking it up from your house and make sure that the waste is managed responsibly";
 $lang["services_feasibility_study"]="We produce report based on an in-depth research about Your Company's waste management and give recommendations on responsible waste management for Your Company ";
 $lang["services_3r"]="We offer education services and the application of 3R principles in communities or schools as a part of Corporate Social Responsibility  as well as for the sustainability aspect of your business ";
@@ -102,6 +102,7 @@ $lang['program-pendampingan-optimalisasi-tps3r']="Guidance Program for TPS3R Opt
 $lang['personal-waste-management']="Waste Management Personal Inorganic";
 $lang['sendyourwaste']="Send Your Waste";
 $lang['black-soldier-fly-learning-center']="Black Soldier Fly Learning Center";
+$lang['dropbox-for-brand']="Dropbox for Brand";
 
 //Section
 //Facility
@@ -158,8 +159,8 @@ $lang["welcome_title_4"]="with Waste4change";
 
 //CTA SERVICE
 $lang["cta_service_title"]="Start Applying A Responsible Waste Management System with ";
-$lang["cta_service_title_brand"]="Create your ";
-$lang["cta_service_title_brand_2"]=" Now";
+$lang["cta_service_title_brand"]="Create ";
+$lang["cta_service_title_brand_2"]=" page for your brand Now";
 
 //navigation
 $lang['nav_home']="HOME";

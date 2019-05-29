@@ -48,34 +48,44 @@
                                 'color' => 'info',
                             ],
                             [
-                                'title' => 'Mendapatkan fasilitas pengumpulan sampah kemasan bekas brand melalui program <a class="g-color-info" href="'.DROPBOX_URL.'" target="_blank">DropBox</a> & <a class="g-color-info" href="'.SEND_YOUR_WASTE_URL.'" target="_blank">Send Your Waste</a>',
+                                'title' => 'Mengetahui titik-titik lokasi dropping box',
+                                'icon' => 'fa fa-check',
+                                'color' => 'info',
+                            ],
+                            [
+                                'title' => 'Mendapatkan laporan secara menyeluruh dan detail terkait pengumpulan sampah kemasan brand',
                                 'icon' => 'fa fa-check',
                                 'color' => 'info',
                             ],
                         ],
                         'en' => [
                             [
-                                'title' => 'Mendapatkan fasilitas pengumpulan kemasan bekas berupa drop box dari mitra Waste4Change',
+                                'title' => 'Get a collection facilities through dropbox from Waste4Change partners',
                                 'icon' => 'fa fa-check',
                                 'color' => 'info',
                             ],
                             [
-                                'title' => 'Menampilkan profil sustainability brand melalui jaringan publikasi Waste4Change',
+                                'title' => 'Displays the brand sustainability profile through the Waste4Change publication network',
                                 'icon' => 'fa fa-check',
                                 'color' => 'info',
                             ],
                             [
-                                'title' => 'Mendapatkan jangkauan titik pengumpulan kemasan bekas di berbagai kota di Indonesia',
+                                'title' => 'Get coverage of brand used packaging collection points in various cities in Indonesia',
                                 'icon' => 'fa fa-check',
                                 'color' => 'info',
                             ],
                             [
-                                'title' => 'Mendapatkan media kampanye & edukasi penarikan kembali kemasan bekas brand melalui jaringan publikasi Waste4Change',
+                                'title' => 'Get campaign media & education about getting back brand used packaging through Waste4Change publication networks',
                                 'icon' => 'fa fa-check',
                                 'color' => 'info',
                             ],
                             [
-                                'title' => 'Mendapatkan fasilitas pengumpulan sampah kemasan bekas brand melalui program <a class="g-color-info" href="'.DROPBOX_URL.'" target="_blank">DropBox</a> & <a class="g-color-info" href="'.SEND_YOUR_WASTE_URL.'" target="_blank">Send Your Waste</a>',
+                                'title' => 'Information regarding Drop box location',
+                                'icon' => 'fa fa-check',
+                                'color' => 'info',
+                            ],
+                            [
+                                'title' => 'Detailed and comprehensive report regarding Brand packaging-waste collection',
                                 'icon' => 'fa fa-check',
                                 'color' => 'info',
                             ],
@@ -85,7 +95,7 @@
                     $number=1;
                     foreach ($facility as $data):
                         ?>
-                        <div class="col-md-<?= count($facility)==$number++ ? '12' : '6' ?> g-pb-35">
+                        <div class="col-md-6 g-pb-35">
 
                             <div class="media g-mb-15">
                                 <div class="d-flex mr-4">

@@ -11,6 +11,7 @@
             <div class="form-group g-mb-20 text-center" style="padding: 15px 8px">
                 <h5 class=""><?= lang('subscribe_program') ?></h5>
                 <h2 class="text-uppercase"><?= lang($service_id) ?></h2>
+                <h4>Area Pelayanan : <a href="https://goo.gl/maps/4BapC4YXSRCeKX5w8" target="_blank">Jakarta Selatan</a></h4>
                 <br>
                 <br>
                 <script>

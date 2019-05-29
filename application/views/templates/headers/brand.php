@@ -8,10 +8,10 @@
                         if(!$this->session->userdata('language') || $this->session->userdata('language')=='id'):
                             ?>
                             <img src="<?= base_url('assets/img/icons/flag_indonesia.png') ?>" style="border: 1px solid rgba(0,0,0,0.1);height: 20px;margin-top: -5px">
-                            <span class="text_lang" style="margin-top: 10px">ID <i class="icon-arrow-down"></i></span>
+                            <span class="text_lang" style="margin-top: 10px;color: black">ID <i class="icon-arrow-down"></i></span>
                         <?php else: ?>
                             <img src="<?= base_url('assets/img/icons/flag_england.png') ?>" style="border: 1px solid rgba(0,0,0,0.1);height: 20px;margin-top: -5px">
-                            <span class="text_lang" style="margin-top: 10px">EN <i class="icon-arrow-down"></i></span>
+                            <span class="text_lang" style="margin-top: 10px;color: black">EN <i class="icon-arrow-down"></i></span>
                         <?php endif; ?>
                     </div>
                 <?php endif; ?>

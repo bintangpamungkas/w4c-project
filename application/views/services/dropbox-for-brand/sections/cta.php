@@ -6,10 +6,9 @@
     <div style="background:linear-gradient(rgba(248,248,248,0.98), rgba(243,243,243,0.8))">
         <div class="container g-pt-100 g-pb-50">
             <div class="text-center g-mb-50">
+                <h4 class="g-color-black g-font-weight-300 <?= $this->agent->is_mobile() ? 'g-font-size-24' : '' ?>"><?= lang('cta_service_title') ?></h4>
+                <h2 class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-24' : '' ?>"><?= empty($this->session->userdata('language')) || $this->session->userdata('language')=='id' ? ucwords('program') : '' ?> <?= ucwords(lang($service_id)) ?> <?= $this->session->userdata('language')=='en' ? ucwords('program') : '' ?></h2>
                 <div class="row justify-content-center">
-                    <div class="col-md-5">
-                        <h3 class="g-color-black <?= $this->agent->is_mobile() ? 'g-font-size-24' : '' ?>"><?= lang('cta_service_title_brand') ?><span class="g-font-weight-700"><?= lang($service_id) ?></span><?= lang('cta_service_title_brand_2') ?></h3>
-                    </div>
                     <div class="col-10 pt-5">
                         <div class="row justify-content-center">
                             <div class="col-md-6 d-none">

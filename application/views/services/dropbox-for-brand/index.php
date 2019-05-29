@@ -12,13 +12,13 @@
                     $welcome=[
                         'id' => [
                             'small_title' => 'Daur Ulang Sampahmu Melalui',
-                            'title' => lang($service_id),
-                            'subtitle' => 'Bersama melakukan upaya pengelolaan sampah kemasan brand secara bertanggung jawab dengan mengedukasi & melibatkan masyarakat dengan lebih masif',
+                            'title' => 'Mengumpulkan Lebih Masif',
+                            'subtitle' => 'Upaya pengelolaan sampah kemasan brand secara bertanggung jawab dengan melibatkan konsumen brand yang lebih luas',
                         ],
                         'en' => [
                             'small_title' => 'Daur Ulang Sampahmu Melalui',
-                            'title' => lang($service_id),
-                            'subtitle' => 'Bersama melakukan upaya pengelolaan sampah kemasan brand secara bertanggung jawab dengan mengedukasi & melibatkan masyarakat dengan lebih masif',
+                            'title' => 'Collect More Massively',
+                            'subtitle' => 'A responsible waste management program to manage Brand’s packaging waste through a wider consumers involvement',
                         ],
                     ];
                     $welcome=$this->session->userdata('language')=='en' ? $welcome['en'] : $welcome['id'];

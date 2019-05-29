@@ -69,7 +69,7 @@ $lang["services_send_your_waste_corp"]="adalah sistem pengumpulan kemasan bekas 
 //$lang["services_dropbox"]="Layanan pengumpulan kemasan bekas dimana konsumen secara sukarela dapat menaruh sampah di lokasi Dropping Box terdekat untuk mendukung upaya kolaborasi yang diinisiasi oleh sektor industri dan pengelola sampah.";
 $lang["services_waste_management"]="Kami menerapkan jasa pengelolaan sampah bertanggung jawab yang juga memenuhi regulasi pemerintah dan memfasilitasi klien yang mau mengelola sampahnya secara lebih bertanggung jawab melalui sistem kolaborasi dan teknologi.";
 $lang["services_dropbox"]="Adalah sistem pengumpulan kemasan bekas dimana konsumen dapat memasukkan kemasan bekas mereka ke dalam dropbox terdekat untuk mendukung upaya daur ulang kemasan secara kolaboratif bersama sektor informal dan industri";
-$lang["services_dropbox_corp"]="adalah sistem pengumpulan kemasan bekas dimana konsumen dapat memasukkan kemasan bekas mereka ke dalam drop box terdekat untuk mendukung upaya daur ulang kemasan kolaboratif yang diprakarsai oleh sektor industri dan pemulung";
+$lang["services_dropbox_corp"]="adalah program untuk brand bersama Waste4Change melakukan upaya kampanye pengelolaan sampah kemasan brand secara bertanggung jawab dengan menyediakan akses penyetoran/pengumpulan sampah kemasan ke titik-titik dropbox yang tersedia";
 $lang["services_personal_waste_management"]="Kami mengumpulkan sampah Anda dengan melakukan penjemputan ke lokasi rumah dan memastikan sampah akan dikelola secara bertanggung jawab";
 $lang["services_feasibility_study"]="Kami memberikan laporan berdasar penelitian mendalam tentang pengelolaan sampah perusahaan Anda serta memberikan rekomendasi pengelolaan sampah yang bertanggung jawab untuk perusahaan Anda";
 $lang["services_3r"]="Kami menawarkan jasa edukasi dan penerapan 3R di komunitas atau sekolah sebagai bagian dari  program Tanggung Jawab Sosial Perusahaan dan keberlanjutan bisnis anda";
@@ -103,6 +103,7 @@ $lang['program-pendampingan-optimalisasi-tps3r']="Program Pendampingan Optimalis
 $lang['personal-waste-management']="Pengelolaan Sampah Anorganik Personal";
 $lang['sendyourwaste']="Send Your Waste";
 $lang['black-soldier-fly-learning-center']="Black Soldier Fly Learning Center";
+$lang['dropbox-for-brand']="Dropbox untuk Brand";
 
 //Section
 //Facility
@@ -158,8 +159,8 @@ $lang["cta_feed_back"]="Butuh Bantuan?";
 
 //CTA SERVICE
 $lang["cta_service_title"]="Mulai Pengelolaan Sampah yang Bertanggung Jawab melalui ";
-$lang["cta_service_title_brand"]="Buat ";
-$lang["cta_service_title_brand_2"]=" Sekarang";
+$lang["cta_service_title_brand"]="Buat halaman ";
+$lang["cta_service_title_brand_2"]=" untuk brand Anda Sekarang";
 
 //navigation
 $lang['nav_home']="BERANDA";

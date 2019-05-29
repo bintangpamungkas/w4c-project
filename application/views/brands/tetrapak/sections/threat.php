@@ -46,7 +46,7 @@
                             'title' => 'Letakkan Sedotan ke dalam Kemasan',
                             'image' => 'TetraPak_3.jpg',
                             'for' => 'tetrapak',
-                            'description' => 'Letakkan sedotan dan tutup kemasan untuk memasikan sedotan ikut terkirim dan terdaur ulang dengan benar',
+                            'description' => 'Letakkan Sedotan ke dalam Kemasan Letakkan sedotan dan tutup kemasan untuk memastikan sedotan ikut terkirim dan terdaur ulang dengan benar.',
                         ],
                         [
                             'type' => 'LEPAS',

@@ -1,12 +1,12 @@
 <?php
 $about=[
     'id' => [
-        'title' => 'mengedukasi & mengumpulkan lebih masif',
-        'subtitle' => 'Melalui '.lang($service_id).', brand bersama Waste4Change melakukan upaya kampanye pengelolaan sampah kemasan brand secara bertanggung jawab melalui edukasi & program-program pengumpulan sampah kemasan brand ke lokasi mitra Waste4Change yang tersedia di berbagai kota di Indonesia',
+        'title' => 'Implementasi Pengelolaan Sampah yang Bertanggung Jawab bersama Konsumen',
+        'subtitle' => lang($service_id).' adalah Program pengelolaan sampah yang bertanggung jawab dan terintegrasi, dimana konsumen brand secara sukarela menitipkan sampah kemasan miliknya ke titik Drop Box terdekat. Drop Box merupakan program Waste4Change yang berupaya untuk meningkatkansiklus hidup produk kemasan bekas pakai dan mengoptimalisasikegiatan daur ulang serta meningkatkan potensi ekonomi dari sampah kemasan brand',
     ],
     'en' => [
-        'title' => 'educate & collect more massively',
-        'subtitle' => 'Through '.lang($service_id).', the brand with Waste4Change is responsible for carrying out a campaign of brand packaging waste management through education & brand packaging waste collection programs to Waste4Change partner locations that available in various cities in Indonesia.',
+        'title' => 'Implementing a responsible waste management with consumers',
+        'subtitle' => lang($service_id).', is a responsible and integrated waste management program where Brand’s consumers voluntarily drop their brand’s packaging waste to the nearest Drop Box Point. Drop Box is one of Waste4Change’s programs to increase the life cycle and economic potential of packaging waste, and also to optimize recycling activities',
     ],
 ];
 $about=$this->session->userdata('language')=='en' ? $about['en'] : $about['id'];

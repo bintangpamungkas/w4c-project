@@ -13,12 +13,12 @@
                         'id' => [
                             'small_title' => 'Daur Ulang Sampahmu Melalui',
                             'title' => lang($service_id),
-                            'subtitle' => ' Waste4Change memastikan tidak ada sampah yang tercampur saat diangkut dari rumah Anda dan menyediakan pengelolaan sampah secara optimal dengan sistem pengelolaan sampah bertanggung jawab',
+                            'subtitle' => ' Waste4Change memastikan tidak ada sampah yang tercampur saat diangkut dari rumah Anda dan menyediakan pengelolaan sampah secara optimal dengan sistem pengelolaan sampah bertanggung jawab <h4>Area Pelayanan : <a href="https://goo.gl/maps/4BapC4YXSRCeKX5w8" target="_blank">Jakarta Selatan</a></h4>',
                         ],
                         'en' => [
                             'small_title' => 'Daur Ulang Sampahmu Melalui',
                             'title' => lang($service_id),
-                            'subtitle' => 'Waste4Change ensures that no waste will be mixed up when they are picked up from your house and we also provides optimal waste processing with our responsible waste management system',
+                            'subtitle' => 'Waste4Change ensures that no waste will be mixed up when they are picked up from your house and we also provides optimal waste processing with our responsible waste management system <h4>Service Area : <a href="https://goo.gl/maps/4BapC4YXSRCeKX5w8" target="_blank">South Jakarta</a></h4>',
                         ],
                     ];
                     $welcome=$this->session->userdata('language')=='en' ? $welcome['en'] : $welcome['id'];
