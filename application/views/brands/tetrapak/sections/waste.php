@@ -10,52 +10,52 @@
         <div class="col-md-9">
             <div id="waste-carousel" class="col-md-12 owl-theme" style="margin: 0 0 30px 0!important;">
                 <?php
-                
+
                 $tetrapak = [
                     [
                         'title' => 'Tetra Pak #1',
                         'img' => 'Kemasan_Tetra_Pak_1_Tetra_Wedge_125_200ml.png',
-                        'subtitle' => '',
+                        'subtitle' => 'Kemasan Tetra Pak 1 Tetra Wedge<sup>&reg</sup> Aseptic 125 200ml',
                     ],
                     [
                         'title' => 'Tetra Pak #1',
                         'img' => 'Kemasan_Tetra_Pak_2_Tetra_Top_200_250_330_400_500ml.png',
-                        'subtitle' => '',
+                        'subtitle' => 'Kemasan Tetra Pak 2 Tetra Top<sup>&reg</sup> 200 250 330 400 500ml',
                     ],
                     [
                         'title' => 'Tetra Pak #1',
                         'img' => 'Kemasan_Tetra_Pak_3_Tetra_Rex_237_250_300_315_375_473_500_600_750_946_1000ml.png',
-                        'subtitle' => '',
+                        'subtitle' => 'Kemasan Tetra Pak 3 Tetra Rex<sup>&reg</sup> 237 250 300 315 375 473 500 600 750 946 1000ml',
                     ],
                     [
                         'title' => 'Tetra Pak #1',
                         'img' => 'Kemasan_Tetra_Pak_4_Tetra_Recart_200ml.png',
-                        'subtitle' => '',
+                        'subtitle' => 'Kemasan Tetra Pak 4 Tetra Recart<sup>&reg</sup> 200ml',
                     ],
                     [
                         'title' => 'Tetra Pak #1',
                         'img' => 'Kemasan_Tetra_Pak_5_Tetra_Prisma_Aseptic_200_250_500ml.png',
-                        'subtitle' => '',
+                        'subtitle' => 'Kemasan Tetra Pak 5 Tetra Prisma<sup>&reg</sup> Aseptic 200 250 500ml',
                     ],
                     [
                         'title' => 'Tetra Pak #1',
                         'img' => 'Kemasan_Tetra_Pak_6_Tetra_Gemina_500_750_1000_1500ml.png',
-                        'subtitle' => '',
+                        'subtitle' => 'Kemasan Tetra Pak 6 Tetra Gemina<sup>&reg</sup> 500 750 1000 1500ml',
                     ],
                     [
                         'title' => 'Tetra Pak #1',
                         'img' => 'Kemasan_Tetra_Pak_7_Tetra_Fino_70_100_150_200_220_250_500_1000ml.png',
-                        'subtitle' => '',
+                        'subtitle' => 'Kemasan Tetra Pak 7 Tetra Fino<sup>&reg</sup> 70 100 150 200 220 250 500 1000ml',
                     ],
                     [
                         'title' => 'Tetra Pak #1',
                         'img' => 'Kemasan_Tetra_Pak_8_Tetra_Classic_200ml.png',
-                        'subtitle' => '',
+                        'subtitle' => 'Kemasan Tetra Pak 8 Tetra Classic<sup>&reg</sup> 200ml',
                     ],
                     [
                         'title' => 'Tetra Pak #1',
                         'img' => 'Kemasan_Tetra_Pak_9_Tetra_Brik_200_250_500_1000ml.png',
-                        'subtitle' => '',
+                        'subtitle' => 'Kemasan Tetra Pak 9 Tetra Brik<sup>&reg</sup> 200 250 500 1000ml',
                     ],
                 ];
                 $xa=$tetrapak;
@@ -67,7 +67,8 @@
                         <!-- Projects -->
                         <div class="u-block-hover g-brd-around g-brd-gray-light-v4 g-color-black g-bg-white--hover text-center g-rounded-7 g-transition-0_3 g-px-30 g-py-50">
                             <img class="img-fluid u-block-hover__main--zoom-v1 mb-5" src="<?= base_url('assets/img/waste/'.$brand_id.'/'.$x['img']) ?>" alt="Image Description">
-                            <span class="g-font-weight-600 g-font-size-12 text-uppercase"><?= $brand_id=='tetrapak' ? str_replace('_', ' ', substr($x['img'], 0, -4)) : $x['subtitle'] ?></span>
+                            <!-- <span class="g-font-weight-600 g-font-size-12 text-uppercase"><?= $brand_id=='tetrapak' ? str_replace('_', ' ', substr($x['img'], 0, -4)) : $x['subtitle'] ?></span> -->
+                            <span class="g-font-weight-600 g-font-size-12 text-uppercase"><?= $x['subtitle'] ?></span>
                             <div class="g-font-size-18 g-font-weight-600 mb-0 d-none"><?= strtoupper($x['title']) ?></div>
                             <a class="u-link-v2"></a>
                         </div>

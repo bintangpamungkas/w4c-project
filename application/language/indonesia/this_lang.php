@@ -69,6 +69,7 @@ $lang["services_send_your_waste_corp"]="adalah sistem pengumpulan kemasan bekas 
 //$lang["services_dropbox"]="Layanan pengumpulan kemasan bekas dimana konsumen secara sukarela dapat menaruh sampah di lokasi Dropping Box terdekat untuk mendukung upaya kolaborasi yang diinisiasi oleh sektor industri dan pengelola sampah.";
 $lang["services_waste_management"]="Kami menerapkan jasa pengelolaan sampah bertanggung jawab yang juga memenuhi regulasi pemerintah dan memfasilitasi klien yang mau mengelola sampahnya secara lebih bertanggung jawab melalui sistem kolaborasi dan teknologi.";
 $lang["services_dropbox"]="Adalah sistem pengumpulan kemasan bekas dimana konsumen dapat memasukkan kemasan bekas mereka ke dalam dropbox terdekat untuk mendukung upaya daur ulang kemasan secara kolaboratif bersama sektor informal dan industri";
+$lang["services_dropbox_tetrapak"]="Adalah sistem pengumpulan kemasan bekas dimana konsumen dapat memasukkan kemasan bekas mereka ke dalam dropbox terdekat untuk mendukung upaya daur ulang kemasan secara kolaboratif bersama sektor informal dan industri";
 $lang["services_dropbox_corp"]="adalah program untuk brand bersama Waste4Change melakukan upaya kampanye pengelolaan sampah kemasan brand secara bertanggung jawab dengan menyediakan akses penyetoran/pengumpulan sampah kemasan ke titik-titik dropbox yang tersedia";
 $lang["services_personal_waste_management"]="Kami mengumpulkan sampah Anda dengan melakukan penjemputan ke lokasi rumah dan memastikan sampah akan dikelola secara bertanggung jawab";
 $lang["services_feasibility_study"]="Kami memberikan laporan berdasar penelitian mendalam tentang pengelolaan sampah perusahaan Anda serta memberikan rekomendasi pengelolaan sampah yang bertanggung jawab untuk perusahaan Anda";
@@ -280,7 +281,9 @@ $lang['brand_join_subtitle']="Berkontribusi dalam pengelolaan sampah yang bertan
 $lang['brand_join_subtitle2']="Isi formulir di bawah ini untuk bergabung dan mendapatkan informasi lebih lanjut tentang layanan pengelolaan sampah dari Waste4Change";
 
 //brand page
+$lang["program_brand_title"]="PROGRAM YANG DIIKUTI";
 $lang['brand_subtitle']="bekerja sama dengan Waste4Change untuk mendaur ulang kemasan kerton bekas (UBC) melalui program-program yang dilakukan bersama. Berikan kontribusi Anda dengan mengirimkan kemasan bekas kepada kami untuk didaur ulang secara bertanggung jawab";
+$lang['brand_subtitle_tetrapak']="TETRA PAK merupakan perusahaan global yang bergerak di bidang pemrosesan dan pengemasan makanan dan minuman, berkomitmen untuk mengurangi dampak lingkungan dari semua operasi dengan pola pendekatan usaha yang berkelanjutan dan mengedepankan aspek lingkungan untuk setiap produk. Kami percaya akan kepemimpinan industri yang bertanggungjawab, demi memastikan agar kemasan dapat didaur ulang setelah masa penggunaan, Tetra Pak bekerja sama dengan Waste4Change untuk mendaur ulang kemasan karton bekas minuman (UBC) melalui program-program yang dilakukan bersama. Berikan kontribusi Anda dengan mengirimkan kemasan bekas kepada kami untuk didaur ulang secara bertanggung jawab.";
 $lang['brand_recycling_program']="PROGRAM DAUR ULANG";
 $lang["program_brand_title"]="PROGRAM YANG DIIKUTI";
 $lang["program_brand_subtitle"]="melakukan aksi nyata dalam upaya pengelolaan sampah yang bertanggung jawab dan berkelanjutan melalui program-program daur ulang bersama Waste4Change";

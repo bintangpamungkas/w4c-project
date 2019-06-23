@@ -69,6 +69,7 @@ $lang["services_send_your_waste_corp"]="Is a packaging-waste collecting system w
 //$lang["services_dropbox"]="A packaging waste collection service in which consumers can voluntarily submit their waste to the nearest dropping box in their neighborhood to support the collaborative packaging recycle effort initiated by industry sectors and waste collectors.";
 $lang["services_waste_management"]="We are implementing responsible municipal solid waste management services in accordance with government regulation and facilitating educated clients who want to manage their waste responsibly with collaboration system and technology.";
 $lang["services_dropbox"]="Recycle your inorganic waste and used packaging by putting in Waste4change's Drop Box";
+$lang["services_dropbox_tetrapak"]="Is a used packaging collection system where consumers can put their used packaging into the nearest dropbox to support collaborative packaging recycling efforts with the informal and industrial sectors";
 $lang["services_dropbox_corp"]="program for brand with Waste4Change is carrying out a brand used packaging management campaign responsibly by providing used packaging drop/collection access through dropping points that available";
 $lang["services_personal_waste_management"]="We collect your waste by picking it up from your house and make sure that the waste is managed responsibly";
 $lang["services_feasibility_study"]="We produce report based on an in-depth research about Your Company's waste management and give recommendations on responsible waste management for Your Company ";
@@ -281,6 +282,7 @@ $lang["brand_join_subtitle2"]="Fill out the form below to join and get more info
 
 //brand page
 $lang["brand_subtitle"]="and Waste4Change have partnered to recycle Brand's used packaging through Recycling Program by Waste4Change. Let's contribute by give us back the used packaging for recycling";
+$lang["brand_subtitle_tetrapak"]="TETRA PAK is a global company engaged in the processing and packaging of food and beverages, committed to reducing the environmental impact of all operations with a sustainable business approach and prioritizing environmental aspects for each product. We believe in the responsible industry leadership, in order to ensure that packaging can be recycle after use, Tetra Pak works with Waste4Change to recycle used beverage carton (UBC) through joint programs. Give your contribution by sending used packaging to us for responsible recycling";
 $lang["brand_recycling_program"]="RECYCLING PROGRAM";
 $lang["program_brand_title"]="JOINED PROGRAM";
 $lang["program_brand_subtitle"]="take real action in responsible waste management & sustainability efforts through recycling programs with by Waste4Change";
