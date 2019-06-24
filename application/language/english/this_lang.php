@@ -23,7 +23,7 @@ $lang["separator_coma"]=",";
 //Welcome W4C
 $lang["welcome_title_1"]="It's Time to Manage Waste";
 $lang["welcome_title_2"]="Responsibly";
-    $lang["welcome_title_3"]="(Segregated & Recycled)";
+$lang["welcome_title_3"]="(Segregated & Recycled)";
 $lang["welcome_title_4"]="with Waste4Change";
 
 //Register Page W4C
@@ -296,3 +296,7 @@ $lang['brand_accepted_waste_other']="Other Type<br>of Waste?";
 
 //footer
 $lang['career']="career";
+
+//Pricing
+$lang['pricing']="Pricing";
+$lang['order_now']="Order Now";
