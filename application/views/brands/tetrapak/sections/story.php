@@ -6,7 +6,7 @@
         <!-- Info Image -->
         <?php
         $en=[
-                'description' => 'We commit to bring sustainibility towards <strong>Circular Economy</strong> by working with industry partners to ensure recycling solutions are in place for all components of beverage cartons, substantially increasing the use of plastics made from renewable feedstocks and using recycled plastics once they are validated  as safe and legally acceptable for food contact material.',
+                'description' => 'We commit to bring business continuity towards Circular Economy in collaboration with industry partners to ensure solutions for collecting and recycling used beverage carton packaging are available for every part of Tetra Pak packaging, and substantially increase the use of renewable raw materials and their potential in using plastic or paper recycled after being validated as a safe and legal material accepted for food grade.',
                 'content_1_title' => 'Increasing Recycling',
                 'content_1_content' => 'Recycling helps keep valuable materials in the economy. By collaboration with patrners we want to increase recycle rate of our product and keep our commitment on <strong>Circular Economy</strong>.',
                 'content_2_title' => 'Responsible Sourcing of Materials',
@@ -69,7 +69,7 @@
                     <p id="story_description_desktop" class="g-color-black-opacity-0_7 g-mb-25">
                         <?= $story['description'] ?>
                     </p>
-                    <a target="_blank" class="btn btn-info g-color-white g-font-size-13 g-rounded-50 g-pl-20 g-pr-15 g-py-9 g-mb-30" href="http://www.tetrapak.com/id/sustainability/daur-ulang-kemasan"> PELAJARI LEBIH LANJUT </a>
+                    <a target="_blank" class="btn btn-info g-color-white g-font-size-13 g-rounded-50 g-pl-20 g-pr-15 g-py-9 g-mb-30" href="http://tetrapak.com/id/about/tetra-pak-indo"> <?php echo lang('learn_more') ?> <i class="fa fa-chevron-circle-right ml-3"></i></a>
                 </div>
 
                 <div class="col-lg-6 g-min-height-200 g-bg-size-cover g-bg-pos-center">

@@ -17,7 +17,7 @@
                         <p class="g-font-weight-300 text-muted <?= $this->agent->is_mobile() ? 'g-font-size-14' : 'g-font-size-16' ?>">
                             <?php
                             $subtitle_id='Sebelum mengirimkan kemasan bekas minuman, ketahui dahulu 3L (Lipat, Letak, Lepas) untuk menyiapkannya agar mudah untuk didaur ulang';
-                                $subtitle_en='Sebelum mengirimkan kemasan bekas minuman, ketahui dahulu 3L (Lipat, Letak, Lepas) untuk menyiapkannya agar mudah untuk didaur ulang';
+                                $subtitle_en='Before sending used beverage packaging, first know 3L (Fold, Lay, Release) to prepare it for easy recycling';
                                 if($this->session->userdata('language')=='en'){
                                     $subtitle=$subtitle_en;
                                 }else{
@@ -33,7 +33,7 @@
                 <div id="carousel2" class="js-carousel" data-infinite="true">
                     <?php
                     $treat_id = [
-                        
+
                         [
                             'type' => 'LIPAT',
                             'title' => 'Buka Lipatan',
@@ -46,7 +46,7 @@
                             'title' => 'Letakkan Sedotan ke dalam Kemasan',
                             'image' => 'TetraPak_3.jpg',
                             'for' => 'tetrapak',
-                            'description' => 'Letakkan Sedotan ke dalam Kemasan Letakkan sedotan dan tutup kemasan untuk memastikan sedotan ikut terkirim dan terdaur ulang dengan benar.',
+                            'description' => 'Letakkan sedotan dan tutup kemasan untuk memasikan sedotan ikut terkirim dan terdaur ulang dengan benar.',
                         ],
                         [
                             'type' => 'LEPAS',
@@ -57,23 +57,23 @@
                         ],
                     ];
                     $treat_en = [
-                        
+
                         [
-                            'type' => 'KARTON #1',
+                            'type' => 'CARTON #1',
                             'title' => 'Empty The Packaging',
                             'image' => 'TetraPak_1.jpg',
                             'for' => 'tetrapak',
                             'description' => 'Make sure all the waste is dry, not moist or wet.',
                         ],
                         [
-                            'type' => 'KARTON #2',
+                            'type' => 'CARTON #2',
                             'title' => 'Push The Straw',
                             'image' => 'TetraPak_3.jpg',
                             'for' => 'tetrapak',
                             'description' => 'Push the straw back in to make sure the straw is also recycled.',
                         ],
                         [
-                            'type' => 'KARTON #3',
+                            'type' => 'CARTON #3',
                             'title' => 'Flatten The Carton',
                             'image' => 'TetraPak_2.jpg',
                             'for' => 'tetrapak',

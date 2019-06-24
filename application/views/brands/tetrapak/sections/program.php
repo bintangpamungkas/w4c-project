@@ -68,7 +68,7 @@
                                 <i class="et-icon-recycle"></i>
                             </span>
                             <h3 class="h5 g-color-black g-font-weight-600 mb-3">Dropping Box</h3>
-                            <p class="g-color-gray-dark-v4" style="min-height: 120px"><?= lang('services_dropbox') ?></p>
+                            <p class="g-color-gray-dark-v4" style="min-height: 120px"><?= lang('services_dropbox_tetrapak') ?></p>
                             <a class="g-color-info g-color-blue--hover g-font-size-12 g-mt-10" target="_blank" href="<?= (DROPBOX_URL) ?>"><?= strtoupper(lang('learn_more')) ?> <i class="fa fa-chevron-right g-ml-10"></i> </a>
                         </div>
                         <!-- End Icon Blocks -->
@@ -94,4 +94,3 @@
         </div>
     </div>
 </section>
-
