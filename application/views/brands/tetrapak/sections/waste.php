@@ -15,47 +15,47 @@
                     [
                         'title' => 'Tetra Pak #1',
                         'img' => 'Kemasan_Tetra_Pak_1_Tetra_Wedge_125_200ml.png',
-                        'subtitle' => 'Kemasan Tetra Pak 1 Tetra Wedge<sup>&reg</sup> Aseptic 125 200ml',
+                        'subtitle' => 'Tetra Wedge<sup>&reg</sup> Aseptic',
                     ],
                     [
                         'title' => 'Tetra Pak #1',
                         'img' => 'Kemasan_Tetra_Pak_2_Tetra_Top_200_250_330_400_500ml.png',
-                        'subtitle' => 'Kemasan Tetra Pak 2 Tetra Top<sup>&reg</sup> 200 250 330 400 500ml',
+                        'subtitle' => 'Tetra Top<sup>&reg</sup>',
                     ],
                     [
                         'title' => 'Tetra Pak #1',
                         'img' => 'Kemasan_Tetra_Pak_3_Tetra_Rex_237_250_300_315_375_473_500_600_750_946_1000ml.png',
-                        'subtitle' => 'Kemasan Tetra Pak 3 Tetra Rex<sup>&reg</sup> 237 250 300 315 375 473 500 600 750 946 1000ml',
+                        'subtitle' => 'Tetra Rex<sup>&reg</sup>',
                     ],
                     [
                         'title' => 'Tetra Pak #1',
                         'img' => 'Kemasan_Tetra_Pak_4_Tetra_Recart_200ml.png',
-                        'subtitle' => 'Kemasan Tetra Pak 4 Tetra Recart<sup>&reg</sup> 200ml',
+                        'subtitle' => 'Tetra Recart<sup>&reg</sup>',
                     ],
                     [
                         'title' => 'Tetra Pak #1',
                         'img' => 'Kemasan_Tetra_Pak_5_Tetra_Prisma_Aseptic_200_250_500ml.png',
-                        'subtitle' => 'Kemasan Tetra Pak 5 Tetra Prisma<sup>&reg</sup> Aseptic 200 250 500ml',
+                        'subtitle' => 'Tetra Prisma<sup>&reg</sup> Aseptic',
                     ],
                     [
                         'title' => 'Tetra Pak #1',
                         'img' => 'Kemasan_Tetra_Pak_6_Tetra_Gemina_500_750_1000_1500ml.png',
-                        'subtitle' => 'Kemasan Tetra Pak 6 Tetra Gemina<sup>&reg</sup> 500 750 1000 1500ml',
+                        'subtitle' => 'Tetra Gemina<sup>&reg</sup> Aseptic',
                     ],
                     [
                         'title' => 'Tetra Pak #1',
                         'img' => 'Kemasan_Tetra_Pak_7_Tetra_Fino_70_100_150_200_220_250_500_1000ml.png',
-                        'subtitle' => 'Kemasan Tetra Pak 7 Tetra Fino<sup>&reg</sup> 70 100 150 200 220 250 500 1000ml',
+                        'subtitle' => 'Tetra Fino<sup>&reg</sup> Aseptic',
                     ],
                     [
                         'title' => 'Tetra Pak #1',
                         'img' => 'Kemasan_Tetra_Pak_8_Tetra_Classic_200ml.png',
-                        'subtitle' => 'Kemasan Tetra Pak 8 Tetra Classic<sup>&reg</sup> 200ml',
+                        'subtitle' => 'Classic<sup>&reg</sup> Aseptic',
                     ],
                     [
                         'title' => 'Tetra Pak #1',
                         'img' => 'Kemasan_Tetra_Pak_9_Tetra_Brik_200_250_500_1000ml.png',
-                        'subtitle' => 'Kemasan Tetra Pak 9 Tetra Brik<sup>&reg</sup> 200 250 500 1000ml',
+                        'subtitle' => 'Tetra Brik<sup>&reg</sup> Aseptic',
                     ],
                 ];
                 $xa=$tetrapak;

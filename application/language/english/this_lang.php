@@ -65,6 +65,8 @@ $lang["services_esr_title"]="Be Part Of The Change";
 $lang["services_esr_subtitle"]="Make Indonesia waste-free by being a part of the solution to the waste problems that are faced by this very nation ";
 
 $lang["services_send_your_waste"]="Through the Send Your Waste program, you can send your inorganic waste to us to make sure that your waste is properly recycled";
+$lang["services_ades"]="Send used PET bottles of various sizes and brands with Go Send to get many benefits from ADES";
+$lang["services_poin"]="Deposit your used packaging through partners throughout Indonesia and get reward points for shopping for various digital products";
 $lang["services_send_your_waste_corp"]="Is a packaging-waste collecting system where consumers can send their waste using delivery services to the nearest Waste4Change's recycling partners ";
 //$lang["services_dropbox"]="A packaging waste collection service in which consumers can voluntarily submit their waste to the nearest dropping box in their neighborhood to support the collaborative packaging recycle effort initiated by industry sectors and waste collectors.";
 $lang["services_waste_management"]="We are implementing responsible municipal solid waste management services in accordance with government regulation and facilitating educated clients who want to manage their waste responsibly with collaboration system and technology.";

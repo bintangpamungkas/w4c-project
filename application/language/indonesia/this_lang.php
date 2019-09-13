@@ -65,6 +65,8 @@ $lang["services_esr_title"]="Jadilah Bagian Dari Perubahan";
 $lang["services_esr_subtitle"]="Wujudkan Indonesia yang bebas sampah dengan menjadi bagian dari solusi untuk permasalahan sampah di negeri ini";
 
 $lang["services_send_your_waste"]="Melalui program Send Your Waste, Anda dapat mengirimkan kemasan bekas kepada kami untuk memastikan kemasan bekas Anda didaur ulang dengan baik";
+$lang["services_ades"]="Kirim botol PET bekas berbagai ukuran dan merek dengan Go Send untuk mendapatkan banyak keuntungan dari Ades";
+$lang["services_poin"]="Setor kemasan bekas Anda melalui mitra di seluruh Indonesia dan dapatkan reward poin untuk berbelanja berbagai produk digital";
 $lang["services_send_your_waste_corp"]="adalah sistem pengumpulan kemasan bekas dimana konsumen dapat mengirimkan sampah mereka melalui jasa pengiriman ke alamat mitra pendaur ulang Waste4Change";
 //$lang["services_dropbox"]="Layanan pengumpulan kemasan bekas dimana konsumen secara sukarela dapat menaruh sampah di lokasi Dropping Box terdekat untuk mendukung upaya kolaborasi yang diinisiasi oleh sektor industri dan pengelola sampah.";
 $lang["services_waste_management"]="Kami menerapkan jasa pengelolaan sampah bertanggung jawab yang juga memenuhi regulasi pemerintah dan memfasilitasi klien yang mau mengelola sampahnya secara lebih bertanggung jawab melalui sistem kolaborasi dan teknologi.";

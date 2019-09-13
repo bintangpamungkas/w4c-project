@@ -40,15 +40,15 @@
                                         <?php
                                         foreach ($nav['menu'] as $mega):
                                             ?>
-                                            <div class="col-md-<?= count($mega['menu'])>7 ? '6' : '3' ?> <?= $mega['number']>1 ? 'g-brd-left g-brd-black-opacity-0_05 g-pl-50' : '' ?>">
+                                            <div class="col-md-<?= count($mega['menu'])>7 ? '9' : '3' ?> <?= $mega['number']>1 ? 'g-brd-left g-brd-black-opacity-0_05 g-pl-50' : '' ?>">
                                                 <h5 class="h5 text-uppercase g-font-weight-600 g-color-info g-mb-10"><i class="<?= $mega['icon'] ?> g-mr-5"></i> <?= $mega['title'] ?></h5>
                                                 <div class="row">
-                                                    <div class="col-md-<?= count($mega['menu'])>7 ? '6' : '12' ?>">
+                                                    <div class="col-md-<?= count($mega['menu'])>7 ? '4' : '12' ?>">
                                                         <ul class="list-unstyled g-ml-10">
                                                             <?php
                                                             foreach ($mega['menu'] as $sub):
                                                                 if($sub['visible']==true):
-                                                                    if($sub['number']<=7):
+                                                                    if($sub['number']<=4):
                                                                     ?>
                                                                     <li>
                                                                         <a href="<?= $sub['url'] ?>" class="nav-link g-px-0 g-font-size-11 g-color-black g-color-primary--hover">
@@ -68,13 +68,40 @@
                                                             ?>
                                                         </ul>
                                                     </div>
-                                                    <?php if(count($mega['menu'])>7): ?>
-                                                        <div class="col-md-6">
+                                                    <?php if(count($mega['menu'])>4): ?>
+                                                        <div class="col-md-4">
                                                             <ul class="list-unstyled g-ml-10">
                                                                 <?php
                                                                 foreach ($mega['menu'] as $sub):
                                                                     if($sub['visible']==true):
-                                                                        if($sub['number']>7):
+                                                                        if($sub['number']>4 && $sub['number']<=8):
+                                                                        ?>
+                                                                        <li>
+                                                                            <a href="<?= $sub['url'] ?>" class="nav-link g-px-0 g-font-size-11 g-color-black g-color-primary--hover">
+                                                                                <div class="g-font-size-8 text-uppercase g-color-black-opacity-0_5 d-none"><?= $sub['category'] ?></div>
+                                                                                <?= $sub['title'] ?>
+                                                                                <?php
+                                                                                if($sub['is_new']==true):?>
+                                                                                    <span class="g-color-white g-bg-primary g-rounded-5 g-font-size-10 g-px-8 g-py-3 g-ml-5"><?= lang('new') ?></span>
+                                                                                    <?php
+                                                                                endif;?>
+                                                                            </a>
+                                                                        </li>
+                                                                        <?php
+                                                                        endif;
+                                                                    endif;
+                                                                endforeach;
+                                                                ?>
+                                                            </ul>
+                                                        </div>
+                                                    <?php endif; ?>
+                                                    <?php if(count($mega['menu'])>8): ?>
+                                                        <div class="col-md-4">
+                                                            <ul class="list-unstyled g-ml-10">
+                                                                <?php
+                                                                foreach ($mega['menu'] as $sub):
+                                                                    if($sub['visible']==true):
+                                                                        if($sub['number']>8):
                                                                         ?>
                                                                         <li>
                                                                             <a href="<?= $sub['url'] ?>" class="nav-link g-px-0 g-font-size-11 g-color-black g-color-primary--hover">

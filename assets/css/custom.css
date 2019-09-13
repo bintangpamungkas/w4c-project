@@ -158,8 +158,8 @@
 
 .tab-active{
     box-shadow: none!important;
-    border-top: 8px solid #17a2b8!important;
-    color: #17a2b8!important;
+    border-top: 8px solid white!important;
+    color: #3398dc!important;
     background: white!important;
 }
 
