@@ -299,3 +299,7 @@ $lang['brand_accepted_waste_other']="Kemasan Bekas<br>Jenis Lain?";
 
 //footer
 $lang['career']="karir";
+
+//pricing
+$lang['pricing']="Harga";
+$lang['order_now']="Pilih Paket";
