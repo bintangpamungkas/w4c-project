@@ -24,44 +24,6 @@
       </script>
 
       <?php
-      $individu = [
-        [
-          'title' => 'Ades Plastic Currency',
-          'url' => 'https://waste4change.com/demo/poin/home/ades-plastic-currency',
-          'icon' => 'default.png',
-          'is_new' => true,
-          'category' => 'collect',
-          'number' => 1,
-          'content' => lang('services_ades'),
-          'recomendation' => ['General'],
-          'image' => 'ades.png',
-          'visible' => 1,
-        ],
-        [
-          'title' => 'Waste4change Poin',
-          'url' => 'https://waste4change.com/demo/poin/home',
-          'icon' => 'default.png',
-          'is_new' => true,
-          'category' => 'collect',
-          'number' => 1,
-          'content' => lang('services_poin'),
-          'recomendation' => ['General'],
-          'image' => 'poin.jpg',
-          'visible' => 1,
-        ],
-        [
-          'title' => 'Send Your Waste',
-          'url' => 'https://waste4change.com/sendyourwaste',
-          'icon' => 'default.png',
-          'is_new' => false,
-          'category' => 'campaign',
-          'number' => 2,
-          'content' => lang('services_send_your_waste'),
-          'recomendation' => ['General'],
-          'image' => 'sendyourwaste.jpg',
-          'visible' => true,
-        ]
-      ];
       $targets=[
         [
           'title' => lang('services_corporate_tab'),
@@ -77,7 +39,7 @@
           'number' => 2,
           'subtitle' => lang('services_individu_title'),
           'content' => lang('services_individu_subtitle'),
-          'list' => $individu,
+          'list' => $navigation_array_individu,
         ],
       ];
 
@@ -189,9 +151,9 @@
                       $(element_id+' .owl-stage').css('padding-left', 10);
 
                       var screen_display=<?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
-                      console.log(screen_display);
+                      // console.log(screen_display);
                       var margin_side=(screen_display-screen_display*(<?= $this->agent->is_mobile() ? '60' : '80' ?>)/100)/2;
-                      console.log('screen : '+screen_display+'nav : '+screen_display*<?= $this->agent->is_mobile() ? '8' : '9' ?>0/100+'batas : '+margin_side);
+                      // console.log('screen :/ '+screen_display+'nav : '+screen_display*<?= $this->agent->is_mobile() ? '8' : '9' ?>0/100+'batas : '+margin_side);
                       <?php
                       if($this->agent->is_mobile()){
                         echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 275px;width: 68%;right: '+margin_side+'px;')";
@@ -292,9 +254,9 @@
                       $(element_id+' .owl-stage').css('padding-left', 10);
 
                       var screen_display=<?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
-                      console.log(screen_display);
+                      // console.log(screen_display);
                       var margin_side=(screen_display-screen_display*(<?= $this->agent->is_mobile() ? '60' : '80' ?>)/100)/2;
-                      console.log('screen : '+screen_display+'nav : '+screen_display*<?= $this->agent->is_mobile() ? '8' : '9' ?>0/100+'batas : '+margin_side);
+                      // console.log('screen : '+screen_display+'nav : '+screen_display*<?= $this->agent->is_mobile() ? '8' : '9' ?>0/100+'batas : '+margin_side);
                       <?php
                       if($this->agent->is_mobile()){
                         echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 275px;width: 68%;right: '+margin_side+'px;')";

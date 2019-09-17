@@ -141,9 +141,9 @@
                     $(element_id+' .owl-controls').attr('style', 'margin-top: 30px;');
 
                     var screen_display=<?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
-                    console.log(screen_display);
+                    // console.log(screen_display);
                     var margin_side=(screen_display-screen_display*(<?= $this->agent->is_mobile() ? '62' : '98.5' ?>)/100)/2;
-                    console.log('screen : '+screen_display+'nav : '+screen_display*<?= $this->agent->is_mobile() ? '8' : '9' ?>0/100+'batas : '+margin_side);
+                    // console.log('screen : '+screen_display+'nav : '+screen_display*<?= $this->agent->is_mobile() ? '8' : '9' ?>0/100+'batas : '+margin_side);
                     <?php
                     if($this->agent->is_mobile()){
                         echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: -10px;width: 70%;right: '+margin_side+'px;')";
