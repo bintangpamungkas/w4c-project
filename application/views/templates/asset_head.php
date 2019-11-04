@@ -72,12 +72,12 @@
 
   <!-- Tawk.to Chat -->
   <?php
-  $param=tawk_to_chat();
-  foreach ($param as $param){
-    if($param['dev_status']==true && $param['status']==true){
-      echo $param['tracking_code'];
-    }
-  }
+//   $param=tawk_to_chat();
+//   foreach ($param as $param){
+//     if($param['dev_status']==true && $param['status']==true){
+//       echo $param['tracking_code'];
+//     }
+//   }
   ?>
 
   <script>
@@ -94,11 +94,16 @@
 </head>
 
 <script>
-$(window).load(function () {
-  $('.auto-full-height').css('min-height', window.innerHeight);
-  if (window.location.pathname=="/demo/official/") {
+$(function(){
+    <?php if($this->uri->segment(1)==''):?>
     $('#PopUpModal').modal('show');
-  }
+  <?php endif; ?>
+})
+$(window).ready(function () {
+  $('.auto-full-height').css('min-height', window.innerHeight);
+  <?php if($this->uri->segment(1)==''):?>
+   // $('#PopUpModal').modal('show');
+  <?php endif; ?>
 })
 </script>
 

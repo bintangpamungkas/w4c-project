@@ -147,7 +147,7 @@
                     $(element_id+' .owl-controls').attr('style', 'margin-top: 20px;');
 
                     var screen_display=<?= $this->agent->is_mobile() ? "screen.width" : "$('#waste').width()" ?>;
-                    // console.log(screen_display);
+                    console.log(screen_display);
                     var margin_side=(screen_display-screen_display*(<?= $this->agent->is_mobile() ? '90.5' : '98' ?>)/100)/2;
                     <?php
                     if($this->agent->is_mobile()){

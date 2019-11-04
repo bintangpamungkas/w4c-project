@@ -97,5 +97,29 @@ class Site extends MY_Controller
 
         $this->render_page('sites/contact', $data);
     }
+    public function career(){
+        $data['title']=APPNAME;
+        $data['id']='brand';
+        $data['subtitle']='information';
+        $data['data_mode']='general';
+        $data['page_heading']='career';
+        $data['is_bilingual']=true;
+        $data['breadcrumb']=
+            [
+                [
+                    'title' => 'Home',
+                    'is_active' => false,
+                    'url' => W4C_URL
+                ],
+                [
+                    'title' => lang('contact'),
+                    'is_active' => true,
+                    'url' => site_url('career')
+                ],
+            ];
+
+
+        $this->render_page('sites/career', $data);
+    }
 
 }
