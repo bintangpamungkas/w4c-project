@@ -94,7 +94,7 @@
                                 <h6 class="h6 g-color-black-opacity-0_5 g-font-weight-600 text-uppercase g-mb-5 g-font-size-10 text-uppercase d-none">
                                   <div class="d-inline-block g-width-18 g-height-2 g-pos-rel g-top-minus-2 g-bg-info mr-2"></div><?= $service['category'] ?>
                                 </h6>
-                                <h4 class="h6 g-color-black g-font-weight-600 text-uppercase g-mb-5 g-font-size-16 text-uppercase" style="min-height: 50px"><?= $service['title'] ?></h4>
+                                <h4 class="h6 g-color-black g-font-weight-600 <?= $service['title']=='Sinergi #AdesNiatMurni dan Gojek' ? '' : 'text-uppercase' ?> g-mb-5 g-font-size-16" style="min-height: 50px"><?= $service['title'] ?></h4>
                                 <em class="d-block g-color-gray-dark-v4 g-font-style-normal g-font-size-12 g-mb-10"><?= $service['content'] ?></em>
                               </div>
                               <div class="g-mb-10 d-none">
@@ -196,7 +196,7 @@
                                 <h6 class="h6 g-color-black-opacity-0_5 g-font-weight-600 text-uppercase g-mb-5 g-font-size-10 text-uppercase d-none">
                                   <div class="d-inline-block g-width-18 g-height-2 g-pos-rel g-top-minus-2 g-bg-info mr-2"></div><?= $service['category'] ?>
                                 </h6>
-                                <h4 class="h6 g-color-black g-font-weight-600 text-uppercase g-mb-5 g-font-size-16 text-uppercase" style="min-height: 50px"><?= $service['title'] ?></h4>
+                                <h4 class="h6 g-color-black g-font-weight-600 <?= $service['title']=='Sinergi #AdesNiatMurni dan Gojek' ? '' : 'text-uppercase' ?> g-mb-5 g-font-size-16" style="min-height: 50px"><?= $service['title'] ?></h4>
                                 <em class="d-block g-color-gray-dark-v4 g-font-style-normal g-font-size-12 g-mb-10" style="min-height: 60px"><?= $service['content'] ?></em>
                               </div>
                               <div class="g-mb-10 d-none">
@@ -308,7 +308,7 @@
                               <h6 class="h6 g-color-black-opacity-0_5 g-font-weight-600 text-uppercase g-mb-5 g-font-size-10 text-uppercase d-none">
                                 <div class="d-inline-block g-width-18 g-height-2 g-pos-rel g-top-minus-2 g-bg-info mr-2"></div><?= $service['category'] ?>
                               </h6>
-                              <h4 class="h6 g-color-black g-font-weight-600 text-uppercase g-mb-5 g-font-size-16 text-uppercase" style="min-height: 50px"><?= $service['title'] ?></h4>
+                              <h4 class="h6 g-color-black g-font-weight-600 <?= $service['title']=='Sinergi #AdesNiatMurni dan Gojek' ? '' : 'text-uppercase' ?> g-mb-5 g-font-size-16" style="min-height: 50px"><?= $service['title'] ?></h4>
                               <em class="d-block g-color-gray-dark-v4 g-font-style-normal g-font-size-12 g-mb-10"><?= $service['content'] ?></em>
                             </div>
                             <div class="g-mb-10 d-none">
@@ -392,7 +392,7 @@
                               <h6 class="h6 g-color-black-opacity-0_5 g-font-weight-600 text-uppercase g-mb-5 g-font-size-10 text-uppercase d-none">
                                 <div class="d-inline-block g-width-18 g-height-2 g-pos-rel g-top-minus-2 g-bg-info mr-2"></div><?= $service['category'] ?>
                               </h6>
-                              <h4 class="h6 g-color-black g-font-weight-600 text-uppercase g-mb-5 g-font-size-16 text-uppercase" style="min-height: 50px"><?= $service['title'] ?></h4>
+                              <h4 class="h6 g-color-black g-font-weight-600 <?= $service['title']=='Sinergi #AdesNiatMurni dan Gojek' ? '' : 'text-uppercase' ?> g-mb-5 g-font-size-16" style="min-height: 50px"><?= $service['title'] ?></h4>
                               <em class="d-block g-color-gray-dark-v4 g-font-style-normal g-font-size-12 g-mb-10"><?= $service['content'] ?></em>
                             </div>
                             <div class="g-mb-10 d-none">
@@ -425,7 +425,7 @@
                       margin:20,
                       dots:true,
                       nav:true,
-                      autoplay:true,
+                      autoplay:false,
                       autoplayTimeout:10000,
                       autoplayHoverPause:true,
                       responsive:{

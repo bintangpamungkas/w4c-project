@@ -96,7 +96,9 @@
 <script>
 $(window).load(function () {
   $('.auto-full-height').css('min-height', window.innerHeight);
-  $('#PopUpModal').modal('show');
+  if (window.location.pathname=="/demo/official/") {
+    $('#PopUpModal').modal('show');
+  }
 })
 </script>
 
@@ -104,14 +106,14 @@ $(window).load(function () {
   <main>
     <div class="modal fade in" id="PopUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="z-index: 99999">
       <div class="modal-dialog <?= $this->agent->is_mobile() ? 'g-ml-25 g-mr-25' : '' ?>" role="document" <?= $this->agent->is_mobile() ?'':'style="max-width:700px"'?>>
-        <div class="modal-content" style="border-radius: 0!important;margin-top: 30%">
+        <div class="modal-content" style="border-radius: 0!important;margin-top: calc(50vh - 250px)">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute;padding: 10px 15px;background: red;z-index: 999;opacity: 1;color: white;border-radius: 50px;right: -20px;top: -20px;"><span aria-hidden="true">&times;</span></button>
           <div class="modal-body welcome_list g-pa-0">
             <a class="dismiss-modal" href="<?php echo POIN_ADES_URL ?>">
               <?php if ($this->agent->is_mobile()): ?>
                 <img src="<?php echo base_url('assets/img/bg/services/ades/popup-mobile.jpg') ?>" class="img-fluid">
-                <?php else: ?>
-                  <img src="<?php echo base_url('assets/img/bg/services/ades/popup-desktop.jpg') ?>" style="width:100%">
+              <?php else: ?>
+                <img src="<?php echo base_url('assets/img/bg/services/ades/popup-desktop.jpg') ?>" style="width:100%">
               <?php endif; ?>
             </a>
           </div>

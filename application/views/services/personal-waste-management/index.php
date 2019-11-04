@@ -59,7 +59,6 @@
 <?php $this->load->view('services/'.$service_id.'/sections/about'); ?>
 <?php $this->load->view('services/'.$service_id.'/sections/feature'); ?>
 <?php $this->load->view('services/'.$service_id.'/sections/facility'); ?>
-<?php $this->load->view('services/'.$service_id.'/sections/pricing'); ?>
+<?php //$this->load->view('services/'.$service_id.'/sections/client'); ?>
 <?php $this->load->view('services/'.$service_id.'/sections/target'); ?>
-<?php $this->load->view('services/'.$service_id.'/sections/faq'); ?>
 <?php $this->load->view('services/'.$service_id.'/sections/cta'); ?>

@@ -16,26 +16,26 @@
                     <div class="row justify-content-center" style="margin: 0 0 30px 0!important;">
                         <?php
                         $clients=[
-                            [
-                                'name' => 'Coca-cola',
-                                'number' => 1,
-                                'image' => '1.jpg',
-                                'url' => site_url('cocacola'),
-                            ],
-                            [
-                                'name' => 'Tetra Pak',
-                                'number' => 2,
-                                'image' => '2.jpg',
-                                'url' => site_url('tetrapak'),
-                            ],
+                                [
+                                    'name' => 'Coca-cola',
+                                    'number' => 1,
+                                    'image' => '1.jpg',
+                                    'url' => site_url('cocacola'),
+                                ],
+                                [
+                                    'name' => 'Tetra Pak',
+                                    'number' => 2,
+                                    'image' => '2.jpg',
+                                    'url' => site_url('tetrapak'),
+                                ],
                         ];
                         foreach($clients as $client) :
                             ?>
                             <div class="col-md-4 text-center">
                                 <a href="<?= $client['url'] ?>" target="_blank">
-                                    <div class="g-bg-white rounded g-pa-10 <?= $this->agent->is_mobile() ? 'g-mx-3 g-mb-5' : 'g-px-30 g-mx-10 g-mb-10' ?>">
-                                        <img class="img-fluid mx-auto" src="<?= base_url('assets/img/service/'.$service_id.'/client/'.$client['image']) ?>" alt="Image Description">
-                                    </div>
+                                <div class="g-bg-white rounded g-pa-10 <?= $this->agent->is_mobile() ? 'g-mx-3 g-mb-5' : 'g-px-30 g-mx-10 g-mb-10' ?>">
+                                    <img class="img-fluid mx-auto" src="<?= base_url('assets/img/service/'.$service_id.'/client/'.$client['image']) ?>" alt="Image Description">
+                                </div>
                                 </a>
                                 <small><?= $client['name'] ?></small>
                             </div>

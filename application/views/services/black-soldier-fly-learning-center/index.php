@@ -1,4 +1,3 @@
-
 <!-- Promo Block -->
 <section id="welcome" class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
     <div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center" style="height: 120%;background: url(<?= $this->agent->is_mobile() ? base_url('assets/img/service/'.$service_id.'/bg/1.jpg') : base_url('assets/img/service/'.$service_id.'/bg/1.jpg') ?>);background-size: cover;<?= $this->agent->is_mobile() ? 'background-position-x: right;' : '' ?>"></div>

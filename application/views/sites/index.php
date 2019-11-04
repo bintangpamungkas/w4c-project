@@ -20,7 +20,7 @@
 
           <div class="pt-2 <?= $this->agent->is_mobile() ? 'row justify-content-center' : '' ?>">
             <div class="<?= $this->agent->is_mobile() ? 'col-10' : '' ?>">
-              <a class="click_scroll btn btn-info g-color-white g-brd-2 g-brd-white-opacity-0_2 g-font-size-13 g-rounded-50 g-pl-20 g-pr-15 g-py-9 <?= $this->agent->is_mobile() ? 'btn-block mb-4' : 'mr-4' ?>" href="#fact">
+              <a class="click_scroll btn btn-info g-color-white g-brd-2 g-brd-white-opacity-0_2 g-font-size-13 g-rounded-50 g-pl-20 g-pr-15 g-py-9 <?= $this->agent->is_mobile() ? 'btn-block mb-4' : 'mr-4' ?>" href="#our_services">
                 <?= strtoupper(lang('learn_more')) ?>
                 <span class="align-middle u-icon-v3 g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-2">
                   <i class="fa fa-info"></i>
