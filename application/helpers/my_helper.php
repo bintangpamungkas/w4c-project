@@ -391,15 +391,15 @@ function meta_data($activation){
 
 function hotjar_tracking($activation){
     $param=[
-        [   
+        [
             'site_url' => '/official/',
             'site_name' => '<!-- Hotjar Tracking Code for htttps://waste4change.com/official -->',
             'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
-            'tracking_code' => '1480535',
+            'tracking_code' => '1102073',
             'status' => true,
             'dev_status' => IS_ONLINE==1 ? true : false,
         ],
-        [   
+        [
             'site_url' => '/official/service/zero-waste-to-landfill-management',
             'site_name' => '<!-- Hotjar Tracking Code for https://waste4change.com/official/service/zero-waste-to-landfill-management -->',
             'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
@@ -407,7 +407,7 @@ function hotjar_tracking($activation){
             'status' => true,
             'dev_status' => IS_ONLINE==1 ? true : false,
         ],
-        [   
+        [
             'site_url' => '/official/service/responsible-waste-management',
             'site_name' => '<!-- Hotjar Tracking Code for https://waste4change.com/official/service/responsible-waste-management -->',
             'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
@@ -415,8 +415,8 @@ function hotjar_tracking($activation){
             'status' => true,
             'dev_status' => IS_ONLINE==1 ? true : false,
         ],
-        
-        [   
+
+        [
             'site_url' => '/official/service/inorganic-waste-management',
             'site_name' => '<!-- Hotjar Tracking Code for https://waste4change.com/official/service/inorganic-waste-management -->',
             'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
@@ -424,7 +424,7 @@ function hotjar_tracking($activation){
             'status' => true,
             'dev_status' => IS_ONLINE==1 ? true : false,
         ],
-        [   
+        [
             'site_url' => '/official/service/edukasi-bijak-sampah',
             'site_name' => '<!-- Hotjar Tracking Code for https://waste4change.com/official/service/edukasi-bijak-sampah -->',
             'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
@@ -432,7 +432,7 @@ function hotjar_tracking($activation){
             'status' => true,
             'dev_status' => IS_ONLINE==1 ? true : false,
         ],
-        [   
+        [
             'site_url' => '/official/service/akademi-bijak-sampah',
             'site_name' => '<!-- Hotjar Tracking Code for https://waste4change.com/official/service/akademi-bijak-sampah -->',
             'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
@@ -440,7 +440,7 @@ function hotjar_tracking($activation){
             'status' => true,
             'dev_status' => IS_ONLINE==1 ? true : false,
         ],
-        [   
+        [
             'site_url' => '/official/service/event-waste-management',
             'site_name' => '<!-- Hotjar Tracking Code for https://waste4change.com/official/service/event-waste-management -->',
             'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
@@ -448,7 +448,7 @@ function hotjar_tracking($activation){
             'status' => true,
             'dev_status' => IS_ONLINE==1 ? true : false,
         ],
-        [   
+        [
             'site_url' => '/official/service/extended-producer-responsibility',
             'site_name' => '<!-- Hotjar Tracking Code for https://waste4change.com/official/service/extended-producer-responsibility -->',
             'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
@@ -456,7 +456,7 @@ function hotjar_tracking($activation){
             'status' => true,
             'dev_status' => IS_ONLINE==1 ? true : false,
         ],
-        [   
+        [
             'site_url' => '/official/service/program-pendampingan-optimalisasi-tps3r',
             'site_name' => '<!-- Hotjar Tracking Code for https://waste4change.com/official/service/program-pendampingan-optimalisasi-tps3r -->',
             'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
@@ -464,7 +464,7 @@ function hotjar_tracking($activation){
             'status' => true,
             'dev_status' => IS_ONLINE==1 ? true : false,
         ],
-        [   
+        [
             'site_url' => '/official/service/feasibility-study',
             'site_name' => '<!-- Hotjar Tracking Code for https://waste4change.com/official/service/feasibility-study -->',
             'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
@@ -472,7 +472,7 @@ function hotjar_tracking($activation){
             'status' => true,
             'dev_status' => IS_ONLINE==1 ? true : false,
         ],
-        [   
+        [
             'site_url' => '/official/service/black-soldier-fly-learning-center',
             'site_name' => '<!-- Hotjar Tracking Code for https://waste4change.com/official/service/black-soldier-fly-learning-center -->',
             'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',

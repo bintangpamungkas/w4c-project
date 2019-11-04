@@ -69,7 +69,7 @@
             </div>
 
             <script>
-                $(window).load(function () {
+                $(window).ready(function () {
                     var element_id='#testi-carousel';
                     $(element_id).owlCarousel({
                         loop:true,

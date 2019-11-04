@@ -119,7 +119,7 @@
                       ?>
                     </div>
                     <script>
-                    $(window).load(function () {
+                    $(window).ready(function () {
                       var element_id='#service-<?= $target['number'] ?>-carousel';
                       $(element_id).owlCarousel({
                         stagePadding: <?= $this->agent->is_mobile() ? '30' : '70' ?>,
@@ -222,7 +222,7 @@
                     </div>
 
                     <script>
-                    $(window).load(function () {
+                    $(window).ready(function () {
                       var element_id='#service-<?= $target['number'] ?>-carousel';
                       $(element_id).owlCarousel({
                         stagePadding: <?= $this->agent->is_mobile() ? '30' : '70' ?>,
@@ -333,7 +333,7 @@
                     ?>
                   </div>
                   <script>
-                  $(window).load(function () {
+                  $(window).ready(function () {
                     var element_id='#service-<?= $target['number'] ?>-carousel';
                     $(element_id).owlCarousel({
                       stagePadding: <?= $this->agent->is_mobile() ? '30' : '70' ?>,
@@ -417,7 +417,7 @@
                     ?>
                   </div>
                   <script>
-                  $(window).load(function () {
+                  $(window).ready(function () {
                     var element_id='#service-<?= $target['number'] ?>-carousel';
                     $(element_id).owlCarousel({
                       stagePadding: <?= $this->agent->is_mobile() ? '30' : '70' ?>,
@@ -481,7 +481,7 @@
 </section>
 
 <script>
-$(window).load(function () {
+$(window).ready(function () {
   $('.my_tab_content').addClass('d-none');
   $('.my_tab_content').first().removeClass('d-none');
 });

@@ -11,7 +11,7 @@
                     <small class="form-text text-muted g-font-size-default g-mt-10"><?= lang('send_page_title') ?></small>
                     <br>
                     <script>
-                        $(window).load(function () {
+                        $(window).ready(function () {
                             $('#gform').css('width', window.innerWidth-window.innerWidth*2*(10/100));
                         })
                     </script>

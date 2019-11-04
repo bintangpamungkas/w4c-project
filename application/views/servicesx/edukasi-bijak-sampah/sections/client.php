@@ -61,7 +61,7 @@
                     </div>
 
                     <script>
-                        $(window).load(function () {
+                        $(window).ready(function () {
                             var element_id='#media-carousel';
                             $(element_id).owlCarousel({
                                 loop:true,

@@ -9,7 +9,7 @@
                 <small class="form-text text-muted g-font-size-default g-mt-10"><?= lang('register_description') ?></small>
                 <br>
                 <script>
-                    $(window).load(function () {
+                    $(window).ready(function () {
                         $('#gform').css('width', window.innerWidth-window.innerWidth*2*(10/100));
                     })
                 </script>

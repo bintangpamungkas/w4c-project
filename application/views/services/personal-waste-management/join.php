@@ -15,7 +15,7 @@
                 <br>
                 <br>
                 <script>
-                    $(window).load(function () {
+                    $(window).ready(function () {
                         $('#gform').css('width', window.innerWidth-window.innerWidth*2*(10/100));
                     })
                 </script>

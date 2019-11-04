@@ -39,7 +39,7 @@
                 </div>
 
                 <script>
-                    $(window).load(function () {
+                    $(window).ready(function () {
                         var element_id='#client-carousel';
                         $(element_id).owlCarousel({
                             loop:true,

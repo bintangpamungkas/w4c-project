@@ -336,7 +336,7 @@
         </div>
 
         <script>
-            $(window).load(function () {
+            $(window).ready(function () {
                 var element_id='#waste_all-carousel';
                 $(element_id).owlCarousel({
                     loop:true,

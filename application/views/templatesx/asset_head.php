@@ -93,7 +93,7 @@
 </head>
 
 <script>
-    $(window).load(function () {
+    $(window).ready(function () {
         $('.auto-full-height').css('min-height', window.innerHeight);
     })
 </script>
