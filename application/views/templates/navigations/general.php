@@ -1,7 +1,7 @@
 <!-- Navigation -->
 <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg navBarBrand" id="navBar">
     <?= ($this->agent->is_mobile()) ? '<div class="js-scrollbar card-block  u-info-v1-1 g-bg-white-gradient-v1--after g-pa-0 full-height"> ': '' ?>
-    <ul class="navbar-nav text-uppercase g-font-weight-600 ml-auto">
+    <ul class="navbar-nav text-uppercase g-font-weight-600 mr-auto">
         <?php
         $nav=$navigation_array;
         foreach ($nav as $nav):

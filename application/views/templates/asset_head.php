@@ -100,10 +100,10 @@ $(function(){
   <?php endif; ?>
 })
 $(window).ready(function () {
-  $('.auto-full-height').css('min-height', window.innerHeight);
-  <?php if($this->uri->segment(1)==''):?>
-   // $('#PopUpModal').modal('show');
-  <?php endif; ?>
+  // $('.auto-full-height').css('min-height', window.innerHeight);
+  // <?php if($this->uri->segment(1)==''):?>
+  //  // $('#PopUpModal').modal('show');
+  // <?php endif; ?>
 })
 </script>
 

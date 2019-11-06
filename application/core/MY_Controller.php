@@ -31,42 +31,6 @@ class MY_Controller extends CI_Controller{
   function navigation_menu_array_segment($user_target){
 
     $data['service_individual']=[
-      // [
-      //     'title' => 'Send Your Waste',
-      //     'url' => SEND_YOUR_WASTE_URL,
-      //     'icon' => 'syw.png',
-      //     'is_new' => true,
-      //     'category' => 'campaign',
-      //     'number' => 1,
-      //     'content' => lang('services_send_your_waste'),
-      //     'recomendation' => ['Individual'],
-      //     'image' => 'sendyourwaste.jpg',
-      //     'visible' => true,
-      // ],
-      // [
-      //     'title' => 'Drop Box',
-      //     'url' => DROPBOX_URL,
-      //     'icon' => 'db.png',
-      //     'is_new' => true,
-      //     'category' => 'campaign',
-      //     'number' => 2,
-      //     'content' => lang('services_dropbox'),
-      //     'recomendation' => ['Individual'],
-      //     'image' => 'dropbox.jpg',
-      //     'visible' => true,
-      // ],
-      // [
-      //     'title' => 'Personal Waste Management',
-      //     'url' => W4C_URL.'service/personal-waste-management',
-      //     'icon' => 'wm.png',
-      //     'is_new' => false,
-      //     'category' => 'collect',
-      //     'number' => 3,
-      //     'content' => lang('services_personal_waste_management'),
-      //     'recomendation' => ['Individual'],
-      //     'image' => 'personal.jpg',
-      //     'visible' => true,
-      // ],
       [
         'title' => 'Sinergi #AdesNiatMurni dan Gojek',
         'url' => POIN_ADES_URL,
@@ -363,15 +327,6 @@ class MY_Controller extends CI_Controller{
             'is_new' => false,
             'menu' => $this->navigation_menu_array_segment('corporate'),
           ],
-          // [
-          //     'title' => lang('services_esr_tab'),
-          //     'url' => '',
-          //     'number' => '3',
-          //     'type' => 'submenu',
-          //     'icon' => 'et-icon-recycle',
-          //     'is_new' => false,
-          //     'menu' => $this->navigation_menu_array_segment('brand'),
-          // ],
         ],
       ],
       [
@@ -398,18 +353,6 @@ class MY_Controller extends CI_Controller{
         'is_new' => false,
         'menu' => $this->navigation_menu_array_segment('corporate'),
       ],
-      // [
-      //   'title' => lang('services_esr_tab'),
-      //   'for' => 'menu',
-      //   'visible' => $this->agent->is_mobile() ? true : false,
-      //   'number' => '4',
-      //   'url' => '#mega-menu-1',
-      //   'type' => 'mega-menu',
-      //   'submenu_type' => 'list',
-      //   'icon' => '',
-      //   'is_new' => false,
-      //   'menu' => $this->navigation_menu_array_segment('brand'),
-      // ],
       [
         'title' => lang('about_only'),
         'for' => 'menu',
@@ -457,7 +400,6 @@ class MY_Controller extends CI_Controller{
         'icon' => '',
         'is_new' => false,
         'menu' => [
-
           [
             'title' => 'ID',
             'url' => !$this->session->userdata('language') || $this->session->userdata('language')=='id' ? 'javascript:void()' : site_url('id'),

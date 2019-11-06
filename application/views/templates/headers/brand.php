@@ -55,7 +55,7 @@
                         </div>
                     </a>
                     <div class="collapse navbar-collapse align-items-center flex-sm-row" id="navBar2">
-                        <ul class="navbar-nav text-uppercase g-font-weight-600 ml-auto">
+                        <ul class="navbar-nav text-uppercase g-font-weight-600 mr-auto">
                             <?php foreach ($subnav as $menu): ?>
                                 <li class="nav-item g-my-2 <?= $this->agent->is_mobile() ? 'g-my-10' : '' ?> g-mx-20--lg">
                                     <a href="<?= $menu['url'] ?>" class="font-weight-normal g-font-size-11 click_scroll nav-link px-0 b-color-white g-color-blue--hover" style="line-height: 1"><?= $menu['title'] ?>
