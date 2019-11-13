@@ -17,7 +17,7 @@ $service_targets=[
     'list' => $navigation_array_individu,
   ],
 ];
- ?>
+?>
 
 <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-overflow-hidden" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
   <div id="our_services" style="height: 200px;position: absolute;width: 80%;margin-top: -80px"></div>
@@ -27,15 +27,16 @@ $service_targets=[
     <div class="container <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-25' : 'g-py-70' ?>">
       <div class="g-mb-50">
         <div class="g-font-color-w4c-1 g-font-size-35 mb-2" color><?=lang('available_services_for_your_location')?></div>
-        <div class="form-group">
-          <input class="form-control" type="text" name="" value="" st>
-          <label class="input input-file">
-            <div class="button"><input type="submit" name="<?=lang('search')?>"><?=strtoupper(lang('search'))?></div><input type="text" placeholder="<?=lang('enter_location')?>" readonly="">
-          </label>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="input-group">
+              <input class="form-control g-pa-10" type="text" name="" value="" style="border:1px solid #0B90B9; border-radius:0px" placeholder="<?=lang('enter_location')?>">
+              <span class="input-group-btn">
+                <button class="btn btn-info g-py-10 g-px-30" type="button" name="button" style="border:1px solid #0B90B9;border-radius:0px"><?=strtoupper(lang('search'))?></button>
+              </span>
+            </div>
+          </div>
         </div>
-        <h2 class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= strtoupper(lang('about_what_we_do')) ?></h2>
-        <hr class="g-width-70 g-my-20 g-brd-2 g-brd-blue">
-        <p class="text-muted <?= $this->agent->is_mobile() ? 'g-font-size-12 g-px-15' : '' ?>"><?= lang('services_subtitle') ?></p>
       </div>
 
       <script>
@@ -63,7 +64,7 @@ $service_targets=[
               ?>
               <div class="col text-center g-px-0 g-font-weight-700 <?= $target['number']==1 ? '' : ' tab-shadow' ?>" style="margin-bottom: -2px;">
                 <a class="my_tab g-cursor-pointer nav-link my_tab g-py-10 g-font-size-16 <?= $target['number']==1 ? 'tab-active' : '' ?>" data-tab="#tab-<?= $target['number'] ?>" style="<?= $target['number']==1 ? 'border-top-left-radius: 8px;border-width: 8px 0 1px 0;' : ($target['number']==count($service_targets) ? 'border-top-right-radius: 8px;border-width: 8px 0 1px 0;' : 'border-width: 8px 0 1px 0;') ?>min-height: '105px' ; color:#aaa">
-                  <!-- <i class="<?= $target['icon'] ?> g-mr-10 g-font-size-30 g-mb-17"></i> -->
+                  <!-- <i class="<?= $tazrget['icon'] ?> g-mr-10 g-font-size-30 g-mb-17"></i> -->
                   <?= strtoupper($target['title']) ?>
                 </a>
               </div>
