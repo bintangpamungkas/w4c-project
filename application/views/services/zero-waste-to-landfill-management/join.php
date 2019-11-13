@@ -18,7 +18,7 @@
                         $('#gform').css('width', window.innerWidth-window.innerWidth*2*(10/100));
                     })
                 </script>
-                <iframe id="<?= $this->agent->is_mobile() ? 'gform' : '' ?>" style="height: <?= $this->agent->is_mobile() ? '1100px' : '1200px' ?>;width: 100%;border: none" src="https://docs.google.com/forms/d/e/1FAIpQLSdUZP5sOY4EEZrhY8e7aBo_aTcZpXHAHaTMTX_mOPYplicSAA/viewform?embedded=true">Memuat...</iframe>
+                <iframe id="<?= $this->agent->is_mobile() ? 'gform' : '' ?>" style="height: <?= $this->agent->is_mobile() ? '1100px' : '1200px' ?>;width: 100%;border: none" src="https://docs.google.com/forms/d/e/1FAIpQLSemrcuqzCk4wFUtMPFFwLkJOsYSlCjoJ8GHCDdXcM7Or5YlQg/viewform?embedded=true">Memuat...</iframe>
             </div>
         </div>
     </div>

@@ -46,6 +46,10 @@ $lang["about_strategy_content"]="Behaviour change in Waste Management with colla
 $lang["about_vision"]="Vision";
 $lang["about_vision_content"]="To become leader in providing ethical and responsible waste management solutions.";
 $lang["about_what_we_do"]="WHAT YOU CAN DO TOGETHER WITH US ";
+$lang["available_services_for_your_location"]="Available services for your location";
+$lang["enter_location"]="Enter Location";
+$lang["search"]="Search";
+
 
 //Fact Waste W4C
 $lang["fact_title"]="WHY REPONSIBLY ?";

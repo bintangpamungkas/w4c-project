@@ -51,6 +51,9 @@ $lang["about_strategy_content"]="Kami mengubah ekosistem untuk sebuah pengelolaa
 $lang["about_vision"]="Visi";
 $lang["about_vision_content"]="Menjadi pemimpin dalam menyediakan pengelolaan sampah yang bertanggung jawab dan beretika";
 $lang["about_what_we_do"]="Yang Dapat Anda Lakukan Bersama Kami";
+$lang["available_services_for_your_location"]="Servis-servis yang tersedia di lokasi Anda";
+$lang["enter_location"]="Masukkan lokasi";
+$lang["search"]="Cari";
 
 //Fact Waste W4C
 $lang["fact_title"]="Kenapa Harus Bertanggung Jawab?";

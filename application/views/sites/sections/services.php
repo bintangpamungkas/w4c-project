@@ -1,10 +1,38 @@
+<?php
+$service_targets=[
+  [
+    'title' => lang('services_corporate_tab'),
+    'icon' => 'icon-real-estate-066 u-line-icon-pro',
+    'number' => 1,
+    'subtitle' => lang('services_corporate_title'),
+    'content' => lang('services_corporate_subtitle'),
+    'list' => $navigation_array_corporate,
+  ],
+  [
+    'title' => lang('services_individu_tab'),
+    'icon' => 'icon-real-estate-003',
+    'number' => 2,
+    'subtitle' => lang('services_individu_title'),
+    'content' => lang('services_individu_subtitle'),
+    'list' => $navigation_array_individu,
+  ],
+];
+ ?>
+
 <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-overflow-hidden" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
   <div id="our_services" style="height: 200px;position: absolute;width: 80%;margin-top: -80px"></div>
   <div class="divimage dzsparallaxer--target w-100 d-none" style="height: 130%; background-image: url(<?= base_url('assets/img/bg/sleek_box.png') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
   <!--<div style="background:radial-gradient(circle farthest-side at 80% 60%, rgba(90,219,127,0.67), rgba(22,127,148,0.92))">-->
   <div class="g-bg-secondary">
-    <div class="container <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-25' : 'g-py-140' ?>">
-      <div class="text-center g-mb-50">
+    <div class="container <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-25' : 'g-py-70' ?>">
+      <div class="g-mb-50">
+        <div class="g-font-color-w4c-1 g-font-size-35 mb-2" color><?=lang('available_services_for_your_location')?></div>
+        <div class="form-group">
+          <input class="form-control" type="text" name="" value="" st>
+          <label class="input input-file">
+            <div class="button"><input type="submit" name="<?=lang('search')?>"><?=strtoupper(lang('search'))?></div><input type="text" placeholder="<?=lang('enter_location')?>" readonly="">
+          </label>
+        </div>
         <h2 class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= strtoupper(lang('about_what_we_do')) ?></h2>
         <hr class="g-width-70 g-my-20 g-brd-2 g-brd-blue">
         <p class="text-muted <?= $this->agent->is_mobile() ? 'g-font-size-12 g-px-15' : '' ?>"><?= lang('services_subtitle') ?></p>
@@ -24,31 +52,13 @@
       </script>
 
       <?php
-      $service_targets=[
-        [
-          'title' => lang('services_corporate_tab'),
-          'icon' => 'icon-real-estate-066 u-line-icon-pro',
-          'number' => 1,
-          'subtitle' => lang('services_corporate_title'),
-          'content' => lang('services_corporate_subtitle'),
-          'list' => $navigation_array_corporate,
-        ],
-        [
-          'title' => lang('services_individu_tab'),
-          'icon' => 'et-icon-profile-male',
-          'number' => 2,
-          'subtitle' => lang('services_individu_title'),
-          'content' => lang('services_individu_subtitle'),
-          'list' => $navigation_array_individu,
-        ],
-      ];
-
       if ($this->agent->is_mobile()) {
         ?>
         <div class="g-bg-white g-rounded-10" style="box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.05)">
           <!-- Nav tabs -->
           <div class="row justify-content-center g-ma-0">
             <?php
+            // service_target list is in index
             foreach ($service_targets as $target):
               ?>
               <div class="col text-center g-px-0 g-font-weight-700 <?= $target['number']==1 ? '' : ' tab-shadow' ?>" style="margin-bottom: -2px;">
@@ -453,7 +463,7 @@
                     var margin_side=(screen_display-screen_display*(<?= $this->agent->is_mobile() ? '60' : '95' ?>)/100)/2;
                     // console.log('screen : '+screen_display+'nav : '+screen_display*<?= $this->agent->is_mobile() ? '8' : '9' ?>0/100+'batas : '+margin_side);
                     <?php
-                      echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 83px;margin-top: 110px;width: 98%;right:'+margin_side+'px;')";
+                    echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 83px;margin-top: 110px;width: 98%;right:'+margin_side+'px;')";
                     ?>
                   });
                   </script>
