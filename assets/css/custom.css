@@ -158,9 +158,12 @@
 
 .tab-active{
     box-shadow: none!important;
-    border-top: 8px solid white!important;
-    color: #3398dc!important;
+    border-top: 8px solid #159CBD!important;
+    color: black!important;
     background: white!important;
+}
+.tab-active i{
+  color: #159CBD!important;
 }
 
 .box-shadow-down{

@@ -24,7 +24,7 @@
       </script>
 
       <?php
-      $targets=[
+      $service_targets=[
         [
           'title' => lang('services_corporate_tab'),
           'icon' => 'icon-real-estate-066 u-line-icon-pro',
@@ -49,10 +49,10 @@
           <!-- Nav tabs -->
           <div class="row justify-content-center g-ma-0">
             <?php
-            foreach ($targets as $target):
+            foreach ($service_targets as $target):
               ?>
               <div class="col text-center g-px-0 g-font-weight-700 <?= $target['number']==1 ? '' : ' tab-shadow' ?>" style="margin-bottom: -2px;">
-                <a class="my_tab g-cursor-pointer nav-link my_tab g-py-10 g-font-size-16 <?= $target['number']==1 ? 'tab-active' : '' ?>" data-tab="#tab-<?= $target['number'] ?>" style="<?= $target['number']==1 ? 'border-top-left-radius: 8px;border-width: 8px 0 1px 0;' : ($target['number']==count($targets) ? 'border-top-right-radius: 8px;border-width: 8px 0 1px 0;' : 'border-width: 8px 0 1px 0;') ?>min-height: '105px' ; color:#aaa">
+                <a class="my_tab g-cursor-pointer nav-link my_tab g-py-10 g-font-size-16 <?= $target['number']==1 ? 'tab-active' : '' ?>" data-tab="#tab-<?= $target['number'] ?>" style="<?= $target['number']==1 ? 'border-top-left-radius: 8px;border-width: 8px 0 1px 0;' : ($target['number']==count($service_targets) ? 'border-top-right-radius: 8px;border-width: 8px 0 1px 0;' : 'border-width: 8px 0 1px 0;') ?>min-height: '105px' ; color:#aaa">
                   <!-- <i class="<?= $target['icon'] ?> g-mr-10 g-font-size-30 g-mb-17"></i> -->
                   <?= strtoupper($target['title']) ?>
                 </a>
@@ -63,7 +63,7 @@
           </div>
           <!-- End Nav tabs -->
           <?php
-          foreach ($targets as $target):
+          foreach ($service_targets as $target):
             ?>
             <div class="my_tab_content g-bg-white g-rounded-7" id="tab-<?= $target['number'] ?>">
               <?php
@@ -278,7 +278,7 @@
         </div>
         <?php
       }else{
-        foreach ($targets as $target):
+        foreach ($service_targets as $target):
           ?>
           <div class="g-bg-white g-rounded-10 g-my-40" style="box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.05)">
             <?php $services = $target['list']; ?>
