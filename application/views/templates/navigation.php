@@ -2,13 +2,12 @@
   <?= ($this->agent->is_mobile()) ? '<div class="js-scrollbar card-block  u-info-v1-1 g-bg-white-gradient-v1--after g-pa-0 full-height"> ': '' ?>
     <ul class="navbar-nav text-uppercase g-font-weight-600 mr-auto">
       <?php
-      foreach ($navigation_array as $nav):
+      foreach ($navigation_array as $nav){
         if (!$this->agent->is_mobile() && $nav['for']=='language'){ $nav['visible']=false; }
         if($nav['visible']==true):
           ?>
           <li class="<?= $nav['type']=='mega-menu' ? 'hs-has-mega-menu ' : ($nav['type']=='dropdown' ? 'hs-has-sub-menu ' : '') ?>nav-item g-mx-20--lg" data-animation-in="fadeIn" data-animation-out="fadeOut" data-position="right">
             <a <?= $nav['type']=='mega-menu' ? 'data-target ' : 'href' ?>="<?= $nav['url'] ?>" class="<?= $nav['type']=='mega-menu' ? 'hover-mega-menu g-cursor-pointer' : '' ?> <?= $this->agent->is_mobile() || $template!='index' ? 'g-color-black-opacity-0_8' : 'nav-change-scroll g-color-black' ?> g-font-size-12 nav-link px-0 <?= $this->agent->is_mobile() ? 'g-py-15' : '' ?>" style="line-height: 1" <?= $nav['type']=='mega-menu' || $nav['type']=='dropdown' ? 'aria-haspopup="true" aria-expanded="false"' : '' ?>>
-
               <?php
               if($nav['for']=='language'){
                 if(!$this->session->userdata('language') || $this->session->userdata('language')=='id'){
@@ -144,7 +143,7 @@
             <?php elseif($nav['type']=='dropdown'): ?>
               <ul class="hs-sub-menu list-unstyled <?= $this->agent->is_mobile() ? '' : 'box-shadow-down' ?> g-mt-14 g-min-width-65" id="nav-submenu--features" aria-labelledby="nav-link--features">
                 <?php
-                foreach ($nav['menu'] as $menu):
+                foreach ($nav['menu'] as $menu){
                   if($menu['visible']==true):
                     ?>
                     <li class="dropdown-item ">
@@ -152,7 +151,7 @@
                     </li>
                     <?php
                   endif;
-                endforeach;
+                }; // END foreach ($nav['menu'] as $menu)
                 ?>
               </ul>
               <?php
@@ -161,10 +160,30 @@
           </li>
           <?php
         endif;
-      endforeach;
+      }; // END foreach ($navigation_array as $nav)
       ?>
     </ul>
     <?= ($this->agent->is_mobile()) ? '<br><br><br><br></div>': '' ?>
 
-    </div>
-    <!-- End Navigation -->
+    <?php
+    if (!$this->agent->is_mobile()){
+      ?>
+      <div class="hs-has-sub-menu nav-item g-mx-20--lg" data-animation-in="fadeIn" data-animation-out="fadeOut" data-position="right">
+        <a href="javascript:void()" class="nav-change-scroll g-color-black g-font-size-12 nav-link px-0  g-color-white" style="line-height: 1" aria-haspopup="true" aria-expanded="false">
+          <img src="https://localhost/w4c/official/assets/img/icons/flag_indonesia.png" style="border: 1px solid rgba(0,0,0,0.1);height: 13px;margin-bottom: 2px">
+          ID
+        </a>
+        <ul class="hs-sub-menu list-unstyled box-shadow-down g-mt-14 g-min-width-65 animated hs-position-right fadeOut" id="nav-submenu--features" aria-labelledby="nav-link--features" style="display: none;">
+          <li class="dropdown-item ">
+            <a class="nav-link g-color-info" href="javascript:void()">ID</a>
+          </li>
+          <li class="dropdown-item ">
+            <a class="nav-link g-color-black-opacity-0_8" href="https://localhost/w4c/official/en">EN</a>
+          </li>
+        </ul>
+      </div>
+      <?php
+    } // END if (!$this->agent->is_mobile() && )
+    ?>
+
+  </div> <!-- End Navigation -->

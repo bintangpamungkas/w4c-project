@@ -21,10 +21,16 @@ $lang["social_media"]="Media Sosial";
 $lang["separator_coma"]=".";
 
 //Welcome W4C
-$lang["welcome_title_1"]="Saatnya Mengelola Sampah dengan";
-$lang["welcome_title_2"]="Bertanggung Jawab";
-$lang["welcome_title_3"]="(Terpilah & Terdaur Ulang)";
-$lang["welcome_title_4"]="Bersama Waste4Change";
+$lang["welcome_title_1"]="Saatnya Mengelola Sampah";
+$lang["welcome_title_2"]="Secara";
+$lang["welcome_title_3"]="Bertanggung Jawab";
+$lang["welcome_title_4"]="";
+$lang["welcome_title_5"]="bersama Waste4Change";
+// $lang["welcome_title_1"]="It's time to";
+// $lang["welcome_title_2"]="";
+// $lang["welcome_title_3"]="Responsibly";
+// $lang["welcome_title_4"]="Manage Your Waste";
+// $lang["welcome_title_5"]="with Waste4Change";
 
 //Register Page W4C
 $lang["register_description"]="Isi form berikut untuk mendaftarkan diri Anda";

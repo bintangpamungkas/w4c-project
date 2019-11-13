@@ -21,10 +21,11 @@ $lang["social_media"]="Social Media";
 $lang["separator_coma"]=",";
 
 //Welcome W4C
-$lang["welcome_title_1"]="It's Time to Manage Waste";
+$lang["welcome_title_1"]="It's time to";
 $lang["welcome_title_2"]="Responsibly";
-$lang["welcome_title_3"]="(Segregated & Recycled)";
-$lang["welcome_title_4"]="with Waste4Change";
+$lang["welcome_title_3"]="Responsibly";
+$lang["welcome_title_4"]="Manage Your Waste";
+$lang["welcome_title_5"]="with Waste4Change";
 
 //Register Page W4C
 $lang["register_description"]="Fill the form to create account";
