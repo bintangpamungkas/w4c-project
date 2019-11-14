@@ -1,4 +1,4 @@
-<section class="g-bg-gray-light-v5 dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-overflow-hidden" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
+<section class="g-bg-secondary dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-overflow-hidden" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
   <div class="divimage dzsparallaxer--target w-100" style="height: 130%; "></div>
   <div style="">
     <div class="container <?= $this->agent->is_mobile() ? 'g-pt-80 g-pb-50' : 'g-pt-140 g-pb-70' ?>">
@@ -12,10 +12,8 @@
           <div id="client-carousel" class="col-md-12 owl-theme" style="margin: 0 0 30px 0!important;">
             <?php
             $x = 1;
-
             $number_client = 1;
             $all = $this->agent->is_mobile() ? 10 : 15;
-
             while($x <= $all) :
               ?>
               <div>
@@ -59,19 +57,19 @@
                   items:4
                 }
               },
-              navText : ['<i class="fa fa-angle-left g-font-color-w4c-blue-v1" aria-hidden="true" style="transform: scale(4)"></i>','<i class="fa fa-angle-right g-font-color-w4c-blue-v1" aria-hidden="true" style="transform: scale(4)"></i>']
+              navText : ['<i class="fa fa-angle-left g-font-color-w4c-blue-v1" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile()?'3':'4'?>)"></i>','<i class="fa fa-angle-right g-font-color-w4c-blue-v1" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile()?'3':'4'?>)"></i>']
             });
 
             //$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
             $(element_id+' .owl-controls').attr('style', 'margin-top: 30px;');
 
             var screen_display=<?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
-            console.log(screen_display);
+            // console.log(screen_display);
             var margin_side=(screen_display-screen_display*(<?= $this->agent->is_mobile() ? '69' : '98.5' ?>)/100)/2;
-            console.log('screen : '+screen_display+'nav : '+screen_display*<?= $this->agent->is_mobile() ? '8' : '9' ?>0/100+'batas : '+margin_side);
+            // console.log('screen : '+screen_display+'nav : '+screen_display*<?= $this->agent->is_mobile() ? '8' : '9' ?>0/100+'batas : '+margin_side);
             <?php
             if($this->agent->is_mobile()){
-              echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 270px;width: 74%;right: '+margin_side+'px;')";
+              echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 306px;width: 74%;right: '+margin_side+'px;')";
             }else{
               echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 140px;width: 101.5%;right: '+margin_side+'px;')";
             }

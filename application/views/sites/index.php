@@ -96,7 +96,7 @@ $this->load->view('sites/sections/testimonial');
 ?>
 
 <?php
-$this->load->view('sites/sections/media');
+// $this->load->view('sites/sections/media');
 ?>
 
 <?php
