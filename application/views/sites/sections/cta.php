@@ -12,7 +12,7 @@
                                 <input class="form-control u-shadow-v19 g-brd-none g-bg-white g-font-size-16 g-rounded-30 g-px-30 g-py-13 g-mb-30" type="text" placeholder="Your Email Address ... ">
                             </div>
                             <div class="col-md-3 col-12 g-mb-15">
-                                <a class="btn btn-block btn-info g-color-white g-font-size-13 g-rounded-50 g-pl-20 g-pr-15 g-py-9" href="<?= site_url('join') ?>">
+                                <a class="btn btn-block btn-success g-bg-w4c-green-v1 g-color-white g-font-size-13 g-rounded-50 g-pl-20 g-pr-15 g-py-9 g-brd-0" href="<?= site_url('join') ?>">
                                     <?= strtoupper(lang('get_started')) ?>
                                 </a>
                             </div>
