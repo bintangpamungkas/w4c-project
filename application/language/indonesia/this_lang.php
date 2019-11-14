@@ -62,6 +62,9 @@ $lang["fact_description"]="Ketahui alasannya melalui fakta-fakta tentang sampah 
 //Our Service W4C
 $lang["services_title"]="Layanan Kami";
 $lang["services_subtitle"]="Buat perubahan mulai dari hal yang terdekat di sekitarmu dan lakukan aksi nyata bersama Waste4Change";
+$lang["services_not_found"]="Tidak menemukan solusi yang anda butuhkan?";
+$lang["services_all_services"]="Semua Services";
+$lang["services_talk_to_expert"]="Konsultasi Dengan Pakar";
 
 $lang["services_individu_tab"]="Individu";
 $lang["services_individu_title"]="Mulai Dari Diri Sendiri";
@@ -73,13 +76,11 @@ $lang["services_esr_tab"]="Brand/Merk";
 $lang["services_esr_title"]="Jadilah Bagian Dari Perubahan";
 $lang["services_esr_subtitle"]="Wujudkan Indonesia yang bebas sampah dengan menjadi bagian dari solusi untuk permasalahan sampah di negeri ini";
 
-$lang["services_send_your_waste"]="Melalui program Send Your Waste, Anda dapat mengirimkan kemasan bekas kepada kami untuk memastikan kemasan bekas Anda didaur ulang dengan baik";
 $lang["services_ades"]="Kirim botol PET bekas berbagai ukuran dan merek dengan Go Send untuk mendapatkan banyak keuntungan dari Ades";
 $lang["services_poin"]="Setor kemasan bekas Anda melalui mitra di seluruh Indonesia dan dapatkan reward poin untuk berbelanja berbagai produk digital";
 $lang["services_send_your_waste_corp"]="adalah sistem pengumpulan kemasan bekas dimana konsumen dapat mengirimkan sampah mereka melalui jasa pengiriman ke alamat mitra pendaur ulang Waste4Change";
 //$lang["services_dropbox"]="Layanan pengumpulan kemasan bekas dimana konsumen secara sukarela dapat menaruh sampah di lokasi Dropping Box terdekat untuk mendukung upaya kolaborasi yang diinisiasi oleh sektor industri dan pengelola sampah.";
 $lang["services_waste_management"]="Kami menerapkan jasa pengelolaan sampah bertanggung jawab yang juga memenuhi regulasi pemerintah dan memfasilitasi klien yang mau mengelola sampahnya secara lebih bertanggung jawab melalui sistem kolaborasi dan teknologi.";
-$lang["services_dropbox"]="Adalah sistem pengumpulan kemasan bekas dimana konsumen dapat memasukkan kemasan bekas mereka ke dalam dropbox terdekat untuk mendukung upaya daur ulang kemasan secara kolaboratif bersama sektor informal dan industri";
 $lang["services_dropbox_tetrapak"]="Adalah sistem pengumpulan kemasan bekas dimana konsumen dapat memasukkan kemasan bekas mereka ke dalam dropbox terdekat untuk mendukung upaya daur ulang kemasan secara kolaboratif bersama sektor informal dan industri";
 $lang["services_dropbox_corp"]="adalah program untuk brand bersama Waste4Change melakukan upaya kampanye pengelolaan sampah kemasan brand secara bertanggung jawab dengan menyediakan akses penyetoran/pengumpulan sampah kemasan ke titik-titik dropbox yang tersedia";
 $lang["services_personal_waste_management"]="Kami mengumpulkan sampah Anda dengan melakukan penjemputan ke lokasi rumah dan memastikan sampah akan dikelola secara bertanggung jawab";
@@ -87,17 +88,25 @@ $lang["services_feasibility_study"]="Kami memberikan laporan berdasar penelitian
 $lang["services_3r"]="Kami menawarkan jasa edukasi dan penerapan 3R di komunitas atau sekolah sebagai bagian dari  program Tanggung Jawab Sosial Perusahaan dan keberlanjutan bisnis anda";
 $lang["services_event_waste_management"]="Mari berkolaborasi dengan Waste4Change untuk memastikan sampah acara Anda terpilah dan dikelola secara bertanggung jawab, baik selama acara berlangsung maupun sesudah acara";
 $lang["services_edubis"]="Edukasi Bijak Sampah adalah program yang dirancang oleh Waste4Change untuk mendidik Perusahaan, Sekolah, dan Komunitas tentang pentingnya pengelolaan sampah yang bertanggung jawab";
-$lang["services_akabis"]="Melihat dan dapatkan pengalaman langsung tentang bagaimana pengelolaan sampah dilakukan secara bertanggung jawab melalui program tur lapangan yang informatif";
 $lang["services_cleaning_service_education"]="Kami mengedukasi para Cleaning Service tentang bagaimana cara menerapkan sistem Waste4Change dalam standar operasional prosedur harian mereka";
 $lang["services_commercial_waste_management"]="Kami memfasilitasi dan mengumpulkan sampah perusahaan Anda dengan pengelolaan yang bertanggung jawab dan memastikan limbah yang masuk ke TPA berkurang.";
 $lang["services_residential_waste_management"]="Kami memfasilitasi dan mengumpulkan sampah perumahan Anda dengan pengelolaan yang bertanggung jawab dan memastikan limbah yang masuk ke TPA berkurang";
 $lang["services_inorganic_recycle_management"]="Kami memiliki Rumah Pemulihan Material (RPM)/Material Recovery Facility (MRF) untuk memproses sampah anorganik yang terkumpul menjadi bahan daur ulang";
 $lang["services_organic_composting"]="Sampah organik yang telah kami kumpulkan akan digunakan sebagai bahan pengomposan dan penyuburkan area Farm4Life";
 $lang["services_brand_page"]="Kami membuat halaman untuk menunjukkan produk dan upaya keberlanjutan dari sebuah brand yang akan dipromosikan di media sosial kami";
-$lang["services_zero_waste_to_landfill"]="Dapatkan layanan pengelolaan sampah dengan adanya pengangkutan terpilah, seluruh sampah dikelola dan diolah sehingga tidak ada sampah yang masuk ke TPA (Zero Waste to Landfill), hingga laporan alur sampah komprehensif";
 $lang["services_responsible_waste_management"]="Sampah diangkut tanpa tercampur dan dipastikan diolah secara optimal dengan sistem pengelolaan sampah bertanggung jawab dari Waste4Change";
+$lang["services_solid_waste_management_research"]="Tingkatkan pengelolaan limbah padat Anda dengan melakukan analisis menyeluruh dan mengidentifikasi sistem dan program yang paling tepat.";
 $lang["services_extended_producer_responsibility"]="Percayakan pengelolaan sampah berlabel brand/merek Anda pada Waste4Change untuk menghindari adanya penyalahgunaan, peniruan atau pemalsuan brand/merek Anda";
-$lang["black_soldier_fly_learning_center"]="Melalui BSF Learning Center, Anda akan mendapatkan pengetahuan mendalam tentang penguraian sampah organik menggunakan Black Soldier Flies (BSF), beserta metode pembudidayaan dan pembibitan BSF.";
+$lang["services_black_soldier_fly_learning_center"]="Melalui BSF Learning Center, Anda akan mendapatkan pengetahuan mendalam tentang penguraian sampah organik menggunakan Black Soldier Flies (BSF), beserta metode pembudidayaan dan pembibitan BSF.";
+
+$lang["services_zero_waste_to_landfill"]="Pengelolaan limbah holistik 100% untuk perusahaan, bangunan, dan bisnis untuk mengurangi jumlah sampah yang menumpuk di TPA.";
+$lang["services_solid_waste_management_research"]="Tingkatkan pengelolaan limbah padat Anda dengan melakukan analisis menyeluruh dan mengidentifikasi sistem dan program yang paling tepat.";
+$lang["services_in_store_recycling"]="Tingkatkan pengolahan bahan limbah berlabel merek di seluruh lini bisnis perusahaan Anda. Baik itu daur ulang di dalam toko atau program daur ulang berbasis aplikasi, kami menyediakan sistem dan solusinya !.";
+$lang["services_akabis"]="Program pendidikan pengelolaan limbah yang mencakup kunjungan ke tempat pembuangan sampah lokal dan fasilitas pengelolaan limbah Waste4Change yang merangsang semua indera (penglihatan, sentuhan, penciuman, dan pendengaran).";
+$lang["services_3r_school_program"]="Dirancang untuk mendorong meningkatnya kesadaran warga sekolah untuk menerapkan Prinsip 3R (Reduce, Reuse, Recycle) untuk penciptaan pengelolaan limbah yang bertanggung jawab di sekolah.";
+
+$lang["services_send_your_waste"]="Kirim limbah anorganik Anda ke Waste4Change dan biarkan kami mendaur ulang untuk Anda.";
+$lang["services_dropbox"]="Setor limbah anorganik Anda di dropbox Waste4Change dan biarkan kami mendaur ulang untuk Anda.";
 
 //Service
 //Name

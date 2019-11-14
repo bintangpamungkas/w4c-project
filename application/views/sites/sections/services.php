@@ -1,17 +1,17 @@
 <?php
 $service_targets=[
   [
+    'number' => 1,
     'title' => lang('services_corporate_tab'),
     'icon' => 'icon-real-estate-066 u-line-icon-pro',
-    'number' => 1,
     'subtitle' => lang('services_corporate_title'),
     'content' => lang('services_corporate_subtitle'),
     'list' => $navigation_array_corporate,
   ],
   [
+    'number' => 2,
     'title' => lang('services_individu_tab'),
     'icon' => 'icon-real-estate-003',
-    'number' => 2,
     'subtitle' => lang('services_individu_title'),
     'content' => lang('services_individu_subtitle'),
     'list' => $navigation_array_individu,
@@ -25,7 +25,7 @@ $service_targets=[
   <!--<div style="background:radial-gradient(circle farthest-side at 80% 60%, rgba(90,219,127,0.67), rgba(22,127,148,0.92))">-->
   <div class="g-bg-secondary">
     <div class="container <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-25' : 'g-py-70' ?>">
-      <div class="g-mb-50">
+      <div class="g-mb-10">
         <div class="g-font-color-w4c-1 g-font-size-35 mb-2" color><?=lang('available_services_for_your_location')?></div>
         <div class="row">
           <div class="col-md-6">
@@ -291,6 +291,62 @@ $service_targets=[
       }else{
         foreach ($service_targets as $target):
           ?>
+          <div class="my_tab_content g-bg-white g-rounded-7" id="tab-<?= $target['number'] ?>">
+            <div class="row">
+              <?php
+              $i=1;
+              foreach($target['list'] as $service){
+                if($service['visible']==true && $i<=5){
+                  ?>
+                  <div class="col-4">
+                    <div class="g-mb-5 g-bg-white <?= $this->agent->is_mobile() ? 'g-mt-10' : 'g-mt-25' ?> box-shadow-down">
+                      <div style="height: 200px;background: url(<?= base_url('assets/img/bg/services/thumbnail/'.$service['image']) ?>);background-size: cover;"></div>
+                      <div class="bg-white g-mx-20 g-px-30 g-py-20" style="margin-top: -40px; height:250px">
+                        <?php if($service['is_new']==true): ?>
+                          <span class="g-color-white g-bg-primary g-font-size-10 g-px-8 g-py-3 g-ml-5 float-right"><?= lang('new') ?></span>
+                        <?php endif; ?>
+                        <div>
+                          <h6 class="h6 g-color-black-opacity-0_5 g-font-weight-600 g-mb-5 g-font-size-10 text-uppercase"> <?= $service['category'] ?> </h6>
+                          <h4 class="h6 g-color-black g-font-weight-600 g-mb-5 g-font-size-20" style="min-height: 50px"><?= $service['title'] ?></h4>
+                          <em class="d-block g-color-gray-dark-v4 g-font-style-normal g-font-size-12 g-mb-10"><?= $service['content'] ?></em>
+                        </div>
+                        <div class="g-mb-10 d-none">
+                          <div class="m-0"><small class="g-mr-10">Recomended for</small>
+                            <?php
+                            foreach ($service['recomendation'] as $recomendation):
+                              ?>
+                              <span class="u-label u-label--sm g-bg-yellow g-px-10 g-mb-5"><?= $recomendation ?></span>
+                              <?php
+                            endforeach;
+                            ?>
+                          </div>
+                        </div>
+                        <a class="g-color-info g-color-blue--hover g-font-size-12 g-mt-10" href="<?= $service['url'] ?>"><?= strtoupper(lang('learn_more')) ?> <i class="fa fa-angle-right g-ml-10"></i> </a>
+                      </div>
+                      <br>
+                      <br>
+                    </div>
+                  </div>
+                  <?php
+                };
+                $i++;
+              };
+              ?>
+              <div class="col-4">
+                <div class="g-mb-5 g-bg-white <?= $this->agent->is_mobile() ? 'g-mt-10' : 'g-mt-25' ?> box-shadow-down">
+                  <div class="text-center bg-white g-mx-20 g-px-30 g-py-20" style=" height:453px">
+                    <div class="g-mt-100">
+                      <div class="g-font-weight-700 g-font-size-20 mb-4">
+                        <?=lang('services_not_found')?>
+                      </div>
+                      <a class="btn btn-info btn-xl btn-block g-brd-2 g-font-size-13 g-rounded-50 g-font-weight-700" href="#"><?=strtoupper(lang('services_all_services'))?></a>
+                      <a class="btn btn-outline-success btn-xl btn-block g-brd-2 g-font-size-13 g-rounded-50 g-font-weight-700" href="#"><?=strtoupper(lang('services_talk_to_expert'))?></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="g-bg-white g-rounded-10 g-my-40" style="box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.05)">
             <?php $services = $target['list']; ?>
             <div class="animated fadeIn row g-ma-0 g-rounded-7" style="background-size: cover;background-position: left;background-repeat: no-repeat">
@@ -306,8 +362,8 @@ $service_targets=[
                 <div class="col-md-9 col-12 g-pa-0 g-pr-35">
                   <div id="service-<?= $target['number'] ?>-carousel" class="owl-carousel row owl-theme" style="margin: 0!important;">
                     <?php
-                    foreach($services as $service) :
-                      if($service['visible']==true):
+                    foreach($services as $service){
+                      if($service['visible']==true){
                         ?>
                         <div class="g-mb-20 g-bg-white g-rounded-10 <?= $this->agent->is_mobile() ? 'g-mt-10' : 'g-mt-50' ?> box-shadow-down">
                           <div style="height: 200px;background: url(<?= base_url('assets/img/bg/services/thumbnail/'.$service['image']) ?>);background-size: cover;border-top-left-radius: 10px !important;border-top-right-radius: 10px !important;"></div>
@@ -339,8 +395,8 @@ $service_targets=[
                           <br>
                         </div>
                         <?php
-                      endif;
-                    endforeach;
+                      };
+                    };
                     ?>
                   </div>
                   <script>

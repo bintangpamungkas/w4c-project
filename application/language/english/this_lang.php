@@ -50,7 +50,6 @@ $lang["available_services_for_your_location"]="Available services for your locat
 $lang["enter_location"]="Enter Location";
 $lang["search"]="Search";
 
-
 //Fact Waste W4C
 $lang["fact_title"]="WHY REPONSIBLY ?";
 $lang["fact_description"]="Find out why through these waste facts below";
@@ -58,6 +57,10 @@ $lang["fact_description"]="Find out why through these waste facts below";
 //Our Service W4C
 $lang["services_title"]="Our Services";
 $lang["services_subtitle"]="Create changes starting from the things arround you and engage in conrete actions with Waste4Change";
+$lang["services_not_found"]="Not found the solution you are looking for?";
+$lang["services_all_services"]="All Services";
+$lang["services_talk_to_expert"]="Talk To Our Expert";
+
 
 $lang["services_individu_tab"]="for Individu";
 $lang["services_individu_title"]="STARTING FROM OURSELVES";
@@ -69,13 +72,11 @@ $lang["services_esr_tab"]="for Brands";
 $lang["services_esr_title"]="Be Part Of The Change";
 $lang["services_esr_subtitle"]="Make Indonesia waste-free by being a part of the solution to the waste problems that are faced by this very nation ";
 
-$lang["services_send_your_waste"]="Through the Send Your Waste program, you can send your inorganic waste to us to make sure that your waste is properly recycled";
 $lang["services_ades"]="Send used PET bottles of various sizes and brands with Go Send to get many benefits from ADES";
 $lang["services_poin"]="Deposit your used packaging through partners throughout Indonesia and get reward points for shopping for various digital products";
 $lang["services_send_your_waste_corp"]="Is a packaging-waste collecting system where consumers can send their waste using delivery services to the nearest Waste4Change's recycling partners ";
 //$lang["services_dropbox"]="A packaging waste collection service in which consumers can voluntarily submit their waste to the nearest dropping box in their neighborhood to support the collaborative packaging recycle effort initiated by industry sectors and waste collectors.";
 $lang["services_waste_management"]="We are implementing responsible municipal solid waste management services in accordance with government regulation and facilitating educated clients who want to manage their waste responsibly with collaboration system and technology.";
-$lang["services_dropbox"]="Recycle your inorganic waste and used packaging by putting in Waste4change's Drop Box";
 $lang["services_dropbox_tetrapak"]="Is a used packaging collection system where consumers can put their used packaging into the nearest dropbox to support collaborative packaging recycling efforts with the informal and industrial sectors";
 $lang["services_dropbox_corp"]="program for brand with Waste4Change is carrying out a brand used packaging management campaign responsibly by providing used packaging drop/collection access through dropping points that available";
 $lang["services_personal_waste_management"]="We collect your waste by picking it up from your house and make sure that the waste is managed responsibly";
@@ -83,16 +84,25 @@ $lang["services_feasibility_study"]="We produce report based on an in-depth rese
 $lang["services_3r"]="We offer education services and the application of 3R principles in communities or schools as a part of Corporate Social Responsibility  as well as for the sustainability aspect of your business ";
 $lang["services_event_waste_management"]="Let's collaborate with Waste4Change to ensure that the waste from your event are segregated and resposibly managed both during and after the event.";
 $lang["services_edubis"]="Edukasi bijak sampah is a program that are designed by Waste4Change to educate companies, schools, as well as communities about the importance of responsible waste management ";
-$lang["services_akabis"]="Witness and experience first-hand how waste are responsibly managed through informative field trip program ";
 $lang["services_cleaning_service_education"]="We educate Cleaning Service about how to implement the Waste4Change system in their daily operational standard procedures";
 $lang["services_commercial_waste_management"]="We facilitate and collect your compay’s waste with responsible approach and make sure to reduce waste that goes into landfills";
 $lang["services_residential_waste_management"]="We facilitate and collect your residential’s waste with responsible approach and make sure to reduce waste that goes into landfills";
 $lang["services_inorganic_recycle_management"]="We have a Material Recovery Facility (MRF) to process the inorganic waste that are collected into recycling materials.";
 $lang["services_organic_composting"]="The organic waste that has been collected will be used for composting ingredients and fertilizing our Farm4Life area";
 $lang["services_brand_page"]="We create a page specifically for your brand in order to give a summary of the latest news regarding product recycling and sustainability efforts of your company/brand, along with social media promotions";
-$lang["services_zero_waste_to_landfill"]="Subscribe to our waste management service with segregated waste collection. All of your waste will be managed and processed so that none of it will end up in landfills  (Zero Waste to Landfill), plus a report of comprehensive waste flow.";
 $lang["services_responsible_waste_management"]="The waste are collected without being mixed up and are certain to be processed optimally using a responsible waste management system from Waste4Change";
 $lang["services_extended_producer_responsibility"]="Entrust the management of your brand-labeled waste to Waste4Change to avoid any products of your brand from being misused, imitated, or forged ";
+$lang["services_black_soldier_fly_learning_center"]="Melalui BSF Learning Center, Anda akan mendapatkan pengetahuan mendalam tentang penguraian sampah organik menggunakan Black Soldier Flies (BSF), beserta metode pembudidayaan dan pembibitan BSF.";
+
+$lang["services_zero_waste_to_landfill"]="A 100% holistic waste management for companies, buildings, and businesses to reduce the number of waste that piles up in the landfill.";
+$lang["services_solid_waste_management_research"]="Improve your solid waste management by conducting a thorough analysis and identifying the most appropriate system and programs.";
+$lang["services_in_store_recycling"]="Increase the material processing of brand-labelled waste throughout your company’s business line. Whether it’s in-store recycling or app-based recycling program, we provide both the system and solution!.";
+$lang["services_akabis"]="Waste management education program that includes a visit to local landfill and Waste4Change’s waste management facilities that stimulates all 4 senses (sight, touch, smell, and hearing).";
+$lang["services_3r_school_program"]="Designed to encourage the increasing awareness of school residents to apply 3R Principles (Reduce, Reuse, Recycle) for the creation of responsible waste management in schools.";
+
+$lang["services_send_your_waste"]="Send your inorganic waste to Waste4Change and let us recycle it for you.";
+$lang["services_dropbox"]="Deposit your inorganic waste in Waste4Change’s dropbox and let us recycle it for you.";
+
 
 //Service
 //Name
