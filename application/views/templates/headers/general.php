@@ -6,7 +6,7 @@
         if(!$this->agent->is_mobile()){
         // if(1==0){
           ?>
-          <div class="g-brd-none g-pa-0 g-pos-abs g-top-10 click-modal" style="right: 60px;" data-toggle="modal" href="#globalModal" data-modal-title="Language" data-content="#set_language">
+          <!-- <div class="g-brd-none g-pa-0 g-pos-abs g-top-10 click-modal" style="right: 60px;" data-toggle="modal" href="#globalModal" data-modal-title="Language" data-content="#set_language">
             <?php
             if(!$this->session->userdata('language') || $this->session->userdata('language')=='id'){
               ?>
@@ -20,7 +20,7 @@
               <?php
             }
             ?>
-          </div>
+          </div> -->
           <?php
         } // end $this->agent->is_mobile()
         ?>

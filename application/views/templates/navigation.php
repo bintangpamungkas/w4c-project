@@ -145,7 +145,7 @@
                 <?php
                 foreach ($nav['menu'] as $menu){
                   if($menu['visible']==true):
-                    ?>
+                    ?>  
                     <li class="dropdown-item ">
                       <a class="nav-link <?= $menu['title']=='EN' && ($this->session->userdata('language')=='en') ? 'g-color-info' : ($menu['title']=='ID' && (!$this->session->userdata('language') || $this->session->userdata('language')=='id') ? 'g-color-info' : 'g-color-black-opacity-0_8') ?>" href="<?= $menu['url'] ?>"><?= $menu['title'] ?></a>
                     </li>
