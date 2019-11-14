@@ -221,6 +221,10 @@ $lang['welcome_cta_share']="BAGIKAN";
 
 //counter
 $lang['counter_title']="Pencapaian Kami";
+$lang['counter_subtitle']="Kami menciptakan ekosistem pengelolaan limbah yang bertanggung jawab di Indonesia";
+$lang['counter_client']="Klien";
+$lang['counter_project']="Proyek";
+$lang['counter_partner']="Mitra";
 $lang['counter_label_change_maker']="Pembuat Perubahan";
 $lang['counter_label_recycled_waste']="Kemasan Terdaur Ulang";
 $lang['counter_label_success_campaign']="Kampanye Sukses";

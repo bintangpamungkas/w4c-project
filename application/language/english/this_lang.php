@@ -218,6 +218,10 @@ $lang["welcome_cta_share"]="SHARE";
 
 //counter
 $lang['counter_title']="Our Achievement";
+$lang['counter_subtitle']="We create an ecosystem of responsible waste management in Indonesia";
+$lang['counter_client']="CLient";
+$lang['counter_project']="Project";
+$lang['counter_partner']="Partner";
 $lang["counter_label_change_maker"]="Change Maker";
 $lang["counter_label_recycled_waste"]="Recycled Used Packaging";
 $lang["counter_label_success_campaign"]="Success Campaign";

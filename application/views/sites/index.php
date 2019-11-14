@@ -84,7 +84,7 @@ $this->load->view('sites/sections/services');
 ?>
 
 <?php
-$this->load->view('sites/sections/about');
+$this->load->view('sites/sections/counter');
 ?>
 
 <?php

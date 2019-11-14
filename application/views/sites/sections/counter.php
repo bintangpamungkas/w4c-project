@@ -1,140 +1,36 @@
-
-<div class="col-md-12" style="position: absolute;margin-top: -150px;display: flex">
-    <div id="counter" style="height: 10px;position: absolute;width: 80%;margin-top: -100px"></div>
-
-    <!-- Box Shadow -->
-    <div class="<?= $this->agent->is_mobile() ? '' : 'col-md-12' ?>">
-        <div class="<?= $this->agent->is_mobile() ? '' : 'container' ?>">
-            <div class="u-shadow-v1-5 g-line-height-2 bg-white g-rounded-6" role="alert" style="padding: <?= $this->agent->is_mobile() ? '30px' : '50px' ?>!important;">
-
-                <div class="row">
-                    <div class="col-md-2">
-                        <header class="text-uppercase g-mb-35">
-                            <div class="g-mb-15">
-                                <h6 class="g-color-info d-none"><?= lang('about') ?> <strong>Waste4Change</strong></h6>
-                                <h3 class="h3 g-font-weight-700 mb-0 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= lang('counter_title') ?></h3>
-                            </div>
-                            <div class="g-width-70 g-brd-bottom g-brd-2 g-brd-blue"></div>
-                        </header>
-                    </div>
-                    <div class="col-md-10">
-                        <?php
-                        if($title=='brand'){
-                            if($brand_id=='cocacola'){
-                                ?>
-                                <div class="row">
-                                    <div class="col-lg-6 col-sm-6 g-pb-30">
-                                        <div class="d-flex justify-content-sm-center">
-                        <span class="u-icon-v3 g-bg-teal rounded-circle g-mt-2 g-mr-15 g-color-white">
-                          <i class="icon-user"></i>
-                        </span>
-
-                                            <div class="g-line-height-1" style="<?= $this->agent->is_mobile() ? 'padding-top: 8px' : '' ?>">
-                                                <h4 class="g-font-weight-300 <?= $this->agent->is_mobile() ? 'g-font-size-25' : 'g-font-size-35' ?>" style="margin: 0!important;line-height: 1.2">2<?= lang('separator_coma') ?>427</h4>
-                                                <div class="js-counter g-color-black-opacity-0_3 <?= $this->agent->is_mobile() ? 'g-font-size-10' : 'g-font-size-16' ?>" data-comma-separated="true"><?= lang('counter_label_change_maker') ?></div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6 col-sm-6 g-pb-30">
-                                        <div class="d-flex justify-content-sm-center">
-                        <span class="u-icon-v3 g-bg-primary rounded-circle g-mt-2 g-mr-15 g-color-white">
-                          <i class="et-icon-recycle"></i>
-                        </span>
-
-                                            <div class="g-line-height-1" style="<?= $this->agent->is_mobile() ? 'padding-top: 8px' : '' ?>">
-                                                <h4 class="g-font-weight-300 <?= $this->agent->is_mobile() ? 'g-font-size-25' : 'g-font-size-35' ?>" style="margin: 0!important;line-height: 1.2">3<?= lang('separator_coma') ?>002 <span class="g-font-size-18 text-muted">KG</span></h4>
-                                                <div class="js-counter g-color-black-opacity-0_3 <?= $this->agent->is_mobile() ? 'g-font-size-10' : 'g-font-size-16' ?>" data-comma-separated="true"><?= lang('counter_label_recycled_waste') ?></div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                                <?php
-                            }else if($brand_id=='tetrapak'){
-                                ?>
-                                <div class="row">
-                                    <div class="col-lg-6 col-sm-6 g-pb-30">
-                                        <div class="d-flex justify-content-sm-center">
-                        <span class="u-icon-v3 g-bg-teal rounded-circle g-mt-2 g-mr-15 g-color-white">
-                          <i class="icon-user"></i>
-                        </span>
-
-                                            <div class="g-line-height-1" style="<?= $this->agent->is_mobile() ? 'padding-top: 8px' : '' ?>">
-                                                <h4 class="g-font-weight-300 <?= $this->agent->is_mobile() ? 'g-font-size-25' : 'g-font-size-35' ?>" style="margin: 0!important;line-height: 1.2">10</h4>
-                                                <div class="js-counter g-color-black-opacity-0_3 <?= $this->agent->is_mobile() ? 'g-font-size-10' : 'g-font-size-16' ?>" data-comma-separated="true">Mitra</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6 col-sm-6 g-pb-30">
-                                        <div class="d-flex justify-content-sm-center">
-                        <span class="u-icon-v3 g-bg-primary rounded-circle g-mt-2 g-mr-15 g-color-white">
-                          <i class="et-icon-recycle"></i>
-                        </span>
-
-                                            <div class="g-line-height-1" style="<?= $this->agent->is_mobile() ? 'padding-top: 8px' : '' ?>">
-                                                <h4 class="g-font-weight-300 <?= $this->agent->is_mobile() ? 'g-font-size-25' : 'g-font-size-35' ?>" style="margin: 0!important;line-height: 1.2">107<?= lang('separator_coma') ?>270 <span class="g-font-size-18 text-muted">KG</span></h4>
-                                                <div class="js-counter g-color-black-opacity-0_3 <?= $this->agent->is_mobile() ? 'g-font-size-10' : 'g-font-size-16' ?>" data-comma-separated="true"><?= lang('counter_label_recycled_waste') ?></div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <?php
-                            }
-                        }else{
-                            ?>
-                            <div class="row">
-                                <div class="col-lg-4 col-sm-6 g-pb-30">
-                                    <div class="d-flex justify-content-sm-center">
-                        <span class="u-icon-v3 g-bg-teal rounded-circle g-mt-2 g-mr-15 g-color-white">
-                          <i class="icon-user"></i>
-                        </span>
-
-                                        <div class="g-line-height-1" style="<?= $this->agent->is_mobile() ? 'padding-top: 8px' : '' ?>">
-                                            <h4 class="g-font-weight-300 <?= $this->agent->is_mobile() ? 'g-font-size-25' : 'g-font-size-35' ?>" style="margin: 0!important;line-height: 1.2">2<?= lang('separator_coma') ?>472</h4>
-                                            <div class="js-counter g-color-black-opacity-0_3 <?= $this->agent->is_mobile() ? 'g-font-size-10' : 'g-font-size-16' ?>" data-comma-separated="true"><?= lang('counter_label_change_maker') ?></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-sm-6 g-pb-30">
-                                    <div class="d-flex justify-content-sm-center">
-                        <span class="u-icon-v3 g-bg-primary rounded-circle g-mt-2 g-mr-15 g-color-white">
-                          <i class="et-icon-recycle"></i>
-                        </span>
-
-                                        <div class="g-line-height-1" style="<?= $this->agent->is_mobile() ? 'padding-top: 8px' : '' ?>">
-                                            <h4 class="g-font-weight-300 <?= $this->agent->is_mobile() ? 'g-font-size-25' : 'g-font-size-35' ?>" style="margin: 0!important;line-height: 1.2">110<?= lang('separator_coma') ?>272 <span class="g-font-size-18 text-muted">KG</span></h4>
-                                            <div class="js-counter g-color-black-opacity-0_3 <?= $this->agent->is_mobile() ? 'g-font-size-10' : 'g-font-size-16' ?>" data-comma-separated="true"><?= lang('counter_label_recycled_waste') ?></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-sm-6 g-pb-30">
-                                    <div class="d-flex justify-content-sm-center">
-                        <span class="u-icon-v3 g-bg-cyan rounded-circle g-mt-2 g-mr-15 g-color-white">
-                          <i class="et-icon-megaphone"></i>
-                        </span>
-
-                                        <div class="g-line-height-1" style="<?= $this->agent->is_mobile() ? 'padding-top: 8px' : '' ?>">
-                                            <h4 class="g-font-weight-300 <?= $this->agent->is_mobile() ? 'g-font-size-25' : 'g-font-size-35' ?>" style="margin: 0!important;line-height: 1.2">1<?= lang('separator_coma') ?>200</h4>
-                                            <div class="js-counter g-color-black-opacity-0_3 <?= $this->agent->is_mobile() ? 'g-font-size-10' : 'g-font-size-16' ?>" data-comma-separated="true"><?= lang('counter_label_success_campaign') ?></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <?php
-                        }
-                        ?>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+<section class="g-bg-gray-light-v5 dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-overflow-hidden" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
+  <div class="divimage dzsparallaxer--target w-100 d-none" style="height: 130%; background-image: url(<?= base_url('assets/img/bg/img36.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
+  <div class="container <?= $this->agent->is_mobile() ? 'g-pt-75 g-pb-30' : 'g-pt-140 g-pb-70' ?>">
+    <div class="text-center g-mb-50">
+      <h2 class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= strtoupper(lang('counter_title')) ?></h2>
+      <p class="text-muted"><?= lang('counter_subtitle') ?></p>
     </div>
-    <!-- End Box Shadow -->
+    <div class="row text-center">
+      <div class="col-md-4 col-xs-12 mb-4">
+        <div class="g-font-color-w4c-green-v1 g-font-size-50 g-font-weight-900">
+            9999
+        </div>
+        <div class="g-font-weight-700 g-font-size-18">
+          <?=lang('counter_client')?>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12 mb-4">
+        <div class="g-font-color-w4c-green-v1 g-font-size-50 g-font-weight-900">
+            9999
+        </div>
+        <div class="g-font-weight-700 g-font-size-18">
+          <?=lang('counter_project')?>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12 mb-4 ">
+        <div class="g-font-color-w4c-green-v1 g-font-size-50 g-font-weight-900">
+            9999
+        </div>
+        <div class="g-font-weight-700 g-font-size-18">
+          <?=lang('counter_partner')?>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+</section>
