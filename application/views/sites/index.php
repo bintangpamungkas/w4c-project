@@ -88,11 +88,11 @@ $this->load->view('sites/sections/counter');
 ?>
 
 <?php
-$this->load->view('sites/sections/testimonial');
+$this->load->view('sites/sections/client');
 ?>
 
 <?php
-$this->load->view('sites/sections/client');
+$this->load->view('sites/sections/testimonial');
 ?>
 
 <?php

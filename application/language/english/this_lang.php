@@ -222,6 +222,7 @@ $lang['counter_subtitle']="We create an ecosystem of responsible waste managemen
 $lang['counter_client']="CLient";
 $lang['counter_project']="Project";
 $lang['counter_partner']="Partner";
+$lang['more_about_us']="More About Us";
 $lang["counter_label_change_maker"]="Change Maker";
 $lang["counter_label_recycled_waste"]="Recycled Used Packaging";
 $lang["counter_label_success_campaign"]="Success Campaign";

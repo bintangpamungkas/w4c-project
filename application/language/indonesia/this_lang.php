@@ -225,6 +225,7 @@ $lang['counter_subtitle']="Kami menciptakan ekosistem pengelolaan limbah yang be
 $lang['counter_client']="Klien";
 $lang['counter_project']="Proyek";
 $lang['counter_partner']="Mitra";
+$lang['more_about_us']="Lebih Tentang Kami";
 $lang['counter_label_change_maker']="Pembuat Perubahan";
 $lang['counter_label_recycled_waste']="Kemasan Terdaur Ulang";
 $lang['counter_label_success_campaign']="Kampanye Sukses";
