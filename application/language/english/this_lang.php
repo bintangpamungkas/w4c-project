@@ -61,7 +61,6 @@ $lang["services_not_found"]="Not found the solution you are looking for?";
 $lang["services_all_services"]="All Services";
 $lang["services_talk_to_expert"]="Talk To Our Expert";
 
-
 $lang["services_individu_tab"]="for Individu";
 $lang["services_individu_title"]="STARTING FROM OURSELVES";
 $lang["services_individu_subtitle"]="Start from the simple things, segregate your waste and recycle it by utilizing Waste4Change's various recycling programs.";
@@ -72,6 +71,10 @@ $lang["services_esr_tab"]="for Brands";
 $lang["services_esr_title"]="Be Part Of The Change";
 $lang["services_esr_subtitle"]="Make Indonesia waste-free by being a part of the solution to the waste problems that are faced by this very nation ";
 
+//All Service Page
+$lang["services_all_choose_the_right_solution"]="Choose The Right Solution for Your Business";
+
+//Service Description
 $lang["services_ades"]="Send used PET bottles of various sizes and brands with Go Send to get many benefits from ADES";
 $lang["services_poin"]="Deposit your used packaging through partners throughout Indonesia and get reward points for shopping for various digital products";
 $lang["services_send_your_waste_corp"]="Is a packaging-waste collecting system where consumers can send their waste using delivery services to the nearest Waste4Change's recycling partners ";
@@ -82,7 +85,6 @@ $lang["services_dropbox_corp"]="program for brand with Waste4Change is carrying 
 $lang["services_personal_waste_management"]="We collect your waste by picking it up from your house and make sure that the waste is managed responsibly";
 $lang["services_feasibility_study"]="We produce report based on an in-depth research about Your Company's waste management and give recommendations on responsible waste management for Your Company ";
 $lang["services_3r"]="We offer education services and the application of 3R principles in communities or schools as a part of Corporate Social Responsibility  as well as for the sustainability aspect of your business ";
-$lang["services_event_waste_management"]="Let's collaborate with Waste4Change to ensure that the waste from your event are segregated and resposibly managed both during and after the event.";
 $lang["services_edubis"]="Edukasi bijak sampah is a program that are designed by Waste4Change to educate companies, schools, as well as communities about the importance of responsible waste management ";
 $lang["services_cleaning_service_education"]="We educate Cleaning Service about how to implement the Waste4Change system in their daily operational standard procedures";
 $lang["services_commercial_waste_management"]="We facilitate and collect your compay’s waste with responsible approach and make sure to reduce waste that goes into landfills";
@@ -90,11 +92,14 @@ $lang["services_residential_waste_management"]="We facilitate and collect your r
 $lang["services_inorganic_recycle_management"]="We have a Material Recovery Facility (MRF) to process the inorganic waste that are collected into recycling materials.";
 $lang["services_organic_composting"]="The organic waste that has been collected will be used for composting ingredients and fertilizing our Farm4Life area";
 $lang["services_brand_page"]="We create a page specifically for your brand in order to give a summary of the latest news regarding product recycling and sustainability efforts of your company/brand, along with social media promotions";
-$lang["services_responsible_waste_management"]="The waste are collected without being mixed up and are certain to be processed optimally using a responsible waste management system from Waste4Change";
+$lang["services_responsible_waste_management"]="A 100% holistic waste management for companies, buildings, and businesses to reduce the number of waste that piles up in the landfill.";
 $lang["services_extended_producer_responsibility"]="Entrust the management of your brand-labeled waste to Waste4Change to avoid any products of your brand from being misused, imitated, or forged ";
 $lang["services_black_soldier_fly_learning_center"]="Melalui BSF Learning Center, Anda akan mendapatkan pengetahuan mendalam tentang penguraian sampah organik menggunakan Black Soldier Flies (BSF), beserta metode pembudidayaan dan pembibitan BSF.";
 
-$lang["services_zero_waste_to_landfill"]="A 100% holistic waste management for companies, buildings, and businesses to reduce the number of waste that piles up in the landfill.";
+$lang["services_event_waste_management"]="Through the placement of segregated waste bins in strategic places, as well as segregated waste collection for all of the waste that are produced during your event, we will help your event’s waste management to be more well-prepared and responsible!";
+$lang["services_inorganic_waste_management"]="Treat your inorganic waste the right way and make sure that your inorganic waste are recycled and included in the sustainable circular system.";
+
+$lang["services_zero_waste_to_landfill"]="Take an active part in preventing our local landfills from becoming overcapacity! Through our waste collection and waste recycling program: Zero Waste to Landfill, we will ensure that none of your waste ends up in the landfill!";
 $lang["services_solid_waste_management_research"]="Improve your solid waste management by conducting a thorough analysis and identifying the most appropriate system and programs.";
 $lang["services_in_store_recycling"]="Increase the material processing of brand-labelled waste throughout your company’s business line. Whether it’s in-store recycling or app-based recycling program, we provide both the system and solution!.";
 $lang["services_akabis"]="Waste management education program that includes a visit to local landfill and Waste4Change’s waste management facilities that stimulates all 4 senses (sight, touch, smell, and hearing).";
@@ -132,11 +137,13 @@ $lang['facility_subtitle_plus']="program";
 $lang['recomendation_title']="Recomended for";
 $lang['recomendation_subtitle']="is highly recommended for places such as";
 $lang['recomendation_subtitle_brand']="is highly recommended for :";
+$lang['recomendation_fors']="Recommended for :";
 $lang['office']="offices complex";
+$lang['office_block']="Office Blocks";
 $lang['restaurant']="restaurants";
 $lang['hotel']="hotels";
 $lang['building']="buildings";
-$lang['residential']="residential";
+$lang['residential']="Residential Area/Housing";
 $lang['residence']="residences";
 $lang['brand']="brand";
 $lang['product']="product";

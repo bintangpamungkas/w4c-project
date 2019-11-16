@@ -26,11 +26,6 @@ $lang["welcome_title_2"]="Secara";
 $lang["welcome_title_3"]="Bertanggung Jawab";
 $lang["welcome_title_4"]="";
 $lang["welcome_title_5"]="bersama Waste4Change";
-// $lang["welcome_title_1"]="It's time to";
-// $lang["welcome_title_2"]="";
-// $lang["welcome_title_3"]="Responsibly";
-// $lang["welcome_title_4"]="Manage Your Waste";
-// $lang["welcome_title_5"]="with Waste4Change";
 
 //Register Page W4C
 $lang["register_description"]="Isi form berikut untuk mendaftarkan diri Anda";
@@ -76,6 +71,10 @@ $lang["services_esr_tab"]="Brand/Merk";
 $lang["services_esr_title"]="Jadilah Bagian Dari Perubahan";
 $lang["services_esr_subtitle"]="Wujudkan Indonesia yang bebas sampah dengan menjadi bagian dari solusi untuk permasalahan sampah di negeri ini";
 
+//All Service Page
+$lang["services_all_choose_the_right_solution"]="Pilih Solusi yang Tepat untuk Bisnis Anda";
+
+//Service Description
 $lang["services_ades"]="Kirim botol PET bekas berbagai ukuran dan merek dengan Go Send untuk mendapatkan banyak keuntungan dari Ades";
 $lang["services_poin"]="Setor kemasan bekas Anda melalui mitra di seluruh Indonesia dan dapatkan reward poin untuk berbelanja berbagai produk digital";
 $lang["services_send_your_waste_corp"]="adalah sistem pengumpulan kemasan bekas dimana konsumen dapat mengirimkan sampah mereka melalui jasa pengiriman ke alamat mitra pendaur ulang Waste4Change";

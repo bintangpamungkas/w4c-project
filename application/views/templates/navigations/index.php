@@ -169,7 +169,7 @@
     if (!$this->agent->is_mobile()){
       ?>
       <div class="hs-has-sub-menu nav-item g-mx-20--lg" data-animation-in="fadeIn" data-animation-out="fadeOut" data-position="right">
-        <a href="javascript:void()" class="g-color-black g-font-size-12 nav-link px-0" style="line-height: 1" aria-haspopup="true" aria-expanded="false">
+        <a href="javascript:void()" class="nav-change-scroll g-color-black g-font-size-12 nav-link px-0  g-color-white" style="line-height: 1" aria-haspopup="true" aria-expanded="false">
           <img src="https://localhost/w4c/official/assets/img/icons/flag_indonesia.png" style="border: 1px solid rgba(0,0,0,0.1);height: 13px;margin-bottom: 2px">
           ID
         </a>

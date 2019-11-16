@@ -156,12 +156,13 @@
     border: none!important;
 }
 
-.tab-active{
+.my_tab.tab-active{
     box-shadow: none!important;
     border-top: 8px solid #159CBD!important;
     color: black!important;
     background: white!important;
 }
+
 .tab-active i{
   color: #159CBD!important;
 }
@@ -186,6 +187,19 @@
     transition-timing-function: ease-in;
     border-top: 8px solid #ededed;
     background-color: #ededed;
+}
+.my_tab_2{
+    transition-property: color, background-color, border-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+    border-bottom: 4px solid white;
+    background-color: white;
+}
+.my_tab_2.tab-active{
+  box-shadow: none!important;
+  border-bottom: 4px solid #159CBD!important;
+  color: #159CBD!important;
+  background: #fafafa!important;
 }
 
 .g-bg-white-all{
