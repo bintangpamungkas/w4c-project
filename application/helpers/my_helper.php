@@ -6,6 +6,7 @@ function get_image($image,$replace=null){
     $directory=base_url($image);
   }
   if (file_exists($directory)) {
+    return $directory;
   }else {
     if ($replace!=null) {
       if (file_exists($replace)) {
