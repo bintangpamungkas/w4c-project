@@ -12,15 +12,21 @@ class Service extends MY_Controller
   }
 
   public function index(){
-    $lang='id';
+    if (empty($this->session->userdata('language'))) {
+      $lang = 'id';
+    }else {
+      $lang = $this->session->userdata('language');
+    }
     $services=$this->service_model->service_list($lang);
     foreach ($services as $service) {
       $rec=$this->service_model->service_recomendation($lang,$service->service_id);
       $service->recomendation=$rec;
       $serv[]=$service;
     }
-    print_r($serv);
-    die();
+    $data['services']=$serv;
+    $data['service_targets']=$this->crud_model->select('service_target',QUERY_RESULT,['dictionary.dictionary_content service_target_name','service_target_icon'],['language_code'=>$lang,'deleted_at'=>null],['service_target'=>['dictionary'=>'dictionary_slug=service_target_name']]);
+//     print_r($data['services']);
+// die();
     $data['title']='';
     $data['id']='site';
     $data['subtitle']='information';

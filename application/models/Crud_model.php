@@ -36,7 +36,7 @@ class Crud_model extends CI_Model
     return $this->db->get();
   }
 
-  function select($table,$query=null, $select=null, $where=null, $join=null, $order_by=null){
+  function select($table,$query=null, $select=null, $where=null, $join_from=null, $order_by=null){
     if($select!=null){
       $this->db->select($select);
     }else{
@@ -44,10 +44,16 @@ class Crud_model extends CI_Model
     }
     // $this->db->select($table.'.'.$table.'_id id');
     $this->db->from(PREFIX_TABLE.$table.' '.$table);
-    if ($join!=null) {
-      foreach ($join as $module=>$array) {
-        foreach ($array as $param2=>$value2){
-          $this->db->join(PREFIX_TABLE.$param2.' '.$param2, $param2.'.'.$value2.'= '.$module.'.'.$value2, 'left');
+    if ($join_from!=null) {
+      foreach ($join_from as $table_from=>$on) {
+        foreach ($on as $table_to=>$on){
+          $param=explode("=", $on,2);
+
+          if (count($param)==1) {
+            $this->db->join(PREFIX_TABLE.$table_to.' '.$table_to, $table_to.'.'.$param[0].'= '.$table_from.'.'.$param[0], 'left');
+          }else{
+            $this->db->join(PREFIX_TABLE.$table_to.' '.$table_to, $table_to.'.'.$param[0].'= '.$table_from.'.'.$param[1], 'left');
+          }
         }
       }
     }

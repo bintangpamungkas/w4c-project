@@ -72,6 +72,7 @@ $lang["services_esr_title"]="Be Part Of The Change";
 $lang["services_esr_subtitle"]="Make Indonesia waste-free by being a part of the solution to the waste problems that are faced by this very nation ";
 
 //All Service Page
+$lang["all"]="All";
 $lang["services_all_choose_the_right_solution"]="Choose The Right Solution for Your Business";
 
 //Service Description

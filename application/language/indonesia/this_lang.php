@@ -72,6 +72,7 @@ $lang["services_esr_title"]="Jadilah Bagian Dari Perubahan";
 $lang["services_esr_subtitle"]="Wujudkan Indonesia yang bebas sampah dengan menjadi bagian dari solusi untuk permasalahan sampah di negeri ini";
 
 //All Service Page
+$lang["all"]="Semua";
 $lang["services_all_choose_the_right_solution"]="Pilih Solusi yang Tepat untuk Bisnis Anda";
 
 //Service Description

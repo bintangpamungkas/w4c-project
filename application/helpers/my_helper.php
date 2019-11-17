@@ -1,4 +1,23 @@
 <?php
+function get_image($image,$replace=null){
+  if( strpos( $image, 'http' ) !== false) {
+    $directory=$image;
+  }else {
+    $directory=base_url($image);
+  }
+  if (file_exists($directory)) {
+  }else {
+    if ($replace!=null) {
+      if (file_exists($replace)) {
+        return $replace;
+      }else {
+        return base_url('assets/img/error/1x2.png');
+      }
+    }else {
+      return base_url('assets/img/error/1x2.png');
+    }
+  }
+}
 
 function view_date($date, $with_time=NULL, $as_month=NULL, $region=null, $with_day=null){
 
@@ -262,7 +281,6 @@ function services_list_helper2(){
     ];
     return $services;
 }
-
 
 function meta_data($activation){
     $param=[
