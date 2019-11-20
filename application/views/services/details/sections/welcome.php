@@ -21,12 +21,6 @@
                   <i class="fa fa-info"></i>
                 </span>
               </a>
-              <a class="click_scroll btn btn-outline-info g-brd-2 g-font-size-13 g-rounded-50 g-pl-20 g-pr-20 g-py-9 <?= $this->agent->is_mobile() ? 'btn-block' : 'g-ml-10' ?>" href="#about">
-                <?= strtoupper(lang('learn_more')) ?>
-                <span class="align-middle d-none u-icon-v3 g-width-16 g-height-16 g-color-black g-bg-white g-font-size-11 rounded-circle ml-3">
-                  <i class="fa fa-angle-right"></i>
-                </span>
-              </a>
             </div>
           </div>
         </div>

@@ -33,23 +33,31 @@
           <i class="icon-arrow-down"></i>
         </button>
         <!-- End Responsive Toggle Button -->
-        <!-- <a href="#welcome" class="click_scroll navbar-brand g-font-size-12 g-font-weight-700 d-inline-flex g-color-black-opacity-0_8 g-py-10">
+        <a href="#welcome" class="click_scroll navbar-brand g-font-size-12 g-font-weight-700 d-inline-flex g-color-black-opacity-0_8 g-py-10">
           <i class="et-icon-recycle g-mr-12 g-font-size-24 <?= $this->agent->is_mobile() ? '' : '' ?> d-none"></i>
-          <div class="<?= $this->agent->is_mobile() ? 'g-mt-0' : 'g-mt-0' ?>">
-            <?= $service->service_name ?>
-          </div>
-        </a> -->
+          <?php if($this->agent->is_mobile()): ?>
+            <div class="">
+              <?= $service->service_name ?>
+            </div>
+          <?php endif; ?>
+        </a>
         <div class="collapse navbar-collapse align-items-center flex-sm-row" id="navBar2">
           <ul class="navbar-nav text-uppercase g-font-weight-600 mr-auto">
             <?php foreach ($subnav as $subnav): ?>
               <?php if (!empty($subnav->section_menu_name)): ?>
-              <li class="nav-item g-my-2 <?= $this->agent->is_mobile() ? 'g-my-10' : '' ?> g-mx-20--lg">
-                <a href="#<?= $subnav->section_slug ?>" class="font-weight-normal g-font-size-11 click_scroll nav-link px-0 b-color-white g-color-blue--hover" style="line-height: 1"><?= $subnav->section_menu_name ?>
-                </a>
-              </li>
-            <?php endif; ?>
+                <li class="nav-item g-my-2 <?= $this->agent->is_mobile() ? 'g-my-10' : '' ?> g-mx-20--lg">
+                  <a href="#<?= $subnav->section_slug ?>" class="font-weight-normal g-font-size-11 click_scroll nav-link px-0 b-color-white g-color-blue--hover" style="line-height: 1"><?= $subnav->section_menu_name ?>
+                  </a>
+                </li>
+              <?php endif; ?>
             <?php endforeach; ?>
           </ul>
+          <a class="click_scroll btn btn-info g-color-white g-brd-white-opacity-0_2 g-brd-2 g-font-size-13 g-rounded-50 g-px-20 <?= $this->agent->is_mobile() ? 'btn-block mb-4' : '' ?>" href="<?= site_url('service/'.$service_id.'/join') ?>">
+            <?= strtoupper(lang('get_proposal')) ?>
+            <span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3">
+              <i class="fa fa-info"></i>
+            </span>
+          </a>
         </div>
       </div>
     </nav>
