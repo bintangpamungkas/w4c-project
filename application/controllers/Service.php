@@ -12,11 +12,8 @@ class Service extends MY_Controller
   }
 
   public function index(){
-    if (empty($this->session->userdata('language'))) {
-      $lang = 'id';
-    }else {
-      $lang = $this->session->userdata('language');
-    }
+    $lang = $this->get_language();
+
     $services=$this->service_model->service_list($lang);
     foreach ($services as $service) {
       $rec=$this->service_model->service_recomendation($lang,$service->service_id);
@@ -47,11 +44,11 @@ class Service extends MY_Controller
   }
 
   public function detail($service_slug){
-    if (empty($this->session->userdata('language'))) {
-      $lang = 'en';
-    }else {
-      $lang = $this->session->userdata('language');
-    }
+    $lang = $this->get_language();
+
+    $service=$this->service_model->get_service($lang,$service_slug);
+    $subnav=$this->crud_model->select('service_section',QUERY_RESULT,['section.section_id','section_slug','(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_menu_name AND dictionary.language_code="'.$lang.'") as section_menu_name','(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_name AND dictionary.language_code="'.$lang.'") as section_name'],['service_id'=>$service->service_id],['service_section'=>['section'=>'section_id']]);
+
     $data['title']='';
     $data['id']='service';
     $data['subtitle']='information';
@@ -60,9 +57,51 @@ class Service extends MY_Controller
     $data['service_name']=str_replace('-', ' ', lang($data['service_id']));
     $data['page_heading']=$data['service_name'];
     $data['is_bilingual']=true;
+    // print_r($service);
+    // print_r($subnav);
+    // die();
+    $data['subnav']=$subnav;
+    // $data['subnav']=
+    // [
+    //   [
+    //     'title' => lang('about_general'),
+    //     'url' => '#about',
+    //     'type' => 'link',
+    //   ],
+    //   [
+    //     'title' => lang('solution'),
+    //     'url' => '#feature',
+    //     'type' => 'link',
+    //   ],
+    //   [
+    //     'title' => lang('facility'),
+    //     'url' => '#facility',
+    //     'type' => 'link',
+    //   ],
+    //   [
+    //     'title' => lang('client_only_title'),
+    //     'url' => '#client',
+    //     'type' => 'link',
+    //   ],
+    //   [
+    //     'title' => lang('recomended_user'),
+    //     'url' => '#recomended_for',
+    //     'type' => 'link',
+    //   ],
+    //   [
+    //     'title' => lang('get_started'),
+    //     'url' => '#cta',
+    //     'type' => 'button',
+    //     'option' => [
+    //       'btn-color' => 'btn-info',
+    //       'icon' => 'fa fa-chevron-right',
+    //       'option-class' => 'd-none animated bounceInRight toggle-hide',
+    //     ],
+    //   ],
+    // ];
 
-    $service=$this->service_model->get_service($lang,$service_slug);
-    $data['sections']=$this->crud_model->select('service_section',QUERY_RESULT,['(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=section_name AND language_code="'.$lang.'") as section_name','(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=section_menu_name AND language_code="'.$lang.'") as section_menu_name'],['service_section.service_id'=>$service->service_id,'service_section.deleted_at'=>null],['service_section'=>['section'=>'section_id']]);
+    $data['service']=$service;
+    $data['sections']=$subnav;
     // $achievement=$this->crud_model->select('achievement',QUERY_RESULT,['(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=section_name AND language_code="'.$lang.'") as section_name','(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=section_menu_name AND language_code="'.$lang.'") as section_menu_name'],['service_section.service_id'=>$service->service_id,'service_section.deleted_at'=>null],['service_section'=>['section'=>'section_id']]);
     $data['benefit']=$this->crud_model->select('benefit',QUERY_RESULT,['benefit_icon','(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=benefit_name AND language_code="'.$lang.'") as benefit_name'],['service_id'=>$service->service_id,'deleted_at'=>null]);
     $data['facility']=$this->crud_model->select('facility',QUERY_RESULT,['facility_icon','(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=facility_name AND language_code="'.$lang.'") as facility_name'],['service_id'=>$service->service_id,'deleted_at'=>null]);
@@ -70,10 +109,9 @@ class Service extends MY_Controller
     $data['photofolio']=$this->crud_model->select('photofolio',QUERY_RESULT,'',['service_id'=>$service->service_id,'deleted_at'=>null]);
     $data['client']=$this->crud_model->select('client',QUERY_RESULT,'',['service_id'=>$service->service_id,'deleted_at'=>null]);
     $data['recomendation']=$this->crud_model->select('service_recomendation',QUERY_RESULT,['recomendation_icon','recomendation_color','(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=recomendation_name AND language_code="'.$lang.'") as recomendation_name'],['service_recomendation.service_id'=>$service->service_id,'service_recomendation.deleted_at'=>null],['service_recomendation'=>['recomendation'=>'recomendation_id']]);
-    $data['service']=$service;
 
 
-    $this->render_page('services/index', $data, 'services');
+    $this->render_page('services/details/index', $data, 'services');
   }
 
   public function text(){

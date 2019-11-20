@@ -370,6 +370,7 @@ class MY_Controller extends CI_Controller{
       $lang = $this->session->userdata('language');
     }
 
+    // GET service as menu
     $service_target=$this->crud_model->select('service_target',QUERY_RESULT,['service_target_id','dictionary.dictionary_content title','service_target_icon icon'],['language_code'=>$lang,'deleted_at'=>null],['service_target'=>['dictionary'=>'dictionary_slug=service_target_name']]);
     $targets=[];
     foreach ($service_target as $target) {
@@ -384,6 +385,7 @@ class MY_Controller extends CI_Controller{
       $target->menu=$categories;
       $targets[]=$target;
     }
+    //END GET service
 
     $data['template']=empty($template) ? 'general' : $template;
 
@@ -467,8 +469,6 @@ class MY_Controller extends CI_Controller{
         ]
       ],
     ];
-    // print_r(  $data['navigation_array']);
-    // die();
 
     if ($this->session->userdata('login_email')) {
       //$login_value = $this->session->userdata('login_email');
@@ -488,7 +488,6 @@ class MY_Controller extends CI_Controller{
     }
 
     //PAGE
-
     //$data['is_bilingual']=false;
 
     $data['asset_head'] = $this->load->view('templates/asset_head', $data, TRUE);
@@ -742,5 +741,14 @@ public function admin_email(){
     'suciwulandari34@gmail.com' => 'Suci',
   );
   return $email;
+}
+
+public function get_language(){
+  if (empty($this->session->userdata('language'))) {
+    $lang = 'en';
+  }else {
+    $lang = $this->session->userdata('language');
+  }
+  return $lang;
 }
 }
