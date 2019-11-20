@@ -20,6 +20,9 @@ $lang["useful_link"]="Useful Link";
 $lang["social_media"]="Social Media";
 $lang["separator_coma"]=",";
 $lang["benefit"]="Benefit";
+$lang["what_you_get"]="What You Get";
+$lang["what_you_get_sub"]="For this type of service, Waste4Change provides the facilities as follows:";
+$lang["waste-flow"]="Waste Flow";
 
 //Welcome W4C
 $lang["welcome_title_1"]="It's time to";

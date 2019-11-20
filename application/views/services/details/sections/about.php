@@ -11,7 +11,7 @@
       <div class="col-md-6 g-mb-30 g-mt-15">
         <div class="g-ml-10--lg">
           <div class="mb-2 <?=$this->agent->is_mobile() ? 'text-center' : ''?>">
-            <span class="g-color-gray-dark-v3 g-font-weight-700 g-font-size-<?=$this->agent->is_mobile() ? '12' : '16'?> text-uppercase"><?= lang('about_only') ?></span>
+            <span class="g-color-gray-dark-v3 g-font-weight-700 g-font-size-16 text-uppercase"><?= lang('about_only') ?></span>
             <?=$this->agent->is_mobile() ? '<hr class="g-width-50 g-my-5 g-brd-2 g-brd-blue">' : '<div class="g-width-30 g-height-2 g-pos-rel g-bg-info g-mt-5"></div>'?>
           </div>
           <div class="g-mb-5--lg">
