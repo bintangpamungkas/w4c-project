@@ -19,6 +19,7 @@ $lang["contact"]="Kontak";
 $lang["useful_link"]="Tautan Penting";
 $lang["social_media"]="Media Sosial";
 $lang["separator_coma"]=".";
+$lang["benefit"]="Keuntungan";
 
 //Welcome W4C
 $lang["welcome_title_1"]="Saatnya Mengelola Sampah";

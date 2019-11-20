@@ -1,8 +1,11 @@
 <?php
-$this->load->view('services/details/sections/welcome');
+// $this->load->view('services/details/sections/welcome');
+// $this->load->view('services/details/sections/about');
 
 foreach ($sections as $section) {
-  // $this->load->view('services/details/sections/'.$section->section_slug);
+  if ($section->section_slug=='what-you-get' || $section->section_slug=='benefit' || $section->section_slug=='welcome' || $section->section_slug=='about') {
+    $this->load->view('services/details/sections/'.$section->section_slug);
+  }
 }
 // $this->load->view('services/details/sections/welcome');
 ?>

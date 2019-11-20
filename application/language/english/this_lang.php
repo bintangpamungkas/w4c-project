@@ -19,6 +19,7 @@ $lang["contact"]="Contact";
 $lang["useful_link"]="Useful Link";
 $lang["social_media"]="Social Media";
 $lang["separator_coma"]=",";
+$lang["benefit"]="Benefit";
 
 //Welcome W4C
 $lang["welcome_title_1"]="It's time to";

@@ -15,7 +15,7 @@ class MY_Controller extends CI_Controller{
 
     $this->load->helper('my_helper');
 
-    $this->lang->load('this', $this->session->userdata('language') ? ($this->session->userdata('language')=='id' ? 'english' : 'english') : 'indonesia');
+    $this->lang->load('this', $this->session->userdata('language') ? ($this->session->userdata('language')=='id' ? 'english' : 'english') : 'english');
 
   }
 
