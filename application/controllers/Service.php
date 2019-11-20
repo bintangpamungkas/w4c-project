@@ -57,6 +57,23 @@ class Service extends MY_Controller
     $data['service_name']=str_replace('-', ' ', lang($data['service_id']));
     $data['page_heading']=$data['service_name'];
     $data['is_bilingual']=true;
+    $data['breadcrumb']=[
+      [
+        'title'=>'Home',
+        'url'=>'official',
+        'active'=>false
+      ],
+      [
+        'title'=>'All Services',
+        'url'=>'service',
+        'active'=>false
+      ],
+      [
+        'title'=>$service->service_name,
+        'url'=>'#welcome',
+        'active'=>true
+      ]
+    ];
     // print_r($service);
     // print_r($subnav);
     // die();

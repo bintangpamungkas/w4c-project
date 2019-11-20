@@ -493,7 +493,7 @@ class MY_Controller extends CI_Controller{
     $data['asset_head'] = $this->load->view('templates/asset_head', $data, TRUE);
     $data['header'] = $this->load->view('templates/header', $data, TRUE);
 
-    $data['breadcrumb'] = $this->load->view('templates/breadcrumb', $data, TRUE);
+    // $data['breadcrumb'] = $this->load->view('templates/breadcrumb', $data, TRUE);
     $data['content'] = $this->load->view($render.$content, $data, TRUE);
 
     $data['asset_footer'] = $this->load->view('templates/asset_footer', $data, TRUE);

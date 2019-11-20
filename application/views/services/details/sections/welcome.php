@@ -5,6 +5,20 @@
   <div class="full-height-block pending-show animated d-zap" style="background-image: linear-gradient(<?= $this->agent->is_mobile() ? '190deg' : '100deg' ?>, rgba(256, 256, 256, 0.9) 40%, rgba(256, 256, 256, <?= $this->agent->is_mobile() ? '0.8' : '0.5' ?>) 70%, rgba(256, 256, 256, <?= $this->agent->is_mobile() ? '0.5' : '0' ?>) 100%);">
     <div class="container">
       <div class="row content-middle-fullscreen with-header <?= $this->agent->is_mobile() ? 'justify-content-center text-center' : '' ?>">
+        <?php if (!$this->agent->is_mobile()): ?>
+          <div class="col-12" style="margin-top:-250px">
+            <?php foreach ($breadcrumb as $bread): ?>
+              <?php if ($bread['active']!=true): ?>
+                <a class="g-color-black g-text-transform-none" href="<?=$bread['url']?>">
+                <?php echo $bread['title'] ?>
+                <i class="fa fa-angle-right g-mx-10"></i>
+              </a>
+              <?php else: ?>
+                <span class="g-font-color-w4c-1"><?php echo $bread['title'] ?> </span>
+              <?php endif; ?>
+            <?php endforeach; ?>
+          </div>
+        <?php endif; ?>
         <div class="col-md-6 col-10">
           <br>
           <h3 class="g-color-black-opacity-0_8 g-font-weight-700 <?= $this->agent->is_mobile() ? 'g-font-size-30' : 'g-font-size-50' ?> mb-4 g-font-asap" style="line-height: 1.2"><?= $service->service_name ?></h3>

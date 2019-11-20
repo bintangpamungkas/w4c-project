@@ -4,7 +4,7 @@ if($this->uri->segment(1)=='email'){
 }else{
     echo $asset_head;
     echo $header;
-    echo $breadcrumb;
+    // echo $breadcrumb;
     echo $content;
     echo $footer;
     echo $asset_footer;
