@@ -185,5 +185,8 @@
       <?php
     } // END if (!$this->agent->is_mobile() && )
     ?>
+    <?php if ($template=='service'){
+      $this->load->view('templates/navigations/services');
+    }?>
 
   </div> <!-- End Navigation -->

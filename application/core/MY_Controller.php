@@ -15,7 +15,7 @@ class MY_Controller extends CI_Controller{
 
     $this->load->helper('my_helper');
 
-    $this->lang->load('this', $this->session->userdata('language') ? ($this->session->userdata('language')=='id' ? 'english' : 'english') : 'english');
+    $this->lang->load('this', $this->session->userdata('language') ? ($this->session->userdata('language')=='id' ? 'english' : 'english') : 'indonesia');
 
   }
 
@@ -364,6 +364,27 @@ class MY_Controller extends CI_Controller{
       }
     }
 
+    if (empty($this->session->userdata('language'))) {
+      $lang = 'en';
+    }else {
+      $lang = $this->session->userdata('language');
+    }
+
+    $service_target=$this->crud_model->select('service_target',QUERY_RESULT,['service_target_id','dictionary.dictionary_content title','service_target_icon icon'],['language_code'=>$lang,'deleted_at'=>null],['service_target'=>['dictionary'=>'dictionary_slug=service_target_name']]);
+    $targets=[];
+    foreach ($service_target as $target) {
+      $service_category=$this->crud_model->select('service_category',QUERY_RESULT,['service_category_id', 'service_category_name title','service_category_icon icon','service_target_id'],['service_category.service_target_id'=>$target->service_target_id]);
+      $categories=[];
+      foreach ($service_category as $category) {
+        $services=$this->crud_model->select('service',QUERY_RESULT,['service_id','service_slug url','service_name title','service_category_id'],['service_category_id'=>$category->service_category_id]);
+        $category->menu=$services;
+        $categories[]=$category;
+      }
+
+      $target->menu=$categories;
+      $targets[]=$target;
+    }
+
     $data['template']=empty($template) ? 'general' : $template;
 
     $data['navigation_array_individu']=$this->navigation_menu_array_segment('individual');
@@ -380,50 +401,7 @@ class MY_Controller extends CI_Controller{
         'submenu_type' => 'column',
         'icon' => '',
         'is_new' => false,
-        'menu' => [
-          [
-            'title' => lang('services_individu_tab'),
-            'url' => '',
-            'number' => '1',
-            'type' => 'submenu',
-            'icon' => 'icon-real-estate-070 u-line-icon-pro',
-            'is_new' => false,
-            'menu' => $this->navigation_menu_array_segment('individual'),
-          ],
-          [
-            'title' => lang('services_corporate_tab'),
-            'url' => '',
-            'number' => '2',
-            'type' => 'submenu',
-            'icon' => 'icon-real-estate-066 u-line-icon-pro',
-            'is_new' => false,
-            'menu' => $this->navigation_menu_array_segment('corporate'),
-          ],
-        ],
-      ],
-      [
-        'title' => lang('services_individu_tab'),
-        'for' => 'menu',
-        'visible' => $this->agent->is_mobile() ? true : false,
-        'number' => '2',
-        'url' => '#mega-menu-1',
-        'type' => 'mega-menu',
-        'submenu_type' => 'list',
-        'icon' => '',
-        'is_new' => false,
-        'menu' => $this->navigation_menu_array_segment('individual'),
-      ],
-      [
-        'title' => lang('services_corporate_tab'),
-        'for' => 'menu',
-        'visible' => $this->agent->is_mobile() ? true : false,
-        'number' => '3',
-        'url' => '#mega-menu-1',
-        'type' => 'mega-menu',
-        'submenu_type' => 'list',
-        'icon' => '',
-        'is_new' => false,
-        'menu' => $this->navigation_menu_array_segment('corporate'),
+        'menu' => $targets
       ],
       [
         'title' => lang('about_only'),
@@ -472,14 +450,14 @@ class MY_Controller extends CI_Controller{
         'icon' => '',
         'is_new' => false,
         'menu' => [
-          [
+          (object)[
             'title' => 'ID',
             'url' => !$this->session->userdata('language') || $this->session->userdata('language')=='id' ? 'javascript:void()' : site_url('id'),
             'icon' => 'default.png',
             'is_new' => false,
             'visible' => true,
           ],
-          [
+          (object)[
             'title' => 'EN',
             'url' => $this->session->userdata('language')=='en' ? 'javascript:void()' : site_url('en'),
             'icon' => 'default.png',
@@ -489,6 +467,8 @@ class MY_Controller extends CI_Controller{
         ]
       ],
     ];
+    // print_r(  $data['navigation_array']);
+    // die();
 
     if ($this->session->userdata('login_email')) {
       //$login_value = $this->session->userdata('login_email');
