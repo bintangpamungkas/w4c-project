@@ -74,7 +74,7 @@
               <a title="Share Story" target="_blank" class="float-right g-brd-0 g-color-info g-bg-blue  g-color-white--hover g-bg-linkedin--hover u-icon-v2 g-rounded-50x" href="#" style=" height: 30px; width: 30px; ">
                 <i class="fa fa-share-alt g-color-white g-font-size-10"></i>
               </a>
-              <a target="_blank" href="<?= $x['blog_url'] ?>" class="g-font-color-w4c-blue-v1 g-bg-white g-bg-info--hover g-rounded-50 g-mr-10 g-mb-15 g-font-weight-700">Read More <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
+              <a target="_blank" href="<?= $x['blog_url'] ?>" class="g-color-w4c-blue-v1 g-bg-white g-bg-info--hover g-rounded-50 g-mr-10 g-mb-15 g-font-weight-700">Read More <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
             </div>
           </article>
         </div>
@@ -119,7 +119,7 @@
               <a title="Share Story" target="_blank" class="float-right g-brd-0 g-color-info g-bg-w4c-blue-v1 g-color-white--hover g-bg-linkedin--hover u-icon-v2 g-rounded-50x" href="#" style=" height: 30px; width: 30px; ">
                 <i class="fa fa-share-alt g-color-white g-font-size-10"></i>
               </a>
-              <a target="_blank" href="<?= $x['blog_url'] ?>" class="g-font-color-w4c-blue-v1 g-bg-white g-bg-info--hover g-rounded-50 g-mr-10 g-mb-15 g-font-weight-700">Read More <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
+              <a target="_blank" href="<?= $x['blog_url'] ?>" class="g-color-w4c-blue-v1 g-bg-white g-bg-info--hover g-rounded-50 g-mr-10 g-mb-15 g-font-weight-700">Read More <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
 
             </div>
           </article>
@@ -150,7 +150,7 @@
               items:3
             }
           },
-          navText : ['<i class="fa fa-angle-left g-font-color-w4c-blue-v1" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile()?'3':'4'?>)"></i>','<i class="fa fa-angle-right g-font-color-w4c-blue-v1" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile()?'3':'4'?>)"></i>']
+          navText : ['<i class="fa fa-angle-left g-color-w4c-blue-v1" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile()?'3':'4'?>)"></i>','<i class="fa fa-angle-right g-color-w4c-blue-v1" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile()?'3':'4'?>)"></i>']
         });
 
         //$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
@@ -181,7 +181,7 @@
           <?= (lang('blog_cta_description')) ?>
         </p>
         <br>
-        <a target="_blank" class="btn btn-info g-bg-white g-font-weight-700 g-font-color-w4c-blue-v1 g-brd-2 g-font-size-13 g-rounded-50 g-pl-20 g-pr-15 g-py-9 text-uppercase" href="http://waste4change.com/blog">
+        <a target="_blank" class="btn btn-info g-bg-white g-font-weight-700 g-color-w4c-blue-v1 g-brd-2 g-font-size-13 g-rounded-50 g-pl-20 g-pr-15 g-py-9 text-uppercase" href="http://waste4change.com/blog">
           <?= strtoupper(lang('blog_cta_link')) ?>
         </a>
       </div>

@@ -3,7 +3,7 @@
 // $this->load->view('services/details/sections/about');
 
 foreach ($sections as $section) {
-  if ($section->section_slug=='waste-flow' || $section->section_slug=='what-you-get' || $section->section_slug=='benefit' || $section->section_slug=='welcome' || $section->section_slug=='about') {
+  if ($section->section_slug=='our-client' || $section->section_slug=='our-client' || $section->section_slug=='waste-flow' || $section->section_slug=='what-you-get' || $section->section_slug=='benefit' || $section->section_slug=='welcome' || $section->section_slug=='about') {
     $this->load->view('services/details/sections/'.$section->section_slug);
   }
 }

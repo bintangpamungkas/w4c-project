@@ -20,9 +20,9 @@ $lang["useful_link"]="Tautan Penting";
 $lang["social_media"]="Media Sosial";
 $lang["separator_coma"]=".";
 $lang["benefit"]="Keuntungan";
-$lang["what-you-get"]="Apa yang Anda Dapatkan";
-$lang["what-you-get_sub"]="Untuk jenis layanan ini, Waste4Change menyediakan fasilitas sebagai berikut:";
-$lang["waste-flow"]="Alur Sampah";
+$lang["what_you_get"]="Apa yang Anda Dapatkan";
+$lang["what_you_get_sub"]="Untuk jenis layanan ini, Waste4Change menyediakan fasilitas sebagai berikut:";
+$lang["waste_flow"]="Alur Sampah";
 
 //Welcome W4C
 $lang["welcome_title_1"]="Saatnya Mengelola Sampah";

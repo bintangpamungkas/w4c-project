@@ -159,8 +159,8 @@ $service_targets=[
             </div>
             <a class="btn btn-info btn-xl btn-block g-brd-2 g-font-size-13 g-rounded-50 g-font-weight-700" href="#"><?=strtoupper(lang('services_all_services'))?></a>
             <a class="btn btn-outline-success btn-xl btn-block g-brd-2 g-font-size-13 g-rounded-50 g-font-weight-700" href="#"><?=strtoupper(lang('services_talk_to_expert'))?></a>
-            </div>
           </div>
+        </div>
         </div>
         <?php
       }else{ // jika desktop
