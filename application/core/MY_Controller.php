@@ -377,7 +377,7 @@ class MY_Controller extends CI_Controller{
       $service_category=$this->crud_model->select('service_category',QUERY_RESULT,['service_category_id', 'service_category_name title','service_category_icon icon','service_target_id'],['service_category.service_target_id'=>$target->service_target_id]);
       $categories=[];
       foreach ($service_category as $category) {
-        $services=$this->crud_model->select('service',QUERY_RESULT,['service_id','service_slug url','service_name title','service_category_id'],['service_category_id'=>$category->service_category_id]);
+        $services=$this->crud_model->select('service',QUERY_RESULT,['service_id','service_slug url','service_name title','service_category_id','has_page'],['service_category_id'=>$category->service_category_id]);
         $category->menu=$services;
         $categories[]=$category;
       }
@@ -469,7 +469,8 @@ class MY_Controller extends CI_Controller{
         ]
       ],
     ];
-
+//     print_r($data['navigation_array']);
+// die();
     if ($this->session->userdata('login_email')) {
       //$login_value = $this->session->userdata('login_email');
       //$this->load->model('account_model');

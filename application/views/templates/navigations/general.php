@@ -35,7 +35,7 @@
                                 <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-0 g-min-width-220 g-mt-minus-2 " id="nav-submenu--pages--404" aria-labelledby="nav-link--pages--404">
                                   <?php foreach ($submenu->menu as $subsubmenu): ?>
                                     <li class="dropdown-item as">
-                                      <a class="nav-link g-color-black" href="<?=site_url('service/'.$subsubmenu->url)?>"><?=$subsubmenu->title?></a>
+                                      <a class="nav-link g-color-black" href="<?=$subsubmenu->has_page==1 ? site_url('service/'.$subsubmenu->url):'#'?>"><?=$subsubmenu->title?></a>
                                     </li>
                                   <?php endforeach; ?>
                                 </ul>
@@ -82,7 +82,7 @@
                                   <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-0 g-min-width-220 g-mt-minus-2 " id="nav-submenu--pages--404" aria-labelledby="nav-link--pages--404">
                                     <?php foreach ($submenu->menu as $subsubmenu): ?>
                                       <li class="dropdown-item as">
-                                        <a class="nav-link g-color-black" href="<?=site_url('service/'.$subsubmenu->url)?>"><?=$subsubmenu->title?></a>
+                                        <a class="nav-link g-color-black" href="<?=$subsubmenu->has_page==1 ? site_url('service/'.$subsubmenu->url):'#'?>"><?=$subsubmenu->title?></a>
                                       </li>
                                     <?php endforeach; ?>
                                   </ul>
