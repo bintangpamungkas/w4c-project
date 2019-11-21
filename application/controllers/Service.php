@@ -125,7 +125,7 @@ class Service extends MY_Controller
     $data['flows']=$this->crud_model->select('flow',QUERY_RESULT,['flow_icon','(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=flow_name AND language_code="'.$lang.'") as flow_name'],['service_id'=>$service->service_id,'deleted_at'=>null]);
     $data['photofolio']=$this->crud_model->select('photofolio',QUERY_RESULT,'',['service_id'=>$service->service_id,'deleted_at'=>null]);
     $data['client']=$this->crud_model->select('client',QUERY_RESULT,'',['service_id'=>$service->service_id,'deleted_at'=>null]);
-    $data['recomendation']=$this->crud_model->select('service_recomendation',QUERY_RESULT,['recomendation_icon','recomendation_color','(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=recomendation_name AND language_code="'.$lang.'") as recomendation_name'],['service_recomendation.service_id'=>$service->service_id,'service_recomendation.deleted_at'=>null],['service_recomendation'=>['recomendation'=>'recomendation_id']]);
+    $data['recomendations']=$this->crud_model->select('service_recomendation',QUERY_RESULT,['recomendation_icon','recomendation_color','(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=recomendation_name AND language_code="'.$lang.'") as recomendation_name'],['service_recomendation.service_id'=>$service->service_id,'service_recomendation.deleted_at'=>null],['service_recomendation'=>['recomendation'=>'recomendation_id']]);
 
 
     $this->render_page('services/details/index', $data, 'services');

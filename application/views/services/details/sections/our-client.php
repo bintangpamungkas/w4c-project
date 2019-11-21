@@ -61,7 +61,7 @@
               ?>
               <div class="text-center">
                 <div class="g-bg-white rounded g-pa-10 <?= $this->agent->is_mobile() ? 'g-mx-3 g-mb-5' : 'g-px-30 g-mx-10 g-mb-10' ?>">
-                  <img class="img-fluid mx-auto" src="<?= base_url('assets/img/service/'.$service_id.'/client/'.$client['image']) ?>" alt="Image Description">
+                  <img class="img-fluid mx-auto" src="<?= get_image('assets/img/service/'.$service_id.'/client/'.$client['image']) ?>" alt="Image Description">
                 </div>
                 <small><?= $client['name'] ?></small>
               </div>
