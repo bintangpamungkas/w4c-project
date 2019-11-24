@@ -12,58 +12,15 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-md-11 col-12">
-
           <div id="media-carousel" class="col-md-12 owl-theme" style="margin: 0 0 30px 0!important;">
             <?php
-            $clients=[
-              [
-                'name' => 'Yseali',
-                'number' => 1,
-                'image' => '1.jpg',
-              ],
-              [
-                'name' => 'World Bank',
-                'number' => 2,
-                'image' => '2.jpg',
-              ],
-              [
-                'name' => 'PT Pembangkit Jawa Bali',
-                'number' => 3,
-                'image' => '3.jpg',
-              ],
-              [
-                'name' => 'Rinso',
-                'number' => 4,
-                'image' => '4.jpg',
-              ],
-              [
-                'name' => 'Fortuga',
-                'number' => 5,
-                'image' => '5.jpg',
-              ],
-              [
-                'name' => 'Sopo Del',
-                'number' => 6,
-                'image' => '6.jpg',
-              ],
-              [
-                'name' => 'HSBC',
-                'number' => 7,
-                'image' => '7.jpg',
-              ],
-              [
-                'name' => 'DBS',
-                'number' => 8,
-                'image' => '8.jpg',
-              ],
-            ];
             foreach($clients as $client) :
               ?>
               <div class="text-center">
                 <div class="g-bg-white rounded g-pa-10 <?= $this->agent->is_mobile() ? 'g-mx-3 g-mb-5' : 'g-px-30 g-mx-10 g-mb-10' ?>">
-                  <img class="img-fluid mx-auto" src="<?= get_image('assets/img/service/'.$service_id.'/client/'.$client['image']) ?>" alt="Image Description">
+                  <img class="img-fluid mx-auto" src="<?= get_image('assets/img/service/'.$service_id.'/client/'.$client->client_logo) ?>" alt="<?=$client->client_name.' logo'?>">
                 </div>
-                <small><?= $client['name'] ?></small>
+                <small><?= $client->client_name ?></small>
               </div>
               <?php
             endforeach;
