@@ -13,6 +13,20 @@ class Service extends MY_Controller
 
   public function index(){
     $lang = $this->get_language();
+    $service_target = $this->input->get('target');
+		if (empty($service_target)){
+			$service_target='all';
+		}
+    if ($service_target=='all') {
+			$services=$this->service_model->service_list($lang);
+		}else{
+			$services=$this->service_model->service_list($lang,$service_target);
+		}
+		foreach ($services as $service) {
+			$rec=$this->service_model->service_recomendation($lang,$service->service_id);
+			$service->recomendation=$rec;
+			$serv[]=$service;
+		}
 
     $services=$this->service_model->service_list($lang);
     foreach ($services as $service) {
@@ -27,7 +41,8 @@ class Service extends MY_Controller
     $data['subtitle']='information';
     $data['data_mode']='general';
     $data['page_heading']='services_title';
-    $data['is_bilingual']=true;
+		$data['is_bilingual']=true;
+		$data['service_target']=$service_target;
 
     $this->render_page('services/index', $data, 'services');
   }

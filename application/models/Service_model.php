@@ -12,11 +12,15 @@ class Service_model extends CI_Model
     // Call the Model constructor
     parent::__construct();
   }
-  function service_list($lang){
-    $this->db->select(['service.service_id','service.service_category_id','service.service_slug','service.service_name','service.service_page_url','service.service_join_url','service.service_thumbnail','service_category_name']);
+  function service_list($lang,$service_target_name=null){
+    $this->db->select(['service_target_name','service.service_id','service.service_category_id','service.service_slug','service.service_name','service.service_page_url','service.service_join_url','service.service_thumbnail','service_category_name']);
     $this->db->select('(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service.service_description AND dictionary.language_code="'.$lang.'") as service_description');
     $this->db->from('service');
-    $this->db->join('service_category','service_category.service_category_id=service.service_category_id','left');
+		$this->db->join('service_category','service_category.service_category_id=service.service_category_id','left');
+		$this->db->join('service_target','service_target.service_target_id=service_category.service_target_id','left');
+		if ($service_target_name!=null){
+		  $this->db->where('service_target_name',$service_target_name);
+    }
     return $this->db->get()->result();
   }
   function get_service($lang,$service_slug){
