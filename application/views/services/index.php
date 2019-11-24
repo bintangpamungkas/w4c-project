@@ -1,23 +1,3 @@
-<?php
-// $service_targets=[
-//   [
-//     'title' => lang('services_corporate_tab'),
-//     'icon' => 'icon-real-estate-066 u-line-icon-pro',
-//     'number' => 1,
-//     'subtitle' => lang('services_corporate_title'),
-//     'content' => lang('services_corporate_subtitle'),
-//     'list' => $navigation_array_corporate,
-//   ],
-//   [
-//     'title' => lang('services_individu_tab'),
-//     'icon' => 'icon-real-estate-003',
-//     'number' => 2,
-//     'subtitle' => lang('services_individu_title'),
-//     'content' => lang('services_individu_subtitle'),
-//     'list' => $navigation_array_individu,
-//   ],
-// ];
-?>
 <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-overflow-hidden" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
   <div class="divimage dzsparallaxer--target w-100" style="height: 130%; background-image: url(<?= base_url(DIR_BG.'bg_header.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
   <div style="background:radial-gradient(circle farthest-side at 80% 60%, rgba(66,195,120,0.67), rgba(14,105,148,0.92))">
@@ -539,9 +519,9 @@
         if ($this->agent->is_mobile()) { //mobile view
           ?>
           <div class="bg-white g-my-20 box-shadow-down">
-            <div style="height: 200px;background: url(<?=get_image(DIR_SERVICE.$service->service_slug.'/'.$service->service_thumbnail,base_url('assets/img/error/1x2.png'))?>);background-size: cover;"></div>
+            <div style="height: 200px;background: url(<?=get_image(DIR_SERVICE.$service->service_slug.'/bg/thumbnail.jpg',base_url('assets/img/error/1x2.png'))?>);background-size: cover;"></div>
 
-            <!-- <img class="img-fluid w-100" src="<?=get_image(DIR_SERVICE.$service->service_slug.'/'.$service->service_thumbnail,base_url('assets/img/error/1x2.png'))?>" alt="<?=$service->service_name.' image'?>"> -->
+            <!-- <img class="img-fluid w-100" src="<?=get_image(DIR_SERVICE.$service->service_slug.'/bg/thumbnail.jpg',base_url('assets/img/error/1x2.png'))?>" alt="<?=$service->service_name.' image'?>"> -->
             <div class="bg-white g-mx-20 g-pa-20" style=" margin-top: -40px;">
               <span class="g-color-black-opacity-0_5 g-font-weight-600 g-font-size-12 text-uppercase"><?= $service->service_category_name ?></span>
               <h2 class="<?= $this->agent->is_mobile() ? 'h4' : 'h1' ?> g-color-black g-font-weight-600 g-mb-25 g-line-height-1_2">
@@ -570,7 +550,7 @@
               <div class="row">
                 <?php if ($i%2==1){ ?>
                   <div class="col-6">
-                    <img class="img-fluid w-100" src="<?=get_image(DIR_SERVICE.$service->service_slug.'/'.$service->service_thumbnail,base_url('assets/img/error/1x2.png'))?>" alt="<?=$service->service_name.' image'?>" style="-webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));">
+                    <img class="img-fluid w-100" src="<?=get_image(DIR_SERVICE.$service->service_slug.'/bg/thumbnail.jpg',base_url('assets/img/error/1x2.png'))?>" alt="<?=$service->service_name.' image'?>" style="-webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));">
                   </div>
                   <div class="col-6">
                     <span class="g-color-gray-dark-v3 g-font-weight-600 g-font-size-12 text-uppercase"><?= $service->service_category_name ?></span>
@@ -616,7 +596,7 @@
                     </div>
                   </div>
                   <div class="col-6">
-                    <img class="img-fluid w-100" src="<?=get_image(DIR_SERVICE.$service->service_slug.'/'.$service->service_thumbnail,base_url('assets/img/error/1x2.png'))?>" alt="<?=$service->service_name.' image'?>" style="-webkit-mask-image: -webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));">
+                    <img class="img-fluid w-100" src="<?=get_image(DIR_SERVICE.$service->service_slug.'/bg/thumbnail.jpg',base_url('assets/img/error/1x2.png'))?>" alt="<?=$service->service_name.' image'?>" style="-webkit-mask-image: -webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));">
                   </div>
                   <?php
                 } //end if ($i%2==1)

@@ -29,7 +29,7 @@ class Service extends MY_Controller
     $data['page_heading']='services_title';
     $data['is_bilingual']=true;
 
-    $this->render_page('services/index', $data, 'general');
+    $this->render_page('services/index', $data, 'services');
   }
 
   public function epr(){

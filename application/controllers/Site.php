@@ -125,8 +125,12 @@ class Site extends MY_Controller
       ],
     ];
 
-
     $this->render_page('sites/career', $data);
   }
 
+  function test(){
+		$directory='http://localhost/w4c/official/assets/img/service/community-based-implementation/bg/thumbnail.jpg';
+		echo get_image($directory);
+
+	}
 }

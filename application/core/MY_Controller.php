@@ -2,10 +2,10 @@
 
 /**
 * Class MY_Controller
-* @property \Site_model $company_model
+* @property \Company_model $company_model
 * @property \Account_model $account_model
 * @property \User_model $user_model
-* @property \Site_model $site_model
+* @property \Service_model $service_model
 * @property \CRUD_model $crud_model
 */
 class MY_Controller extends CI_Controller{

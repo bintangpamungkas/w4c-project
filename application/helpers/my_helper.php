@@ -1,12 +1,13 @@
 <?php
 function get_image($image,$replace=null){
-  if( strpos( $image, 'http' ) !== false) {
-    $directory=$image;
-  }else {
-    $directory=base_url($image);
-  }
-  if (file_exists($directory)) {
-    return $directory;
+	if( strpos( $image, 'http' ) !== false) {
+		$directory=$image;
+	}else {
+		$directory=base_url($image);
+	}
+
+	if (@getimagesize($directory)) {
+		return $directory;
   }else {
     if ($replace!=null) {
       if (file_exists($replace)) {
@@ -18,6 +19,21 @@ function get_image($image,$replace=null){
       return base_url('assets/img/error/1x2.png');
     }
   }
+}
+
+function does_url_exists($url) {
+	$ch = curl_init($url);
+	curl_setopt($ch, CURLOPT_NOBODY, true);
+	curl_exec($ch);
+	$code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+	if ($code == 200) {
+		$status = true;
+	} else {
+		$status = false;
+	}
+	curl_close($ch);
+	return $status;
 }
 
 function view_date($date, $with_time=NULL, $as_month=NULL, $region=null, $with_day=null){
