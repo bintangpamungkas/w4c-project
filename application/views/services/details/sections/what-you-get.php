@@ -16,7 +16,7 @@
             <div class="col-md-6 col-xs-12 g-line-height-1_3">
               <div class="row no-gutters <?=$this->agent->is_mobile() ? 'g-my-20' : 'g-my-25'?> ">
                 <div class="col-auto">
-                  <img src="<?=base_url('assets/img/icons/services/what-you-get/'.$facility->facility_icon)?>" alt="" style="max-width: 40px;max-height: 40px; margin-right: 20px; margin-top: -10px;">
+                  <img src="<?=get_image('assets/img/icons/services/what-you-get/'.$facility->facility_icon)?>" alt="" style="max-width: 40px;max-height: 40px; margin-right: 20px; margin-top: -10px;">
                 </div>
                 <div class="col">
                   <?=$facility->facility_name?>

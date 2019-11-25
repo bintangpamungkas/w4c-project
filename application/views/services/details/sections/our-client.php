@@ -1,6 +1,6 @@
 <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-overflow-hidden" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
 
-  <div id="client" style="height: 10px;position: absolute;width: 80%;margin-top: -100px"></div>
+  <div id="our-client" style="height: 10px;position: absolute;width: 80%;margin-top: -100px"></div>
 
   <div class="divimage dzsparallaxer--target w-100" style="height: 130%; background-image: url(<?= base_url('assets/img/bg/sleek_bg_image_black.png') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
   <div style="background:radial-gradient(circle farthest-side at 80% 60%, rgba(244,244,244,0.91), rgba(244,244,244,0.92))">
@@ -12,13 +12,14 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-md-11 col-12">
-          <div id="media-carousel" class="col-md-12 owl-theme" style="margin: 0 0 30px 0!important;">
+
+          <div id="our-client-carousel" class="col-md-12 owl-theme" style="margin: 0 0 30px 0!important;">
             <?php
-            foreach($clients as $client) :
+           foreach($clients as $client) :
               ?>
               <div class="text-center">
                 <div class="g-bg-white rounded g-pa-10 <?= $this->agent->is_mobile() ? 'g-mx-3 g-mb-5' : 'g-px-30 g-mx-10 g-mb-10' ?>">
-                  <img class="img-fluid mx-auto" src="<?= get_image('assets/img/service/'.$service_id.'/client/'.$client->client_logo) ?>" alt="<?=$client->client_name.' logo'?>">
+                  <img class="img-fluid mx-auto" src="<?= get_image('assets/img/service/'.$service_id.'/client/'.$client->client_logo) ?>" alt="Image Description">
                 </div>
                 <small><?= $client->client_name ?></small>
               </div>
@@ -29,7 +30,7 @@
 
           <script>
           $(window).ready(function () {
-            var element_id='#media-carousel';
+            var element_id='#our-client-carousel';
             $(element_id).owlCarousel({
               loop:true,
               margin:0,
@@ -54,14 +55,13 @@
 
             //$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
             $(element_id+' .owl-controls').attr('style', 'margin-top: 30px;');
-
             var screen_display=<?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
-            console.log(screen_display);
+            // console.log(screen_display);
             var margin_side=(screen_display-screen_display*(<?= $this->agent->is_mobile() ? '69' : '98.5' ?>)/100)/2;
-            console.log('screen : '+screen_display+'nav : '+screen_display*<?= $this->agent->is_mobile() ? '8' : '9' ?>0/100+'batas : '+margin_side);
+            //console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
             <?php
             if($this->agent->is_mobile()){
-              echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 164px;width: 74%;right: '+margin_side+'px;')";
+              echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 155px;width: 74%;right: '+margin_side+'px;')";
             }else{
               echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 60px;width: 101.5%;right: '+margin_side+'px;')";
             }

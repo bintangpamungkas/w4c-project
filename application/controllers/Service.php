@@ -47,11 +47,22 @@ class Service extends MY_Controller
     $this->render_page('services/index', $data, 'services');
   }
 
+  public function epr(){
+    $data['title']='';
+    $data['id']='site';
+    $data['subtitle']='information';
+    $data['data_mode']='general';
+    $data['page_heading']='services_esr_tab';
+    $data['is_bilingual']=true;
+
+    $this->render_page('services/epr', $data, 'general');
+  }
+
   public function detail($service_slug){
     $lang = $this->get_language();
 
     $service=$this->service_model->get_service($lang,$service_slug);
-    $sections=$this->crud_model->select('service_section',QUERY_RESULT,['section.section_id','section_slug','(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_menu_name AND dictionary.language_code="'.$lang.'") as section_menu_name','(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_name AND dictionary.language_code="'.$lang.'") as section_name'],['service_id'=>$service->service_id],['service_section'=>['section'=>'section_id']]);
+    $subnav=$this->crud_model->select('service_section',QUERY_RESULT,['section.section_id','section_slug','(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_menu_name AND dictionary.language_code="'.$lang.'") as section_menu_name','(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_name AND dictionary.language_code="'.$lang.'") as section_name'],['service_id'=>$service->service_id],['service_section'=>['section'=>'section_id']]);
 
     $data['title']='';
     $data['id']='service';
@@ -79,15 +90,16 @@ class Service extends MY_Controller
       ]
     ];
 
-    $data['subnav']=$sections;
+    $data['subnav']=$subnav;
+
     $data['service']=$service;
-    $data['sections']=$sections;
+    $data['sections']=$subnav;
     // $achievement=$this->crud_model->select('achievement',QUERY_RESULT,['(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=section_name AND language_code="'.$lang.'") as section_name','(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=section_menu_name AND language_code="'.$lang.'") as section_menu_name'],['service_section.service_id'=>$service->service_id,'service_section.deleted_at'=>null],['service_section'=>['section'=>'section_id']]);
     $data['benefits']=$this->crud_model->select('benefit',QUERY_RESULT,['benefit_icon','(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=benefit_name AND language_code="'.$lang.'") as benefit_name'],['service_id'=>$service->service_id,'deleted_at'=>null]);
     $data['facilities']=$this->crud_model->select('facility',QUERY_RESULT,['facility_icon','(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=facility_name AND language_code="'.$lang.'") as facility_name'],['service_id'=>$service->service_id,'deleted_at'=>null]);
     $data['flows']=$this->crud_model->select('flow',QUERY_RESULT,['flow_icon','(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=flow_name AND language_code="'.$lang.'") as flow_name'],['service_id'=>$service->service_id,'deleted_at'=>null]);
-    $data['photofolio']=$this->crud_model->select('photofolio',QUERY_RESULT,'',['service_id'=>$service->service_id,'deleted_at'=>null]);
-    $data['clients']=$this->crud_model->select('client',QUERY_RESULT,'',['deleted_at'=>null]);
+    $data['photofolios']=$this->crud_model->select('photofolio',QUERY_RESULT,'',['service_id'=>$service->service_id,'deleted_at'=>null]);
+    $data['clients']=$this->crud_model->select('client',QUERY_RESULT,'',['service_id'=>1,'deleted_at'=>null]);
     $data['recomendations']=$this->crud_model->select('service_recomendation',QUERY_RESULT,['recomendation_icon','recomendation_color','(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=recomendation_name AND language_code="'.$lang.'") as recomendation_name'],['service_recomendation.service_id'=>$service->service_id,'service_recomendation.deleted_at'=>null],['service_recomendation'=>['recomendation'=>'recomendation_id']]);
 
 

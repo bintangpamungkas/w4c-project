@@ -24,7 +24,8 @@ $lang["what_you_get"]="Apa yang Anda Dapatkan";
 $lang["what_you_get_sub"]="Untuk jenis layanan ini, Waste4Change menyediakan fasilitas sebagai berikut:";
 $lang["waste_flow"]="Alur Sampah";
 $lang["start_your_responsible"]="Mulai Pengelolaan Limbah yang Bertanggung Jawab Anda sekarang!";
-
+$lang["start_your"]="Mulai";
+$lang["now"]="sekarang";
 //Welcome W4C
 $lang["welcome_title_1"]="Saatnya Mengelola Sampah";
 $lang["welcome_title_2"]="Secara";
