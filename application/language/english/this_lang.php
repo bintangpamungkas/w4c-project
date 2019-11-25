@@ -26,6 +26,12 @@ $lang["waste_flow"]="Waste Flow";
 $lang["start_your_responsible"]="Start your Responsible Waste Management now!";
 $lang["start_your"]="Start your";
 $lang["now"]="now";
+$lang["activities"]="Activities";
+$lang["expertise"]="Expertise";
+$lang["photofolio-highlight"]="Photofolio Highlight";
+$lang["project-highlight"]="Project Highlight";
+$lang["our-achievement"]="Our Achievement";
+
 
 
 //Welcome W4C

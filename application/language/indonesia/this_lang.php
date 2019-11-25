@@ -26,6 +26,13 @@ $lang["waste_flow"]="Alur Sampah";
 $lang["start_your_responsible"]="Mulai Pengelolaan Limbah yang Bertanggung Jawab Anda sekarang!";
 $lang["start_your"]="Mulai";
 $lang["now"]="sekarang";
+$lang["activities"]="Aktifitas";
+$lang["expertise"]="Expertise";
+$lang["photofolio-highlight"]="Photofolio Highlight";
+$lang["project-highlight"]="Project Highlight";
+$lang["our-achievement"]="Prestasi Kami";
+
+
 //Welcome W4C
 $lang["welcome_title_1"]="Saatnya Mengelola Sampah";
 $lang["welcome_title_2"]="Secara";
