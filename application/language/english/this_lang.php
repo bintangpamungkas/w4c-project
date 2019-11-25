@@ -28,9 +28,9 @@ $lang["start_your"]="Start your";
 $lang["now"]="now";
 $lang["activities"]="Activities";
 $lang["expertise"]="Expertise";
-$lang["photofolio-highlight"]="Photofolio Highlight";
-$lang["project-highlight"]="Project Highlight";
-$lang["our-achievement"]="Our Achievement";
+$lang["photofolio_highlight"]="Photofolio Highlight";
+$lang["project_highlight"]="Project Highlight";
+$lang["our_achievement"]="Our Achievement";
 
 
 

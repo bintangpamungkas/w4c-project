@@ -28,9 +28,9 @@ $lang["start_your"]="Mulai";
 $lang["now"]="sekarang";
 $lang["activities"]="Aktifitas";
 $lang["expertise"]="Expertise";
-$lang["photofolio-highlight"]="Photofolio Highlight";
-$lang["project-highlight"]="Project Highlight";
-$lang["our-achievement"]="Prestasi Kami";
+$lang["photofolio_highlight"]="Photofolio Highlight";
+$lang["project_highlight"]="Project Highlight";
+$lang["our_achievement"]="Prestasi Kami";
 
 
 //Welcome W4C

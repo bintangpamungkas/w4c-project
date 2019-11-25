@@ -1,6 +1,6 @@
 
 <!-- Mockup Block -->
-<section class="g-bg-secondary <?= $this->agent->is_mobile() ? 'g-pt-80 g-pb-50' : 'g-py-140' ?>">
+<section class="g-bg-white <?= $this->agent->is_mobile() ? 'g-pt-80 g-pb-50' : 'g-py-140' ?>">
 
   <div id="waste-flow" style="height: 10px;position: absolute;width: 80%;margin-top: -100px"></div>
 
@@ -45,7 +45,7 @@
 						    margin:0,
 						    dots:true,
 						    nav:true,
-						    autoplay:false,
+						    autoplay:true,
 						    autoplayTimeout:1500,
 						    autoplayHoverPause:true,
 						    responsive:{

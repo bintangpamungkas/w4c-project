@@ -353,7 +353,6 @@ class MY_Controller extends CI_Controller{
     ];
 
     return $data['service_'.$user_target];
-
   }
 
   function render_page($content, $data = NULL, $template = NULL){
@@ -372,13 +371,14 @@ class MY_Controller extends CI_Controller{
 
     // GET service as menu
     $service_target=$this->crud_model->select('service_target',QUERY_RESULT,['service_target_id','dictionary.dictionary_content title','service_target_icon icon'],['language_code'=>$lang,'deleted_at'=>null],['service_target'=>['dictionary'=>'dictionary_slug=service_target_name']]);
-    $targets=[];
+		$targets=[];
     foreach ($service_target as $target) {
       $service_category=$this->crud_model->select('service_category',QUERY_RESULT,['service_category_id', 'dictionary_content title','service_category_icon icon','service_target_id'],['language_code'=>$lang,'service_category.service_target_id'=>$target->service_target_id],['service_category'=>['dictionary'=>'dictionary_slug=service_category_name']]);
       $categories=[];
       foreach ($service_category as $category) {
         $services=$this->crud_model->select('service',QUERY_RESULT,['service_id','service_slug url','service_name title','service_category_id','has_page'],['service_category_id'=>$category->service_category_id]);
-        $category->menu=$services;
+
+				$category->menu=$services;
         $categories[]=$category;
       }
 

@@ -1,7 +1,6 @@
 <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-overflow-hidden" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
 
   <div id="our-client" style="height: 10px;position: absolute;width: 80%;margin-top: -100px"></div>
-
   <div class="divimage dzsparallaxer--target w-100" style="height: 130%; background-image: url(<?= base_url('assets/img/bg/sleek_bg_image_black.png') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
   <div style="background:radial-gradient(circle farthest-side at 80% 60%, rgba(244,244,244,0.91), rgba(244,244,244,0.92))">
     <div class="container <?= $this->agent->is_mobile() ? 'g-pt-80 g-pb-50' : 'g-pt-140 g-pb-70' ?>">
@@ -13,7 +12,7 @@
       <div class="row justify-content-center">
         <div class="col-md-11 col-12">
 
-          <div id="our-client-carousel" class="col-md-12 owl-theme" style="margin: 0 0 30px 0!important;">
+          <div id="our-client-carousel" class="col-md-12 owl-theme" style="margin: 0 0 30px 0!important;padding:0px">
             <?php
            foreach($clients as $client) :
               ?>

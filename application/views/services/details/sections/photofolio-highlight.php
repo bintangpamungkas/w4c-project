@@ -1,54 +1,209 @@
-<!-- Promo Block -->
-<section id="photofolio" class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
-  <div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center" style="height: 120%;background: url(<?= $this->agent->is_mobile() ? base_url('assets/img/service/'.$service_id.'/bg/1.jpg') : base_url('assets/img/service/'.$service_id.'/bg/1.jpg') ?>);background-size: cover;<?= $this->agent->is_mobile() ? 'background-position-x: right;' : '' ?>"></div>
+<section class="g-bg-secondary">
 
-  <div class="full-height-block pending-show animated d-zap" style="background-image: linear-gradient(<?= $this->agent->is_mobile() ? '190deg' : '100deg' ?>, rgba(256, 256, 256, 0.9) 40%, rgba(256, 256, 256, <?= $this->agent->is_mobile() ? '0.8' : '0.5' ?>) 70%, rgba(256, 256, 256, <?= $this->agent->is_mobile() ? '0.5' : '0' ?>) 100%);">
-    <div class="container">
-      <div class="row content-middle-fullscreen with-header <?= $this->agent->is_mobile() ? 'justify-content-center text-center' : '' ?>">
-        <div class="col-md-6 col-10">
-          <br>
-          <?php
-          $welcome=[
-            'id' => [
-              'small_title' => 'Daur Ulang Sampahmu Melalui',
-              'title' => lang($service_id),
-              'subtitle' => 'Melihat dan merasakan langsung bagaimana pengelolaan sampah dilakukan secara bertanggung jawab melalui program tur lapangan',
-            ],
-            'en' => [
-              'small_title' => 'Daur Ulang Sampahmu Melalui',
-              'title' => lang($service_id),
-              'subtitle' => 'Witness and experience first-hand how waste are managed responsibly through our informative field trip program ',
-            ],
-          ];
-          $welcome=$this->session->userdata('language')=='en' ? $welcome['en'] : $welcome['id'];
-          ?>
-          <h3 class="g-color-black-opacity-0_8 g-font-weight-700 <?= $this->agent->is_mobile() ? 'g-font-size-30' : 'g-font-size-50' ?> mb-4 g-font-asap" style="line-height: 1.2"><?= $welcome['title'] ?> (AKABIS)</h3>
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="g-color-black-opacity-0_7 <?= $this->agent->is_mobile() ? 'g-font-size-14' : 'g-font-size-16' ?> g-line-height-1_5 mb-3"><?= ucfirst($welcome['subtitle']) ?></h3>
-            </div>
-          </div>
-          <div class="pt-4 <?= $this->agent->is_mobile() ? 'row justify-content-center' : '' ?>">
-            <div class="<?= $this->agent->is_mobile() ? 'col-10' : '' ?>">
-              <a class="click_scroll btn btn-info g-color-white g-brd-white-opacity-0_2 g-brd-2 g-font-size-13 g-rounded-50 g-pl-20 g-pr-20 g-py-9 <?= $this->agent->is_mobile() ? 'btn-block mb-4' : '' ?>" href="<?= site_url('service/'.$service_id.'/join') ?>">
-                <?= strtoupper(lang('get_proposal')) ?>
-                <span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3">
-                  <i class="fa fa-info"></i>
-                </span>
-              </a>
-              <a class="click_scroll btn btn-outline-info g-brd-2 g-font-size-13 g-rounded-50 g-pl-20 g-pr-20 g-py-9 <?= $this->agent->is_mobile() ? 'btn-block' : 'g-ml-10' ?>" href="#about">
-                <?= strtoupper(lang('learn_more')) ?>
-                <span class="align-middle d-none u-icon-v3 g-width-16 g-height-16 g-color-black g-bg-white g-font-size-11 rounded-circle ml-3">
-                  <i class="fa fa-angle-right"></i>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br>
-    </div>
+	<div id="photofolio-highlight" style="height: 10px;position: absolute;width: 80%;margin-top: -100px"></div>
+	<div class="container <?= $this->agent->is_mobile() ? 'g-pt-80 g-pb-50' : 'g-pt-140 g-pb-70' ?>">
+		<div class="text-center g-mb-50">
+			<h2
+				class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= strtoupper(lang('photofolio_highlight')) ?></h2>
+			<hr class="g-width-70 g-my-20 g-brd-2 g-brd-blue">
+			<p class="g-color-white-opacity-0_8 d-none"><?= lang('brand_partner_subtitle') ?></p>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-md-11 col-12">
 
-  </div>
+				<div id="photofolio-highlight-carousel" class="col-md-12 owl-theme"
+				     style="margin: 0 0 30px 0!important;padding:0px">
+					<?php
+					foreach ($photofolios as $porto) :
+						?>
+						<div class="row no-gutters g-bg-white u-shadow-v20 g-mx-10">
+							<?php if ($this->agent->is_mobile()): ?>
+								<div class="col-12">
+									<img class="img-fluid mx-auto"
+									     src="<?= get_image(DIR_SERVICE . $service_id . '/phortofolio/' . $porto->photofolio_image) ?>"
+									     alt="Image Description" style="object-fit: cover;height: 150px">
+								</div>
+							<?php endif; ?>
+							<div class="col-<?= $this->agent->is_mobile() ? '12' : '6' ?> g-pt-20 g-pb-30 g-pl-30 g-pr-10">
+								<img
+									src="<?= get_image(DIR_SERVICE . $service_id . '/phortofolio/' . $porto->photofolio_client_logo) ?>"
+									alt="<?= $porto->photofolio_client . ' logo' ?>" style="max-height: 50px; max-width: 80px;margin-bottom: 5px;">
+								<div class="g-font-weight-600 g-font-size-20"><?= $porto->photofolio_client ?></div>
+								<div
+									class="g-font-size-12 g-line-height-1_1"
+									style="color:#AFAFAF"><?= $porto->photofolio_client_address ?></div>
+								<div class="g-mt-20 g-font-size-13">
+									<?php if (!empty($porto->photofolio_waste_collected)) { ?>
+										<div class="row no-gutters g-line-height-1_3 g-mt-5">
+											<div class="col-auto text-mute g-mr-15">
+												<i class="fa fa-refresh" style="#A7A9AC"></i>
+											</div>
+											<div class="col" style="color:#6C6C6C">
+												Average of Waste Collected
+												<br>
+												<strong><?= $porto->photofolio_waste_collected ?></strong>
+											</div>
+										</div>
+										<?php
+									};
+									if (!empty($porto->photofolio_mou)) {
+										?>
+										<div class="row no-gutters g-line-height-1_3 g-mt-5">
+											<div class="col-auto g-mr-15">
+												<i class="fa fa-check-circle-o" style="#A7A9AC"></i>
+											</div>
+											<div class="col" style="color:#6C6C6C">
+												MOU Sighned
+												<br>
+												<strong><?= $porto->photofolio_mou ?></strong>
+											</div>
+										</div>
+										<?php
+									};
+									if (!empty($porto->photofolio_waste_collected)) {
+										?>
+										<div class="row no-gutters g-line-height-1_3 g-mt-5">
+											<div class="col-auto text-mute g-mr-15">
+												<i class="icon icon-clock" style="#A7A9AC"></i>
+											</div>
+											<div class="col" style="color:#6C6C6C">
+												Period of Contract
+												<br>
+												<strong><?= $porto->photofolio_waste_collected ?></strong>
+											</div>
+										</div>
+										<?php
+									};
+									if (!empty($porto->photofolio_collection_schedulle)) {
+										?>
+										<div class="row no-gutters g-line-height-1_3 g-mt-5">
+											<div class="col-auto text-mute g-mr-15">
+												<i class="fa fa-refresh" style="#A7A9AC"></i>
+											</div>
+											<div class="col" style="color:#6C6C6C">
+												Collection Schedule
+												<br>
+												<strong><?= $porto->photofolio_collection_schedulle ?></strong>
+											</div>
+										</div>
+										<?php
+									};
+									if (!empty($porto->photofolio_start)) {
+										?>
+										<div class="row no-gutters g-line-height-1_3 g-mt-5">
+											<div class="col-auto text-mute g-mr-15">
+												<i class="fa fa-refresh" style="#A7A9AC"></i>
+											</div>
+											<div class="col" style="color:#6C6C6C">
+												Period Start
+												<br>
+												<strong><?= $porto->photofolio_start ?></strong>
+											</div>
+										</div>
+										<?php
+									};
+									if (!empty($porto->photofolio_end)) {
+										?>
+										<div class="row no-gutters g-line-height-1_3 g-mt-5">
+											<div class="col-auto text-mute g-mr-15">
+												<i class="fa fa-refresh" style="#A7A9AC"></i>
+											</div>
+											<div class="col" style="color:#6C6C6C">
+												Period End
+												<br>
+												<strong><?= $porto->photofolio_end ?></strong>
+											</div>
+										</div>
+										<?php
+									};
+									?>
+								</div>
+							</div>
+							<?php if (!$this->agent->is_mobile()): ?>
+								<div class="col-6">
+									<img class="img-fluid mx-auto"
+									     src="<?= get_image(DIR_SERVICE . $service_id . '/phortofolio/' . $porto->photofolio_image) ?>"
+									     alt="Image Description" style="object-fit: cover;height: 100%">
+								</div>
+							<?php endif; ?>
+						</div>
+					<?php
+					endforeach;
+					?>
+				</div>
+
+				<script>
+					$(window).ready(function () {
+						var element_id = '#photofolio-highlight-carousel';
+						$(element_id).owlCarousel({
+							loop: true,
+							margin: 0,
+							dots: true,
+							nav: true,
+							autoplay: false,
+							autoplayTimeout: 1500,
+							autoplayHoverPause: true,
+							responsive: {
+								0: {
+									items: 1
+								},
+								600: {
+									items: 2
+								},
+								1000: {
+									items: 2
+								}
+							},
+							navText: [
+								'<i class="fa fa-angle-left g-color-w4c-blue-v1" aria-hidden="true" style="transform: scale(4)"></i>',
+								'<i class="fa fa-angle-right g-color-w4c-blue-v1" aria-hidden="true" style="transform: scale(4)"></i>']
+						});
+
+						//$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
+						$(element_id + ' .owl-controls').attr('style', 'margin-top: 30px;');
+						var screen_display =<?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
+						// console.log(screen_display);
+						var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '69' : '98.5' ?>) / 100) / 2;
+						//console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
+						<?php
+						if ($this->agent->is_mobile()) {
+							echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 505px;width: 74%;right: '+margin_side+'px;')";
+						} else {
+							echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 200px;width: 101.5%;right: '+margin_side+'px;')";
+						}
+						?>
+					});
+
+				</script>
+
+				<style>
+					.owl-prev {
+						width: 15px;
+						height: 100px;
+						position: absolute;
+						top: 40%;
+						margin-left: -20px;
+						display: block !important;
+						border: 0px solid black;
+					}
+
+					.owl-next {
+						width: 15px;
+						height: 100px;
+						position: absolute;
+						top: 40%;
+						right: -25px;
+						display: block !important;
+						border: 0px solid black;
+					}
+
+					.owl-prev i, .owl-next i {
+						transform: scale(1, 6);
+						color: #ccc;
+					}
+				</style>
+
+			</div>
+		</div>
+	</div>
 </section>
-<!-- End Promo Block -->
