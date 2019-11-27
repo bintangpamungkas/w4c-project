@@ -28,7 +28,7 @@
 								<img
 									src="<?= get_image(DIR_SERVICE . $service_id . '/photofolio/' . $porto->photofolio_client_logo) ?>"
 									alt="<?= $porto->photofolio_client ?>" style="max-height: 50px; max-width: 80px;margin-bottom: 5px;">
-								<div class="g-font-weight-600 g-font-size-20"><?= $porto->photofolio_client ?></div>
+								<div class="g-font-weight-600 g-font-size-20 g-line-height-1_1"><?= $porto->photofolio_client ?></div>
 								<div
 									class="g-font-size-12 g-line-height-1_1"
 									style="color:#AFAFAF"><?= $porto->photofolio_client_address ?></div>

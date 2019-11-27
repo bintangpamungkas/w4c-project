@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1e4089d-7ce0-4efd-b1a1-4f155ef0c38b" name="Default" comment="[Update] Carousel arrow mobile">
+    <list default="true" id="f1e4089d-7ce0-4efd-b1a1-4f155ef0c38b" name="Default" comment="[Update] ZWTL Asset &amp; what you get icon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Service.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/activities.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/activities.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/benefit.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/benefit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/what-you-get.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/what-you-get.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/service/inorganic-waste-management/bg/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/service/inorganic-waste-management/bg/W4C_RPM_area_pemilahan_2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/service/inorganic-waste-management/client/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/service/inorganic-waste-management/client/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/service/inorganic-waste-management/client/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/service/inorganic-waste-management/client/4.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,22 +39,22 @@
           <entry key="project.open.time.6" value="7" />
           <entry key="project.open.time.7" value="8" />
           <entry key="project.open.time.8" value="3" />
-          <entry key="project.open.time.9" value="6" />
-          <entry key="project.opened" value="46" />
+          <entry key="project.open.time.9" value="7" />
+          <entry key="project.opened" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="3" />
           <entry key="htaccess" value="4" />
-          <entry key="php" value="86" />
+          <entry key="php" value="87" />
           <entry key="rnc" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="3" />
-          <entry key="PHP" value="86" />
+          <entry key="PHP" value="87" />
           <entry key="RNG Compact" value="1" />
           <entry key="htaccess" value="4" />
         </counts>
@@ -58,14 +62,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="htaccess" value="2" />
-          <entry key="php" value="4673" />
-          <entry key="txt" value="281" />
+          <entry key="php" value="4716" />
+          <entry key="txt" value="330" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="4673" />
-          <entry key="PLAIN_TEXT" value="281" />
+          <entry key="PHP" value="4716" />
+          <entry key="PLAIN_TEXT" value="330" />
           <entry key="htaccess" value="2" />
         </counts>
       </usages-collector>
@@ -85,15 +89,6 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/application/config/constants.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1184">
-                  <caret line="74" column="31" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/application/views/services/details/sections/waste-flow.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="1120">
@@ -105,8 +100,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/application/controllers/Service.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="203">
-                  <caret line="81" column="24" lean-forward="true" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
+                <state relative-caret-position="299">
+                  <caret line="90" column="30" lean-forward="true" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
                 </state>
               </provider>
             </entry>
@@ -138,11 +133,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2672">
-                  <caret line="167" column="104" selection-start-line="167" selection-start-column="104" selection-end-line="167" selection-end-column="104" />
+                <state relative-caret-position="363">
+                  <caret line="30" column="61" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
                 </state>
               </provider>
             </entry>
@@ -156,13 +151,22 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/application/views/services/details/sections/what-you-get.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="336">
-                  <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+                  <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/application/views/services/details/sections/about.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="320">
+                  <caret line="20" column="200" lean-forward="true" selection-start-line="20" selection-start-column="200" selection-end-line="20" selection-end-column="200" />
                   <folding>
-                    <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -196,7 +200,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>s</find>
       <find>super</find>
       <find>supers</find>
       <find>F</find>
@@ -226,6 +229,7 @@
       <find>img</find>
       <find>base</find>
       <find>learn</find>
+      <find>2.</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -266,7 +270,6 @@
         <option value="$PROJECT_DIR$/application/models/Service_model.php" />
         <option value="$PROJECT_DIR$/application/views/templates/asset_head.php" />
         <option value="$PROJECT_DIR$/application/.htaccess" />
-        <option value="$PROJECT_DIR$/application/views/services/details/sections/about.php" />
         <option value="$PROJECT_DIR$/application/views/services/details/sections/project-highlight.php" />
         <option value="$PROJECT_DIR$/application/views/services/details/index.php" />
         <option value="$PROJECT_DIR$/application/views/services/details/sections/expertise.php" />
@@ -289,13 +292,14 @@
         <option value="$PROJECT_DIR$/application/views/services/index.php" />
         <option value="$PROJECT_DIR$/application/views/services/details/sections/welcome.php" />
         <option value="$PROJECT_DIR$/application/views/services/details/sections/waste-flow.php" />
-        <option value="$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php" />
         <option value="$PROJECT_DIR$/application/views/services/details/sections/our-client.php" />
         <option value="$PROJECT_DIR$/application/views/services/details/sections/cta.php" />
         <option value="$PROJECT_DIR$/application/views/services/details/sections/benefit.php" />
         <option value="$PROJECT_DIR$/application/views/services/details/sections/activities.php" />
         <option value="$PROJECT_DIR$/application/controllers/Service.php" />
         <option value="$PROJECT_DIR$/application/views/services/details/sections/what-you-get.php" />
+        <option value="$PROJECT_DIR$/application/views/services/details/sections/about.php" />
+        <option value="$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php" />
       </list>
     </option>
   </component>
@@ -317,7 +321,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -446,6 +449,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -541,7 +545,8 @@
       <workItem from="1574873098674" duration="983000" />
       <workItem from="1574874381945" duration="1011000" />
       <workItem from="1574875605044" duration="747000" />
-      <workItem from="1574876826286" duration="537000" />
+      <workItem from="1574876826286" duration="900000" />
+      <workItem from="1574878305328" duration="328000" />
     </task>
     <task id="LOCAL-00001" summary="[Update] Image Service thumbnail&#10;&#10;[Debug] get_image() check image not working">
       <created>1574577726705</created>
@@ -592,17 +597,24 @@
       <option name="project" value="LOCAL" />
       <updated>1574875667833</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="[Update] ZWTL Asset &amp; what you get icon">
+      <created>1574877425757</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1574877425757</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87193000" />
+    <option name="totallyTimeSpent" value="87884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20536913" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2080537" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -675,7 +687,8 @@
     <MESSAGE value="[Add] Achievement Section" />
     <MESSAGE value="[Add] Achievement mobile" />
     <MESSAGE value="[Update] Carousel arrow mobile" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Update] Carousel arrow mobile" />
+    <MESSAGE value="[Update] ZWTL Asset &amp; what you get icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Update] ZWTL Asset &amp; what you get icon" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application/views/services/dropbox-for-brand/sections/cta.php">
@@ -759,13 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/services/details/sections/about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="77" lean-forward="true" selection-start-line="6" selection-start-column="77" selection-end-line="6" selection-end-column="77" />
         </state>
       </provider>
     </entry>
@@ -985,13 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2672">
-          <caret line="167" column="104" selection-start-line="167" selection-start-column="104" selection-end-line="167" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/services/details/sections/our-client.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="848">
@@ -1013,20 +1012,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Service.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="81" column="24" lean-forward="true" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/services/details/sections/what-you-get.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/services/details/sections/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="200" lean-forward="true" selection-start-line="20" selection-start-column="200" selection-end-line="20" selection-end-column="200" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Service.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="90" column="30" lean-forward="true" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="30" column="61" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
         </state>
       </provider>
     </entry>

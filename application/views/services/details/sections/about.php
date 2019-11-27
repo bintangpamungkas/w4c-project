@@ -5,7 +5,7 @@
     <div class="row">
 
       <div class="col-lg-6 g-mb-30 <?= $this->agent->is_mobile() ? 'd-none' : '' ?>">
-        <div style="background: url('<?= base_url('assets/img/service/'.$service_id.'/bg/2.jpg') ?>');height: 400px;background-size: cover"></div>
+        <div style="background: url('<?= get_image('assets/img/service/'.$service_id.'/bg/'.$service->service_about_image) ?>');height: 400px;background-size: cover"></div>
       </div>
 
       <div class="col-md-6 g-mb-30 g-mt-15">
