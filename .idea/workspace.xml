@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1e4089d-7ce0-4efd-b1a1-4f155ef0c38b" name="Default" comment="[Update] ZWTL Asset &amp; what you get icon">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/about.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/service/inorganic-waste-management/bg/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/service/inorganic-waste-management/bg/W4C_RPM_area_pemilahan_2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/service/inorganic-waste-management/client/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/service/inorganic-waste-management/client/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/service/inorganic-waste-management/client/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/service/inorganic-waste-management/client/4.jpg" beforeDir="false" />
+    <list default="true" id="f1e4089d-7ce0-4efd-b1a1-4f155ef0c38b" name="Default" comment="[Update] IWM Asset">
+      <change beforePath="$PROJECT_DIR$/assets/img/service/event-waste-management/bg/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/service/event-waste-management/bg/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/service/event-waste-management/client/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/service/event-waste-management/client/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/service/event-waste-management/client/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/service/event-waste-management/client/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/service/event-waste-management/client/5-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/service/event-waste-management/client/5.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,13 +62,13 @@
         <counts>
           <entry key="htaccess" value="2" />
           <entry key="php" value="4716" />
-          <entry key="txt" value="330" />
+          <entry key="txt" value="333" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PHP" value="4716" />
-          <entry key="PLAIN_TEXT" value="330" />
+          <entry key="PLAIN_TEXT" value="333" />
           <entry key="htaccess" value="2" />
         </counts>
       </usages-collector>
@@ -101,7 +100,7 @@
             <entry file="file://$PROJECT_DIR$/application/controllers/Service.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="299">
-                  <caret line="90" column="30" lean-forward="true" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
+                  <caret line="90" column="30" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
                 </state>
               </provider>
             </entry>
@@ -136,8 +135,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="363">
-                  <caret line="30" column="61" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
+                <state relative-caret-position="187">
+                  <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -164,7 +163,7 @@
             <entry file="file://$PROJECT_DIR$/application/views/services/details/sections/about.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="320">
-                  <caret line="20" column="200" lean-forward="true" selection-start-line="20" selection-start-column="200" selection-end-line="20" selection-end-column="200" />
+                  <caret line="20" column="200" selection-start-line="20" selection-start-column="200" selection-end-line="20" selection-end-column="200" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
                   </folding>
@@ -546,7 +545,7 @@
       <workItem from="1574874381945" duration="1011000" />
       <workItem from="1574875605044" duration="747000" />
       <workItem from="1574876826286" duration="900000" />
-      <workItem from="1574878305328" duration="328000" />
+      <workItem from="1574878305328" duration="958000" />
     </task>
     <task id="LOCAL-00001" summary="[Update] Image Service thumbnail&#10;&#10;[Debug] get_image() check image not working">
       <created>1574577726705</created>
@@ -604,11 +603,18 @@
       <option name="project" value="LOCAL" />
       <updated>1574877425757</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[Update] IWM Asset">
+      <created>1574878663292</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1574878663292</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87884000" />
+    <option name="totallyTimeSpent" value="88514000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -688,7 +694,8 @@
     <MESSAGE value="[Add] Achievement mobile" />
     <MESSAGE value="[Update] Carousel arrow mobile" />
     <MESSAGE value="[Update] ZWTL Asset &amp; what you get icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Update] ZWTL Asset &amp; what you get icon" />
+    <MESSAGE value="[Update] IWM Asset" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Update] IWM Asset" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application/views/services/dropbox-for-brand/sections/cta.php">
@@ -1022,7 +1029,7 @@
     <entry file="file://$PROJECT_DIR$/application/views/services/details/sections/about.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
-          <caret line="20" column="200" lean-forward="true" selection-start-line="20" selection-start-column="200" selection-end-line="20" selection-end-column="200" />
+          <caret line="20" column="200" selection-start-line="20" selection-start-column="200" selection-end-line="20" selection-end-column="200" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
           </folding>
@@ -1032,14 +1039,14 @@
     <entry file="file://$PROJECT_DIR$/application/controllers/Service.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
-          <caret line="90" column="30" lean-forward="true" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
+          <caret line="90" column="30" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="30" column="61" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
+        <state relative-caret-position="187">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
         </state>
       </provider>
     </entry>
