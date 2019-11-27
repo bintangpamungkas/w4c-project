@@ -7,7 +7,7 @@
     </div>
     <div class="row text-center">
       <div class="col-md-4 col-xs-12 mb-4">
-        <div class="g-font-color-w4c-<?=$this->agent->is_mobile() ? 'green-v1' : 'blue-v1' ?> g-font-size-50 g-font-weight-900">
+        <div class="g-color-w4c-blue-v1 g-font-size-50 g-font-weight-900">
             9999
         </div>
         <div class="g-font-weight-700 g-font-size-18">
@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="col-md-4 col-xs-12 mb-4">
-        <div class="g-font-color-w4c-<?=$this->agent->is_mobile() ? 'green-v1' : 'blue-v1' ?> g-font-size-50 g-font-weight-900">
+        <div class="g-color-w4c-blue-v1 g-font-size-50 g-font-weight-900">
             9999
         </div>
         <div class="g-font-weight-700 g-font-size-18">
@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="col-md-4 col-xs-12 mb-4 ">
-        <div class="g-font-color-w4c-<?=$this->agent->is_mobile() ? 'green-v1' : 'blue-v1' ?> g-font-size-50 g-font-weight-900">
+        <div class="g-color-w4c-blue-v1 g-font-size-50 g-font-weight-900">
             9999
         </div>
         <div class="g-font-weight-700 g-font-size-18">

@@ -20,7 +20,7 @@ $service_targets=[
 ?>
 <!-- Promo Block -->
 <section id="welcome" class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}' style="background-color: #3D658E;">
-  <div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center image-opacity-0 animated fadeIn" id="welcome-image" style="height: 120%;background-image: url(<?= $this->agent->is_mobile() ? base_url('assets/img/bg/bg_header.jpg') : base_url('assets/img/bg/bg_header.jpg') ?>);filter: grayscale(100%);background-position-y: 10px;"></div>
+  <div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center image-opacity-0 animated fadeIn" id="welcome-image" style="height: 120%;background-image: url(<?= $this->agent->is_mobile() ? base_url(DIR_BG.'home/welcome-header.jpg') : base_url(DIR_BG.'home/welcome-header.jpg') ?>);filter: grayscale(100%);background-position-y: 10px;"></div>
   <div class="g-flex-middle-item full-height-block pending-show animated d-zap" style="background:rgba(11, 63, 94, 0.8);">
     <div class="container">
       <div class="row content-middle-fullscreen">

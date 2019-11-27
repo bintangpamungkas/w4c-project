@@ -57,7 +57,7 @@
                   items:4
                 }
               },
-              navText : ['<i class="fa fa-angle-left g-color-w4c-blue-v1" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile()?'3':'4'?>)"></i>','<i class="fa fa-angle-right g-color-w4c-blue-v1" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile()?'3':'4'?>)"></i>']
+              navText : ['<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-left g-color-gray-light-v1 nav-arrow-left' : 'fa fa-angle-left g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile()?'2':'4'?>)"></i>','<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-right g-color-gray-light-v1 nav-arrow-right' : 'fa fa-angle-right g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile()?'2':'4'?>)"></i>']
             });
 
             //$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
@@ -69,7 +69,7 @@
             // console.log('screen : '+screen_display+'nav : '+screen_display*<?= $this->agent->is_mobile() ? '8' : '9' ?>0/100+'batas : '+margin_side);
             <?php
             if($this->agent->is_mobile()){
-              echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 306px;width: 74%;right: '+margin_side+'px;')";
+              echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 280px;width: 74%;right: '+margin_side+'px;')";
             }else{
               echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 140px;width: 101.5%;right: '+margin_side+'px;')";
             }

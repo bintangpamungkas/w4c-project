@@ -186,7 +186,7 @@ $lang["client_only_title"]="Klien Kami";
 //Blogs W4C
 $lang["blog_title"]="Blog & Berita";
 $lang["blog_cta_description"]="Baca lebih banyak konten tentang pengelolaan sampah yang bertanggung jawab dan gaya hidup ramah lingkungan di halaman blog & berita Kami";
-$lang["blog_cta_link"]="Baca Konten Lainnya";
+$lang["blog_cta_link"]="Artikel Lainnya";
 
 //CTA W4C
 $lang["cta_title_1"]="Siap Memulai Pengelolaan Sampah";

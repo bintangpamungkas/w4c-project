@@ -57,7 +57,7 @@
             <div class="g-pa-30 g-mt-10" style="box-shadow: 0 0 20px rgba(0, 0, 0, 0.05)">
               <div class="row">
                 <div class="col-auto">
-                  <img class="d-inline-block g-width-80 g-height-80 rounded-circle" src="<?= base_url('assets/img/testimonial/'.$x['testi_photo']) ?>" alt="Image Description">
+                  <img class="d-inline- <?=$this->agent->is_mobile() ? ' g-width-55 g-height-55 ' : ' g-width-80 g-height-80 ' ?>rounded-circle" src="<?= base_url('assets/img/testimonial/'.$x['testi_photo']) ?>" alt="Image Description">
                 </div>
                 <div class="col">
                   <!-- <i class="d-block g-color-info g-font-size-50 g-line-height-0_7 g-pos-rel g-top-15 g-mb-20">&#8220;</i> -->
@@ -90,19 +90,22 @@
             items:1
           },
           600:{
-            items:2
+            items:1
           },
           1000:{
-            items:3
+            items:2
           }
         },
-        navText : ['<i class="fa fa-angle-left g-color-w4c-blue-v1" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile()?'3':'4'?>)"></i>','<i class="fa fa-angle-right g-color-w4c-blue-v1" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile()?'3':'4'?>)"></i>']
+	      navText : ['<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-left g-color-gray-light-v1 nav-arrow-left' : 'fa fa-angle-left g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile()?'2':'4'?>)"></i>','<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-right g-color-gray-light-v1 nav-arrow-right' : 'fa fa-angle-right g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile()?'2':'4'?>)"></i>']
+
+	      //navText : ['<i class="fa fa-angle-left g-color-w4c-blue-v1" aria-hidden="true" style="transform: scale(<?//=$this->agent->is_mobile()?'3':'4'?>//)"></i>','<i class="fa fa-angle-right g-color-w4c-blue-v1" aria-hidden="true" style="transform: scale(<?//=$this->agent->is_mobile()?'3':'4'?>//)"></i>']
       });
 
       // $(element_id+' .owl-item').attr('style', 'width: 450px;margin-right: 30px;');
       $(element_id+' .owl-controls').attr('style', 'margin-top: 10px;');
 
-      $('.owl-stage-outer').css('padding-top', 1);
+	    $('.owl-stage-outer').css('padding-top', 1);
+	    $('.owl-stage-outer').css('padding-bottom', 10);
 
       var screen_display=<?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
       // console.log(screen_display);
@@ -110,7 +113,7 @@
       // console.log('screen : '+screen_display+'nav : '+screen_display*<?= $this->agent->is_mobile() ? '8' : '9' ?>0/100+'batas : '+margin_side);
       <?php
       if($this->agent->is_mobile()){
-        echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 267px;width: 68%;right: '+margin_side+'px;')";
+        echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 300px;width: 68%;right: '+margin_side+'px;')";
       }else{
         echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 140px;width: 101.5%;right: '+margin_side+'px;')";
       }

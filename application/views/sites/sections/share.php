@@ -5,17 +5,16 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-6 <?= $this->agent->is_mobile() ? 'text-center' : '' ?>">
-                <h3 style="margin-bottom: 0;padding-top: 20px">
+            <div class="col-md-6 <?= $this->agent->is_mobile() ? 'text-center' : '' ?> g-color-info">
+                <div class="h3 g-font-weight-600" style="margin-bottom: 0;padding-top: 20px">
                     <?= lang('share_title') ?>
-                </h3>
-                <small class="text-muted">
+                </div>
+                <div  class="text-muted">
                     <?= lang('share_subtitle') ?>
-                </small>
+                </div>
             </div>
             <div class="col-md-6">
                 <div class="<?= $this->agent->is_mobile() ? 'text-center' : 'text-right' ?> pt-4">
-
                     <?php
                     $social=share_social_media();
                     foreach ($social as $social):

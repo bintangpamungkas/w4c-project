@@ -1,16 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1e4089d-7ce0-4efd-b1a1-4f155ef0c38b" name="Default" comment="[Add] Achievement">
+    <list default="true" id="f1e4089d-7ce0-4efd-b1a1-4f155ef0c38b" name="Default" comment="[Add] Achievement mobile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/core/MY_Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/MY_Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/language/english/this_lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/language/english/this_lang.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/language/indonesia/this_lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/language/indonesia/this_lang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/our-achievement.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/our-achievement.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/our-client.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/our-client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/waste-flow.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/waste-flow.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/what-you-get.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/what-you-get.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/sites/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/sites/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/sites/sections/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/sites/sections/blog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/sites/sections/client.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/sites/sections/client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/sites/sections/counter.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/sites/sections/counter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/sites/sections/cta.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/sites/sections/cta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/sites/sections/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/sites/sections/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/sites/sections/share.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/sites/sections/share.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/sites/sections/testimonial.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/sites/sections/testimonial.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/3r_school_program.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/ades.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/ades.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/akabis.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/akabis.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/brand.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/bsf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/default.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/dropbox.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/dropbox.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/edubis.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/epr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/event.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/feasibility.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/in_store_recycling.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/in_store_recycling.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/inorganic.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/personal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/poin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/responsible.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/sendyourwaste.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/solid_waste_management_research.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/zwtl.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/bg/services/thumbnail/zwtl.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,31 +48,35 @@
     <session id="1815708914">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="4" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.12" value="4" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="7" />
-          <entry key="project.open.time.7" value="6" />
+          <entry key="project.open.time.7" value="8" />
           <entry key="project.open.time.8" value="3" />
-          <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="28" />
+          <entry key="project.open.time.9" value="4" />
+          <entry key="project.opened" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="3" />
           <entry key="htaccess" value="4" />
-          <entry key="php" value="49" />
+          <entry key="php" value="71" />
           <entry key="rnc" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="3" />
-          <entry key="PHP" value="49" />
+          <entry key="PHP" value="71" />
           <entry key="RNG Compact" value="1" />
           <entry key="htaccess" value="4" />
         </counts>
@@ -57,14 +84,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="htaccess" value="2" />
-          <entry key="php" value="3798" />
-          <entry key="txt" value="222" />
+          <entry key="php" value="4229" />
+          <entry key="txt" value="242" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="3798" />
-          <entry key="PLAIN_TEXT" value="222" />
+          <entry key="PHP" value="4229" />
+          <entry key="PLAIN_TEXT" value="242" />
           <entry key="htaccess" value="2" />
         </counts>
       </usages-collector>
@@ -72,77 +99,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/sites/sections/services.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1152">
-              <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#section#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="173">
+              <caret line="199" column="19" selection-start-line="199" selection-start-column="19" selection-end-line="199" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/unify-globals.css">
+        <entry file="file://$PROJECT_DIR$/application/views/sites/sections/client.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75776">
-              <caret line="4736" column="1" selection-start-line="4736" selection-start-column="1" selection-end-line="4736" selection-end-column="21" />
+            <state relative-caret-position="128">
+              <caret line="59" selection-start-line="59" selection-end-line="60" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Service.php">
+        <entry file="file://$PROJECT_DIR$/application/views/sites/sections/testimonial.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1520">
-              <caret line="95" column="22" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="22" />
+            <state relative-caret-position="162">
+              <caret line="98" selection-start-line="98" selection-end-line="99" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/services/details/sections/our-client.php">
+        <entry file="file://$PROJECT_DIR$/application/config/constants.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="14" column="110" selection-start-line="14" selection-start-column="110" selection-end-line="14" selection-end-column="110" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/services/details/sections/benefit.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="32" selection-start-column="32" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/services/details/sections/waste-flow.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/services/details/sections/recomended-for.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/templates/navigations/general.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1344">
-              <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+            <state relative-caret-position="1488">
+              <caret line="93" column="14" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -150,8 +138,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/core/MY_Controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5968">
-              <caret line="373" selection-start-line="373" selection-end-line="373" />
+            <state relative-caret-position="224">
+              <caret line="71" column="8" lean-forward="true" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/language/indonesia/this_lang.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="189" lean-forward="true" selection-start-line="189" selection-end-line="189" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/language/english/this_lang.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="118" column="40" lean-forward="true" selection-start-line="118" selection-start-column="40" selection-end-line="118" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/sites/sections/cta.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="20" column="91" selection-start-line="20" selection-start-column="91" selection-end-line="20" selection-end-column="91" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/sites/sections/share.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="16" column="98" selection-start-line="16" selection-start-column="98" selection-end-line="16" selection-end-column="98" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/sites/sections/blog.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="14" column="171" selection-start-line="14" selection-start-column="170" selection-end-line="14" selection-end-column="171" />
             </state>
           </provider>
         </entry>
@@ -160,11 +193,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ingin me</find>
-      <find>brand_accepted_waste_wanna</find>
-      <find>droppoint_subtitle</find>
-      <find>join_user_subtitle</find>
-      <find>sampah</find>
       <find>pengumpulan</find>
       <find>Counc</find>
       <find>s</find>
@@ -190,12 +218,18 @@
       <find>g-color-</find>
       <find>g-color-gr</find>
       <find>g-color-gray</find>
+      <find>talk_to</find>
+      <find>cha</find>
+      <find>blog_cta_link</find>
+      <find>rease the material processing of brand-labelled waste throughou</find>
+      <find>’</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>tetra pak</replace>
       <replace>Tetra Pak</replace>
       <replace>.'</replace>
+      <replace>'</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\XAMPP\htdocs\waste4change\official\application\models</dir>
@@ -208,13 +242,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/views/sites/sections/threat.php" />
-        <option value="$PROJECT_DIR$/application/views/services/event-waste-management/join.php" />
-        <option value="$PROJECT_DIR$/application/views/templates/navigation.php" />
-        <option value="$PROJECT_DIR$/assets/js/custom.js" />
-        <option value="$PROJECT_DIR$/application/views/templates/headers/index.php" />
-        <option value="$PROJECT_DIR$/application/views/brands/cocacola/sections/threat.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Brand.php" />
         <option value="$PROJECT_DIR$/application/views/brands/tetrapak/sections/map.php" />
         <option value="$PROJECT_DIR$/application/views/services/personal-waste-management/index.php" />
         <option value="$PROJECT_DIR$/application/views/services/personal-waste-management/join.php" />
@@ -234,7 +261,6 @@
         <option value="$PROJECT_DIR$/application/views/services/dropbox-for-brand/sections/feature.php" />
         <option value="$PROJECT_DIR$/application/views/services/dropbox-for-brand/sections/facility.php" />
         <option value="$PROJECT_DIR$/application/views/services/dropbox-for-brand/sections/cta.php" />
-        <option value="$PROJECT_DIR$/application/views/sites/sections/blog.php" />
         <option value="$PROJECT_DIR$/application/views/services/recycling-with-us/sections/client.php" />
         <option value="$PROJECT_DIR$/application/controllers/Site.php" />
         <option value="$PROJECT_DIR$/application/views/templates/navigations/general.php" />
@@ -249,16 +275,24 @@
         <option value="$PROJECT_DIR$/application/views/services/details/index.php" />
         <option value="$PROJECT_DIR$/application/views/services/details/sections/activities.php" />
         <option value="$PROJECT_DIR$/application/views/services/details/sections/expertise.php" />
-        <option value="$PROJECT_DIR$/application/language/english/this_lang.php" />
-        <option value="$PROJECT_DIR$/application/language/indonesia/this_lang.php" />
         <option value="$PROJECT_DIR$/application/controllers/Service.php" />
         <option value="$PROJECT_DIR$/application/views/services/details/sections/recomended-for.php" />
-        <option value="$PROJECT_DIR$/application/views/services/details/sections/our-achievement.php" />
-        <option value="$PROJECT_DIR$/application/core/MY_Controller.php" />
         <option value="$PROJECT_DIR$/application/views/services/details/sections/waste-flow.php" />
         <option value="$PROJECT_DIR$/application/views/services/details/sections/what-you-get.php" />
         <option value="$PROJECT_DIR$/application/views/services/details/sections/our-client.php" />
         <option value="$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php" />
+        <option value="$PROJECT_DIR$/application/views/services/details/sections/our-achievement.php" />
+        <option value="$PROJECT_DIR$/application/views/sites/sections/services.php" />
+        <option value="$PROJECT_DIR$/application/views/sites/sections/counter.php" />
+        <option value="$PROJECT_DIR$/application/views/sites/index.php" />
+        <option value="$PROJECT_DIR$/application/core/MY_Controller.php" />
+        <option value="$PROJECT_DIR$/application/views/sites/sections/share.php" />
+        <option value="$PROJECT_DIR$/application/language/indonesia/this_lang.php" />
+        <option value="$PROJECT_DIR$/application/views/sites/sections/client.php" />
+        <option value="$PROJECT_DIR$/application/views/sites/sections/testimonial.php" />
+        <option value="$PROJECT_DIR$/application/views/sites/sections/cta.php" />
+        <option value="$PROJECT_DIR$/application/language/english/this_lang.php" />
+        <option value="$PROJECT_DIR$/application/views/sites/sections/blog.php" />
       </list>
     </option>
   </component>
@@ -269,7 +303,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
+    <option name="x" value="-78" />
+    <option name="y" value="-28" />
     <option name="width" value="1935" />
     <option name="height" value="1050" />
   </component>
@@ -279,6 +314,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -359,32 +395,15 @@
               <item name="official" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="details" type="462c0819:PsiDirectoryNode" />
+              <item name="sites" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="official" type="b2602c69:ProjectViewProjectNode" />
               <item name="official" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="details" type="462c0819:PsiDirectoryNode" />
+              <item name="sites" type="462c0819:PsiDirectoryNode" />
               <item name="sections" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="official" type="b2602c69:ProjectViewProjectNode" />
-              <item name="official" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="official" type="b2602c69:ProjectViewProjectNode" />
-              <item name="official" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="navigations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="official" type="b2602c69:ProjectViewProjectNode" />
@@ -401,13 +420,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="service&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../siamad" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
@@ -479,7 +497,17 @@
       <workItem from="1574709944957" duration="1053000" />
       <workItem from="1574711170965" duration="1157000" />
       <workItem from="1574712380039" duration="827000" />
-      <workItem from="1574713592787" duration="557000" />
+      <workItem from="1574713592787" duration="834000" />
+      <workItem from="1574783840728" duration="617000" />
+      <workItem from="1574785282833" duration="598000" />
+      <workItem from="1574787052548" duration="447000" />
+      <workItem from="1574788612436" duration="271000" />
+      <workItem from="1574790361074" duration="252000" />
+      <workItem from="1574824983642" duration="393000" />
+      <workItem from="1574861775124" duration="554000" />
+      <workItem from="1574862530343" duration="914000" />
+      <workItem from="1574863740691" duration="1185000" />
+      <workItem from="1574864951103" duration="781000" />
     </task>
     <task id="LOCAL-00001" summary="[Update] Image Service thumbnail&#10;&#10;[Debug] get_image() check image not working">
       <created>1574577726705</created>
@@ -516,17 +544,24 @@
       <option name="project" value="LOCAL" />
       <updated>1574706360331</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[Add] Achievement mobile">
+      <created>1574714238546</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1574714238546</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74872000" />
+    <option name="totallyTimeSpent" value="81189000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16174497" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18389262" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -537,7 +572,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3272727" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32587412" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32867134" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
@@ -596,53 +631,11 @@
     <MESSAGE value="[Update] Tab Service by target" />
     <MESSAGE value="[Update] Waste Flow Mobile" />
     <MESSAGE value="[Add] Achievement" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Add] Achievement" />
+    <MESSAGE value="[Add] Achievement Section" />
+    <MESSAGE value="[Add] Achievement mobile" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Add] Achievement mobile" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/views/brands/tetrapak/sections/story.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/services/recycling-with-us/sections/cta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="243" selection-start-line="10" selection-start-column="218" selection-end-line="10" selection-end-column="243" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/services/brand-sustainability-report-page/sections/cta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="218" selection-start-line="10" selection-start-column="218" selection-end-line="10" selection-end-column="218" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/services/sendyourwaste/sections/cta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="218" selection-start-line="10" selection-start-column="218" selection-end-line="10" selection-end-column="218" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/servicesx/sendyourwaste/sections/cta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="218" selection-start-line="10" selection-start-column="218" selection-end-line="10" selection-end-column="218" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/templates/headers/general.php" />
-    <entry file="file://$PROJECT_DIR$/application/views/templates/headers/brand.php" />
-    <entry file="file://$PROJECT_DIR$/application/views/services/recycling-with-us/sections/about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="90" selection-start-line="16" selection-start-column="90" selection-end-line="16" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/services/recycling-with-us/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -654,13 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="800">
           <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/sites/sections/blog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -748,13 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/services/details/sections/about.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -807,24 +786,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/language/indonesia/this_lang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/helpers/my_helper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/language/english/this_lang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -856,20 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/services/details/sections/our-achievement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" selection-start-column="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/constants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1280">
-          <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/unify.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
@@ -879,11 +830,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1152">
-          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#section#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="48">
+          <caret line="108" column="69" lean-forward="true" selection-start-line="108" selection-start-column="69" selection-end-line="108" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -894,9 +842,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/services/details/sections/our-achievement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Service.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1520">
+        <state relative-caret-position="635">
           <caret line="95" column="22" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="22" />
         </state>
       </provider>
@@ -931,15 +886,102 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/templates/navigations/general.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1344">
-          <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+        <state relative-caret-position="960">
+          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/sites/sections/counter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/sites/sections/threat.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/sites/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1488">
+          <caret line="93" column="14" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/sites/sections/share.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="98" selection-start-line="16" selection-start-column="98" selection-end-line="16" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/sites/sections/client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="59" selection-start-line="59" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/sites/sections/testimonial.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="98" selection-start-line="98" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/sites/sections/cta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="20" column="91" selection-start-line="20" selection-start-column="91" selection-end-line="20" selection-end-column="91" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/core/MY_Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5968">
-          <caret line="373" selection-start-line="373" selection-end-line="373" />
+        <state relative-caret-position="224">
+          <caret line="71" column="8" lean-forward="true" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/language/english/this_lang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="118" column="40" lean-forward="true" selection-start-line="118" selection-start-column="40" selection-end-line="118" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/language/indonesia/this_lang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="189" lean-forward="true" selection-start-line="189" selection-end-line="189" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/sites/sections/services.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="199" column="19" selection-start-line="199" selection-start-column="19" selection-end-line="199" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/sites/sections/blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="171" selection-start-line="14" selection-start-column="170" selection-end-line="14" selection-end-column="171" />
         </state>
       </provider>
     </entry>

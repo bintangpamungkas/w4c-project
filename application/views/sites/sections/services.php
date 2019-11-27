@@ -158,7 +158,7 @@ $service_targets=[
               <?=lang('services_not_found')?>
             </div>
             <a class="btn btn-info btn-xl btn-block g-brd-2 g-font-size-13 g-rounded-50 g-font-weight-700" href="#"><?=strtoupper(lang('services_all_services'))?></a>
-            <a class="btn btn-outline-success btn-xl btn-block g-brd-2 g-font-size-13 g-rounded-50 g-font-weight-700" href="#"><?=strtoupper(lang('services_talk_to_expert'))?></a>
+            <a class="btn btn-outline-info btn-xl btn-block g-brd-2 g-font-size-13 g-rounded-50 g-font-weight-700" href="#"><?=strtoupper(lang('services_talk_to_expert'))?></a>
           </div>
         </div>
         </div>
@@ -215,7 +215,7 @@ $service_targets=[
                         <?=lang('services_not_found')?>
                       </div>
                       <a class="btn btn-info btn-xl btn-block g-brd-2 g-font-size-13 g-rounded-50 g-font-weight-700" href="<?=site_url('service')?>"><?=strtoupper(lang('services_all_services'))?></a>
-                      <a class="btn btn-outline-success btn-xl btn-block g-brd-2 g-font-size-13 g-rounded-50 g-font-weight-700" href="#"><?=strtoupper(lang('services_talk_to_expert'))?></a>
+                      <a class="btn btn-outline-info btn-xl btn-block g-brd-3 g-font-size-13 g-rounded-50 g-font-weight-700" href="#"><?=strtoupper(lang('services_talk_to_expert'))?></a>
                     </div>
                   </div>
                 </div>

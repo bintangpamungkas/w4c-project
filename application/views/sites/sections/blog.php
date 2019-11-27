@@ -10,31 +10,31 @@
     <?php
     $blog=[
       [
-        'blog_title' => 'Extended Producer Responsibility and Its Implementation in Indonesia',
+        'blog_title' => 'Thrift Shopping: An Eco-Friendly Alternative to Buy Clothes',
         'blog_category' => 'WASTE MANAGEMENT',
-        'blog_content' => 'Facts About Packaging Waste in Indonesia Last April, a picture of an instant noodle packaging in Indonesia that was found in Sendang Biru beach in...',
+        'blog_content' => 'What is Thrift Shopping and Why? Have you ever heard of the term \'thrift shopping\' before? Thrift shopping is taken from the word \'thrift shop\'...',
         'blog_author' => 'MIRIAM BAHAGIJO',
-        'blog_url' => 'https://waste4change.com/extended-producer-responsibility-and-its-implementation-in-indonesia/',
-        'blog_date' => '2019:09:13',
-        'blog_image' => 'https://waste4change.com/wp-content/uploads/WhatsApp-Image-2017-10-05-at-11.57.53-AM-1-580x390.jpeg',
+        'blog_url' => 'https://waste4change.com/thrift-shopping-an-eco-friendly-alternative-to-buy-clothes/',
+        'blog_date' => '2019:11:27',
+        'blog_image' => 'https://waste4change.com/wp-content/uploads/1920x1080-blog-post-thrift-store-1024x576-580x390.jpg',
       ],
       [
-        'blog_title' => '5 Things You Need to Know About Extended Producer Responsibility (EPR)',
-        'blog_category' => 'WASTE MANAGEMENT',
-        'blog_content' => 'The packaging of a product is important to ensure the quality of the said product, especially because those products may have to travel far and...',
+        'blog_title' => 'Waste4Change Awarded as The Most Responsible Company by World’s Most Valued Business (MVB) Indonesia',
+        'blog_category' => 'EVENT & PROGRAM, WASTE4CHANGE STORY',
+        'blog_content' => 'On 8th November 2019, the World\'s Most Valued Business, usually known as MVB Indonesia held an appreciation ceremony in Raffles, Jakarta. The ceremony is held...',
         'blog_author' => 'MIRIAM BAHAGIJO',
-        'blog_url' => 'https://waste4change.com/5-things-you-need-to-know-about-extended-producer-responsibility-epr/',
-        'blog_date' => '2019:09:11',
-        'blog_image' => 'https://waste4change.com/wp-content/uploads/Chocolate-packaging-580x383.jpeg',
+        'blog_url' => 'https://waste4change.com/waste4change-awarded-the-most-responsible-company-by-worlds-most-valued-business-mvb-indonesia/',
+        'blog_date' => '2019:11:20',
+        'blog_image' => 'https://waste4change.com/wp-content/uploads/WhatsApp-Image-2019-11-13-at-5.36.21-PM-e1574229084337-562x390.jpeg',
       ],
       [
-        'blog_title' => 'Try Visiting Some of These Bulk Stores in Indonesia',
+        'blog_title' => 'Learning to Grow Our Own Food with Kebun Kumara',
         'blog_category' => 'WASTE MANAGEMENT',
-        'blog_content' => 'A good waste management should be based on the 3Rs concepts (Reduce, Reuse, Recycle), in which the three aspects make up a reverse-pyramid of waste...',
+        'blog_content' => 'This feature article is a part of Waste4Change\'s initiative to review and introduce several local communities/startup/companies that have contributed in managing food and organic materials...',
         'blog_author' => 'MIRIAM BAHAGIJO',
-        'blog_url' => 'https://waste4change.com/try-visiting-some-of-these-bulk-stores-in-indonesia/',
-        'blog_date' => '2019:09:11',
-        'blog_image' => 'https://waste4change.com/wp-content/uploads/Naked-Inc-laundry-and-soap-580x390.jpeg',
+        'blog_url' => 'https://waste4change.com/learning-to-grow-our-own-food-with-kebun-kumara/',
+        'blog_date' => '2019:11:19',
+        'blog_image' => 'https://waste4change.com/wp-content/uploads/1-1-580x390.jpg',
       ],
     ];
     if(!$this->agent->is_mobile()): ?>
@@ -150,7 +150,7 @@
               items:3
             }
           },
-          navText : ['<i class="fa fa-angle-left g-color-w4c-blue-v1" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile()?'3':'4'?>)"></i>','<i class="fa fa-angle-right g-color-w4c-blue-v1" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile()?'3':'4'?>)"></i>']
+	        navText : ['<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-left g-color-gray-light-v1 nav-arrow-left' : 'fa fa-angle-left g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile()?'2':'4'?>)"></i>','<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-right g-color-gray-light-v1 nav-arrow-right' : 'fa fa-angle-right g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile()?'2':'4'?>)"></i>']
         });
 
         //$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
@@ -181,7 +181,7 @@
           <?= (lang('blog_cta_description')) ?>
         </p>
         <br>
-        <a target="_blank" class="btn btn-info g-bg-white g-font-weight-700 g-color-w4c-blue-v1 g-brd-2 g-font-size-13 g-rounded-50 g-pl-20 g-pr-15 g-py-9 text-uppercase" href="http://waste4change.com/blog">
+        <a target="_blank" class="btn btn-outline-info g-font-weight-700 g-brd-2 g-font-size-19 g-rounded-50 text-uppercase" href="http://waste4change.com/blog">
           <?= strtoupper(lang('blog_cta_link')) ?>
         </a>
       </div>
