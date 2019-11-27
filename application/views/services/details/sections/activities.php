@@ -10,10 +10,10 @@
         <div class="col-md-6 col-xs-12 g-line-height-1_3">
           <div class="row no-gutters g-my-10">
             <div class="col-auto">
-              <i class="fa fa-check g-color-white g-bg-w4c-blue-v1 g-mr-15 g-pa-5 g-rounded-50"></i>
+	            <img src="<?=get_image(DIR_ICON.'check-circle.png')?>" alt="" style="<?=$this->agent->is_mobile() ? 'width:23px; margin-right: 13px' : 'width:30px; margin-right: 20px'?>">
             </div>
-            <div class="col">
-              <?=$benefit->benefit_name?>
+	          <div class="col" style="<?=$this->agent->is_mobile() ? '' : 'margin-top:7px'?>">
+	          <?=$benefit->benefit_name?>
             </div>
           </div>
         </div>
