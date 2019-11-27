@@ -85,7 +85,7 @@
                 <?= $service->service_name ?>
               </h2>
               <p class="g-color-black-opacity-0_5"><?= $service->service_description ?></p>
-              <a class="g-color-w4c-blue-v1 g-font-weight-700 mb-3 text-uppercase" href="<?=$service->service_join_url?>"><?=lang('learn_more')?> <i class="float-right fa fa-angle-right g-font-size-20 g-font-weight-700 g-color-white g-bg-w4c-blue-v1 g-rounded-100 g-pl-15 g-pr-20 g-py-7" style="width: 20px; margin-top: -10px;"></i> </a>
+              <a class="g-color-w4c-blue-v1 g-font-weight-700 mb-3 text-uppercase" href="<?=site_url('service/'.$service->service_slug)?>"><?=lang('learn_more')?> <i class="float-right fa fa-angle-right g-font-size-20 g-font-weight-700 g-color-white g-bg-w4c-blue-v1 g-rounded-100 g-pl-15 g-pr-20 g-py-7" style="width: 20px; margin-top: -10px;"></i> </a>
               <hr class="mb-1">
               <div class="g-mt-10" >
                 <div class="g-font-size-10 g-mb-5"><?=lang('recomendation_fors')?></div>
@@ -116,7 +116,7 @@
                         <?= $service->service_name ?>
                       </h2>
                       <p><?= $service->service_description ?></p>
-                      <a class="g-color-w4c-blue-v1 g-font-weight-700 mb-3 text-uppercase" href="<?=$service->service_join_url?>"><?=lang('learn_more')?> <i class="fa fa-angle-right g-ml-10 g-font-size-20"></i> </a>
+                      <a class="g-color-w4c-blue-v1 g-font-weight-700 mb-3 text-uppercase" href="<?=site_url('service/'.$service->service_slug) ?>"><?=lang('learn_more')?> <i class="fa fa-angle-right g-ml-10 g-font-size-20"></i> </a>
                       <div class="g-mt-10" style="position: absolute;bottom: 0px; ">
                         <div class="g-font-size-10 g-mb-5"><?=lang('recomendation_fors')?></div>
                         <?php
@@ -139,7 +139,7 @@
                         <?= $service->service_name ?>
                       </h1>
                       <p><?= $service->service_description ?></p>
-                      <a class="g-color-w4c-blue-v1 g-font-weight-700 mb-3 text-uppercase" href="<?=$service->service_join_url?>"><?=lang('learn_more')?> <i class="fa fa-angle-right g-ml-10 g-font-size-20"></i> </a>
+                      <a class="g-color-w4c-blue-v1 g-font-weight-700 mb-3 text-uppercase" href="<?=site_url('service/'.$service->service_slug)?>"><?=lang('learn_more')?> <i class="fa fa-angle-right g-ml-10 g-font-size-20"></i> </a>
                       <div class="g-mt-10" style="position: absolute;bottom: 0px; ">
                         <div class="g-font-size-10 g-mb-5"><?=lang('recomendation_fors')?></div>
                         <?php

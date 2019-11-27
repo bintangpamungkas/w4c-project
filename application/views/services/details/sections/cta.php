@@ -5,12 +5,12 @@
 	<div id="cta" style="height: 10px;position: absolute;width: 80%;margin-top: -100px"></div>
 
 	<div class="divimage dzsparallaxer--target w-100"
-	     style="height: 130%; background-image: url(<?= base_url('assets/img/bg/An-easy-guide-to-sorting-waste-at-home.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
-	<div style="background:linear-gradient(rgba(248,248,248,0.98), rgba(243,243,243,0.8))">
+	     style="height: 130%; background-image: url(<?= get_image(DIR_BG.'conversion-service.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
+	<div style="background:rgba(248,248,248,0.78)">
 		<div class="container g-pt-100 g-pb-50">
 			<div class="text-center g-mb-50">
 				<h4
-					class="g-color-black g-font-weight-700 <?= $this->agent->is_mobile() ? 'g-font-size-24' : '' ?>"><?= lang('start_your').' '.$service->service_name.' '.lang('now').'!' ?></h4>
+					class="g-color-black g-font-weight-500 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= lang('start_your').' <strong>'.$service->service_name.' </strong> '.lang('now').'!' ?></h4>
 				<!-- <h2 class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-24' : '' ?>"><?= empty($this->session->userdata('language')) || $this->session->userdata('language') == 'id' ? 'Program' : '' ?> <?= ucwords(lang($service_id)) ?> <?= $this->session->userdata('language') == 'en' ? 'Program' : '' ?></h2> -->
 				<div class="row justify-content-center">
 					<div class="col-10 pt-5">

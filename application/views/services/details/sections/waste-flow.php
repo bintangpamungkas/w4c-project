@@ -23,7 +23,7 @@
 							?>
 							<div class="g-color-black g-bg-white--hover text-center g-rounded-10 g-transition-0_3 g-px-40 g-py-10">
 								<div class="g-mx-auto g-mx-30" style="">
-								<img class="img-fluid u-block-hover__main--zoom-v1 mb-3" src="<?= base_url('assets/img/icons/services/flow/'.$flow->flow_icon) ?>" alt="Flow <?= $flow->flow_name ?>" style="width: 100%">
+								<img class="img-fluid u-block-hover__main--zoom-v1 mb-3" src="<?= get_image(DIR_ICON.'flow/'.$flow->flow_icon) ?>" alt="Flow <?= $flow->flow_name ?>" style="width: 100%">
 							</div>
 								<div class="g-pa-15">
 									<h2 class="h5 g-color-black g-font-weight-300 mb-4 g-font-size-15" style="margin-bottom: 5px!important;">
@@ -59,7 +59,7 @@
 								    items:2
 							    }
 						    },
-						    navText : ['<i class="fa fa-angle-left g-color-w4c-blue-v1" aria-hidden="true" style="transform: scale(4)"></i>','<i class="fa fa-angle-right g-color-w4c-blue-v1" aria-hidden="true" style="transform: scale(4)"></i>']
+						    navText : ['<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-left g-color-gray-light-v1 nav-arrow-left' : 'fa fa-angle-left g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile()?'2':'4'?>)"></i>','<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-right g-color-gray-light-v1 nav-arrow-right' : 'fa fa-angle-right g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile()?'2':'4'?>)"></i>']
 					    });
 
 					    //$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
@@ -68,7 +68,7 @@
 					    // console.log(screen_display);
 					    var margin_side=(screen_display-screen_display*(<?= $this->agent->is_mobile() ? '69' : '98.5' ?>)/100)/2;
 					    //console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
-					    $(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 295px;width: 74%;right: '+margin_side+'px;')
+					    $(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 318px;width: 74%;right: '+margin_side+'px;')
 				    });
 
 			    </script>
@@ -107,7 +107,7 @@
             <div class="col-md-4">
               <article class="g-transition-0_3">
                 <div class="g-color-black g-bg-white--hover text-center g-rounded-10 g-transition-0_3 g-px-20 g-py-10" style="padding: 30px 0 0 0!important;">
-                  <img class="img-fluid u-block-hover__main--zoom-v1 mb-3" src="<?= base_url('assets/img/icons/services/flow/'.$i.'.png') ?>" alt="Image Description" style="width: 40%">
+                  <img class="img-fluid u-block-hover__main--zoom-v1 mb-3" src="<?= base_url(DIR_ICON.'flow/'.$flow->flow_icon) ?>" alt="Image Description" style="width: 40%">
                   <div class="g-pa-15">
                     <h2 class="h5 g-color-black g-font-weight-600 mb-4 g-font-size-15" style="margin-bottom: 5px!important;">
                       <?= $flow->flow_name ?>

@@ -20,14 +20,14 @@
 							<?php if ($this->agent->is_mobile()): ?>
 								<div class="col-12">
 									<img class="img-fluid mx-auto"
-									     src="<?= get_image(DIR_SERVICE . $service_id . '/phortofolio/' . $porto->photofolio_image) ?>"
-									     alt="Image Description" style="object-fit: cover;height: 150px">
+									     src="<?= get_image(DIR_SERVICE . $service_id . '/photofolio/p-' . $porto->photofolio_image) ?>"
+									     alt="<?= 'thumbnail'.$porto->photofolio_client ?>" style="object-fit: cover;height: 150px">
 								</div>
 							<?php endif; ?>
 							<div class="col-<?= $this->agent->is_mobile() ? '12' : '6' ?> g-pt-20 g-pb-30 g-pl-30 g-pr-10">
 								<img
-									src="<?= get_image(DIR_SERVICE . $service_id . '/phortofolio/' . $porto->photofolio_client_logo) ?>"
-									alt="<?= $porto->photofolio_client . ' logo' ?>" style="max-height: 50px; max-width: 80px;margin-bottom: 5px;">
+									src="<?= get_image(DIR_SERVICE . $service_id . '/photofolio/' . $porto->photofolio_client_logo) ?>"
+									alt="<?= $porto->photofolio_client ?>" style="max-height: 50px; max-width: 80px;margin-bottom: 5px;">
 								<div class="g-font-weight-600 g-font-size-20"><?= $porto->photofolio_client ?></div>
 								<div
 									class="g-font-size-12 g-line-height-1_1"
@@ -122,8 +122,8 @@
 							<?php if (!$this->agent->is_mobile()): ?>
 								<div class="col-6">
 									<img class="img-fluid mx-auto"
-									     src="<?= get_image(DIR_SERVICE . $service_id . '/phortofolio/' . $porto->photofolio_image) ?>"
-									     alt="Image Description" style="object-fit: cover;height: 100%">
+									     src="<?= get_image(DIR_SERVICE . $service_id . '/photofolio/l-' . $porto->photofolio_image) ?>"
+									     alt="<?= 'thumbnail'.$porto->photofolio_client ?>" style="object-fit: cover;height: 100%">
 								</div>
 							<?php endif; ?>
 						</div>
@@ -154,9 +154,7 @@
 									items: 2
 								}
 							},
-							navText: [
-								'<i class="fa fa-angle-left g-color-w4c-blue-v1" aria-hidden="true" style="transform: scale(4)"></i>',
-								'<i class="fa fa-angle-right g-color-w4c-blue-v1" aria-hidden="true" style="transform: scale(4)"></i>']
+							navText : ['<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-left g-color-gray-light-v1 nav-arrow-left' : 'fa fa-angle-left g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile()?'2':'4'?>)"></i>','<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-right g-color-gray-light-v1 nav-arrow-right' : 'fa fa-angle-right g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile()?'2':'4'?>)"></i>']
 						});
 
 						//$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
@@ -167,7 +165,7 @@
 						//console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
 						<?php
 						if ($this->agent->is_mobile()) {
-							echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 505px;width: 74%;right: '+margin_side+'px;')";
+							echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 483px;width: 74%;right: '+margin_side+'px;')";
 						} else {
 							echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 200px;width: 101.5%;right: '+margin_side+'px;')";
 						}
