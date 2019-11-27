@@ -129,7 +129,7 @@ class Site extends MY_Controller
   }
 
   function test(){
-		$directory='http://localhost/w4c/official/assets/img/service/community-based-implementation/bg/thumbnail.jpg';
+		$directory='assets/img/service/dropbox/bg/thumbnail.jpg';
 		echo get_image($directory);
 
 	}

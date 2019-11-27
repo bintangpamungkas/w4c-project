@@ -6,8 +6,16 @@ function get_image($image,$replace=null){
 		$directory=base_url($image);
 	}
 
-	if (@getimagesize($directory)) {
-		return $directory;
+	$url = $directory;
+	$url = trim($url); // Get rid of any accidental whitespace
+	$parsed = parse_url($url); // analyse the URL
+	if (isset($parsed['scheme']) && strtolower($parsed['scheme']) == 'https') {
+		// If it is https, change it to http
+		$url = 'http://'.substr($url,8);
+	}
+
+	if (@getimagesize($url)) {
+		return $url;
   }else {
     if ($replace!=null) {
       if (file_exists($replace)) {
