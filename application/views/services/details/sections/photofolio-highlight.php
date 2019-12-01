@@ -8,20 +8,34 @@
 			<hr class="g-width-70 g-my-20 g-brd-2 g-brd-blue">
 			<p class="g-color-white-opacity-0_8 d-none"><?= lang('brand_partner_subtitle') ?></p>
 		</div>
-		<div class="row justify-content-center">
-			<div class="col-md-11 col-12">
+		<div class="">
+			<div class="">
 
-				<div id="photofolio-highlight-carousel" class="col-md-12 owl-theme"
+				<div id="photofolio-highlight-carousel" class="owl-theme row"
 				     style="margin: 0 0 30px 0!important;padding:0px">
 					<?php
+					if($this->agent->is_mobile()){
+						if(count($photofolios)>1){
+							$carousel=true;
+						}else{
+							$carousel=false;
+						}
+					}else{
+						if(count($photofolios)>2){
+							$carousel=true;
+						}else{
+							$carousel=false;
+						}
+					}
 					foreach ($photofolios as $porto) :
 						?>
+						<div class="col-<?=$this->agent->is_mobile() ? '12' : '6'?>">
 						<div class="row no-gutters g-bg-white u-shadow-v20 g-mx-10">
 							<?php if ($this->agent->is_mobile()): ?>
 								<div class="col-12">
 									<img class="img-fluid mx-auto"
 									     src="<?= get_image(DIR_SERVICE . $service_id . '/photofolio/p-' . $porto->photofolio_image) ?>"
-									     alt="<?= 'thumbnail'.$porto->photofolio_client ?>" style="object-fit: cover;height: 150px">
+									     alt="<?= 'thumbnail'.$porto->photofolio_client ?>" style="object-fit: cover;width: 100%;height: 150px">
 								</div>
 							<?php endif; ?>
 							<div class="col-<?= $this->agent->is_mobile() ? '12' : '6' ?> g-pt-20 g-pb-30 g-pl-30 g-pr-10">
@@ -127,11 +141,15 @@
 								</div>
 							<?php endif; ?>
 						</div>
+						</div>
 					<?php
 					endforeach;
 					?>
 				</div>
 
+<?php
+						if($carousel==true){
+						?>
 				<script>
 					$(window).ready(function () {
 						var element_id = '#photofolio-highlight-carousel';
@@ -140,7 +158,7 @@
 							margin: 0,
 							dots: true,
 							nav: true,
-							autoplay: false,
+							autoplay: true,
 							autoplayTimeout: 1500,
 							autoplayHoverPause: true,
 							responsive: {
@@ -200,7 +218,9 @@
 						color: #ccc;
 					}
 				</style>
-
+<?php 
+}
+?>
 			</div>
 		</div>
 	</div>
