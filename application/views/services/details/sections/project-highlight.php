@@ -34,7 +34,7 @@
               <div class="row no-gutters g-bg-white u-shadow-v20 g-mx-10">
                   <div class="col-12">
                     <img class="img-fluid mx-auto"
-                        src="<?= get_image(DIR_IMG.'project/' . $project->project_slug . '/' . $project->project_thumbnail) ?>"
+                        src="<?= get_image(DIR_IMG.'project/' . $project->project_slug . '/l-thumbnail.jpg') ?>"
                         alt="<?= 'thumbnail'.$project->project_name ?>" style="object-fit: cover;width: 100%;height: 150px">
                   </div>
                 <div class="col-12 g-pt-20 g-pb-30 g-pl-30 g-pr-10">
