@@ -30,7 +30,9 @@ $lang["activities"]="Activities";
 $lang["expertise"]="Expertise";
 $lang["photofolio_highlight"]="Photofolio Highlight";
 $lang["project_highlight"]="Project Highlight";
+$lang["research_highlight"]="Research Highlight";
 $lang["our_achievement"]="Our Achievement";
+$lang["view_project"]="View Project";
 
 
 

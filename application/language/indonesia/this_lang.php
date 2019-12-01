@@ -30,7 +30,9 @@ $lang["activities"]="Aktifitas";
 $lang["expertise"]="Expertise";
 $lang["photofolio_highlight"]="Photofolio Highlight";
 $lang["project_highlight"]="Project Highlight";
+$lang["research_highlight"]="Research Highlight";
 $lang["our_achievement"]="Prestasi Kami";
+$lang["view_project"]="Lihat Project";
 
 
 //Welcome W4C
