@@ -47,6 +47,7 @@ $route['id'] = "Site/id";
 $route['en'] = "Site/en";
 $route['service/(:any)'] = "Service/detail/$1";
 $route['service/(:any)/join'] = "Service/join/$1";
+$route['project/(:any)'] = "Service/project/$1";
 $route['(:any)'] = "Brand/index/$1";
 
 //error_page

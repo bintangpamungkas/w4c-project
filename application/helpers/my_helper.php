@@ -5,6 +5,7 @@ function get_image($image,$replace=null){
 	}else {
 		$directory=base_url($image);
 	}
+    // return $directory;
 
 	$url = $directory;
 	$url = trim($url); // Get rid of any accidental whitespace

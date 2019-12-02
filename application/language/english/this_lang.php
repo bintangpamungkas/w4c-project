@@ -27,13 +27,18 @@ $lang["start_your_responsible"]="Start your Responsible Waste Management now!";
 $lang["start_your"]="Start your";
 $lang["now"]="now";
 $lang["activities"]="Activities";
-$lang["expertise"]="Expertise";
+$lang["expertise"]="Expertise And Experiences";
 $lang["photofolio_highlight"]="Photofolio Highlight";
 $lang["project_highlight"]="Project Highlight";
 $lang["research_highlight"]="Research Highlight";
 $lang["our_achievement"]="Our Achievement";
 $lang["view_project"]="View Project";
-
+$lang["similar_project"]="Similar Project";
+$lang["description"]="Description";
+$lang["achievement-deverables"]="Achievement/ Deverables";
+$lang["we-offer"]="We Offer";
+$lang["programs"]="Programs";
+$lang["output-benefit"]="Output and Benefit";
 
 
 //Welcome W4C

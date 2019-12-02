@@ -1,10 +1,10 @@
 <section class="g-bg-secondary">
 
-	<div id="project-highlight" style="height: 10px;position: absolute;width: 80%;margin-top: -100px"></div>
+	<div id="similar-project" style="height: 10px;position: absolute;width: 80%;margin-top: -100px"></div>
 	<div class="container <?= $this->agent->is_mobile() ? 'g-pt-80 g-pb-50' : 'g-pt-140 g-pb-70' ?>">
 		<div class="text-center g-mb-50">
 			<h2
-				class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= strtoupper(lang('research_highlight')) ?></h2>
+				class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= strtoupper(lang('similar_project')) ?></h2>
 			<hr class="g-width-70 g-my-20 g-brd-2 g-brd-blue">
 			<p class="g-color-white-opacity-0_8 d-none"><?= lang('brand_partner_subtitle') ?></p>
 		</div>

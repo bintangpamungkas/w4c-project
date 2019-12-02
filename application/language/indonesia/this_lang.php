@@ -27,12 +27,18 @@ $lang["start_your_responsible"]="Mulai Pengelolaan Limbah yang Bertanggung Jawab
 $lang["start_your"]="Mulai";
 $lang["now"]="sekarang";
 $lang["activities"]="Aktifitas";
-$lang["expertise"]="Expertise";
+$lang["expertise"]="Expertise And Experiences";
 $lang["photofolio_highlight"]="Photofolio Highlight";
 $lang["project_highlight"]="Project Highlight";
 $lang["research_highlight"]="Research Highlight";
 $lang["our_achievement"]="Prestasi Kami";
 $lang["view_project"]="Lihat Project";
+$lang["similar_project"]="Proyek sejenis";
+$lang["description"]="Deskripsi";
+$lang["achievement-deverables"]="Achievement/ Deverables";
+$lang["we-offer"]="Kami nenawarkan";
+$lang["programs"]="Program";
+$lang["output-benefit"]="Keluaran dan Manfaat";
 
 
 //Welcome W4C
