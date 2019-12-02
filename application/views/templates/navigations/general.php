@@ -44,12 +44,16 @@
 
 														<ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-0 g-min-width-220 g-mt-minus-2 "
 														    id="nav-submenu--pages--404" aria-labelledby="nav-link--pages--404">
-															<?php foreach ($submenu->menu as $subsubmenu): ?>
+															<?php foreach ($submenu->menu as $subsubmenu): 
+																	if(!empty($subsubmenu->has_page)):
+																?>
 																<li class="dropdown-item as">
 																	<a class="nav-link g-color-black"
-																	   href="<?= $subsubmenu->has_page == 1 ? site_url('service/' . $subsubmenu->url) : '#' ?>"><?= $subsubmenu->title ?></a>
+																	   href="<?= $subsubmenu->has_page == 1 ? HOST.$subsubmenu->url : '#' ?>"><?= $subsubmenu->title ?></a>
 																</li>
-															<?php endforeach; ?>
+															<?php 
+															endif;
+														endforeach; ?>
 														</ul>
 													</li> <!-- End Menu lvl 3 -->
 												<?php endif; //has sub sub menu?>
@@ -103,12 +107,16 @@
 
 															<ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-0 g-min-width-220 g-mt-minus-2 "
 															    id="nav-submenu--pages--404" aria-labelledby="nav-link--pages--404">
-																<?php foreach ($submenu->menu as $subsubmenu): ?>
+																<?php foreach ($submenu->menu as $subsubmenu): 
+																	if(!empty($subsubmenu->has_page)):
+																	?>
 																	<li class="dropdown-item as">
 																		<a class="nav-link g-color-black"
-																		   href="<?= $subsubmenu->has_page == 1 ? site_url('service/' . $subsubmenu->url) : '#' ?>"><?= $subsubmenu->title ?></a>
+																		   href="<?= $subsubmenu->has_page == 1 ? HOST.$subsubmenu->url : '#' ?>"><?= $subsubmenu->title ?></a>
 																	</li>
-																<?php endforeach; ?>
+																<?php 
+																endif;
+															endforeach; ?>
 															</ul>
 														</li> <!-- End Menu lvl 3 -->
 													<?php endif; //has sub sub menu?>
@@ -136,7 +144,7 @@
 		     data-position="right">
 			<a href="javascript:void()" class="<?=$template=='index' ? 'nav-change-scroll g-color-white' : ''?> g-font-size-12 nav-link px-0"
 			   style="line-height: 1;color:black" aria-haspopup="true" aria-expanded="false">
-				<img src="https://localhost/w4c/official/assets/img/icons/flag_indonesia.png"
+				<img src="<?=get_image('assets/img/icons/flag_indonesia.png')?>"
 				     style="border: 1px solid rgba(0,0,0,0.1);height: 13px;margin-bottom: 2px">
 				ID
 			</a>
@@ -146,7 +154,7 @@
 					<a class="nav-link g-color-info" href="javascript:void()">ID</a>
 				</li>
 				<li class="dropdown-item ">
-					<a class="nav-link g-color-black-opacity-0_8" href="https://localhost/w4c/official/en">EN</a>
+					<a class="nav-link g-color-black-opacity-0_8" href="<?=site_url('en')?>">EN</a>
 				</li>
 			</ul>
 		</div>

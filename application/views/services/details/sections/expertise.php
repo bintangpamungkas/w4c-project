@@ -6,8 +6,39 @@
         <hr class="g-width-30 g-my-5 g-brd-2 g-brd-blue">
     </div>
     <div class="row">
+      <?php
+      $expertises=[
+        (object)[
+          'expertise_name'=>lang('short_lorem')
+        ],
+        (object)[
+          'expertise_name'=>lang('short_lorem')
+        ],
+        (object)[
+          'expertise_name'=>lang('short_lorem')
+        ],
+        (object)[
+          'expertise_name'=>lang('short_lorem')
+        ],
+        (object)[
+          'expertise_name'=>lang('short_lorem')
+        ],
+        (object)[
+          'expertise_name'=>lang('short_lorem')
+        ],
+        (object)[
+          'expertise_name'=>lang('short_lorem')
+        ],
+        (object)[
+          'expertise_name'=>lang('short_lorem')
+        ],
+        (object)[
+          'expertise_name'=>lang('short_lorem')
+        ],
+      ];
+      ?>
       <?php foreach ($expertises as $expert): ?>
-        <div class="col-md-6 col-xs-12 g-line-height-1_3">
+        <div class="col-md-4 col-xs-12 g-line-height-1_3">
           <div class="row no-gutters g-my-10">
             <div class="col-auto">
               <i class="fa fa-check g-color-white g-bg-w4c-blue-v1 g-mr-15 g-pa-5 g-rounded-50"></i>

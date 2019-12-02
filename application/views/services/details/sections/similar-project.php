@@ -15,20 +15,20 @@
 				     style="margin: 0 0 30px 0!important;padding:0px">
 					<?php
 					if($this->agent->is_mobile()){
-						if(count($projects)>1){
+						if(count($similar_projects)>1){
 							$carousel=true;
 						}else{
 							$carousel=false;
 						}
 					}else{
-						if(count($projects)>2){
+						if(count($similar_projects)>2){
 							$carousel=true;
 						}else{
 							$carousel=false;
 						}
           }
           // print_r($projects);
-					foreach ($projects as $project) :
+					foreach ($similar_projects as $project) :
 						?>
 						<div class="col-<?=$this->agent->is_mobile() ? '12' : '12'?>">
               <div class="row no-gutters g-bg-white u-shadow-v20 g-mx-10">

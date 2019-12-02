@@ -144,6 +144,11 @@
 .g-bg-green-gradient-opacity-v1--after::after {
   background-image: linear-gradient(to bottom, rgba(51, 152, 220, 0.5) 0%, rgba(114, 192, 44, 0.8) 100%);
   background-repeat: repeat-x; }
+/* Green Gradient */
+.g-bg-green-gradient-opacity-v2,
+.g-bg-green-gradient-opacity-v2--after::after {
+  background-image: linear-gradient(to right, rgba(25, 83, 122, 0.8) 0%, rgba(0, 143, 100, 0.8) 100%);
+  background-repeat: repeat-x; }
 
 /* Purple Gradient */
 .g-bg-purple-gradient-opacity-v1,

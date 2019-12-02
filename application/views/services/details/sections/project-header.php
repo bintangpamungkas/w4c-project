@@ -19,7 +19,7 @@
         <?php endif; ?>
         <?php if($this->agent->is_mobile()): ?>
           <div class="col-md-12">
-            <img src="<?=get_image(DIR_IMG.'project/'.$service->service_slug.'l-thumbnail.jpg')?>" alt="">
+            <img src="<?=get_image(DIR_IMG.'project/'.$service->service_slug.'/header.jpg')?>" alt="">
           </div>
         <?php endif; ?>
         <div class="col-md-6 col-12">
@@ -37,14 +37,13 @@
                 <div class="text-muted">Client:<br>
                 <?=$service->service_client_name?>
                 </div>
-                
               </div>
             </div>
           </div>
         </div>
         <?php if(!$this->agent->is_mobile()): ?>
           <div class="col-md-6">
-            <img src="<?=get_image(DIR_IMG.'project/'.$service->service_slug.'l-thumbnail.jpg')?>" alt="" style="width:100%">
+            <img src="<?=get_image(DIR_IMG.'project/'.$service->service_slug.'/l-thumbnail.jpg')?>" alt="" style="width:100%">
             <div style="height:30px; background: linear-gradient(90deg, rgba(11, 144, 185, 0.9), rgba(19, 182, 127, 0.9)); margin-left:50px;opacity:0.5">
           </div>
           </div>

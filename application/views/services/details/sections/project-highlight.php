@@ -1,5 +1,4 @@
 <section class="g-bg-secondary">
-
 	<div id="project-highlight" style="height: 10px;position: absolute;width: 80%;margin-top: -100px"></div>
 	<div class="container <?= $this->agent->is_mobile() ? 'g-pt-80 g-pb-50' : 'g-pt-140 g-pb-70' ?>">
 		<div class="text-center g-mb-50">
@@ -10,8 +9,7 @@
 		</div>
 		<div class="">
 			<div class="">
-
-				<div id="project-highlight-carousel" class="owl-theme row"
+				<div id="project-highlight-carousel" class="owl-theme row justify-content-md-center"
 				     style="margin: 0 0 30px 0!important;padding:0px">
 					<?php
 					if($this->agent->is_mobile()){
@@ -21,38 +19,26 @@
 							$carousel=false;
 						}
 					}else{
-						if(count($projects)>2){
-							$carousel=true;
-						}else{
 							$carousel=false;
-						}
           }
-          // print_r($projects);
 					foreach ($projects as $project) :
 						?>
-						<div class="col-<?=$this->agent->is_mobile() ? '12' : '12'?>">
-              <div class="row no-gutters g-bg-white u-shadow-v20 g-mx-10">
-                  <div class="col-12">
-                    <img class="img-fluid mx-auto"
-                        src="<?= get_image(DIR_IMG.'project/' . $project->project_slug . '/l-thumbnail.jpg') ?>"
-                        alt="<?= 'thumbnail'.$project->project_name ?>" style="object-fit: cover;width: 100%;height: 150px">
+            <div class="col-<?=$this->agent->is_mobile() ? '12' : '6'?> g-my-10">
+              <div class="" style="max-height:200px">
+                <div class="js-fancybox d-block u-bg-overlay g-bg-green-gradient-opacity-v2--after g-mb-30 g-mb-0--md">
+                  <img class="img-fluid" src="<?= get_image(DIR_IMG.'project/' . $project->project_slug . '/l-thumbnail.jpg') ?>" alt="Image Description" style="object-fit:cover;max-height: 200px;width:100%">
+                  <div class="u-bg-overlay__inner <?=$this->agent->is_mobile() ? 'g-font-size-14' : 'g-font-size-18'?> g-font-weight-700 g-color-white g-line-height-1_2 g-pos-abs g-left-20 g-top-30 g-pr-50 text-uppercase ">
+                    <?= $project->project_name ?>
+                    <div class="g-width-50 g-height-2 g-pos-rel g-bg-white g-mt-25"></div>
+                    <a class="btn btn-outline-info <?=$this->agent->is_mobile() ? 'btn-xs' : ''?> g-rounded-50 g-brd-white g-color-white g-mt-20 " href="<?=site_url('project/'.$project->project_slug)?>"><?=lang('view_project')?> <i class="fa fa-angle-right g-ml-10"></i></a>
                   </div>
-                <div class="col-12 g-pt-20 g-pb-30 g-pl-30 g-pr-10">
-                  <div class="g-font-size-12 g-line-height-1_1 mb-2" style="color:#AFAFAF"><?= $project->project_category ?></div>
-                  <div class="g-font-weight-600 g-font-size-20 g-line-height-1_2"><?= $project->project_name ?></div>
-                  <div class="g-mt-20 g-font-size-13 text-muted">
-                    Client:<br>
-                     <?= $project->project_client ?>
-                  </div>
-                  <a class="btn btn-outline-info mt-2 g-rounded-50" href="<?=site_url('project/'.$project->project_slug)?>" ><?=lang('view_project')?><i class="fa fa-angle-right g-ml-10"></i></a>                
                 </div>
               </div>
-						</div>
+					  </div>
 					<?php
 					endforeach;
 					?>
 				</div>
-
         <?php
 					if($carousel==true){
 				?>
@@ -89,7 +75,7 @@
               //console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
               <?php
               if ($this->agent->is_mobile()) {
-                echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 483px;width: 74%;right: '+margin_side+'px;')";
+                echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 260px;width: 74%;right: '+margin_side+'px;')";
               } else {
                 echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 200px;width: 101.5%;right: '+margin_side+'px;')";
               }

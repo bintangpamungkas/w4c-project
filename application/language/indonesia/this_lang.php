@@ -39,6 +39,7 @@ $lang["achievement-deverables"]="Achievement/ Deverables";
 $lang["we-offer"]="Kami nenawarkan";
 $lang["programs"]="Program";
 $lang["output-benefit"]="Keluaran dan Manfaat";
+$lang['achievement-deliverable']="Achievement/ Deliverable";
 
 
 //Welcome W4C
