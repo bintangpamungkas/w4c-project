@@ -141,7 +141,7 @@ class MY_Controller extends CI_Controller{
     $service_target=$this->crud_model->select('service_target',QUERY_RESULT,['service_target_id','dictionary.dictionary_content title','service_target_icon icon'],['language_code'=>$lang,'deleted_at'=>null],['service_target'=>['dictionary'=>'dictionary_slug=service_target_name']]);
 		$targets=[];
     foreach ($service_target as $target) {
-      $service_category=$this->crud_model->select('service_category',QUERY_RESULT,['service_category_id', 'dictionary_content title','service_category_icon icon','service_target_id'],['language_code'=>$lang,'service_category.service_target_id'=>$target->service_target_id],['service_category'=>['dictionary'=>'dictionary_slug=service_category_name']]);
+      $service_category=$this->crud_model->select('service_category',QUERY_RESULT,['service_category_id', 'service_category_name title','service_category_icon icon','service_target_id'],['service_category.service_target_id'=>$target->service_target_id]);
       $categories=[];
       foreach ($service_category as $category) {
         $services=$this->crud_model->select('service',QUERY_RESULT,['service_id','service_page_url url','service_name title','service_category_id','has_page'],['service_category_id'=>$category->service_category_id,'deleted_at'=>null,'service_parent_id'=>null]);
@@ -154,7 +154,8 @@ class MY_Controller extends CI_Controller{
       $targets[]=$target;
     }
     //END GET service
-
+    // print_r($targets);
+    // die();
     $data['template']=empty($template) ? 'general' : $template;
 
     $data['navigation_array_individu']=$this->navigation_menu_array_segment('individual');

@@ -67,47 +67,20 @@
   <?php if (IS_ONLINE==1){
 
     // <!-- Hotjar Tracking -->
-    hotjar_tracking(true);
+    hotjar_tracking(false);
 
     // <!-- Google Analytic Tracking -->
-    google_analytic(true);
+    google_analytic(false);
   }?>
-
-<!-- Tawk.to Chat -->
-<?php
-//   $param=tawk_to_chat();
-//   foreach ($param as $param){
-//     if($param['dev_status']==true && $param['status']==true){
-//       echo $param['tracking_code'];
-//     }
-//   }
-?>
-
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-103555170-1', 'auto');
-ga('send', 'pageview');
-
-</script>
 
 </head>
 
 <script>
 $(function(){
   <?php if($this->uri->segment(1)==''):?>
-  $('#PopUpModal').modal('show');
+  // $('#PopUpModal').modal('show');
   <?php endif; ?>
 })
-// $(window).ready(function () {
-  // $('.auto-full-height').css('min-height', window.innerHeight);
-  // <?php if($this->uri->segment(1)==''):?>
-  //  // $('#PopUpModal').modal('show');
-  // <?php endif; ?>
-// })
 </script>
 
 <body>
