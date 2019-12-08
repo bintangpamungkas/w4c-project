@@ -1,6 +1,6 @@
 <section class="g-bg-secondary <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-0' : 'g-pt-140 g-pb-100' ?>">
 
-    <div id="recomended_for" style="height: 10px;position: absolute;width: 80%;margin-top: -200px"></div>
+    <div id="recomended-for" style="height: 10px;position: absolute;width: 80%;margin-top: -200px"></div>
 
     <div class="container">
         <header class="text-center g-width-80x--md mx-auto g-mb-70">

@@ -1,8 +1,8 @@
 <section class="g-bg-secondary">
-  <div id="benefit" style="height: 200px;position: absolute;width: 80%;margin-top: -80px"></div>
+  <div id="activities" style="height: 200px;position: absolute;width: 80%;margin-top: -80px"></div>
   <div class="container <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-10' : 'g-pt-80 g-pb-80' ?>">
     <div class="text-center g-mb-50">
-        <h2 class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-25' : '' ?>"><?= strtoupper(lang('activities')) ?></h2>
+        <h2 class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-25' : '' ?>"><?= strtoupper(get_lang('activities')) ?></h2>
         <hr class="g-width-30 g-my-5 g-brd-2 g-brd-blue">
     </div>
     <div class="row">

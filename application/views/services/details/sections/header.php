@@ -1,5 +1,5 @@
 <!-- Promo Block -->
-<section id="project-header" class="bg-white">
+<section id="header" class="bg-white">
 	<div class="">
 		<div class="container bg-white">
 			<div class="row with-header" style="<?= $this->agent->is_mobile() ? 'margin-top:100px' : 'margin-top:150px' ?>">

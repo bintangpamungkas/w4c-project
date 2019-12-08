@@ -1,11 +1,11 @@
 <section class="g-bg-secondary">
-	<div id="project-highlight" style="height: 10px;position: absolute;width: 80%;margin-top: -100px"></div>
+	<div id="program-highlight" style="height: 10px;position: absolute;width: 80%;margin-top: -100px"></div>
 	<div class="container <?= $this->agent->is_mobile() ? 'g-pt-80 g-pb-50' : 'g-pt-140 g-pb-70' ?>">
 		<div class="text-center g-mb-50">
 			<h2
-				class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= strtoupper(lang('research_highlight')) ?></h2>
+				class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= strtoupper(get_lang('research_highlight')) ?></h2>
 			<hr class="g-width-70 g-my-20 g-brd-2 g-brd-blue">
-			<p class="g-color-white-opacity-0_8 d-none"><?= lang('brand_partner_subtitle') ?></p>
+			<p class="g-color-white-opacity-0_8 d-none"><?= get_lang('brand_partner_subtitle') ?></p>
 		</div>
 		<div class="">
 			<div class="">
@@ -30,7 +30,7 @@
                   <div class="u-bg-overlay__inner <?=$this->agent->is_mobile() ? 'g-font-size-14' : 'g-font-size-18'?> g-font-weight-700 g-color-white g-line-height-1_2 g-pos-abs g-left-20 g-top-30 g-pr-50 text-uppercase ">
                     <?= $project->project_name ?>
                     <div class="g-width-50 g-height-2 g-pos-rel g-bg-white g-mt-25"></div>
-                    <a class="btn btn-outline-info <?=$this->agent->is_mobile() ? 'btn-xs' : ''?> g-rounded-50 g-brd-white g-color-white g-mt-20 " href="<?=site_url('project/'.$project->project_slug)?>"><?=lang('view_project')?> <i class="fa fa-angle-right g-ml-10"></i></a>
+                    <a class="btn btn-outline-info <?=$this->agent->is_mobile() ? 'btn-xs' : ''?> g-rounded-50 g-brd-white g-color-white g-mt-20 " href="<?=site_url('project/'.$project->project_slug)?>"><?=get_lang('view_project')?> <i class="fa fa-angle-right g-ml-10"></i></a>
                   </div>
                 </div>
               </div>

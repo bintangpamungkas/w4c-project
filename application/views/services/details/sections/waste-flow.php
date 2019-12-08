@@ -6,7 +6,7 @@
 
   <div class="container">
     <div class="text-center g-mb-50">
-      <h2 class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= lang('waste_flow') ?></h2>
+      <h2 class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= get_lang('waste_flow') ?></h2>
       <hr class="g-width-70 g-my-20 g-brd-2 g-brd-blue">
     </div>
 

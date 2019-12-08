@@ -30,7 +30,7 @@
           <div class="pt-4 <?= $this->agent->is_mobile() ? 'row justify-content-center' : '' ?>">
             <div class="<?= $this->agent->is_mobile() ? 'col-10' : '' ?>">
               <a class="click_scroll btn btn-info g-color-white g-brd-white-opacity-0_2 g-brd-2 g-font-size-13 g-rounded-50 g-pl-20 g-pr-20 g-py-9 <?= $this->agent->is_mobile() ? 'btn-block mb-4' : '' ?>" href="<?= site_url('service/'.$service_id.'/join') ?>">
-                <?= strtoupper(lang('get_proposal')) ?>
+                <?= strtoupper(get_lang('get-proposal')) ?>
                 <span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3">
                   <i class="fa fa-info"></i>
                 </span>

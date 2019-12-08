@@ -156,7 +156,8 @@ class MY_Controller extends CI_Controller{
     //END GET service
     // print_r($targets);
     // die();
-    $data['template']=empty($template) ? 'general' : $template;
+	  $data['template']=empty($template) ? 'general' : $template;
+	  $data['lang']=$lang;
 
     $data['navigation_array_individu']=$this->navigation_menu_array_segment('individual');
     $data['navigation_array_corporate']=$this->navigation_menu_array_segment('corporate');
