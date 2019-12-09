@@ -1,3 +1,4 @@
+<?php if (!empty($projects)):?>
 <section class="g-bg-secondary">
 	<div id="research-highlight" style="height: 10px;position: absolute;width: 80%;margin-top: -100px"></div>
 	<div class="container <?= $this->agent->is_mobile() ? 'g-pt-80 g-pb-50' : 'g-pt-140 g-pb-70' ?>">
@@ -117,3 +118,4 @@
 		</div>
 	</div>
 </section>
+<?php endif; ?>

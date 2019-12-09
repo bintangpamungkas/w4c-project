@@ -1,3 +1,4 @@
+<?php if (!empty($photofolios)):?>
 <section class="g-bg-secondary">
 
 	<div id="photofolio-highlight" style="height: 10px;position: absolute;width: 80%;margin-top: -100px"></div>
@@ -225,3 +226,4 @@
 		</div>
 	</div>
 </section>
+<?php endif; ?>

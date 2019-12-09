@@ -105,8 +105,8 @@ class Service extends MY_Controller
 			if ($section->section_slug=='waste-flow'){
 				$data['flows'] = $this->crud_model->select('flow', QUERY_RESULT, ['flow_icon', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=flow_name AND language_code="' . $lang . '" limit 1) as flow_name'], ['service_id' => $service->service_id, 'deleted_at' => null]);
 			}
-			if ($section->section_slug=='waste-flow'){
-
+			if ($section->section_slug=='project-highlight'){
+				$data['projects'] = $this->crud_model->select('project', QUERY_RESULT, ['project_slug','project_client','project_thumbnail','(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=project_name AND language_code="' . $lang . '" limit 1) as project_name','(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=project_category AND language_code="' . $lang . '" limit 1) as project_category'], ['service_id' => $service->service_id, 'deleted_at' => null]);
 			}
 			if ($section->section_slug=='photofolio-highlight'){
 				$data['photofolios'] = $this->crud_model->select('photofolio', QUERY_RESULT, '', ['service_id' => $service->service_id, 'deleted_at' => null]);
@@ -115,7 +115,7 @@ class Service extends MY_Controller
 				$data['projects'] = $this->crud_model->select('project', QUERY_RESULT, ['project_slug','project_client','project_thumbnail','(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=project_name AND language_code="' . $lang . '" limit 1) as project_name','(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=project_category AND language_code="' . $lang . '" limit 1) as project_category'], ['service_id' => $service->service_id, 'deleted_at' => null]);
 			}
 			if ($section->section_slug=='similar-project'){
-
+				$data['projects'] = $this->crud_model->select('project', QUERY_RESULT, ['project_slug','project_client','project_thumbnail','(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=project_name AND language_code="' . $lang . '" limit 1) as project_name','(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=project_category AND language_code="' . $lang . '" limit 1) as project_category'], ['service_id' => $service->service_id, 'deleted_at' => null]);
 			}
 			if ($section->section_slug=='our-client'){
 				$data['clients'] = $this->crud_model->select('client', QUERY_RESULT, '', ['service_id' => $service->service_id, 'deleted_at' => null]);
