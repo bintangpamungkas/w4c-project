@@ -7,7 +7,7 @@
 					<div class="col-12 g-pb-20" style="">
 						<?php foreach ($breadcrumb as $bread): ?>
 							<?php if ($bread['active']!=true): ?>
-								<a class="g-color-black g-text-transform-none" href="<?=$bread['url']?>">
+								<a class="g-color-black g-text-transform-none" href="<?=site_url($bread['url'])?>">
 									<?php echo $bread['title'] ?>
 									<i class="fa fa-angle-right g-mx-10"></i>
 								</a>

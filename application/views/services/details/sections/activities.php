@@ -9,7 +9,7 @@
 			<div class="row">
 				<?php foreach ($activities as $activity): ?>
 				<div class="col-md-6 col-xs-12 g-line-height-1_3 text-center g-line-height-2">
-					<div class="g-brd-1 g-brd-style-solid g-brd-gray-light-v3 g-pa-20">
+					<div class="g-brd-1 g-brd-style-solid g-brd-gray-light-v3 g-pa-20 g-mb-20">
 						<div class="">
 						<img src="<?= get_image(DIR_ICON . 'what-you-get/' . $activity->activity_icon) ?>" alt="" style="width:80px;">
 					</div>
