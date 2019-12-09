@@ -105,17 +105,14 @@
 				if ($section->section_slug == 'waste-flow') {
 					$data['flows'] = $this->crud_model->select('flow', QUERY_RESULT, ['flow_icon', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=flow_name AND language_code="' . $lang . '" limit 1) as flow_name'], ['service_id' => $service->service_id, 'deleted_at' => null]);
 				}
-				if ($section->section_slug == 'program-highlight') {
-					$data['projects'] = $this->crud_model->select('service', QUERY_RESULT, ['service_slug', 'service_thumbnail', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_name AND language_code="' . $lang . '" limit 1) as service_name', 'service_subcategory_name'], ['service_parent_id' => $service->service_id, 'deleted_at' => null]);
-				}
-				if ($section->section_slug == 'research-highlight' || $section->section_slug == 'research-highlight') {
-					$data['projects'] = $this->crud_model->select('service', QUERY_RESULT, ['service_slug', 'service_thumbnail', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_name AND language_code="' . $lang . '" limit 1) as service_name', 'service_subcategory_name'], ['service_parent_id' => $service->service_id, 'deleted_at' => null]);
+				if ($section->section_slug == 'program-highlight' || $section->section_slug == 'research-highlight') {
+					$data['projects'] = $this->crud_model->select('service', QUERY_RESULT, ['service_slug', 'service_thumbnail', 'service_subcategory_name'], ['service_parent_id' => $service->service_id, 'deleted_at' => null]);
 				}
 				if ($section->section_slug == 'photofolio-highlight') {
 					$data['photofolios'] = $this->crud_model->select('photofolio', QUERY_RESULT, '', ['service_id' => $service->service_id, 'deleted_at' => null]);
 				}
 				if ($section->section_slug == 'similar-project') {
-					$data['projects'] = $this->crud_model->select('project', QUERY_RESULT, ['project_slug', 'project_client', 'project_thumbnail', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=project_name AND language_code="' . $lang . '" limit 1) as project_name', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=project_category AND language_code="' . $lang . '" limit 1) as project_category'], ['service_parent_id' => $service->service_parent_id, 'deleted_at' => null]);
+					$data['projects'] = $this->crud_model->select('service', QUERY_RESULT, ['service_slug', 'service_thumbnail', 'service_subcategory_name'], ['service_parent_id' => $service->service_parent_id, 'deleted_at' => null]);
 				}
 				if ($section->section_slug == 'our-client') {
 					$data['clients'] = $this->crud_model->select('client', QUERY_RESULT, '', ['service_id' => $service->service_id, 'deleted_at' => null]);
@@ -178,15 +175,47 @@
 			
 			$data['service'] = $service;
 			$data['sections'] = $sections;
-			$data['achievements'] = $this->crud_model->select('achievement', QUERY_RESULT, ['achievement_count', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=achievement_name AND language_code="' . $lang . '") as achievement_name'], ['achievement.service_id' => 1, 'achievement.deleted_at' => null]);
-			$data['expertises'] = $this->crud_model->select('expertise', QUERY_RESULT, ['(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=expertise_name AND language_code="' . $lang . '") as expertise_name'], ['service_id' => $service->service_id, 'deleted_at' => null]);
-			$data['benefits'] = $this->crud_model->select('benefit', QUERY_RESULT, ['benefit_icon', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=benefit_name AND language_code="' . $lang . '") as benefit_name'], ['service_id' => $service->service_id, 'deleted_at' => null]);
-			$data['facilities'] = $this->crud_model->select('facility', QUERY_RESULT, ['facility_icon', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=facility_name AND language_code="' . $lang . '") as facility_name'], ['service_id' => $service->service_id, 'deleted_at' => null]);
-			$data['flows'] = $this->crud_model->select('flow', QUERY_RESULT, ['flow_icon', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=flow_name AND language_code="' . $lang . '") as flow_name'], ['service_id' => $service->service_id, 'deleted_at' => null]);
-			$data['photofolios'] = $this->crud_model->select('photofolio', QUERY_RESULT, '', ['service_id' => $service->service_id, 'deleted_at' => null]);
-			$data['similar_projects'] = $this->crud_model->select('project', QUERY_RESULT, ['project_slug', 'project_client', 'project_thumbnail', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=project_name AND language_code="' . $lang . '" limit 1) as project_name', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=project_category AND language_code="' . $lang . '" limit 1) as project_category'], ['service_id' => $service->service_parent_id, 'deleted_at' => null]);
-			$data['clients'] = $this->crud_model->select('client', QUERY_RESULT, '', ['service_id' => $service->service_id, 'deleted_at' => null]);
-			$data['recomendations'] = $this->crud_model->select('service_recomendation', QUERY_RESULT, ['recomendation_icon', 'recomendation_color', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=recomendation_name AND language_code="' . $lang . '") as recomendation_name'], ['service_recomendation.service_id' => $service->service_id, 'service_recomendation.deleted_at' => null], ['service_recomendation' => ['recomendation' => 'recomendation_id']]);
+			foreach ($sections as $section) {
+				if ($section->section_slug == 'our-achievement' || $section->section_slug == 'achievement-deliverable') {
+					$data['achievements'] = $this->crud_model->select('achievement', QUERY_RESULT, ['achievement_count', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=achievement_name AND language_code="' . $lang . '" limit 1) as achievement_name'], ['achievement.service_id' => 1, 'achievement.deleted_at' => null]);
+				}
+				if ($section->section_slug == 'we-offer') {
+					$data['offers'] = $this->crud_model->select('offer', QUERY_RESULT, ['offer_icon', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=offer_name AND language_code="' . $lang . '" limit 1) as offer_name','(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=offer_description AND language_code="' . $lang . '" limit 1) as offer_description'], ['service_id' => $service->service_id, 'deleted_at' => null]);
+				}
+				if ($section->section_slug == 'activities') {
+					$data['activities'] = $this->crud_model->select('activity', QUERY_RESULT, ['activity_icon', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=activity_name AND language_code="' . $lang . '" limit 1) as activity_name','(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=activity_description AND language_code="' . $lang . '" limit 1) as activity_description'], ['service_id' => $service->service_id, 'deleted_at' => null]);
+				}
+				if ($section->section_slug == 'benefit' || $section->section_slug == 'output-benefit') {
+					$data['benefits'] = $this->crud_model->select('benefit', QUERY_RESULT, ['benefit_icon','(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=benefit_category AND language_code="' . $lang . '" limit 1) as benefit_category' ,'(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=benefit_name AND language_code="' . $lang . '" limit 1) as benefit_name'], ['service_id' => $service->service_id, 'deleted_at' => null]);
+				}
+				if ($section->section_slug == 'expertise-and-experience') {
+					$data['expertises'] = $this->crud_model->select('expertise', QUERY_RESULT, ['(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=expertise_name AND language_code="' . $lang . '" limit 1) as expertise_name'], ['service_id' => $service->service_id, 'deleted_at' => null]);
+				}
+				if ($section->section_slug == 'what-you-get') {
+					$data['facilities'] = $this->crud_model->select('facility', QUERY_RESULT, ['facility_icon', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=facility_name AND language_code="' . $lang . '" limit 1) as facility_name'], ['service_id' => $service->service_id, 'deleted_at' => null]);
+				}
+				if ($section->section_slug == 'waste-flow') {
+					$data['flows'] = $this->crud_model->select('flow', QUERY_RESULT, ['flow_icon', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=flow_name AND language_code="' . $lang . '" limit 1) as flow_name'], ['service_id' => $service->service_id, 'deleted_at' => null]);
+				}
+				if ($section->section_slug == 'program-highlight' || $section->section_slug == 'research-highlight') {
+					$data['projects'] = $this->crud_model->select('service', QUERY_RESULT, ['service_slug', 'service_thumbnail', 'service_subcategory_name'], ['service_parent_id' => $service->service_id, 'deleted_at' => null]);
+				}
+				if ($section->section_slug == 'photofolio-highlight') {
+					$data['photofolios'] = $this->crud_model->select('photofolio', QUERY_RESULT, '', ['service_id' => $service->service_id, 'deleted_at' => null]);
+				}
+				if ($section->section_slug == 'similar-project') {
+					$data['projects'] = $this->crud_model->select('service', QUERY_RESULT, ['service_slug', 'service_thumbnail', 'service_subcategory_name'], ['service_parent_id' => $service->service_parent_id, 'deleted_at' => null]);
+				}
+				if ($section->section_slug == 'our-client') {
+					$data['clients'] = $this->crud_model->select('client', QUERY_RESULT, '', ['service_id' => $service->service_id, 'deleted_at' => null]);
+				}
+				if ($section->section_slug == 'recomended-for') {
+					$data['recomendations'] = $this->crud_model->select('service_recomendation', QUERY_RESULT, ['recomendation_icon', 'recomendation_color', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=recomendation_name AND language_code="' . $lang . '" limit 1) as recomendation_name'], ['service_recomendation.service_id' => $service->service_id, 'service_recomendation.deleted_at' => null], ['service_recomendation' => ['recomendation' => 'recomendation_id']]);
+				}
+				if ($section->section_slug == 'our-coverage') {
+				
+				}
+			}
 			
 			$this->render_page('services/details/index', $data, 'services');
 		}
