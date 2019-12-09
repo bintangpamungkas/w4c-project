@@ -1,4 +1,4 @@
-<?php if (!empty($benefits)):?>
+<?php if (1==1):?>
 <section class="g-bg-secondary">
   <div id="output-benefit" style="height: 200px;position: absolute;width: 80%;margin-top: -80px"></div>
   <div class="container <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-10' : 'g-pt-80 g-pb-80' ?>">
