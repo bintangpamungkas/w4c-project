@@ -28,101 +28,6 @@ class MY_Controller extends CI_Controller{
     return $value;
   }
 
-  function navigation_menu_array_segment($user_target){
-
-    $data['service_individual']=[
-      [
-        'number' => 1,
-        'visible' => true,
-        'category' => 'General',
-        'title' => 'Send Your Waste',
-        'content' => lang('send_your_waste'),
-        'icon' => 'default.png',
-        'image' => 'syw.jpg',
-        'recomendation' => ['General'],
-        'url' => W4C_URL.'service/send-your-waste',
-        'is_new' => false,
-      ],
-      [
-        'number' => 2,
-        'visible' => true,
-        'category' => 'General',
-        'title' => 'Dropbox',
-        'content' => lang('services_dropbox'),
-        'icon' => 'default.png',
-        'image' => 'dropbox.jpg',
-        'recomendation' => ['General'],
-        'url' => W4C_URL.'service/dropbox',
-        'is_new' => false,
-      ],
-    ];
-
-    $data['service_corporate']=[
-      [
-        'title' => 'Zero Waste to Landfill',
-        'url' => W4C_URL.'service/zero-waste-to-landfill-management',
-        'icon' => 'default.png',
-        'is_new' => false,
-        'category' => 'Responsible Waste Management',
-        'number' => 1,
-        'content' => lang('services_zero_waste_to_landfill'),
-        'recomendation' => ['General'],
-        'image' => 'zwtl.jpg',
-        'visible' => true,
-      ],
-      [
-        'number' => 2,
-        'visible' => true,
-        'category' => 'general',
-        'title' => 'Solid Waste Management Research',
-        'content' => lang('services_solid_waste_management_research'),
-        'icon' => 'default.png',
-        'image' => 'swmr.jpg',
-        'recomendation' => ['General'],
-        'url' => W4C_URL.'service/solid-waste-management-research',
-        'is_new' => false,
-      ],
-      [
-        'number' => 3,
-        'visible' => true,
-        'category' => 'Extended Producer Responsibilities',
-        'title' => 'In-Store Recycling',
-        'content' => lang('services_in_store_recycling'),
-        'icon' => 'default.png',
-        'image' => 'in_store_recycling.jpg',
-        'recomendation' => ['General'],
-        'url' => W4C_URL.'service/in-store-recycling',
-        'is_new' => false,
-      ],
-      [
-        'number' => 4,
-        'visible' => true,
-        'category' => 'Training',
-        'title' => 'AKABIS (Waste Management Academy)',
-        'content' => lang('services_akabis'),
-        'icon' => 'default.png',
-        'image' => 'akabis.jpg',
-        'recomendation' => ['General'],
-        'url' => W4C_URL.'service/waste-management-academy',
-        'is_new' => false,
-      ],
-      [
-        'number' => 5,
-        'visible' => true,
-        'category' => 'Community Development',
-        'title' => '3R School Program',
-        'content' => lang('services_3r_school_program'),
-        'icon' => 'default.png',
-        'image' => '3rschool.jpg',
-        'recomendation' => ['General'],
-        'url' => W4C_URL.'service/3r-school-program',
-        'is_new' => false,
-      ],
-    ];
-
-    return $data['service_'.$user_target];
-  }
-
   function render_page($content, $data = NULL, $template = NULL){
 
     if(IS_ONLINE==1){
@@ -144,7 +49,7 @@ class MY_Controller extends CI_Controller{
       $service_category=$this->crud_model->select('service_category',QUERY_RESULT,['service_category_id', 'service_category_name title','service_category_icon icon','service_target_id'],['service_category.service_target_id'=>$target->service_target_id]);
       $categories=[];
       foreach ($service_category as $category) {
-        $services=$this->crud_model->select('service',QUERY_RESULT,['service_id','service_page_url url','service_name title','service_category_id','has_page'],['service_category_id'=>$category->service_category_id,'deleted_at'=>null,'service_parent_id'=>null]);
+        $services=$this->crud_model->select('service',QUERY_RESULT,['service_id','service_page_url url','dictionary.dictionary_content title','service_category_id','has_page'],['language_code'=>$lang,'service_category_id'=>$category->service_category_id,'deleted_at'=>null,'service_parent_id'=>null],['service'=>['dictionary'=>'dictionary_slug=service_name']]);
 
 				$category->menu=$services;
         $categories[]=$category;
@@ -272,6 +177,101 @@ class MY_Controller extends CI_Controller{
 
     $this->load->view('templates/index', $data);
   }
+
+	function navigation_menu_array_segment($user_target){
+
+		$data['service_individual']=[
+						[
+										'number' => 1,
+										'visible' => true,
+										'category' => 'General',
+										'title' => 'Send Your Waste',
+										'content' => lang('send_your_waste'),
+										'icon' => 'default.png',
+										'image' => 'syw.jpg',
+										'recomendation' => ['General'],
+										'url' => W4C_URL.'service/send-your-waste',
+										'is_new' => false,
+						],
+						[
+										'number' => 2,
+										'visible' => true,
+										'category' => 'General',
+										'title' => 'Dropbox',
+										'content' => lang('services_dropbox'),
+										'icon' => 'default.png',
+										'image' => 'dropbox.jpg',
+										'recomendation' => ['General'],
+										'url' => W4C_URL.'service/dropbox',
+										'is_new' => false,
+						],
+		];
+
+		$data['service_corporate']=[
+						[
+										'title' => 'Zero Waste to Landfill',
+										'url' => W4C_URL.'service/zero-waste-to-landfill-management',
+										'icon' => 'default.png',
+										'is_new' => false,
+										'category' => 'Responsible Waste Management',
+										'number' => 1,
+										'content' => lang('services_zero_waste_to_landfill'),
+										'recomendation' => ['General'],
+										'image' => 'zwtl.jpg',
+										'visible' => true,
+						],
+						[
+										'number' => 2,
+										'visible' => true,
+										'category' => 'general',
+										'title' => 'Solid Waste Management Research',
+										'content' => lang('services_solid_waste_management_research'),
+										'icon' => 'default.png',
+										'image' => 'swmr.jpg',
+										'recomendation' => ['General'],
+										'url' => W4C_URL.'service/solid-waste-management-research',
+										'is_new' => false,
+						],
+						[
+										'number' => 3,
+										'visible' => true,
+										'category' => 'Extended Producer Responsibilities',
+										'title' => 'In-Store Recycling',
+										'content' => lang('services_in_store_recycling'),
+										'icon' => 'default.png',
+										'image' => 'in_store_recycling.jpg',
+										'recomendation' => ['General'],
+										'url' => W4C_URL.'service/in-store-recycling',
+										'is_new' => false,
+						],
+						[
+										'number' => 4,
+										'visible' => true,
+										'category' => 'Training',
+										'title' => 'AKABIS (Waste Management Academy)',
+										'content' => lang('services_akabis'),
+										'icon' => 'default.png',
+										'image' => 'akabis.jpg',
+										'recomendation' => ['General'],
+										'url' => W4C_URL.'service/waste-management-academy',
+										'is_new' => false,
+						],
+						[
+										'number' => 5,
+										'visible' => true,
+										'category' => 'Community Development',
+										'title' => '3R School Program',
+										'content' => lang('services_3r_school_program'),
+										'icon' => 'default.png',
+										'image' => '3rschool.jpg',
+										'recomendation' => ['General'],
+										'url' => W4C_URL.'service/3r-school-program',
+										'is_new' => false,
+						],
+		];
+
+		return $data['service_'.$user_target];
+	}
 
   public function is_logged(){
 

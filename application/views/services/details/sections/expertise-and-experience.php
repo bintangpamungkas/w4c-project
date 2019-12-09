@@ -5,38 +5,7 @@
         <h2 class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-25' : '' ?>"><?= strtoupper(get_lang('expertise')) ?></h2>
         <hr class="g-width-30 g-my-5 g-brd-2 g-brd-blue">
     </div>
-    <div class="row">
-      <?php
-      $expertises=[
-        (object)[
-          'expertise_name'=>get_lang('short_lorem')
-        ],
-        (object)[
-          'expertise_name'=>get_lang('short_lorem')
-        ],
-        (object)[
-          'expertise_name'=>get_lang('short_lorem')
-        ],
-        (object)[
-          'expertise_name'=>get_lang('short_lorem')
-        ],
-        (object)[
-          'expertise_name'=>get_lang('short_lorem')
-        ],
-        (object)[
-          'expertise_name'=>get_lang('short_lorem')
-        ],
-        (object)[
-          'expertise_name'=>get_lang('short_lorem')
-        ],
-        (object)[
-          'expertise_name'=>get_lang('short_lorem')
-        ],
-        (object)[
-          'expertise_name'=>get_lang('short_lorem')
-        ],
-      ];
-      ?>
+    <div class="row">.
       <?php foreach ($expertises as $expert): ?>
         <div class="col-md-4 col-xs-12 g-line-height-1_3">
           <div class="row no-gutters g-my-10">
