@@ -55,6 +55,10 @@
                             <i class="fa fa-angle-right g-mr-5"></i>
                             <a target="_blank" class="g-color-white-opacity-0_8" href="http://waste4change.com/impactful-career-waste4change/"><?= ucwords(strtolower(lang('career'))) ?></a>
                         </li>
+	                    <li class="g-mb-5">
+		                    <i class="fa fa-angle-right g-mr-5"></i>
+		                    <a target="_blank" class="g-color-white-opacity-0_8" href="http://w4c.id/internship"><?= ucwords(strtolower(lang('internship'))) ?></a>
+	                    </li>
                     </ul>
                 </div>
                 <!-- End Footer Content -->

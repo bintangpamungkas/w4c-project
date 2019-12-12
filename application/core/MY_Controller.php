@@ -17,7 +17,7 @@
 			
 			$this->load->helper('my_helper');
 			
-			$this->lang->load('this', $this->session->userdata('language') ? ($this->session->userdata('language') == 'id' ? 'english' : 'english') : 'english');
+//			$this->lang->load('this', $this->session->userdata('language') ? ($this->session->userdata('language') == 'id' ? 'indonesia' : 'english') : 'indonesia');
 			
 		}
 		
@@ -39,7 +39,6 @@
 					redirect('https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);
 				}
 			}
-			
 			if (empty($this->session->userdata('language'))) {
 				$lang = 'en';
 			} else {

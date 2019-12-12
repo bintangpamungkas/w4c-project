@@ -15,7 +15,7 @@
         <div class="col-md-6">
           <div class="g-mb-5--lg g-px-20" style="margin-top:-30px">
             <p class="g-pa-20 g-color-white" style="background: linear-gradient(90deg, rgba(11, 144, 185, 0.9), rgba(19, 182, 127, 0.9));<?= $this->agent->is_mobile() ? '' : 'margin-left: -100px' ?>">
-              <?= empty($service->service_description) ? get_lang('long-lorem') : $service->service_description ?>
+              <?= empty($service->service_about) ? get_lang('long-lorem') : $service->service_about ?>
             </p>
           </div>
           <a target="_blank" class="d-none btn btn-info g-font-size-default text-uppercase g-rounded-50 g-py-12 g-px-30" href="#">JOIN NOW</a>
@@ -34,7 +34,7 @@
               </div>
               <div class="g-mb-5--lg">
                 <p class="g-pa-35 g-color-white g-pl-100" style="background: linear-gradient(90deg, rgba(11, 144, 185, 0.9), rgba(19, 182, 127, 0.9));<?= $this->agent->is_mobile() ? '' : 'margin-left: -100px' ?>">
-                  <?= empty($service->service_description) ? get_lang('long-lorem') : $service->service_description ?>
+                  <?= empty($service->service_about) ? get_lang('long-lorem') : $service->service_about ?>
                 </p>
               </div>
               <a target="_blank" class="d-none btn btn-info g-font-size-default text-uppercase g-rounded-50 g-py-12 g-px-30" href="#">JOIN NOW</a>

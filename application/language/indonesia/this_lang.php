@@ -346,6 +346,7 @@ $lang['brand_accepted_waste_other']="Kemasan Bekas<br>Jenis Lain?";
 
 //footer
 $lang['career']="karir";
+	$lang['internship']="Magang";
 
 //pricing
 $lang['pricing']="Harga";

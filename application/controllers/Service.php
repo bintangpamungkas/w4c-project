@@ -177,7 +177,7 @@
 			$data['sections'] = $sections;
 			foreach ($sections as $section) {
 				if ($section->section_slug == 'our-achievement' || $section->section_slug == 'achievement-deliverable') {
-					$data['achievements'] = $this->crud_model->select('achievement', QUERY_RESULT, ['achievement_count', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=achievement_name AND language_code="' . $lang . '" limit 1) as achievement_name'], ['achievement.service_id' => 1, 'achievement.deleted_at' => null]);
+					$data['achievements'] = $this->crud_model->select('achievement', QUERY_RESULT, ['achievement_count', 'achievement_icon', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=achievement_name AND language_code="' . $lang . '" limit 1) as achievement_name'], ['achievement.service_id' => $service->service_id, 'achievement.deleted_at' => null]);
 				}
 				if ($section->section_slug == 'we-offer') {
 					$data['offers'] = $this->crud_model->select('offer', QUERY_RESULT, ['offer_icon', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=offer_name AND language_code="' . $lang . '" limit 1) as offer_name','(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=offer_description AND language_code="' . $lang . '" limit 1) as offer_description'], ['service_id' => $service->service_id, 'deleted_at' => null]);

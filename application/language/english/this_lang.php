@@ -346,7 +346,7 @@ $lang['brand_accepted_waste_other']="Other Type<br>of Waste?";
 
 //footer
 $lang['career']="career";
-
+	$lang['internship']="Internship";
 //Pricing
 $lang['pricing']="Pricing";
 $lang['order_now']="Order Now";
