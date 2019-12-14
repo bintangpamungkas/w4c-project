@@ -42,7 +42,7 @@ function get_image($image, $replace = null)
 		// If it is https, change it to http
 		$url = 'http://' . substr($url, 8);
 	}
-
+return $url;
 	if (@getimagesize($url)) {
 		return $url;
 	} else {

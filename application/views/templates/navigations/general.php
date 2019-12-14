@@ -8,6 +8,7 @@
 						<a class="nav-link g-py-7 g-px-0 text-uppercase" href="<?= $nav['url'] ?>"> <?= $nav['title'] ?></a>
 					</li>
 				<?php else: ?>
+
 					<li class="hs-has-sub-menu nav-item g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
 						<a class="nav-link g-py-7 g-px-0 text-uppercase" href="javascript:void()" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-pages"><?= $nav['title'] ?></a>
 						<ul class="mega-menu hs-sub-menu list-unstyled g-brd-0  g-min-width-220 g-mt-2 g-mt-8--lg--scrolling" aria-labelledby="nav-link-pages">
@@ -156,7 +157,7 @@
 			?>
 			<div class="hs-has-sub-menu nav-item g-mx-20--lg" data-animation-in="fadeIn" data-animation-out="fadeOut" data-position="right">
 				<a href="javascript:void()" class="<?= $template == 'index' ? 'nav-change-scroll g-color-white' : '' ?> g-font-size-12 nav-link px-0" style="line-height: 1;color:black" aria-haspopup="true" aria-expanded="false">
-					<img src="<?= $this->session->userdata('language') ? ($this->session->userdata('language') == 'id' ? get_image(DIR_ICON . 'flag_indonesia.png') : get_image(DIR_ICON . 'flag_english.png')) : get_image(DIR_ICON . 'flag_indonesia.png') ?>" style="border: 1px solid rgba(0,0,0,0.1);height: 13px;margin-bottom: 2px">
+					<img src="<?= $this->session->userdata('language') ? ($this->session->userdata('language') == 'id' ? get_image(DIR_ICON . 'flag_indonesia.png') : get_image(DIR_ICON . 'flag_england.png')) : get_image(DIR_ICON . 'flag_indonesia.png') ?>" style="border: 1px solid rgba(0,0,0,0.1);height: 13px;margin-bottom: 2px">
 					<?= empty($this->session->userdata('language')) ? 'ID' : strtoupper($this->session->userdata('language')) ?>
 				</a>
 				<ul class="hs-sub-menu list-unstyled box-shadow-down g-mt-14 g-min-width-65 animated hs-position-right fadeOut arrow-box" id="nav-submenu--features" aria-labelledby="nav-link--features" style="display: none;">
