@@ -246,3 +246,24 @@
 .bg-w4c-green-v1{
   background-color: #88C662!important;
 }
+
+.arrow-box:before{
+    bottom: 100%;
+    left: 36%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow-box:before{
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #ffffff;
+    border-width: 15px;
+    margin-left: 0px;
+}
+.dropdown-menu .dropdown-item:active > a{
+    color: #159CBD !important;
+}

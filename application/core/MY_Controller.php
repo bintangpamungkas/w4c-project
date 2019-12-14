@@ -17,8 +17,7 @@
 			
 			$this->load->helper('my_helper');
 			
-//			$this->lang->load('this', $this->session->userdata('language') ? ($this->session->userdata('language') == 'id' ? 'indonesia' : 'english') : 'indonesia');
-			
+			$this->lang->load('this', $this->session->userdata('language') ? ($this->session->userdata('language') == 'id' ? 'indonesia' : 'english') : 'indonesia');
 		}
 		
 		function getCompany($data)
@@ -39,6 +38,8 @@
 					redirect('https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);
 				}
 			}
+//			echo $this->session->userdata('language');
+//			die();
 			if (empty($this->session->userdata('language'))) {
 				$lang = 'en';
 			} else {
@@ -119,33 +120,33 @@
 							'is_new' => false,
 							'menu' => '',
 					],
-					[
-							'title' => $this->session->userdata('language') == 'en' ? 'en' : 'ID',
-							'for' => 'language',
-							'visible' => true,
-							'number' => '8',
-							'url' => 'javascript:void()',
-							'type' => 'dropdown',
-							'submenu_type' => 'list',
-							'icon' => '',
-							'is_new' => false,
-							'menu' => [
-									(object)[
-											'title' => 'ID',
-											'url' => !$this->session->userdata('language') || $this->session->userdata('language') == 'id' ? 'javascript:void()' : site_url('id'),
-											'icon' => 'default.png',
-											'is_new' => false,
-											'visible' => true,
-									],
-									(object)[
-											'title' => 'EN',
-											'url' => $this->session->userdata('language') == 'en' ? 'javascript:void()' : site_url('en'),
-											'icon' => 'default.png',
-											'is_new' => false,
-											'visible' => true,
-									],
-							]
-					],
+//					[
+//							'title' => $this->session->userdata('language') == 'en' ? 'en' : 'ID',
+//							'for' => 'language',
+//							'visible' => true,
+//							'number' => '8',
+//							'url' => 'javascript:void()',
+//							'type' => 'dropdown',
+//							'submenu_type' => 'list',
+//							'icon' => '',
+//							'is_new' => false,
+//							'menu' => [
+//									(object)[
+//											'title' => 'ID',
+//											'url' => !$this->session->userdata('language') || $this->session->userdata('language') == 'id' ? 'javascript:void()' : site_url('id'),
+//											'icon' => 'default.png',
+//											'is_new' => false,
+//											'visible' => true,
+//									],
+//									(object)[
+//											'title' => 'EN',
+//											'url' => $this->session->userdata('language') == 'en' ? 'javascript:void()' : site_url('en'),
+//											'icon' => 'default.png',
+//											'is_new' => false,
+//											'visible' => true,
+//									],
+//							]
+//					],
 			];
 //     print_r($data['navigation_array']);
 // die();
@@ -155,6 +156,8 @@
 				//$data['login_user'] = $this->account_model->user_login_session('user', 'email', $login_value);
 			}
 			
+			$data['languages']=$this->crud_model->select('language',QUERY_RESULT,['language_code','language_flag','language_name'],'');
+
 			if ($this->agent->is_mobile()) {
 				if ($this->uri->segment(1) == 'email') {
 					$render = '';

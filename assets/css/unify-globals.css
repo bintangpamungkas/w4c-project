@@ -671,6 +671,9 @@
 .g-bg-blue-opacity-0_1 {
   background-color: rgba(51, 152, 220, 0.1) !important; }
 
+.g-bg-blue-opacity-0_1--hover:hover {
+  background-color: rgba(51, 152, 220, 0.1) !important; }
+
 .g-bg-blue-opacity-0_7 {
   background-color: rgba(51, 152, 220, 0.7) !important; }
 
@@ -1157,7 +1160,7 @@
 .g-brd-none {
   /* P */
   border: none !important; }
-
+g-mt-minus
 .g-brd-x {
   border-left: solid 1px transparent !important;
   border-right: solid 1px transparent !important; }
@@ -4764,6 +4767,12 @@
 .g-color-blue-dark-v1 {
   color: #175a88 !important; }
 
+.g-color-blue-dark-v2 {
+  color: #159CBD !important; }
+
+.g-color-blue-dark-v2--hover:hover, .g-color-blue-dark-v2--active:active {
+  color: #159CBD !important; }
+
 /* Color Light Blue */
 .g-color-lightblue {
   color: #edf2f8 !important; }
@@ -5534,6 +5543,12 @@
 
 .g-min-width-300 {
   min-width: 300px; }
+
+.g-min-width-350 {
+  min-width: 350px; }
+
+.g-min-width-400 {
+  min-width: 400px; }
 
 @media (min-width: 576px) {
   .g-width-50x--sm {
