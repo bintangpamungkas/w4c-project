@@ -8,21 +8,16 @@
 		function __construct()
 		{
 			parent::__construct();
-			$this->load->model('account_model');
 			$this->load->model('crud_model');
 		}
 		
 		public function index()
 		{
 			$this->load->model('service_model');
-			
 			$input_city=$this->input->get('city');
 			
-			if (empty($this->session->userdata('language'))) {
-				$lang = 'id';
-			} else {
-				$lang = $this->session->userdata('language');
-			}
+			$lang = $this->get_language();
+			
 			$targets = $this->crud_model->select('service_target', QUERY_RESULT, ['service_target_id','dictionary.dictionary_content service_target_name', 'service_target_icon'], ['language_code' => $lang, 'deleted_at' => null], ['service_target' => ['dictionary' => 'dictionary_slug=service_target_name']]);
 			$service_target=[];
 			foreach ($targets as $target){
@@ -35,7 +30,7 @@
 				$service_target[]=$target;
 			}
 			$data['input_city']=$input_city;
-			$data['service_list']=$service_target;
+			$data['service_targets']=$service_target;
 			$data['title'] = '';
 			$data['id'] = 'site';
 			$data['subtitle'] = 'information';

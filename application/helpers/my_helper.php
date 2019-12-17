@@ -6,7 +6,7 @@ function get_lang($slug)
 	$ci->load->library('session');
 
 	if (empty($ci->session->userdata('language'))) {
-		$lang = 'en';
+		$lang = 'id';
 	} else {
 		$lang = $ci->session->userdata('language');
 	}
@@ -42,7 +42,6 @@ function get_image($image, $replace = null)
 		// If it is https, change it to http
 		$url = 'http://' . substr($url, 8);
 	}
-return $url;
 	if (@getimagesize($url)) {
 		return $url;
 	} else {

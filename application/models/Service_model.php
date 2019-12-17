@@ -16,7 +16,7 @@
 		
 		function service_list($lang, $service_target_name = null)
 		{
-			$this->db->select(['service_target_name', 'service.service_id', 'service.service_category_id', 'service.service_slug', 'service.service_name', 'service.service_page_url', 'service.service_join_url', 'service.service_thumbnail', 'service_category_name']);
+			$this->db->select(['service_target_name', 'service.service_id', 'service.service_category_id', 'service.service_slug', 'service.service_name', 'service.service_page_url', 'service.service_join_url', 'service.service_thumbnail_image', 'service_category_name']);
 			$this->db->select('(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service.service_description AND dictionary.language_code="' . $lang . '") as service_description');
 			$this->db->from('service');
 			$this->db->join('service_category', 'service_category.service_category_id=service.service_category_id', 'left');
@@ -29,7 +29,7 @@
 		
 		function get_service($lang, $service_slug)
 		{
-			$this->db->select(['service.service_id', 'service.service_category_id', 'service.service_parent_id', 'service.service_subcategory_name', 'service_client_name', 'service.service_slug', 'service.service_name', 'service.service_page_url', 'service.service_join_url', 'service.service_proposal_url', 'service.service_portofolio_url', 'service.service_about_image', 'service.service_thumbnail', 'service_category_name']);
+			$this->db->select(['service.service_id', 'service.service_category_id', 'service.service_parent_id', 'service.service_subcategory_name', 'service_client_name', 'service.service_slug', 'service.service_name', 'service.service_page_url', 'service.service_join_url', 'service.service_proposal_url', 'service.service_portofolio_url', 'service.service_about_image', 'service.service_thumbnail_image', 'service_category_name']);
 			$this->db->select('(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service.service_name AND dictionary.language_code="' . $lang . '" limit 1) as service_name');
 			$this->db->select('(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service_category.service_category_name AND dictionary.language_code="' . $lang . '" limit 1) as service_category_name');
 			$this->db->select('(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service.service_description AND dictionary.language_code="' . $lang . '" limit 1) as service_description');
@@ -53,7 +53,7 @@
 		
 		function benefit_list($lang, $service_id)
 		{
-			$this->db->select(['service.service_id', 'service.service_category_id', 'service.service_slug', 'service.service_name', 'service.service_page_url', 'service.service_join_url', 'service.service_thumbnail', 'service_category_name']);
+			$this->db->select(['service.service_id', 'service.service_category_id', 'service.service_slug', 'service.service_name', 'service.service_page_url', 'service.service_join_url', 'service.service_thumbnail_image', 'service_category_name']);
 			$this->db->select('(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service.service_description AND dictionary.language_code="' . $lang . '") as service_description');
 			$this->db->select('(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service.service_slogan AND dictionary.language_code="' . $lang . '") as service_slogan');
 			$this->db->select('(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service.service_about AND dictionary.language_code="' . $lang . '") as service_about');
@@ -73,6 +73,7 @@
 			$this->db->join('service_category', 'service_category.service_category_id=service.service_category_id', 'left');
 			$this->db->join('service_coverage', 'service_coverage.service_id=service.service_id', 'left');
 			$this->db->where('service.has_page',1);
+			$this->db->where('service_parent_id',null);
 			if ($is_new != null) {
 				$this->db->like('service.is_new', 1);
 			}

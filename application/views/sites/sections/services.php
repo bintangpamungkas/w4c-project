@@ -59,7 +59,7 @@
 			?>
 			<div class="">
 				<?php
-					foreach ($service_list as $target) {
+					foreach ($service_targets as $target) {
 						?>
 						<div class="my_tab_content" id="tab-<?= $target->service_target_id ?>">
 							<div class="animated fadeIn row g-ma-0 g-rounded-7" style="background-size: cover;background-position: left;background-repeat: no-repeat">
@@ -157,7 +157,7 @@
 		</div>
 		<?php
 			} else { // jika desktop
-			foreach ($service_list as $target) {
+			foreach ($service_targets as $target) {
 				?>
 				<div class="my_tab_content g-rounded-7" id="tab-<?= $target->service_target_id ?>">
 					<div class="row">

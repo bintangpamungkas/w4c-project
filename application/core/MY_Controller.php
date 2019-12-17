@@ -70,7 +70,7 @@
 			
 			$data['navigation_array_individu'] = $this->navigation_menu_array_segment('individual');
 			$data['navigation_array_corporate'] = $this->navigation_menu_array_segment('corporate');
-		 $data['service_targets']=$targets;
+//		 $data['service_targets']=$targets;
 			$data['navigation_array'] = [
 					[
 							'title' => strtoupper(lang('solution')),
@@ -512,7 +512,7 @@
 		public function get_language()
 		{
 			if (empty($this->session->userdata('language'))) {
-				$lang = 'en';
+				$lang = 'id';
 			} else {
 				$lang = $this->session->userdata('language');
 			}
