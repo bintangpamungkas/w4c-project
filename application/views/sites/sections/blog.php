@@ -40,14 +40,14 @@
     if(!$this->agent->is_mobile()): ?>
     <div class="row">
       <?php
-      foreach ($blog as $x):
+      foreach ($blogs as $blog):
         ?>
         <div class="col-lg-4 g-mb-30">
           <article class="g-bg-white" style="box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.1)">
             <figure class="g-pos-rel">
-              <div class="img-fluid w-100 g-min-height-200" style="background: url(<?= $x['blog_image'] ?>);background-size: cover"></div>
+              <div class="img-fluid w-100 g-min-height-200" style="background: url(<?= $blog['blog_image'] ?>);background-size: cover"></div>
               <figcaption class="text-uppercase text-center g-line-height-1_2 g-color-white g-pos-abs g-top-20 g-px-15 g-py-10 bg-w4c-green-v1">
-                <span class="d-block"><?= date('F d, Y', strtotime($x['blog_date'])) ?></span>
+                <span class="d-block"><?= date('F d, Y', strtotime($blog['blog_date'])) ?></span>
               </figcaption>
             </figure>
 
@@ -56,25 +56,25 @@
                 <div class="mb-1">
                   <small>
                     <span class="g-color-gray-dark-v4">By</span>
-                    <a class="g-color-info" href="#!"><?= $x['blog_author'] ?></a>
+                    <a class="g-color-info" href="#!"><?= $blog['blog_author'] ?></a>
                   </small>
                 </div>
                 <div class="mb-2">
                   <small>
                     <span class="g-color-gray-dark-v4">In</span>
-                    <a class="g-color-info" href="#!"><?= $x['blog_category'] ?></a>
+                    <a class="g-color-info" href="#!"><?= $blog['blog_category'] ?></a>
                   </small>
                 </div>
               </div>
               <h3 class="h5 g-mb-15" style="min-height: 80px">
-                <a class="u-link-v5 g-color-gray-dark-v2 g-color-info--hover g-font-weight-700" href="<?= $x['blog_title'] ?>" style="word-wrap: break-word"><?= $x['blog_title'] ?></a>
+                <a class="u-link-v5 g-color-gray-dark-v2 g-color-info--hover g-font-weight-700" href="<?= $blog['blog_title'] ?>" style="word-wrap: break-word"><?= $blog['blog_title'] ?></a>
               </h3>
-              <div class="g-font-size-13"><?= $x['blog_content'] ?></div>
+              <div class="g-font-size-13"><?= $blog['blog_content'] ?></div>
               <hr class="g-brd-gray-light-v4 g-mt-40">
               <a title="Share Story" target="_blank" class="float-right g-brd-0 g-color-info g-bg-blue  g-color-white--hover g-bg-linkedin--hover u-icon-v2 g-rounded-50x" href="#" style=" height: 30px; width: 30px; ">
                 <i class="fa fa-share-alt g-color-white g-font-size-10"></i>
               </a>
-              <a target="_blank" href="<?= $x['blog_url'] ?>" class="g-color-w4c-blue-v1 g-bg-white g-bg-info--hover g-rounded-50 g-mr-10 g-mb-15 g-font-weight-700">Read More <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
+              <a target="_blank" href="<?= $blog['blog_url'] ?>" class="g-color-w4c-blue-v1 g-bg-white g-bg-info--hover g-rounded-50 g-mr-10 g-mb-15 g-font-weight-700">Read More <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
             </div>
           </article>
         </div>
@@ -91,7 +91,7 @@
           ?>
           <article class="g-bg-white" style="box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.1)">
             <figure class="g-pos-rel">
-              <div class="img-fluid w-100 g-min-height-200" style="background: url(<?= $x['blog_image'] ?>);background-size: cover"></div>
+              <div class="img-fluid w-100 g-min-height-200" style="background: url(<?= $blog['blog_image'] ?>);background-size: cover"></div>
               <figcaption class="text-uppercase text-center g-line-height-1_2 g-color-white g-pos-abs g-top-20 g-px-15 g-py-10 bg-w4c-green-v1">
                 <span class="d-block"><?= date('F d, Y', strtotime($blog['blog_date'])) ?></span>
               </figcaption>
@@ -134,7 +134,7 @@
         $(element_id).owlCarousel({
           loop:true,
           margin:30,
-          dots:<?= !$this->agent->is_mobile() && count($xb)<3 ? 'false' : 'true' ?>,
+          dots:<?= !$this->agent->is_mobile() && count($blogs)<3 ? 'false' : 'true' ?>,
           nav:true,
           autoplay:true,
           autoplayTimeout:1500,

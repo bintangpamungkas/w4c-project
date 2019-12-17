@@ -1,23 +1,3 @@
-<?php
-//	$service_targets = [
-//			[
-//					'title' => lang('services_corporate_tab'),
-//					'icon' => 'icon-real-estate-066 u-line-icon-pro',
-//					'number' => 1,
-//					'subtitle' => lang('services_corporate_title'),
-//					'content' => lang('services_corporate_subtitle'),
-//					'list' => $navigation_array_corporate,
-//			],
-//			[
-//					'title' => lang('services_individu_tab'),
-//					'icon' => 'icon-real-estate-003',
-//					'number' => 2,
-//					'subtitle' => lang('services_individu_title'),
-//					'content' => lang('services_individu_subtitle'),
-//					'list' => $navigation_array_individu,
-//			],
-//	];
-?>
 <!-- Promo Block -->
 <section id="welcome" class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}' style="background-color: #3D658E;">
 	<div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center image-opacity-0 animated fadeIn" id="welcome-image" style="height: 120%;background-image: url(<?= $this->agent->is_mobile() ? base_url(DIR_BG . 'header-allservices.jpg') : base_url(DIR_BG . 'home/welcome-header.jpg') ?>);filter: grayscale(100%);background-position-y: 10px;"></div>
@@ -39,25 +19,11 @@
 			</div>
 
 			<!-- Services target navivation -->
-			<div class="row justify-content-center g-ma-0" style="position: absolute; bottom: 0px;">
-				<?php
-					foreach ($service_targets as $target):
-						?>
-						<div class="col<?= $this->agent->is_mobile() ? '-auto' : '-auto' ?> text-center g-px-0 g-font-weight-700 <?= $target->service_target_id == 1 ? '' : ' tab-shadow' ?>">
-							<a class="my_tab g-cursor-pointer nav-link my_tab  g-py-15 g-font-weight-300 g-font-size-<?= $this->agent->is_mobile() ? '14 g-px-30' : '25 g-px-80' ?> <?= $target->service_target_id == 1 ? 'tab-active' : '' ?>" data-tab="#tab-<?= $target->service_target_id ?>" style="<?= $this->agent->is_mobile() ? 'min-height: 70px' : 'min-height: 90px' ?> ; color:#aaa">
-								<i class="<?= $target->service_target_icon ?> g-mr-10  g-mb-17 g-font-size-<?= $this->agent->is_mobile() ? '16' : '30' ?>"></i>
-								<?= $target->service_target_name ?>
-							</a>
-						</div>
-					<?php
-					endforeach;
-				?>
-			</div>
+			
 			<!-- END Services target navivation -->
 
 		</div>
 	</div>
-
 
 </section>
 <!-- End Promo Block -->
