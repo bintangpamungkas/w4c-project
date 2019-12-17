@@ -63,14 +63,14 @@
 				$targets[] = $target;
 			}
 			//END GET service
-			// print_r($targets);
-			// die();
+//			 print_r($targets);
+//			 die();
 			$data['template'] = empty($template) ? 'general' : $template;
 			$data['lang'] = $lang;
 			
 			$data['navigation_array_individu'] = $this->navigation_menu_array_segment('individual');
 			$data['navigation_array_corporate'] = $this->navigation_menu_array_segment('corporate');
-			// $data['navigation_array_brand']=$this->navigation_menu_array_segment('brand');
+		 $data['service_targets']=$targets;
 			$data['navigation_array'] = [
 					[
 							'title' => strtoupper(lang('solution')),
@@ -120,36 +120,7 @@
 							'is_new' => false,
 							'menu' => '',
 					],
-//					[
-//							'title' => $this->session->userdata('language') == 'en' ? 'en' : 'ID',
-//							'for' => 'language',
-//							'visible' => true,
-//							'number' => '8',
-//							'url' => 'javascript:void()',
-//							'type' => 'dropdown',
-//							'submenu_type' => 'list',
-//							'icon' => '',
-//							'is_new' => false,
-//							'menu' => [
-//									(object)[
-//											'title' => 'ID',
-//											'url' => !$this->session->userdata('language') || $this->session->userdata('language') == 'id' ? 'javascript:void()' : site_url('id'),
-//											'icon' => 'default.png',
-//											'is_new' => false,
-//											'visible' => true,
-//									],
-//									(object)[
-//											'title' => 'EN',
-//											'url' => $this->session->userdata('language') == 'en' ? 'javascript:void()' : site_url('en'),
-//											'icon' => 'default.png',
-//											'is_new' => false,
-//											'visible' => true,
-//									],
-//							]
-//					],
 			];
-//     print_r($data['navigation_array']);
-// die();
 			if ($this->session->userdata('login_email')) {
 				//$login_value = $this->session->userdata('login_email');
 				//$this->load->model('account_model');
@@ -171,7 +142,6 @@
 			
 			//PAGE
 			//$data['is_bilingual']=false;
-			
 			$data['asset_head'] = $this->load->view('templates/asset_head', $data, TRUE);
 			$data['header'] = $this->load->view('templates/header', $data, TRUE);
 			
@@ -217,7 +187,7 @@
 			$data['service_corporate'] = [
 					[
 							'title' => 'Zero Waste to Landfill',
-							'url' => W4C_URL . 'service/zero-waste-to-landfill-management',
+							'url' => W4C_URL . 'service/zero-waste-to-landfill',
 							'icon' => 'default.png',
 							'is_new' => false,
 							'category' => 'Responsible Waste Management',
@@ -260,7 +230,7 @@
 							'icon' => 'default.png',
 							'image' => 'akabis.jpg',
 							'recomendation' => ['General'],
-							'url' => W4C_URL . 'service/waste-management-academy',
+							'url' => W4C_URL . 'service/akabis-waste-management-academy',
 							'is_new' => false,
 					],
 					[

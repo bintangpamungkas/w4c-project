@@ -25,9 +25,9 @@
 		<div class="container">
 			<div class="row content-middle-fullscreen">
 				<div class="<?= $this->agent->is_mobile() ? 'col-md-12' : 'col-md-12' ?>">
-					<div class="g-font-asap g-font-weight-500 g-line-height-1 g-font-size-<?= $this->agent->is_mobile() ? '46 mb-3' : '75 mb-3' ?> g-color-white" ><?= get_lang('it-is-time-to-responsibly') ?></div>
-					<div class="g-font-asap g-font-weight-900 g-line-height-1 g-font-size-<?= $this->agent->is_mobile() ? '46 mb-3' : '75 mb-3' ?>" style="color: #88C662;"><?= get_lang('manage-your-waste') ?></div>
-					<div class="g-font-asap g-font-weight-300 g-line-height-1 g-font-size-<?= $this->agent->is_mobile() ? '27 mb-3' : '45 mb-3 g-mt-100' ?> g-color-white" ><?= get_lang('with-waste4change') ?></div>
+					<div class="g-font-asap g-font-weight-500 g-line-height-1 g-font-size-<?= $this->agent->is_mobile() ? '46 mb-3' : '60  g-mt-70' ?> g-color-white" ><?= get_lang('it-is-time-to-responsibly') ?></div>
+					<div class="g-font-asap g-font-weight-900 g-line-height-1 g-font-size-<?= $this->agent->is_mobile() ? '46 mb-3' : '60' ?>" style="color: #88C662;"><?= get_lang('manage-your-waste') ?></div>
+					<div class="g-font-asap g-font-weight-300 g-line-height-1 g-font-size-<?= $this->agent->is_mobile() ? '27 mb-3' : '40 g-mt-20' ?> g-color-white" ><?= get_lang('with-waste4change') ?></div>
 					<span class="d-block g-color-white-opacity-0_8 g-font-size-20 mb-5 mt-1"></span>
 					<a class="js-fancybox u-link-v5 g-color-white" href="https://vimeo.com/167434033" title="Single Image" style="display: none">
           <span class="align-middle u-icon-v3 u-block-hover--scale g-bg-white g-color-black g-color-primary--hover g-rounded-50x g-cursor-pointer mr-2">

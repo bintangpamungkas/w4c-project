@@ -181,7 +181,7 @@
           <?= (lang('blog_cta_description')) ?>
         </p>
         <br>
-        <a target="_blank" class="btn btn-outline-info g-font-weight-700 g-brd-2 g-font-size-19 g-rounded-50 text-uppercase" href="http://waste4change.com/blog">
+        <a target="_blank" class="btn btn-outline-info btn-lg g-font-weight-700 g-rounded-50 text-uppercase" href="http://waste4change.com/blog">
           <?= strtoupper(lang('blog_cta_link')) ?>
         </a>
       </div>

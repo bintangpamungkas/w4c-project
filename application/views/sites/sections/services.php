@@ -170,13 +170,13 @@ $service_targets=[
             <div class="row">
               <?php
               $i=1;
-              foreach($target['list'] as $service){
+	              foreach($target['list'] as $service){
                 if($service['visible']==true && $i<=5){
                   ?>
                   <div class="col-4">
                     <div class="g-mb-5 g-bg-white <?= $this->agent->is_mobile() ? 'g-mt-10' : 'g-mt-25' ?> box-shadow-down">
                       <div style="height: 200px;background: url(<?= base_url('assets/img/bg/services/thumbnail/'.$service['image']) ?>);background-size: cover;"></div>
-                      <div class="bg-white g-mx-20 g-px-30 g-py-20" style="margin-top: -40px; height:250px">
+                      <div class="bg-white g-mx-20 g-px-30 g-pt-20" style="margin-top: -40px; min-height:250px">
                         <?php if($service['is_new']==true): ?>
                           <span class="g-color-white g-bg-primary g-font-size-10 g-px-8 g-py-3 g-ml-5 float-right"><?= lang('new') ?></span>
                         <?php endif; ?>
@@ -215,7 +215,7 @@ $service_targets=[
                         <?=lang('services_not_found')?>
                       </div>
                       <a class="btn btn-info btn-xl btn-block g-brd-2 g-font-size-13 g-rounded-50 g-font-weight-700" href="<?=site_url('service')?>"><?=strtoupper(lang('services_all_services'))?></a>
-                      <a class="btn btn-outline-info btn-xl btn-block g-brd-3 g-font-size-13 g-rounded-50 g-font-weight-700" href="#"><?=strtoupper(lang('services_talk_to_expert'))?></a>
+                      <a class="btn btn-outline-info btn-xl btn-block g-brd-3 g-font-size-13 g-rounded-50 g-font-weight-700" href="<?=site_url('site/contact')?>"><?=strtoupper(lang('services_talk_to_expert'))?></a>
                     </div>
                   </div>
                 </div>

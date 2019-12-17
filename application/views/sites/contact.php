@@ -1,4 +1,4 @@
-<section class="container g-pt-30 g-pb-40">
+<section class="container g-pt-100 g-pb-40">
     <div class="row justify-content-between">
         <div class="col-lg-7 g-mb-60">
             <h2 class="h3">Get In Touch</h2>
