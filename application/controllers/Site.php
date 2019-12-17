@@ -35,7 +35,7 @@
 			$data['id'] = 'site';
 			$data['subtitle'] = 'information';
 			$data['data_mode'] = 'general';
-			$data['page_heading'] = APPNAME;
+			$data['page_heading'] = APP_NAME;
 			$data['is_bilingual'] = true;
 			
 			$this->render_page('sites/index', $data, 'index');
@@ -44,7 +44,7 @@
 		
 		public function about()
 		{
-			$data['title'] = APPNAME;
+			$data['title'] = APP_NAME;
 			$data['id'] = 'site';
 			$data['subtitle'] = 'information';
 			$data['data_mode'] = 'general';
@@ -56,7 +56,7 @@
 		
 		public function contact()
 		{
-			$data['title'] = APPNAME;
+			$data['title'] = APP_NAME;
 			$data['id'] = 'brand';
 			$data['subtitle'] = 'information';
 			$data['data_mode'] = 'general';
@@ -82,7 +82,7 @@
 		
 		public function career()
 		{
-			$data['title'] = APPNAME;
+			$data['title'] = APP_NAME;
 			$data['id'] = 'brand';
 			$data['subtitle'] = 'information';
 			$data['data_mode'] = 'general';
@@ -121,7 +121,7 @@
 		
 		public function join()
 		{
-			$data['title'] = APPNAME;
+			$data['title'] = APP_NAME;
 			$data['id'] = 'brand';
 			$data['subtitle'] = 'information';
 			$data['data_mode'] = 'general';

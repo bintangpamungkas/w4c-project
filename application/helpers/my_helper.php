@@ -406,7 +406,7 @@ function meta_data($activation)
 				<meta name="description" content="<?php echo @$param['description_1'] ?>">
 				<meta name="keywords" content="<?php echo $param['keywords'] ?>">
 				<meta property="og:url" content="<?php echo 'https://waste4change.com' . $param['site_url'] ?>"/>
-				<meta property="og:site_name" content="<?php echo APPNAME ?>"/>
+				<meta property="og:site_name" content="<?php echo APP_NAME ?>"/>
 				<meta property="og:title" content="<?php echo $param['title_2'] ?>">
 				<meta property="og:description" content="<?php echo $param['description_2'] ?>"/>
 				<meta property="og:image" content="<?= base_url('assets/img/logo/favicon.jpg') ?>">

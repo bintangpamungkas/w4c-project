@@ -38,22 +38,16 @@
 					redirect('https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);
 				}
 			}
-//			echo $this->session->userdata('language');
-//			die();
-			if (empty($this->session->userdata('language'))) {
-				$lang = 'en';
-			} else {
-				$lang = $this->session->userdata('language');
-			}
+			$lang = $this->get_language();
 			
 			// GET service as menu
-			$service_target = $this->crud_model->select('service_target', QUERY_RESULT, ['service_target_id', 'dictionary.dictionary_content title', 'service_target_icon icon'], ['language_code' => $lang, 'deleted_at' => null], ['service_target' => ['dictionary' => 'dictionary_slug=service_target_name']]);
+			$service_target = $this->crud_model->select('service_target', QUERY_RESULT, ['service_target_id', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_target_name AND language_code="' . $lang . '" limit 1) as title', 'service_target_icon icon'], ['deleted_at' => null]);
 			$targets = [];
 			foreach ($service_target as $target) {
-				$service_category = $this->crud_model->select('service_category', QUERY_RESULT, ['service_category_id', 'service_category_name title', 'service_category_icon icon', 'service_target_id'], ['service_category.service_target_id' => $target->service_target_id]);
+				$service_category = $this->crud_model->select('service_category', QUERY_RESULT, ['service_category_id', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_category_name AND language_code="' . $lang . '" limit 1) as title', 'service_category_icon icon', 'service_target_id'], ['service_category.service_target_id' => $target->service_target_id]);
 				$categories = [];
 				foreach ($service_category as $category) {
-					$services = $this->crud_model->select('service', QUERY_RESULT, ['service_id', 'service_page_url url', 'dictionary.dictionary_content title', 'service_category_id', 'has_page'], ['language_code' => $lang, 'service_category_id' => $category->service_category_id, 'deleted_at' => null, 'service_parent_id' => null], ['service' => ['dictionary' => 'dictionary_slug=service_name']]);
+					$services = $this->crud_model->select('service', QUERY_RESULT, ['service_id', 'service_page_url url', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_name AND language_code="' . $lang . '" limit 1) as title', 'service_category_id', 'has_page'], ['service_category_id' => $category->service_category_id, 'deleted_at' => null, 'service_parent_id' => null,'service.has_page'=>1]);
 					
 					$category->menu = $services;
 					$categories[] = $category;

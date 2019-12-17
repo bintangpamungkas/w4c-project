@@ -11,12 +11,12 @@
       $page_heading=$title;
     }
     if($this->uri->segment(1)=='' || $this->uri->segment(1)=='index'){
-      $web_title=APPNAME.' :: '.APP_SLOGAN;
+      $web_title=APP_NAME.' :: '.APP_SLOGAN;
     }else{
     	if (empty($page_heading)){
-		    $web_title=APPNAME.' :: '.APP_SLOGAN;;
+		    $web_title=APP_NAME.' :: '.APP_SLOGAN;;
 	    }else{
-		    $web_title=$page_heading.' - '. APPNAME.' :: '.APP_SLOGAN;;
+		    $web_title=$page_heading.' - '. APP_NAME.' :: '.APP_SLOGAN;;
 	    }
     }
     echo $web_title;

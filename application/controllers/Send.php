@@ -11,7 +11,7 @@ class Send extends MY_Controller
 
     public function index(){
         $data['id']='send';
-        $data['title']=APPNAME;
+        $data['title']=APP_NAME;
         $data['subtitle']='information';
         $data['data_mode']='general';
         $data['page_heading']='Send';

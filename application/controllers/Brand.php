@@ -54,7 +54,7 @@ class Brand extends MY_Controller
     }
 
     public function join(){
-        $data['title']=APPNAME;
+        $data['title']=APP_NAME;
         $data['id']='brand';
         $data['subtitle']='information';
         $data['data_mode']='general';

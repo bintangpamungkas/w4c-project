@@ -78,7 +78,7 @@
                                     <h3>Oops!</h3>
                                     <p style="margin-bottom: 10px">Kamu belum masuk ke akun Kamu</p>
                                     <p style="margin-bottom: 10px">
-                                        Yuk masuk dulu untuk bisa menjelajahi berbagai manfaat di <?= APPNAME ?>
+                                        Yuk masuk dulu untuk bisa menjelajahi berbagai manfaat di <?= APP_NAME ?>
                                     </p>
                                 </div>
                                 <div class="clearfix col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">

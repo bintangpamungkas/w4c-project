@@ -477,18 +477,18 @@ class User extends MY_Controller
                         //FOR USER
                         $this->send_mail(
                             OFFICIAL_MAIL,
-                            APPNAME,
+                            APP_NAME,
                             $email,
-                            'Berlangganan '.APPNAME,
+                            'Berlangganan '.APP_NAME,
                             $this->email_account('subscribe', '', '', '', 'user')
                         );
 
                         //FOR ADMIN
                         $this->send_mail(
                             OFFICIAL_MAIL,
-                            APPNAME,
+                            APP_NAME,
                             OFFICIAL_MAIL,
-                            'Berlangganan '.APPNAME,
+                            'Berlangganan '.APP_NAME,
                             $this->email_account('subscribe', '', '', '', 'admin')
                         );
                     }
@@ -533,18 +533,18 @@ class User extends MY_Controller
                 //FOR USER
                 $this->send_mail(
                     OFFICIAL_MAIL,
-                    APPNAME,
+                    APP_NAME,
                     $email,
-                    'Berlangganan '.APPNAME,
+                    'Berlangganan '.APP_NAME,
                     $this->email_account('subscribe', '', '', '', 'user')
                 );
 
                 //FOR ADMIN
                 $this->send_mail(
                     OFFICIAL_MAIL,
-                    APPNAME,
+                    APP_NAME,
                     OFFICIAL_MAIL,
-                    'Berlangganan '.APPNAME,
+                    'Berlangganan '.APP_NAME,
                     $this->email_account('subscribe', '', '', '', 'admin')
                 );
             }
