@@ -7,7 +7,7 @@
 		<div class="container g-pt-100 g-pb-50">
 			<div class="text-center g-mb-50">
 				<h2
-					class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= lang('cta_title_1').' <strong>'.lang('cta_title_2').'</strong>' ?></h2>
+					class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= get_lang('ready-to-start-your-<strong>responsible-waste-mana')?></h2>
 				<div class="row justify-content-center">
 					<div class="col-10 pt-5">
 						<div class="row justify-content-center">
@@ -17,17 +17,15 @@
 									type="text" placeholder="Your Email Address ... ">
 							</div>
 							<div class="col-md-3 col-12 g-mb-15">
-								<a
-									class="btn btn-block btn-info g-font-size-13 g-rounded-50 g-font-weight-500"
-									href="<?= site_url('join') ?>">
-									<?= strtoupper(lang('get_started')) ?>
+								<a class="btn btn-block btn-info g-font-size-13 g-rounded-50 g-font-weight-500" href="<?= site_url('join') ?>">
+									<?= strtoupper(get_lang("get-started")) ?>
 								</a>
 							</div>
 							<div class="col-md-3 col-12 d-none">
 								<a target="_blank"
 								   class="btn u-btn-outline-black btn-block g-brd-2 g-font-size-13 g-rounded-50 g-pl-20 g-pr-15 g-py-9 text-uppercase"
 								   href="https://search.google.com/local/writereview?placeid=ChIJgbaAgSGSaS4RMsOJnkymZcw">
-									<?= lang('cta_feed_back') ?>
+									<?= get_lang('get-started') ?>
 								</a>
 							</div>
 						</div>

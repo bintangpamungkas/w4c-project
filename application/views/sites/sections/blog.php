@@ -2,7 +2,7 @@
   <div class="divimage dzsparallaxer--target w-100 d-none" style="height: 130%; background-image: url(<?= base_url('assets/img/bg/img36.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
   <div class="container <?= $this->agent->is_mobile() ? 'g-pt-75 g-pb-30' : 'g-pt-140 g-pb-70' ?>">
     <div class="text-center g-mb-50">
-      <h2 class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= strtoupper(lang('blog_title')) ?></h2>
+      <h2 class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= strtoupper(get_lang('blog-and-news')) ?></h2>
       <!-- <hr class="g-width-70 g-my-20 g-brd-2 g-brd-blue"> -->
       <p class="text-muted d-none"><?= lang('brand_partner_subtitle') ?></p>
     </div>
@@ -119,7 +119,7 @@
               <a title="Share Story" target="_blank" class="float-right g-brd-0 g-color-info g-bg-w4c-blue-v1 g-color-white--hover g-bg-linkedin--hover u-icon-v2 g-rounded-50x" href="#" style=" height: 30px; width: 30px; ">
                 <i class="fa fa-share-alt g-color-white g-font-size-10"></i>
               </a>
-              <a target="_blank" href="<?= $x['blog_url'] ?>" class="g-color-w4c-blue-v1 g-bg-white g-bg-info--hover g-rounded-50 g-mr-10 g-mb-15 g-font-weight-700">Read More <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
+              <a target="_blank" href="<?= $x['blog_url'] ?>" class="g-color-w4c-blue-v1 g-bg-white g-bg-info--hover g-rounded-50 g-mr-10 g-mb-15 g-font-weight-700"><?=get_lang('read-more')?> <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
 
             </div>
           </article>
@@ -162,7 +162,7 @@
         console.log('screen : '+screen_display+'nav : '+screen_display*<?= $this->agent->is_mobile() ? '8' : '9' ?>0/100+'batas : '+margin_side);
         <?php
         if($this->agent->is_mobile()){
-          echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 457px;width: 68%;right: '+margin_side+'px;')";
+          echo "$(elemen  t_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 457px;width: 68%;right: '+margin_side+'px;')";
         }else{
           echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 200px;width: 99%;right: '+margin_side+'px;')";
         }
@@ -178,11 +178,11 @@
     <div class="row justify-content-center">
       <div class="col-md-5 text-muted">
         <p class="<?= $this->agent->is_mobile() ? 'g-font-size-12' : '' ?>">
-          <?= (lang('blog_cta_description')) ?>
+          <?= get_lang('find-more-content-about-responsible-waste-manageme') ?>
         </p>
         <br>
         <a target="_blank" class="btn btn-outline-info btn-lg g-font-weight-700 g-rounded-50 text-uppercase" href="http://waste4change.com/blog">
-          <?= strtoupper(lang('blog_cta_link')) ?>
+          <?= strtoupper(get_lang('more-article')) ?>
         </a>
       </div>
     </div>

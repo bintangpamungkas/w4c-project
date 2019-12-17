@@ -7,8 +7,8 @@
                 <div class="col-md-4">
                     <header class="text-uppercase g-mb-35">
                         <div class="g-mb-15">
-                            <h6 class="g-color-info"><?= lang('about') ?></h6>
-                            <h3 class="h3 g-font-weight-700 mb-0 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= lang('about_title') ?></h3>
+                            <h6 class="g-color-info"><?= get_lang('about') ?></h6>
+                            <h3 class="h3 g-font-weight-700 mb-0 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= get_lang('about_title') ?></h3>
                         </div>
                         <div class="g-width-70 g-brd-bottom g-brd-2 g-brd-blue"></div>
                     </header>
