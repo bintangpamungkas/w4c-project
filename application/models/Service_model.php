@@ -61,6 +61,29 @@
 			$this->db->join('service_category', 'service_category.service_category_id=service.service_category_id', 'left');
 			return $this->db->get()->result();
 		}
+		
+		function service_list_by_coverage($lang, $city_name = null, $target_id = null,$is_new=null)
+		{
+//			$this->db->select('*');
+			$this->db->select(['service.service_id', 'service.service_slug','service_coverage.city_name','service.service_page_url','service.service_thumbnail_image']);
+			$this->db->select('(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service.service_name AND dictionary.language_code="' . $lang . '" limit 1) as service_name');
+			$this->db->select('(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service.service_description AND dictionary.language_code="' . $lang . '" limit 1) as service_description');
+			$this->db->select('(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service_category.service_category_name AND dictionary.language_code="' . $lang . '" limit 1) as service_category_name');
+			$this->db->from('service');
+			$this->db->join('service_category', 'service_category.service_category_id=service.service_category_id', 'left');
+			$this->db->join('service_coverage', 'service_coverage.service_id=service.service_id', 'left');
+			$this->db->where('service.has_page',1);
+			if ($is_new != null) {
+				$this->db->like('service.is_new', 1);
+			}
+			if ($city_name != null) {
+				$this->db->like('service_coverage.city_name', $city_name);
+			}
+			if ($target_id != null) {
+				$this->db->where('service_category.service_target_id', $target_id);
+			}
+			return $this->db->get()->result();
+		}
 	}
 
 ?>

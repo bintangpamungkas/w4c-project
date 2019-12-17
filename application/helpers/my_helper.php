@@ -17,7 +17,7 @@ function get_lang($slug)
 	$database = $ci->db->get('dictionary')->row();
 	if (empty($database)) {
 		if (empty(lang($slug))) {
-			return "Error!!!";
+			return 'Lorem Ipsum...';
 		} else {
 			return lang($slug);
 		}

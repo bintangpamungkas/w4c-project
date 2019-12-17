@@ -106,13 +106,13 @@
 					$data['flows'] = $this->crud_model->select('flow', QUERY_RESULT, ['flow_icon', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=flow_name AND language_code="' . $lang . '" limit 1) as flow_name'], ['service_id' => $service->service_id, 'deleted_at' => null]);
 				}
 				if ($section->section_slug == 'program-highlight' || $section->section_slug == 'research-highlight') {
-					$data['projects'] = $this->crud_model->select('service', QUERY_RESULT, ['service_slug', 'service_thumbnail', 'service_subcategory_name'], ['service_parent_id' => $service->service_id, 'deleted_at' => null]);
+					$data['projects'] = $this->crud_model->select('service', QUERY_RESULT, ['service_slug', 'service_thumbnail_image', 'service_subcategory_name'], ['service_parent_id' => $service->service_id, 'deleted_at' => null]);
 				}
 				if ($section->section_slug == 'photofolio-highlight') {
 					$data['photofolios'] = $this->crud_model->select('photofolio', QUERY_RESULT, '', ['service_id' => $service->service_id, 'deleted_at' => null]);
 				}
 				if ($section->section_slug == 'similar-project') {
-					$data['projects'] = $this->crud_model->select('service', QUERY_RESULT, ['service_slug', 'service_thumbnail', 'service_subcategory_name'], ['service_parent_id' => $service->service_parent_id, 'deleted_at' => null]);
+					$data['projects'] = $this->crud_model->select('service', QUERY_RESULT, ['service_slug', 'service_thumbnail_image', 'service_subcategory_name'], ['service_parent_id' => $service->service_parent_id, 'deleted_at' => null]);
 				}
 				if ($section->section_slug == 'our-client') {
 					$data['clients'] = $this->crud_model->select('client', QUERY_RESULT, '', ['service_id' => $service->service_id, 'deleted_at' => null]);
@@ -198,13 +198,13 @@
 					$data['flows'] = $this->crud_model->select('flow', QUERY_RESULT, ['flow_icon', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=flow_name AND language_code="' . $lang . '" limit 1) as flow_name'], ['service_id' => $service->service_id, 'deleted_at' => null]);
 				}
 				if ($section->section_slug == 'program-highlight' || $section->section_slug == 'research-highlight') {
-					$data['projects'] = $this->crud_model->select('service', QUERY_RESULT, ['service_slug', 'service_thumbnail', 'service_subcategory_name'], ['service_parent_id' => $service->service_id, 'deleted_at' => null]);
+					$data['projects'] = $this->crud_model->select('service', QUERY_RESULT, ['service_slug', 'service_thumbnail_image', 'service_subcategory_name'], ['service_parent_id' => $service->service_id, 'deleted_at' => null]);
 				}
 				if ($section->section_slug == 'photofolio-highlight') {
 					$data['photofolios'] = $this->crud_model->select('photofolio', QUERY_RESULT, '', ['service_id' => $service->service_id, 'deleted_at' => null]);
 				}
 				if ($section->section_slug == 'similar-project') {
-					$data['projects'] = $this->crud_model->select('service', QUERY_RESULT, ['service_slug', 'service_thumbnail', 'service_subcategory_name'], ['service_parent_id' => $service->service_parent_id, 'deleted_at' => null]);
+					$data['projects'] = $this->crud_model->select('service', QUERY_RESULT, ['service_slug', 'service_thumbnail_image', 'service_subcategory_name'], ['service_parent_id' => $service->service_parent_id, 'deleted_at' => null]);
 				}
 				if ($section->section_slug == 'our-client') {
 					$data['clients'] = $this->crud_model->select('client', QUERY_RESULT, '', ['service_id' => $service->service_id, 'deleted_at' => null]);

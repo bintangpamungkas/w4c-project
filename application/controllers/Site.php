@@ -14,11 +14,28 @@
 		
 		public function index()
 		{
+			$this->load->model('service_model');
+			
+			$input_city=$this->input->get('city');
+			
 			if (empty($this->session->userdata('language'))) {
 				$lang = 'id';
 			} else {
 				$lang = $this->session->userdata('language');
 			}
+			$targets = $this->crud_model->select('service_target', QUERY_RESULT, ['service_target_id','dictionary.dictionary_content service_target_name', 'service_target_icon'], ['language_code' => $lang, 'deleted_at' => null], ['service_target' => ['dictionary' => 'dictionary_slug=service_target_name']]);
+			$service_target=[];
+			foreach ($targets as $target){
+				if (empty($input_city)){
+					$services=$this->service_model->service_list_by_coverage($lang,$input_city, $target->service_target_id,true);
+				}else{
+					$services=$this->service_model->service_list_by_coverage($lang,$input_city, $target->service_target_id);
+				}
+				$target->list=$services;
+				$service_target[]=$target;
+			}
+			$data['input_city']=$input_city;
+			$data['service_list']=$service_target;
 			$data['title'] = '';
 			$data['id'] = 'site';
 			$data['subtitle'] = 'information';
