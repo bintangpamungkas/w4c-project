@@ -1,5 +1,5 @@
 <section class="g-bg-gray-light-v5">
-  <div id="description" style="height: 200px;position: absolute;width: 80%;margin-top: -80px"></div>
+  <div id="<?=$section_slug?>" style="height: 200px;position: absolute;width: 80%;margin-top: -80px"></div>
   <div class="container <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-10' : 'g-pt-80 g-pb-80' ?>">
     <div class="row">
       <?php
@@ -7,7 +7,7 @@
         ?>
         <div class="col-lg-6 g-mb-30>">
           <div class="mb-2 text-center">
-            <span class="g-color-gray-dark-v3 g-font-weight-700 g-font-size-16 text-uppercase"><?= get_lang('description') ?></span>
+            <span class="g-color-gray-dark-v3 g-font-weight-700 g-font-size-16 text-uppercase"><?=$section_name?></span>
               <hr class="g-width-50 g-my-5 g-brd-2 g-brd-blue">
             </div>
           <div style="background: url('<?= get_image('assets/img/project/'.$service_id.'/about.jpg') ?>');height: 200px;background-size: cover"></div>

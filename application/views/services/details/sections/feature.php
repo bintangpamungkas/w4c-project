@@ -1,7 +1,5 @@
 <section class="<?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-0' : 'g-pt-100 g-pb-100' ?>">
-
-    <div id="feature" style="height: 10px;position: absolute;width: 80%;margin-top: -200px"></div>
-
+    <div id="<?=$section_slug?>" style="height: 10px;position: absolute;width: 80%;margin-top: -200px"></div>
     <div class="container">
         <div class="text-center g-mb-50">
             <h2 class="g-color-black g-font-weight-600 "><?= strtoupper(lang('solution')) ?></h2>

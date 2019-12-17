@@ -17,7 +17,7 @@
 			<!-- Search location Mobile -->
 			<?php if ($this->agent->is_mobile()): ?>
 				<div class="col-md-5 col-xs-12">
-					<h4 class="g-font-weight-700 g-color-w4c-blue-v1 mb-3"><?= lang('available_services_for_your_location') ?></h4>
+					<h4 class="g-font-weight-700 g-color-w4c-blue-v1 mb-3"><?= get_lang('available-services-for-your-location') ?></h4>
 					<form action="<?= site_url('service') ?>" method="get">
 						<div class="input-group pull-right mb-5">
 							<input class="form-control g-pa-10" type="text" name="city" value="<?=$input_city?>" style="border:1px solid #0B90B9; border-radius:0px" placeholder="<?= get_lang('enter-location') ?>">
@@ -59,10 +59,10 @@
 				<div class="col-md-5 col-xs-12">
 					<form action="<?= site_url('service') ?>" method="get">
 					<div class="input-group pull-right">
-						<input class="form-control g-pa-10" type="text" name="city" value="<?=$input_city?>" style="border:1px solid #0B90B9; border-radius:0px" placeholder="<?= lang('enter_location') ?>">
+						<input class="form-control g-pa-10" type="text" name="city" value="<?=$input_city?>" style="border:1px solid #0B90B9; border-radius:0px" placeholder="<?= get_lang('enter-location') ?>">
 						<input type="hidden" name="target" value="<?=$service_target?>">
 						<span class="input-group-btn">
-              <button class="btn btn-info g-py-10 g-px-30 g-letter-spacing-2" type="submit" style="border:1px solid #0B90B9;border-radius:0px"><?= strtoupper(lang('search')) ?></button>
+              <button class="btn btn-info g-py-10 g-px-30 g-letter-spacing-2" type="submit" style="border:1px solid #0B90B9;border-radius:0px"><?= strtoupper(get_lang('search')) ?></button>
             </span>
 					</div>
 					</form>
@@ -90,10 +90,10 @@
 										<?= $service->service_name ?>
 									</h2>
 									<p class="g-color-black-opacity-0_5"><?= $service->service_description ?></p>
-									<a class="g-color-w4c-blue-v1 g-font-weight-700 mb-3 text-uppercase" href="<?= site_url('service/' . $service->service_slug) ?>"><?= lang('learn_more') ?> <i class="float-right fa fa-angle-right g-font-size-20 g-font-weight-700 g-color-white g-bg-w4c-blue-v1 g-rounded-100 g-pl-15 g-pr-20 g-py-7" style="width: 20px; margin-top: -10px;"></i> </a>
+											<a class="g-color-w4c-blue-v1 g-font-weight-700 mb-3 text-uppercase <?=$service->has_page==1 ? '' : 'd-none'?>" href="<?= site_url('service/' . $service->service_slug) ?>"><?= get_lang('learn-more') ?> <i class="float-right fa fa-angle-right g-font-size-20 g-font-weight-700 g-color-white g-bg-w4c-blue-v1 g-rounded-100 g-pl-15 g-pr-20 g-py-7" style="width: 20px; margin-top: -10px;"></i> </a>
 									<hr class="mb-1">
 									<div class="g-mt-10">
-										<div class="g-font-size-10 g-mb-5"><?= lang('recomendation_fors') ?></div>
+										<div class="g-font-size-10 g-mb-5"><?= get_lang('recomended-for') ?></div>
 										<?php
 											foreach ($service->recomendation as $recomendation):
 												?>
@@ -122,9 +122,9 @@
 														<?= $service->service_name ?>
 													</h2>
 													<p><?= $service->service_description ?></p>
-													<a class="g-color-w4c-blue-v1 g-font-weight-700 mb-3 text-uppercase" href="<?= site_url('service/' . $service->service_slug) ?>"><?= lang('learn_more') ?> <i class="fa fa-angle-right g-ml-10 g-font-size-20"></i> </a>
+													<a class="g-color-w4c-blue-v1 g-font-weight-700 mb-3 text-uppercase <?=$service->has_page==1 ? '' : 'd-none'?>" href="<?= site_url('service/' . $service->service_slug) ?>"><?= get_lang('learn-more') ?> <i class="fa fa-angle-right g-ml-10 g-font-size-20"></i> </a>
 													<div class="g-mt-20">
-														<div class="g-font-size-10 g-mb-5"><?= lang('recomendation_fors') ?></div>
+														<div class="g-font-size-10 g-mb-5"><?= get_lang('recomended-for') ?></div>
 														<?php
 															foreach ($service->recomendation as $recomendation):
 																?>
@@ -145,9 +145,9 @@
 														<?= $service->service_name ?>
 													</h1>
 													<p><?= $service->service_description ?></p>
-													<a class="g-color-w4c-blue-v1 g-font-weight-700 mb-3 text-uppercase" href="<?= site_url('service/' . $service->service_slug) ?>"><?= lang('learn_more') ?> <i class="fa fa-angle-right g-ml-10 g-font-size-20"></i> </a>
+													<a class="g-color-w4c-blue-v1 g-font-weight-700 mb-3 text-uppercase <?=$service->has_page==1 ? '' : 'd-none'?>" href="<?= site_url('service/' . $service->service_slug) ?>"><?= get_lang('learn-more') ?> <i class="fa fa-angle-right g-ml-10 g-font-size-20"></i> </a>
 													<div class="g-mt-20">
-														<div class="g-font-size-10 g-mb-5"><?= lang('recomendation_fors') ?></div>
+														<div class="g-font-size-10 g-mb-5"><?= get_lang('recomended-for') ?></div>
 														<?php
 															foreach ($service->recomendation as $recomendation):
 																?>

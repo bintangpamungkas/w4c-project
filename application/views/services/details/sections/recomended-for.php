@@ -1,11 +1,11 @@
 <section class="g-bg-secondary <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-0' : 'g-pt-140 g-pb-100' ?>">
 
-	<div id="recomended-for" style="height: 10px;position: absolute;width: 80%;margin-top: -200px"></div>
+	<div id="<?=$section_slug?>" style="height: 10px;position: absolute;width: 80%;margin-top: -200px"></div>
 
 	<div class="container">
 		<header class="text-center g-width-80x--md mx-auto g-mb-70">
 			<div class="u-heading-v6-2 text-center text-uppercase g-mb-20">
-				<h2 class="h2 g-color-gray-dark-v2 g-font-weight-600"><?= get_lang('recomendation_title') ?></h2>
+				<h2 class="h2 g-color-gray-dark-v2 g-font-weight-600 text-uppercase"><?=$section_name?></h2>
 				<hr class="g-width-70 g-my-20 g-brd-2 g-brd-blue">
 			</div>
 		</header>

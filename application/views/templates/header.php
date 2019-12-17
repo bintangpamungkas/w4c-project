@@ -52,7 +52,7 @@
               <?php endif; ?>
             <?php endforeach; ?>
           </ul>
-          <a class="click_scroll btn btn-info g-color-white g-brd-white-opacity-0_2 g-brd-2 g-font-size-13 g-rounded-50 g-px-20 d-none <?= $this->agent->is_mobile() ? 'btn-block mb-4' : '' ?>" href="<?= site_url('service/'.$service_id.'/join') ?>" data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block">
+          <a class="click_scroll btn btn-info g-color-white g-brd-white-opacity-0_2 g-font-size-13 g-rounded-50 g-px-20 d-none <?= $this->agent->is_mobile() ? 'btn-block mb-4' : '' ?>" href="<?= site_url('service/'.$service_id.'/join') ?>" data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block">
             <?= strtoupper(get_lang('get-proposal')) ?>
             <span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3">
               <i class="fa fa-info"></i>

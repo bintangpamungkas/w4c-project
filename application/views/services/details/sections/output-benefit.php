@@ -1,9 +1,9 @@
 <?php if (1 == 1): ?>
 	<section class="g-bg-secondary">
-		<div id="output-benefit" style="height: 200px;position: absolute;width: 80%;margin-top: -80px"></div>
+		<div id="<?=$section_slug?>" style="height: 200px;position: absolute;width: 80%;margin-top: -80px"></div>
 		<div class="container <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-10' : 'g-pt-80 g-pb-80' ?>">
 			<div class="g-mb-50 <?= $this->agent->is_mobile() ? 'text-center' : '' ?>">
-				<h2 class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-25' : '' ?>"><?= strtoupper(get_lang('output-benefit')) ?></h2>
+				<h2 class="g-color-black g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-25' : '' ?>"><?=$section_name?></h2>
 				<?=$this->agent->is_mobile() ? '<hr class="g-width-30 g-my-5 g-brd-2 g-brd-blue">' : '<div class="g-width-30 g-height-2 g-pos-rel g-bg-info g-mt-5"></div>' ?>
 			</div>
 			<div class="row">

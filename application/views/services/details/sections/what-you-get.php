@@ -1,11 +1,11 @@
 <section class="g-bg-white">
-  <div id="what-you-get" style="height: 200px;position: absolute;width: 80%;margin-top: -80px"></div>
+  <div id="<?=$section_slug?>" style="height: 200px;position: absolute;width: 80%;margin-top: -80px"></div>
   <div class="container <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-10' : 'g-pt-80 g-pb-80' ?>">
 
     <div class="row">
       <div class="col-md-5 col-xs-12">
         <div class="mb-2 <?=$this->agent->is_mobile() ? 'text-center' : ''?>">
-          <span class="g-color-gray-dark-v3 g-font-weight-700 g-font-size-25 text-uppercase"><?= get_lang('what_you_get') ?></span>
+          <span class="g-color-gray-dark-v3 g-font-weight-700 g-font-size-25 text-uppercase"><?=$section_name?></span>
           <?=$this->agent->is_mobile() ? '<hr class="g-width-50 g-my-5 g-brd-2 g-brd-blue">' : '<div class="g-width-30 g-height-2 g-pos-rel g-bg-info g-mt-5"></div>'?>
           <div class="mt-2 mb-4"> <?=get_lang('what_you_get_sub')?> </div>
         </div>

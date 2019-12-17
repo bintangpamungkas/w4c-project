@@ -1,10 +1,10 @@
  <div class="g-bg-secondary">
-	 <div id="our-achievement" style="height: 10px;position: absolute;width: 80%;margin-top: -100px"></div>
+	 <div id="<?=$section_slug?>>" style="height: 10px;position: absolute;width: 80%;margin-top: -100px"></div>
 
 	 <div class="container g-bg-white u-shadow-v20 <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-10' : 'g-pa-40' ?>">
 		<div class="row">
 			<div class="col-md-3 col-xs-12 col-md-4 col-xs-12 g-font-weight-500 g-line-height-1 <?=$this->agent->is_mobile() ? 'g-font-size-25 text-center col-pr-30 ' : 'g-font-size-40 '?>">
-				<?=get_lang('our_achievement')?>
+				<?=$section_name?>
 				<?= $this->agent->is_mobile() ? '<hr class="g-width-30 g-my-5 g-brd-2 g-brd-blue g-mb-20">' : ''?>
 			</div>
 			<div class="col-md-8 col-xs-12 row no-gutters">
