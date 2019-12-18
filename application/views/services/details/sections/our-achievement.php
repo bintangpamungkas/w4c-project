@@ -10,9 +10,9 @@
 					</div>
 					<div class="col-md-8 col-xs-12 row no-gutters">
 						<?php foreach ($achievements as $achievement): ?>
-							<div class="col-md col-xs-12 <?= $this->agent->is_mobile() ? 'text-center' : 'text-right' ?>">
-								<div class="g-font-weight-700 g-font-size-40 g-color-w4c-blue-v1"><?= $achievement->achievement_count ?></div>
-								<div class="g-font-15 <?= $this->agent->is_mobile() ? 'g-mb-20' : '' ?>"><?= $achievement->achievement_name ?></div>
+							<div class="col-md col-xs-12 text-center">
+								<div class="g-font-weight-700 g-font-size-40 g-color-w4c-blue-v1"><?= view_number($achievement->achievement_count) ?></div>
+								<div class="g-font-20 <?= $this->agent->is_mobile() ? 'g-mb-20' : '' ?>"><?= $achievement->achievement_name ?></div>
 							</div>
 						<?php endforeach; ?>
 					</div>

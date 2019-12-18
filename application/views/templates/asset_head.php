@@ -106,7 +106,7 @@ $(function(){
       </div>
     </div>
 
-    <div style="position: fixed;z-index: 999;bottom: <?= $this->agent->is_mobile() ? '25%' : '40%' ?>;right: <?= $this->agent->is_mobile() ? '-60px' : '-70px' ?>;-ms-transform: rotate(270deg);-webkit-transform: rotate(270deg);transform: rotate(270deg);">
+    <div class="d-none" style="position: fixed;z-index: 999;bottom: <?= $this->agent->is_mobile() ? '25%' : '40%' ?>;right: <?= $this->agent->is_mobile() ? '-60px' : '-70px' ?>;-ms-transform: rotate(270deg);-webkit-transform: rotate(270deg);transform: rotate(270deg);">
       <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfXpiHacFDeXi-ez3qmSOSN1Z4HDHOgAtu755kWHI2cowH3jg/viewform" class="<?= $this->agent->is_mobile() ? 'g-font-size-12' : 'g-font-size-14' ?> btn g-brd-white-opacity-0_2 btn-danger g-color-white g-brd-2 g-pl-20 g-pr-15 g-py-9" style="border-radius: 10px 10px 0px 0px">
         <i class="et-icon-chat g-mr-10 shake"></i> <?= $this->session->userdata('language')=='en' ? 'GIVE FEED BACK' : 'BERIKAN SARAN' ?>
       </a>
