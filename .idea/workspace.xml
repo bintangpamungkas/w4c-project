@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1e4089d-7ce0-4efd-b1a1-4f155ef0c38b" name="Default" comment="[Update] Home page Service Tab UI">
+    <list default="true" id="f1e4089d-7ce0-4efd-b1a1-4f155ef0c38b" name="Default" comment="[Update] Service search auto complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Service.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/Service_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Service_model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/services/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/sites/sections/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/sites/sections/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/custom.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,9 +31,9 @@
           <entry key="project.open.time.5" value="4" />
           <entry key="project.open.time.6" value="21" />
           <entry key="project.open.time.7" value="31" />
-          <entry key="project.open.time.8" value="17" />
+          <entry key="project.open.time.8" value="18" />
           <entry key="project.open.time.9" value="14" />
-          <entry key="project.opened" value="115" />
+          <entry key="project.opened" value="116" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -45,14 +41,14 @@
           <entry key="css" value="12" />
           <entry key="gitignore" value="1" />
           <entry key="htaccess" value="4" />
-          <entry key="php" value="285" />
+          <entry key="php" value="286" />
           <entry key="rnc" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="12" />
-          <entry key="PHP" value="285" />
+          <entry key="PHP" value="286" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="RNG Compact" value="3" />
           <entry key="htaccess" value="4" />
@@ -63,15 +59,15 @@
           <entry key="css" value="556" />
           <entry key="gitignore" value="7" />
           <entry key="htaccess" value="2" />
-          <entry key="php" value="15556" />
-          <entry key="txt" value="1103" />
+          <entry key="php" value="15592" />
+          <entry key="txt" value="1134" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="556" />
-          <entry key="PHP" value="15556" />
-          <entry key="PLAIN_TEXT" value="1110" />
+          <entry key="PHP" value="15592" />
+          <entry key="PLAIN_TEXT" value="1141" />
           <entry key="htaccess" value="2" />
         </counts>
       </usages-collector>
@@ -93,7 +89,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/css/custom.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="5066">
+                <state relative-caret-position="2075">
                   <caret line="298" column="12" selection-start-line="298" selection-start-column="12" selection-end-line="298" selection-end-column="12" />
                 </state>
               </provider>
@@ -102,8 +98,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/application/controllers/Service.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="782">
-                  <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+                <state relative-caret-position="544">
+                  <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
                 </state>
               </provider>
             </entry>
@@ -111,8 +107,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/application/views/sites/sections/services.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+                <state relative-caret-position="136">
+                  <caret line="8" column="73" selection-start-line="8" selection-start-column="73" selection-end-line="8" selection-end-column="73" />
                 </state>
               </provider>
             </entry>
@@ -130,11 +126,20 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/application/views/services/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="23" column="39" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="39" />
+                <state relative-caret-position="170">
+                  <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/application/controllers/Site.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="578">
+                  <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
                 </state>
               </provider>
             </entry>
@@ -219,7 +224,6 @@
         <option value="$PROJECT_DIR$/assets/css/unify-globals.css" />
         <option value="$PROJECT_DIR$/application/views/templates/navigations/general.php" />
         <option value="$PROJECT_DIR$/application/views/sites/contact.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Site.php" />
         <option value="$PROJECT_DIR$/application/views/sites/sections/counter.php" />
         <option value="$PROJECT_DIR$/application/views/sites/sections/about.php" />
         <option value="$PROJECT_DIR$/application/views/sites/sections/client.php" />
@@ -259,8 +263,9 @@
         <option value="$PROJECT_DIR$/application/views/services/details/sections/cta.php" />
         <option value="$PROJECT_DIR$/assets/css/custom.css" />
         <option value="$PROJECT_DIR$/application/models/Service_model.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Service.php" />
         <option value="$PROJECT_DIR$/application/views/services/index.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Site.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Service.php" />
         <option value="$PROJECT_DIR$/application/views/sites/sections/services.php" />
       </list>
     </option>
@@ -527,7 +532,8 @@
       <workItem from="1576609066714" duration="825000" />
       <workItem from="1576686034708" duration="1161000" />
       <workItem from="1576687245544" duration="1095000" />
-      <workItem from="1576688455228" duration="77000" />
+      <workItem from="1576688455228" duration="336000" />
+      <workItem from="1576690724975" duration="795000" />
     </task>
     <task id="LOCAL-00001" summary="[Update] Image Service thumbnail&#10;&#10;[Debug] get_image() check image not working">
       <created>1574577726705</created>
@@ -732,17 +738,24 @@
       <option name="project" value="LOCAL" />
       <updated>1576609277737</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="[Update] Service search auto complete">
+      <created>1576688695210</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1576688695210</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152810000" />
+    <option name="totallyTimeSpent" value="153864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="495" y="0" width="1432" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23542275" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23906706" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -829,7 +842,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Add] Achievement Section" />
     <MESSAGE value="[Add] Achievement mobile" />
     <MESSAGE value="[Update] Carousel arrow mobile" />
     <MESSAGE value="[Update] ZWTL Asset &amp; what you get icon" />
@@ -854,7 +866,8 @@
     <MESSAGE value="[Update] Footer" />
     <MESSAGE value="[Update] Name Section base on database" />
     <MESSAGE value="[Update] Home page Service Tab UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Update] Home page Service Tab UI" />
+    <MESSAGE value="[Update] Service search auto complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Update] Service search auto complete" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application/language/indonesia/this_lang.php">
@@ -875,13 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
           <caret line="537" column="16" selection-start-line="537" selection-start-column="16" selection-end-line="537" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="28" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1168,31 +1174,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5066">
-          <caret line="298" column="12" selection-start-line="298" selection-start-column="12" selection-end-line="298" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/unify-globals.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11407">
           <caret line="671" column="1" selection-start-line="671" selection-start-column="1" selection-end-line="671" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Service_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="89" column="36" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Service.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1203,10 +1188,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Service_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="89" column="36" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2075">
+          <caret line="298" column="12" selection-start-line="298" selection-start-column="12" selection-end-line="298" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Service.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/sites/sections/services.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        <state relative-caret-position="136">
+          <caret line="8" column="73" selection-start-line="8" selection-start-column="73" selection-end-line="8" selection-end-column="73" />
         </state>
       </provider>
     </entry>

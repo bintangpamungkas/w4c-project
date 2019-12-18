@@ -4,10 +4,10 @@
 	<div class="container <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-25' : 'g-py-70' ?>">
 		<div class="row justify-content-center g-ma-0" style="position: absolute; bottom: -40px;">
 			<?php foreach ($service_targets as $target): ?>
-				<div class="col-auto text-center g-px-0 g-font-weight-700 <?= $target->service_target_id == 1 ? '' : ' tab-shadow' ?> my_tab <?= $target->service_target_id == 1 ? 'tab-active' : '' ?>" data-tab="#tab-<?= $target->service_target_id ?>" style="<?= $this->agent->is_mobile() ? 'min-height: 70px' : 'min-height: 95px' ?> ;">
+				<div class="col-auto text-center g-px-0 g-font-weight-700 <?= $target->service_target_id == 1 ? '' : ' tab-shadow' ?> my_tab <?= $target->service_target_id == 1 ? 'tab-active' : '' ?>" data-tab="#tab-<?= $target->service_target_id ?>">
 					<div class="my_tab_line"></div>
-					<a class="my_tab_item g-cursor-pointer nav-link my_tab  g-py-15 g-font-weight-300 g-font-size-<?= $this->agent->is_mobile() ? '14 g-px-30' : '25 g-px-80' ?>">
-						<i class="<?= $target->service_target_icon ?> g-mr-10  g-mb-17 g-font-size-<?= $this->agent->is_mobile() ? '16' : '30' ?>"></i>
+					<a class="my_tab_item g-cursor-pointer nav-link my_tab  g-py-20 g-font-weight-300 text-uppercase g-font-size-<?= $this->agent->is_mobile() ? '14 g-px-20' : '20 g-px-45' ?>">
+						<i class="<?= $target->service_target_icon ?> g-mr-10  g-mb-17 g-font-size-<?= $this->agent->is_mobile() ? '16' : '20' ?>"></i>
 						<?= $target->service_target_name ?>
 					</a>
 				</div>
