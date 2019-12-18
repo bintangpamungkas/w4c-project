@@ -641,7 +641,7 @@
 				],
 				[
 						'social_name' => 'LinkedIn',
-						'social_url' => 'https://www.linkedin.com/shareArticle?mini=true&url=' . lang('share_caption'),
+						'social_url' => 'https://www.linkedin.com/shareArticle?mini=true&url=https://demo.waste4change.com/official/&title=Start%20Recycling%20with%20Waste4Change',
 						'social_icon' => 'fa fa-linkedin',
 						'social_color' => 'g-brd-2 g-color-info g-color-white--hover g-bg-linkedin--hover',
 						'number' => '4',

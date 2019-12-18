@@ -7,7 +7,7 @@
     <div class="container">
       <div class="row content-middle-fullscreen with-header <?= $this->agent->is_mobile() ? 'justify-content-center text-center' : '' ?>">
         <?php if (!$this->agent->is_mobile()): ?>
-          <div class="col-12" style="margin-top:-250px">
+          <div class="col-12" style="margin-top:-15vw">
             <?php foreach ($breadcrumb as $bread): ?>
               <?php if ($bread['active']!=true): ?>
                 <a class="g-color-black g-text-transform-none" href="<?=site_url($bread['url'])?>">
