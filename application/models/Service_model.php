@@ -85,6 +85,14 @@
 			}
 			return $this->db->get()->result();
 		}
+		
+		function unique_coverage_city(){
+			$this->db->select(['city_name']);
+			$this->db->group_by("city_name");
+//			$this->db->distinct('city_name');
+			$this->db->from('service_coverage');
+			return $this->db->get()->result();
+			
+		}
 	}
-
 ?>

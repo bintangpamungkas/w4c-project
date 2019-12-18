@@ -31,6 +31,8 @@
 			}
 			$data['input_city']=$input_city;
 			$data['service_targets']=$service_target;
+			$data['coverage_cities'] = $this->service_model->unique_coverage_city();
+			
 			$data['title'] = '';
 			$data['id'] = 'site';
 			$data['subtitle'] = 'information';
