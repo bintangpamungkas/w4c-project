@@ -60,7 +60,7 @@
 												?>
 												<div class="g-mb-20 g-bg-white g-mt-10 box-shadow-down">
 													<div style="height: 200px;background: url(<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/' . $service->service_thumbnail_image) ?>);background-size: cover;"></div>
-													<div class="bg-white g-mx-20 g-px-30 g-py-20" style="margin-top: -40px; height:250px">
+													<div class="bg-white g-mx-20 g-px-30 g-py-20" onclick="window.location.href='<?= $service->service_page_url ?>'" style="margin-top: -40px; height:250px">
 														<!--                            --><?php //if($service['is_new']==true): ?>
 														<!--                              <span class="g-color-white g-bg-primary g-rounded-5 g-font-size-10 g-px-8 g-py-3 g-ml-5 float-right">--><?//= lang('new') ?><!--</span>-->
 														<!--                            --><?php //endif; ?>
@@ -69,7 +69,7 @@
 															<h4 class="h6 g-color-black g-font-weight-600 g-mb-5 g-font-size-20" style="min-height: 50px"><?= $service->service_name ?></h4>
 															<em class="d-block g-color-gray-dark-v4 g-font-style-normal g-font-size-12 g-mb-10"><?= $service->service_description ?></em>
 														</div>
-														<a class="g-color-info g-color-blue--hover g-font-size-12 g-mt-10" href="<?= $service->service_page_url ?>"><?= strtoupper(get_lang('learn-more')) ?></a>
+														<a class="g-color-info g-color-blue--hover g-font-size-12 g-mt-10 g-font-weight-900" href="<?= $service->service_page_url ?>"><?= strtoupper(get_lang('learn-more')) ?></a>
 													</div>
 													<br>
 													<br>
@@ -163,7 +163,7 @@
 								<div class="col-4">
 									<div class="g-mb-5 g-bg-white <?= $this->agent->is_mobile() ? 'g-mt-10' : 'g-mt-25' ?> box-shadow-down">
 										<div style="height: 200px;background: url(<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/' . $service->service_thumbnail_image) ?>);background-size: cover;"></div>
-										<div class="bg-white g-mx-20 g-px-30 g-pt-20" style="margin-top: -40px; min-height:250px">
+										<div class="bg-white g-mx-20 g-px-30 g-pt-20" onclick="window.location.href='<?= $service->service_page_url ?>'" style="margin-top: -40px; min-height:250px">
 											<!--                        --><?php //if($service['is_new']==true):
 											?>
 											<!--                          <span class="g-color-white g-bg-primary g-font-size-10 g-px-8 g-py-3 g-ml-5 float-right">--><?//= lang('new')
@@ -175,7 +175,7 @@
 												<h4 class="h6 g-color-black g-font-weight-600 g-mb-5 g-font-size-20" style="min-height: 50px"><?= $service->service_name ?></h4>
 												<em class="d-block g-color-gray-dark-v4 g-font-style-normal g-font-size-12 g-mb-10"><?= $service->service_description ?></em>
 											</div>
-											<a class="g-color-info g-color-blue--hover g-font-size-12 g-mt-10" href="<?= $service->service_page_url ?>"><?= strtoupper(get_lang('learn-more')) ?> <i class="fa fa-angle-right g-ml-10"></i> </a>
+											<a class="g-color-info g-color-blue--hover g-font-size-12 g-mt-10 g-font-weight-900" href="<?= $service->service_page_url ?>"><?= strtoupper(get_lang('learn-more')) ?> <i class="fa fa-angle-right g-ml-10"></i> </a>
 										</div>
 										<br>
 										<br>
