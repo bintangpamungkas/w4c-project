@@ -6,7 +6,7 @@
 
   <div class="container">
     <div class="text-center g-mb-50">
-      <h2 class="g-color-black g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?=$section_name?></h2>
+      <h2 class="g-font-asap g-color-black g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?=$section_name?></h2>
       <hr class="g-width-70 g-my-20 g-brd-2 g-brd-blue">
     </div>
 

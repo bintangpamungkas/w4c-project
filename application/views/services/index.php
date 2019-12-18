@@ -17,7 +17,7 @@
 			<!-- Search location Mobile -->
 			<?php if ($this->agent->is_mobile()): ?>
 				<div class="col-md-5 col-xs-12">
-					<h4 class="g-font-weight-700 g-color-w4c-blue-v1 mb-3"><?= get_lang('available-services-for-your-location') ?></h4>
+					<h4 class="g-font-asap g-font-weight-700 g-color-w4c-blue-v1 mb-3"><?= get_lang('available-services-for-your-location') ?></h4>
 					<form action="<?= site_url('service') ?>" method="get">
 						<div class="autocomplete">
 							<div class="input-group pull-right mb-5">

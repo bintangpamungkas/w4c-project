@@ -7,7 +7,7 @@
         ?>
         <div class="col-lg-6 g-mb-30>">
           <div class="mb-2 text-center">
-            <span class="g-color-gray-dark-v3 g-font-weight-700 g-font-size-16 text-uppercase"><?=$section_name?></span>
+            <span class="g-font-asap g-color-gray-dark-v3 g-font-weight-700 g-font-size-16 text-uppercase"><?=$section_name?></span>
               <hr class="g-width-50 g-my-5 g-brd-2 g-brd-blue">
             </div>
           <div style="background: url('<?= get_image('assets/img/project/'.$service_id.'/about.jpg') ?>');height: 200px;background-size: cover"></div>

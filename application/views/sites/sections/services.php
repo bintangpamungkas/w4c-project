@@ -15,7 +15,7 @@
 		</div>
 
 		<div class="g-mb-10">
-			<h2 class="g-font-color-w4c-1 mb-2" color><?= get_lang('available-services-for-your-location') ?></h2>
+			<h2 class="g-font-asap g-font-color-w4c-1 mb-2" color><?= get_lang('available-services-for-your-location') ?></h2>
 			<div class="row">
 				<div class="col-md-6">
 					<form action="<?= site_url('') ?>" method="get">

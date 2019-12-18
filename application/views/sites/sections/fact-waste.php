@@ -4,7 +4,7 @@
     <div class="divimage dzsparallaxer--target w-100 d-none" style="height: 130%; background-image: url(<?= base_url('assets/img/bg/img36.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
     <div class="container g-pt-140">
         <div class="text-center g-mb-50">
-            <h2 class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= strtoupper(lang('fact_title')) ?></h2>
+            <h2 class="g-font-asap g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= strtoupper(lang('fact_title')) ?></h2>
             <hr class="g-width-70 g-my-20 g-brd-2 g-brd-blue">
             <p class="text-muted"><?= (lang('fact_description')) ?></p>
         </div>

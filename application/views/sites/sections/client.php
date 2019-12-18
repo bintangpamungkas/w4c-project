@@ -3,7 +3,7 @@
   <div style="">
     <div class="container <?= $this->agent->is_mobile() ? 'g-pt-80 g-pb-50' : 'g-pt-140 g-pb-70' ?>">
       <div class="text-center g-mb-50">
-        <h2 class="g-font-weight-600 g-color-black <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= strtoupper(get_lang('clients')) ?></h2>
+        <h2 class="g-font-asap g-font-weight-600 g-color-black <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= strtoupper(get_lang('clients')) ?></h2>
         <p class="text-mute d-none"><?= lang('brand_partner_subtitle') ?></p>
       </div>
       <div class="row justify-content-center">

@@ -2,7 +2,7 @@
     <div id="<?=$section_slug?>" style="height: 10px;position: absolute;width: 80%;margin-top: -200px"></div>
     <div class="container">
         <div class="text-center g-mb-50">
-            <h2 class="g-color-black g-font-weight-600 "><?= strtoupper(lang('solution')) ?></h2>
+            <h2 class="g-font-asap g-color-black g-font-weight-600 "><?= strtoupper(lang('solution')) ?></h2>
             <hr class="g-width-70 g-my-20 g-brd-2 g-brd-blue">
         </div>
         <div class="row">
