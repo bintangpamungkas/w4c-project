@@ -14,7 +14,7 @@
 						<ul class="mega-menu hs-sub-menu list-unstyled g-brd-0  g-min-width-220 g-mt-2 g-mt-8--lg--scrolling" aria-labelledby="nav-link-pages">
 							<?php foreach ($nav['menu'] as $menu): ?>
 								<?php
-								if ($menu->title == get_lang('individual')) { //if target is individual category not show/ skip to list service
+								if ($menu->title == get_lang('for-individuals')) { //if target is individual category not show/ skip to list service
 									$submenus = $menu->menu[0]->menu;
 								} else {
 									$submenus = $menu->menu;
@@ -78,7 +78,7 @@
 						<ul class="mega-menu hs-sub-menu list-unstyled u-shadow-v11 g-brd-0 g-min-width-220 g-py-20 g-mt-18 g-mt-8--lg--scrolling arrow-box" aria-labelledby="nav-link-pages">
 							<?php foreach ($nav['menu'] as $menu): ?>
 								<?php
-								if ($menu->title == get_lang('individual')) { //if target is individual category not show/ skip to list service
+								if ($menu->title == get_lang('for-individuals')) { //if target is individual category not show/ skip to list service
 									$submenus = $menu->menu[0]->menu;
 								} else {
 									$submenus = $menu->menu;

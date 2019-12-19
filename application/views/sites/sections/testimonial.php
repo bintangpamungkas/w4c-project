@@ -61,7 +61,7 @@
                 </div>
                 <div class="col">
                   <!-- <i class="d-block g-color-info g-font-size-50 g-line-height-0_7 g-pos-rel g-top-15 g-mb-20">&#8220;</i> -->
-                  <blockquote class="g-color-black g-font-style-italic <?= $this->agent->is_mobile() ? 'g-font-size-14' : 'g-font-size-16' ?> g-line-height-1_4">"<?= $x['testi_description'] ?>"</blockquote>
+                  <blockquote class="g-color-black g-font-style-italic <?= $this->agent->is_mobile() ? 'g-font-size-10' : 'g-font-size-13' ?> g-line-height-1_4">"<?= $x['testi_description'] ?>"</blockquote>
                   <h4 class="h6 g-color-info g-font-weight-600 text-uppercase g-mb-5 g-font-size-16"><?= $x['testi_name'] ?></h4>
                   <em class="d-block g-color-gray-dark-v4 g-font-style-normal g-font-size-10 g-mb-20"><?= $x['testi_company'] ?></em>
                 </div>
@@ -122,27 +122,5 @@
 
     </script>
 
-    <style>
-    .owl-prev {
-      width: 15px;
-      height: 100px;
-      position: absolute;
-      top: 40%;
-      margin-left: -20px;
-      display: block !important;
-      border:0px solid black;
-    }
-
-    .owl-next {
-      width: 15px;
-      height: 100px;
-      position: absolute;
-      top: 40%;
-      right: -25px;
-      display: block !important;
-      border:0px solid black;
-    }
-    .owl-prev i, .owl-next i {transform : scale(1,6); color: #ccc;}
-    </style>
   </div>
 </section>

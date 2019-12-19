@@ -7,7 +7,7 @@
     </div>
     <div class="row text-center">
       <div class="col-md-4 col-xs-12 mb-4">
-        <div class="g-color-w4c-blue-v1 g-font-size-50 g-font-weight-900">
+        <div class="js-counter g-color-w4c-blue-v1 g-font-size-50 g-font-weight-900">
             9999
         </div>
         <div class="g-font-weight-700 g-font-size-18">
@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="col-md-4 col-xs-12 mb-4">
-        <div class="g-color-w4c-blue-v1 g-font-size-50 g-font-weight-900">
+        <div class="js-counter g-color-w4c-blue-v1 g-font-size-50 g-font-weight-900">
             9999
         </div>
         <div class="g-font-weight-700 g-font-size-18">
@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="col-md-4 col-xs-12 mb-4 ">
-        <div class="g-color-w4c-blue-v1 g-font-size-50 g-font-weight-900">
+        <div class="js-counter g-color-w4c-blue-v1 g-font-size-50 g-font-weight-900">
             9999
         </div>
         <div class="g-font-weight-700 g-font-size-18">
@@ -31,7 +31,7 @@
         </div>
       </div>
       <div class="col-12">
-        <a class="btn btn-info text-uppercase g-px-30 g-py-10" href="<?=site_url('about')?>" style="border-radius:100px"><?=get_lang('more-about-us')?></a>
+        <a class="btn btn-info text-uppercase g-px-30 g-py-10 g-font-weight-700" href="<?=site_url('about')?>" style="border-radius:100px"><?=get_lang('more-about-us')?></a>
       </div>
     </div>
   </div>
