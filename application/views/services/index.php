@@ -1,11 +1,11 @@
 <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-overflow-hidden" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
 	<div class="divimage dzsparallaxer--target w-100" style="height: 130%; background-image: url(<?= base_url(DIR_BG . 'bg_header.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
 	<div style="background:radial-gradient(circle farthest-side at 80% 60%, rgba(66,195,120,0.67), rgba(14,105,148,0.92))">
-		<div class="container g-pt-195 g-pb-70">
+		<div class="container g-pt-100 g-pb-120">
 			<br>
-			<div class="g-font-size-<?= $this->agent->is_mobile() ? '25' : '35' ?> g-color-white g-font-weight-600 mb-0 g-line-height-1_2">
-				<div class="g-font-size-20 g-letter-spacing-5  text-uppercase g-mb-20"> <?= lang('services_all_services') ?> </div>
-				<div class=""> <?= lang('services_all_choose_the_right_solution') ?> </div>
+			<div class="row no-gutters g-font-size-<?= $this->agent->is_mobile() ? '25' : '35' ?> g-color-white g-font-weight-600 mb-0 g-line-height-1_2">
+				<div class="col-12 g-font-size-20 g-letter-spacing-5  text-uppercase g-mb-20"> <?= lang('services_all_services') ?> </div>
+				<div class="col-4  g-line-height-1_1"> <?= lang('services_all_choose_the_right_solution') ?> </div>
 			</div>
 		</div>
 	</div>

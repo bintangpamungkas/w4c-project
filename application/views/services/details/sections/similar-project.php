@@ -25,7 +25,7 @@
 							foreach ($projects as $project) :
 								if  ($project->service_subcategory_name!=$service->service_subcategory_name):
 								?>
-								<div class="col-<?= $this->agent->is_mobile() ? '12' : '6' ?> g-my-10">
+								<div class="col-<?= $this->agent->is_mobile() ? '12' : '6' ?> g-my-10" onclick="window.location.href='<?= site_url('project/' . $project->service_slug) ?>'">
 									<div class="" style="max-height:200px">
 										<div class="d-block u-bg-overlay g-bg-green-gradient-opacity-v2--after g-mb-30 g-mb-0--md">
 											<img class="img-fluid" src="<?= get_image(DIR_IMG . 'project/' . $project->service_slug . '/l-thumbnail.jpg') ?>" alt="Image Description" style="object-fit:cover;max-height: 200px;width:100%">

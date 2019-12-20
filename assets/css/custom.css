@@ -215,7 +215,7 @@
     transition-property: color, background-color, border-color;
     transition-duration: .2s;
     transition-timing-function: ease-in;
-    border-bottom: 4px solid white;
+    border-bottom: 4px solid #aaa!important;
     background-color: white;
 }
 .my_tab_2.tab-active{

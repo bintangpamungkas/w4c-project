@@ -154,7 +154,7 @@
 				<div class="g-font-weight-700 g-font-size-20 mb-4">
 					<?= get_lang('cannot-found-the-solution-you-are-looking-for?') ?>
 				</div>
-				<a class="btn btn-info btn-xl btn-block g-brd-2 g-font-size-13 g-rounded-50 g-font-weight-700" href="#"><?= strtoupper(get_lang('all-services')) ?></a>
+				<a class="btn btn-info btn-xl btn-block g-brd-2 g-font-size-13 g-rounded-50 g-font-weight-700 g-color-white--active" href="#"><?= strtoupper(get_lang('all-services')) ?></a>
 				<a class="btn btn-outline-info btn-xl btn-block g-brd-2 g-font-size-13 g-rounded-50 g-font-weight-700" href="#"><?= strtoupper(get_lang('talk-to-our-expert')) ?></a>
 			</div>
 		</div>
