@@ -199,10 +199,18 @@
     background-color: white;
     color: #414141!important;
 }
-
+.my_tab .my_tab_icon{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.tab-active .my_tab .my_tab_icon{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+}
 .tab-active i{
     color: #159CBD!important;
 }
+
 .my_tab_2{
     transition-property: color, background-color, border-color;
     transition-duration: .2s;

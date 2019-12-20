@@ -1,19 +1,35 @@
 <section class="g-bg-secondary">
 	<div id="our_services" style="height: 200px;position: absolute;width: 80%;margin-top: -80px"></div>
 	<!--<div style="background:radial-gradient(circle farthest-side at 80% 60%, rgba(90,219,127,0.67), rgba(22,127,148,0.92))">-->
-	<div class="container <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-25' : 'g-py-70' ?>">
-		<div class="row justify-content-center g-ma-0" style="position: absolute; bottom: -40px;">
+	<div style="position: absolute; bottom: -40px; width: 100%">
+	<div class="container" >
+		<div class="row g-ma-0" >
+			<?php if ($this->agent->is_mobile()): ?>
 			<?php foreach ($service_targets as $target): ?>
-				<div class="col-auto text-center g-px-0 g-font-weight-700 <?= $target->service_target_id == 1 ? '' : ' tab-shadow' ?> my_tab <?= $target->service_target_id == 1 ? 'tab-active' : '' ?>" data-tab="#tab-<?= $target->service_target_id ?>">
+				<div class="col-6 g-px-0 g-font-weight-700 <?= $target->service_target_id == 1 ? '' : ' tab-shadow' ?> my_tab <?= $target->service_target_id == 1 ? 'tab-active' : '' ?>" data-tab="#tab-<?= $target->service_target_id ?>">
 					<div class="my_tab_line"></div>
-					<a class="my_tab_item g-cursor-pointer nav-link my_tab  g-py-20 g-font-weight-300 text-uppercase g-font-size-<?= $this->agent->is_mobile() ? '14 g-px-20' : '20 g-px-45' ?>">
-						<i class="<?= $target->service_target_icon ?> g-mr-10  g-mb-17 g-font-size-<?= $this->agent->is_mobile() ? '16' : '20' ?>"></i>
+					<a class="my_tab_item g-cursor-pointer nav-link my_tab g-py-20 g-font-weight-300 text-uppercase g-font-size-12 g-px-20 text-center">
+						<img class="my_tab_icon" src="<?= get_image(DIR_ICON . $target->service_target_icon) ?>" alt="" style="max-width: 80px; max-height: 800px;display:inline-block;">
+						<br>
 						<?= $target->service_target_name ?>
 					</a>
 				</div>
 			<?php endforeach; ?>
+			<?php else: ?>
+				<?php foreach ($service_targets as $target): ?>
+					<div class="col-auto g-px-0 g-font-weight-700 <?= $target->service_target_id == 1 ? '' : ' tab-shadow' ?> my_tab <?= $target->service_target_id == 1 ? 'tab-active' : '' ?>" data-tab="#tab-<?= $target->service_target_id ?>">
+						<div class="my_tab_line"></div>
+						<a class="my_tab_item g-cursor-pointer nav-link my_tab  g-py-20 g-font-weight-300 text-uppercase g-font-size-20 g-px-45">
+							<img class="my_tab_icon" src="<?= get_image(DIR_ICON . $target->service_target_icon) ?>" alt="" style="max-width: 35px; max-height: 35px">
+							<?= $target->service_target_name ?>
+						</a>
+					</div>
+				<?php endforeach; ?>
+			<?php endif; ?>
 		</div>
-
+	</div>
+	</div>
+		<div class="container <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-25' : 'g-py-70' ?>">
 		<div class="g-mb-10">
 			<h2 class="g-font-asap g-font-color-w4c-1 mb-2" color><?= get_lang('available-services-for-your-location') ?></h2>
 			<div class="row">
@@ -21,8 +37,8 @@
 					<form action="<?= site_url('') ?>" method="get">
 						<div class="autocomplete">
 							<div class="input-group">
-							<input id="input_city" class="form-control g-pa-10" type="text" name="city" value="<?= $input_city ?>" style="border:1px solid #0B90B9; border-radius:0px" placeholder="<?= get_lang('enter-location') ?>" autocomplete="off">
-							<span class="input-group-btn">
+								<input id="input_city" class="form-control g-pa-10" type="text" name="city" value="<?= $input_city ?>" style="border:1px solid #0B90B9; border-radius:0px" placeholder="<?= get_lang('enter-location') ?>" autocomplete="off">
+								<span class="input-group-btn">
                 <button class="btn btn-info g-py-10 g-px-30" type="submit" style="border:1px solid #0B90B9;border-radius:0px"><?= strtoupper(get_lang('search')) ?></button>
               </span>
 							</div>
@@ -112,7 +128,7 @@
                         $(element_id + ' .owl-stage-outer').css({'padding-top': 1});
                         $(element_id + ' .owl-stage').css('padding-left', 10);
 
-                        var screen_display =<?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
+                        var screen_display = <?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
                         // console.log(screen_display);
                         var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '60' : '80' ?>) / 100) / 2;
                         // console.log('screen :/ '+screen_display+'nav : '+screen_display*<?= $this->agent->is_mobile() ? '8' : '9' ?>0/100+'batas : '+margin_side);
@@ -319,10 +335,10 @@
 
     /*An array containing all the country names in the world:*/
     var countries = [
-	    <?php foreach ($coverage_cities as $city) {
-	    echo '"' . $city->city_name . '",';
-    }
-	    ?>
+			<?php foreach ($coverage_cities as $city) {
+			echo '"' . $city->city_name . '",';
+		}
+			?>
 
     ];
 

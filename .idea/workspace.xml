@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1e4089d-7ce0-4efd-b1a1-4f155ef0c38b" name="Default" comment="[Update] Button and color in home page">
-      <change afterPath="$PROJECT_DIR$/application/views/sites/join.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/official.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/official.iml" afterDir="false" />
+    <list default="true" id="f1e4089d-7ce0-4efd-b1a1-4f155ef0c38b" name="Default" comment="[Add] Page global join">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Service.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Site.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Site.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/helpers/my_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/helpers/my_helper.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/welcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/welcome.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/services/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/sites/sections/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/sites/sections/blog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/flow/process.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icons/flow/process.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/service/community-based-implementation/bg/thumbnail.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/service/community-based-implementation/bg/thumbnail.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/sites/sections/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/sites/sections/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/custom.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +206,7 @@
       <workItem from="1576760938552" duration="175000" />
       <workItem from="1576814843805" duration="2464000" />
       <workItem from="1576823415936" duration="33000" />
-      <workItem from="1576854283710" duration="4180000" />
+      <workItem from="1576854283710" duration="5828000" />
     </task>
     <task id="LOCAL-00001" summary="[Update] Image Service thumbnail&#10;&#10;[Debug] get_image() check image not working">
       <created>1574577726705</created>
@@ -461,7 +453,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576733956925</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="[Add] Page global join">
+      <created>1576860425531</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1576860425531</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,7 +490,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Update] Join Page &amp; Section data base on service section" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="[Update] Hide section if data is empty (error handling)" />
     <MESSAGE value="[Update] Expertise &amp; Experiment section" />
     <MESSAGE value="[Update] research section" />
@@ -516,20 +515,21 @@
     <MESSAGE value="[Update] Title section to Asap Font" />
     <MESSAGE value="[Add] Onclick in description service list" />
     <MESSAGE value="[Update] Button and color in home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Update] Button and color in home page" />
+    <MESSAGE value="[Add] Page global join" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Add] Page global join" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="849" y="114" key="CommitChangelistDialog2" timestamp="1576860355266">
+    <state x="849" y="114" key="CommitChangelistDialog2" timestamp="1576860424595">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="849" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576860355266" />
+    <state x="849" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576860424595" />
     <state x="712" y="162" key="SettingsEditor" timestamp="1576860162855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="712" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576860162855" />
-    <state x="907" y="257" width="607" height="526" key="find.popup" timestamp="1576860329536">
+    <state x="907" y="257" width="607" height="526" key="find.popup" timestamp="1576860823153">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="907" y="257" width="607" height="526" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576860329536" />
+    <state x="907" y="257" width="607" height="526" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576860823153" />
   </component>
 </project>

@@ -124,9 +124,7 @@
 								</div>
 								<?php if (!$this->agent->is_mobile()): ?>
 									<div class="col-6">
-										<img class="img-fluid mx-auto"
-										     src="<?= get_image(DIR_SERVICE . $service_id . '/photofolio/l-' . $porto->photofolio_image) ?>"
-										     alt="<?= 'thumbnail' . $porto->photofolio_client ?>" style="object-fit: cover;height: 100%">
+										<img class="img-fluid mx-auto" src="<?= get_image(DIR_SERVICE . $service_id . '/photofolio/l-' . $porto->photofolio_image) ?>" alt="<?= 'thumbnail' . $porto->photofolio_client ?>" style="object-fit: cover;height: 100%">
 									</div>
 								<?php endif; ?>
 							</div>
