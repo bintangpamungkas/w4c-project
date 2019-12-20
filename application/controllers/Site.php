@@ -144,7 +144,7 @@
 					];
 			
 			
-			$this->render_page('services/join', $data, 'index');
+			$this->render_page('sites/join', $data, 'services');
 		}
 		
 		public function verify()

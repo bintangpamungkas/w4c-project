@@ -113,7 +113,7 @@
 						} else { //desktop view
 							?>
 							<div class="bg-white g-my-20 box-shadow-down">
-								<div class="g-pa-25">
+								<div class="g-pa-40">
 									<div class="row">
 										<?php if ($i % 2 == 1) { ?>
 											<div class="col-6">

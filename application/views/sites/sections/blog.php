@@ -71,10 +71,10 @@
 										</h3>
 										<div class="g-font-size-13"><?= $blog['blog_content'] ?></div>
 										<hr class="g-brd-gray-light-v4 g-mt-40">
-										<a title="Share Story" target="_blank" class="float-right g-brd-0 g-color-white--hover g-bg-linkedin--hover u-icon-v2 g-rounded-50x" href="#" style=" height: 30px; width: 30px; background-color:#117a8b">
+										<a title="Share Story" target="_blank" class="float-right g-brd-0 g-color-white--hover g-bg-linkedin--hover u-icon-v2 g-rounded-50x g-bg-info" href="#" style=" height: 30px; width: 30px;">
 											<i class="fa fa-share-alt g-color-white g-font-size-10"></i>
 										</a>
-										<a target="_blank" href="<?= $blog['blog_url'] ?>" class="g-bg-white g-bg-info--hover g-rounded-50 g-mr-10 g-mb-15 g-font-weight-700 text-uppercase" style="color:#117a8b">Read More <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
+										<a target="_blank" href="<?= $blog['blog_url'] ?>" class="g-bg-white g-color-info g-color-blue--hover g-mr-10 g-mb-15 g-font-weight-700 text-uppercase" style="">Read More <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
 									</div>
 								</article>
 							</div>
@@ -116,10 +116,10 @@
 											<a class="u-link-v5 g-color-gray-dark-v2 g-color-info--hover g-font-weight-700" href="<?= $blog['blog_title'] ?>" style="word-wrap: break-word"><?= $blog['blog_title'] ?></a>
 										</h3>
 										<hr class="g-brd-gray-light-v4 g-mt-40">
-										<a title="Share Story" target="_blank" class="float-right g-brd-0 g-color-white--hover g-bg-linkedin--hover u-icon-v2 g-rounded-50x" href="#" style=" height: 30px; width: 30px; background-color:#117a8b">
+										<a title="Share Story" target="_blank" class="float-right g-brd-0 g-color-white--hover g-bg-linkedin--hover u-icon-v2 g-rounded-50x g-bg-info" href="#" style=" height: 30px; width: 30px; background-color:#117a8b">
 											<i class="fa fa-share-alt g-color-white g-font-size-10"></i>
 										</a>
-										<a target="_blank" href="<?= $blog['blog_url'] ?>" class="g-bg-white g-bg-info--hover g-rounded-50 g-mr-10 g-mb-15 g-font-weight-700 text-uppercase" style="color:#117a8b"><?= get_lang('read-more') ?> <i class="fa fa-angle-right g-ml-20 g-font-weight-900" ></i> </a>
+										<a target="_blank" href="<?= $blog['blog_url'] ?>" class="g-bg-white g-color-info g-color-blue--hover g-mr-10 g-mb-15 g-font-weight-700 text-uppercase" style="color:#117a8b"><?= get_lang('read-more') ?> <i class="fa fa-angle-right g-ml-20 g-font-weight-900" ></i> </a>
 
 									</div>
 								</article>
@@ -181,7 +181,7 @@
 						<?= get_lang('find-more-content-about-responsible-waste-manageme') ?>
 					</p>
 					<br>
-					<a target="_blank" class="g-font-asap btn btn-outline-info g-brd-2 g-font-size-13 g-font-weight-700 g-rounded-50 g-pl-20 g-pr-15 g-py-9 text-uppercase" href="http://waste4change.com/blog">
+					<a target="_blank" class="btn btn-outline-info g-brd-2 g-font-size-13 g-font-weight-700 g-rounded-50 g-pl-20 g-pr-15 g-py-9 text-uppercase" href="http://waste4change.com/blog">
 						<?= strtoupper(get_lang('more-article')) ?>
 					</a>
 				</div>

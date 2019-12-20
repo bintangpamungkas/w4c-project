@@ -3,11 +3,11 @@
 <div id="<?=$section_slug?>" class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
   <div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center" style="height: 120%;background: url(<?= $this->agent->is_mobile() ? base_url('assets/img/service/'.$service_id.'/bg/header.jpg') : base_url('assets/img/service/'.$service_id.'/bg/header.jpg') ?>);background-size: cover;<?= $this->agent->is_mobile() ? 'background-position-x: right;' : '' ?>"></div>
 
-  <div class="full-height-block pending-show animated d-zap" style="background-image: linear-gradient(<?= $this->agent->is_mobile() ? '190deg' : '100deg' ?>, rgba(256, 256, 256, 0.9) 40%, rgba(256, 256, 256, <?= $this->agent->is_mobile() ? '0.8' : '0.5' ?>) 70%, rgba(256, 256, 256, <?= $this->agent->is_mobile() ? '0.5' : '0' ?>) 100%);">
+  <div class="full-height-block pending-show animated d-zap" style="background-image: linear-gradient(<?= $this->agent->is_mobile() ? '190deg' : '100deg' ?>, rgb(256, 256, 256) 40%, rgba(256, 256, 256, <?= $this->agent->is_mobile() ? '0.85' : '0.85' ?>) 70%, rgba(256, 256, 256, <?= $this->agent->is_mobile() ? '0' : '0' ?>) 100%);">
     <div class="container">
-      <div class="row content-middle-fullscreen with-header <?= $this->agent->is_mobile() ? 'justify-content-center text-center' : '' ?>">
+      <div class="row content-middle-fullscreen withx-header <?= $this->agent->is_mobile() ? 'justify-content-center text-center' : '' ?>">
         <?php if (!$this->agent->is_mobile()): ?>
-          <div class="col-12" style="margin-top:-15vw">
+          <div class="col-12" style="margin-top:-10vw">
             <?php foreach ($breadcrumb as $bread): ?>
               <?php if ($bread['active']!=true): ?>
                 <a class="g-color-black g-text-transform-none" href="<?=site_url($bread['url'])?>">

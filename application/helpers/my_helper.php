@@ -66,6 +66,39 @@
 		return $directory;
 	}
 	
+	function limit_char($x, $length, $dot = true)
+	{
+		if (strlen($x) <= $length) {
+			echo $x;
+		} else {
+			if ($dot == true) {
+				$y = substr($x, 0, $length) . '...';
+			} else {
+				$y = substr($x, 0, $length);
+			}
+			echo $y;
+		}
+	}
+	
+	function limit_word($x, $length, $delimiter=null)
+	{
+		$j = 0;
+		if ($delimiter!=null){
+			$text = explode($delimiter, $x);
+		}else{
+			$text = explode(" ", $x);
+		}
+		for ($i = 0; $i < $length; $i++) {
+			if (!empty($text[$i])) {
+				echo $text[$i] .$delimiter." ";
+				$j++;
+			}
+		}
+		if ($j == $i) {
+			echo "...";
+		}
+	}
+	
 	function does_url_exists($url)
 	{
 		$ch = curl_init($url);
