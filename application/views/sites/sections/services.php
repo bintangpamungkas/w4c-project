@@ -9,7 +9,7 @@
 				<div class="col-6 g-px-0 g-font-weight-700 <?= $target->service_target_id == 1 ? '' : ' tab-shadow' ?> my_tab <?= $target->service_target_id == 1 ? 'tab-active' : '' ?>" data-tab="#tab-<?= $target->service_target_id ?>">
 					<div class="my_tab_line"></div>
 					<a class="my_tab_item g-cursor-pointer nav-link my_tab g-py-20 g-font-weight-300 text-uppercase g-font-size-12 g-px-20 text-center">
-						<img class="my_tab_icon" src="<?= get_image(DIR_ICON . $target->service_target_icon) ?>" alt="" style="max-width: 80px; max-height: 800px;display:inline-block;">
+						<img class="my_tab_icon" src="<?= get_image(DIR_ICON . $target->service_target_icon) ?>" alt="" style="max-width: 80px; max-height: 80px;display:inline-block;">
 						<br>
 						<?= $target->service_target_name ?>
 					</a>
