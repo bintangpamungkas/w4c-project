@@ -216,13 +216,13 @@
     transition-duration: .2s;
     transition-timing-function: ease-in;
     border-bottom: 4px solid #aaa!important;
-    background-color: white;
+    background-color: #fafafa;
 }
 .my_tab_2.tab-active{
   box-shadow: none!important;
   border-bottom: 4px solid #159CBD!important;
   color: #159CBD!important;
-  background: #fafafa!important;
+  background: white!important;
 }
 
 .g-bg-white-all{

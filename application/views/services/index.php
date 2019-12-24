@@ -20,12 +20,15 @@
 					<h4 class="g-font-asap g-font-weight-700 g-color-w4c-blue-v1 mb-3"><?= get_lang('available-services-for-your-location') ?></h4>
 					<form action="<?= site_url('service') ?>" method="get">
 						<div class="autocomplete">
-							<div class="input-group pull-right mb-5">
-								<input id="input_city" class="form-control g-pa-10" type="text" name="city" value="<?= $input_city ?>" style="border:1px solid #0B90B9; border-radius:0px" placeholder="<?= get_lang('enter-location') ?>" autocomplete="off">
+							<div class="input-group g-brd-primary--focus pull-right">
+								<div class="input-group-prepend">
+									<span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1 g-pa-10 border-right-0" style="border:1px solid #0B90B9;"><i class="fa fa-map-marker"></i></span>
+								</div>
+								<input id="input_city" class="form-control form-control-md border-left-0 rounded-0 g-pa-10 pl-0 border-right-0" type="text" name="city" value="<?= $input_city ?>" style="border:1px solid #0B90B9; border-radius:0px" placeholder="<?= get_lang('enter-location') ?>" autocomplete="off">
 								<input type="hidden" name="target" value="<?= $service_target ?>">
-								<span class="input-group-btn">
-              <button class="btn btn-info g-py-10 g-px-15 g-letter-spacing-2" type="submit" style="border:1px solid #0B90B9;border-radius:0px"> <i class="icon-magnifier"></i> </button>
-            </span>
+								<div class="input-group-btn">
+									<button class="btn btn-info g-py-10 g-px-30 g-letter-spacing-2 border-left-0" type="submit" style="border:1px solid #0B90B9;border-radius:0px"><?= strtoupper(get_lang('search')) ?> </button>
+								</div>
 							</div>
 						</div>
 					</form>
@@ -59,12 +62,15 @@
 				<div class="col-md-5 col-xs-12">
 					<form action="<?= site_url('service') ?>" method="get">
 						<div class="autocomplete">
-							<div class="input-group pull-right">
-								<input id="input_city" class="form-control g-pa-10" type="text" name="city" value="<?= $input_city ?>" style="border:1px solid #0B90B9; border-radius:0px" placeholder="<?= get_lang('enter-location') ?>" autocomplete="off">
+							<div class="input-group g-brd-primary--focus pull-right">
+								<div class="input-group-prepend">
+									<span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1 g-pa-10 border-right-0" style="border:1px solid #0B90B9;"><i class="fa fa-map-marker"></i></span>
+								</div>
+								<input id="input_city" class="form-control form-control-md border-left-0 rounded-0 g-pa-10 pl-0 border-right-0" type="text" name="city" value="<?= $input_city ?>" style="border:1px solid #0B90B9; border-radius:0px" placeholder="<?= get_lang('enter-location') ?>" autocomplete="off">
 								<input type="hidden" name="target" value="<?= $service_target ?>">
-								<span class="input-group-btn">
-              <button class="btn btn-info g-py-10 g-px-30 g-letter-spacing-2" type="submit" style="border:1px solid #0B90B9;border-radius:0px"><?= strtoupper(get_lang('search')) ?></button>
-            </span>
+								<div class="input-group-btn">
+									<button class="btn btn-info g-py-10 g-px-30 g-letter-spacing-2 border-left-0" type="submit" style="border:1px solid #0B90B9;border-radius:0px"><?= strtoupper(get_lang('search')) ?> </button>
+								</div>
 							</div>
 						</div>
 					</form>
