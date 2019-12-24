@@ -33,9 +33,9 @@
 								<?php endif; ?>
 								<div class="col-<?= $this->agent->is_mobile() ? '12' : '6' ?> g-pa-30">
 									<img class="g-mb-15" src="<?= get_image(DIR_SERVICE . $service_id . '/photofolio/' . $porto->photofolio_client_logo) ?>" alt="<?= $porto->photofolio_client ?>" style="max-height: 50px; max-width: 80px;margin-bottom: 5px;">
-									<div class="g-font-weight-600 g-font-size-20 g-line-height-1_1 g-mt-30"><?= $porto->photofolio_client ?></div>
+									<div class="g-font-weight-600 g-font-size-20 g-line-height-1_1 g-mb-5"><?= $porto->photofolio_client ?></div>
 									<div class="g-font-size-12 g-line-height-1_1" style="color:#AFAFAF"><?= limit_word($porto->photofolio_client_address, 3, ",") ?></div>
-									<div class="g-mt-20 g-font-size-13">
+									<div class="g-mt-30 g-font-size-13">
 										<?php if (!empty($porto->photofolio_waste_collected)) { ?>
 											<div class="row no-gutters g-line-height-1_3 g-mt-10">
 												<div class="col-auto g-mr-10">
