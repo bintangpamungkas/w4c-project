@@ -31,15 +31,15 @@
 										<img class="img-fluid mx-auto" src="<?= get_image(DIR_SERVICE . $service_id . '/photofolio/p-' . $porto->photofolio_image) ?>" alt="<?= 'thumbnail' . $porto->photofolio_client ?>" style="object-fit: cover;width: 100%;height: 150px">
 									</div>
 								<?php endif; ?>
-								<div class="col-<?= $this->agent->is_mobile() ? '12' : '6' ?> g-pt-20 g-pb-30 g-pl-30 g-pr-10">
-									<img src="<?= get_image(DIR_SERVICE . $service_id . '/photofolio/' . $porto->photofolio_client_logo) ?>" alt="<?= $porto->photofolio_client ?>" style="max-height: 50px; max-width: 80px;margin-bottom: 5px;">
-									<div class="g-font-weight-600 g-font-size-20 g-line-height-1_1"><?= $porto->photofolio_client ?></div>
+								<div class="col-<?= $this->agent->is_mobile() ? '12' : '6' ?> g-pa-30">
+									<img class="g-mb-15" src="<?= get_image(DIR_SERVICE . $service_id . '/photofolio/' . $porto->photofolio_client_logo) ?>" alt="<?= $porto->photofolio_client ?>" style="max-height: 50px; max-width: 80px;margin-bottom: 5px;">
+									<div class="g-font-weight-600 g-font-size-20 g-line-height-1_1 g-mt-30"><?= $porto->photofolio_client ?></div>
 									<div class="g-font-size-12 g-line-height-1_1" style="color:#AFAFAF"><?= limit_word($porto->photofolio_client_address, 3, ",") ?></div>
 									<div class="g-mt-20 g-font-size-13">
 										<?php if (!empty($porto->photofolio_waste_collected)) { ?>
-											<div class="row no-gutters g-line-height-1_3 g-mt-5">
-												<div class="col-auto text-mute g-mr-15">
-													<i class="fa fa-refresh" style="color:#117a8b"></i>
+											<div class="row no-gutters g-line-height-1_3 g-mt-10">
+												<div class="col-auto g-mr-10">
+													<img src="<?=get_image(DIR_ICON.'refresh.png')?>" alt="" style="max-width: 20px">
 												</div>
 												<div class="col" style="color:#6C6C6C">
 													Average of Waste Collected
@@ -51,9 +51,9 @@
 										};
 											if (!empty($porto->photofolio_mou)) {
 												?>
-												<div class="row no-gutters g-line-height-1_3 g-mt-5">
-													<div class="col-auto g-mr-15">
-														<i class="fa fa-check-circle-o" style="color:#117a8b"></i>
+												<div class="row no-gutters g-line-height-1_3 g-mt-10">
+													<div class="col-auto g-mr-10">
+														<img src="<?=get_image(DIR_ICON.'check-circle-o.png')?>" alt="" style="max-width: 20px">
 													</div>
 													<div class="col" style="color:#6C6C6C">
 														MOU Sighned
@@ -65,9 +65,9 @@
 											};
 											if (!empty($porto->photofolio_waste_collected)) {
 												?>
-												<div class="row no-gutters g-line-height-1_3 g-mt-5">
-													<div class="col-auto text-mute g-mr-15">
-														<i class="icon icon-clock" style="color:#117a8b"></i>
+												<div class="row no-gutters g-line-height-1_3 g-mt-10">
+													<div class="col-auto g-mr-10">
+														<img src="<?=get_image(DIR_ICON.'calendar.png')?>" alt="" style="max-width: 20px">
 													</div>
 													<div class="col" style="color:#6C6C6C">
 														Period of Contract
@@ -79,9 +79,9 @@
 											};
 											if (!empty($porto->photofolio_collection_schedulle)) {
 												?>
-												<div class="row no-gutters g-line-height-1_3 g-mt-5">
-													<div class="col-auto text-mute g-mr-15">
-														<i class="fa fa-refresh" style="color:#117a8b"></i>
+												<div class="row no-gutters g-line-height-1_3 g-mt-10">
+													<div class="col-auto g-mr-10">
+														<img src="<?=get_image(DIR_ICON.'refresh-clock.png')?>" alt="" style="max-width: 20px">
 													</div>
 													<div class="col" style="color:#6C6C6C">
 														Collection Schedule
@@ -93,9 +93,9 @@
 											};
 											if (!empty($porto->photofolio_start)) {
 												?>
-												<div class="row no-gutters g-line-height-1_3 g-mt-5">
-													<div class="col-auto text-mute g-mr-15">
-														<i class="fa fa-refresh" style="color:#117a8b"></i>
+												<div class="row no-gutters g-line-height-1_3 g-mt-10">
+													<div class="col-auto g-mr-10">
+														<img src="<?=get_image(DIR_ICON.'calendar.png')?>" alt="" style="max-width: 20px">
 													</div>
 													<div class="col" style="color:#6C6C6C">
 														Period Start
@@ -107,9 +107,9 @@
 											};
 											if (!empty($porto->photofolio_end)) {
 												?>
-												<div class="row no-gutters g-line-height-1_3 g-mt-5">
-													<div class="col-auto text-mute g-mr-15">
-														<i class="fa fa-refresh" style="color:#117a8b"></i>
+												<div class="row no-gutters g-line-height-1_3 g-mt-10">
+													<div class="col-auto g-mr-10">
+														<img src="<?=get_image(DIR_ICON.'calendar.png')?>" alt="" style="max-width: 20px">
 													</div>
 													<div class="col" style="color:#6C6C6C">
 														Period End
