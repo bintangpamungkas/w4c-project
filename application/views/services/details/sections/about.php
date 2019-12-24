@@ -30,9 +30,9 @@
             <h2 class="<?= $this->agent->is_mobile() ? 'h4 text-center' : 'h1' ?> g-color-black g-font-weight-600 g-mb-35 text-capitalize">
               <?= $service->service_slogan ?>
             </h2>
-            <p class="g-pa-35 g-color-white" style="background: linear-gradient(90deg, rgba(11, 144, 185, 0.9), rgba(19, 182, 127, 0.9));<?= $this->agent->is_mobile() ? '' : 'margin-left: -100px' ?>">
+            <div class="g-pa-35 g-color-white" style="background: linear-gradient(90deg, rgba(11, 144, 185, 0.9), rgba(19, 182, 127, 0.9));<?= $this->agent->is_mobile() ? '' : 'margin-left: -100px' ?>">
               <?= $service->service_about ?>
-            </p>
+            </div>
           </div>
           <a target="_blank" class="d-none btn btn-info g-font-size-default text-uppercase g-rounded-50 g-py-12 g-px-30" href="#">JOIN NOW</a>
         </div>

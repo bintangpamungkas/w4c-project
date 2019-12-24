@@ -36,8 +36,7 @@
 				<!-- Services target navivation -->
 				<div class="row justify-content-center g-ma-0">
 					<div class="col<?= $this->agent->is_mobile() ? '' : '' ?> text-center g-px-0 tab-shadow">
-						<a class="my_tab_2 g-cursor-pointer nav-link text-uppercase g-font-weight-700 g-font-size-<?= $this->agent->is_mobile() ? '14 g-py-10  g-px-5' : '18 g-py-0 g-px-30' ?> <?= (empty($service_target) || $service_target == 'all') ? 'tab-active' : '' ?> " href="<?= site_url('service?target=all') ?>" style="<?= $this->agent->is_mobile() ? 'min-height: 40px' : 'min-height: 50px' ?> ; color:#aaa">
-							<i class=" g-mr-10  g-mb-17 g-line-height-1 g-font-size-<?= $this->agent->is_mobile() ? '16' : '30' ?>"></i>
+						<a class="my_tab_2 g-cursor-pointer nav-link text-uppercase g-font-weight-700 g-font-size-<?= $this->agent->is_mobile() ? '14 g-py-10  g-px-5' : '15 g-py-12 g-px-30' ?> <?= (empty($service_target) || $service_target == 'all') ? 'tab-active' : '' ?> " href="<?= site_url('service?target=all') ?>" style="<?= $this->agent->is_mobile() ? 'min-height: 40px' : 'min-height: 50px' ?> ; color:#aaa">
 							<?= get_lang('all') ?>
 						</a>
 					</div>
@@ -45,8 +44,7 @@
 						foreach ($service_targets as $target):
 							?>
 							<div class="col<?= $this->agent->is_mobile() ? '' : '' ?> text-center g-px-0">
-								<a class="my_tab_2 g-cursor-pointer nav-link text-uppercase g-font-weight-700 g-font-size-<?= $this->agent->is_mobile() ? '14 g-py-10 g-px-5 ' : '18 g-py-0  g-px-20' ?> <?= $service_target == strtolower($target->service_target_slug) ? 'tab-active' : '' ?>" href="<?= site_url('service?target=' . strtolower($target->service_target_slug)) ?>" style="<?= $this->agent->is_mobile() ? 'min-height: 40px' : 'min-height: 50px' ?> ; color:#aaa">
-									<i class="g-mr-10 g-mb-17 g-line-height-1 g-font-size-<?= $this->agent->is_mobile() ? '16' : '30' ?>"></i>
+								<a class="my_tab_2 g-cursor-pointer nav-link text-uppercase g-font-weight-700 g-font-size-<?= $this->agent->is_mobile() ? '14 g-py-10 g-px-5 ' : '15 g-py-12  g-px-20' ?> <?= $service_target == strtolower($target->service_target_slug) ? 'tab-active' : '' ?>" href="<?= site_url('service?target=' . strtolower($target->service_target_slug)) ?>" style="<?= $this->agent->is_mobile() ? 'min-height: 40px' : 'min-height: 50px' ?> ; color:#aaa">
 									<?= $target->service_target_name ?>
 								</a>
 							</div>

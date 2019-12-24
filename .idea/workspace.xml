@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1e4089d-7ce0-4efd-b1a1-4f155ef0c38b" name="Default" comment="[Update] Highlight box click able&#10;[Update] All service inactive tab to have bottom line&#10;[Update] Make our achievement uppercase">
+    <list default="true" id="f1e4089d-7ce0-4efd-b1a1-4f155ef0c38b" name="Default" comment="[Update] Highlight box click able&#10;[Update] All service inactive tab to have bottom line&#10;[Update] Make our achievement uppercase&#10;[Update] All service top banner to 3 line title">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/core/MY_Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/MY_Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/our-achievement.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/our-achievement.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/program-highlight.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/program-highlight.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/research-highlight.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/research-highlight.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/similar-project.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/similar-project.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Service.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/recomended-for.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/recommended-for.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/services/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/sites/sections/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/sites/sections/blog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/sites/sections/cta.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/sites/sections/cta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/sites/sections/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/sites/sections/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/service/3r-school-program/bg/thumbnail.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/service/3r-school-program/bg/thumbnail.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/service/akabis-waste-management-academy/bg/thumbnail.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/service/akabis-waste-management-academy/bg/thumbnail.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,9 +35,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SearchEverywhereHistoryKey" value="service&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/views/sites" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet.xml" />
   </component>
   <component name="RecentsManager">
@@ -215,7 +208,8 @@
       <workItem from="1576760938552" duration="175000" />
       <workItem from="1576814843805" duration="2464000" />
       <workItem from="1576823415936" duration="33000" />
-      <workItem from="1576854283710" duration="8371000" />
+      <workItem from="1576854283710" duration="8781000" />
+      <workItem from="1577182965146" duration="1738000" />
     </task>
     <task id="LOCAL-00001" summary="[Update] Image Service thumbnail&#10;&#10;[Debug] get_image() check image not working">
       <created>1574577726705</created>
@@ -483,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576862606758</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="[Update] Highlight box click able&#10;[Update] All service inactive tab to have bottom line&#10;[Update] Make our achievement uppercase&#10;[Update] All service top banner to 3 line title">
+      <created>1576864484424</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1576864484424</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,7 +515,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="[Update] research section" />
     <MESSAGE value="[Update] activity section" />
     <MESSAGE value="[Update] output &amp; benefit section" />
     <MESSAGE value="[Add] we offer section" />
@@ -539,13 +539,18 @@
     <MESSAGE value="[Add] Page global join" />
     <MESSAGE value="[Update] Service section in home page" />
     <MESSAGE value="[Update] Navigation service target icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Update] Navigation service target icon" />
+    <MESSAGE value="[Update] Highlight box click able&#10;[Update] All service inactive tab to have bottom line&#10;[Update] Make our achievement uppercase&#10;[Update] All service top banner to 3 line title" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Update] Highlight box click able&#10;[Update] All service inactive tab to have bottom line&#10;[Update] Make our achievement uppercase&#10;[Update] All service top banner to 3 line title" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="849" y="114" key="CommitChangelistDialog2" timestamp="1576864453421">
+    <state x="849" y="114" key="CommitChangelistDialog2" timestamp="1576864762957">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="849" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576864453421" />
+    <state x="849" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576864762957" />
+    <state x="1062" y="260" key="RollbackChangesDialog" timestamp="1576864619490">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1062" y="260" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576864619490" />
     <state x="712" y="162" key="SettingsEditor" timestamp="1576860162855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -554,5 +559,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="907" y="257" width="607" height="526" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576860823153" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/controllers/Service.php</url>
+          <line>111</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -14,7 +14,7 @@
 		<div class="row justify-content-center">
 			<?php
 			$number = 1;
-			foreach ($recomendations as $rec):
+			foreach ($recommendations as $rec):
 				?>
 				<div class="col-lg-4 col-xs-12 g-mb-20">
 					<!-- Icon Blocks -->
