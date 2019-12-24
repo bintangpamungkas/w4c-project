@@ -205,7 +205,7 @@
         $(this).addClass('tab-active');
         $('.my_tab_content').addClass('d-none');
         $(tab_target).removeClass('d-none');
-    })
+    });
 
     function autocomplete(inp, arr) {
         /*the autocomplete function takes two arguments,
