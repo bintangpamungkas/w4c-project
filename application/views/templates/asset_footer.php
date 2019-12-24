@@ -16,6 +16,7 @@
 <script src="<?= base_url('assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js') ?>"></script>
 <script src="<?= base_url('assets/vendor/slick-carousel/slick/slick.js') ?>"></script>
 <script src="<?= base_url('assets/vendor/fancybox/jquery.fancybox.min.js') ?>"></script>
+<script src="<?=base_url()?>assets/vendor/appear.js"></script>
 
 <!-- JS Unify -->
 <script src="<?= base_url('assets/js/hs.core.js') ?>"></script>
@@ -27,6 +28,8 @@
 <script src="<?= base_url('assets/js/components/hs.scrollbar.js') ?>"></script>
 <script src="<?= base_url('assets/js/components/hs.popup.js') ?>"></script>
 <script src="<?= base_url('assets/js/components/hs.carousel.js') ?>"></script>
+<script src="<?=base_url()?>assets/js/components/hs.counter.js"></script>
+
 
 <script src="<?= base_url('assets/js/components/hs.go-to.js') ?>"></script>
 
