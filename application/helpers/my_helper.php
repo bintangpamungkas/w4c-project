@@ -33,7 +33,6 @@
 		} else {
 			$directory = base_url($image);
 		}
-		// return $directory;
 		
 		$url = $directory;
 		$url = trim($url); // Get rid of any accidental whitespace
@@ -42,7 +41,9 @@
 			// If it is https, change it to http
 			$url = 'http://' . substr($url, 8);
 		}
-		if (@getimagesize($url)) {
+     return $url;
+    
+    if (@getimagesize($url)) {
 			return $url;
 		} else {
 			if ($replace != null) {
@@ -56,6 +57,7 @@
 			}
 		}
 	}
+	
 	function get_url($url)
 	{
 		if (strpos($url, 'http') !== false) {
@@ -239,7 +241,11 @@
 	
 	function view_number($number)
 	{
-		return number_format($number, 0, ',', '.');
+	  if (is_numeric($number)){
+      return number_format($number, 0, ',', '.');
+    }else{
+      return $number;
+    }
 	}
 	
 	function view_trashpay($currency, $nominal)

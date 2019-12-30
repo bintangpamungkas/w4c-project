@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1e4089d-7ce0-4efd-b1a1-4f155ef0c38b" name="Default" comment="[Update] Waste flow with tab and category">
-      <change afterPath="$PROJECT_DIR$/database/20191224.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/helpers/my_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/helpers/my_helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,11 +19,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="495" />
-    <option name="width" value="1432" />
-    <option name="height" value="1047" />
   </component>
   <component name="ProjectId" id="1VEOZ65bpizFsVTUdhHgxsIe5J3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -39,7 +35,7 @@
     <property name="SearchEverywhereHistoryKey" value="service&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.PHP" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -211,6 +207,8 @@
       <workItem from="1576854283710" duration="8781000" />
       <workItem from="1577182965146" duration="4459000" />
       <workItem from="1577194064758" duration="8797000" />
+      <workItem from="1577692798344" duration="889000" />
+      <workItem from="1577695809380" duration="3097000" />
     </task>
     <task id="LOCAL-00001" summary="[Update] Image Service thumbnail&#10;&#10;[Debug] get_image() check image not working">
       <created>1574577726705</created>
@@ -587,18 +585,29 @@
     <option name="LAST_COMMIT_MESSAGE" value="[Update] Waste flow with tab and category" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="849" y="114" key="CommitChangelistDialog2" timestamp="1577204017418">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="248" y="23" width="1032" height="709" key="CommitChangelistDialog2" timestamp="1577716154189">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state x="248" y="23" width="1032" height="709" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1577716154189" />
     <state x="849" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577204017418" />
     <state x="1062" y="260" key="RollbackChangesDialog" timestamp="1576864619490">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1062" y="260" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576864619490" />
-    <state x="712" y="162" key="SettingsEditor" timestamp="1577202078637">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="262" y="23" key="SettingsEditor" timestamp="1577695780258">
+      <screen x="0" y="23" width="1280" height="709" />
     </state>
+    <state x="298" y="78" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1577695577525" />
     <state x="712" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1577202078637" />
+    <state x="262" y="23" key="SettingsEditor/0.23.1280.709@0.23.1280.709" timestamp="1577695780258" />
+    <state x="319" y="210" key="com.intellij.ide.util.TipDialog" timestamp="1577695836688">
+      <screen x="0" y="23" width="1280" height="709" />
+    </state>
+    <state x="319" y="210" key="com.intellij.ide.util.TipDialog/0.23.1280.709@0.23.1280.709" timestamp="1577695836688" />
+    <state x="429" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577714918847">
+      <screen x="0" y="23" width="1280" height="709" />
+    </state>
+    <state x="429" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.709@0.23.1280.709" timestamp="1577714918847" />
     <state x="907" y="257" width="607" height="526" key="find.popup" timestamp="1576860823153">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

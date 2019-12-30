@@ -44,7 +44,8 @@
 												<div class="col" style="color:#6C6C6C">
 													Average of Waste Collected
 													<br>
-													<strong><?= $porto->photofolio_waste_collected ?></strong>
+                          <?php $waste_collected=explode(' ',$porto->photofolio_waste_collected) ?>
+													<strong><?= view_number($waste_collected[0]).' '.get_lang($waste_collected[1])?></strong>
 												</div>
 											</div>
 											<?php
@@ -58,12 +59,12 @@
 													<div class="col" style="color:#6C6C6C">
 														MOU Sighned
 														<br>
-														<strong><?= $porto->photofolio_mou ?></strong>
+														<strong><?= date("Y",strtotime($porto->photofolio_mou)) ?></strong>
 													</div>
 												</div>
 												<?php
 											};
-											if (!empty($porto->photofolio_waste_collected)) {
+											if (!empty($porto->photofolio_duration)) {
 												?>
 												<div class="row no-gutters g-line-height-1_3 g-mt-10">
 													<div class="col-auto g-mr-10">
@@ -72,7 +73,8 @@
 													<div class="col" style="color:#6C6C6C">
 														Period of Contract
 														<br>
-														<strong><?= $porto->photofolio_waste_collected ?></strong>
+                            <?php $duration=explode(' ',$porto->photofolio_duration) ?>
+                            <strong><?= view_number($duration[0]).' '.get_lang($duration[1])?></strong>
 													</div>
 												</div>
 												<?php
@@ -86,7 +88,8 @@
 													<div class="col" style="color:#6C6C6C">
 														Collection Schedule
 														<br>
-														<strong><?= $porto->photofolio_collection_schedulle ?></strong>
+                            <?php $collection_schedulle=explode(' ',$porto->photofolio_collection_schedulle) ?>
+                            <strong><?= empty($collection_schedulle[1]) ? get_lang($collection_schedulle[0]) : view_number($collection_schedulle[0]).' '.get_lang($collection_schedulle[1])?></strong>
 													</div>
 												</div>
 												<?php
