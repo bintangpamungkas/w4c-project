@@ -612,9 +612,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="907" y="257" width="607" height="526" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576860823153" />
-    <state x="875" y="229" key="search.everywhere.popup" timestamp="1577199014136">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="583" y="176" width="670" height="676" key="search.everywhere.popup" timestamp="1577718639525">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state x="583" y="176" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1577718639525" />
     <state x="875" y="229" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1577199014136" />
   </component>
   <component name="XDebuggerManager">
