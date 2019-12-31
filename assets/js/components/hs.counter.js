@@ -19,7 +19,7 @@
 		_baseConfig : {
 			bounds: -100,
 			debounce: 10,
-			time: 6000,
+			time: 2000,
 			fps: 60,
 			commaSeparated: false
 		},

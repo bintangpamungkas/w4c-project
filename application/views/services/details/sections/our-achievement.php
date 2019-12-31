@@ -11,7 +11,7 @@
 					<div class="col-md-8 col-xs-12 row no-gutters">
 						<?php foreach ($achievements as $achievement): ?>
 							<div class="col-md col-xs-12 text-center">
-								<div class="<?= is_numeric($achievement->achievement_count) ? 'js-counter' : ''?> g-font-weight-700 g-font-size-40 g-color-w4c-blue-v1 g-line-height-1"><?= is_numeric($achievement->achievement_count) ?(int)$achievement->achievement_count : $achievement->achievement_count?></div>
+								<div class="<?= is_numeric($achievement->achievement_count) ? 'js-counter' : ''?> g-font-weight-700 g-font-size-40 g-color-w4c-blue-v1 g-line-height-1" data-comma-separated="true"><?= is_numeric($achievement->achievement_count) ?(int)$achievement->achievement_count : $achievement->achievement_count?></div>
 								<div class="g-font-20 <?= $this->agent->is_mobile() ? 'g-mb-20' : '' ?>"><?= $achievement->achievement_name ?></div>
 							</div>
 						<?php endforeach; ?>

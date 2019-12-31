@@ -7,29 +7,32 @@
 		</div>
 		<div class="row text-center">
 			<div class="col-md-4 col-xs-12 mb-4">
-				<div class="js-counter g-color-w4c-blue-v1 g-font-size-50 g-font-weight-900">
-					9999
+				<div class="js-counter g-color-w4c-blue-v1 g-font-size-50 g-font-weight-900" data-comma-separated="true">
+          198
 				</div>
 				<div class="g-font-weight-700 g-font-size-18">
 					<?= get_lang('clients') ?>
 				</div>
 			</div>
 			<div class="col-md-4 col-xs-12 mb-4">
-				<div class="js-counter g-color-w4c-blue-v1 g-font-size-50 g-font-weight-900">
-					9999
+				<div class="js-counter g-color-w4c-blue-v1 g-font-size-50 g-font-weight-900" data-comma-separated="true">
+          175
 				</div>
 				<div class="g-font-weight-700 g-font-size-18">
 					<?= get_lang('projects') ?>
 				</div>
 			</div>
 			<div class="col-md-4 col-xs-12 mb-4 ">
-				<div class="js-counter g-color-w4c-blue-v1 g-font-size-50 g-font-weight-900">
-					9999
-			</div>
+				<div class="g-color-w4c-blue-v1 g-font-size-50 g-font-weight-900" >
+          <div class="js-counter" style="display: inline" data-comma-separated="true">441041</div>.<div class="js-counter" style="display: inline">988</div>
+        </div>
 				<div class="g-font-weight-700 g-font-size-18">
 					<?= get_lang('waste-recycled') ?>
 				</div>
 			</div>
+      <script>
+
+      </script>
 			<div class="col-12">
 				<a class="btn btn-info text-uppercase g-px-30 g-py-10 g-font-weight-700" href="<?= site_url('about') ?>" style="border-radius:100px"><?= get_lang('more-about-us') ?></a>
 			</div>

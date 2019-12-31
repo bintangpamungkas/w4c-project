@@ -25,6 +25,7 @@
 				<div class="col-md-6 col-12">
 					<div class="<?=$this->agent->is_mobile()?'bg-white g-mx-10 g-px-10':''?>" style="<?=$this->agent->is_mobile()?'margin-top:-50px':''?>">
 						<br>
+      
 						<h5 class="g-color-black-opacity-0_7 <?= $this->agent->is_mobile() ? 'g-font-size-15' : 'g-font-size-20' ?>"><?=$service->service_subcategory_name?></h5>
 						<h3 class="g-color-w4c-blue-v1 g-font-weight-700 <?= $this->agent->is_mobile() ? 'g-font-size-30' : 'g-font-size-40' ?> mb-4 g-font-asap" style="line-height: 1.2"><?= $service->service_name ?></h3>
 						<div class="row">
