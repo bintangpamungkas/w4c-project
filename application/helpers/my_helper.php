@@ -17,7 +17,8 @@
 		$database = $ci->db->get('dictionary')->row();
 		if (empty($database)) {
 			if (empty(lang($slug))) {
-				return 'Lorem Ipsum...';
+        return $slug;
+//        return 'Lorem Ipsum...';
 			} else {
 				return lang($slug);
 			}
