@@ -42,7 +42,7 @@
 													<img src="<?=get_image(DIR_ICON.'refresh.png')?>" alt="" style="max-width: 20px">
 												</div>
 												<div class="col" style="color:#6C6C6C">
-													Average of Waste Collected
+													<?=get_lang('average-of-waste-collected')?>
 													<br>
                           <?php $waste_collected=explode(' ',$porto->photofolio_waste_collected) ?>
 													<strong><?= view_number($waste_collected[0]).' '.get_lang($waste_collected[1])?></strong>
@@ -57,7 +57,7 @@
 														<img src="<?=get_image(DIR_ICON.'check-circle-o.png')?>" alt="" style="max-width: 20px">
 													</div>
 													<div class="col" style="color:#6C6C6C">
-														MOU Sighned
+                            <?=get_lang('mou-signed')?>
 														<br>
 														<strong><?= date("Y",strtotime($porto->photofolio_mou)) ?></strong>
 													</div>
@@ -94,34 +94,71 @@
 												</div>
 												<?php
 											};
-											if (!empty($porto->photofolio_start)) {
-												?>
-												<div class="row no-gutters g-line-height-1_3 g-mt-10">
-													<div class="col-auto g-mr-10">
-														<img src="<?=get_image(DIR_ICON.'calendar.png')?>" alt="" style="max-width: 20px">
-													</div>
-													<div class="col" style="color:#6C6C6C">
-														Period Start
-														<br>
-														<strong><?= $porto->photofolio_start ?></strong>
-													</div>
-												</div>
-												<?php
-											};
-											if (!empty($porto->photofolio_end)) {
-												?>
-												<div class="row no-gutters g-line-height-1_3 g-mt-10">
-													<div class="col-auto g-mr-10">
-														<img src="<?=get_image(DIR_ICON.'calendar.png')?>" alt="" style="max-width: 20px">
-													</div>
-													<div class="col" style="color:#6C6C6C">
-														Period End
-														<br>
-														<strong><?= $porto->photofolio_end ?></strong>
-													</div>
-												</div>
-												<?php
-											};
+											if (!empty($porto->photofolio_start) && !empty($porto->photofolio_end)){
+                        ?>
+                        <div class = "row no-gutters g-line-height-1_3 g-mt-10">
+                          <div class = "col-auto g-mr-10">
+                            <img src = "<?= get_image(DIR_ICON . 'calendar.png') ?>" alt = "" style = "max-width: 20px">
+                          </div>
+                          <div class = "col" style = "color:#6C6C6C">
+                            Period
+                            <br>
+                            <?php
+                            $start_day=date('d',strtotime($porto->photofolio_start));
+                            $start_month=date('M',strtotime($porto->photofolio_start));
+                            $start_year=date('Y',strtotime($porto->photofolio_start));
+                            $end_day=date('d',strtotime($porto->photofolio_end));
+                            $end_month=date('M',strtotime($porto->photofolio_end));
+                            $end_year=date('Y',strtotime($porto->photofolio_end));
+                           if ($start_year==$start_year){
+                             if ($start_month==$end_month){
+                               ?>
+                               <strong><?= date("d", strtotime($porto->photofolio_start)) ?> - <?= date("d F Y", strtotime($porto->photofolio_end)) ?></strong>
+                               <?php
+                             }else{
+                               ?>
+                               <strong><?= date("d F", strtotime($porto->photofolio_start)) ?> - <?= date("d F Y", strtotime($porto->photofolio_end)) ?></strong>
+                               <?php
+                             }
+                            }else{
+                             ?>
+                             <strong><?= date("d F Y", strtotime($porto->photofolio_start)) ?> - <?= date("d F Y", strtotime($porto->photofolio_end)) ?></strong>
+                             <?php
+                            }
+                            ?>
+                          </div>
+                        </div>
+                        <?php
+                      }else {
+                        if (!empty($porto->photofolio_start)) {
+                          ?>
+                          <div class = "row no-gutters g-line-height-1_3 g-mt-10">
+                            <div class = "col-auto g-mr-10">
+                              <img src = "<?= get_image(DIR_ICON . 'calendar.png') ?>" alt = "" style = "max-width: 20px">
+                            </div>
+                            <div class = "col" style = "color:#6C6C6C">
+                              Period Start
+                              <br>
+                              <strong><?= date("d M Y", strtotime($porto->photofolio_start)) ?></strong>
+                            </div>
+                          </div>
+                          <?php
+                        }
+                      }
+                    if (!empty($porto->photofolio_audience)) {
+                      ?>
+                      <div class="row no-gutters g-line-height-1_3 g-mt-10">
+                        <div class="col-auto g-mr-10">
+                          <img src="<?=get_image(DIR_ICON.'calendar.png')?>" alt="" style="max-width: 20px">
+                        </div>
+                        <div class="col" style="color:#6C6C6C">
+                          <?=get_lang('estimated-number-of-participants')?>
+                          <br>
+                          <strong><?= get_lang('approximately').' '.$porto->photofolio_audience.' '.get_lang('people') ?></strong>
+                        </div>
+                      </div>
+                      <?php
+                    };
 										?>
 									</div>
 								</div>

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1e4089d-7ce0-4efd-b1a1-4f155ef0c38b" name="Default" comment="[Debug] expertise and experience  wrong layout">
+    <list default="true" id="f1e4089d-7ce0-4efd-b1a1-4f155ef0c38b" name="Default" comment="[Update] home counter">
+      <change afterPath="$PROJECT_DIR$/database/._20191230.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/20191230.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/expertise-and-experience.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/expertise-and-experience.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/our-achievement.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/our-achievement.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/sites/sections/counter.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/sites/sections/counter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/components/hs.counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/components/hs.counter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/services/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/sites/sections/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/sites/sections/services.php" afterDir="false" />
     </list>
     <list id="3fe8424b-0f9f-4856-9b33-0ec74474d387" name="[Update] Waste Flow title when has rdf technology in flow" comment="">
       <change beforePath="$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php" afterDir="false" />
@@ -26,6 +27,16 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/application/views/services/details/sections/photofolio-highlight.php">
+      <ranges>
+        <range start1="9" end1="10" start2="9" end2="10" changelist="3fe8424b-0f9f-4856-9b33-0ec74474d387" />
+        <range start1="44" end1="45" start2="44" end2="45" changelist="f1e4089d-7ce0-4efd-b1a1-4f155ef0c38b" />
+        <range start1="59" end1="60" start2="59" end2="60" changelist="f1e4089d-7ce0-4efd-b1a1-4f155ef0c38b" />
+        <range start1="96" end1="124" start2="96" end2="161" changelist="f1e4089d-7ce0-4efd-b1a1-4f155ef0c38b" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectId" id="1VEOZ65bpizFsVTUdhHgxsIe5J3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -216,14 +227,7 @@
       <workItem from="1577182965146" duration="4459000" />
       <workItem from="1577194064758" duration="8797000" />
       <workItem from="1577692798344" duration="889000" />
-      <workItem from="1577695809380" duration="8525000" />
-    </task>
-    <task id="LOCAL-00001" summary="[Update] Image Service thumbnail&#10;&#10;[Debug] get_image() check image not working">
-      <created>1574577726705</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1574577726705</updated>
+      <workItem from="1577695809380" duration="12653000" />
     </task>
     <task id="LOCAL-00002" summary="[Update] Multi language navigation">
       <created>1574578420824</created>
@@ -561,7 +565,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577766038448</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="[Update] home counter">
+      <created>1577786328148</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1577786328171</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -593,7 +604,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[Add] Home search service by location" />
     <MESSAGE value="[Update] Copywriting lang-&gt;get_lang in home page" />
     <MESSAGE value="[Update] Footer" />
     <MESSAGE value="[Update] Name Section base on database" />
@@ -618,13 +628,14 @@
     <MESSAGE value="[Debug] Portfolio not yet translate copywriting" />
     <MESSAGE value="[Update] Waste Flow title when has rdf technology in flow" />
     <MESSAGE value="[Debug] expertise and experience  wrong layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Debug] expertise and experience  wrong layout" />
+    <MESSAGE value="[Update] home counter" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Update] home counter" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="248" y="23" width="1032" height="709" key="CommitChangelistDialog2" timestamp="1577766034721">
+    <state x="248" y="23" width="1032" height="709" key="CommitChangelistDialog2" timestamp="1577786344191">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="248" y="23" width="1032" height="709" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1577766034721" />
+    <state x="248" y="23" width="1032" height="709" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1577786344191" />
     <state x="849" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577204017418" />
     <state x="1062" y="260" key="RollbackChangesDialog" timestamp="1576864619490">
       <screen x="0" y="0" width="1920" height="1040" />

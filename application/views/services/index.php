@@ -116,7 +116,7 @@
 							
 						} else { //desktop view
 							?>
-							<div class="bg-white g-my-20 box-shadow-down">
+							<div id="asd<?=$i?>" class="bg-white g-my-20 box-shadow-down">
 								<div class="g-pa-40">
 									<div class="row">
 										<?php if ($i % 2 == 1) { ?>
@@ -178,8 +178,8 @@
 							<?php
 						} // End desktop view
 						$service_id = $service->service_id;
-					} // end if ($service->service_id!=$service)
-					$i++;
+            $i++;
+          } // end if ($service->service_id!=$service)
 				} // End foreach ($services as $service)
 			?>
 		</div>
