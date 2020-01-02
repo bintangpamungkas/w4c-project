@@ -4,9 +4,9 @@
   <div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center" style="height: 100%;background: url(<?= $this->agent->is_mobile() ? base_url('assets/img/service/'.$service_id.'/bg/header.jpg') : base_url('assets/img/service/'.$service_id.'/bg/header.jpg') ?>);background-size: cover;<?= $this->agent->is_mobile() ? 'background-position-x: right;' : '' ?>"></div>
   <div class="full-height-block pending-show animated d-zap" style="background-image: linear-gradient(<?= $this->agent->is_mobile() ? '190deg' : '100deg' ?>, rgb(256, 256, 256) 40%, rgba(256, 256, 256, <?= $this->agent->is_mobile() ? '0.85' : '0.85' ?>) 70%, rgba(256, 256, 256, <?= $this->agent->is_mobile() ? '0' : '0' ?>) 100%);">
     <div class="container">
-      <div class="row content-middle-fullscreen width-header <?= $this->agent->is_mobile() ? 'justify-content-center text-center' : '' ?>">
-        <?php if (!$this->agent->is_mobile()): ?>
-          <div class="col-12 g-mb-100">
+	    <div class="row content-middle-fullscreen width-header <?= $this->agent->is_mobile() ? 'justify-content-center text-center' : '' ?>">
+		    <?php if (!$this->agent->is_mobile()): ?>
+			    <div class="col-12 g-mb-20 g-mt-40">
             <?php foreach ($breadcrumb as $bread): ?>
               <?php if ($bread['active']!=true): ?>
                 <a class="g-color-black g-text-transform-none" href="<?=site_url($bread['url'])?>">
