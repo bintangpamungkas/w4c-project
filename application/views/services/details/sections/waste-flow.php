@@ -22,7 +22,7 @@ foreach ($flows as $flow) {
 				<?php else: ?>
 					<h2 class="g-font-asap g-color-black g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= $section_name ?></h2>
 					<hr class="g-width-70 g-mt-20 g-mb-0 g-brd-2 g-brd-blue">
-				<div class="mt-2 mb-4"> <?=get_lang('residual-waste-treatment-at-the-landfill')?></div>
+					<div class="mt-2 mb-4"> <?= get_lang('residual-waste-treatment-at-the-landfill') ?></div>
 				<?php endif; ?>
 			<?php else: ?>
 				<h2 class="g-font-asap g-color-black g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= get_lang('residual-treatment-using-rdf-technology') ?></h2>
@@ -211,7 +211,7 @@ foreach ($flows as $flow) {
 						<div class="col-md-4">
 							<article class="g-transition-0_3">
 								<div class="g-color-black g-bg-white--hover text-center g-rounded-10 g-transition-0_3 g-px-20 g-py-10" style="padding: 30px 0 0 0!important;">
-									<img class="img-fluid u-block-hover__main--zoom-v1 mb-3" src="<?= base_url(DIR_ICON . 'flow/' . $flow->flow_icon) ?>" alt="Image Description" style="width: 40%">
+									<img class="img-fluid u-block-hover__main--zoom-v1 mb-3 animated zoomIn" src="<?= base_url(DIR_ICON . 'flow/' . $flow->flow_icon) ?>" alt="Image Description" style="width: 40%">
 									<div class="g-pa-15">
 										<h2 class="h5 g-color-black g-font-weight-600 mb-4 g-font-size-15" style="margin-bottom: 5px!important;">
 											<?= $flow->flow_name ?>

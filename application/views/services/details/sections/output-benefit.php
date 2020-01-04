@@ -16,7 +16,7 @@
 									<img src="<?= get_image(DIR_ICON . 'check-circle.png') ?>" alt="" style="<?= $this->agent->is_mobile() ? 'width:23px; margin-right: 13px' : 'width:30px; margin-right: 20px' ?>">
 								</div>
 								<div class="col" style="<?= $this->agent->is_mobile() ? '' : 'margin-top:7px' ?>">
-									<?= $benefit->benefit_name ?>
+									<?= ucfirst($benefit->benefit_name) ?>
 								</div>
 							</div>
 						</div>
