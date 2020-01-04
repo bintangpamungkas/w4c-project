@@ -74,7 +74,7 @@
 										<a title="Share Story" target="_blank" class="float-right g-brd-0 g-color-white--hover g-bg-linkedin--hover u-icon-v2 g-rounded-50x g-bg-info" href="#" style=" height: 30px; width: 30px;">
 											<i class="fa fa-share-alt g-color-white g-font-size-10"></i>
 										</a>
-										<a target="_blank" href="<?= $blog['blog_url'] ?>" class="g-bg-white g-color-info g-color-blue--hover g-mr-10 g-mb-15 g-font-weight-700 text-uppercase" style="">Read More <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
+										<a target="_blank" href="<?= $blog['blog_url'] ?>" class="g-bg-white g-color-info g-color-blue--hover g-mr-10 g-mb-15 g-font-weight-700 text-uppercase g-text-underline--none--hover" style="">Read More <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
 									</div>
 								</article>
 							</div>
@@ -119,7 +119,7 @@
 										<a title="Share Story" target="_blank" class="float-right g-brd-0 g-color-white--hover g-bg-linkedin--hover u-icon-v2 g-rounded-50x g-bg-info" href="#" style=" height: 30px; width: 30px; background-color:#117a8b">
 											<i class="fa fa-share-alt g-color-white g-font-size-10"></i>
 										</a>
-										<a target="_blank" href="<?= $blog['blog_url'] ?>" class="g-bg-white g-color-info g-color-blue--hover g-mr-10 g-mb-15 g-font-weight-700 text-uppercase" style="color:#117a8b"><?= get_lang('read-more') ?> <i class="fa fa-angle-right g-ml-20 g-font-weight-900" ></i> </a>
+										<a target="_blank" href="<?= $blog['blog_url'] ?>" class="g-bg-white g-color-info g-color-blue--hover g-mr-10 g-mb-15 g-font-weight-700 text-uppercase g-text-underline--none--hover" style="color:#117a8b"><?= get_lang('read-more') ?> <i class="fa fa-angle-right g-ml-20 g-font-weight-900" ></i> </a>
 
 									</div>
 								</article>
