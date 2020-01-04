@@ -65,7 +65,7 @@
 		function service_list_by_coverage($lang, $city_name = null, $target_id = null,$is_new=null)
 		{
 //			$this->db->select('*');
-			$this->db->select(['service.service_id', 'service.service_slug','service_coverage.city_name','service.service_page_url','service.service_thumbnail_image','service.has_page']);
+			$this->db->select(['service.service_id', 'service.service_slug','service_coverage.service_coverage_city','service.service_page_url','service.service_thumbnail_image','service.has_page']);
 			$this->db->select('(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service.service_name AND dictionary.language_code="' . $lang . '" limit 1) as service_name');
 			$this->db->select('(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service.service_description AND dictionary.language_code="' . $lang . '" limit 1) as service_description');
 			$this->db->select('(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service_category.service_category_name AND dictionary.language_code="' . $lang . '" limit 1) as service_category_name');
@@ -78,7 +78,7 @@
 				$this->db->like('service.is_new', 1);
 			}
 			if ($city_name != null) {
-				$this->db->like('service_coverage.city_name', $city_name);
+				$this->db->like('service_coverage.service_coverage_city', $city_name);
 			}
 			if ($target_id != null) {
 				$this->db->where('service_category.service_target_id', $target_id);
@@ -87,8 +87,8 @@
 		}
 		
 		function unique_coverage_city(){
-			$this->db->select(['city_name']);
-			$this->db->group_by("city_name");
+			$this->db->select(['service_coverage_city']);
+			$this->db->group_by('service_coverage_city');
 //			$this->db->distinct('city_name');
 			$this->db->from('service_coverage');
 			return $this->db->get()->result();

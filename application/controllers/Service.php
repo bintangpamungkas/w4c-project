@@ -128,7 +128,7 @@
 					$data['recommendations'] = $this->crud_model->select('service_recomendation', QUERY_RESULT, ['recomendation_icon', 'recomendation_color', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=recomendation_name AND language_code="' . $lang . '" limit 1) as recomendation_name'], ['service_recomendation.service_id' => $service->service_id, 'service_recomendation.deleted_at' => null], ['service_recomendation' => ['recomendation' => 'recomendation_id']]);
 				}
 				if ($section->section_slug == 'our-coverage') {
-				
+					$data['coverages'] = $this->crud_model->select('service_coverage', QUERY_RESULT, ['service_coverage_city', 'service_coverage_coordinate','service_coverage_area'], ['service_coverage.service_id' => $service->service_id, 'service_coverage.deleted_at' => null]);
 				}
 			}
 			
