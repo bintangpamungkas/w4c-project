@@ -115,8 +115,8 @@
 				if ($section->section_slug == 'program-highlight' || $section->section_slug == 'research-highlight') {
 					$data['projects'] = $this->crud_model->select('service', QUERY_RESULT, ['service_slug', 'service_thumbnail_image', 'service_subcategory_name'], ['service_parent_id' => $service->service_id, 'deleted_at' => null]);
 				}
-				if ($section->section_slug == 'photofolio-highlight') {
-					$data['photofolios'] = $this->crud_model->select('photofolio', QUERY_RESULT, '', ['service_id' => $service->service_id, 'deleted_at' => null]);
+				if ($section->section_slug == 'portfolio-highlight') {
+					$data['portfolios'] = $this->crud_model->select('portfolio', QUERY_RESULT, '', ['service_id' => $service->service_id, 'deleted_at' => null]);
 				}
 				if ($section->section_slug == 'similar-project') {
 					$data['projects'] = $this->crud_model->select('service', QUERY_RESULT, ['service_slug', 'service_thumbnail_image', 'service_subcategory_name'], ['service_parent_id' => $service->service_parent_id, 'deleted_at' => null]);
@@ -207,8 +207,8 @@
 				if ($section->section_slug == 'program-highlight' || $section->section_slug == 'research-highlight') {
 					$data['projects'] = $this->crud_model->select('service', QUERY_RESULT, ['service_slug', 'service_thumbnail_image', 'service_subcategory_name'], ['service_parent_id' => $service->service_id, 'deleted_at' => null]);
 				}
-				if ($section->section_slug == 'photofolio-highlight') {
-					$data['photofolios'] = $this->crud_model->select('photofolio', QUERY_RESULT, '', ['service_id' => $service->service_id, 'deleted_at' => null]);
+				if ($section->section_slug == 'portfolio-highlight') {
+					$data['portfolios'] = $this->crud_model->select('portfolio', QUERY_RESULT, '', ['service_id' => $service->service_id, 'deleted_at' => null]);
 				}
 				if ($section->section_slug == 'similar-project') {
 					$data['projects'] = $this->crud_model->select('service', QUERY_RESULT, ['service_slug', 'service_thumbnail_image', 'service_subcategory_name'], ['service_parent_id' => $service->service_parent_id, 'deleted_at' => null]);

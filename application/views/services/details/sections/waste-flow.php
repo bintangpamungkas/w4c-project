@@ -1,3 +1,15 @@
+<?php
+$temp_flow_category = '';
+foreach ($flows as $flow) {
+  if ($temp_flow_category != $flow->flow_category) {
+    $temp_flow_category = $flow->flow_category;
+    $flow_category[] = $flow->flow_category;
+  }
+  if ($flow->flow_name == 'Residue co-processing with RDF technology' || $flow->flow_name == 'Pengolahan residu dengan teknologi RDF') {
+    $rdf = true;
+  }
+}
+?>
 <!-- Mockup Block -->
 <section class = "g-bg-white <?= $this->agent->is_mobile() ? 'g-pt-80 g-pb-50' : 'g-py-140' ?>">
   <div id = "<?= $section_slug ?>" style = "height: 10px;position: absolute;width: 80%;margin-top: -100px"></div>
