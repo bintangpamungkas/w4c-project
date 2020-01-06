@@ -8,7 +8,7 @@
           <?php foreach ($service_targets as $target): ?>
             <div class = "col-6 g-px-0 g-font-weight-700 <?= $target->service_target_id == 1 ? '' : ' tab-shadow' ?> my_tab <?= $target->service_target_id == 1 ? 'tab-active' : '' ?>" data-tab = "#tab-<?= $target->service_target_id ?>">
               <div class = "my_tab_line"></div>
-              <a class = "my_tab_item g-cursor-pointer nav-link my_tab g-py-20 g-font-weight-300 g-font-size-12 g-px-20 text-center">
+              <a class = "my_tab_item g-cursor-pointer nav-link my_tab g-py-20 g-font-weight-300 g-font-size-12 g-px-20 text-center text-uppercase">
                 <img class = "my_tab_icon" src = "<?= get_image(DIR_ICON . $target->service_target_icon) ?>" alt = "" style = "max-width: 80px; max-height: 80px;display:inline-block;">
                 <br>
                 <?= $target->service_target_name ?>
@@ -19,7 +19,7 @@
           <?php foreach ($service_targets as $target): ?>
             <div class = "col-auto g-px-0 g-font-weight-700 <?= $target->service_target_id == 1 ? '' : ' tab-shadow' ?> my_tab <?= $target->service_target_id == 1 ? 'tab-active' : '' ?>" data-tab = "#tab-<?= $target->service_target_id ?>">
               <div class = "my_tab_line"></div>
-              <a class = "my_tab_item g-cursor-pointer nav-link my_tab  g-py-20 g-font-weight-300 g-font-size-20 g-px-45">
+              <a class = "my_tab_item g-cursor-pointer nav-link my_tab  g-py-20 g-font-weight-300 g-font-size-20 g-px-45 text-uppercase">
                 <img class = "my_tab_icon" src = "<?= get_image(DIR_ICON . $target->service_target_icon) ?>" alt = "" style = "max-width: 35px; max-height: 35px">
                 <?= $target->service_target_name ?>
               </a>
