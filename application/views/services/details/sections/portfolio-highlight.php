@@ -32,137 +32,140 @@
 								</div>
 							<?php endif; ?>
 							<div class="col-<?= $this->agent->is_mobile() ? '12' : '6' ?> g-pa-30">
-								<img class="g-mb-15" src="<?= get_image(DIR_SERVICE . $service_id . '/portfolio/' . $porto->portfolio_client_logo) ?>" alt="<?= $porto->portfolio_client ?>" style="max-height: 50px; max-width: 80px;margin-bottom: 5px;">
-								<div class="g-font-weight-600 g-font-size-20 g-line-height-1_1 g-mb-5"><?= $porto->portfolio_client ?></div>
-								<div class="g-font-size-12 g-line-height-1_1" style="color:#AFAFAF"><?= limit_word($porto->portfolio_client_address, 3, ",") ?></div>
-								<div class="g-mt-30 g-font-size-13">
-									<?php
-									if (!empty($porto->portfolio_duration)) {
+								<div class="portfolio-detail">
+									<img class="g-mb-15" src="<?= get_image(DIR_SERVICE . $service_id . '/portfolio/' . $porto->portfolio_client_logo) ?>" alt="<?= $porto->portfolio_client ?>" style="max-height: 50px; max-width: 80px;margin-bottom: 5px;">
+									<div class="g-font-weight-600 g-font-size-20 g-line-height-1_1 g-mb-5"><?= $porto->portfolio_client ?></div>
+									<div class="g-font-size-12 g-line-height-1_1" style="color:#AFAFAF"><?= limit_word($porto->portfolio_client_address, 3, ",") ?></div>
+									<div class="g-mt-30 g-font-size-13">
+										<?php
+										if (!empty($porto->portfolio_duration)) {
+											?>
+											<div class="row no-gutters g-line-height-1_3 g-mt-10">
+												<div class="col-auto g-mr-10">
+													<img src="<?= get_image(DIR_ICON . 'check-circle-o.png') ?>" alt="" style="max-width: 20px">
+												</div>
+												<div class="col" style="color:#6C6C6C">
+													<?= get_lang('program-duration') ?>
+													<br>
+													<?php $portfolio_duration = explode(' ', $porto->portfolio_duration) ?>
+													<strong><?= empty($portfolio_duration[1]) ? get_lang($portfolio_duration[0]) : view_number($portfolio_duration[0]) . ' ' . get_lang($portfolio_duration[1]) ?></strong>
+												</div>
+											</div>
+											<?php
+										}
+										if (!empty($porto->portfolio_mou)) {
+											?>
+											<div class="row no-gutters g-line-height-1_3 g-mt-10">
+												<div class="col-auto g-mr-10">
+													<img src="<?= get_image(DIR_ICON . 'check-circle-o.png') ?>" alt="" style="max-width: 20px">
+												</div>
+												<div class="col" style="color:#6C6C6C">
+													<?= get_lang('mou-signed') ?>
+													<br>
+													<strong><?= date("Y", strtotime($porto->portfolio_mou)) ?></strong>
+												</div>
+											</div>
+											<?php
+										}
+										if (!empty($porto->portfolio_city_count)) {
+											?>
+											<div class="row no-gutters g-line-height-1_3 g-mt-10">
+												<div class="col-auto g-mr-10">
+													<img src="<?= get_image(DIR_ICON . 'check-circle-o.png') ?>" alt="" style="max-width: 20px">
+												</div>
+												<div class="col" style="color:#6C6C6C">
+													<?= get_lang('cities') ?>
+													<br>
+													<strong><?= get_lang($porto->portfolio_city_count) ?></strong>
+												</div>
+											</div>
+											<?php
+										}
+										if (!empty($porto->portfolio_agent_involve)) {
+											?>
+											<div class="row no-gutters g-line-height-1_3 g-mt-10">
+												<div class="col-auto g-mr-10">
+													<img src="<?= get_image(DIR_ICON . 'check-circle-o.png') ?>" alt="" style="max-width: 20px">
+												</div>
+												<div class="col" style="color:#6C6C6C">
+													<?= get_lang('number-of-waste-recycling-agents-involved') ?>
+													<br>
+													<strong><?= get_lang($porto->portfolio_agent_involve) ?></strong>
+												</div>
+											</div>
+											<?php
+										}
+										if (!empty($porto->portfolio_collection_schedulle)) {
+											?>
+											<div class="row no-gutters g-line-height-1_3 g-mt-10">
+												<div class="col-auto g-mr-10">
+													<img src="<?= get_image(DIR_ICON . 'refresh-clock.png') ?>" alt="" style="max-width: 20px">
+												</div>
+												<div class="col" style="color:#6C6C6C">
+													<?= get_lang('collection-schedule'); ?>
+													<br>
+													<?php $collection_schedulle = explode(' ', $porto->portfolio_collection_schedulle) ?>
+													<strong><?= empty($collection_schedulle[1]) ? get_lang($collection_schedulle[0]) : view_number($collection_schedulle[0]) . ' ' . get_lang($collection_schedulle[1]) ?></strong>
+												</div>
+											</div>
+											<?php
+										}
+										
+										if (!empty($porto->portfolio_waste_collected)) { ?>
+											<div class="row no-gutters g-line-height-1_3 g-mt-10">
+												<div class="col-auto g-mr-10">
+													<img src="<?= get_image(DIR_ICON . 'refresh.png') ?>" alt="" style="max-width: 20px">
+												</div>
+												<div class="col" style="color:#6C6C6C">
+													<?= get_lang('average-of-waste-collected') ?>
+													<br>
+													<?php $waste_collected = explode(' ', $porto->portfolio_waste_collected) ?>
+													<strong><?= view_number($waste_collected[0]) . ' ' . get_lang($waste_collected[1]) ?></strong>
+												</div>
+											</div>
+											<?php
+										}
+										if (!empty($porto->portfolio_start)) {
+											?>
+											<div class="row no-gutters g-line-height-1_3 g-mt-10">
+												<div class="col-auto g-mr-10">
+													<img src="<?= get_image(DIR_ICON . 'calendar.png') ?>" alt="" style="max-width: 20px">
+												</div>
+												<div class="col" style="color:#6C6C6C">
+													<?= get_lang('event-date') ?>
+													<br>
+													<strong><?= view_range_date($porto->portfolio_start, $porto->portfolio_end) ?></strong>
+												</div>
+											</div>
+											<?php
+										}
+										
+										if (!empty($porto->portfolio_audience)) {
+											?>
+											<div class="row no-gutters g-line-height-1_3 g-mt-10">
+												<div class="col-auto g-mr-10">
+													<img src="<?= get_image(DIR_ICON . 'calendar.png') ?>" alt="" style="max-width: 20px">
+												</div>
+												<div class="col" style="color:#6C6C6C">
+													<?= get_lang('estimated-number-of-participants') ?>
+													<br>
+													<strong><?= get_lang('approximately') . ' ' . $porto->portfolio_audience . ' ' . get_lang('people') ?></strong>
+												</div>
+											</div>
+											<?php
+										}
 										?>
-										<div class="row no-gutters g-line-height-1_3 g-mt-10">
-											<div class="col-auto g-mr-10">
-												<img src="<?= get_image(DIR_ICON . 'check-circle-o.png') ?>" alt="" style="max-width: 20px">
-											</div>
-											<div class="col" style="color:#6C6C6C">
-												<?= get_lang('program-duration') ?>
-												<br>
-												<?php $portfolio_duration = explode(' ', $porto->portfolio_duration) ?>
-												<strong><?= empty($portfolio_duration[1]) ? get_lang($portfolio_duration[0]) : view_number($portfolio_duration[0]) . ' ' . get_lang($portfolio_duration[1]) ?></strong>
-											</div>
-										</div>
-										<?php
-									}
-									if (!empty($porto->portfolio_mou)) {
-										?>
-										<div class="row no-gutters g-line-height-1_3 g-mt-10">
-											<div class="col-auto g-mr-10">
-												<img src="<?= get_image(DIR_ICON . 'check-circle-o.png') ?>" alt="" style="max-width: 20px">
-											</div>
-											<div class="col" style="color:#6C6C6C">
-												<?= get_lang('mou-signed') ?>
-												<br>
-												<strong><?= date("Y", strtotime($porto->portfolio_mou)) ?></strong>
-											</div>
-										</div>
-										<?php
-									}
-									if (!empty($porto->portfolio_city_count)) {
-										?>
-										<div class="row no-gutters g-line-height-1_3 g-mt-10">
-											<div class="col-auto g-mr-10">
-												<img src="<?= get_image(DIR_ICON . 'check-circle-o.png') ?>" alt="" style="max-width: 20px">
-											</div>
-											<div class="col" style="color:#6C6C6C">
-												<?= get_lang('cities') ?>
-												<br>
-												<strong><?= get_lang($porto->portfolio_city_count) ?></strong>
-											</div>
-										</div>
-										<?php
-									}
-									if (!empty($porto->portfolio_agent_involve)) {
-										?>
-										<div class="row no-gutters g-line-height-1_3 g-mt-10">
-											<div class="col-auto g-mr-10">
-												<img src="<?= get_image(DIR_ICON . 'check-circle-o.png') ?>" alt="" style="max-width: 20px">
-											</div>
-											<div class="col" style="color:#6C6C6C">
-												<?= get_lang('number-of-waste-recycling-agents-involved') ?>
-												<br>
-												<strong><?= get_lang($porto->portfolio_agent_involve) ?></strong>
-											</div>
-										</div>
-										<?php
-									}
-									if (!empty($porto->portfolio_collection_schedulle)) {
-										?>
-										<div class="row no-gutters g-line-height-1_3 g-mt-10">
-											<div class="col-auto g-mr-10">
-												<img src="<?= get_image(DIR_ICON . 'refresh-clock.png') ?>" alt="" style="max-width: 20px">
-											</div>
-											<div class="col" style="color:#6C6C6C">
-												<?= get_lang('collection-schedule'); ?>
-												<br>
-												<?php $collection_schedulle = explode(' ', $porto->portfolio_collection_schedulle) ?>
-												<strong><?= empty($collection_schedulle[1]) ? get_lang($collection_schedulle[0]) : view_number($collection_schedulle[0]) . ' ' . get_lang($collection_schedulle[1]) ?></strong>
-											</div>
-										</div>
-										<?php
-									}
-									
-									if (!empty($porto->portfolio_waste_collected)) { ?>
-										<div class="row no-gutters g-line-height-1_3 g-mt-10">
-											<div class="col-auto g-mr-10">
-												<img src="<?= get_image(DIR_ICON . 'refresh.png') ?>" alt="" style="max-width: 20px">
-											</div>
-											<div class="col" style="color:#6C6C6C">
-												<?= get_lang('average-of-waste-collected') ?>
-												<br>
-												<?php $waste_collected = explode(' ', $porto->portfolio_waste_collected) ?>
-												<strong><?= view_number($waste_collected[0]) . ' ' . get_lang($waste_collected[1]) ?></strong>
-											</div>
-										</div>
-										<?php
-									}
-									if (!empty($porto->portfolio_start)) {
-										?>
-										<div class="row no-gutters g-line-height-1_3 g-mt-10">
-											<div class="col-auto g-mr-10">
-												<img src="<?= get_image(DIR_ICON . 'calendar.png') ?>" alt="" style="max-width: 20px">
-											</div>
-											<div class="col" style="color:#6C6C6C">
-												<?= get_lang('event-date') ?>
-												<br>
-												<strong><?= view_range_date($porto->portfolio_start, $porto->portfolio_end) ?></strong>
-											</div>
-										</div>
-										<?php
-									}
-									
-									if (!empty($porto->portfolio_audience)) {
-										?>
-										<div class="row no-gutters g-line-height-1_3 g-mt-10">
-											<div class="col-auto g-mr-10">
-												<img src="<?= get_image(DIR_ICON . 'calendar.png') ?>" alt="" style="max-width: 20px">
-											</div>
-											<div class="col" style="color:#6C6C6C">
-												<?= get_lang('estimated-number-of-participants') ?>
-												<br>
-												<strong><?= get_lang('approximately') . ' ' . $porto->portfolio_audience . ' ' . get_lang('people') ?></strong>
-											</div>
-										</div>
-										<?php
-									}
-									
-									if (!empty($porto->portfolio_url)) {
+									</div>
+								</div>
+								<?php
+								if (!empty($porto->portfolio_url)) {
 									?>
 									<div class="no-gutters g-line-height-1_3 g-mt-20">
-										<a class="btn btn-outline-info g-font-weight-700 text-uppercase g-rounded-25 g-brd-2" href="<?=get_url($porto->portfolio_url)?>"><?= get_lang('view_project') ?> <i class="fa fa-angle-right g-font-weight-900 g-ml-10"></i></a>
+										<a class="btn btn-outline-info g-font-weight-700 text-uppercase g-rounded-25 g-brd-2" href="<?= get_url($porto->portfolio_url) ?>"><?= get_lang('view_project') ?> <i class="fa fa-angle-right g-font-weight-900 g-ml-10"></i></a>
 									</div>
 									<?php
-									}
-									?>
-								</div>
+								}
+								?>
 							</div>
 							<?php if (!$this->agent->is_mobile()): ?>
 								<div class="col-6">
@@ -217,12 +220,23 @@
 							}
 							?>
             });
-
 				</script>
-				
 				<?php
 			}
 			?>
 		</div>
 	</section>
+	<script>
+      $(window).ready(function () {
+          var detail = $(".portfolio-detail");
+          var tempHeight = 0;
+          jQuery.each(detail, function () {
+              if (tempHeight < $(this).height()) {
+                  tempHeight = $(this).height();
+              }
+          });
+          detail.height(tempHeight);
+      });
+	</script>
+
 <?php endif; ?>
