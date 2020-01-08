@@ -9,7 +9,7 @@
             <div class = "col-6 g-px-0 g-font-weight-700 <?= $target->service_target_id == 1 ? '' : ' tab-shadow' ?> my_tab <?= $target->service_target_id == 1 ? 'tab-active' : '' ?>" data-tab = "#tab-<?= $target->service_target_id ?>">
               <div class = "my_tab_line"></div>
               <a class = "my_tab_item g-cursor-pointer nav-link my_tab g-py-20 g-font-weight-300 g-font-size-12 g-px-20 text-center text-uppercase">
-                <img class = "my_tab_icon" src = "<?= get_image(DIR_ICON . $target->service_target_icon) ?>" alt = "" style = "max-width: 80px; max-height: 80px;display:inline-block;">
+                <img class = "my_tab_icon" src = "<?= get_image(DIR_ICON . $target->service_target_icon) ?>" alt = "" style = "max-width: 7em; max-height: 7em;display:inline-block;">
                 <br>
                 <?= $target->service_target_name ?>
               </a>
@@ -74,9 +74,10 @@
     ?>
     <div class = "">
       <?php
+      $i=1;
       foreach ($service_targets as $target) {
         ?>
-        <div class = "my_tab_content" id = "tab-<?= $target->service_target_id ?>">
+        <div class = "my_tab_content <?=$i>1 ? 'd-none' : ''?>" id = "tab-<?= $target->service_target_id ?>">
           <div class = "animated fadeIn row g-ma-0 g-rounded-7" style = "background-size: cover;background-position: left;background-repeat: no-repeat">
             <div class = "col-md-9 col-12 g-pa-0">
               <div id = "service-<?= $target->service_target_id ?>-carousel" class = "owl-carousel row owl-theme" style = "margin: 0!important;">
@@ -159,22 +160,24 @@
           </div>
         </div>
         <?php
+	      $i++;
       } //End   foreach ($service_targets as $target)
       ?>
       <div class = "g-mx-30">
         <div class = "g-font-weight-700 g-font-size-20 mb-4">
           <?= get_lang('cant-found-the-solution-you-are-looking-for?') ?>
         </div>
-        <a class = "btn btn-info btn-xl btn-block g-brd-2 g-font-size-13 g-rounded-50 g-font-weight-700 g-color-white--active" href = "#"><?= strtoupper(get_lang('all-services')) ?></a>
-        <a class = "btn btn-outline-info btn-xl btn-block g-brd-2 g-font-size-13 g-rounded-50 g-font-weight-700" href = "#"><?= strtoupper(get_lang('talk-to-our-expert')) ?></a>
+        <a class = "btn btn-info btn-xl btn-block g-brd-2 g-font-size-13 g-rounded-50 g-font-weight-700 g-color-white--active" href = "<?=site_url('service')?>"><?= strtoupper(get_lang('all-services')) ?></a>
+        <a class = "btn btn-outline-info btn-xl btn-block g-brd-2 g-font-size-13 g-rounded-50 g-font-weight-700" href = "<?=site_url('contact')?>"><?= strtoupper(get_lang('talk-to-our-expert')) ?></a>
       </div>
     </div>
   </div>
   <?php
   } else { // jika desktop
+    	$i=1;
     foreach ($service_targets as $target) {
       ?>
-      <div class = "my_tab_content g-rounded-7" id = "tab-<?= $target->service_target_id ?>">
+      <div class = "my_tab_content g-rounded-7 <?=$i>1 ? 'd-none' : ''?>" id = "tab-<?= $target->service_target_id ?>">
         <div class = "row">
           <?php
           if (empty($input_city)) {
@@ -221,8 +224,8 @@
                   <div class = "g-font-weight-700 g-font-size-20 mb-4">
                     <?= get_lang('cant-found-the-solution-you-are-looking-for?') ?>
                   </div>
-                  <a class = "btn btn-info btn-xl btn-block g-brd-2 g-font-size-13 g-rounded-50 g-font-weight-700" href = "<?= site_url('service') ?>"><?= strtoupper(get_lang('all-services')) ?></a>
-                  <a class = "btn btn-outline-info btn-xl btn-block g-brd-3 g-font-size-13 g-rounded-50 g-font-weight-700" href = "<?= site_url('contact') ?>"><?= strtoupper(get_lang('talk-to-our-expert')) ?></a>
+                  <a class = "btn btn-info btn-block g-color-white g-font-size-13 g-font-weight-700 g-rounded-50 g-px-30 g-py-10 text-uppercase" href = "<?= site_url('service') ?>"><?= strtoupper(get_lang('all-services')) ?></a>
+                  <a class = "btn btn-outline-info btn-block g-color-white--active g-font-size-13 g-font-weight-700 g-rounded-50 g-px-30 g-py-10 text-uppercase" href = "<?= site_url('contact') ?>"><?= strtoupper(get_lang('talk-to-our-expert')) ?></a>
                 </div>
               </div>
             </div>
@@ -230,6 +233,7 @@
         </div>
       </div>
       <?php
+	    $i++;
     }; //End foreach services_target
   }; //End jika desktop
   ?>
@@ -347,7 +351,7 @@
   /*An array containing all the country names in the world:*/
   var countries = [
     <?php foreach ($coverage_cities as $city) {
-    echo '"' . $city->city_name . '",';
+    echo '"' . $city->service_coverage_city . '",';
   }
     ?>
 

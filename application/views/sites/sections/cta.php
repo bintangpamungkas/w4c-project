@@ -7,19 +7,9 @@
 				<div class="row justify-content-center">
 					<div class="col-10 pt-5">
 						<div class="row justify-content-center">
-							<div class="col-md-6 d-none">
-								<input
-									class="form-control u-shadow-v19 g-brd-none g-bg-white g-font-size-16 g-rounded-30 g-px-30 g-py-13 g-mb-30"
-									type="text" placeholder="Your Email Address ... ">
-							</div>
 							<div class="col-md-3 col-12 g-mb-15">
-								<a class="btn btn-block btn-info g-color-white g-font-size-13 g-rounded-50 g-pl-20 g-pr-15 g-py-9" href="<?= site_url('join') ?>">
+								<a class="btn btn-block btn-info g-color-white g-font-size-13 g-font-weight-700 g-rounded-50 g-py-10 " href="<?= site_url('join') ?>">
 									<?= strtoupper(get_lang("get-started")) ?>
-								</a>
-							</div>
-							<div class="col-md-3 col-12 d-none">
-								<a target="_blank" class="btn u-btn-outline-black btn-block g-brd-2 g-font-size-13 g-rounded-50 g-pl-20 g-pr-15 g-py-9 text-uppercase" href="https://search.google.com/local/writereview?placeid=ChIJgbaAgSGSaS4RMsOJnkymZcw">
-									<?= get_lang('get-started') ?>
 								</a>
 							</div>
 						</div>

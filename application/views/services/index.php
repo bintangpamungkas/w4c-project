@@ -3,9 +3,9 @@
 	<div style="background:radial-gradient(circle farthest-side at 80% 60%, rgba(66,195,120,0.67), rgba(14,105,148,0.92))">
 		<div class="container g-pt-100 g-pb-120">
 			<br>
-			<div class="row no-gutters g-font-size-<?= $this->agent->is_mobile() ? '25' : '35' ?> g-color-white g-font-weight-600 mb-0 g-line-height-1_2">
-				<div class="col-12 g-font-size-20 g-letter-spacing-5  text-uppercase g-mb-20"> <?= lang('services_all_services') ?> </div>
-				<div class="col-4  g-line-height-1_1"> <?= lang('services_all_choose_the_right_solution') ?> </div>
+			<div class="row no-gutters g-font-size-<?= $this->agent->is_mobile() ? '25' : '35' ?> g-color-white mb-0 g-line-height-1_2">
+				<div class="col-12 g-font-size-23 g-letter-spacing-2 g-font-weight-600 text-uppercase g-mb-20"> <?= lang('services_all_services') ?> </div>
+				<div class="col-<?= $this->agent->is_mobile() ? '12' : '4' ?> g-font-size-30 g-font-weight-900 g-line-height-1_2"> <?= lang('services_all_choose_the_right_solution') ?> </div>
 			</div>
 		</div>
 	</div>
@@ -24,7 +24,7 @@
 								<div class="input-group-prepend">
 									<span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1 g-pa-10 border-right-0" style="border:1px solid #0B90B9;"><i class="fa fa-map-marker"></i></span>
 								</div>
-								<input id="input_city" class="form-control form-control-md border-left-0 rounded-0 g-pa-10 pl-0 border-right-0" type="text" name="city" value="<?= $input_city ?>" style="border:1px solid #0B90B9; border-radius:0px" placeholder="<?= get_lang('enter-location') ?>" autocomplete="off">
+								<input id="input_city" class="form-control form-control-md border-left-0 rounded-0 g-pa-10 pl-0 border-right-0" type="text" name="city" value="<?= $input_city ?>" style="border:1px solid #0B90B9; border-radius:0px" placeholder="<?= get_lang('enter-your-location') ?>" autocomplete="off">
 								<input type="hidden" name="target" value="<?= $service_target ?>">
 								<div class="input-group-btn">
 									<button class="btn btn-info g-py-10 g-px-30 g-letter-spacing-2 border-left-0" type="submit" style="border:1px solid #0B90B9;border-radius:0px"><?= strtoupper(get_lang('search')) ?> </button>
@@ -38,7 +38,7 @@
 			<div class="col-md-7 col-xs-12">
 				<!-- Services target navivation -->
 				<div class="row justify-content-center g-ma-0">
-					<div class="col<?= $this->agent->is_mobile() ? '' : '' ?> text-center g-px-0 tab-shadow">
+					<div class="col<?= $this->agent->is_mobile() ? '' : '' ?> text-center g-px-0 tab-shadow align-self-end">
 						<a class="my_tab_2 g-cursor-pointer nav-link text-uppercase g-font-weight-700 g-font-size-<?= $this->agent->is_mobile() ? '14 g-py-10  g-px-5' : '15 g-py-12 g-px-30' ?> <?= (empty($service_target) || $service_target == 'all') ? 'tab-active' : '' ?> " href="<?= site_url('service?target=all') ?>" style="<?= $this->agent->is_mobile() ? 'min-height: 40px' : 'min-height: 50px' ?> ; color:#aaa">
 							<?= get_lang('all') ?>
 						</a>
@@ -46,7 +46,7 @@
 					<?php
 						foreach ($service_targets as $target):
 							?>
-							<div class="col<?= $this->agent->is_mobile() ? '' : '' ?> text-center g-px-0">
+							<div class="col<?= $this->agent->is_mobile() ? '' : '' ?> text-center g-px-0 align-self-end">
 								<a class="my_tab_2 g-cursor-pointer nav-link text-uppercase g-font-weight-700 g-font-size-<?= $this->agent->is_mobile() ? '14 g-py-10 g-px-5 ' : '15 g-py-12  g-px-20' ?> <?= $service_target == strtolower($target->service_target_slug) ? 'tab-active' : '' ?>" href="<?= site_url('service?target=' . strtolower($target->service_target_slug)) ?>" style="<?= $this->agent->is_mobile() ? 'min-height: 40px' : 'min-height: 50px' ?> ; color:#aaa">
 									<?= $target->service_target_name ?>
 								</a>
@@ -66,7 +66,7 @@
 								<div class="input-group-prepend">
 									<span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1 g-pa-10 border-right-0" style="border:1px solid #0B90B9;"><i class="fa fa-map-marker"></i></span>
 								</div>
-								<input id="input_city" class="form-control form-control-md border-left-0 rounded-0 g-pa-10 pl-0 border-right-0" type="text" name="city" value="<?= $input_city ?>" style="border:1px solid #0B90B9; border-radius:0px" placeholder="<?= get_lang('enter-location') ?>" autocomplete="off">
+								<input id="input_city" class="form-control form-control-md border-left-0 rounded-0 g-pa-10 pl-0 border-right-0" type="text" name="city" value="<?= $input_city ?>" style="border:1px solid #0B90B9; border-radius:0px" placeholder="<?= get_lang('enter-your-location') ?>" autocomplete="off">
 								<input type="hidden" name="target" value="<?= $service_target ?>">
 								<div class="input-group-btn">
 									<button class="btn btn-info g-py-10 g-px-30 g-letter-spacing-2 border-left-0" type="submit" style="border:1px solid #0B90B9;border-radius:0px"><?= strtoupper(get_lang('search')) ?> </button>
@@ -313,7 +313,7 @@
     /*An array containing all the country names in the world:*/
     var countries = [
 			<?php foreach ($coverage_cities as $city) {
-			echo '"' . $city->city_name . '",';
+			echo '"' . $city->service_coverage_city . '",';
 		}
 			?>
 

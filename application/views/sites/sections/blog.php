@@ -19,7 +19,7 @@
 							'blog_image' => 'https://waste4change.com/wp-content/uploads/1920x1080-blog-post-thrift-store-1024x576-580x390.jpg',
 					],
 					[
-							'blog_title' => 'Waste4Change Awarded as The Most Responsible Company by World’s Most Valued Business (MVB) Indonesia',
+							'blog_title' => 'Waste4Change Awarded as The Most Responsible Company by World\'s Most Valued Business (MVB) Indonesia',
 							'blog_category' => 'EVENT & PROGRAM, WASTE4CHANGE STORY',
 							'blog_content' => 'On 8th November 2019, the World\'s Most Valued Business, usually known as MVB Indonesia held an appreciation ceremony in Raffles, Jakarta. The ceremony is held...',
 							'blog_author' => 'MIRIAM BAHAGIJO',
@@ -113,7 +113,7 @@
 											</div>
 										</div>
 										<h3 class="h5 g-mb-15" style="min-height: 80px">
-											<a class="u-link-v5 g-color-gray-dark-v2 g-color-info--hover g-font-weight-700" href="<?= $blog['blog_title'] ?>" style="word-wrap: break-word"><?= $blog['blog_title'] ?></a>
+											<a class="u-link-v5 g-color-gray-dark-v2 g-color-info--hover g-font-weight-700" href="<?= $blog['blog_url'] ?>" style="word-wrap: break-word"><?= $blog['blog_title'] ?></a>
 										</h3>
 										<hr class="g-brd-gray-light-v4 g-mt-40">
 										<a title="Share Story" target="_blank" class="float-right g-brd-0 g-color-white--hover g-bg-linkedin--hover u-icon-v2 g-rounded-50x g-bg-info" href="#" style=" height: 30px; width: 30px; background-color:#117a8b">
@@ -162,7 +162,7 @@
                   console.log('screen : ' + screen_display + 'nav : ' + screen_display * <?= $this->agent->is_mobile() ? '8' : '9' ?>0 / 100 + 'batas : ' + margin_side);
 								<?php
 								if ($this->agent->is_mobile()) {
-									echo "$(elemen  t_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 457px;width: 68%;right: '+margin_side+'px;')";
+									echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 457px;width: 68%;right: '+margin_side+'px;')";
 								} else {
 									echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 200px;width: 99%;right: '+margin_side+'px;')";
 								}
