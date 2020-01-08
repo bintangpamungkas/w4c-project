@@ -63,7 +63,7 @@
 
     <div class="container g-pt-50">
         <!-- Image, Text Block -->
-        <div class="row d-flex justify-content-between flex-wrap g-mt-minus-50--lg">
+        <div class="row d-flex justify-content-between flex-wrap g-mt-minus-50--lg 1 <?= $this->agent->is_mobile() ? 'text-center' : '' ?>">
             <div class="col-md-6 col-lg-7">
                 <div class="g-mb-20">
                     <h2 class="g-color-black g-font-weight-600 g-font-size-25 g-font-size-35--lg g-line-height-1_2 mb-4"><?= lang('about_strategy') ?>

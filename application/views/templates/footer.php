@@ -30,57 +30,49 @@
 					</ul>
 				</div>
 				<?php
-					foreach ($navigation_array as $nav):
-						if (!empty($nav['menu'])):
-							?>
-							<?php foreach ($nav['menu'] as $menu): ?>
-							<div class="col-lg-auto col-md-6 g-mb-40 g-mb-0--lg <?= $this->agent->is_mobile() ? 'text-center' : '' ?>">
-								<div class="u-heading-v2-3 g-mb-20">
-									<h2 class="u-heading-v2__title h6 text-uppercase mb-0 font-weight-bold"><?= $menu->title ?></h2>
-								</div>
-								<ul class="list-unstyled g-ma-0">
-									<?php foreach ($menu->menu as $submenu): ?>
-										<?php foreach ($submenu->menu as $subsubmenu): ?>
-											<li class="g-mb-5">
-												<a class="g-color-white-opacity-0_8" href="<?= site_url($subsubmenu->url) ?>>"><?= $subsubmenu->title ?></a>
-											</li>
-										<?php endforeach; ?>
-									<?php endforeach; ?>
-								</ul>
+				foreach ($navigation_array as $nav):
+					if (!empty($nav['menu'])):
+						?>
+						<?php foreach ($nav['menu'] as $menu): ?>
+						<div class="col-lg-auto col-md-6 g-mb-40 g-mb-0--lg <?= $this->agent->is_mobile() ? 'text-center' : '' ?>">
+							<div class="u-heading-v2-3 g-mb-20">
+								<h2 class="u-heading-v2__title h6 text-uppercase mb-0 font-weight-bold"><?= $menu->title ?></h2>
 							</div>
-						<?php endforeach; //  foreach ($nav['menu'] as $menu)
-							?>
-						<?php
-						endif; //	if (!empty($nav['menu'])):
-					endforeach;
+							<ul class="list-unstyled g-ma-0">
+								<?php foreach ($menu->menu as $submenu): ?>
+									<?php foreach ($submenu->menu as $subsubmenu): ?>
+										<li class="g-mb-5">
+											<a class="g-color-white-opacity-0_8" href="<?= site_url($subsubmenu->url) ?>>"><?= $subsubmenu->title ?></a>
+										</li>
+									<?php endforeach; ?>
+								<?php endforeach; ?>
+							</ul>
+						</div>
+					<?php endforeach; //  foreach ($nav['menu'] as $menu)
+						?>
+					<?php
+					endif; //	if (!empty($nav['menu'])):
+				endforeach;
 				?>
 				<div class="col-lg col-md-6 g-mb-40 g-mb-0--lg <?= $this->agent->is_mobile() ? 'text-center' : '' ?>">
 					<div class="u-heading-v2-3 g-mb-20">
-					<h2 class="u-heading-v2__title h6 text-uppercase mb-0 font-weight-bold"><?= get_lang('connect-with-us') ?></h2>
+						<h2 class="u-heading-v2__title h6 text-uppercase mb-0 font-weight-bold"><?= get_lang('connect-with-us') ?></h2>
 					</div>
 
-					<address class="mb-0">
-						<div class="g-mb-20">
-							<div class="d-flex">
-								<div class="g-mr-10">
-									<i class="icon-real-estate-018 u-line-icon-pro"></i>
-								</div>
-								<p><a class="g-color-white-opacity-0_8" target="_blank" href="https://goo.gl/maps/h16wzCy2htA2"><?= OFFICIAL_ADDRESS ?></a></p>
-							</div>
-							
-							<div class="d-flex">
-								<div class="g-mr-10">
-									<i class="fa fa-phone"></i>
-								</div>
-								<p><?= OFFICIAL_TELEPHONE ?></p>
-							</div>
-							
-							<div class="d-flex">
-								<div class="g-mr-10">
-									<i class="fa fa-envelope"></i>
-								</div>
-								<p><a class="g-color-white-opacity-0_8" href="mailto:<?= OFFICIAL_MAIL ?>"><?= OFFICIAL_MAIL ?></a></p>
-							</div>
+					<address class="mb-5 <?= $this->agent->is_mobile() ? 'text-center' : '' ?>">
+						<div class="g-mb-10">
+<!--							<i class="icon-real-estate-018 u-line-icon-pro g-mr-10"></i>-->
+							<span><a class="g-color-white-opacity-0_8" target="_blank" href="https://goo.gl/maps/h16wzCy2htA2"><?= OFFICIAL_ADDRESS ?></a></span>
+						</div>
+
+						<div class="g-mb-10">
+<!--							<i class="fa fa-phone g-mr-10"></i>-->
+							<span><?= OFFICIAL_TELEPHONE ?></span>
+						</div>
+
+						<div class="g-mb-10">
+<!--							<i class="fa fa-envelope g-mr-10"></i>-->
+							<span><a class="g-color-white-opacity-0_8" href="mailto:<?= OFFICIAL_MAIL ?>"><?= OFFICIAL_MAIL ?></a></span>
 						</div>
 					</address>
 
