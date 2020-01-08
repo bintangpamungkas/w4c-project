@@ -1,7 +1,7 @@
 <section class = "g-bg-secondary">
   <div id = "our_services" style = "height: 200px;position: absolute;width: 80%;margin-top: -80px"></div>
   <!--<div style="background:radial-gradient(circle farthest-side at 80% 60%, rgba(90,219,127,0.67), rgba(22,127,148,0.92))">-->
-  <div style = "position: absolute; bottom: -40px; width: 100%">
+  <div style = "position: absolute; bottom: -100px; width: 100%">
     <div class = "container">
       <div class = "row g-ma-0">
         <?php if ($this->agent->is_mobile()): ?>
@@ -29,7 +29,7 @@
       </div>
     </div>
   </div>
-  <div class = "container <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-25' : 'g-py-70' ?>">
+  <div class = "container <?= $this->agent->is_mobile() ? 'g-pt-150 g-pb-25' : 'g-py-70' ?>">
     <div class = "g-mb-10">
       <h2 class = "g-font-asap g-font-color-w4c-1 mb-2" color><?= get_lang('available-services-for-your-location') ?>:</h2>
       <div class = "row">

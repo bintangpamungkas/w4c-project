@@ -18,8 +18,8 @@
       var locations = [
 				<?php
 				foreach ($coverages as $coverage) {
-					echo '["' . $coverage->service_coverage_city . '",' . $coverage->service_coverage_coordinate . ',[' . $coverage->service_coverage_area . ']],';
-//				echo '["' . $coverage->service_coverage_city . '",' . $coverage->service_coverage_coordinate . '],';
+//					echo '["' . $coverage->service_coverage_city . '",' . $coverage->service_coverage_coordinate . ',[' . $coverage->service_coverage_area . ']],';
+				echo '["' . $coverage->service_coverage_city . '",' . $coverage->service_coverage_coordinate . '],';
 				
 				}
 				?>
@@ -45,22 +45,21 @@
               mapTypeId: google.maps.MapTypeId.ROADMAP
           });
           //Define icon
-          // var myGeocoder = new google.maps.Geocoder;
           var infowindow = new google.maps.InfoWindow();
           var bounds = new google.maps.LatLngBounds();
           var marker, polygon, i;
 
           for (i = 0; i < locations.length; i++) {
               //init polygon
-              polygon = new google.maps.Polygon({
-                  paths: locations[i][3],
-                  strokeColor: '#FF0000',
-                  strokeOpacity: 0.3,
-                  strokeWeight: 1.5,
-                  fillColor: '#FF0000',
-                  fillOpacity: 0.1
-              });
-              polygon.setMap(map);
+              // polygon = new google.maps.Polygon({
+              //     paths: locations[i][3],
+              //     strokeColor: '#FF0000',
+              //     strokeOpacity: 0.3,
+              //     strokeWeight: 1.5,
+              //     fillColor: '#FF0000',
+              //     fillOpacity: 0.1
+              // });
+              // polygon.setMap(map);
 
               //create marter
               marker = new google.maps.Marker({
