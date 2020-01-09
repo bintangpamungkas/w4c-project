@@ -15,7 +15,7 @@
 				<br>
 				<script>
             $(window).ready(function () {
-                $('#gform').css('width', window.innerWidth-window.innerWidth*2*(10/100));
+                // $('#gform').css('width', window.innerWidth-window.innerWidth*2*(10/100));
             })
 				</script>
 				<iframe class="g-bg-gray-light-v4" id="<?= $this->agent->is_mobile() ? 'gform' : '' ?>" style="height: <?= $this->agent->is_mobile() ? '1100px' : '1200px' ?>;width: 100%;border: none" src="<?=$service->service_proposal_url?>?embedded=true">Memuat...</iframe>
