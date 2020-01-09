@@ -99,7 +99,11 @@ $(window).on('load', function () {
     var screen_height=window.innerHeight;
     var set_middle=(screen_height-$('.content-middle-fullscreen').height())/2.5;
     //var set_middle=(screen_height);
-    $('.full-height-block').css({'min-height':screen_height});
+    if  (screen_height<500){
+        $('.full-height-block').css({'min-height':screen_height+50});
+    }else{
+        $('.full-height-block').css({'min-height':screen_height});
+    }
     //$('.full-height').css({'height':screen_height-100});
     $('.full-height').css({'height':screen_height});
     if($('.content-middle-fullscreen').hasClass('with-header')){
