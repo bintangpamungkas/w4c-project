@@ -5,7 +5,7 @@
     <div class="row">
       <div class="col-md-5 col-xs-12">
         <div class="mb-2 <?=$this->agent->is_mobile() ? 'text-center' : ''?>">
-          <span class="g-font-asap g-color-gray-dark-v3 g-font-weight-700 g-font-size-25 text-uppercase"><?=$section_name?></span>
+          <span class="g-font-asap g-color-black-dark-v2 g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-20' : '' ?>"><?=$section_name?></span>
           <?=$this->agent->is_mobile() ? '<hr class="g-width-50 g-my-5 g-brd-2 g-brd-blue">' : '<div class="g-width-30 g-height-2 g-pos-rel g-bg-info g-mt-5"></div>'?>
           <div class="mt-2 mb-4"> <?=get_lang('what_you_get_sub')?> </div>
         </div>

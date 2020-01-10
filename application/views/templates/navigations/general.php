@@ -48,7 +48,7 @@
 																	if (!empty($subsubmenu->has_page)):
 																		?>
 																		<li class="dropdown-item g-pr-0">
-																			<a class="nav-link g-color-black" href="<?= $subsubmenu->has_page == 1 ? HOST . $subsubmenu->url : '#' ?>">
+																			<a class="nav-link g-color-black" href="<?= $subsubmenu->has_page == 1 ? site_url($subsubmenu->url) : '#' ?>">
 																				<?= str_replace($submenu->title . " - ", "", $subsubmenu->title) ?>
 																			</a>
 																		</li>

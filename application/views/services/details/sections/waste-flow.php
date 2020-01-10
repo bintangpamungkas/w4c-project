@@ -17,15 +17,15 @@ foreach ($flows as $flow) {
 		<div class="text-center g-mb-50">
 			<?php if (empty($rdf)): ?>
 				<?php if ($service->service_id == 1): ?>
-					<h2 class="g-font-asap g-color-black g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= get_lang('residual-waste-treatment-at-the-landfill') ?></h2>
+					<h2 class="g-font-asap g-color-black-dark-v2 g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-20' : '' ?>"><?= get_lang('residual-waste-treatment-at-the-landfill') ?></h2>
 					<hr class="g-width-70 g-mt-20 g-mb-0 g-brd-2 g-brd-blue">
 				<?php else: ?>
-					<h2 class="g-font-asap g-color-black g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= $section_name ?></h2>
+					<h2 class="g-font-asap g-color-black-dark-v2 g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-20' : '' ?>"><?= $section_name ?></h2>
 					<hr class="g-width-70 g-mt-20 g-mb-0 g-brd-2 g-brd-blue">
 					<div class="mt-2 mb-4"> <?= get_lang('residual-waste-treatment-at-the-landfill') ?></div>
 				<?php endif; ?>
 			<?php else: ?>
-				<h2 class="g-font-asap g-color-black g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= get_lang('residual-treatment-using-rdf-technology') ?></h2>
+				<h2 class="g-font-asap g-color-black-dark-v2 g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-20' : '' ?>"><?= get_lang('residual-treatment-using-rdf-technology') ?></h2>
 				<hr class="g-width-70 g-mt-20 g-mb-0 g-brd-2 g-brd-blue">
 			<?php endif; ?>
 
