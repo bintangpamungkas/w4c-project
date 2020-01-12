@@ -15,8 +15,7 @@
 			<div class="col-md-6">
 				<div class="<?= $this->agent->is_mobile() ? 'text-center' : 'text-right' ?> pt-4 row no-gutters justify-content-end">
 					<?php
-					$social = share_social_media();
-					foreach ($social as $social):
+					foreach (share_social_media() as $social):
 						?>
 						<div class="col<?= $this->agent->is_mobile() ? '' : '-auto' ?>">
 							<a title="Share on <?= $social['social_name'] ?>" target="_blank" class="<?= $social['social_color'] ?> u-icon-v2 g-rounded-50x g-mb-15 <?=$this->agent->is_mobile() ? 'g-mx-3' : 'g-mx-10'?>" href="<?= $social['social_url'] ?>" <?=$this->agent->is_mobile() ? 'style="width: 3rem;height: 3rem"' : ''?>>
