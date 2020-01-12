@@ -26,15 +26,19 @@
 								<h3 class="g-color-black-opacity-0_7 <?= $this->agent->is_mobile() ? 'g-font-size-14' : 'g-font-size-16' ?> g-line-height-1_5 mb-3"><?= ucfirst($service->service_description) ?></h3>
 							</div>
 						</div>
-						<div class="pt-5 <?= $this->agent->is_mobile() ? 'row justify-content-center' : '' ?>">
-							<div class="<?= $this->agent->is_mobile() ? 'col-10' : '' ?>">
-								<a class="click_scroll btn btn-info g-color-white g-brd-white-opacity-0_2 g-brd-2 g-font-size-13 g-rounded-50 g-pl-20 g-pr-20 g-py-9 <?= $this->agent->is_mobile() ? 'btn-block mb-4' : '' ?>" href="<?= site_url('service/' . $service_id . '/join') ?>">
+						<div class="pt-5 row <?= $this->agent->is_mobile() ? ' justify-content-center' : '' ?>">
+							<div class="col-auto">
+								<a class="click_scroll btn btn-info g-color-white g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9" href="<?= site_url('service/' . $service_id . '/join') ?>">
 									<?= strtoupper(get_lang('get-proposal')) ?>
-									<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3">
-                  <i class="fa fa-info"></i>
-                </span>
 								</a>
 							</div>
+							<?php if($service->service_portfolio_url==1):?>
+								<div class="col-auto">
+									<a class="click_scroll btn btn-outline-info g-color-blue-dark-v1--focus g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9 <?= $this->agent->is_mobile() ? 'btn-block mb-4' : '' ?>" href="<?= base_url(DIR_SERVICE . $service_id . '/portfolio/'.$lang.'.pdf') ?>">
+										<?= strtoupper(get_lang('get-proposal')) ?>
+									</a>
+								</div>
+							<?php endif; ?>
 						</div>
 					</div>
 				</div>

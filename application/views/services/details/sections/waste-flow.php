@@ -25,7 +25,7 @@ foreach ($flows as $flow) {
 					<div class="mt-2 mb-4"> <?= get_lang('residual-waste-treatment-at-the-landfill') ?></div>
 				<?php endif; ?>
 			<?php else: ?>
-				<h2 class="g-font-asap g-color-black-dark-v2 g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-20' : '' ?>"><?= get_lang('residual-treatment-using-rdf-technology') ?></h2>
+				<h2 class="g-font-asap g-color-black-dark-v2 g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-20' : '' ?>"><?= get_lang('residual-waste-treatment-using-rdf-technology') ?></h2>
 				<hr class="g-width-70 g-mt-20 g-mb-0 g-brd-2 g-brd-blue">
 			<?php endif; ?>
 

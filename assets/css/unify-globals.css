@@ -4763,8 +4763,14 @@
 .g-color-blue--hover:hover {
   color: #3398dc !important; }
 
+.g-color-blue--focus:focus {
+  color: #3398dc !important; }
+
 .g-color-blue-dark-v1 {
   color: #175a88 !important; }
+
+.g-color-blue-dark-v1--focus:focus {
+  color: #17a2b8 !important; }
 
 .g-color-blue-dark-v2 {
   color: #159CBD !important; }

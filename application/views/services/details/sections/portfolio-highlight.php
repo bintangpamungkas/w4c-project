@@ -203,6 +203,7 @@
                             items: 2
                         }
                     },
+		                
                     navText: ['<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-left g-color-gray-light-v1 nav-arrow-left' : 'fa fa-angle-left g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>', '<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-right g-color-gray-light-v1 nav-arrow-right' : 'fa fa-angle-right g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>']
                 });
 
@@ -212,9 +213,12 @@
                 // console.log(screen_display);
                 var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '69' : '98.5' ?>) / 100) / 2;
                 //console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
-							<?php
+            
+                //$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: '+($('#<?//=$service->service_slug?>//').find('.owl-stage').height()+10)+'px;width: 74%;right: '+margin_side+'px;');
+                console.log($('#<?=$section_slug?>').next().find('.owl-stage').height()+10);
+            <?php
 							if ($this->agent->is_mobile()) {
-								echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 483px;width: 74%;right: '+margin_side+'px;')";
+								echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: '+($('#".$section_slug."').next().find('.owl-stage').height()+22)+'px;width: 74%;right: '+margin_side+'px;')";
 							} else {
 								echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 200px;width: 101.5%;right: '+margin_side+'px;')";
 							}

@@ -12,16 +12,18 @@
 							<div class="col-md-6 d-none">
 								<input class="form-control u-shadow-v19 g-brd-none g-bg-white g-font-size-16 g-rounded-30 g-px-30 g-py-13 g-mb-30" type="text" placeholder="Your Email Address ... ">
 							</div>
-							<div class="col-md-3 col-12 g-mb-15">
-								<a class="btn btn-block btn-info g-color-white g-font-size-13 g-rounded-50 g-pl-20 g-pr-15 g-py-9"  href="<?= site_url('service/' . $service_id . '/join') ?>">
+							<div class="col-auto">
+								<a class="btn btn-block btn-info g-color-white g-font-size-13 g-rounded-50 g-px-30 g-py-9"  href="<?= site_url('service/' . $service_id . '/join') ?>">
 									<?= strtoupper(lang('get_proposal')) ?>
 								</a>
 							</div>
-							<div class="col-md-3 col-12 d-none">
-								<a target="_blank" class="btn u-btn-outline-black btn-block g-brd-2 g-font-size-13 g-rounded-50 g-pl-20 g-pr-15 g-py-9 text-uppercase" href="https://search.google.com/local/writereview?placeid=ChIJgbaAgSGSaS4RMsOJnkymZcw">
-									<?= lang('cta_feed_back') ?>
-								</a>
-							</div>
+							<?php if($service->service_portfolio_url==1):?>
+								<div class="col-auto">
+									<a class="click_scroll btn btn-outline-info g-color-blue-dark-v1--focus g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9 <?= $this->agent->is_mobile() ? 'btn-block mb-4' : '' ?>" href="<?= base_url(DIR_SERVICE . $service_id . '/portfolio/'.$lang.'.pdf') ?>">
+										<?= strtoupper(get_lang('get-proposal')) ?>
+									</a>
+								</div>
+							<?php endif; ?>
 						</div>
 					</div>
 				</div>

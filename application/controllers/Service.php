@@ -132,6 +132,8 @@
 				}
 			}
 			
+//			print_r($data['portfolios']);
+//			die();
 			$data['service'] = $service;
 			$data['sections'] = $sections;
 			
