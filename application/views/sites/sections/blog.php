@@ -115,20 +115,14 @@
               console.log(screen_display);
               var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '60' : '96' ?>) / 100) / 2;
               console.log('screen : ' + screen_display + 'nav : ' + screen_display * <?= $this->agent->is_mobile() ? '8' : '9' ?>0 / 100 + 'batas : ' + margin_side);
-						<?php
-						if ($this->agent->is_mobile()) {
-							echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 457px;width: 68%;right: '+margin_side+'px;')";
-						} else {
-							echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 200px;width: 99%;right: '+margin_side+'px;')";
-						}
-						?>
+              $(element_id + ' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: ' + ($(element_id).find('.owl-stage').height()+25) + 'px;width: 68%;right: ' + margin_side + 'px;');
           });
 
 			</script>
 		</div>
 	</div>
 	
-	<?php else: // DESKTOP view     ?>
+	<?php else: // DESKTOP view      ?>
 
 	<div class="row">
 		<?php
@@ -172,17 +166,17 @@
 			</div>
 		<?php endforeach; ?>
 		<?php endif; //End Dektop view ?>
-		<div class="text-center g-mb-50 <?= $this->agent->is_mobile() ? 'g-pt-5' : 'g-pt-40' ?>">
-			<div class="row justify-content-center">
-				<div class="col-md-12 text-muted">
-					<p class="<?= $this->agent->is_mobile() ? 'g-font-size-12' : '' ?>">
-						<?= get_lang('find-more-content-about-responsible-waste-manageme') ?>
-					</p>
-					<br>
-					<a target="_blank" class="btn btn-outline-info g-brd-2 g-font-size-13 g-font-weight-700 g-rounded-50 g-pl-20 g-pr-15 g-py-9 text-uppercase" href="http://waste4change.com/blog">
-						<?= strtoupper(get_lang('more-article')) ?>
-					</a>
-				</div>
+	</div>
+	<div class="text-center g-mb-50 <?= $this->agent->is_mobile() ? 'g-pt-5' : 'g-pt-40' ?>">
+		<div class="row justify-content-center">
+			<div class="col-md-12 text-muted">
+				<p class="<?= $this->agent->is_mobile() ? 'g-font-size-12' : '' ?>">
+					<?= get_lang('find-more-content-about-responsible-waste-manageme') ?>
+				</p>
+				<br>
+				<a target="_blank" class="btn btn-outline-info g-brd-2 g-font-size-13 g-font-weight-700 g-rounded-50 g-pl-20 g-pr-15 g-py-9 text-uppercase" href="http://waste4change.com/blog">
+					<?= strtoupper(get_lang('more-article')) ?>
+				</a>
 			</div>
 		</div>
 	</div>

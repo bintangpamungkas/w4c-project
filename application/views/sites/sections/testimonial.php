@@ -109,7 +109,7 @@
 
       var screen_display=<?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
       // console.log(screen_display);
-      var margin_side=(screen_display-screen_display*(<?= $this->agent->is_mobile() ? '69' : '98.5' ?>)/100)/2;
+      var margin_side=(screen_display-screen_display*(<?= $this->agent->is_mobile() ? '60' : '96' ?>)/100)/2;
       // console.log('screen : '+screen_display+'nav : '+screen_display*<?= $this->agent->is_mobile() ? '8' : '9' ?>0/100+'batas : '+margin_side);
       <?php
       if($this->agent->is_mobile()){
