@@ -81,6 +81,16 @@ function view_range_date($start, $end = null)
 	}
 }
 
+function view_sort_name($text){
+	$words = explode(" ", $text);
+	
+	$acronym = "";
+	foreach ($words as $w) {
+		$acronym .= $w[0];
+	}
+ 	return  strtoupper($acronym);
+}
+
 function get_url($url)
 {
 	if (strpos($url, 'http') !== false) {

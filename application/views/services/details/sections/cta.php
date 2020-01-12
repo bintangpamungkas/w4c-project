@@ -13,14 +13,14 @@
 								<input class="form-control u-shadow-v19 g-brd-none g-bg-white g-font-size-16 g-rounded-30 g-px-30 g-py-13 g-mb-30" type="text" placeholder="Your Email Address ... ">
 							</div>
 							<div class="col-auto">
-								<a class="btn btn-block btn-info g-color-white g-font-size-13 g-rounded-50 g-px-30 g-py-9"  href="<?= site_url('service/' . $service_id . '/join') ?>">
+								<a class="btn btn-block btn-info g-color-white g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-mb-10"  href="<?= site_url('service/' . $service_id . '/join') ?>">
 									<?= strtoupper(lang('get_proposal')) ?>
 								</a>
 							</div>
 							<?php if($service->service_portfolio_url==1):?>
 								<div class="col-auto">
 									<a class="click_scroll btn btn-outline-info g-color-blue-dark-v1--focus g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9 <?= $this->agent->is_mobile() ? 'btn-block mb-4' : '' ?>" href="<?= base_url(DIR_SERVICE . $service_id . '/portfolio/'.$lang.'.pdf') ?>">
-										<?= strtoupper(get_lang('get-proposal')) ?>
+										<?= strtoupper(get_lang('get-portfolio')) ?>
 									</a>
 								</div>
 							<?php endif; ?>

@@ -51,18 +51,31 @@
 			<nav class="navbar navbar-expand-lg">
 				<div class="container">
 					<!-- Responsive Toggle Button -->
-					<button class="<?= $this->agent->is_mobile() ? '' : 'd-none' ?> g-bg-transparent g-font-size-22 toggle-icon navbar-toggler-sub navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0 g-mr-8" data-toggle-icon="icon-arrow-up" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar2">
+					<button class="<?= $this->agent->is_mobile() ? '' : 'd-none' ?> d-none g-bg-transparent g-font-size-22 toggle-icon navbar-toggler-sub navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0 g-mr-8" data-toggle-icon="icon-arrow-up" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar2">
 						<i class="icon-arrow-down"></i>
 					</button>
+
+					<div class="d-none g-bg-transparent g-font-size-22 toggle-icon navbar-toggler-sub navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0" <?= $this->agent->is_mobile() ? ' data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block"' : '' ?>  >
+						<a class="btn btn-info btn-xs g-color-white g-brd-white-opacity-0_2 g-rounded-50 g-py-5 g-px-20 g-mt-3" href="<?= site_url('service/' . $service_id . '/join') ?>" >
+							<?= strtoupper(get_lang('get-portfolio')) ?>
+						</a>
+					</div>
+					
 					<!-- End Responsive Toggle Button -->
 					<a href="#welcome" class="click_scroll navbar-brand g-font-size-12 g-font-weight-700 d-inline-flex g-color-black-opacity-0_8 g-py-10">
 						<i class="et-icon-recycle g-mr-12 g-font-size-24 <?= $this->agent->is_mobile() ? '' : '' ?> d-none"></i>
 						<?php if ($this->agent->is_mobile()): ?>
+							<div onclick="window.history.back();" >
+								<i class="icon-arrow-left g-font-size-14 g-mr-10" ></i>
+							</div>
 							<div class="">
-								<?= $service->service_name ?>
+								<?=
+								view_sort_name($service->service_name);
+								?>
 							</div>
 						<?php endif; ?>
 					</a>
+					
 					<div class="collapse navbar-collapse align-items-center flex-sm-row" id="navBar2">
 						<ul class="navbar-nav text-uppercase g-font-weight-600 mr-auto">
 							<?php foreach ($subnav as $subnav): ?>

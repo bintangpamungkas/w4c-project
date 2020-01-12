@@ -18,8 +18,10 @@
       var locations = [
 				<?php
 				foreach ($coverages as $coverage) {
+					if (!empty($coverage->service_coverage_coordinate)){
 //					echo '["' . $coverage->service_coverage_city . '",' . $coverage->service_coverage_coordinate . ',[' . $coverage->service_coverage_area . ']],';
-				echo '["' . $coverage->service_coverage_city . '",' . $coverage->service_coverage_coordinate . '],';
+						echo '["' . $coverage->service_coverage_city . '",' . $coverage->service_coverage_coordinate . '],';
+					}
 				
 				}
 				?>
