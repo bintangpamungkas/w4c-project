@@ -29,7 +29,7 @@
 						<div class="pt-5 row <?= $this->agent->is_mobile() ? ' justify-content-center' : '' ?>">
 							<div class="col-auto">
 								<a class="click_scroll btn btn-info g-color-white g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-mb-10" href="<?= site_url('service/' . $service_id . '/join') ?>">
-									<?= strtoupper(get_lang('get-proposal')) ?>
+									<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : strtoupper(get_lang('get-proposal')) ?>
 								</a>
 							</div>
 							<?php if($service->service_portfolio_url==1):?>

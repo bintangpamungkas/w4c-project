@@ -37,7 +37,13 @@
  */
 
 date_default_timezone_set('Asia/Jakarta');
-
+/* CONSTANTS */
+define('HOST', 'https://localhost/w4c/');
+define('PREFIX_TABLE', '');
+define('DB_HOSTNAME', 'localhost');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
+define('DB_DATABASE', 'w4c_official');
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
