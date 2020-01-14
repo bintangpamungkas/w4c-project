@@ -54,13 +54,14 @@
 					<button class="<?= $this->agent->is_mobile() ? '' : 'd-none' ?> g-bg-transparent g-font-size-22 toggle-icon navbar-toggler-sub navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-10 g-right-0 g-mr-8" data-toggle-icon="icon-arrow-up" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar2">
 						<i class="icon-arrow-down"></i>
 					</button>
-
+					<?php if (!empty($service->service_proposal_url) || !empty($service->service_portfolio_url)): ?>
 					<div class="d-none g-bg-transparent g-font-size-22 btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-40" <?= $this->agent->is_mobile() ? ' data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block"' : '' ?>  >
 						<a class="btn btn-info btn-xs g-color-white g-brd-white-opacity-0_2 g-rounded-50 g-py-5 g-px-20 g-mt-3" href="<?= $service->service_portfolio_url==1 ? base_url(DIR_SERVICE . $service_id . '/portfolio/'.$lang.'.pdf') : site_url('service/' . $service_id . '/join') ?>" >
 							<?= $service->service_portfolio_url==1 ? strtoupper(get_lang('get-portfolio')) : strtoupper(get_lang('get-proposal')) ?>
 						</a>
 					</div>
-					
+					<?php endif; ?>
+
 					<!-- End Responsive Toggle Button -->
 					<a href="#welcome" class="click_scroll navbar-brand g-font-size-12 g-font-weight-700 d-inline-flex g-color-black-opacity-0_8 g-py-10">
 						<i class="et-icon-recycle g-mr-12 g-font-size-24 <?= $this->agent->is_mobile() ? '' : '' ?> d-none"></i>

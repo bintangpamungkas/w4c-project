@@ -98,9 +98,9 @@
 							<!-- <img class="img-fluid w-100" src="<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/thumbnail.jpg', base_url('assets/img/error/1x2.png')) ?>" alt="<?= $service->service_name . ' image' ?>"> -->
 							<div class="bg-white g-mx-20 g-pa-20" style=" margin-top: -40px;">
 								<span
-									class="g-color-black-opacity-0_5 g-font-weight-600 g-font-size-12 text-uppercase"><?= $service->service_category_name ?></span>
+									class="g-color-black-opacity-0_5 g-font-weight-600 g-font-size-12 text-uppercase"><?= strtolower($service->service_category_name)==strtolower($service->service_name) ? '' : $service->service_category_name ?></span>
 								<h2
-									class="<?= $this->agent->is_mobile() ? 'h4' : 'h1' ?> g-color-black g-font-weight-600 g-mb-25 g-line-height-1_2">
+									class="h4 g-color-black g-font-weight-600 g-mb-25 g-line-height-1_2">
 									<?= $service->service_name ?>
 								</h2>
 								<p class="g-color-black-opacity-0_5"><?= $service->service_description ?></p>
@@ -140,10 +140,10 @@
 										</div>
 										<div class="col-6">
 											<span
-												class="g-color-gray-dark-v3 g-font-weight-600 g-font-size-12 text-uppercase"><?= $service->service_category_name ?></span>
+												class="g-color-gray-dark-v3 g-font-weight-600 g-font-size-12 text-uppercase"><?= strtolower($service->service_category_name)==strtolower($service->service_name) ? '' : $service->service_category_name ?></span>
 											<div class="">
 												<h2
-													class="<?= $this->agent->is_mobile() ? 'h4' : 'h1' ?> g-color-black g-font-weight-600 g-mb-25 g-line-height-1_2">
+													class="'h1 g-color-black g-font-weight-600 g-mb-25 g-line-height-1_2">
 													<?= $service->service_name ?>
 												</h2>
 												<p><?= $service->service_description ?></p>
@@ -169,7 +169,7 @@
 										?>
 										<div class="col-6">
 											<span
-												class="g-color-gray-dark-v3 g-font-weight-600 g-font-size-12 text-uppercase"><?= $service->service_category_name ?></span>
+												class="g-color-gray-dark-v3 g-font-weight-600 g-font-size-12 text-uppercase"><?= strtolower($service->service_category_name)==strtolower($service->service_name) ? '' : $service->service_category_name ?></span>
 											<div class="">
 												<h1
 													class="<?= $this->agent->is_mobile() ? 'h4' : 'h1' ?> g-color-black g-font-weight-600 g-mb-25 g-line-height-1_2">
