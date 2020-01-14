@@ -1,5 +1,5 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
-	
+date_default_timezone_set('Asia/Jakarta');
 	/**
 	 * Class MY_Controller
 	 * @property \Company_model $company_model
@@ -14,9 +14,9 @@
 		function __construct()
 		{
 			parent::__construct();
-			
 			$this->load->helper('my_helper');
-			
+			$this->load->helper('date');
+
 			$this->lang->load('this', $this->session->userdata('language') ? ($this->session->userdata('language') == 'id' ? 'indonesia' : 'english') : 'indonesia');
 		}
 		
@@ -32,7 +32,6 @@
 		
 		function render_page($content, $data = NULL, $template = NULL)
 		{
-			
 			if (IS_ONLINE == 1) {
 				if (empty($_SERVER['HTTPS'])) {
 					redirect('https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);
@@ -278,33 +277,6 @@
 			
 		}
 		
-		public function send_mailx($from, $name, $to, $subject, $message)
-		{
-			
-			$this->load->library('email');
-			
-			//$config['protocol'] = "sendmail";
-			
-			$config['smtp_host'] = "smtp.zoho.com";
-			$config['smtp_port'] = "465";
-			$config['smtp_user'] = "application@sampahmuda.com";
-			$config['smtp_pass'] = "sampahmuda";
-			$config['smtp_crypto'] = "SSL";
-			
-			$config['charset'] = "utf-8";
-			$config['mailtype'] = "html";
-			$config['newline'] = "\r\n";
-			
-			$this->email->initialize($config);
-			$this->email->from($from, $name);
-			$this->email->to($to);
-			
-			$this->email->subject($subject);
-			$this->email->message($message);
-			
-			$this->email->send();
-		}
-		
 		public function send_mail($from = null, $name = null, $to = null, $subject = null, $message = null)
 		{
 			
@@ -356,35 +328,7 @@
 			$data['for'] = $for;
 			return $this->load->view('emails/' . $for . '/account', $data, TRUE);
 		}
-		
-		public function email_collect($activity, $customer_fullname = null, $agent_fullname = null, $activity_id = null, $for = null, $location = null)
-		{
-			
-			$this->load->model('Site_model');
-			$data['company'] = $this->company_model->company();
-			
-			$data['activity'] = $activity;
-			$data['activity_id'] = $activity_id;
-			$data['customer_fullname'] = $customer_fullname;
-			$data['agent_fullname'] = $agent_fullname;
-			$data['for'] = $for;
-			$data['location'] = $location;
-			return $this->load->view('emails/' . $for . '/collect', $data, TRUE);
-		}
-		
-		public function email_order($activity, $customer_fullname = null, $activity_id = null, $bill = null, $for = null)
-		{
-			
-			$this->load->model('Site_model');
-			$data['company'] = $this->company_model->company();
-			
-			$data['activity'] = $activity;
-			$data['activity_id'] = $activity_id;
-			$data['customer_fullname'] = $customer_fullname;
-			$data['bill'] = $bill;
-			$data['for'] = $for;
-			return $this->load->view('emails/' . $for . '/order', $data, TRUE);
-		}
+
 		
 		function check_data($table, $where)
 		{

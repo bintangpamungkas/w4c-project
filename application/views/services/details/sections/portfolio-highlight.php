@@ -35,7 +35,7 @@
 								<div class="portfolio-detail">
 									<img class="g-mb-15" src="<?= get_image(DIR_SERVICE . $service_id . '/portfolio/' . $porto->portfolio_client_logo) ?>" alt="<?= $porto->portfolio_client ?>" style="max-height: 50px; max-width: 80px;margin-bottom: 5px;">
 									<div class="g-font-weight-600 g-font-size-20 g-line-height-1_1 g-mb-5"><?= $porto->portfolio_client ?></div>
-									<div class="g-font-size-12 g-line-height-1_1" style="color:#AFAFAF"><?= limit_word($porto->portfolio_client_address, 3, ",") ?></div>
+									<div class="g-font-size-12 g-line-height-1_1" style="color:#AFAFAF"><?= $porto->portfolio_client_address ?></div>
 									<div class="g-mt-30 g-font-size-13">
 										<?php
 										if (!empty($porto->portfolio_duration)) {
@@ -134,7 +134,7 @@
 												<div class="col" style="color:#6C6C6C">
 													<?= get_lang('event-date') ?>
 													<br>
-													<strong><?= view_range_date($porto->portfolio_start, $porto->portfolio_end) ?></strong>
+													<strong><?= view_range_date($porto->portfolio_start, $porto->portfolio_end, $lang) ?></strong>
 												</div>
 											</div>
 											<?php
