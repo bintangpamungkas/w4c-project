@@ -35,11 +35,11 @@
 													</li>
 												<?php else: ?>
 													<?php if (count($submenu->menu) == 1 && $submenu->menu[0]->title == $submenu->title): ?>
-														<li class="dropdown-item g-bg-blue-opacity-0_1--hover">
+														<li class="dropdown-item g-bg-blue-opacity-0_1--hover <?=$this->agent->is_mobile() ?'g-pl-30 g-font-size-10':''?>">
 															<a class="nav-link g-color-black g-color-blue-dark-v2--hover" href="<?= site_url($submenu->menu[0]->url) ?>"><?= $submenu->menu[0]->title ?></a>
 														</li>
 													<?php else: ?>
-														<li class="dropdown-item hs-has-sub-menu g-bg-white g-pr-0">
+														<li class="dropdown-item hs-has-sub-menu g-bg-white g-pr-0 <?=$this->agent->is_mobile() ?'g-pl-30 g-font-size-10':''?>">
 															<a class="nav-link g-color-black" href="javascript:void()" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--404">
 																<?= $submenu->title ?>
 															</a>

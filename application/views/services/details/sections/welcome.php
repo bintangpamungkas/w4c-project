@@ -20,10 +20,10 @@
 						</div>
 					<?php endif; ?>
 					<div class="col-md-6 col-10">
-						<h3 class="g-color-black-opacity-0_8 g-font-weight-700 <?= $this->agent->is_mobile() ? 'g-font-size-35' : 'g-font-size-50' ?> mb-4 g-font-asap" style="line-height: 1.2"><?= $service->service_name ?></h3>
+						<h3 class="g-color-black-opacity-0_8 g-font-weight-700 <?= $this->agent->is_mobile() ? 'g-font-size-35 text-center' : 'g-font-size-50' ?> mb-4 g-font-asap" style="line-height: 1.2"><?= $service->service_name ?></h3>
 						<div class="row">
 							<div class="col-md-12">
-								<h3 class="g-color-black-opacity-0_7 <?= $this->agent->is_mobile() ? 'g-font-size-14' : 'g-font-size-16' ?> g-line-height-1_5 mb-3"><?= ucfirst($service->service_description) ?></h3>
+								<h3 class="g-color-black-opacity-0_7 <?= $this->agent->is_mobile() ? 'g-font-size-14  text-center' : 'g-font-size-16' ?> g-line-height-1_5 mb-3"><?= ucfirst($service->service_description) ?></h3>
 							</div>
 						</div>
 						<div class="pt-5 row <?= $this->agent->is_mobile() ? ' justify-content-center' : '' ?>">
