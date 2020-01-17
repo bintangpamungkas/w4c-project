@@ -141,7 +141,7 @@ function limit_word($x, $length, $delimiter = null)
       $j++;
     }
   }
-  if ($j == $i) {
+  if (!empty($text[$length])) {
     echo "...";
   }
 }

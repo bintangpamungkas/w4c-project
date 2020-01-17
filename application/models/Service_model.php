@@ -74,6 +74,7 @@
 			$this->db->join('service_coverage', 'service_coverage.service_id=service.service_id', 'left');
 //			$this->db->where('service.has_page',1);
 			$this->db->where('service_parent_id',null);
+			$this->db->group_by('service.service_id');
 			if ($is_new != null) {
 				$this->db->like('service.is_new', 1);
 			}

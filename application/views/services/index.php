@@ -149,8 +149,9 @@
 												<p><?= $service->service_description ?></p>
 												<a
 													class="g-color-w4c-blue-v1 g-font-weight-700 mb-3 text-uppercase <?= $service->has_page == 1 ? '' : 'd-none' ?>"
-													href="<?= site_url('service/' . $service->service_slug) ?>"><?= get_lang('learn-more') ?> <i
-														class="fa fa-angle-right g-ml-10 g-font-size-20"></i> </a>
+													href="<?= site_url('service/' . $service->service_slug) ?>"><?= get_lang('learn-more') ?>
+													<i class="fa fa-angle-right g-ml-10 g-font-size-20"></i>
+												</a>
 												<div class="g-mt-20">
 													<div class="g-font-size-10 g-mb-5"><?= get_lang('recommended-for') ?></div>
 													<?php

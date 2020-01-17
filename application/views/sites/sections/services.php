@@ -116,7 +116,9 @@
 														class="d-block g-color-gray-dark-v4 g-font-style-normal g-font-size-12 g-mb-10"><?= $service->service_description ?></em>
 												</div>
 												<a class="g-color-info g-color-blue--hover g-font-size-12 g-mt-10 g-font-weight-900"
-												   href="<?= $service->service_page_url ?>"><?= strtoupper(get_lang('learn-more')) ?></a>
+												   href="<?= $service->service_page_url ?>"><?= strtoupper(get_lang('learn-more')) ?>
+													<i class="fa fa-angle-right g-ml-10 g-font-size-15"></i>
+												</a>
 											</div>
 										</div>
 										<?php
@@ -220,8 +222,9 @@
 												class="d-block g-color-gray-dark-v4 g-font-style-normal g-font-size-12 g-mb-10"><?= $service->service_description ?></em>
 										</div>
 										<a class="g-color-info g-color-blue--hover g-font-size-12 g-mt-10 g-font-weight-900"
-										   href="<?= $service->service_page_url ?>"><?= strtoupper(get_lang('learn-more')) ?> <i
-												class="fa fa-angle-right g-ml-10"></i> </a>
+										   href="<?= $service->service_page_url ?>"><?= strtoupper(get_lang('learn-more')) ?>
+											<i class="fa fa-angle-right g-ml-10 g-font-size-15"></i>
+										</a>
 									</div>
 								</div>
 							</div>

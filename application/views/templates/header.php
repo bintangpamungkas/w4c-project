@@ -61,12 +61,12 @@
 				<div class="container">
 					<!-- Responsive Toggle Button -->
 					<button
-						class="<?= $this->agent->is_mobile() ? '' : 'd-none' ?> g-bg-secondary g-font-size-22 toggle-icon navbar-toggler-sub navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-0 g-right-minus-15 g-pt-10 g-px-15"
-						data-toggle-icon="icon-arrow-up" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar2">
+						class="<?= $this->agent->is_mobile() ? '' : 'd-none' ?> g-bg-secondary g-font-size-22 toggle-icon navbar-toggler-sub navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-0 g-right-minus-15 g-pt-10 g-px-15 d-block"
+						data-toggle-icon="icon-arrow-up" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar2" data-header-fix-moment-exclude="d-block" data-header-fix-moment-classes="d-none">
 						<i class="icon-arrow-down"></i>
 					</button>
 					<?php if (!empty($service->service_proposal_url) || !empty($service->service_portfolio_url)): ?>
-						<div class="d-none g-bg-transparent g-font-size-22 btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-40"
+						<div class="d-none g-bg-transparent g-font-size-22 btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0"
 								 <?= $this->agent->is_mobile() ? ' data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block"' : '' ?>>
 							<a class="btn btn-info btn-xs g-color-white g-brd-white-opacity-0_2 g-rounded-50 g-py-5 g-px-20 g-mt-3"
 							   href="<?= $service->service_portfolio_url == 1 ? base_url(DIR_SERVICE . $service_id . '/portfolio/' . $lang . '.pdf') : site_url('service/' . $service_id . '/join') ?>">
@@ -86,8 +86,8 @@
 								<?= view_sort_name($service->service_name); ?>
 							</div>
 							<div class="d-block" data-header-fix-moment-exclude="d-block" data-header-fix-moment-classes="d-none">
-								<div class="g-mr-25" style="word-wrap:break-word !important;hyphens:auto;white-space: initial;">
-										<?= $service->service_name; ?>
+								<div class="" style="width:calc(100vw - 95px); white-space: nowrap; overflow: hidden;;text-overflow: ellipsis;">
+										<?= ($service->service_name); ?>
 								</div>
 							</div>
 						<?php endif; ?>
