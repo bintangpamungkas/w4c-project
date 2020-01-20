@@ -51,17 +51,6 @@
 			return $this->db->get()->result();
 		}
 		
-		function benefit_list($lang, $service_id)
-		{
-			$this->db->select(['service.service_id', 'service.service_category_id', 'service.service_slug', 'service.service_name', 'service.service_page_url', 'service.service_join_url', 'service.service_thumbnail_image', 'service_category_name']);
-			$this->db->select('(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service.service_description AND dictionary.language_code="' . $lang . '") as service_description');
-			$this->db->select('(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service.service_slogan AND dictionary.language_code="' . $lang . '") as service_slogan');
-			$this->db->select('(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service.service_about AND dictionary.language_code="' . $lang . '") as service_about');
-			$this->db->from('service');
-			$this->db->join('service_category', 'service_category.service_category_id=service.service_category_id', 'left');
-			return $this->db->get()->result();
-		}
-		
 		function service_list_by_coverage($lang, $city_name = null, $target_id = null,$is_new=null)
 		{
 //			$this->db->select('*');
@@ -80,6 +69,7 @@
 			}
 			if ($city_name != null) {
 				$this->db->like('service_coverage.service_coverage_city', $city_name);
+				$this->db->or_where('service_coverage.service_coverage_city','Seluruh Indonesia');
 			}
 			if ($target_id != null) {
 				$this->db->where('service_category.service_target_id', $target_id);

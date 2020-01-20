@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 17, 2020 at 07:46 AM
+-- Generation Time: Jan 17, 2020 at 08:37 AM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -195,12 +195,12 @@ INSERT INTO `benefit` (`benefit_id`, `service_id`, `benefit_category`, `benefit_
 (28, 6, 'general', 'meet-the-needs-of-your-brand-customers-in-more-loc', NULL, '2019-12-08 00:58:50', '2019-12-08 00:58:50', NULL),
 (29, 6, 'general', 'waste-journey-report', NULL, '2019-12-08 00:58:50', '2019-12-08 00:58:50', NULL),
 (30, 6, 'general', 'help-to-increase-recycling-rate', NULL, '2019-12-08 00:58:50', '2019-12-08 00:58:50', NULL),
-(31, 9, 'for-client', 'the-real-action-in-encouraging-the-implementation-', NULL, '2019-12-08 00:58:50', '2019-12-10 01:09:17', NULL),
-(32, 9, 'for-client', 'supporting-the-green-concept-of-our-clients-brand', NULL, '2019-12-08 00:58:50', '2019-12-10 01:09:17', NULL),
-(33, 9, 'for-school', 'increased-knowledge-and-capacity-of-students-and-t', NULL, '2019-12-08 00:58:50', '2019-12-10 01:09:17', NULL),
-(34, 9, 'for-school', 'schools-can-contribute-to-supporting-and-executing', NULL, '2019-12-08 00:58:50', '2019-12-10 01:09:17', NULL),
-(35, 9, 'for-school', 'available-for-every-school-located-in-indonesia-w', NULL, '2019-12-08 00:58:50', '2019-12-10 01:09:17', NULL),
-(36, 9, 'for-school', 'for-schools-located-in-jakarta-we-help-to-support', NULL, '2019-12-08 00:58:50', '2019-12-10 01:09:17', NULL);
+(31, 9, 'for-clients', 'the-real-action-in-encouraging-the-implementation-', NULL, '2019-12-08 00:58:50', '2020-01-17 14:35:39', NULL),
+(32, 9, 'for-clients', 'supporting-the-green-concept-of-our-clients-brand', NULL, '2019-12-08 00:58:50', '2020-01-17 14:35:40', NULL),
+(33, 9, 'for-schools', 'increased-knowledge-and-capacity-of-students-and-t', NULL, '2019-12-08 00:58:50', '2020-01-17 14:35:41', NULL),
+(34, 9, 'for-schools', 'schools-can-contribute-to-supporting-and-executing', NULL, '2019-12-08 00:58:50', '2020-01-17 14:35:42', NULL),
+(35, 9, 'for-schools', 'available-for-every-school-located-in-indonesia-w', NULL, '2019-12-08 00:58:50', '2020-01-17 14:35:42', NULL),
+(36, 9, 'for-schools', 'for-schools-located-in-jakarta-we-help-to-support', NULL, '2019-12-08 00:58:50', '2020-01-17 14:35:43', NULL);
 
 -- --------------------------------------------------------
 
@@ -1028,7 +1028,11 @@ INSERT INTO `dictionary` (`dictionary_id`, `language_code`, `dictionary_content`
 (1362, 'en', 'Pick Media', 'pick-media', NULL),
 (1363, 'id', 'Pilih Media', 'pick-media', NULL),
 (1364, 'en', 'Number of Participants', 'number-of-participants', 'service_achievement'),
-(1365, 'id', 'Jumlah Peserta', 'number-of-participants', 'service_achievement');
+(1365, 'id', 'Jumlah Peserta', 'number-of-participants', 'service_achievement'),
+(1368, 'en', 'For Clients', 'for-clients', 'service_benefit'),
+(1369, 'id', 'Bagi Klien', 'for-clients', 'service_benefit'),
+(1370, 'en', 'For Schools', 'for-schools', 'service_benefit'),
+(1371, 'id', 'Bagi Sekolah', 'for-schools', 'service_benefit');
 
 -- --------------------------------------------------------
 
@@ -2275,7 +2279,7 @@ ALTER TABLE `client`
 -- AUTO_INCREMENT for table `dictionary`
 --
 ALTER TABLE `dictionary`
-  MODIFY `dictionary_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1368;
+  MODIFY `dictionary_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1372;
 
 --
 -- AUTO_INCREMENT for table `dictionary_type`
