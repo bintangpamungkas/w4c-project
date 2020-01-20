@@ -70,7 +70,7 @@
 								 <?= $this->agent->is_mobile() ? ' data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block"' : '' ?>>
 							<a class="btn btn-info btn-xs g-color-white g-brd-white-opacity-0_2 g-rounded-50 g-py-5 g-px-20 g-mt-3"
 							   href="<?= $service->service_portfolio_url == 1 ? base_url(DIR_SERVICE . $service_id . '/portfolio/' . $lang . '.pdf') : site_url('service/' . $service_id . '/join') ?>">
-								<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : ($service->service_portfolio_url == 1 ? strtoupper(get_lang('get-portfolio')) : strtoupper(get_lang('get-proposal'))) ?>
+								<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : strtoupper(get_lang('get-proposal')) ?>
 							</a>
 						</div>
 					<?php endif; ?>

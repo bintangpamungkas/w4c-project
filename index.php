@@ -43,7 +43,7 @@ define('PREFIX_TABLE', '');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
-define('DB_DATABASE', 'w4c_official');
+define('DB_DATABASE', 'w4c_official_demo');
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
