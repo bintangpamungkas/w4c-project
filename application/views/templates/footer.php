@@ -22,10 +22,10 @@
 							<a class="g-color-white-opacity-0_8" href="<?= site_url('contact') ?>"><?= get_lang('contact') ?></a>
 						</li>
 						<li class="g-mb-5">
-							<a class="g-color-white-opacity-0_8" href="http://w4c.id/internship"><?= get_lang('internship') ?></a>
+							<a class="g-color-white-opacity-0_8" href="https://waste4change.com/impactful-career-waste4change/"><?= get_lang('carrer') ?></a>
 						</li>
 						<li class="g-mb-5">
-							<a class="g-color-white-opacity-0_8" href="https://waste4change.com/impactful-career-waste4change/"><?= get_lang('carrer') ?></a>
+							<a class="g-color-white-opacity-0_8" href="http://w4c.id/internship"><?= get_lang('internship') ?></a>
 						</li>
 					</ul>
 				</div>
@@ -83,7 +83,7 @@
 									<?php foreach ($menu->menu as $submenu): ?>
 										<?php foreach ($submenu->menu as $subsubmenu): ?>
 											<li class="g-mb-5">
-												<a class="g-color-white-opacity-0_8" href="<?= site_url($subsubmenu->url) ?>>"><?= $subsubmenu->title ?></a>
+												<a class="g-color-white-opacity-0_8" href="<?= site_url($subsubmenu->url) ?>"><?= $subsubmenu->title ?></a>
 											</li>
 										<?php endforeach; ?>
 									<?php endforeach; ?>
@@ -138,6 +138,11 @@
 						<li class="list-inline-item g-mr-10">
 							<a class="u-icon-v3 u-icon-size--md g-bg-white-opacity-0_1 g-bg-white-opacity-0_2--hover g-color-white-opacity-0_6 g-rounded-50x" href="https://www.youtube.com/channel/UCmyjlUYRfBiYEWDRcsd5raQ" target="_blank">
 								<i class="fa fa-youtube"></i>
+							</a>
+						</li>
+						<li class="list-inline-item g-mr-10">
+							<a class="u-icon-v3 u-icon-size--md g-bg-white-opacity-0_1 g-bg-white-opacity-0_2--hover g-color-white-opacity-0_6 g-rounded-50x" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://demo.waste4change.com/official/&amp;title=Start%20Recycling%20with%20Waste4Change" target="_blank">
+								<i class="fa fa-linkedin"></i>
 							</a>
 						</li>
 					</ul>

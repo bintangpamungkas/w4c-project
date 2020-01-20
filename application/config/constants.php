@@ -40,7 +40,7 @@ define('OFFICIAL_NOREPLY_MAIL', 'noreply@sampahmuda.com');
 define('OFFICIAL_NAME', APP_NAME.' Support');
 define('MODE', 'Dev');
 define('VERSION', '1.0');
-define('DEV_YEAR', '2016');
+define('DEV_YEAR', '2018');
 
 define('DUMMY_CUSTOMER_ID', 1);
 define('DUMMY_IMAGE', 'dummy.png');

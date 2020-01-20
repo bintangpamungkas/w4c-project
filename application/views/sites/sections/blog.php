@@ -37,7 +37,7 @@
 						'blog_image' => 'https://waste4change.com/wp-content/uploads/1-1-580x390.jpg',
 				],
 		];
-		if ($this->agent->is_mobile()): ?>
+		if ($this->agent->is_mobile()): //MOBILE VIEW ?>
 		<div class="clearfix">
 			<div id="blog-carousel" class="row owl-theme" style="margin: 0 0 30px 0!important;">
 				<?php
@@ -122,7 +122,7 @@
 		</div>
 	</div>
 	
-	<?php else: // DESKTOP view      ?>
+	<?php else: // DESKTOP VIEW ?>
 
 	<div class="row">
 		<?php
@@ -153,7 +153,7 @@
 							</div>
 						</div>
 						<h3 class="h5 g-mb-15" style="min-height: 80px">
-							<a class="u-link-v5 g-color-gray-dark-v2 g-color-info--hover g-font-weight-700" href="<?= $blog['blog_title'] ?>" style="word-wrap: break-word"><?= $blog['blog_title'] ?></a>
+							<a class="u-link-v5 g-color-gray-dark-v2 g-color-info--hover g-font-weight-700" href="<?= $blog['blog_url'] ?>" style="word-wrap: break-word"><?= $blog['blog_title'] ?></a>
 						</h3>
 						<div class="g-font-size-13"><?= $blog['blog_content'] ?></div>
 						<hr class="g-brd-gray-light-v4 g-mt-40">
