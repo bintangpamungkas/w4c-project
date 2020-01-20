@@ -54,7 +54,7 @@
 														<?php foreach ($menu->menu as $submenu): ?>
 															<?php foreach ($submenu->menu as $subsubmenu): ?>
 																<li class="g-mb-5">
-																	<a class="g-color-white-opacity-0_8" href="<?= site_url($subsubmenu->url) ?>"><?= $subsubmenu->title ?></a>
+																	<a class="g-color-white-opacity-0_8" href="<?= get_url($subsubmenu->url) ?>"><?= $subsubmenu->title ?></a>
 																</li>
 															<?php endforeach; ?>
 														<?php endforeach; ?>
@@ -83,7 +83,7 @@
 									<?php foreach ($menu->menu as $submenu): ?>
 										<?php foreach ($submenu->menu as $subsubmenu): ?>
 											<li class="g-mb-5">
-												<a class="g-color-white-opacity-0_8" href="<?= site_url($subsubmenu->url) ?>"><?= $subsubmenu->title ?></a>
+												<a class="g-color-white-opacity-0_8" href="<?= get_url($subsubmenu->url) ?>"><?= $subsubmenu->title ?></a>
 											</li>
 										<?php endforeach; ?>
 									<?php endforeach; ?>

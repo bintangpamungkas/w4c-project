@@ -8,7 +8,7 @@
 					<div class="col-10 pt-5">
 						<div class="row justify-content-center">
 							<div class="col-md-3 col-12 g-mb-15">
-								<a class="btn btn-block btn-info g-color-white g-font-size-13 g-font-weight-700 g-rounded-50 g-py-10 " href="<?= site_url('join') ?>">
+								<a class="btn btn-block btn-info g-color-white g-font-size-13 g-font-weight-700 g-rounded-50 g-py-10 " href="<?= site_url('service') ?>">
 									<?= strtoupper(get_lang("get-started")) ?>
 								</a>
 							</div>
