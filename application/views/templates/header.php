@@ -1,7 +1,6 @@
 <header id="js-header" class="u-header u-header--sticky-top u-header--change-appearance" data-header-fix-moment="100">
 	<!-- <div id="navigation-block" class="nav-type-transparent navbar-toggle-btn u-header__section u-header__section--dark pb-10" data-header-fix-moment-exclude="pb-10 g-color-white" data-header-fix-moment-classes="g-bg-white u-shadow-v18 g-py-0"> -->
-	<div id="navigation-block"
-	     class="<?= $template == 'index' ? 'nav-type-transparent' : '' ?> navbar-toggle-btn  pb-10 u-header__section u-header__section--<?= $template == 'services' ? 'light bg-white' : 'dark' ?>"
+	<div id="navigation-block" class="<?= $template == 'index' ? 'nav-type-transparent' : '' ?> navbar-toggle-btn  pb-10 u-header__section u-header__section--<?= $template == 'services' ? 'light bg-white' : 'dark' ?> g-pt-10--lg"
 			 <?= $template == 'index' ? 'data-header-fix-moment-exclude="pb-10 g-color-white" data-header-fix-moment-classes="g-bg-white u-shadow-v18 g-py-0"' : '' ?>>
 
 		<nav class="js-mega-menu navbar navbar-expand-lg">
@@ -65,11 +64,11 @@
 						data-toggle-icon="icon-arrow-up" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar2" data-header-fix-moment-exclude="d-block" data-header-fix-moment-classes="d-none">
 						<i class="icon-arrow-down"></i>
 					</button>
-					<?php if (!empty($service->service_proposal_url) || !empty($service->service_portfolio_url)): ?>
+					<?php if (!empty($service->service_proposal_url)): ?>
 						<div class="d-none g-bg-transparent g-font-size-22 btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0"
 								 <?= $this->agent->is_mobile() ? ' data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block"' : '' ?>>
 							<a class="btn btn-info btn-xs g-color-white g-brd-white-opacity-0_2 g-rounded-50 g-py-5 g-px-20 g-mt-3"
-							   href="<?= $service->service_portfolio_url == 1 ? base_url(DIR_SERVICE . $service_id . '/portfolio/' . $lang . '.pdf') : site_url('service/' . $service_id . '/join') ?>">
+							   href="<?= site_url('service/' . $service_id . '/join') ?>">
 								<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : strtoupper(get_lang('get-proposal')) ?>
 							</a>
 						</div>

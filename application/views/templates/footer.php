@@ -10,16 +10,16 @@
 					</div>
 					<ul class="list-unstyled">
 						<li class="g-mb-5">
-							<a class="g-color-white-opacity-0_8" href="<?= site_url('service') ?>"><?= get_lang('all-services') ?></a>
+							<a class="g-color-white-opacity-0_8" href="<?= get_url('service') ?>"><?= get_lang('all-services') ?></a>
 						</li>
 						<li class="g-mb-5">
-							<a class="g-color-white-opacity-0_8" href="<?= site_url('about') ?>"><?= get_lang('about-us') ?></a>
+							<a class="g-color-white-opacity-0_8" href="<?= get_url('about') ?>"><?= get_lang('about-us') ?></a>
 						</li>
 						<li class="g-mb-5">
-							<a class="g-color-white-opacity-0_8" href="<?= site_url('https://waste4change.com/blog') ?>"><?= get_lang('blog-and-news') ?></a>
+							<a class="g-color-white-opacity-0_8" href="<?= get_url('https://waste4change.com/blog') ?>"><?= get_lang('blog-and-news') ?></a>
 						</li>
 						<li class="g-mb-5">
-							<a class="g-color-white-opacity-0_8" href="<?= site_url('contact') ?>"><?= get_lang('contact') ?></a>
+							<a class="g-color-white-opacity-0_8" href="<?= get_url('contact') ?>"><?= get_lang('contact') ?></a>
 						</li>
 						<li class="g-mb-5">
 							<a class="g-color-white-opacity-0_8" href="https://waste4change.com/impactful-career-waste4change/"><?= get_lang('carrer') ?></a>

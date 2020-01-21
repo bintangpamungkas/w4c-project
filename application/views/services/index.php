@@ -12,7 +12,7 @@
 				<div
 					class="col-12 g-font-size-23 g-letter-spacing-2 g-font-weight-600 text-uppercase g-mb-20"> <?= lang('services_all_services') ?> </div>
 				<div
-					class="col-<?= $this->agent->is_mobile() ? '12' : '4' ?> g-font-size-30 g-font-weight-900 g-line-height-1_2"> <?= ucfirst(strtolower(lang('services_all_choose_the_right_solution'))) ?> </div>
+					class="col-<?= $this->agent->is_mobile() ? '12' : '4' ?> g-font-size-30 g-font-weight-900 g-line-height-1_2"> <?= ucfirst(strtolower(get_lang('choose-the-right-solution'))) ?> </div>
 			</div>
 		</div>
 	</div>
@@ -98,7 +98,7 @@
 							<!-- <img class="img-fluid w-100" src="<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/thumbnail.jpg', base_url('assets/img/error/1x2.png')) ?>" alt="<?= $service->service_name . ' image' ?>"> -->
 							<div class="bg-white g-mx-20 g-pa-20" style=" margin-top: -40px;">
 								<span
-									class="g-color-black-opacity-0_5 g-font-weight-600 g-font-size-12 text-uppercase"><?= strtolower($service->service_category_name) == strtolower($service->service_name) ? '' : $service->service_category_name ?></span>
+									class="g-color-black-opacity-0_5 g-font-weight-600 g-font-size-12 text-uppercase"><?= strtolower($service->service_category_name) == strtolower($service->service_name) ? 'GENERAL' : $service->service_category_name ?></span>
 								<h2
 									class="h4 g-color-black g-font-weight-600 g-mb-25 g-line-height-1_2">
 									<?= $service->service_name ?>
