@@ -43,7 +43,7 @@
 			    color><?= get_lang('available-services-for-your-location') ?>:</h2>
 			<div class="row">
 				<div class="col-md-6">
-					<form action="<?= site_url('') ?>" method="get">
+					<form action="<?= site_url('service') ?>" method="get">
 						<div class="autocomplete">
 							<div class="input-group pull-right">
 								<div class="input-group-prepend">

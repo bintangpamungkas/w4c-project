@@ -69,7 +69,7 @@
 			}
 			if ($city_name != null) {
 				$this->db->like('service_coverage.service_coverage_city', $city_name);
-				$this->db->or_where('service_coverage.service_coverage_city','Seluruh Indonesia');
+				$this->db->or_where('service_coverage.service_coverage_city','Seluruh Kota di Indonesia');
 			}
 			if ($target_id != null) {
 				$this->db->where('service_category.service_target_id', $target_id);
