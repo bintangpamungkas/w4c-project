@@ -1,24 +1,24 @@
 <section class="g-bg-secondary <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-0' : 'g-pt-140 g-pb-100' ?>">
 
-	<div id="<?=$section_slug?>" style="height: 10px;position: absolute;width: 80%;margin-top: -200px"></div>
+	<div id="<?= $section_slug ?>" style="height: 10px;position: absolute;width: 80%;margin-top: -200px"></div>
 
 	<div class="container">
 		<header class="text-center g-width-80x--md mx-auto g-mb-70">
 			<div class="u-heading-v6-2 text-center text-uppercase g-mb-20">
-				<h2 class="g-font-asap g-color-black-dark-v2 g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-20' : '' ?>"><?=$section_name?></h2>
+				<h2 class="g-font-asap g-color-black-dark-v2 g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-20' : '' ?>"><?= $section_name ?></h2>
 				<hr class="g-width-70 g-my-20 g-brd-2 g-brd-blue">
 			</div>
 		</header>
 
 		<!-- Icon Blocks -->
-		<div class="row justify-content-center">
+		<div class="align-height-list row justify-content-center">
 			<?php
 			$number = 1;
 			foreach ($recommendations as $rec):
 				?>
 				<div class="col-lg-4 col-xs-12 g-mb-20">
 					<!-- Icon Blocks -->
-					<div class="u-shadow-v21 g-bg-white rounded g-py-15 g-px-30 u-shadow-v20">
+					<div class="align-height-item u-shadow-v21 g-bg-white rounded g-py-15 g-px-30 u-shadow-v20">
 						<div class="media">
 							<div class="d-flex mr-4">
 								<span class="g-font-size-26" style="color:<?= $rec->recomendation_color ?>">

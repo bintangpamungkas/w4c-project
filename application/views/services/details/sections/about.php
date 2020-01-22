@@ -20,14 +20,14 @@
 				<div style="background: url('<?= get_image('assets/img/service/' . $service_id . '/bg/' . $service->service_about_image) ?>');height: 400px;background-size: cover"></div>
 			</div>
 
-			<div class="col-md-6 g-mb-30 g-mt-15">
+			<div class="col-md-6 g-mb-30">
 				<div class="g-ml-10--lg">
 					<div class="mb-2 <?= $this->agent->is_mobile() ? 'd-none' : '' ?>">
-						<span class="g-color-gray-dark-v3 g-font-weight-700 g-font-size-16 text-uppercase"><?= $section_name ?></span>
+						<span class="g-color-gray-dark-v3 g-font-weight-700 g-font-size-18 text-uppercase"><?= $section_name ?></span>
 						<?= $this->agent->is_mobile() ? '' : '<div class="g-width-30 g-height-2 g-pos-rel g-bg-info g-mt-5"></div>' ?>
 					</div>
 					<div class="g-mb-5--lg">
-						<h2 class="<?= $this->agent->is_mobile() ? 'h4 text-center g-mb-20 g-mt-30' : 'h1 g-mb-35' ?> g-color-black g-font-weight-600 text-capitalize">
+						<h2 class="<?= $this->agent->is_mobile() ? 'h4 text-center g-mb-20 g-mt-30' : 'h2 g-mb-20' ?> g-color-black g-font-weight-600 text-capitalize">
 							<?= $service->service_slogan ?>
 						</h2>
 						<div class="g-py-35 g-px-25 g-color-white" style="background: linear-gradient(90deg, rgba(11, 144, 185, 0.9), rgba(19, 182, 127, 0.9));<?= $this->agent->is_mobile() ? '' : 'margin-left: -100px' ?>">

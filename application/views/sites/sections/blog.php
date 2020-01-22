@@ -129,7 +129,7 @@
 
 	<?php else: // DESKTOP VIEW  ?>
 
-	<div class="row">
+	<div class="row align-height-list">
 		<?php
 		foreach ($blogs as $blog):
 			?>
@@ -157,7 +157,7 @@
 								</small>
 							</div>
 						</div>
-						<div class="blog-item">
+						<div class="align-height-item">
 							<h3 class="h5 g-mb-15" style="min-height: 80px">
 								<a class="u-link-v5 g-color-gray-dark-v2 g-color-info--hover g-font-weight-700" href="<?= $blog['blog_url'] ?>" style="word-wrap: break-word"><?= $blog['blog_title'] ?></a>
 							</h3>
@@ -239,17 +239,20 @@
 
 <script>
 	$(window).ready(function () {
-		var detailBlog, tempHeightBlog;
+		var list = $(".align-height-list");
 
-		detailBlog = $(".blog-item");
-		tempHeightBlog = 0;
+		jQuery.each(list, function (listIndex, listValue) {
 
-		jQuery.each(detailBlog, function (index, value) {
-			if (tempHeightBlog < $(this).height()) {
-				tempHeightBlog = $(this).height();
-			}
+			var item = $(this).find(".align-height-item");
+			var tempHeights = 0;
+			jQuery.each(item, function (itemIndex, itemValue) {
+				console.log($(this).height());
+				if (tempHeights < $(this).height()) {
+					tempHeights = $(this).height();
+				}
+			});
+			item.height(tempHeights);
 		});
-		detailBlog.height(tempHeightBlog);
 	});
 
 	function blogShare(that) {

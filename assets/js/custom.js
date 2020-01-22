@@ -126,4 +126,20 @@ $(window).ready(function () {
             $('#welcome-image').removeClass('image-opacity-0');
         }, 1000
     );
+
+    // make item same height as other item
+    var list = $(".align-height-list");
+
+    jQuery.each(list, function (listIndex, listValue) {
+
+        var item = $(this).find(".align-height-item");
+        var tempHeights = 0;
+        jQuery.each(item, function (itemIndex, itemValue) {
+            console.log($(this).height());
+            if (tempHeights < $(this).height()) {
+                tempHeights = $(this).height();
+            }
+        });
+        item.height(tempHeights);
+    });
 });

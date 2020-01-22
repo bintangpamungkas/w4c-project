@@ -7,7 +7,7 @@
 				<hr class="g-width-70 g-my-20 g-brd-2 g-brd-blue">
 				<p class="g-color-white-opacity-0_8 d-none"><?= lang('brand_partner_subtitle') ?></p>
 			</div>
-			<div id="portfolio-highlight-carousel" class="owl-theme row justify-content-center" style="margin: 0 0 30px 0!important;padding:0px">
+			<div id="portfolio-highlight-carousel" class="owl-theme row justify-content-center align-height-list" style="margin: 0 0 30px 0!important;padding:0px">
 				<?php
 				if ($this->agent->is_mobile()) {
 					if (count($portfolios) > 1) {
@@ -32,7 +32,7 @@
 								</div>
 							<?php endif; ?>
 							<div class="col-<?= $this->agent->is_mobile() ? '12' : '6' ?> g-pa-30">
-								<div class="portfolio-detail">
+								<div class="align-height-item">
 									<img class="g-mb-15" src="<?= get_image(DIR_SERVICE . $service_id . '/portfolio/' . $porto->portfolio_client_logo) ?>" alt="<?= $porto->portfolio_client ?>" style="max-height: 50px; max-width: 80px;margin-bottom: 5px;">
 									<div class="g-font-weight-600 g-font-size-20 g-line-height-1_1 g-mb-5"><?= $porto->portfolio_client ?></div>
 									<div class="g-font-size-12 g-line-height-1_1" style="color:#AFAFAF"><?= $porto->portfolio_client_address ?></div>
@@ -230,17 +230,4 @@
 			?>
 		</div>
 	</section>
-	<script>
-      $(window).ready(function () {
-          var detail = $(".portfolio-detail");
-          var tempHeight = 0;
-          jQuery.each(detail, function () {
-              if (tempHeight < $(this).height()) {
-                  tempHeight = $(this).height();
-              }
-          });
-          detail.height(tempHeight);
-      });
-	</script>
-
 <?php endif; ?>
