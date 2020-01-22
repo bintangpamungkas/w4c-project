@@ -32,10 +32,11 @@
 									<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : strtoupper(get_lang('get-proposal')) ?>
 								</a>
 							</div>
+
 							<?php if($service->service_portfolio_url==1):?>
 								<div class="col-auto">
-									<a class="click_scroll btn btn-outline-info g-color-blue-dark-v1--focus g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-mb-10 <?= $this->agent->is_mobile() ? 'btn-block mb-4' : '' ?>" href="<?= base_url(DIR_SERVICE . $service_id . '/portfolio/'.$lang.'.pdf') ?>">
-										<?= strtoupper(get_lang('get-portfolio')) ?>
+									<a class="click_scroll btn btn-outline-info g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-mb-10 <?= $this->agent->is_mobile() ? 'btn-block mb-4' : '' ?>" href="<?= base_url(DIR_SERVICE . $service_id . '/portfolio/'.$lang.'.pdf')?>">
+										<?=$parent_service->service_slug?><?= strtoupper(get_lang('get-portfolio')) ?>
 									</a>
 								</div>
 							<?php endif; ?>

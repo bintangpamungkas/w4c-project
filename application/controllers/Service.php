@@ -146,7 +146,7 @@
 			$lang = $this->get_language();
 			
 			$service = $this->service_model->get_service($lang, $service_slug);
-			$parent_service = $this->crud_model->select('service', QUERY_ROW, ['service_slug', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_name AND language_code="' . $lang . '" limit 1) as service_name'], ['service_id' => $service->service_parent_id]);
+			$parent_service = $this->crud_model->select('service', QUERY_ROW, ['service_slug','service_portfolio_url', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_name AND language_code="' . $lang . '" limit 1) as service_name'], ['service_id' => $service->service_parent_id]);
 			
 			$sections = $this->crud_model->select('service_section', QUERY_RESULT, ['service_section.deleted_at', 'service_section.service_id', 'section.section_id', 'section_slug', '(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_menu_name AND dictionary.language_code="' . $lang . '") as section_menu_name', '(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_name AND dictionary.language_code="' . $lang . '") as section_name'], ['service_section.service_id' => $service->service_id, 'service_section.deleted_at' => null], ['service_section' => ['section' => 'section_id']]);
 			
@@ -182,8 +182,9 @@
 			];
 			
 			$data['subnav'] = $sections;
-			
+
 			$data['service'] = $service;
+			$data['parent_service'] = $parent_service;
 			$data['sections'] = $sections;
 			foreach ($sections as $section) {
 				if ($section->section_slug == 'our-achievement' || $section->section_slug == 'achievement-deliverable') {

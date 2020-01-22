@@ -2,8 +2,6 @@
 	<div class="row justify-content-center g-mt-<?= $this->agent->is_mobile() ? '100' : '150' ?>">
 		<div class="col-md-8">
 			<div class="form-group g-mb-20 text-center">
-				<small class="form-text text-muted g-font-size-default g-mt-10"><?= lang('brand_join_subtitle') ?></small>
-				<small class="form-text text-muted g-font-size-default g-mt-10"><?= lang('brand_join_subtitle2') ?></small>
 				<br>
 				<br>
 				<script>

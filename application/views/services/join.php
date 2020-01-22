@@ -1,17 +1,7 @@
 <div class="container">
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<div class="row justify-content-center">
+	<div class="row justify-content-center g-mt-<?= $this->agent->is_mobile() ? '100' : '150' ?>">
 		<div class="col-md-8">
 			<div class="form-group g-mb-20 text-center" style="padding: 15px 8px">
-				<h3 class=""><?= get_lang('join-the-program') ?></h3>
-				<h2 class="text-uppercase"><?= $service->service_name ?></h2>
-				<br>
 				<br>
 				<script>
             $(window).ready(function () {
