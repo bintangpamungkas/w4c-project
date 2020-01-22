@@ -237,7 +237,7 @@
 					<div class="col-4">
 						<div
 							class="service-item-all g-mb-5 g-bg-white <?= $this->agent->is_mobile() ? 'g-mt-10' : 'g-mt-25' ?> box-shadow-down">
-							<div class="text-center bg-white g-mx-20 g-px-30 g-py-20" style=" height:453px">
+							<div class="text-center bg-white g-mx-20 g-px-30 g-py-20">
 								<div class="g-mt-100">
 									<div class="g-font-weight-700 g-font-size-20 mb-4">
 										<?= get_lang('cant-found-the-solution-you-are-looking-for?') ?>

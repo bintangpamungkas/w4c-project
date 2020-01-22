@@ -1,7 +1,7 @@
-<section id="client" class="g-bg-secondary">
+<section id="testimonial" class="g-bg-secondary">
   <div class="divimage dzsparallaxer--target w-100 d-none" style="height: 110%; background-image: url(<?= base_url('assets/img/bg/img36.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
   <div class="container <?= $this->agent->is_mobile() ? 'g-pt-80 g-pb-5' : 'g-pt-20 g-pb-140' ?>">
-    <div class="text-center g-pb-50">
+    <div class="text-center g-py-70">
       <h2 class="g-font-asap g-color-black g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?=get_lang('testimonial')?></h2>
       <!-- <hr class="g-width-70 g-my-20 g-brd-2 g-brd-blue"> -->
     </div>
