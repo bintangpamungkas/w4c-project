@@ -4,7 +4,7 @@
 	<div style="background:rgba(248,248,248,0.78)">
 		<div class="container g-pt-100 g-pb-50">
 			<div class="text-center g-mb-50">
-				<h4 class="g-font-asap g-color-black g-font-weight-500 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= get_lang('start_your') . ' <strong>' . $service->service_name . ' </strong> ' . get_lang('now!') ?></h4>
+				<h4 class="g-font-asap g-color-black g-font-weight-500 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= get_lang('start_your')?> <strong> <?= empty($parent_service->service_name) ? $service->service_name : $parent_service->service_name ?> </strong> <?= get_lang('now!') ?></h4>
 				<div class="row justify-content-center">
 					<div class="col-10 pt-5">
 						<div class="row justify-content-center">

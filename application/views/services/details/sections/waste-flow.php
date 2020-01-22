@@ -28,7 +28,7 @@ foreach ($flows as $flow) {
 					<?php
 					foreach ($flow_category as $key => $category) {
 						?>
-						<div class="col text-center g-px-0">
+						<div class="col text-center g-px-0 align-self-end">
 							<div class="my_tab_2 g-cursor-pointer nav-link g-font-weight-700 g-font-size-<?= $this->agent->is_mobile() ? '14 g-py-10 g-px-5 ' : '15 g-py-12  g-px-20' ?> <?= $key == 0 ? 'tab-active' : '' ?>"
 							     data-tab="#<?= $category ?>"
 							     style="<?= $this->agent->is_mobile() ? 'min-height: 40px' : 'min-height: 50px' ?> ; color:#aaa">
@@ -61,7 +61,7 @@ foreach ($flows as $flow) {
 		foreach ($flow_category as $key => $category) {
 			?>
 			<div id="<?= $category ?>" class="row justify-content-center my_tab_content">
-				<div class="col-md-11 col-12">
+				<div class="col-md-11 col-12 align-self-end">
 					<div id="waste-flow-carousel<?= $key ?>" class="col-md-12 owl-theme" style="margin: 0 0 30px 0!important;">
 						<?php
 						$i = 0;
