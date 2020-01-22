@@ -1,8 +1,8 @@
 <section class="g-bg-gray-light-v5" style="position: relative; <?= $this->agent->is_mobile() ? 'min-height: 350px;' : 'min-height: 100px;' ?>">
 	<div id="<?= $section_slug ?>>" style="height: 10px;position: absolute;width: 80%;margin-top: -100px"></div>
-	<div style=" <?= $this->agent->is_mobile() ? '' : 'position: absolute; top: -70px;' ?>">
-		<div style="width: <?= $this->agent->is_mobile() ? 'calc(100vw - 40px)' : '100vw' ?> ">
-			<div class="container g-bg-white u-shadow-v20 <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-10 g-mx-20' : 'g-pa-40' ?>">
+	<div style="width:100%; <?= $this->agent->is_mobile() ? 'position: absolute; top: -50px;' : 'position: absolute; top: -70px;' ?>">
+		<div class="container">
+			<div class=" g-bg-white u-shadow-v20 <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-10' : 'g-pa-40' ?>">
 				<div class="row">
 					<div class="col-md-3 col-xs-12 col-md-4 col-xs-12 g-color-black g-font-weight-500 g-line-height-1_2 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-25 text-center' : 'g-font-size-40 g-pr-50 ' ?>">
 						<?= $section_name ?>
@@ -24,9 +24,9 @@
 
 <!-- JS Plugins Init. -->
 <script>
-    $(document).on('ready', function () {
-        // initialization of counters
-        var counters = $.HSCore.components.HSCounter.init('[class*="js-counter"]');
-    });
+	$(document).on('ready', function () {
+		// initialization of counters
+		var counters = $.HSCore.components.HSCounter.init('[class*="js-counter"]');
+	});
 </script>
 

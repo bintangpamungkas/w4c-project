@@ -145,7 +145,7 @@
 	<?php
 		if (!$this->agent->is_mobile()) {
 			?>
-			<div class="hs-has-sub-menu nav-item g-mx-20--lg" data-animation-in="fadeIn" data-animation-out="fadeOut" data-position="right">
+			<div class="hs-has-sub-menu nav-item g-ml-20--lg" data-animation-in="fadeIn" data-animation-out="fadeOut" data-position="right">
 				<a href="javascript:void()" class="<?= $template == 'index' ? 'nav-change-scroll g-color-white' : '' ?> g-font-size-12 nav-link px-0" style="line-height: 1;color:black" aria-haspopup="true" aria-expanded="false">
 					<img src="<?= $this->session->userdata('language') ? ($this->session->userdata('language') == 'id' ? get_image(DIR_ICON . 'flag_indonesia.png') : get_image(DIR_ICON . 'flag_england.png')) : get_image(DIR_ICON . 'flag_indonesia.png') ?>" style="border: 1px solid rgba(0,0,0,0.1);height: 13px;margin-bottom: 2px">
 					<?= empty($this->session->userdata('language')) ? 'ID' : strtoupper($this->session->userdata('language')) ?>
