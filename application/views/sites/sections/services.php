@@ -56,7 +56,7 @@
 								       name="city"
 								       value="<?= $input_city ?>"
 								       style="border:1px solid #0B90B9; border-radius:0px"
-								       placeholder="<?= get_lang('enter-your-location') ?>"
+								       placeholder="<?= get_lang('enter-location') ?>"
 								       autocomplete="off">
 								<input type="hidden" name="target" value="<?= $input_city ?>">
 								<div class="input-group-btn">

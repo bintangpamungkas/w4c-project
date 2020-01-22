@@ -67,7 +67,7 @@
 							       class="form-control form-control-md border-left-0 rounded-0 g-pa-10 pl-0 border-right-0 g-box-shadow-none"
 							       type="text" name="city" value="<?= $input_city ?>"
 							       style="border:1px solid #0B90B9; border-radius:0px"
-							       placeholder="<?= get_lang('enter-your-location') ?>" autocomplete="off">
+							       placeholder="<?= get_lang('enter-location') ?>" autocomplete="off">
 							<input type="hidden" name="target" value="<?= $service_target ?>">
 							<div class="input-group-btn">
 								<button class="btn btn-info g-py-10 g-px-30 g-letter-spacing-2 border-left-0" type="submit"
@@ -140,7 +140,7 @@
 										</div>
 										<div class="col-6">
 											<span
-												class="g-color-gray-dark-v3 g-font-weight-600 g-font-size-12 text-uppercase"><?= strtolower($service->service_category_name) == strtolower($service->service_name) ? '' : $service->service_category_name ?></span>
+												class="g-color-gray-dark-v3 g-font-weight-600 g-font-size-12 text-uppercase"><?= strtolower($service->service_category_name) == strtolower($service->service_name) ? 'GENERAL' : $service->service_category_name ?></span>
 											<div class="">
 												<h2
 													class="'h1 g-color-black g-font-weight-600 g-mb-25 g-line-height-1_2">
@@ -170,7 +170,7 @@
 										?>
 										<div class="col-6">
 											<span
-												class="g-color-gray-dark-v3 g-font-weight-600 g-font-size-12 text-uppercase"><?= strtolower($service->service_category_name) == strtolower($service->service_name) ? '' : $service->service_category_name ?></span>
+												class="g-color-gray-dark-v3 g-font-weight-600 g-font-size-12 text-uppercase"><?= strtolower($service->service_category_name) == strtolower($service->service_name) ? 'GENERAL' : $service->service_category_name ?></span>
 											<div class="">
 												<h1
 													class="<?= $this->agent->is_mobile() ? 'h4' : 'h1' ?> g-color-black g-font-weight-600 g-mb-25 g-line-height-1_2">

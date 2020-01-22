@@ -99,7 +99,7 @@ $(window).ready(function () {
     var screen_height = window.innerHeight;
     var header_height = $('header').height();
 
-    var set_middle = (screen_height - $('.content-middle-fullscreen').height()-header_height) / 2.5;
+    var set_middle = (screen_height - $('.content-middle-fullscreen').height()-header_height) / 5;
 
     // if ($('.full-height-block').find('.with-header').height() !== null) {
     //     var header_height = $('header').height();

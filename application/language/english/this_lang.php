@@ -11,6 +11,7 @@ $lang["about_us"]="About Us";
 $lang["about_only"]="About";
 $lang["about_general"]="About";
 $lang["service"]="Service";
+$lang["services"]="Services";
 $lang["solution"]="Our Solutions";
 $lang["facility"]="Facilities";
 $lang["recomended_user"]="Recomended For";

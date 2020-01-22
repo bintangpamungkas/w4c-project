@@ -66,7 +66,7 @@
 //		 $data['service_targets']=$targets;
 			$data['navigation_array'] = [
 					[
-							'title' => strtoupper(lang('service')),
+							'title' => strtoupper(lang('services')),
 							'for' => 'menu',
 							'visible' => $this->agent->is_mobile() ? false : true,
 							'number' => '1',

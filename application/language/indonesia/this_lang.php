@@ -10,6 +10,7 @@ $lang["register"]="Daftar";
 $lang["about_us"]="Tentang Kami";
 $lang["about_general"]="Tentang Layanan";
 $lang["service"]="Layanan";
+$lang["services"]="Layanan";
 $lang["about_only"]="Tentang";
 $lang["solution"]="Solusi Kami";
 $lang["facility"]="Fasilitas";
