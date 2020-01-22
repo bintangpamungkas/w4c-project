@@ -8,7 +8,7 @@
 					<?php foreach ($service_targets as $target): ?>
 						<div
 							class="col-6 g-px-0 g-font-weight-700 <?= $target->service_target_id == 1 ? '' : ' tab-shadow' ?> my_tab <?= $target->service_target_id == 1 ? 'tab-active' : '' ?>"
-							data-tab="#tab-<?= $target->service_target_id ?>">
+							data-tab="#tab-<?= $target->service_target_id ?>" data-id="<?=$target->service_target_slug?>">
 							<div class="my_tab_line"></div>
 							<a
 								class="my_tab_item g-cursor-pointer nav-link my_tab g-py-20 g-font-weight-300 g-font-size-12 g-px-20 text-center text-uppercase">
@@ -23,7 +23,7 @@
 					<?php foreach ($service_targets as $target): ?>
 						<div
 							class="col-auto g-px-0 g-font-weight-700 <?= $target->service_target_id == 1 ? '' : ' tab-shadow' ?> my_tab <?= $target->service_target_id == 1 ? 'tab-active' : '' ?>"
-							data-tab="#tab-<?= $target->service_target_id ?>">
+							data-tab="#tab-<?= $target->service_target_id ?>" data-id="<?=$target->service_target_slug?>">
 							<div class="my_tab_line"></div>
 							<a
 								class="my_tab_item g-cursor-pointer nav-link my_tab  g-py-20 g-font-weight-300 g-font-size-20 g-px-45 text-uppercase">
@@ -54,11 +54,11 @@
 								       class="form-control form-control-md border-left-0 rounded-0 g-pa-10 pl-0 border-right-0 g-box-shadow-none "
 								       type="text"
 								       name="city"
-								       value="<?= $input_city ?>"
+								       value="<?= empty($input_city) ? '' : $input_city ?>"
 								       style="border:1px solid #0B90B9; border-radius:0px"
 								       placeholder="<?= get_lang('enter-location') ?>"
 								       autocomplete="off">
-								<input type="hidden" name="target" value="<?= $input_city ?>">
+								<input type="hidden" name="target" value="<?= empty($service_target) ? '' : $service_target ?>">
 								<div class="input-group-btn">
 									<button class="btn btn-info g-py-10 g-px-30 g-letter-spacing-2 border-left-0" type="submit"
 									        style="border:1px solid #0B90B9;border-radius:0px">
@@ -79,6 +79,7 @@
             $(this).addClass('tab-active');
             $('.my_tab_content').addClass('d-none');
             $(tab_target).removeClass('d-none');
+					$('input[name=target]').val($(this).data('id'));
         })
 		</script>
 

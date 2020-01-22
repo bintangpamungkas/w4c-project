@@ -18,7 +18,7 @@ class Site extends MY_Controller
 		
 		$lang = $this->get_language();
 		
-		$targets = $this->crud_model->select('service_target', QUERY_RESULT, ['service_target_id', 'dictionary.dictionary_content service_target_name', 'service_target_icon'], ['language_code' => $lang, 'deleted_at' => null], ['service_target' => ['dictionary' => 'dictionary_slug=service_target_name']]);
+		$targets = $this->crud_model->select('service_target', QUERY_RESULT, ['service_target_id', 'service_target_name service_target_slug', 'dictionary.dictionary_content service_target_name', 'service_target_icon'], ['language_code' => $lang, 'deleted_at' => null], ['service_target' => ['dictionary' => 'dictionary_slug=service_target_name']]);
 		$service_target = [];
 		foreach ($targets as $target) {
 			if (empty($input_city)) {

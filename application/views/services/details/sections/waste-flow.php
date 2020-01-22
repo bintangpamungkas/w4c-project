@@ -1,5 +1,6 @@
 <?php
 $temp_flow_category = '';
+$rdf = false;
 foreach ($flows as $flow) {
 	if ($temp_flow_category != $flow->flow_category) {
 		$temp_flow_category = $flow->flow_category;
@@ -17,10 +18,9 @@ foreach ($flows as $flow) {
 		<div class="text-center g-mb-50">
 			<h2 class="g-font-asap g-color-black-dark-v2 g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-20' : '' ?>"><?= $section_name ?></h2>
 			<hr class="g-width-70 g-mt-20 g-mb-0 g-brd-2 g-brd-blue">
-<!--			<div class="mt-2 mb-4"> --><?//= $rdf=true ? get_lang('residue-co-processing-with-rdf-technology') : get_lang('residual-waste-treatment-at-the-landfill') ?><!--</div>-->
+			<div class="mt-2 mb-4"> <?= count($flow_category) == 1 ? ($rdf == true ? get_lang('residual-waste-treatment-using-rdf-technology') : get_lang('residual-waste-treatment-at-the-landfill')) : '' ?></div>
 
 			<!-- Services target navivation -->
-			
 			<?php
 			if (count($flow_category) > 1) {
 				?>
@@ -29,9 +29,10 @@ foreach ($flows as $flow) {
 					foreach ($flow_category as $key => $category) {
 						?>
 						<div class="col text-center g-px-0 align-self-end">
-							<div class="my_tab_2 g-cursor-pointer nav-link g-font-weight-700 g-font-size-<?= $this->agent->is_mobile() ? '14 g-py-10 g-px-5 ' : '15 g-py-12  g-px-20' ?> <?= $key == 0 ? 'tab-active' : '' ?>"
-							     data-tab="#<?= $category ?>"
-							     style="<?= $this->agent->is_mobile() ? 'min-height: 40px' : 'min-height: 50px' ?> ; color:#aaa">
+							<div
+								class="my_tab_2 g-cursor-pointer nav-link g-font-weight-700 g-font-size-<?= $this->agent->is_mobile() ? '14 g-py-10 g-px-5 ' : '15 g-py-12  g-px-20' ?> <?= $key == 0 ? 'tab-active' : '' ?>"
+								data-tab="#<?= $category ?>"
+								style="<?= $this->agent->is_mobile() ? 'min-height: 40px' : 'min-height: 50px' ?> ; color:#aaa">
 								<?= get_lang($category) ?>
 							</div>
 						</div>
@@ -43,18 +44,18 @@ foreach ($flows as $flow) {
 			} //if ($count_category > 1)
 			?>
 			<script>
-          $(document).on('click', '.my_tab_2', function () {
-              var tab_target = $(this).data('tab');
-              $('.my_tab_2').removeClass('tab-active');
-              $(this).addClass('tab-active');
-              $('.my_tab_content').addClass('d-none');
-              console.log($(tab_target).attr('class'));
-              $(tab_target).removeClass('d-none');
-          });
+				$(document).on('click', '.my_tab_2', function () {
+					var tab_target = $(this).data('tab');
+					$('.my_tab_2').removeClass('tab-active');
+					$(this).addClass('tab-active');
+					$('.my_tab_content').addClass('d-none');
+					console.log($(tab_target).attr('class'));
+					$(tab_target).removeClass('d-none');
+				});
 			</script>
 			<!-- END Services target navivation -->
 		</div>
-		
+
 		<?php
 		if ($this->agent->is_mobile()) {
 		if (count($flow_category) > 1) {
@@ -88,45 +89,45 @@ foreach ($flows as $flow) {
 			</div>
 
 			<script>
-          $(window).ready(function () {
-              var element_id = '#waste-flow-carousel<?=$key?>';
-              $(element_id).owlCarousel({
-                  loop: true,
-                  margin: 0,
-                  dots: true,
-                  nav: true,
-                  autoplay: true,
-                  autoplayTimeout: 1500,
-                  autoplayHoverPause: true,
-                  responsive: {
-                      0: {
-                          items: 1
-                      },
-                      600: {
-                          items: 1
-                      },
-                      1000: {
-                          items: 2
-                      }
-                  },
-                  navText: ['<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-left g-color-gray-light-v1 nav-arrow-left' : 'fa fa-angle-left g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>', '<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-right g-color-gray-light-v1 nav-arrow-right' : 'fa fa-angle-right g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>']
-              });
+				$(window).ready(function () {
+					var element_id = '#waste-flow-carousel<?=$key?>';
+					$(element_id).owlCarousel({
+						loop: true,
+						margin: 0,
+						dots: true,
+						nav: true,
+						autoplay: true,
+						autoplayTimeout: 1500,
+						autoplayHoverPause: true,
+						responsive: {
+							0: {
+								items: 1
+							},
+							600: {
+								items: 1
+							},
+							1000: {
+								items: 2
+							}
+						},
+						navText: ['<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-left g-color-gray-light-v1 nav-arrow-left' : 'fa fa-angle-left g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>', '<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-right g-color-gray-light-v1 nav-arrow-right' : 'fa fa-angle-right g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>']
+					});
 
-              //$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
-              $(element_id + ' .owl-controls').attr('style', 'margin-top: 30px;');
-              var screen_display = <?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
-              // console.log(screen_display);
-              var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '69' : '98.5' ?>) / 100) / 2;
-              //console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
-              $(element_id + ' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 318px;width: 74%;right: ' + margin_side + 'px;')
-              //Hide last item after carousel init because if hide first courosel not working
-						<?=$key != 0 ? '$("#' . $category . '").addClass("d-none")' : ''?>
-          });
+					//$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
+					$(element_id + ' .owl-controls').attr('style', 'margin-top: 30px;');
+					var screen_display = <?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
+					// console.log(screen_display);
+					var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '69' : '98.5' ?>) / 100) / 2;
+					//console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
+					$(element_id + ' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 318px;width: 74%;right: ' + margin_side + 'px;')
+					//Hide last item after carousel init because if hide first courosel not working
+					<?=$key != 0 ? '$("#' . $category . '").addClass("d-none")' : ''?>
+				});
 			</script>
-		
+
 		<?php
 		} // foreach ($flow_category as $category)
-		
+
 		} else { //if ($count_category > 1)
 		?>
 			<div class="row justify-content-center">
@@ -154,45 +155,45 @@ foreach ($flows as $flow) {
 				</div>
 			</div>
 			<script>
-          $(window).ready(function () {
-              var element_id = '#waste-flow-carousel';
-              $(element_id).owlCarousel({
-                  loop: true,
-                  margin: 0,
-                  dots: true,
-                  nav: true,
-                  autoplay: true,
-                  autoplayTimeout: 1500,
-                  autoplayHoverPause: true,
-                  responsive: {
-                      0: {
-                          items: 1
-                      },
-                      600: {
-                          items: 1
-                      },
-                      1000: {
-                          items: 2
-                      }
-                  },
-                  navText: ['<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-left g-color-gray-light-v1 nav-arrow-left' : 'fa fa-angle-left g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>', '<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-right g-color-gray-light-v1 nav-arrow-right' : 'fa fa-angle-right g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>']
-              });
+				$(window).ready(function () {
+					var element_id = '#waste-flow-carousel';
+					$(element_id).owlCarousel({
+						loop: true,
+						margin: 0,
+						dots: true,
+						nav: true,
+						autoplay: true,
+						autoplayTimeout: 1500,
+						autoplayHoverPause: true,
+						responsive: {
+							0: {
+								items: 1
+							},
+							600: {
+								items: 1
+							},
+							1000: {
+								items: 2
+							}
+						},
+						navText: ['<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-left g-color-gray-light-v1 nav-arrow-left' : 'fa fa-angle-left g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>', '<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-right g-color-gray-light-v1 nav-arrow-right' : 'fa fa-angle-right g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>']
+					});
 
-              //$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
-              $(element_id + ' .owl-controls').attr('style', 'margin-top: 30px;');
-              var screen_display = <?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
-              // console.log(screen_display);
-              var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '69' : '98.5' ?>) / 100) / 2;
-              //console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
-              $(element_id + ' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 318px;width: 74%;right: ' + margin_side + 'px;')
-          });
+					//$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
+					$(element_id + ' .owl-controls').attr('style', 'margin-top: 30px;');
+					var screen_display = <?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
+					// console.log(screen_display);
+					var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '69' : '98.5' ?>) / 100) / 2;
+					//console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
+					$(element_id + ' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 318px;width: 74%;right: ' + margin_side + 'px;')
+				});
 			</script>
 		<?php
 		} //if ($count_category > 1)
 		} else { // DESKTOP
 		if (count($flow_category) > 1) {
 		foreach ($flow_category
-		
+
 		as $key => $category) {
 		?>
 			<div id="<?= $category ?>" class="row justify-content-center my_tab_content <?= $key == 0 ? '' : 'd-none' ?>">
