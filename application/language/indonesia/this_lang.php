@@ -62,7 +62,7 @@ $lang["about_quote"]="Membangun Ekosistem Pengelolaan Sampah yang Bertanggung Ja
 $lang["learn_more"]="Pelajari Lebih Lanjut";
 $lang["about_description_small"]="Waste4Change adalah  perusahaan sosial yang didirikan pada tahun 2014 dengan misi memberikan layanan pengelolaan sampah yang ramah lingkungan dan bertanggung jawab untuk Indonesia bebas sampah";
 $lang["about_we_create_responsible_1"]="Terdepan dalam memberi layanan";
-$lang["about_we_create_responsible_2"]="<br>Pengelolaan Sampah yang Bertanggung Jawab";
+$lang["about_we_create_responsible_2"]="Pengelolaan Sampah yang Bertanggung Jawab";
 $lang["about_we_create_responsible_3"]="pertama di Indonesia";
 $lang["about_strategy"]="Strategi";
 $lang["about_strategy_content"]="Kami mengubah ekosistem untuk sebuah pengelolaan sampah bertanggung jawab dengan kolaborasi dan teknologi menuju implementasi Circular Economy Dan bebas sampah Indonesia";
@@ -319,7 +319,7 @@ $lang['join_brand_btn_only']="BERGABUNG";
 //share
 $lang['share_title']="Bagikan Berita Baik Ini";
 $lang['share_subtitle']="Bagikan ke sosial media Anda & Buat perubahan untuk lingkunganmu";
-$lang['share_caption']="Mulai Daur Ulang bersama Waste4Change";
+$lang['share_caption']="Banyak jasa menarik dari Waste4Change nih untuk Pengelolaan Sampah Bertanggung Jawab, cek di w4c.id";
 
 //send page
 $lang['send_form_title']="FORM KIRIM SAMPAH";

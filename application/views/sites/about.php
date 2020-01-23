@@ -3,9 +3,10 @@
 <div class="g-bg-white <?= $this->agent->is_mobile() ? 'g-pt-150 g-pb-40' : 'g-py-200' ?>">
     <div class="container">
         <div class="row justify-content-center text-center g-mb-50">
-            <div class="col-lg-10">
-                <div class="g-font-size-<?= $this->agent->is_mobile() ? '25' : '35' ?> g-color-black g-font-weight-600 mb-0 g-line-height-1_2"><?= lang('about_we_create_responsible_1') ?>
-                    <span class="g-brd-2 g-brd-primary g-color-info"><?= lang('about_we_create_responsible_2') ?></span><br><?= lang('about_we_create_responsible_3') ?>
+            <div class="col-lg-10  g-line-height-1_2">
+                <div class="g-font-size-<?= $this->agent->is_mobile() ? '25' : '35' ?> g-color-black g-font-weight-600"><?= lang('about_we_create_responsible_1') ?><br>
+                    <span class="g-brd-2 g-brd-primary g-color-info"><?= lang('about_we_create_responsible_2') ?></span><br>
+	                <?= lang('about_we_create_responsible_3') ?>
                 </div>
                 <div class="g-pt-50">
                     <?= lang('about_description_small') ?>
@@ -48,7 +49,7 @@
                 ?>
                 <div class="col-md-4 col-6 g-px-5 g-mb-10">
                     <a class="js-fancybox" href="<?= base_url('assets/img/bg/about/'.$gallery['image']) ?>" title="Lightbox Gallery" data-fancybox-gallery="lightbox-gallery" data-fancybox-speed="500" data-fancybox-slide-speed="1000">
-                        <div style="background: url(<?= base_url('assets/img/bg/about/'.$gallery['image']) ?>);height: 250px;background-size: cover"></div>
+                        <div style="background: url(<?= base_url('assets/img/bg/about/'.$gallery['image']) ?>);height: 250px;background-size: cover;background-position: center"></div>
                     </a>
                 </div>
                 <?php
@@ -166,7 +167,7 @@
             [
                 '4c_title' => 'Collect',
                 '4c_number' => '3',
-                '4c_content' => 'We help you to have responsible waste management in your home or offices so that no more waste are mixed.',
+                '4c_content' => 'We help you to have responsible waste management in your area so that no more waste are mixed and minimised the number of waste that ends up in the landfill.',
                 '4c_list' => [
                     [
                         '4c_list_title' => 'Commercial Waste Management',

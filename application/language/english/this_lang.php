@@ -60,7 +60,7 @@ $lang["about_quote"]="Creating A Responsible Waste Management Ecosystem";
 $lang["learn_more"]="Learn More";
 $lang["about_description_small"]="Waste4Change is a social enterprise founded in 2014 which gives services in waste management in environmental friendly and responsible approach toward zero-waste Indonesia.";
 $lang["about_we_create_responsible_1"]="We Create Ecosystem of";
-$lang["about_we_create_responsible_2"]="Responsible<br>Waste Management";
+$lang["about_we_create_responsible_2"]="Responsible Waste Management";
 $lang["about_we_create_responsible_3"]="In Indonesia";
 $lang["about_strategy"]="Strategy";
 $lang["about_strategy_content"]="Behaviour change in Waste Management with collaboration and technology towards zero-waste Indonesia.";
@@ -320,7 +320,7 @@ $lang['join_brand_btn_only']="JOIN NOW";
 //share
 $lang["share_title"]="Share a Good News";
 $lang["share_subtitle"]="Share on your social media & create impact for your environment";
-$lang["share_caption"]="Start Recycling with Waste4Change";
+$lang["share_caption"]="See what I found in Waste4Change! There are many services for reseponsible waste management, check w4c.id";
 
 //send page
 $lang["send_form_title"]="SEND WASTE FORM";
