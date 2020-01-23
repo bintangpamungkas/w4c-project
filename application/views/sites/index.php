@@ -6,9 +6,9 @@
 			<div class="row content-middle-fullscreen">
 				<div class="col-md-12">
 					<div class="g-font-asap g-font-weight-500  g-font-size-<?= $this->agent->is_mobile() ? '42 g-line-height-1' : '60  g-mt-70 g-line-height-1' ?> g-color-white" ><?= get_lang('it-is-time-to-responsibly') ?></div>
-					<div class="g-font-asap g-font-weight-900 g-letter-spacing-1_5 g-font-size-<?= $this->agent->is_mobile() ? '42 g-line-height-1 mt-3' : '60 g-line-height-1' ?>" style="color: #88C662;text-shadow: 0.5px 0.5px 0 #88C662, -0.5px -0.5px 0 #88C662, 0.5px -0.5px 0 #88C662, -0.5px 0.5px 0 #88C662, 3px 3px 5px #0000;"><?= get_lang('responsibly') ?></div>
 					<div class="g-font-asap g-font-weight-900 g-letter-spacing-1_5 g-font-size-<?= $this->agent->is_mobile() ? '42 g-line-height-1' : '60 g-line-height-1' ?> g-color-white" style="text-shadow: 0.5px 0.5px 0 #fff, -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff, 3px 3px 5px #0000;"><?= get_lang('manage-your-waste') ?></div>
-					
+					<div class="g-font-asap g-font-weight-900 g-letter-spacing-1_5 g-font-size-<?= $this->agent->is_mobile() ? '42 g-line-height-1 mt-3' : '60 g-line-height-1' ?>" style="color: #88C662;text-shadow: 0.5px 0.5px 0 #88C662, -0.5px -0.5px 0 #88C662, 0.5px -0.5px 0 #88C662, -0.5px 0.5px 0 #88C662, 3px 3px 5px #0000;"><?= get_lang('responsibly') ?></div>
+
 					<div class="g-font-asap g-font-weight-500 g-line-height-1 g-font-size-<?= $this->agent->is_mobile() ? '25 mb-3 g-mt-40' : '45 g-mt-30' ?> g-color-white" ><?= get_lang('with-waste4change') ?></div>
 					<span class="d-block g-color-white-opacity-0_8 g-font-size-20 mb-5 mt-1"></span>
 					<a class="js-fancybox u-link-v5 g-color-white" href="https://vimeo.com/167434033" title="Single Image" style="display: none">

@@ -108,12 +108,22 @@
 							<?php endforeach; ?>
 						</ul>
 						<?php if (!$this->agent->is_mobile()): ?>
-							<?php if ($service->service_portfolio_url == 1): ?>
-								<a class="click_scroll btn btn-outline-info g-font-size-13 g-rounded-50 g-px-20 g-mr-15 d-none" href="<?= base_url(DIR_SERVICE. $service_id . '/portfolio/'.$lang) ?>" data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block"> <?= strtoupper(get_lang('get-portfolio')) ?>
+							<?php if (empty($parent_service->service_portfolio_url)): ?>
+								<?php if ($service->service_portfolio_url == 1): ?>
+								<a class="click_scroll btn btn-outline-info g-font-size-13 g-rounded-50 g-px-20 g-mr-15 d-none" href="<?= base_url(DIR_SERVICE. $service_id . '/portfolio/'.$lang.'.pdf') ?>" data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block"> <?= strtoupper(get_lang('get-portfolio')) ?>
 									<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3">
 										<i class="fa fa-info"></i>
 									</span>
 								</a>
+								<?php endif; ?>
+							<?php else: ?>
+								<?php if ($parent_service->service_portfolio_url == 1): ?>
+									<a class="click_scroll btn btn-outline-info g-font-size-13 g-rounded-50 g-px-20 g-mr-15 d-none" href="<?= base_url(DIR_SERVICE. $parent_service->service_slug . '/portfolio/'.$lang.'.pdf') ?>" data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block"> <?= strtoupper(get_lang('get-portfolio')) ?>
+										<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3">
+										<i class="fa fa-info"></i>
+									</span>
+									</a>
+								<?php endif; ?>
 							<?php endif; ?>
 							<a class="click_scroll btn btn-info g-color-white g-brd-white-opacity-0_2 g-font-size-13 g-rounded-50 g-px-20 d-none" href="<?= site_url('service/' . $service_id . '/join') ?>" data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block"> <?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : strtoupper(get_lang('get-proposal')) ?>
 								<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3">

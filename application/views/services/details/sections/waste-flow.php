@@ -1,13 +1,15 @@
 <?php
 $temp_flow_category = '';
-$rdf = false;
+//$rdf = false;
 foreach ($flows as $flow) {
 	if ($temp_flow_category != $flow->flow_category) {
 		$temp_flow_category = $flow->flow_category;
 		$flow_category[] = $flow->flow_category;
 	}
 	if (strtolower($flow->flow_name) == 'residue co-processing with rdf technology' || strtolower($flow->flow_name) == 'pengolahan sampah residu menggunakan teknologi rdf') {
-		$rdf = true;
+		$rdf = 'rdf';
+	}else if (strtolower($flow->flow_name) == 'residue being sent to the landfill' || strtolower($flow->flow_name) == 'residu dikirim ke tpa'){
+		$rdf = 'tpa';
 	}
 }
 ?>
@@ -18,7 +20,7 @@ foreach ($flows as $flow) {
 		<div class="text-center g-mb-50">
 			<h2 class="g-font-asap g-color-black-dark-v2 g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-20' : '' ?>"><?= $section_name ?></h2>
 			<hr class="g-width-70 g-mt-20 g-mb-0 g-brd-2 g-brd-blue">
-			<div class="mt-2 mb-4"> <?= count($flow_category) == 1 ? ($rdf == true ? get_lang('residual-waste-treatment-using-rdf-technology') : get_lang('residual-waste-treatment-at-the-landfill')) : '' ?></div>
+			<div class="mt-2 mb-4"> <?= (count($flow_category) == 1 && !empty($rdf)) ? ($rdf == 'rdf' ? get_lang('residual-waste-treatment-using-rdf-technology') : get_lang('residual-waste-treatment-at-the-landfill')) : '' ?></div>
 
 			<!-- Services target navivation -->
 			<?php

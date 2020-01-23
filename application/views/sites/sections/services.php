@@ -56,7 +56,7 @@
 								       name="city"
 								       value="<?= empty($input_city) ? '' : $input_city ?>"
 								       style="border:1px solid #0B90B9; border-radius:0px"
-								       placeholder="<?= get_lang('enter-location') ?>"
+								       placeholder="<?= get_lang('enter-the-name-of-your-city') ?>"
 								       autocomplete="off">
 								<input type="hidden" name="target" value="<?= empty($service_target) ? '' : $service_target ?>">
 								<div class="input-group-btn">

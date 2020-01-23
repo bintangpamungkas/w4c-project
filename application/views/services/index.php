@@ -67,7 +67,7 @@
 							       class="form-control form-control-md border-left-0 rounded-0 g-pa-10 pl-0 border-right-0 g-box-shadow-none"
 							       type="text" name="city" value="<?= $input_city ?>"
 							       style="border:1px solid #0B90B9; border-radius:0px"
-							       placeholder="<?= get_lang('enter-location') ?>" autocomplete="off">
+							       placeholder="<?= get_lang('enter-the-name-of-your-city') ?>" autocomplete="off">
 							<input type="hidden" name="target" value="<?= $service_target ?>">
 							<div class="input-group-btn">
 								<button class="btn btn-info g-py-10 g-px-30 g-letter-spacing-2 border-left-0" type="submit"

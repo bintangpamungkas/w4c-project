@@ -48,7 +48,7 @@
 													<?= get_lang('program-duration') ?>
 													<br>
 													<?php $portfolio_duration = explode(' ', $porto->portfolio_duration) ?>
-													<strong><?= empty($portfolio_duration[1]) ? get_lang($portfolio_duration[0]) : view_number($portfolio_duration[0]) . ' ' . get_lang($portfolio_duration[1]) ?></strong>
+													<strong><?= empty($portfolio_duration[1]) ? get_lang($portfolio_duration[0]) : ($portfolio_duration[0]) . ' ' . get_lang($portfolio_duration[1]) ?></strong>
 												</div>
 											</div>
 											<?php
@@ -117,7 +117,7 @@
 													<img src="<?= get_image(DIR_ICON . 'refresh.png') ?>" alt="" style="max-width: 20px">
 												</div>
 												<div class="col" style="color:#6C6C6C">
-													<?= get_lang('average-of-waste-collected') ?>
+													<?= get_lang('waste-collected-and-recycled') ?>
 													<br>
 													<?php $waste_collected = explode(' ', $porto->portfolio_waste_collected) ?>
 													<strong><?= view_number($waste_collected[0]) . ' ' . get_lang($waste_collected[1]) ?></strong>
