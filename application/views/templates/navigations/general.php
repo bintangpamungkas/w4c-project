@@ -5,12 +5,11 @@
 			<?php if ($this->agent->is_mobile()): ?>
 				<?php if (empty($nav['menu'])): ?>
 					<li class="nav-item g-mx-10--lg g-mx-15--xl">
-						<a class="nav-link g-py-7 g-px-0" href="<?= $nav['url'] ?>"> <?= $nav['title'] ?></a>
+						<a class="nav-link g-py-7 g-px-0 text-uppercase" href="<?= $nav['url'] ?>"> <?= $nav['title'] ?></a>
 					</li>
 				<?php else: ?>
-
 					<li class="hs-has-sub-menu nav-item g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
-						<a class="nav-link g-py-7 g-px-0" href="javascript:void()" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-pages"><?= $nav['title'] ?></a>
+						<a class="nav-link g-py-7 g-px-0 " href="javascript:void()" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-pages"><?= $nav['title'] ?></a>
 						<ul class="mega-menu hs-sub-menu list-unstyled g-brd-0  g-min-width-220 g-mt-2 g-mt-8--lg--scrolling" aria-labelledby="nav-link-pages">
 							<?php foreach ($nav['menu'] as $menu): ?>
 								<?php
@@ -35,11 +34,11 @@
 													</li>
 												<?php else: ?>
 													<?php if (count($submenu->menu) == 1 && $submenu->menu[0]->title == $submenu->title): ?>
-														<li class="dropdown-item g-bg-blue-opacity-0_1--hover <?=$this->agent->is_mobile() ?'g-pl-30 g-font-size-10':''?>">
+														<li class="dropdown-item g-bg-blue-opacity-0_1--hover <?=$this->agent->is_mobile() ?'g-pl-30':''?>">
 															<a class="nav-link g-color-black g-color-blue-dark-v2--hover" href="<?= get_url($submenu->menu[0]->url) ?>"><?= $submenu->menu[0]->title ?></a>
 														</li>
 													<?php else: ?>
-														<li class="dropdown-item hs-has-sub-menu g-bg-white g-pr-0 <?=$this->agent->is_mobile() ?'g-pl-30 g-font-size-10':''?>">
+														<li class="dropdown-item hs-has-sub-menu g-bg-white g-pr-0 <?=$this->agent->is_mobile() ?'g-pl-30':''?>">
 															<a class="nav-link g-color-black" href="javascript:void()" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--404">
 																<?= $submenu->title ?>
 															</a>
