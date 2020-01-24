@@ -1,4 +1,4 @@
-<section class="g-bg-gray-light-v5 dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-overflow-hidden"
+<section id="blog" class="g-bg-gray-light-v5 dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-overflow-hidden"
          data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
 	<div class="divimage dzsparallaxer--target w-100 d-none" style="height: 130%; background-image: url(<?= base_url('assets/img/bg/img36.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
 	<div class="container <?= $this->agent->is_mobile() ? 'g-pt-75 g-pb-30' : 'g-py-70' ?>">
@@ -74,8 +74,8 @@
 							</h3>
 							<hr class="g-brd-gray-light-v4 g-mt-40">
 							<a title="Share Story" class="float-right g-brd-0 g-color-white--hover g-bg-linkedin--hover u-icon-v2 g-rounded-50x g-bg-info"
-							   style=" height: 30px; width: 30px; background-color:#117a8b" onclick="blogShare(this)" data-title="<?= $blog['blog_title'] ?>" data-content="<?= $blog['blog_content'] ?>"
-							   data-url="<?= $blog['blog_url'] ?>">
+							   style=" height: 30px; width: 30px; background-color:#117a8b" href="#" onclick="blogShare(this)" data-title="<?= $blog['blog_title'] ?>" data-content="<?= $blog['blog_content'] ?>"
+							   data-url="<?= $blog['blog_url'] ?>" style="background-color: #159CBD">
 								<i class="fa fa-share-alt g-color-white g-font-size-10"></i>
 							</a>
 							<a target="_blank" href="<?= $blog['blog_url'] ?>" class="g-bg-white g-color-info g-color-blue--hover g-mr-10 g-mb-15 g-font-weight-700 text-uppercase g-text-underline--none--hover"
@@ -164,8 +164,8 @@
 							<div class="g-font-size-13"><?= $blog['blog_content'] ?></div>
 						</div>
 						<hr class="g-brd-gray-light-v4 g-mt-40">
-						<a title="Share Story" class="float-right g-brd-0 g-color-white--hover g-bg-linkedin--hover u-icon-v2 g-rounded-50x g-bg-info" onclick="blogShare(this)"
-						   data-title="<?= $blog['blog_title'] ?>" data-content="<?= $blog['blog_content'] ?>" data-url="<?= $blog['blog_url'] ?>" style=" height: 30px; width: 30px; background-color:#117a8b">
+						<a title="Share Story" class="float-right g-brd-0 g-color-white--hover g-bg-linkedin--hover u-icon-v2 g-rounded-50x g-bg-info" href="#blog" onclick="blogShare(this)"
+						   data-title="<?= $blog['blog_title'] ?>" data-content="<?= $blog['blog_content'] ?>" data-url="<?= $blog['blog_url'] ?>" style=" height: 30px; width: 30px; background-color:#159CBD">
 							<i class="fa fa-share-alt g-color-white g-font-size-10"></i>
 						</a>
 						<a target="_blank" href="<?= $blog['blog_url'] ?>" class="g-bg-white g-color-info g-color-blue--hover g-mr-10 g-mb-15 g-font-weight-700 text-uppercase g-text-underline--none--hover"
@@ -183,7 +183,9 @@
 					<?= get_lang('find-more-content-about-responsible-waste-manageme') ?>
 				</p>
 				<br>
-				<a target="_blank" class="btn btn-outline-info g-brd-2 g-font-size-13 g-font-weight-700 g-rounded-50 g-pl-20 g-pr-15 g-py-9 text-uppercase" href="http://waste4change.com/blog">
+			</div>
+				<div class="col-md-3 col-xs-12">
+				<a target="_blank" class="btn btn-outline-info btn-block g-brd-2 g-font-size-13 g-rounded-50 g-pl-20 g-pr-15 g-py-9 text-uppercase" href="http://waste4change.com/blog">
 					<?= strtoupper(get_lang('more-article')) ?>
 				</a>
 			</div>

@@ -224,7 +224,8 @@
 							class=" <?= $this->agent->is_mobile() ? 'h5 mb-4' : 'h3' ?> g-font-weight-700"><?= lang('services_not_found') ?></h3>
 					</div>
 					<div class="col-xs-12 col-md <?= $this->agent->is_mobile() ? 'text-center' : 'text-right' ?>">
-						<a class="btn btn-info  g-brd-2 g-font-size-12 g-rounded-50 text-uppercase g-letter-spacing-2 g-px-20"
+						click_scroll btn btn-outline-info g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-mb-10
+						<a class="btn btn-outline-info g-brd-2 g-font-size-12 g-rounded-50 text-uppercase g-letter-spacing-2 g-px-20"
 						   href="<?=site_url('contact')?>"><?= lang('services_talk_to_expert') ?></a>
 					</div>
 				</div>
