@@ -56,6 +56,7 @@
 					<h4
 						class="g-font-asap g-font-weight-700 g-color-w4c-blue-v1 mb-3 g-mt-30"><?= get_lang('available-services-for-your-location') ?></h4>
 				<?php endif; ?>
+				<div style="<?=$this->agent->is_mobile() ? : 'position: absolute;bottom: 0;left: 0;width: calc(100% - 15px);'?>">
 				<form action="<?= site_url('service') ?>" method="get">
 					<div class="autocomplete">
 						<div class="input-group pull-right">
@@ -78,6 +79,7 @@
 						</div>
 					</div>
 				</form>
+				</div>
 			</div>
 			<!-- End Search location -->
 		</div>
@@ -98,12 +100,12 @@
 							<!-- <img class="img-fluid w-100" src="<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/thumbnail.jpg', base_url('assets/img/error/1x2.png')) ?>" alt="<?= $service->service_name . ' image' ?>"> -->
 							<div class="bg-white g-mx-20 g-pa-20" style=" margin-top: -40px;">
 								<span
-									class="g-color-black-opacity-0_5 g-font-weight-600 g-font-size-12 text-uppercase"><?= strtolower($service->service_category_name) == strtolower($service->service_name) ? 'GENERAL' : $service->service_category_name ?></span>
+									class="g-color-black-opacity-0_8 g-font-weight-600 g-font-size-12 text-uppercase"><?= strtolower($service->service_category_name) == strtolower($service->service_name) ? 'GENERAL' : $service->service_category_name ?></span>
 								<h2
 									class="h4 g-color-black g-font-weight-600 g-mb-25 g-line-height-1_2">
 									<?= $service->service_name ?>
 								</h2>
-								<p class="g-color-black-opacity-0_5"><?= $service->service_description ?></p>
+								<p class="g-color-black-opacity-0_8"><?= $service->service_description ?></p>
 								<a
 									class="g-font-size-12 g-color-w4c-blue-v1 g-font-weight-700 mb-3 g-letter-spacing-1_5 text-uppercase <?= empty($service->service_page_url) ? 'd-none' : '' ?>"
 									href="<?= get_url($service->service_page_url) ?>"><?= get_lang('learn-more') ?> <i
@@ -140,13 +142,13 @@
 										</div>
 										<div class="col-6">
 											<span
-												class="g-color-gray-dark-v3 g-font-weight-600 g-font-size-12 text-uppercase"><?= strtolower($service->service_category_name) == strtolower($service->service_name) ? 'GENERAL' : $service->service_category_name ?></span>
+												class="g-font-weight-600 g-font-size-12 text-uppercase"><?= strtolower($service->service_category_name) == strtolower($service->service_name) ? 'GENERAL' : $service->service_category_name ?></span>
 											<div class="">
 												<h2
 													class="'h1 g-color-black g-font-weight-600 g-mb-25 g-line-height-1_2">
 													<?= $service->service_name ?>
 												</h2>
-												<p><?= $service->service_description ?></p>
+												<p class="g-color-black-opacity-0_9 g-font-size-16"><?= $service->service_description ?></p>
 												<a
 													class="g-color-w4c-blue-v1 g-font-weight-700 mb-3 text-uppercase <?= empty($service->service_page_url) ? 'd-none' : '' ?>"
 													href="<?= get_url($service->service_page_url) ?>"><?= get_lang('learn-more') ?>
@@ -176,7 +178,7 @@
 													class="<?= $this->agent->is_mobile() ? 'h4' : 'h1' ?> g-color-black g-font-weight-600 g-mb-25 g-line-height-1_2">
 													<?= $service->service_name ?>
 												</h1>
-												<p><?= $service->service_description ?></p>
+												<p class="g-color-black-opacity-0_9 g-font-size-16"><?= $service->service_description ?></p>
 												<a
 													class="g-color-w4c-blue-v1 g-font-weight-700 mb-3 text-uppercase <?= empty($service->service_page_url) ? 'd-none' : '' ?>"
 													href="<?= get_url($service->service_page_url) ?>"><?= get_lang('learn-more') ?> <i

@@ -11,12 +11,21 @@
 		<?php
 		$blogs = [
 			[
+				'blog_title' => 'Popular Travel Destinations that Suffer from Overtourism',
+				'blog_category' => 'WASTE MANAGEMENT',
+				'blog_content' => 'What is Overtourism? The term overtourism is used to describe the condition of a tourist destination/site that is overcrowded and visited by too many people...',
+				'blog_author' => 'MIRIAM BAHAGIJO',
+				'blog_url' => 'https://waste4change.com/popular-travel-destinations-that-suffer-from-overtourism/',
+				'blog_date' => '01/22/2020',
+				'blog_image' => 'https://waste4change.com/wp-content/uploads/maya-bay-tourism-1-889x592-580x390.jpg',
+			],
+			[
 				'blog_title' => 'Sustainable Tourism: A Tourism that Does Not Cost the Earth',
 				'blog_category' => 'WASTE MANAGEMENT',
 				'blog_content' => 'Tourism Effects in Boracay Island, Philippines  Boracay is a small island in Central Philippines located in Aklan province. With its white sandy beaches and blue water,...',
 				'blog_author' => 'MIRIAM BAHAGIJO',
 				'blog_url' => 'https://waste4change.com/sustainable-tourism-a-tourism-that-does-not-cost-the-earth/',
-				'blog_date' => '2020:01:15',
+				'blog_date' => '01/15/2020',
 				'blog_image' => 'https://waste4change.com/wp-content/uploads/Boracay_Boat_and_Tourists-870x490-580x390.jpg',
 			],
 			[
@@ -25,17 +34,8 @@
 				'blog_content' => 'Still in the spirit of entering both new year and decade, what plans do you have in mind or have started doing? Decluttering and cleaning up the...',
 				'blog_author' => 'MIRIAM BAHAGIJO',
 				'blog_url' => 'https://waste4change.com/new-year-new-office-improve-your-workplace-to-become-zero-waste/',
-				'blog_date' => '2020:01:07',
+				'blog_date' => '01/07/2020',
 				'blog_image' => 'https://waste4change.com/wp-content/uploads/damir-kopezhanov-nC6CyrVBtkU-unsplash-580x390.jpg',
-			],
-			[
-				'blog_title' => 'Decluttering 101: Why and How',
-				'blog_category' => 'WASTE MANAGEMENT',
-				'blog_content' => 'Upon entering both new year and new decade, what plans do you have in store? Is decluttering one of them? For those of you who...',
-				'blog_author' => 'MIRIAM BAHAGIJO',
-				'blog_url' => 'https://waste4change.com/decluttering-101-why-and-how/',
-				'blog_date' => '2020:01:03',
-				'blog_image' => 'https://waste4change.com/wp-content/uploads/before-after-1-500x390.jpg',
 			],
 		];
 		if ($this->agent->is_mobile()): //MOBILE VIEW

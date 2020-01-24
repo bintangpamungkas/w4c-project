@@ -1,15 +1,15 @@
 <?php if (!empty($offers)): ?>
-	<section class="g-bg-secondary">
+	<section class="g-bg-white">
 		<div id="<?=$section_slug?>" style="height: 200px;position: absolute;width: 80%;margin-top: -80px"></div>
 		<div class="container <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-10' : 'g-pt-80 g-pb-80' ?>">
 			<div class="text-center g-mb-50">
 				<h2 class="g-font-asap g-color-black-dark-v2 g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-20' : '' ?>"><?= get_lang('we-offer') . ' ' . count($offers) . ' ' . get_lang('programs') ?></h2>
 				<hr class="g-width-30 g-my-5 g-brd-2 g-brd-blue">
 			</div>
-			<div class="row">
+			<div class="row align-height-list">
 				<?php foreach ($offers as $offer): ?>
 					<div class="col-md col-xs-12 g-line-height-1_3 g-line-height-2">
-						<div class="g-brd-1 g-brd-style-solid g-brd-gray-light-v3 g-pa-20 g-mb-20">
+						<div class="align-height-item g-brd-1 g-brd-style-solid g-brd-gray-light-v3 g-pa-20 g-mb-20">
 							<div class="">
 								<img src="<?= get_image(DIR_ICON . 'what-you-get/' . $offer->offer_icon) ?>" alt="" style="width:80px;">
 							</div>

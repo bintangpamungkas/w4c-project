@@ -26,7 +26,7 @@
           <div class="col-lg-6 g-mb-30" style="z-index:2">
             <div style="background: url('<?= get_image('assets/img/project/'.$service_id.'/about.jpg') ?>');height: 250px;background-size: cover;"></div>
           </div>
-          <div class="col-md-6 g-mb-30 g-mt-15">
+          <div class="col-md-6 g-mb-30">
             <div class="g-ml-10--lg">
               <div class="mb-2">
                 <span class="g-color-gray-dark-v3 g-font-weight-700 g-font-size-16 text-uppercase"><?= get_lang('description') ?></span>
