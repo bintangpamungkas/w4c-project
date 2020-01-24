@@ -14,7 +14,7 @@ foreach ($flows as $flow) {
 }
 ?>
 <!-- Mockup Block -->
-<section class="g-bg-white <?= $this->agent->is_mobile() ? 'g-pt-80 g-pb-50' : 'g-py-140' ?>">
+<section class="g-bg-white <?= $this->agent->is_mobile() ? 'g-pt-80 g-pb-50' : 'g-py-70' ?>">
 	<div id="<?= $section_slug ?>" style="height: 10px;position: absolute;width: 80%;margin-top: -100px"></div>
 	<div class="container">
 		<div class="text-center g-mb-50">

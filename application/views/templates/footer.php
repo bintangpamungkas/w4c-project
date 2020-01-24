@@ -32,7 +32,7 @@
 				
 				<?php
 				$i = 1;
-				if ($this->agent->is_mobile()):
+				if ($this->agent->is_mobile()): //Mobile
 					foreach ($navigation_array as $nav):
 						if (!empty($nav['menu'])):
 							foreach ($nav['menu'] as $menu): ?>
@@ -58,6 +58,11 @@
 																</li>
 															<?php endforeach; ?>
 														<?php endforeach; ?>
+														<?php if($menu->service_target_id==2): ?>
+															<li class="g-mb-5">
+																<a class="g-color-white-opacity-0_8" href="https://w4c.id/rumahkompos">Home Composting</a>
+															</li>
+														<?php endif;?>
 													</ul>
 												</div>
 											</div>
@@ -70,7 +75,7 @@
 							endforeach; //  foreach ($nav['menu'] as $menu)
 						endif; //	if (!empty($nav['menu'])):
 					endforeach; //foreach ($navigation_array as $nav):
-				else: //end mobile
+				else: // DEKTOP VIEW
 					foreach ($navigation_array as $nav):
 						if (!empty($nav['menu'])):
 							?>
@@ -87,6 +92,11 @@
 											</li>
 										<?php endforeach; ?>
 									<?php endforeach; ?>
+									<?php if($menu->service_target_id==2): ?>
+										<li class="g-mb-5">
+											<a class="g-color-white-opacity-0_8" href="https://w4c.id/rumahkompos">Home Composting</a>
+										</li>
+								<?php endif;?>
 								</ul>
 							</div>
 						<?php endforeach; //  foreach ($nav['menu'] as $menu)
