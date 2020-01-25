@@ -52,18 +52,18 @@
           $number = 1;
           $xb=$this->session->userdata('language')=='en' ? $en : $id;
 
-          foreach($xb as $x){
+          foreach($testimonials as $testi){
             ?>
             <div class="g-pa-30 g-mt-10" style="box-shadow: 0 0 20px rgba(0, 0, 0, 0.05)">
               <div class="row">
                 <div class="col-auto">
-                  <img class="d-inline- <?=$this->agent->is_mobile() ? ' g-width-55 g-height-55 ' : ' g-width-80 g-height-80 ' ?>rounded-circle" src="<?= base_url('assets/img/testimonial/'.$x['testi_photo']) ?>" alt="Image Description">
+                  <img class="d-inline- <?=$this->agent->is_mobile() ? ' g-width-55 g-height-55 ' : ' g-width-80 g-height-80 ' ?>rounded-circle" src="<?= base_url('assets/img/testimonial/'.$testi->testimony_photo) ?>" alt="Photo <?=$testi->testimony_name?>">
                 </div>
                 <div class="col">
                   <!-- <i class="d-block g-color-info g-font-size-50 g-line-height-0_7 g-pos-rel g-top-15 g-mb-20">&#8220;</i> -->
-                  <blockquote class="g-color-black g-font-style-italic <?= $this->agent->is_mobile() ? 'g-font-size-10' : 'g-font-size-13' ?> g-line-height-1_4">"<?= $x['testi_description'] ?>"</blockquote>
-                  <h4 class="h6 g-color-info g-font-weight-600 text-uppercase g-mb-5 g-font-size-16"><?= $x['testi_name'] ?></h4>
-                  <em class="d-block g-color-gray-dark-v4 g-font-style-normal g-font-size-10 g-mb-20"><?= $x['testi_company'] ?></em>
+                  <blockquote class="g-color-black g-font-style-italic <?= $this->agent->is_mobile() ? 'g-font-size-10' : 'g-font-size-13' ?> g-line-height-1_4">"<?= $testi->testimony_content ?>"</blockquote>
+                  <h4 class="h6 g-color-info g-font-weight-600 text-uppercase g-mb-5 g-font-size-16"><?= $testi->testimony_name?></h4>
+                  <em class="d-block g-color-gray-dark-v4 g-font-style-normal g-font-size-10 g-mb-20"><?= $testi->testimony_company ?></em>
                 </div>
               </div>
             </div>

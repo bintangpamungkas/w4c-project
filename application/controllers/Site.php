@@ -32,6 +32,7 @@ class Site extends MY_Controller
 		$data['input_city'] = $input_city;
 		$data['service_targets'] = $service_target;
 		$data['coverage_cities'] = $this->service_model->unique_coverage_city();
+		$data['testimonials'] = $this->crud_model->select('testimonial',QUERY_RESULT,'',['language_code'=>$lang,'deleted_at'=>null,'service_id'=>null]);
 		
 		$data['title'] = '';
 		$data['id'] = 'site';
