@@ -36,7 +36,7 @@
 			</script>
 			<div class="col-12">
 				<div class="row justify-content-center">
-				<div class="col-md-3 col-xs-12">
+				<div class="col-md-3 col-10">
 					<a class="btn btn-info btn-block g-color-white g-font-size-13 g-font-weight-700 g-rounded-50 g-px-30 g-py-10 text-uppercase" href="<?= site_url('about') ?>"
 					   style="border-radius:100px"><?= get_lang('more-about-us') ?></a>
 				</div>

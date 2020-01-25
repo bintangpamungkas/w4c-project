@@ -184,7 +184,7 @@
 				</p>
 				<br>
 			</div>
-				<div class="col-md-3 col-xs-12">
+				<div class="col-md-3 col-9">
 				<a target="_blank" class="btn btn-outline-info btn-block g-brd-2 g-font-size-13 g-rounded-50 g-pl-20 g-pr-15 g-py-9 text-uppercase" href="http://waste4change.com/blog">
 					<?= strtoupper(get_lang('more-article')) ?>
 				</a>
