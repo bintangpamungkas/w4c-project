@@ -8,7 +8,7 @@
 				<h2 class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= get_lang('ready-to-start-your-<strong>responsible-waste-mana') ?></h2>
 				<div class="row justify-content-center">
 					<div class="col-md-3 col-10 g-mb-15 pt-5">
-						<a class="btn btn-block btn-info g-color-white g-font-size-13 g-font-weight-700 g-rounded-50 g-py-10 " href="<?= site_url('service') ?>">
+						<a class="btn btn-block btn-info g-color-white g-font-size-13 g-rounded-50 g-py-10 " href="<?= site_url('service') ?>">
 							<?= strtoupper(get_lang("get-started")) ?>
 						</a>
 					</div>
