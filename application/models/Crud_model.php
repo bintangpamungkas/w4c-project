@@ -36,7 +36,7 @@ class Crud_model extends CI_Model
     return $this->db->get();
   }
 
-  function select($table,$query=null, $select=null, $where=null, $join_from=null, $order_by=null){
+  function select($table,$query=null, $select=null, $where=null, $join_from=null, $order_by=null, $limit=null){
     if($select!=null){
       $this->db->select($select);
     }else{
@@ -64,6 +64,9 @@ class Crud_model extends CI_Model
       foreach ($order_by as $key=>$value){
         $this->db->order_by($key.' '.$value);
       }
+    }
+    if ($limit!=null) {
+      $this->db->limit($limit);
     }
     if ($query!=null) {
       return $this->db->get()->$query();
