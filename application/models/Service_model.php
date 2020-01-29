@@ -86,5 +86,13 @@
 			return $this->db->get()->result();
 			
 		}
+	
+	function check_city($city_name){
+		$this->db->select('city_name');
+		$this->db->from('place_city');
+		$this->db->like('city_name', $city_name);
+		return $this->db->get()->row();
 	}
+	}
+
 ?>
