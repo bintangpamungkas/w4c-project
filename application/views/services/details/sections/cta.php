@@ -6,12 +6,9 @@
 			<div class="text-center g-mb-50">
 				<h4 class="g-font-asap g-color-black g-font-weight-500 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= get_lang('start_your')?> <strong> <?= empty($parent_service->service_name) ? $service->service_name : $parent_service->service_name ?> </strong> <?= get_lang('now!') ?></h4>
 				<div class="row justify-content-center">
-					<div class="col-10 pt-5">
+					<div class="col-md-6 col-10">
 						<div class="row justify-content-center">
-							<div class="col-md-6 d-none">
-								<input class="form-control u-shadow-v19 g-brd-none g-bg-white g-font-size-16 g-rounded-30 g-px-30 g-py-13 g-mb-30" type="text" placeholder="Your Email Address ... ">
-							</div>
-							<div class="col-auto">
+							<div class="col-md-12 col-xs-3">
 								<a class="btn btn-block btn-info g-color-white g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-mb-10"  href="<?= site_url('service/' . $service_id . '/join') ?>">
 									<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : strtoupper(lang('get_proposal')) ?>
 								</a>
@@ -20,7 +17,7 @@
 							if (empty($parent_service)) {
 								if ($service->service_portfolio_url == 1) {
 									?>
-									<div class="col-auto">
+									<div class="col-md-12 col-xs-3">
 										<a class="click_scroll btn btn-outline-info g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-mb-10 <?= $this->agent->is_mobile() ? 'btn-block mb-4' : '' ?>"
 										   href="<?= base_url(DIR_SERVICE . $service_id . '/portfolio/' . $lang . '.pdf') ?>">
 											<?= strtoupper(get_lang('get-portfolio')) ?>
@@ -31,7 +28,7 @@
 							} else {
 								if ($parent_service->service_portfolio_url == 1) {
 									?>
-									<div class="col-auto">
+									<div class="col-md-12 col-xs-3">
 										<a class="click_scroll btn btn-outline-info g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-mb-10 <?= $this->agent->is_mobile() ? 'btn-block mb-4' : '' ?>"
 										   href="<?= base_url(DIR_SERVICE . $parent_service->service_slug . '/portfolio/' . $lang . '.pdf') ?>">
 											<?= strtoupper(get_lang('get-portfolio')) ?>

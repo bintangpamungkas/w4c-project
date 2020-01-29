@@ -4,7 +4,7 @@
 		<div class="container <?= $this->agent->is_mobile() ? 'g-pt-80 g-pb-50' : 'g-py-70' ?>">
 			<div class="text-center g-mb-50">
 				<h2 class="g-font-asap g-color-black-dark-v2 g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-20' : '' ?>"><?= $section_name ?></h2>
-				<hr class="g-width-70 g-my-20 g-brd-2 g-brd-blue">
+				<hr class="g-width-70 g-mt-10 g-mb-20 g-brd-2 g-brd-blue">
 				<p class="g-color-white-opacity-0_8 d-none"><?= lang('brand_partner_subtitle') ?></p>
 			</div>
 			<div id="portfolio-highlight-carousel" class="owl-theme row justify-content-center align-height-list" style="margin: 0 0 30px 0!important;padding:0px">

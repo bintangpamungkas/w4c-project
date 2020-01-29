@@ -102,7 +102,7 @@ $(window).ready(function () {
 	var set_middle = 0, divider = 2;
 
 	if (screen_height <= 500) {
-		$('.full-height-block').css({'min-height': (screen_height + 100)});
+		$('.full-height-block').css({'min-height': (screen_height + 170)});
 	} else {
 		$('.full-height-block').css({'min-height': screen_height});
 	}

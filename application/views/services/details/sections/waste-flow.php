@@ -19,7 +19,7 @@ foreach ($flows as $flow) {
 	<div class="container">
 		<div class="text-center g-mb-50">
 			<h2 class="g-font-asap g-color-black-dark-v2 g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-20' : '' ?>"><?= $section_name ?></h2>
-			<hr class="g-width-70 g-mt-20 g-mb-0 g-brd-2 g-brd-blue">
+			<hr class="g-width-70 g-mt-10 g-mb-20 g-brd-2 g-brd-blue">
 			<div class="mt-2 mb-4"> <?= (count($flow_category) == 1 && !empty($rdf)) ? ($rdf == 'rdf' ? get_lang('residual-waste-treatment-using-rdf-technology') : get_lang('residual-waste-treatment-at-the-landfill')) : '' ?></div>
 
 			<!-- Services target navivation -->
