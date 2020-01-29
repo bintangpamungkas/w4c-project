@@ -18,8 +18,8 @@
 					</div>
 				<?php endif; ?>
 				<?php if($this->agent->is_mobile()): ?>
-					<div class="col-md-12">
-						<img src="<?=get_image(DIR_IMG.'project/'.$service->service_slug.'/header.jpg')?>" alt="" style="max-height: 250px; margin-left: -25px; object-fit: cover">
+					<div class="col-md-12 g-pa-0">
+						<img src="<?=get_image(DIR_IMG.'project/'.$service->service_slug.'/header.jpg')?>" alt="" style="max-width: 100vw; max-height: 260px; object-fit: cover">
 					</div>
 				<?php endif; ?>
 				<div class="col-md-6 col-12">

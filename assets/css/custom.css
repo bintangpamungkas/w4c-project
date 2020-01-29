@@ -719,3 +719,16 @@
     border:0px solid black;
 }
 .owl-prev i, .owl-next i {transform : scale(1,6); color: #ccc;}
+
+.service-container{
+    position: absolute;
+    bottom:-15px;
+    width: 100%;
+}
+@media (max-height: 500px) {
+    .service-container{
+        position: absolute;
+        bottom:-120px;
+        width: 100%;
+    }
+}

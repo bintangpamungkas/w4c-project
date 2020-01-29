@@ -1,7 +1,7 @@
 <section class="g-bg-secondary">
 	<div id="our_services" style="height: 200px;position: absolute;width: 80%;margin-top: -80px"></div>
 	<!--<div style="background:radial-gradient(circle farthest-side at 80% 60%, rgba(90,219,127,0.67), rgba(22,127,148,0.92))">-->
-	<div style="position: absolute; bottom: <?= $this->agent->is_mobile() ? '-100px' : '-40px' ?>; width: 100%">
+	<div class="service-container" style="">
 		<div class="container">
 			<div class="row g-ma-0">
 				<?php if ($this->agent->is_mobile()): ?>
