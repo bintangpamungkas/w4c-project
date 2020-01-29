@@ -725,6 +725,9 @@
     bottom:-15px;
     width: 100%;
 }
+#service-container:fullscreen {
+    bottom:-197px;
+}
 @media (max-height: 500px) {
     .service-container{
         position: absolute;

@@ -4598,10 +4598,7 @@
   color: #72c02c; }
 
 /* Black Colors */
-.g-color-black {
-  color: #000 !important; }
-
-.g-color-black--hover:hover {
+.g-color-black, g-color-black--hover:hover,g-color-black--active:active, g-color-black--focus:focus {
   color: #000 !important; }
 
 .g-parent:hover .g-color-black--parent-hover {
@@ -4775,7 +4772,11 @@
 .g-color-blue-dark-v2 {
   color: #159CBD !important; }
 
-.g-color-blue-dark-v2--hover:hover, .g-color-blue-dark-v2--active:active {
+.g-color-blue-dark-v2--hover:hover{
+  color: #159CBD !important; }
+.g-color-blue-dark-v2--active:active{
+  color: #159CBD !important; }
+.g-color-blue-dark-v2--focus:focus{
   color: #159CBD !important; }
 
 /* Color Light Blue */
