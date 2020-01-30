@@ -4598,7 +4598,7 @@
   color: #72c02c; }
 
 /* Black Colors */
-.g-color-black, g-color-black--hover:hover,g-color-black--active:active, g-color-black--focus:focus {
+.g-color-black, .g-color-black--hover:hover, .g-color-black--active:active, .g-color-black--focus:focus {
   color: #000 !important; }
 
 .g-parent:hover .g-color-black--parent-hover {

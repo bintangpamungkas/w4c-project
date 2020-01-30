@@ -1,5 +1,9 @@
-<?php if (!empty($coverages)): ?>
+<!--
+TODO implement method
+ Input coverage with place databse
+-->
 
+<?php if (!empty($coverages)): ?>
 	<!-- Promo Block -->
 	<section class="g-bg-secondary  <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-0' : 'g-py-70' ?>">
 		<div id="<?= $section_slug ?>" style="height: 200px;position: absolute;width: 80%;margin-top: -80px"></div>

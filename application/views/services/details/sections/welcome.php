@@ -31,7 +31,7 @@
 									class="g-color-black-opacity-0_7 <?= $this->agent->is_mobile() ? 'g-font-size-14  text-center' : 'g-font-size-16' ?> g-line-height-1_5 mb-3"><?= ucfirst($service->service_description) ?></h3>
 							</div>
 						</div>
-						<div class="pt-5 row <?= $this->agent->is_mobile() ? ' justify-content-center' : '' ?>">
+						<div class="row <?= $this->agent->is_mobile() ? ' justify-content-center pt-3' : 'pt-5' ?>">
 							<div class="col-md-5 col-xs-12">
 								<div class="row justify-content-center">
 									<div class="col-md-12 col-xs-3">

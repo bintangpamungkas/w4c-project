@@ -20,16 +20,16 @@
 								}
 								?>
 								<?php if (empty($submenus)): //don't have menu?>
-									<li class="dropdown-item g-bg-blue-opacity-0_1--hover ">
+									<li class="dropdown-item g-bg-blue-opacity-0_1--hover g-color-black--focus g-color-black--active ">
 										<a class="nav-link g-color-black g-color-blue-dark-v2--hover g-color-blue-dark-v2--active" href="<?= get_url($menu->url) ?>"> <?= $menu->title ?></a>
 									</li>
 								<?php else: //has menu?>
-									<li class="dropdown-item hs-has-sub-menu g-bg-white">
-										<a class="nav-link g-color-black g-color-black--active g-color-black--focus" href="" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--others"><i class="<?= $menu->icon ?> g-mr-10"></i><?= $menu->title ?></a>
+									<li class="dropdown-item hs-has-sub-menu g-bg-white g-color-black--focus g-color-black--active ">
+										<a class="nav-link g-color-black" href="" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--others"><i class="<?= $menu->icon ?> g-mr-10"></i><?= $menu->title ?></a>
 										<ul class="hs-sub-menu list-unstyled g-brd-0 g-min-width-220 g-mt-minus-2" aria-labelledby="nav-link--pages--others">
 											<?php foreach ($submenus as $submenu): ?>
 												<?php if (empty($submenu->menu)): ?>
-													<li class="dropdown-item g-bg-blue-opacity-0_1--hover ">
+													<li class="dropdown-item g-bg-blue-opacity-0_1--hover">
 														<a class="nav-link g-color-black g-color-blue-dark-v2--active g-color-blue-dark-v2--hover" href="<?= get_url($submenu->url) ?>"><?= $submenu->title ?></a>
 													</li>
 												<?php else: ?>
@@ -85,11 +85,11 @@
 								}
 								?>
 								<?php if (empty($submenus)): //don't have menu?>
-									<li class="lvl-1 dropdown-item g-bg-blue-opacity-0_1--hover">
-										<a class="nav-link g-color-black g-color-blue-dark-v2--hover" href="<?= get_url($menu->url) ?>"> <?= $menu->title ?></a>
+									<li class="lvl-1 dropdown-item g-bg-blue-opacity-0_1--hover g-color-blue-dark-v2--focus g-color-blue-dark-v2--active">
+										<a class="nav-link g-color-black g-color-blue-dark-v2--hover " href="<?= get_url($menu->url) ?>"> <?= $menu->title ?></a>
 									</li>
 								<?php else: //has menu?>
-									<li class="lvl-1 dropdown-item hs-has-sub-menu g-bg-blue-opacity-0_1--hover g-parent">
+									<li class="lvl-1 dropdown-item hs-has-sub-menu g-bg-blue-opacity-0_1--hover g-color-blue-dark-v2--focus g-color-blue-dark-v2--active g-parent">
 										<a class="nav-link g-color-black g-color-blue-dark-v2--hover  text-uppercase" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--others">
 											<i class="<?= $menu->icon ?> g-mr-10"></i>
 											<img class="g-mr-10 g-grayscale-100x g-grayscale-0--parent-hover" src="<?= get_image(DIR_ICON . $menu->icon) ?>" alt="" style="max-width: 30px; max-height: 30px;">

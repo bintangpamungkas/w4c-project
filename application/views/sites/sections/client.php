@@ -1,7 +1,7 @@
 <section class="g-bg-secondary dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-overflow-hidden" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
   <div class="divimage dzsparallaxer--target w-100" style="height: 130%; "></div>
   <div style="">
-    <div class="container <?= $this->agent->is_mobile() ? 'g-pt-80 g-pb-50' : 'g-py-70' ?>">
+    <div class="container <?= $this->agent->is_mobile() ? 'g-py-50' : 'g-py-70' ?>">
       <div class="text-center g-mb-50">
         <h2 class="g-font-asap g-font-weight-600 g-color-black <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= strtoupper(get_lang('clients')) ?></h2>
         <p class="text-mute d-none"><?= lang('brand_partner_subtitle') ?></p>

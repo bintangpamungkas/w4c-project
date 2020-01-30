@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 <?= $this->agent->is_mobile() ? 'text-center' : '' ?> g-color-info">
-				<div class="h3 g-font-weight-600" style="margin-bottom: 0;padding-top: 20px">
+				<div class="h3 g-font-weight-600 text-uppercase" style="margin-bottom: 0;padding-top: 20px">
 					<?= get_lang('spread-the-good-news') ?>
 				</div>
 				<div class="text-muted">

@@ -33,7 +33,7 @@
 							<?php endif; ?>
 							<div class="col-<?= $this->agent->is_mobile() ? '12' : '6' ?> g-pa-30">
 								<div class="align-height-item">
-									<img class="g-mb-15" src="<?= get_image(DIR_SERVICE . $service_id . '/portfolio/' . $porto->portfolio_client_logo) ?>" alt="<?= $porto->portfolio_client ?>" style="max-height: 50px; max-width: 80px;margin-bottom: 5px;">
+									<img class="g-mb-15" src="<?= get_image(DIR_SERVICE . $service_id . '/portfolio/' . $porto->portfolio_client_logo) ?>" alt="<?= $porto->portfolio_client ?>" style="max-height: 80px; max-width: 100px;margin-bottom: 5px;">
 									<div class="g-font-weight-600 g-font-size-20 g-line-height-1_1 g-mb-5"><?= $porto->portfolio_client ?></div>
 									<div class="g-font-size-12 g-line-height-1_1" style="color:#AFAFAF"><?= $porto->portfolio_client_address ?></div>
 									<div class="g-mt-30 g-font-size-13">

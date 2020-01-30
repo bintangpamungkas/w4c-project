@@ -16570,7 +16570,7 @@ video {
 .navbar .u-sub-menu-v3 .dropdown-menu a:active,
 .navbar .u-sub-menu-v3 .dropdown-menu a:focus,
 .navbar .u-sub-menu-v3 .dropdown-menu a:hover {
-  color: #fff !important;
+  color: #000 !important;
   background-color: #72c02c;
   border: none; }
 
@@ -16680,7 +16680,7 @@ video {
 .navbar .u-sub-menu-v4 .dropdown-menu a:active,
 .navbar .u-sub-menu-v4 .dropdown-menu a:focus,
 .navbar .u-sub-menu-v4 .dropdown-menu a:hover {
-  color: #fff !important;
+  color: #000 !important;
   background-color: #72c02c;
   border: none; }
 

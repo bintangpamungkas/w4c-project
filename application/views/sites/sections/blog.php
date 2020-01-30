@@ -1,7 +1,7 @@
 <section id="blog" class="g-bg-gray-light-v5 dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-overflow-hidden"
          data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
 	<div class="divimage dzsparallaxer--target w-100 d-none" style="height: 130%; background-image: url(<?= base_url('assets/img/bg/img36.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
-	<div class="container <?= $this->agent->is_mobile() ? 'g-pt-75 g-pb-30' : 'g-py-70' ?>">
+	<div class="container <?= $this->agent->is_mobile() ? 'g-py-50' : 'g-py-70' ?>">
 		<div class="text-center g-mb-50">
 			<h2 class="g-font-asap g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= strtoupper(get_lang('blog-and-news')) ?></h2>
 			<!-- <hr class="g-width-70 g-my-20 g-brd-2 g-brd-blue"> -->

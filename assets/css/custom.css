@@ -720,18 +720,30 @@
 }
 .owl-prev i, .owl-next i {transform : scale(1,6); color: #ccc;}
 
-.service-container{
+.tab-service-container{
     position: absolute;
     bottom:-15px;
     width: 100%;
 }
-#service-container:fullscreen {
-    bottom:-197px;
-}
-@media (max-height: 500px) {
-    .service-container{
+
+@media (max-height: 600px) {
+    .tab-service-container{
         position: absolute;
-        bottom:-120px;
+        bottom:-40px;
+        width: 100%;
+    }
+}
+@media (max-height: 550px) {
+    .tab-service-container{
+        position: absolute;
+        bottom:-110px;
+        width: 100%;
+    }
+}
+@media (max-height: 450px) {
+    .tab-service-container{
+        position: absolute;
+        bottom:-170px;
         width: 100%;
     }
 }

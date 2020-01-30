@@ -96,21 +96,32 @@ $(document).on('click', '.nav-toggle', function () {
 });
 
 $(window).ready(function () {
-	var screen_height = window.innerHeight;
-	var header_height = $('header').height();
-	var content_middle_fullscreen = $('.content-middle-fullscreen');
-	var set_middle = 0, divider = 2;
-
-	if (screen_height <= 500) {
-		$('.full-height-block').css({'min-height': (screen_height + 170)});
-	} else {
-		$('.full-height-block').css({'min-height': screen_height});
+	let screen_height = window.innerHeight;
+	let header_height = $('header').height();
+	let content_middle_fullscreen = $('.content-middle-fullscreen');
+	let set_middle = 0, divider = 2;
+	let tab_service_height = $('.tab-service-container').height();
+	let full_height_block_height = screen_height;
+	if (tab_service_height===null){
+		tab_service_height=100;
 	}
+	console.log(tab_service_height);
+	if (screen_height <= 450) {
+		full_height_block_height = screen_height + (tab_service_height);
+	} else if (screen_height <= 550 && screen_height > 450) {
+		full_height_block_height = screen_height + (tab_service_height/2);
+	} else if (screen_height <= 600 && screen_height > 550) {
+		full_height_block_height = screen_height + (tab_service_height/10);
+	} else {
+		full_height_block_height = screen_height;
+	}
+
+	$('.full-height-block').css({'min-height': full_height_block_height});
 
 	$('.full-height').css({'height': screen_height});
 
 	if (content_middle_fullscreen.hasClass('middle-center')) {
-		divider = 2;
+		divider = 3;
 	} else if (content_middle_fullscreen.hasClass('middle-top')) {
 		divider = 10;
 	} else if (content_middle_fullscreen.hasClass('middle-bottom')) {
@@ -167,9 +178,9 @@ $(window).ready(function () {
 	// document.addEventListener("msfullscreenchange", function() {
 	// 	console.log("msfullscreenchange event fired!");
 	// });
-		if (document.documentElement.webkitRequestFullscreen) {
-			console.log(11);
-		}
+	// 	if (document.documentElement.webkitRequestFullscreen) {
+	// 		console.log(11);
+	// 	}
 
 });
 

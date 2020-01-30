@@ -26,11 +26,11 @@ a:hover {
   color: #17a2b8; }
 
 .nav-link {
-  color: #555; }
+  color: #000; }
 
 .nav-link:focus,
 .nav-link:hover {
-  color: #555; }
+  color: #000; }
 
 figure {
   margin-bottom: 0; }

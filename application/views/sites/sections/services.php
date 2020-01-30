@@ -1,7 +1,7 @@
 <section class="g-bg-secondary">
 	<div id="our_services" style="height: 200px;position: absolute;width: 80%;margin-top: -80px"></div>
 	<!--<div style="background:radial-gradient(circle farthest-side at 80% 60%, rgba(90,219,127,0.67), rgba(22,127,148,0.92))">-->
-	<div class="service-container" style="">
+	<div class="tab-service-container" style="">
 		<div class="container">
 			<div class="row g-ma-0">
 				<?php if ($this->agent->is_mobile()): ?>
@@ -10,12 +10,10 @@
 							class="col-6 g-px-0 g-font-weight-700 <?= $target->service_target_id == 1 ? '' : ' tab-shadow' ?> my_tab <?= $target->service_target_id == 1 ? 'tab-active' : '' ?>"
 							data-tab="#tab-<?= $target->service_target_id ?>" data-id="<?= $target->service_target_slug ?>">
 							<div class="my_tab_line"></div>
-							<a
-								class="my_tab_item g-cursor-pointer nav-link my_tab g-py-20 g-font-weight-300 g-font-size-12 g-px-20 text-center text-uppercase">
+							<a class="my_tab_item g-cursor-pointer nav-link my_tab g-py-20 g-font-weight-300 g-font-size-12 g-px-20 text-center text-uppercase">
+								<div class=""><?= $target->service_target_name ?></div>
 								<img class="my_tab_icon" src="<?= get_image(DIR_ICON . $target->service_target_icon) ?>"
-								     alt="" style="max-width: 80px; max-height: 80px;display:inline-block;">
-								<br>
-								<?= $target->service_target_name ?>
+								alt="" style="max-width: 80px; max-height: 80px;display:inline-block;">
 							</a>
 						</div>
 					<?php endforeach; ?>
@@ -37,7 +35,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container <?= $this->agent->is_mobile() ? 'g-pt-150 g-pb-25' : 'g-py-70' ?>">
+	<div class="container <?= $this->agent->is_mobile() ? 'g-pt-60 g-pb-25' : 'g-py-70' ?>">
 		<div class="g-mb-10">
 			<h2 class="g-font-asap g-font-color-w4c-1 mb-2"
 			    color><?= get_lang('available-services-for-your-location') ?>:</h2>
@@ -114,7 +112,7 @@
 													<h4 class="h6 g-color-black g-font-weight-600 g-mb-5 g-font-size-20"
 													    style="min-height: 50px"><?= $service->service_name ?></h4>
 													<em
-														class="d-block g-color-gray-dark-v4 g-font-style-normal g-font-size-12 g-mb-10"><?= $service->service_description ?></em>
+														class="d-block g-color-black-opacity-0_8 g-font-style-normal g-font-size-12 g-mb-10"><?= $service->service_description ?></em>
 												</div>
 												<a class="g-color-info g-color-blue--hover g-font-size-12 g-mt-10 g-font-weight-900"
 												   href="<?= $service->service_page_url ?>"><?= strtoupper(get_lang('learn-more')) ?>
@@ -182,7 +180,7 @@
 					<?= get_lang('cant-found-the-solution-you-are-looking-for?') ?>
 				</div>
 				<a
-					class="btn btn-info btn-xl btn-block g-color-white g-brd-2 g-font-size-13 g-rounded-50 g-color-white--active"
+					class="btn btn-info btn-block g-color-white g-brd-2 g-font-size-13 g-rounded-50  g-px-30 g-py-9 g-color-white--active"
 					href="<?= site_url('service') ?>"><?= strtoupper(get_lang('all-services')) ?></a>
 
 				<a class="btn btn-outline-info btn-block g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9"
@@ -221,7 +219,7 @@
 											<h4 class="h6 g-color-black g-font-weight-600 g-mb-5 g-font-size-20"
 											    style="min-height: 50px"><?= $service->service_name ?></h4>
 											<em
-												class="d-block g-color-gray-dark-v4 g-font-style-normal g-font-size-12 g-mb-10"><?= $service->service_description ?></em>
+												class="d-block g-color-black-opacity-0_8 g-font-style-normal g-font-size-12 g-mb-10"><?= $service->service_description ?></em>
 										</div>
 										<a class="g-color-info g-color-blue--hover g-font-size-12 g-mt-10 g-font-weight-900"
 										   href="<?= $service->service_page_url ?>"><?= strtoupper(get_lang('learn-more')) ?>

@@ -57,7 +57,9 @@ class Service extends MY_Controller
 		
 		$data['service_targets'] = $this->crud_model->select('service_target', QUERY_RESULT, ['service_target_name service_target_slug', 'dictionary.dictionary_content service_target_name', 'service_target_icon'], ['language_code' => $lang, 'deleted_at' => null], ['service_target' => ['dictionary' => 'dictionary_slug=service_target_name']]);
 		$data['coverage_cities'] = $this->crud_model->select('place_city', QUERY_RESULT, ['city_name service_coverage_city'], '');
-		$data['search_message'] = $message;
+		if (!empty($input_city)){
+			$data['search_message'] = $message;
+		}
 		$data['input_city'] = $input_city;
 		
 		

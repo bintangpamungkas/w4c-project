@@ -3,7 +3,7 @@
 	<div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center image-opacity-0 animated fadeIn" id="welcome-image" style="height: 120%;background-image: url(<?= $this->agent->is_mobile() ? base_url(DIR_BG . 'header-allservices.jpg') : base_url(DIR_BG . 'home/welcome-header.jpg') ?>);filter: grayscale(100%);background-position-y: 10px;"></div>
 	<div class="g-flex-middle-item full-height-block pending-show animated d-zap" style="background: radial-gradient(farthest-side at 100% -35%, rgba(21, 189, 119, 0.67), rgba(61, 101, 142, 0.92));">
 		<div class="container">
-			<div class="row content-middle-fullscreen with-header ">
+			<div class="row content-middle-fullscreen with-header middle-center">
 				<div class="col-md-12">
 					<div class="g-font-asap g-font-weight-500  g-font-size-<?= $this->agent->is_mobile() ? '42 g-line-height-1' : '60  g-mt-70 g-line-height-1' ?> g-color-white" ><?= get_lang('it-is-time-to-responsibly') ?></div>
 					<div class="g-font-asap g-font-weight-900 g-letter-spacing-1_5 g-font-size-<?= $this->agent->is_mobile() ? '42 g-line-height-1' : '60 g-line-height-1' ?> g-color-white" style="text-shadow: 0.5px 0.5px 0 #fff, -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff, 3px 3px 5px #0000;"><?= get_lang('manage-your-waste') ?></div>
