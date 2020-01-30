@@ -210,10 +210,7 @@
                 //$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
                 $(element_id + ' .owl-controls').attr('style', 'margin-top: 30px;');
                 var screen_display = <?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
-                // console.log(screen_display);
                 var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '69' : '98.5' ?>) / 100) / 2;
-                //console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
-            
                 //$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: '+($('#<?//=$service->service_slug?>//').find('.owl-stage').height()+10)+'px;width: 74%;right: '+margin_side+'px;');
                 console.log($('#<?=$section_slug?>').next().find('.owl-stage').height()+10);
             <?php

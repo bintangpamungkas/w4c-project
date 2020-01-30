@@ -1,13 +1,12 @@
 <div id="<?= $section_slug ?>" style="height: 10px;position: absolute;width: 80%;margin-top: -200px"></div>
 <section class="g-bg-secondary <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-0' : 'g-py-70' ?>">
 	<div class="container">
-		<header class="text-center g-width-80x--md mb-2">
+		<div class="text-center mb-2">
 			<div class="u-heading-v6-2 text-center text-uppercase g-mb-20">
 				<h2 class="g-font-asap g-color-black-dark-v2 g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-20' : '' ?>"><?= $section_name ?></h2>
-				<hr class="g-width-70 g-mt-10 g-mb-20  g-brd-2 g-brd-blue">
+				<hr class="g-width-70 g-mt-10 g-mb-30 g-brd-2 g-brd-blue">
 			</div>
-		</header>
-
+		</div>
 		<!-- Icon Blocks -->
 		<div class="align-height-list row justify-content-center">
 			<?php
@@ -32,6 +31,5 @@
 					<!-- End Icon Blocks -->
 				</div>
 			<?php endforeach; ?>
-
 		</div>
 </section>

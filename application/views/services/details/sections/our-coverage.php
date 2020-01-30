@@ -5,12 +5,11 @@ TODO implement method
 
 <?php if (!empty($coverages)): ?>
 	<!-- Promo Block -->
-	<section class="g-bg-secondary  <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-0' : 'g-py-70' ?>">
-		<div id="<?= $section_slug ?>" style="height: 200px;position: absolute;width: 80%;margin-top: -80px"></div>
-
+	<div id="<?= $section_slug ?>" style="height: 200px;position: absolute;width: 80%;margin-top: -80px"></div>
+	<section class="g-bg-secondary  <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-0' : 'g-pt-70' ?>">
 		<div class="text-center mb-2">
 			<h2 class="g-font-asap g-color-black-dark-v2 g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-25' : '' ?>"><?= $section_name ?></h2>
-			<hr class="g-width-70 g-mt-10 g-my-20 g-brd-2 g-brd-blue">
+			<hr class="g-width-70 g-mt-10 g-mb-20 g-brd-2 g-brd-blue">
 		</div>
 		<div class="">
 			<div id="map" style="width: 100%; height: 600px; position: relative; overflow: hidden;"></div>

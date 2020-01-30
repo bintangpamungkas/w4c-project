@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 30, 2020 at 09:42 AM
+-- Generation Time: Jan 30, 2020 at 11:55 AM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -477,8 +477,8 @@ INSERT INTO `dictionary` (`dictionary_id`, `language_code`, `dictionary_content`
 (804, 'id', 'Alur Sampah', 'waste-flow', 'section'),
 (805, 'en', 'Portfolio Highlight', 'portofolio-highlight', 'section'),
 (806, 'id', 'Sorotan Portofolio', 'portofolio-highlight', 'section'),
-(807, 'en', 'Research Hightlight', 'research-hightlight', 'section'),
-(808, 'id', 'Sorotan Penelitian', 'research-hightlight', 'section'),
+(807, 'en', 'Research Highlight', 'research-highlight', 'section'),
+(808, 'id', 'Sorotan Penelitian', 'research-highlight', 'section'),
 (809, 'en', 'Program Highlight', 'program-highlight', 'section'),
 (810, 'id', 'Sorotan Program', 'program-highlight', 'section'),
 (811, 'en', 'Similar Project', 'similar-project', 'section'),
@@ -513,7 +513,7 @@ INSERT INTO `dictionary` (`dictionary_id`, `language_code`, `dictionary_content`
 (840, 'id', 'General', 'general', 'service_category_name'),
 (841, 'en', 'SWM Research In Institutions', 'swm-research-in-institutions', 'service_category_name2'),
 (842, 'id', 'SWM Research di Institusi', 'swm-research-in-institutions', 'service_category_name2'),
-(843, 'en', 'SWM Research In Municipalities/ Tourism Sites', 'swm-research-in-municipalities', 'service_category_name2'),
+(843, 'en', 'SWM Research in Municipalities/ Tourism Sites', 'swm-research-in-municipalities', 'service_category_name2'),
 (844, 'id', 'SWM Research di Daerah/ Destinasi Wisata', 'swm-research-in-municipalities', 'service_category_name2'),
 (845, 'en', 'Value Chain Analysis', 'value-chain-analysis', 'service_category_name2'),
 (846, 'id', 'Analisis Rantai Nilai', 'value-chain-analysis', 'service_category_name2'),
@@ -1466,9 +1466,9 @@ INSERT INTO `section` (`section_id`, `section_slug`, `section_name`, `section_me
 (11, 'output-benefit', 'output-benefit', 'output-benefit', '2019-12-07 22:26:24', '2019-12-08 00:11:50', NULL),
 (12, 'what-you-get', 'what-you-get', 'what-you-get', '2019-12-07 22:26:24', '2019-12-08 00:11:50', NULL),
 (13, 'waste-flow', 'waste-flow', 'waste-flow', '2019-12-07 22:26:24', '2019-12-08 00:11:50', NULL),
-(14, 'portfolio-highlight', 'portofolio-highlight', 'highlight', '2019-12-07 22:26:24', '2020-01-03 16:50:39', NULL),
-(15, 'research-highlight', 'research-hightlight', 'highlight', '2019-12-07 22:26:24', '2019-12-17 23:50:14', NULL),
-(16, 'program-highlight', 'program-highlight', 'highlight', '2019-12-07 22:26:24', '2019-12-08 00:11:50', NULL),
+(14, 'portfolio-highlight', 'portofolio-highlight', NULL, '2019-12-07 22:26:24', '2020-01-30 17:29:59', NULL),
+(15, 'research-highlight', 'research-highlight', NULL, '2019-12-07 22:26:24', '2020-01-30 17:29:59', NULL),
+(16, 'program-highlight', 'program-highlight', NULL, '2019-12-07 22:26:24', '2020-01-30 17:29:59', NULL),
 (17, 'similar-project', 'similar-project', 'similar-project', '2019-12-07 22:26:24', '2019-12-08 00:11:50', NULL),
 (18, 'our-client', 'client', 'client', '2019-12-07 22:26:24', '2020-01-22 23:52:18', NULL),
 (19, 'recommended-for', 'recommended-for', 'recommendation', '2019-12-07 22:26:24', '2020-01-23 12:05:27', NULL),
@@ -1542,7 +1542,7 @@ INSERT INTO `service` (`service_id`, `service_category_id`, `service_parent_id`,
 (28, NULL, 10, 'akabis-class-for-institution', 'akabis-class-for-the-embassy-of-finland-jakarta', 'akabis-class-untuk-kedutaan-finlandia-di-jakarta', '', '', 'knowledge-about-responsible-solid-waste-management', 'Embassy of Finland in Indonesia', NULL, 'about.jpg', 'header.jpg', 'thumbnail.jpg', 'project/akabis-class-for-the-embassy-of-finland-jakarta', '', 'https://docs.google.com/forms/d/e/1FAIpQLSeSk3TroFAjonCgvBQcOjv5jSIS8elOVSyt_BVlUHoL_7k_gw/viewform', NULL, 1, 0, '2019-12-07 22:25:56', '2019-12-07 22:25:56', NULL),
 (29, NULL, 10, 'akabis-class-for-public', 'akabis-class-the-neglected-debris-paper-letter-and-waste-discussion', 'akabis-class-the-neglected-debris:-paper-letter', '', '', 'the-ancient-method-of-making-paper-is-not-only-rec', 'PT. Galeri Museum Macan', NULL, 'about.jpg', 'header.jpg', 'thumbnail.jpg', 'project/akabis-class-the-neglected-debris:-paper,-letter-and-waste-discussion', '', 'https://docs.google.com/forms/d/e/1FAIpQLSeSk3TroFAjonCgvBQcOjv5jSIS8elOVSyt_BVlUHoL_7k_gw/viewform', NULL, 1, 0, '2019-12-07 22:25:56', '2019-12-07 22:25:56', NULL),
 (30, NULL, 10, 'akabis-xperience-for-institution', 'akabis-xperience-for-world-bank-jakarta', 'akabis-xperience-untuk-pt-bank-dbs-indonesia', '', '', 'pt-bank-dbs-indonesia-is-one-of-waste4changes-cli', 'PT. Bank DBS Indonesia', NULL, 'about.jpg', 'header.jpg', 'thumbnail.jpg', 'project/akabis-xperience-for-world-bank-jakarta', '', 'https://docs.google.com/forms/d/e/1FAIpQLSeSk3TroFAjonCgvBQcOjv5jSIS8elOVSyt_BVlUHoL_7k_gw/viewform', '', 1, 0, '2019-12-07 22:25:56', '2019-12-07 22:25:56', NULL),
-(31, NULL, 10, 'akabis-xperience-for-public', 'akabis-xperience-for-yseali', 'akabis-xperience-untuk-yseali-young-southeast-asi', '', '', 'waste4change-became-one-of-the-facilitators-for-ys', 'Divers Clean Action and hosted by US Embassy', NULL, 'about.jpg', 'header.jpg', 'thumbnail.jpg', 'project/akabis-xperience-for-yseali', '', 'https://docs.google.com/forms/d/e/1FAIpQLSeSk3TroFAjonCgvBQcOjv5jSIS8elOVSyt_BVlUHoL_7k_gw/viewform', '', 1, 0, '2019-12-07 22:25:56', '2019-12-07 22:25:56', NULL);
+(31, NULL, 10, 'akabis-xperience-for-public', 'akabis-xperience-for-yseali', 'akabis-xperience-untuk-yseali-young-southeast-asi', '', '', 'waste4change-became-one-of-the-facilitators-for-ys', 'Implemented by Divers Clean Action and hosted by US Embassy', NULL, 'about.jpg', 'header.jpg', 'thumbnail.jpg', 'project/akabis-xperience-for-yseali', '', 'https://docs.google.com/forms/d/e/1FAIpQLSeSk3TroFAjonCgvBQcOjv5jSIS8elOVSyt_BVlUHoL_7k_gw/viewform', '', 1, 0, '2019-12-07 22:25:56', '2019-12-07 22:25:56', NULL);
 
 -- --------------------------------------------------------
 

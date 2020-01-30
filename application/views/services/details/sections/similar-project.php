@@ -5,7 +5,7 @@
 			<div class="text-center g-mb-50">
 				<h2
 					class="g-font-asap g-color-black-dark-v2 g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-20' : '' ?>"><?=$section_name?></h2>
-				<hr class="g-width-70 g-my-20 g-brd-2 g-brd-blue">
+				<hr class="g-width-70 g-mt-10 g-mb-20 g-brd-2 g-brd-blue">
 				<p class="g-color-white-opacity-0_8 d-none"><?= get_lang('brand-partner-subtitle') ?></p>
 			</div>
 			<div class="">
