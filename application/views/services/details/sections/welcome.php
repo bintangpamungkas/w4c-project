@@ -5,7 +5,7 @@
 		<div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center"
 		     style="height: 100%;background: url(<?= base_url('assets/img/service/' . $service_id . '/bg/header.jpg') ?>);background-size: cover;<?= $this->agent->is_mobile() ? 'background-position-x: right;' : '' ?>"></div>
 		<div class="full-height-block pending-show animated d-zap"
-		     style="background-image: <?= $this->agent->is_mobile() ? 'linear-gradient(180deg, rgba(255, 255, 255, 0.7) 20%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.6) 100%)' : 'linear-gradient( 100deg , rgb(256, 256, 256) 40%, rgba(256, 256, 256, 0.85) 70%, rgba(256, 256, 256,0) 100%);' ?>">
+		     style="background-image: <?= $this->agent->is_mobile() ? 'linear-gradient(180deg, rgba(255, 255, 255, 0.7) 20%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.6) 100%)' : 'linear-gradient( 100deg , rgb(255, 255, 255) 40%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255,0) 100%);' ?>">
 			<div class="container">
 				<div class="row content-middle-fullscreen with-header middle-top <?= $this->agent->is_mobile() ? 'justify-content-center' : '' ?>">
 					<?php if (!$this->agent->is_mobile()): ?>
@@ -31,7 +31,7 @@
 									class="g-color-black-opacity-0_7 <?= $this->agent->is_mobile() ? 'g-font-size-14  text-center' : 'g-font-size-16' ?> g-line-height-1_5 mb-3"><?= ucfirst($service->service_description) ?></h3>
 							</div>
 						</div>
-						<div class="row <?= $this->agent->is_mobile() ? ' justify-content-center pt-3' : 'pt-5' ?>">
+						<div class="row <?= $this->agent->is_mobile() ? 'justify-content-center pt-3 g-pb-40' : 'pt-5' ?>">
 							<div class="col-md-5 col-xs-12">
 								<div class="row justify-content-center">
 									<div class="col-md-12 col-xs-3">

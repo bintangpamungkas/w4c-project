@@ -5,7 +5,7 @@
       <h2 class="g-font-asap g-color-black g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?=get_lang('testimonial')?></h2>
       <!-- <hr class="g-width-70 g-my-20 g-brd-2 g-brd-blue"> -->
     </div>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center align-height-list">
       <div class="col-md-11 col-12">
         <div id="testi-carousel" class="row owl-theme" style="margin: 0 0 30px 0!important;">
           <?php
@@ -14,7 +14,7 @@
 
           foreach($testimonials as $testi){
             ?>
-            <div class="g-pa-30 g-mt-10" style="box-shadow: 0 0 20px rgba(0, 0, 0, 0.05)">
+            <div class="align-height-item g-pa-30 g-mt-10" style="box-shadow: 0 0 20px rgba(0, 0, 0, 0.05)">
               <div class="row">
                 <div class="col-auto">
                   <img class="d-inline- <?=$this->agent->is_mobile() ? ' g-width-55 g-height-55 ' : ' g-width-80 g-height-80 ' ?>rounded-circle" src="<?= base_url('assets/img/testimonial/'.$testi->testimony_photo) ?>" alt="Photo <?=$testi->testimony_name?>">
@@ -40,7 +40,7 @@
       $(element_id).owlCarousel({
         loop:true,
         margin:30,
-        dots:<?= !$this->agent->is_mobile() && count($xb)<3 ? 'false' : 'true' ?>,
+        dots:<?= !$this->agent->is_mobile() && count($testimonials)<3 ? 'false' : 'true' ?>,
         nav:true,
         autoplay:false,
         autoplayTimeout:1500,
