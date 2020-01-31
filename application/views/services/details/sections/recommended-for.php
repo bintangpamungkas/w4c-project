@@ -15,14 +15,14 @@
 				?>
 				<div class="col-lg-4 col-xs-12 g-mb-20">
 					<!-- Icon Blocks -->
-					<div class="align-height-item u-shadow-v21 g-bg-white rounded g-py-15 g-px-30 u-shadow-v20">
-						<div class="media">
-							<div class="d-flex mr-4">
+					<div class=" u-shadow-v21 g-bg-white rounded g-py-15 g-px-30 u-shadow-v20">
+						<div class="media align-height-item">
+							<div class="d-flex align-self-center mr-4">
 								<span class="g-font-size-26" style="color:<?= $rec->recomendation_color ?>">
 									<i class="<?= $rec->recomendation_icon ?>"></i>
                 </span>
 							</div>
-							<div class="media-body">
+							<div class="media-body align-self-center">
 								<h3 class="h5 g-color-black g-mt-5 text-capitalize"><?= $rec->recomendation_name ?></h3>
 								<div class="g-width-30 g-brd-bottom g-brd-primary g-my-15 d-none"></div>
 							</div>

@@ -63,10 +63,6 @@
 															<li class="g-mb-5">
 																<a class="g-color-white-opacity-0_8" href="<?=get_url('http://w4c.id/rumahkompos')?>"><?=get_lang('home-composting')?></a>
 															</li>
-														<?php elseif($menu->service_target_id==1):?>
-															<li class="g-mb-5">
-																<a class="g-color-white-opacity-0_8" href="<?=get_url('service/black-soldier-fly-learning-center')?>"><?=get_lang('black-soldier-fly-tools-products')?></a>
-															</li>
 														<?php endif;?>
 													</ul>
 												</div>

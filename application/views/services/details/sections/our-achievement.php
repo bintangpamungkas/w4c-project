@@ -1,4 +1,4 @@
-<section class="g-bg-gray-light-v5" style="position: relative; <?= $this->agent->is_mobile() ? 'min-height: 350px;' : 'min-height: 100px;' ?>">
+<section class="g-bg-gray-light-v5" style="position: relative; <?= $this->agent->is_mobile() ? 'min-height: '.((count($achievements)*90)+80).'px;' : 'min-height: 100px;' ?>">
 	<div id="<?= $section_slug ?>>" style="height: 10px;position: absolute;width: 80%;margin-top: -100px"></div>
 	<div style="width:100%; <?= $this->agent->is_mobile() ? 'position: absolute; top: -50px;' : 'position: absolute; top: -70px;' ?>">
 		<div class="container">
