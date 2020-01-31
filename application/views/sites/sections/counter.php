@@ -4,7 +4,7 @@
 	<div class="container <?= $this->agent->is_mobile() ? 'g-py-50' : 'g-py-70' ?>">
 		<div class="text-center g-mb-50">
 			<h2 class="g-font-asap g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= strtoupper(get_lang('our-achievement')) ?></h2>
-			<p class="text-muted"><?= get_lang('we-create-an-ecosystem-of-responsible-waste-manage') ?></p>
+			<p class="g-color-black-opacity-0_8"><?= get_lang('we-create-an-ecosystem-of-responsible-waste-manage') ?></p>
 		</div>
 		<div class="row text-center">
 			<div class="col-md-4 col-xs-12 mb-4">

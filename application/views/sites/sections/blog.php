@@ -178,7 +178,7 @@
 	</div>
 	<div class="text-center g-mb-50 <?= $this->agent->is_mobile() ? 'g-pt-5' : 'g-pt-40' ?>">
 		<div class="row justify-content-center">
-			<div class="col-md-12 text-muted">
+			<div class="col-md-12 col-9 g-color-black-opacity-0_8">
 				<p class="<?= $this->agent->is_mobile() ? 'g-font-size-12' : '' ?>">
 					<?= get_lang('find-more-content-about-responsible-waste-manageme') ?>
 				</p>

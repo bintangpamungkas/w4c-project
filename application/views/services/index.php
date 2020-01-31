@@ -163,7 +163,7 @@
 														<?php
 														foreach ($service->recomendation as $recomendation):
 															?>
-															<span class="u-label u-label--sm g-rounded-20 g-px-20 g-py-7 g-mb-5 g-mr-10 g-my-5"
+															<span class="u-label u-label--sm g-rounded-20 g-font-size-12 g-px-20 g-py-7 g-mb-5 g-mr-10 g-my-5"
 															      style="color:<?= $recomendation->color ?>; background-color:<?= $recomendation->color, '20' ?>"><?= $recomendation->name ?></span>
 														<?php
 														endforeach;
@@ -192,7 +192,7 @@
 														<?php
 														foreach ($service->recomendation as $recomendation):
 															?>
-															<span class="u-label u-label--sm g-rounded-20 g-px-20 g-py-7 g-mb-5 g-mr-10 g-my-5"
+															<span class="u-label u-label--sm g-rounded-20 g-font-size-12 g-px-20 g-py-7 g-mb-5 g-mr-10 g-my-5"
 															      style="color:<?= $recomendation->color ?>; background-color:<?= $recomendation->color, '20' ?>"><?= $recomendation->name ?></span>
 														<?php
 														endforeach;

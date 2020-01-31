@@ -8,7 +8,7 @@
 				<div class="h3 g-font-weight-600 text-uppercase" style="margin-bottom: 0;padding-top: 20px">
 					<?= get_lang('spread-the-good-news') ?>
 				</div>
-				<div class="text-muted">
+				<div class="g-color-black-opacity-0_8">
 					<?= get_lang('share-on-your-social-media-create-impact-for-you') ?>
 				</div>
 			</div>
