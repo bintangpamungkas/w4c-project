@@ -456,4 +456,23 @@
 			}
 			return $lang;
 		}
+
+		function get_lang($slug)
+		{
+			$lang = $this->get_language();
+
+			$this->db->select('dictionary_content');
+			$this->db->where('dictionary_slug', $slug);
+			$this->db->where('language_code', $lang);
+			$database = $this->db->get('dictionary')->row();
+			if (empty($database)) {
+				if (empty(lang($slug))) {
+					return $slug;
+				} else {
+					return lang($slug);
+				}
+			} else {
+				return $database->dictionary_content;
+			}
+		}
 	}

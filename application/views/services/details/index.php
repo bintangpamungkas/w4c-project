@@ -7,5 +7,6 @@ foreach ($sections as $section) {
 		$this->load->view('services/details/sections/'.$section->section_slug,$data);
 	}
 }
+
 ?>
 

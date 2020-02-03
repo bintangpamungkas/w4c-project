@@ -1,6 +1,6 @@
 
 <!-- End Promo Block -->
-<div class="g-bg-white <?= $this->agent->is_mobile() ? 'g-pt-150 g-pb-40' : 'g-py-200' ?>">
+<div class="g-bg-white <?= $this->agent->is_mobile() ? 'g-pt-75 g-pb-40' : 'g-py-100' ?>">
     <div class="container">
         <div class="row justify-content-center text-center g-mb-50">
             <div class="col-lg-10  g-line-height-1_2">
@@ -49,7 +49,7 @@
                 ?>
                 <div class="col-md-4 col-6 g-px-5 g-mb-10">
                     <a class="js-fancybox" href="<?= base_url('assets/img/bg/about/'.$gallery['image']) ?>" title="Lightbox Gallery" data-fancybox-gallery="lightbox-gallery" data-fancybox-speed="500" data-fancybox-slide-speed="1000">
-                        <div style="background: url(<?= base_url('assets/img/bg/about/'.$gallery['image']) ?>);height: 250px;background-size: cover;background-position: center"></div>
+                        <div style="background: url(<?= base_url('assets/img/bg/about/'.$gallery['image']) ?>);height: 200px;background-size: cover;background-position: center"></div>
                     </a>
                 </div>
                 <?php
