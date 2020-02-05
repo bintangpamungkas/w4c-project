@@ -36,6 +36,7 @@
 			$this->db->select('(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service.service_description AND dictionary.language_code="' . $lang . '" limit 1) as service_description');
 			$this->db->select('(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service.service_slogan AND dictionary.language_code="' . $lang . '" limit 1) as service_slogan');
 			$this->db->select('(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service.service_about AND dictionary.language_code="' . $lang . '" limit 1) as service_about');
+			$this->db->select('(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service.service_client_name AND dictionary.language_code="' . $lang . '" limit 1) as service_client_name');
 			$this->db->from('service');
 			$this->db->join('service_category', 'service_category.service_category_id=service.service_category_id', 'left');
 			$this->db->where('service_slug', $service_slug);

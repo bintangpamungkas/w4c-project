@@ -89,6 +89,9 @@ function view_range_date($start, $end = null, $lang)
 function view_sort_name($pretext, $limit=null)
 {
 	$text = str_replace('-', ' ', $pretext);
+	if (strlen($text)<=($limit*4)) {
+		return $pretext;
+	}
 	$word = explode("(", $text);
 	if (empty($word[1])) {
 		$words = explode(" ", $text);

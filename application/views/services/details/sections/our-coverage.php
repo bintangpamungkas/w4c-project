@@ -10938,7 +10938,6 @@ TODO implement method
           }// end if seluruh indonesia
 
           // Add a marker clusterer to manage the markers.
-
       }
 
       //CHANGE ADDRESS TO LAT LNG

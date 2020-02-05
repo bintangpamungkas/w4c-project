@@ -108,8 +108,8 @@
 											     style="margin-top: -40px; min-height:250px">
 												<div>
 													<h6
-														class="h6 g-color-black-opacity-0_5 g-font-weight-600 g-mb-5 g-font-size-10 text-uppercase"> <?= $service->service_category_name ?> </h6>
-													<h4 class="h6 g-color-black g-font-weight-600 g-mb-5 g-font-size-20"
+														class="g-color-black-opacity-0_5 g-font-weight-600 g-mb-5 g-font-size-12 text-uppercase"> <?= $service->service_category_name ?> </h6>
+													<h4 class="g-color-black g-font-weight-600 g-mb-5 g-font-size-20"
 													    style="min-height: 50px"><?= $service->service_name ?></h4>
 													<em
 														class="d-block g-color-black-opacity-0_8 g-font-style-normal g-font-size-12 g-mb-10"><?= $service->service_description ?></em>
@@ -215,8 +215,8 @@
 									     style="margin-top: -40px; min-height:250px">
 										<div>
 											<h6
-												class="h6 g-color-black-opacity-0_5 g-font-weight-600 g-mb-5 g-font-size-10 text-uppercase"> <?= $service->service_category_name ?> </h6>
-											<h4 class="h6 g-color-black g-font-weight-600 g-mb-5 g-font-size-20"
+												class="g-color-black-opacity-0_5 g-font-weight-600 g-mb-5 g-font-size-12 text-uppercase"> <?= $service->service_category_name ?> </h6>
+											<h4 class="g-color-black g-font-weight-600 g-mb-5 g-font-size-20"
 											    style="min-height: 50px"><?= $service->service_name ?></h4>
 											<em
 												class="d-block g-color-black-opacity-0_8 g-font-style-normal g-font-size-12 g-mb-10"><?= $service->service_description ?></em>

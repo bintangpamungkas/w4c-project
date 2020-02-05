@@ -27,7 +27,7 @@
 												<img src="<?= get_image(DIR_ICON . 'check-circle.png') ?>" alt="" style="<?= $this->agent->is_mobile() ? 'width:20px; margin-right: 13px; margin-top:-10px' : 'width:30px; margin-right: 20px' ?>">
 											</div>
 											<?php endif; ?>
-											<div class="col <?= $this->agent->is_mobile() ? ' g-font-size-11' : '' ?>">
+											<div class="col <?= $this->agent->is_mobile() ? ' g-font-size-12' : '' ?>">
 												<?= $val ?>
 											</div>
 										</div>

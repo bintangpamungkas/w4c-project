@@ -117,7 +117,7 @@
 											style="width: 20px; margin-top: -10px;"></i> </a>
 									<hr class="mb-1">
 									<div class="g-mt-10">
-										<div class="g-font-size-10 g-mb-5"><?= ucfirst(get_lang('recommended-for')) ?></div>
+										<div class="g-font-size-12 g-mb-5"><?= ucfirst(get_lang('recommended-for')) ?></div>
 										<?php
 										foreach ($service->recomendation as $recomendation):
 											?>
@@ -159,7 +159,7 @@
 														<i class="fa fa-angle-right g-ml-10 g-font-size-20"></i>
 													</a>
 													<div class="g-mt-20">
-														<div class="g-font-size-10 g-mb-5"><?= get_lang('recommended-for') ?></div>
+														<div class="g-font-size-12 g-mb-5"><?= get_lang('recommended-for') ?></div>
 														<?php
 														foreach ($service->recomendation as $recomendation):
 															?>
@@ -188,7 +188,7 @@
 														href="<?= get_url($service->service_page_url) ?>"><?= get_lang('learn-more') ?> <i
 															class="fa fa-angle-right g-ml-10 g-font-size-20"></i> </a>
 													<div class="g-mt-20">
-														<div class="g-font-size-10 g-mb-5"><?= get_lang('recommended-for') ?></div>
+														<div class="g-font-size-12 g-mb-5"><?= get_lang('recommended-for') ?></div>
 														<?php
 														foreach ($service->recomendation as $recomendation):
 															?>

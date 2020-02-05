@@ -11,13 +11,13 @@ class Service extends MY_Controller
 		$this->load->model('service_model');
 		$this->load->model('crud_model');
 	}
-	
+
 	public function index()
 	{
 		$lang = $this->get_language();
 		$target = $this->input->get('target');
 		$input_city = $this->input->get('city');
-		
+
 		if (empty($target)) {
 			$service_target_id = '';
 		} else {
@@ -33,11 +33,11 @@ class Service extends MY_Controller
 				}
 			}
 		}
-	
+
 		//check input city
 		$check_city = $this->service_model->check_city($input_city);
 		if (empty($check_city)) { // input city tidak ditemukan
-			$message = $this->crud_model->select('dictionary', QUERY_ROW, ['dictionary_content'], ['dictionary_slug'=>'no-result-found-for','language_code'=>$lang],'','',1)->dictionary_content.': <span class="g-font-weight-700">'.$input_city.'</span>';
+			$message = $this->crud_model->select('dictionary', QUERY_ROW, ['dictionary_content'], ['dictionary_slug' => 'no-result-found-for', 'language_code' => $lang], '', '', 1)->dictionary_content . ': <span class="g-font-weight-700">' . $input_city . '</span>';
 		} else { // city tersedia
 			$services = $this->service_model->service_list_by_coverage($lang, $input_city, $service_target_id);
 			$service_list = [];
@@ -47,22 +47,22 @@ class Service extends MY_Controller
 				$service_list[] = $service;
 			}
 			$data['services'] = $service_list;
-			
+
 			if (empty($data['services'])) {
-				$message = $this->crud_model->select('dictionary', QUERY_ROW, ['dictionary_content'], ['dictionary_slug'=>'no-result-found-for','language_code'=>$lang],'','',1)->dictionary_content.': <span class="g-font-weight-700">'.$input_city.'</span>';
+				$message = $this->crud_model->select('dictionary', QUERY_ROW, ['dictionary_content'], ['dictionary_slug' => 'no-result-found-for', 'language_code' => $lang], '', '', 1)->dictionary_content . ': <span class="g-font-weight-700">' . $input_city . '</span>';
 			} else {
-				$message = $this->crud_model->select('dictionary', QUERY_ROW, ['dictionary_content'], ['dictionary_slug'=>'showing-result-for','language_code'=>$lang],'','',1)->dictionary_content.': <span class="g-font-weight-700">'.$input_city.'</span>';
+				$message = $this->crud_model->select('dictionary', QUERY_ROW, ['dictionary_content'], ['dictionary_slug' => 'showing-result-for', 'language_code' => $lang], '', '', 1)->dictionary_content . ': <span class="g-font-weight-700">' . $input_city . '</span>';
 			}
 		}
-		
+
 		$data['service_targets'] = $this->crud_model->select('service_target', QUERY_RESULT, ['service_target_name service_target_slug', 'dictionary.dictionary_content service_target_name', 'service_target_icon'], ['language_code' => $lang, 'deleted_at' => null], ['service_target' => ['dictionary' => 'dictionary_slug=service_target_name']]);
 		$data['coverage_cities'] = $this->crud_model->select('place_city', QUERY_RESULT, ['city_name service_coverage_city'], '');
-		if (!empty($input_city)){
+		if (!empty($input_city)) {
 			$data['search_message'] = $message;
 		}
 		$data['input_city'] = $input_city;
-		
-		
+
+
 		$data['title'] = '';
 		$data['id'] = 'site';
 		$data['subtitle'] = 'information';
@@ -70,14 +70,14 @@ class Service extends MY_Controller
 		$data['page_heading'] = 'services_title';
 		$data['is_bilingual'] = true;
 		$data['service_target'] = $target;
-		
+
 		$this->render_page('services/index', $data, 'services');
 	}
-	
+
 	public function detail($service_slug)
 	{
 		$lang = $this->get_language();
-		
+
 		$service = $this->service_model->get_service($lang, $service_slug);
 		$sections = $this->crud_model->select('service_section', QUERY_RESULT, ['service_section.deleted_at', 'service_section.service_id', 'section.section_id', 'section_slug', '(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_menu_name AND dictionary.language_code="' . $lang . '") as section_menu_name', '(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_name AND dictionary.language_code="' . $lang . '") as section_name'], ['service_section.service_id' => $service->service_id, 'service_section.deleted_at' => null], ['service_section' => ['section' => 'section_id']]);
 		$data['title'] = $service->service_name;
@@ -89,23 +89,23 @@ class Service extends MY_Controller
 		$data['page_heading'] = $data['service_name'];
 		$data['is_bilingual'] = true;
 		$data['breadcrumb'] = [
-				[
-						'title' => $this->get_lang('home'),
-						'url' => '',
-						'active' => false
-				],
-				[
-						'title' => $this->get_lang('all-services'),
-						'url' => 'service',
-						'active' => false
-				],
-				[
-						'title' => $service->service_name,
-						'url' => '#welcome',
-						'active' => true
-				]
+			[
+				'title' => $this->get_lang('home'),
+				'url' => '',
+				'active' => false
+			],
+			[
+				'title' => $this->get_lang('all-services'),
+				'url' => 'service',
+				'active' => false
+			],
+			[
+				'title' => $service->service_name,
+				'url' => '#welcome',
+				'active' => true
+			]
 		];
-		
+
 		$data['subnav'] = $sections;
 		foreach ($sections as $section) {
 			if ($section->section_slug == 'our-achievement' || $section->section_slug == 'achievement-deliverable') {
@@ -153,19 +153,19 @@ class Service extends MY_Controller
 //			die();
 		$data['service'] = $service;
 		$data['sections'] = $sections;
-		
+
 		$this->render_page('services/details/index', $data, 'services');
 	}
-	
+
 	public function project($service_slug)
 	{
 		$lang = $this->get_language();
-		
+
 		$service = $this->service_model->get_service($lang, $service_slug);
 		$parent_service = $this->crud_model->select('service', QUERY_ROW, ['service_slug', 'service_portfolio_url', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_name AND language_code="' . $lang . '" limit 1) as service_name'], ['service_id' => $service->service_parent_id]);
-		
+
 		$sections = $this->crud_model->select('service_section', QUERY_RESULT, ['service_section.deleted_at', 'service_section.service_id', 'section.section_id', 'section_slug', '(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_menu_name AND dictionary.language_code="' . $lang . '") as section_menu_name', '(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_name AND dictionary.language_code="' . $lang . '") as section_name'], ['service_section.service_id' => $service->service_id, 'service_section.deleted_at' => null], ['service_section' => ['section' => 'section_id']]);
-		
+
 		$data['title'] = '';
 		$data['id'] = 'service';
 		$data['subtitle'] = 'information';
@@ -175,30 +175,30 @@ class Service extends MY_Controller
 		$data['page_heading'] = $data['service_name'];
 		$data['is_bilingual'] = true;
 		$data['breadcrumb'] = [
-				[
-						'title' => 'Home',
-						'url' => '',
-						'active' => false
-				],
-				[
-						'title' => 'All Services',
-						'url' => 'service',
-						'active' => false
-				],
-				[
-						'title' => $parent_service->service_name,
-						'url' => 'service/' . $parent_service->service_slug,
-						'active' => false
-				],
-				[
-						'title' => $service->service_name,
-						'url' => '#welcome',
-						'active' => true
-				]
+			[
+				'title' => $this->get_lang('home'),
+				'url' => '',
+				'active' => false
+			],
+			[
+				'title' => $this->get_lang('all-services'),
+				'url' => 'service',
+				'active' => false
+			],
+			[
+				'title' => $parent_service->service_name,
+				'url' => 'service/' . $parent_service->service_slug,
+				'active' => false
+			],
+			[
+				'title' => $service->service_name,
+				'url' => '#welcome',
+				'active' => true
+			]
 		];
-		
+
 		$data['subnav'] = $sections;
-		
+
 		$data['service'] = $service;
 		$data['parent_service'] = $parent_service;
 		$data['sections'] = $sections;
@@ -240,42 +240,42 @@ class Service extends MY_Controller
 				$data['recomendations'] = $this->crud_model->select('service_recomendation', QUERY_RESULT, ['recomendation_icon', 'recomendation_color', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=recomendation_name AND language_code="' . $lang . '" limit 1) as recomendation_name'], ['service_recomendation.service_id' => $service->service_id, 'service_recomendation.deleted_at' => null], ['service_recomendation' => ['recomendation' => 'recomendation_id']]);
 			}
 			if ($section->section_slug == 'our-coverage') {
-				
+
 			}
 		}
-		
+
 		$this->render_page('services/details/index', $data, 'services');
 	}
-	
+
 	public function test()
 	{
-		
+
 		$service_target = $this->crud_model->select('service_target', QUERY_RESULT, ['service_target_id', 'dictionary.dictionary_content service_target_name', 'service_target_icon'], ['language_code' => $lang, 'deleted_at' => null], ['service_target' => ['dictionary' => 'dictionary_slug=service_target_name']]);
 		$targets = [];
 		foreach ($service_target as $target) {
 			$service_category = $this->crud_model->select('service_category', QUERY_RESULT, ['service_category_id', 'service_category_name', 'service_category_icon', 'service_target_id'], ['service_category.service_target_id' => $target->service_target_id]);
-			
+
 			$categories = [];
 			foreach ($service_category as $category) {
 				$services = $this->crud_model->select('service', QUERY_RESULT, ['service_id', 'service_slug', 'service_name', 'service_category_id'], ['service_id' => $category->service_category_id]);
 				$category->services = $services;
 				$categories[] = $category;
 			}
-			
+
 			$target->category = $categories;
 			$targets[] = $target;
 		}
 		print_r($targets);
 		die();
 	}
-	
+
 	public function join($service_slug)
 	{
 		$lang = $this->get_language();
-		
+
 		$service = $this->service_model->get_service($lang, $service_slug);
 		$sections = $this->crud_model->select('service_section', QUERY_RESULT, ['service_section.deleted_at', 'service_section.service_id', 'section.section_id', 'section_slug', '(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_menu_name AND dictionary.language_code="' . $lang . '") as section_menu_name', '(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_name AND dictionary.language_code="' . $lang . '") as section_name'], ['service_section.service_id' => $service->service_id, 'service_section.deleted_at' => null], ['service_section' => ['section' => 'section_id']]);
-		
+
 		$data['title'] = $service->service_name;
 		$data['id'] = 'service';
 		$data['subtitle'] = 'information';
@@ -284,11 +284,11 @@ class Service extends MY_Controller
 		$data['service_name'] = $service->service_name;
 		$data['page_heading'] = $data['service_name'];
 		$data['is_bilingual'] = true;
-		
+
 		$data['subnav'] = $sections;
 		$data['service'] = $service;
-		
+
 		$this->render_page('services/join', $data, 'services');
 	}
-	
+
 }

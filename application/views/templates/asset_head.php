@@ -5,7 +5,7 @@
 
   <title>
     <?php
-    if(isset($page_heading)){
+    if(empty($page_heading)){
       $page_heading=$is_bilingual==true ? lang($page_heading) : $page_heading;
     }else{
       $page_heading=$title;
