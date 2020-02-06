@@ -4,7 +4,7 @@
 		<div class="container">
 			<div class=" g-bg-white u-shadow-v20 <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-10' : 'g-pa-40' ?>">
 				<div class="row align-items-end">
-					<div class="col-md-3 col-xs-12 col-md-4 col-xs-12 g-color-black g-font-weight-500 g-line-height-1_2 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-25 text-center' : 'g-font-size-40 g-pr-50 ' ?>">
+					<div class="col-md-3 col-xs-12 col-md-4 col-xs-12 g-color-black g-font-weight-500 g-line-height-1_2 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-25 text-center' : 'g-font-size-35 g-pr-50 ' ?>">
 						<?= $section_name ?>
 						<?= $this->agent->is_mobile() ? '<hr class="g-width-30 g-my-5 g-brd-2 g-brd-blue g-mb-20">' : '' ?>
 					</div>
