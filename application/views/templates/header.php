@@ -95,23 +95,23 @@
 					</a>
 
 					<div class="collapse navbar-collapse align-items-center flex-sm-row" id="navBar2">
-						<div class="row justify-content-around no-gutters" style="width: calc(100% + 33px); margin-left:-33px">
+						<div <?= $this->agent->is_mobile() ? 'class="row no-gutters"' : 'class="row no-gutters justify-content-around" style="width: calc(100% + 33px); margin-left:-33px"' ?>" >
 							<div class="col-7">
-								<ul class="navbar-nav text-uppercase g-font-weight-600 mr-auto row no-gutters align-items-center">
+								<ul class="navbar-nav text-uppercase g-font-weight-600 mr-auto <?= $this->agent->is_mobile() ? '' : 'row no-gutters align-items-center' ?>">
 									<?php foreach ($subnav as $subnav): ?>
 										<?php if (!empty($subnav->section_menu_name)): ?>
-											<div class="col">
+											<?= $this->agent->is_mobile() ? '' : '<div class="col">' ?>
 												<li class="nav-item g-my-2 <?= $this->agent->is_mobile() ? 'g-my-10' : '' ?> g-mx-20--lg">
 													<a href="#<?= $subnav->section_slug ?>" class="font-weight-normal g-font-size-11 click_scroll nav-link px-0 b-color-white g-color-blue--hover g-py-9"
 													   style="line-height: 1"><?= $subnav->section_menu_name ?>
 													</a>
 												</li>
-											</div>
+											<?= $this->agent->is_mobile() ? '' : '</div>' ?>
 										<?php endif; ?>
 									<?php endforeach; ?>
 								</ul>
 							</div>
-							<?php if (!$this->agent->is_mobile()) { ?>
+							<?php if (!$this->agent->is_mobile()) { // desktop view only ?>
 								<div class="col-5">
 									<div class="row no-gutters justify-content-end">
 										<div class="col-6">
@@ -138,7 +138,6 @@
 										<?php } else { ?>
 											<?php if ($parent_service->service_portfolio_url == 1) { ?>
 												<div class="col-6">
-
 													<a class="click_scroll btn btn-outline-info btn-block g-font-size-13 g-rounded-50 g-px-20 g-brd-2 g-ml-15  g-py-9 d-none"
 													   href="<?= base_url(DIR_SERVICE . $parent_service->service_slug . '/portfolio/' . $lang . '.pdf') ?>" data-header-fix-moment-exclude="d-none"
 													   data-header-fix-moment-classes="d-block"> <?= strtoupper(get_lang('get-portfolio')) ?>
@@ -146,12 +145,11 @@
 																class="fa fa-info"></i> </span>
 													</a>
 												</div>
-
 											<?php } ?>
 										<?php } ?>
 									</div>
 								</div>
-							<?php } ?>
+							<?php }// end desktop view ?>
 						</div>
 					</div>
 				</div>
