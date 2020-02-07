@@ -159,28 +159,12 @@ $(window).ready(function () {
 		item.height(tempHeights);
 	});
 
-	// document.addEventListener("fullscreenchange", function (event) {
-	// 	if (document.fullscreenElement) {
-	// 		console.log('// fullscreen is activated');
-	// 	} else {
-	// 		console.log('// fullscreen is cancelled');
-	// 	}
-	// });
-	// document.addEventListener("fullscreenchange", function() {
-	// 	console.log("fullscreenchange event fired!");
-	// });
-	// document.addEventListener("mozfullscreenchange", function() {
-	// 	console.log("mozfullscreenchange event fired!");
-	// });
-	// document.addEventListener("webkitfullscreenchange", function() {
-	// 	console.log("webkitfullscreenchange event fired!");
-	// });
-	// document.addEventListener("msfullscreenchange", function() {
-	// 	console.log("msfullscreenchange event fired!");
-	// });
-	// 	if (document.documentElement.webkitRequestFullscreen) {
-	// 		console.log(11);
-	// 	}
+	// PRE LOADING HIDE
+	$("#preloading").addClass('animated fadeOut');
+
+	setInterval(function(){
+		$("#preloading").addClass('d-none');
+	}, 1000);
 
 });
 
