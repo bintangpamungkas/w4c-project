@@ -263,7 +263,7 @@
     $(function () {
         var availableTags = [
 					<?php foreach ($coverage_cities as $city) {
-					echo '"' . $city->service_coverage_city . '",';
+					echo '"' . $city->city_name . '",';
 				}
 					?>
         ];

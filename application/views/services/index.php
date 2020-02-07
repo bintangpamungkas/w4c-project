@@ -86,7 +86,7 @@
 	</div>
 	<div class="g-bg-secondary">
 		<div class="container">
-			<div class="g-font-size-25 g-mt-30"><?= empty($search_message) ? '' : $search_message ?></div>
+			<div class="g-font-size-20 g-mt-30"><?= empty($search_message) ? '' : $search_message ?></div>
 			<?php
 			if (empty($services)) {
 //				echo '<div class="g-font-size-25 g-font-weight-600 g-my-20">' . get_lang('no-service-found') . '</div>';
@@ -250,7 +250,7 @@
     $(function () {
         var availableTags = [
 					<?php foreach ($coverage_cities as $city) {
-					echo '"' . $city->service_coverage_city . '",';
+					echo '"' . $city->city_name . ', '.$city->province_name .'",';
 				}
 					?>
         ];

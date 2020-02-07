@@ -21,17 +21,19 @@ class Site extends MY_Controller
 		$targets = $this->crud_model->select('service_target', QUERY_RESULT, ['service_target_id', 'service_target_name service_target_slug', 'dictionary.dictionary_content service_target_name', 'service_target_icon'], ['language_code' => $lang, 'deleted_at' => null], ['service_target' => ['dictionary' => 'dictionary_slug=service_target_name']]);
 		$service_target = [];
 		foreach ($targets as $target) {
-			if (empty($input_city)) {
-				$services = $this->service_model->service_list_by_coverage($lang, $input_city, $target->service_target_id, true);
-			} else {
-				$services = $this->service_model->service_list_by_coverage($lang, $input_city, $target->service_target_id);
-			}
+			$services = $this->service_model->service_list_by_coverage($lang, '','', $target->service_target_id, true);
+
+//			if (empty($input_city)) {
+//			} else {
+//				$services = $this->service_model->service_list_by_coverage($lang, $input_city, $target->service_target_id);
+//			}
 			$target->list = $services;
 			$service_target[] = $target;
 		}
 		$data['input_city'] = $input_city;
 		$data['service_targets'] = $service_target;
-		$data['coverage_cities'] = $this->crud_model->select('place_city',QUERY_RESULT,['city_name service_coverage_city'],'');
+		$data['coverage_cities'] = $this->crud_model->select('place_city', QUERY_RESULT, ['city_name','province_name'], '',['place_city'=>['place_province'=>'province_id']]);
+//		$data['coverage_cities'] = $this->crud_model->select('place_city',QUERY_RESULT,['city_name service_coverage_city'],'');
 		$data['testimonials'] = $this->crud_model->select('testimonial',QUERY_RESULT,'',['language_code'=>$lang,'deleted_at'=>null,'service_id'=>null]);
 		
 		$data['title'] = '';
