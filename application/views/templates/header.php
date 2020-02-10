@@ -1,7 +1,7 @@
 <header id="js-header" class="u-header u-header--sticky-top u-header--change-appearance" data-header-fix-moment="100">
 	<!-- <div id="navigation-block" class="nav-type-transparent navbar-toggle-btn u-header__section u-header__section--dark pb-10" data-header-fix-moment-exclude="pb-10 g-color-white" data-header-fix-moment-classes="g-bg-white u-shadow-v18 g-py-0"> -->
 	<div id="navigation-block"
-	     class="<?= $template == 'index' ? 'nav-type-transparent' : '' ?> navbar-toggle-btn  pb-10 u-header__section u-header__section--<?= $template == 'services' ? 'light bg-white' : 'dark' ?> g-pt-10--lg"
+	     class="<?= $template == 'index' ? 'nav-type-transparent' : '' ?> navbar-toggle-btn  pb-10 u-header__section u-header__section--<?= $template == 'services' ? 'light bg-white' : 'dark' ?> g-py-10--lg"
 			 <?= $template == 'index' ? 'data-header-fix-moment-exclude="pb-10 g-color-white" data-header-fix-moment-classes="g-bg-white u-shadow-v18 g-py-0"' : '' ?>>
 
 		<nav class="js-mega-menu navbar navbar-expand-lg">

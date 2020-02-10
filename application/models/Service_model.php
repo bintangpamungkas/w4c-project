@@ -73,18 +73,30 @@ class Service_model extends CI_Model
 			$this->db->where('service.is_new', 1);
 		}
 
-		if ($city_name != null) {
+		if ($city_name != null && $province_name != null) {
 			$this->db->group_start();
 			$this->db->like('place_city.city_name', $city_name);
 			$this->db->or_where('place_city.city_name', 'Seluruh Kota di Indonesia');
 
-			if ($province_name != null) {
-				$this->db->or_group_start();
-				$this->db->like('place_province.province_name', $province_name);
+			$this->db->or_group_start();
+			$this->db->like('place_province.province_name', $province_name);
+			$this->db->group_end();
+			$this->db->group_end();
+		} else {
+			if ($city_name != null) {
+				$this->db->group_start();
+				$this->db->like('place_city.city_name', $city_name);
+				$this->db->or_where('place_city.city_name', 'Seluruh Kota di Indonesia');
 				$this->db->group_end();
 			}
-			$this->db->group_end();
+			if ($province_name != null) {
+				$this->db->group_start();
+				$this->db->like('place_province.province_name', $province_name);
+				$this->db->or_where('place_city.city_name', 'Seluruh Kota di Indonesia');
+				$this->db->group_end();
+			}
 		}
+
 
 		if ($target_id != null) {
 			$this->db->where('service_category.service_target_id', $target_id);

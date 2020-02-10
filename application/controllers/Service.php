@@ -47,9 +47,12 @@ class Service extends MY_Controller
 		$check_city = $this->service_model->check_city($city_name,$province_name);
 
 		if (empty($check_city)) { // input city tidak ditemukan
-			$message = $this->crud_model->select('dictionary', QUERY_ROW, ['dictionary_content'], ['dictionary_slug' => 'no-result-found-for', 'language_code' => $lang], '', '', 1)->dictionary_content . ': <span class="g-font-weight-700">' . $input_city . '.</span>';
+			$message = $this->crud_model->select('dictionary', QUERY_ROW, ['dictionary_content'], ['dictionary_slug' => 'no-result-found-for', 'language_code' => $lang], '', '', 1)->dictionary_content . ': <span class="g-font-weight-700">' . $input_city . '</span>.<br> <small>Mohon masukkan nama kota yang valid.</small>';
 		} else { // city tersedia
-			$services = $this->service_model->service_list_by_coverage($lang, $city_name, $province_name, $service_target_id);
+			$services = $this->service_model->service_list_by_coverage($lang, $city_name, '', $service_target_id);
+			if (empty($services)){
+				$services = $this->service_model->service_list_by_coverage($lang, '', $province_name, $service_target_id);
+			}
 			$service_list = [];
 			foreach ($services as $service) {
 				$recommendations = $this->service_model->service_recomendation($lang, $service->service_id);
