@@ -17,6 +17,7 @@ class Service extends MY_Controller
 		$lang = $this->get_language();
 		$target = $this->input->get('target');
 		$input_city = $this->input->get('city');
+
 		$temp_input_city=explode(', ',$input_city);
 		$city_name = $temp_input_city[0];
 
@@ -32,12 +33,12 @@ class Service extends MY_Controller
 			if ($target == 'all') {
 				$service_target_id = '';
 			} else {
-				$service_target_id = $this->crud_model->select('service_target', QUERY_ROW, ['service_target_id'], ['service_target_name' => $target]);
-				if (empty($service_target_id)) {
+				$service_target = $this->crud_model->select('service_target', QUERY_ROW, ['service_target_id'], ['service_target_name' => $target]);
+				if (empty($service_target)) {
 					$service_target_id = '';
 					$target = 'all';
 				} else {
-					$service_target_id = $service_target_id->service_target_id;
+					$service_target_id = $service_target->service_target_id;
 				}
 			}
 		}
