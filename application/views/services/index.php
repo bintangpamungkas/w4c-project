@@ -27,7 +27,7 @@
 					<div class="col<?= $this->agent->is_mobile() ? '' : '' ?> text-center g-px-0 tab-shadow align-self-end">
 						<a
 							class="my_tab_2 g-cursor-pointer nav-link text-uppercase g-font-weight-700 g-font-size-<?= $this->agent->is_mobile() ? '14 g-py-10  g-px-5' : '15 g-py-12 g-px-30' ?> <?= (empty($service_target) || $service_target == 'all') ? 'tab-active' : '' ?> "
-							href="<?= site_url('service?city='.$input_city.'&target=all') ?>"
+							href="<?= site_url('service?city=' . $input_city . '&target=all') ?>"
 							style="<?= $this->agent->is_mobile() ? 'min-height: 40px' : 'min-height: 50px' ?> ; color:#aaa">
 							<?= get_lang('all') ?>
 						</a>
@@ -38,7 +38,7 @@
 						<div class="col<?= $this->agent->is_mobile() ? '' : '' ?> text-center g-px-0 align-self-end">
 							<a
 								class="my_tab_2 g-cursor-pointer nav-link text-uppercase g-font-weight-700 g-font-size-<?= $this->agent->is_mobile() ? '14 g-py-10 g-px-5 ' : '15 g-py-12  g-px-20' ?> <?= $service_target == strtolower($target->service_target_slug) ? 'tab-active' : '' ?>"
-								href="<?= site_url('service?city='.$input_city.'&target=' . strtolower($target->service_target_slug)) ?>"
+								href="<?= site_url('service?city=' . $input_city . '&target=' . strtolower($target->service_target_slug)) ?>"
 								style="<?= $this->agent->is_mobile() ? 'min-height: 40px' : 'min-height: 50px' ?> ; color:#aaa">
 								<?= $target->service_target_name ?>
 							</a>
@@ -57,21 +57,21 @@
 						class="g-font-asap g-font-weight-700 g-color-w4c-blue-v1 mb-3 g-mt-30"><?= get_lang('available-services-for-your-location') ?></h4>
 				<?php endif; ?>
 				<div style="<?= $this->agent->is_mobile() ?: 'position: absolute;bottom: 0;left: 0;width: calc(100% - 15px);' ?>">
-					<form action="<?= site_url('service') ?>" method="get">
+					<form id="search-form" action="<?= site_url('service') ?>" method="get">
 						<div class="autocomplete">
 							<div class="input-group pull-right">
 								<div class="input-group-prepend">
 								<span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1 g-pa-10 border-right-0"
 								      style="border:1px solid #0B90B9;"><i class="fa fa-map-marker"></i></span>
 								</div>
-								<input id="input_city"
+								<input id="search-input"
 								       class="form-control form-control-md border-left-0 rounded-0 g-pa-10 pl-0 border-right-0 g-box-shadow-none"
 								       type="text" name="city" value="<?= $input_city ?>"
 								       style="border:1px solid #0B90B9; border-radius:0px"
 								       placeholder="<?= get_lang('enter-the-name-of-your-city') ?>" autocomplete="off">
 								<input type="hidden" name="target" value="<?= $service_target ?>">
 								<div class="input-group-btn">
-									<button class="btn btn-info g-py-10 g-px-30 g-letter-spacing-2 border-left-0" type="submit"
+									<button id="search-button" class="btn btn-info g-py-10 g-px-30 g-letter-spacing-2 border-left-0" type="button"
 									        style="border:1px solid #0B90B9;border-radius:0px">
 										<?= $this->agent->is_mobile() ? '<i class="icon icon-magnifier  g-font-size-20"></i>' : strtoupper(get_lang('search')) ?>
 									</button>
@@ -131,7 +131,7 @@
 								</div>
 							</div>
 							<?php
-							
+
 						} else { //desktop view
 							?>
 							<div id="asd<?= $i ?>" class="bg-white g-my-20 box-shadow-down">
@@ -239,23 +239,54 @@
 </section>
 <!-- END List Product -->
 <script>
-    $(document).on('click', '.my_tab_2', function () {
-        var tab_target = $(this).data('tab');
-        $('.my_tab_2').removeClass('tab-active');
-        $(this).addClass('tab-active');
-        $('.my_tab_content').addClass('d-none');
-        $(tab_target).removeClass('d-none');
-    });
+	$(document).on('click', '.my_tab_2', function () {
+		var tab_target = $(this).data('tab');
+		$('.my_tab_2').removeClass('tab-active');
+		$(this).addClass('tab-active');
+		$('.my_tab_content').addClass('d-none');
+		$(tab_target).removeClass('d-none');
+	});
+	var city_list = [
+		<?php foreach ($coverage_cities as $city) {
+		echo '"' . $city->city_name . ', ' . $city->province_name . '",';
+	}
+		?>
+	];
 
-    $(function () {
-        var availableTags = [
-					<?php foreach ($coverage_cities as $city) {
-					echo '"' . $city->city_name . ', '.$city->province_name .'",';
+	$(function () {
+		$("#search-input").autocomplete({
+			source: city_list
+		});
+	});
+
+	$('#search-input').keydown(function (e) {
+		if (e.keyCode == 13) {
+			e.preventDefault();
+			check_autocomplete_input($(this).val(), city_list);
+		}
+	});
+
+	$('#search-button').click(function () {
+		let input_city = $('#search-input').val();
+		check_autocomplete_input(input_city, city_list);
+
+	});
+
+	function check_autocomplete_input(input_city, list) {
+		let testCase, count_similarity = 0, i;
+		if (input_city.length !== 0) {
+			for (i = 0; i < list.length; i++) {
+				testCase = list[i];
+				if (input_city === testCase) {
+					count_similarity++;
 				}
-					?>
-        ];
-        $("#input_city").autocomplete({
-            source: availableTags
-        });
-    });
+			}
+		}
+		if (count_similarity > 0) {
+			$('#search-input').attr('readonly',true);
+			$('#search-button').attr('disabled',true);
+			$('#search-form').submit();
+		}
+	}
+
 </script>

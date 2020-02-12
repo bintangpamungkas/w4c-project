@@ -13,7 +13,7 @@
 							<a class="my_tab_item g-cursor-pointer nav-link my_tab g-py-20 g-font-weight-300 g-font-size-12 g-px-20 text-center text-uppercase">
 								<div class=""><?= $target->service_target_name ?></div>
 								<img class="my_tab_icon" src="<?= get_image(DIR_ICON . $target->service_target_icon) ?>"
-								alt="" style="max-width: 80px; max-height: 80px;display:inline-block;">
+								     alt="" style="max-width: 80px; max-height: 80px;display:inline-block;">
 							</a>
 						</div>
 					<?php endforeach; ?>
@@ -36,18 +36,18 @@
 		</div>
 	</div>
 	<div class="container <?= $this->agent->is_mobile() ? 'g-pt-60 g-pb-25' : 'g-py-70' ?>">
-		<div class="g-mb-10">
+		<div class="<?= $this->agent->is_mobile() ? 'g-mb-30' : 'g-mb-20'?>">
 			<h2 class="g-font-asap g-font-color-w4c-1 mb-2"
 			    color><?= get_lang('available-services-for-your-location') ?>:</h2>
 			<div class="row">
 				<div class="col-md-6">
-					<form action="<?= site_url('service') ?>" method="get">
+					<form id="search-form" action="<?= site_url('service') ?>" method="get">
 						<div class="autocomplete">
 							<div class="input-group pull-right">
 								<div class="input-group-prepend">
 									<span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1 g-pa-10 border-right-0" style="border:1px solid #0B90B9;"><i class="fa fa-map-marker"></i></span>
 								</div>
-								<input id="input_city"
+								<input id="search-input"
 								       class="form-control form-control-md border-left-0 rounded-0 g-pa-10 pl-0 border-right-0 g-box-shadow-none "
 								       type="text"
 								       name="city"
@@ -57,7 +57,7 @@
 								       autocomplete="off">
 								<input type="hidden" name="target" value="<?= empty($service_target) ? 'for-company' : $service_target ?>">
 								<div class="input-group-btn">
-									<button class="btn btn-info g-py-10 g-px-30 g-letter-spacing-2 border-left-0" type="submit"
+									<button id="search-button" class="btn btn-info g-py-10 g-px-30 g-letter-spacing-2 border-left-0" type="button"
 									        style="border:1px solid #0B90B9;border-radius:0px">
 										<?= $this->agent->is_mobile() ? '<i class="icon icon-magnifier  g-font-size-20"></i>' : strtoupper(get_lang('search')) ?>
 									</button>
@@ -70,16 +70,16 @@
 		</div>
 
 		<script>
-        $(document).on('click', '.my_tab', function () {
-            var tab_target = $(this).data('tab');
-            $('.my_tab').removeClass('tab-active');
-            $(this).addClass('tab-active');
-            $('.my_tab_content').addClass('d-none');
-            $(tab_target).removeClass('d-none');
-            $('input[name=target]').val($(this).data('id'));
-        })
+			$(document).on('click', '.my_tab', function () {
+				var tab_target = $(this).data('tab');
+				$('.my_tab').removeClass('tab-active');
+				$(this).addClass('tab-active');
+				$('.my_tab_content').addClass('d-none');
+				$(tab_target).removeClass('d-none');
+				$('input[name=target]').val($(this).data('id'));
+			})
 		</script>
-		
+
 		<?php
 		if ($this->agent->is_mobile()) {
 		?>
@@ -126,44 +126,44 @@
 								?>
 							</div>
 							<script>
-                  $(window).ready(function () {
-                      var element_id = '#service-<?= $target->service_target_id ?>-carousel';
-                      $(element_id).owlCarousel({
-                          stagePadding: <?= $this->agent->is_mobile() ? '30' : '70' ?>,
-                          loop: true,
-                          margin: 20,
-                          dots: true,
-                          nav: true,
-                          autoplay: true,
-                          autoplayTimeout: 10000,
-                          autoplayHoverPause: true,
-                          responsive: {
-                              0: {
-                                  items: 1
-                              },
-                              600: {
-                                  items: 2
-                              },
-                              1000: {
-                                  items: 2
-                              }
-                          },
-                          navText: ['<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-left g-color-gray-light-v1 nav-arrow-left' : 'fa fa-angle-left g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>', '<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-right g-color-gray-light-v1 nav-arrow-right' : 'fa fa-angle-right g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>']
-                      });
+								$(window).ready(function () {
+									var element_id = '#service-<?= $target->service_target_id ?>-carousel';
+									$(element_id).owlCarousel({
+										stagePadding: <?= $this->agent->is_mobile() ? '30' : '70' ?>,
+										loop: true,
+										margin: 20,
+										dots: true,
+										nav: true,
+										autoplay: true,
+										autoplayTimeout: 10000,
+										autoplayHoverPause: true,
+										responsive: {
+											0: {
+												items: 1
+											},
+											600: {
+												items: 2
+											},
+											1000: {
+												items: 2
+											}
+										},
+										navText: ['<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-left g-color-gray-light-v1 nav-arrow-left' : 'fa fa-angle-left g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>', '<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-right g-color-gray-light-v1 nav-arrow-right' : 'fa fa-angle-right g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>']
+									});
 
-                      //$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
-                      $(element_id + ' .owl-controls').attr('style', 'margin-top: 5px;margin-bottom: 20px');
+									//$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
+									$(element_id + ' .owl-controls').attr('style', 'margin-top: 5px;margin-bottom: 20px');
 
-                      $(element_id + ' .owl-stage-outer').css({'padding-top': 1});
-                      $(element_id + ' .owl-stage').css('padding-left', 10);
+									$(element_id + ' .owl-stage-outer').css({'padding-top': 1});
+									$(element_id + ' .owl-stage').css('padding-left', 10);
 
-                      var screen_display = <?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
-                      // console.log(screen_display);
-                      var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '60' : '80' ?>) / 100) / 2;
-                      // console.log('screen :/ '+screen_display+'nav : '+screen_display*<?= $this->agent->is_mobile() ? '8' : '9' ?>0/100+'batas : '+margin_side);
-                      // console.log($('.owl-stage').height());
-                      $(element_id + ' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: ' + ($('.owl-stage').height() + 10) + 'px;width: 74%;right: ' + margin_side + 'px;');
-                  });
+									var screen_display = <?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
+									// console.log(screen_display);
+									var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '60' : '80' ?>) / 100) / 2;
+									// console.log('screen :/ '+screen_display+'nav : '+screen_display*<?= $this->agent->is_mobile() ? '8' : '9' ?>0/100+'batas : '+margin_side);
+									// console.log($('.owl-stage').height());
+									$(element_id + ' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: ' + ($('.owl-stage').height() + 10) + 'px;width: 74%;right: ' + margin_side + 'px;');
+								});
 							</script>
 							<br>
 						</div>
@@ -259,33 +259,62 @@
 
 
 <script>
-    $(function () {
-        var availableTags = [
-					<?php foreach ($coverage_cities as $city) {
-					echo '"' . $city->city_name . ', '.$city->province_name .'",';
+	var city_list = [
+		<?php foreach ($coverage_cities as $city) {
+		echo '"' . $city->city_name . ', ' . $city->province_name . '",';
+	}
+		?>
+	];
+	$(function () {
+		$("#search-input").autocomplete({
+			source: city_list
+		});
+	});
+
+	$('#search-input').keydown(function (e) {
+		if (e.keyCode == 13) {
+			e.preventDefault();
+			check_autocomplete_input($(this).val(), city_list);
+		}
+	});
+
+	$('#search-button').click(function () {
+		let input_city = $('#search-input').val();
+		check_autocomplete_input(input_city, city_list);
+	});
+
+	function check_autocomplete_input(input_city, list) {
+		let testCase, count_similarity = 0, i;
+		if (input_city.length !== 0) {
+			for (i = 0; i < list.length; i++) {
+				testCase = list[i];
+				if (input_city === testCase) {
+					count_similarity++;
 				}
-					?>
-        ];
-        $("#input_city").autocomplete({
-            source: availableTags
-        });
-    });
+			}
+		}
+		if (count_similarity > 0) {
+			$('#search-input').attr('readonly',true);
+			$('#search-button').attr('disabled',true);
+			$('#search-form').submit();
+		}
+	}
 
-    $(window).ready(function () {
-        $('.my_tab_content').addClass('d-none');
-        $('.my_tab_content').first().removeClass('d-none');
+	$(window).ready(function () {
+		$('.my_tab_content').addClass('d-none');
+		$('.my_tab_content').first().removeClass('d-none');
 
-        var detail, tempHeight;
+		var detail, tempHeight;
 
-        detail = $(".service-item-content");
-        tempHeight = 0;
+		detail = $(".service-item-content");
+		tempHeight = 0;
 
-        jQuery.each(detail, function (index, value) {
-            if (tempHeight < $(this).height()) {
-                tempHeight = $(this).height();
-            }
-        });
-        detail.height(tempHeight);
-        $(".service-item-all").height(tempHeight);
-    });
+		jQuery.each(detail, function (index, value) {
+			if (tempHeight < $(this).height()) {
+				tempHeight = $(this).height();
+			}
+		});
+		detail.height(tempHeight);
+		$(".service-item-all").height(tempHeight);
+	});
 </script>

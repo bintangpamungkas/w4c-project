@@ -21,8 +21,6 @@ define('DIR_WRITE_MODE', 0777);
 define('TRASHPAY_ID', 'Tp');
 define('TRASH_PAY_DENOM', 10);
 
-define('IS_ONLINE', 1);
-
 define('OFFICIAL_ADDRESS', 'Vida Bumipala, Jl. Alun-alun Utara, Padurenan, Mustika Jaya, Kota Bekasi, Jawa Barat 17156');
 define('OFFICIAL_TELEPHONE', '(021) 29372308');
 define('OFFICIAL_MOBILE', '+6285655652970');
@@ -50,6 +48,12 @@ define('BLANK_DATA', 'not available');
 define('INDEX_TEMPLATE', 'index');
 define('GENERAL_TEMPLATE', 'general');
 define('BRAND_TEMPLATE', 'brand');
+if	(IS_ONLINE==1){
+	define('DEBUG_CLASS','d-none');
+}else{
+	define('DEBUG_CLASS','d-block');
+}
+
 /*
 WEBSITE URL
 */
@@ -92,7 +96,6 @@ define('DIR_BG', DIR_IMG.'bg/');
 | These modes are used when working with fopen()/popen()
 |
 */
-
 define('FOPEN_READ',							'rb');
 define('FOPEN_READ_WRITE',						'r+b');
 define('FOPEN_WRITE_CREATE_DESTRUCTIVE',		'wb'); // truncates existing file data, use with care

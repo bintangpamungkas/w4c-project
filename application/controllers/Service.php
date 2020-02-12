@@ -75,7 +75,6 @@ class Service extends MY_Controller
 		}
 		$data['input_city'] = $input_city;
 
-
 		$data['title'] = '';
 		$data['id'] = 'site';
 		$data['subtitle'] = 'information';
@@ -162,8 +161,6 @@ class Service extends MY_Controller
 			}
 		}
 
-//			print_r($data['portfolios']);
-//			die();
 		$data['service'] = $service;
 		$data['sections'] = $sections;
 
