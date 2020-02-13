@@ -87,6 +87,33 @@
 		// $('#PopUpModal').modal('show');
 		<?php endif; ?>
 	})
+	var logger = function () {
+		var oldConsoleLog = null;
+		var pub = {};
+
+		pub.enableLogger = function enableLogger() {
+			if (oldConsoleLog == null)
+				return;
+
+			window['console']['log'] = oldConsoleLog;
+		};
+
+		pub.disableLogger = function disableLogger() {
+			oldConsoleLog = console.log;
+			window['console']['log'] = function () {
+			};
+		};
+
+		return pub;
+	}();
+
+	$(document).ready(function () {
+		if (<?=IS_ONLINE?> == 1) {
+			logger.disableLogger();
+		} else {
+			logger.enableLogger();
+		}
+	});
 </script>
 
 <body>

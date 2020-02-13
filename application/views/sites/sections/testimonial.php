@@ -9,9 +9,8 @@
       <div class="col-md-11 col-12">
         <div id="testi-carousel" class="row owl-theme" style="margin: 0 0 30px 0!important;">
           <?php
-          $number = 1;
-          $xb=$this->session->userdata('language')=='en' ? $en : $id;
-
+//          $number = 1;
+//          $xb=$this->session->userdata('language')=='en' ? $en : $id;
           foreach($testimonials as $testi){
             ?>
             <div class="align-height-item g-pa-30 g-mt-10" style="box-shadow: 0 0 20px rgba(0, 0, 0, 0.05)">

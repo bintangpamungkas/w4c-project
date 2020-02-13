@@ -95,7 +95,7 @@
 									<?php endforeach; ?>
 									<?php if($menu->service_target_id==2): ?>
 										<li class="g-mb-5">
-											<a class="g-color-white-opacity-0_8" href="https://w4c.id/rumahkompos">Home Composting</a>
+											<a class="g-color-white-opacity-0_8" href="http://w4c.id/rumahkompos">Home Composting</a>
 										</li>
 								<?php endif;?>
 								</ul>

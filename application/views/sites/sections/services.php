@@ -36,7 +36,7 @@
 		</div>
 	</div>
 	<div class="container <?= $this->agent->is_mobile() ? 'g-pt-60 g-pb-25' : 'g-py-70' ?>">
-		<div class="<?= $this->agent->is_mobile() ? 'g-mb-30' : 'g-mb-20'?>">
+		<div class="<?= $this->agent->is_mobile() ? 'g-mb-30' : 'g-mb-20' ?>">
 			<h2 class="g-font-asap g-font-color-w4c-1 mb-2"
 			    color><?= get_lang('available-services-for-your-location') ?>:</h2>
 			<div class="row">
@@ -271,11 +271,19 @@
 		});
 	});
 
+	$('.ui-menu-item').click(function(){
+		console.log(999);
+	});
+	$('.ui-menu-item-wrapper').click(function(){
+		console.log(2999);
+	});
+
 	$('#search-input').keydown(function (e) {
 		if (e.keyCode == 13) {
 			e.preventDefault();
 			check_autocomplete_input($(this).val(), city_list);
 		}
+		$('#search-button').attr('disabled', true);
 	});
 
 	$('#search-button').click(function () {
@@ -290,12 +298,13 @@
 				testCase = list[i];
 				if (input_city === testCase) {
 					count_similarity++;
+					$('#search-button').attr('disabled', false);
 				}
 			}
 		}
 		if (count_similarity > 0) {
-			$('#search-input').attr('readonly',true);
-			$('#search-button').attr('disabled',true);
+			$('#search-input').attr('readonly', true);
+			$('#search-button').attr('disabled', true);
 			$('#search-form').submit();
 		}
 	}

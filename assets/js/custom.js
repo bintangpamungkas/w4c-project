@@ -96,12 +96,12 @@ $(document).on('click', '.nav-toggle', function () {
 });
 
 $(window).ready(function () {
-	let screen_height = window.innerHeight;
-	let header_height = $('header').height();
-	let content_middle_fullscreen = $('.content-middle-fullscreen');
-	let set_middle = 0, divider = 2;
-	let tab_service_height = $('.tab-service-container').height();
-	let full_height_block_height = screen_height;
+	var screen_height = window.innerHeight;
+	var header_height = $('header').height();
+	var content_middle_fullscreen = $('.content-middle-fullscreen');
+	var set_middle = 0, divider = 2;
+	var tab_service_height = $('.tab-service-container').height();
+	var full_height_block_height = screen_height;
 	if (tab_service_height===null){
 		tab_service_height=100;
 	}
@@ -145,17 +145,16 @@ $(window).ready(function () {
 	);
 
 	// make item same height as other item
-	var list = $(".align-height-list");
-
-	jQuery.each(list, function () {
-
+	$(".align-height-list").each(function(){
 		var item = $(this).find(".align-height-item");
 		var tempHeights = 0;
-		jQuery.each(item, function () {
+		$(item).each(function(){
 			if (tempHeights < $(this).height()) {
 				tempHeights = $(this).height();
 			}
+			console.log($(this).attr('class')+':'+$(this).height());
 		});
+		console.log('final:'+tempHeights);
 		item.height(tempHeights);
 	});
 
