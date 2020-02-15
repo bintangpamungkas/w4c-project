@@ -56,6 +56,9 @@
 								       placeholder="<?= get_lang('enter-the-name-of-your-city') ?>"
 								       autocomplete="off">
 								<input type="hidden" name="target" value="<?= empty($service_target) ? 'for-company' : $service_target ?>">
+								<div id="search-clear" class="input-group-append" style="display: none">
+									<span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1 g-pa-10 border-left-0" style="border:1px solid #0B90B9;"><i class="fa fa-times"></i></span>
+								</div>
 								<div class="input-group-btn">
 									<button id="search-button" class="btn btn-info g-py-10 g-px-30 g-letter-spacing-2 border-left-0" type="button"
 									        style="border:1px solid #0B90B9;border-radius:0px">
@@ -271,12 +274,6 @@
 		});
 	});
 
-	$('.ui-menu-item').click(function(){
-		console.log(999);
-	});
-	$('.ui-menu-item-wrapper').click(function(){
-		console.log(2999);
-	});
 
 	$('#search-input').keydown(function (e) {
 		if (e.keyCode == 13) {
@@ -284,11 +281,24 @@
 			check_autocomplete_input($(this).val(), city_list);
 		}
 		$('#search-button').attr('disabled', true);
+		setInterval(function(){
+			$('#search-button').attr('disabled', false);
+		},2000);
+		if ($(this).val().length > 0){
+			$('#search-clear').show();
+		}else{
+			$('#search-clear').hide();
+		}
 	});
 
 	$('#search-button').click(function () {
 		let input_city = $('#search-input').val();
 		check_autocomplete_input(input_city, city_list);
+	});
+
+	$('#search-clear').click(function(){
+		$('#search-input').val('');
+		$(this).hide();
 	});
 
 	function check_autocomplete_input(input_city, list) {
