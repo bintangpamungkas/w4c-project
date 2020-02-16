@@ -725,6 +725,9 @@
     bottom:-15px;
     width: 100%;
 }
+.tab-service-container.fullscreen{
+    bottom: 95px;
+}
 
 /* SPINER PRELOADING */
 #preloading {
