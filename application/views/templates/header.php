@@ -81,14 +81,14 @@
 							<div onclick="window.history.back();">
 								<i class="icon-arrow-left g-font-size-14 g-mr-10"></i>
 							</div>
-							<div class="d-none" data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block">
-								<div style="width:calc(100vw - 245px); white-space: nowrap; overflow: hidden;;text-overflow: ellipsis;">
-									<?= empty($parent_service->service_name) ? view_sort_name($service->service_name, 3) : view_sort_name($parent_service->service_name, 3) ?>
+							<div class="d-none" data-heade  r-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block">
+								<div style="width:calc(100vw - 235px); white-space: nowrap; overflow: hidden;;text-overflow: ellipsis;">
+									<?= empty($parent_service->service_short_name) ? $service->service_short_name : $parent_service->service_short_name ?>
 								</div>
 							</div>
 							<div class="d-block" data-header-fix-moment-exclude="d-block" data-header-fix-moment-classes="d-none">
 								<div class="" style="width:calc(100vw - 95px); white-space: nowrap; overflow: hidden;;text-overflow: ellipsis;">
-									<?= empty($parent_service->service_name) ? ($service->service_name) : $parent_service->service_name ?>
+									<?= empty($parent_service->service_name) ? $service->service_name : $parent_service->service_name ?>
 								</div>
 							</div>
 						<?php endif; ?>
@@ -117,7 +117,7 @@
 								<div <?= empty($parent_service->service_portfolio_url) && $service->service_portfolio_url != 1 ?  'class="col-3"' : 'class="col-5"'?>" >
 									<div class="row no-gutters justify-content-end">
 										<div class="col">
-											<a class="click_scroll btn btn-info btn-block g-color-white g-brd-white-opacity-0_2 g-font-size-13 g-rounded-50 g-px-20 g-py-9 d-none"
+											<a class="click_scroll btn btn-info btn-block g-color-white g-brd-white-opacity-0_2 g-font-size-13 g-rounded-50 g-px-15 g-py-9 d-none"
 											   href="<?= site_url('service/' . $service_id . '/join') ?>"
 											   data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block"> <?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : strtoupper(get_lang('get-proposal')) ?>
 												<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3"> <i class="fa fa-info"></i> </span>
@@ -126,7 +126,7 @@
 											<?php if (empty($parent_service->service_portfolio_url)) { ?>
 											<?php if ($service->service_portfolio_url == 1) { ?>
 												<div class="col">
-													<a class="click_scroll btn btn-outline-info btn-block g-font-size-13 g-rounded-50 g-px-20 g-brd-2 g-ml-15  g-py-9 d-none"
+													<a class="click_scroll btn btn-outline-info btn-block g-font-size-13 g-rounded-50 g-brd-2 g-ml-15 g-px-15 g-py-9 d-none"
 													   href="<?= base_url(DIR_SERVICE . $service_id . '/portfolio/' . $lang . '.pdf') ?>" data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block"> <?= strtoupper(get_lang('get-portfolio')) ?>
 														<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3"> <i
 																class="fa fa-info"></i> </span>
@@ -136,7 +136,7 @@
 										<?php } else { ?>
 											<?php if ($parent_service->service_portfolio_url == 1) { ?>
 												<div class="col">
-													<a class="click_scroll btn btn-outline-info btn-block g-font-size-13 g-rounded-50 g-px-20 g-brd-2 g-ml-15  g-py-9 d-none"
+													<a class="click_scroll btn btn-outline-info btn-block g-font-size-13 g-rounded-50 g-brd-2 g-ml-15 g-px-15 g-py-9 d-none"
 													   href="<?= base_url(DIR_SERVICE . $parent_service->service_slug . '/portfolio/' . $lang . '.pdf') ?>" data-header-fix-moment-exclude="d-none"
 													   data-header-fix-moment-classes="d-block"> <?= strtoupper(get_lang('get-portfolio')) ?>
 														<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3"> <i

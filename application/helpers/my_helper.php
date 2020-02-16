@@ -86,35 +86,61 @@ function view_range_date($start, $end = null, $lang)
 	}
 }
 
-function view_sort_name($pretext, $limit=null)
+function view_sort_name($pretext, $limit_char = null, $limit_word = null)
 {
 	$text = str_replace('-', ' ', $pretext);
-	if (strlen($text)<=($limit*7)) {
+	if (strlen($text) <= ($limit_word * 7)) {
 		return $pretext;
 	}
-	$word = explode("(", $text);
-	if (empty($word[1])) {
-		$words = explode(" ", $text);
+	$word_section = explode("(", $text);
+	if (empty($word_section[1])) {
+		$words = explode(" ", $word_section[0]);
 
 		$acronym = "";
 		$postacronym = "";
 
-		if ($limit!=null){
-			for ($i=0;$i<$limit ;$i++){
-				$acronym .= $words[$i][0];
-			}
-			for ($i=$limit;$i<(count($words)) ;$i++){
-				$postacronym .= ' '.$words[$i];
-			}
-		}else{
-			foreach ($words as $w) {
-				$acronym .= $w[0];
-			}
-		}
+		if ($limit_word != null && $limit_char != null) {
 
-		return strtoupper($acronym).$postacronym;
+			if (count($words) < $limit_word) {
+				$postacronym .= $pretext;
+			} else {
+				$char_per_limit_word = 0;
+				for ($i = 0; $i <= $limit_word; $i++) {
+					$char_per_limit_word += strlen($words[$i]);
+				}
+				if ((strlen($word_section[0]) ) <= $limit_char) {
+					return (strlen($word_section[0])) . ' <=limit_char';
+					$postacronym .= $pretext;
+
+//					for ($i = 0; $i < $limit_word; $i++) {
+//						$acronym .= $words[$i][0];
+//					}
+				} else if ($char_per_limit_word+ ($limit_word-1) < $limit_char) {
+//					for ($i = 0; $i < $limit_word; $i++) {
+//						$acronym .= $words[$i][0];
+//					}
+					$postacronym .= $pretext;
+
+					return $char_per_limit_word + ($limit_word-1) . 'limit_word kata <= limit_char';
+				} else {
+//					return 'panjang kombinasi';
+					for ($i = 0; $i <= $limit_word; $i++) {
+						$acronym .= $words[$i][0];
+					}
+					for ($i = $limit_word + 1; $i < count($words); $i++) {
+						$postacronym .= ' ' . $words[$i];
+					}
+//					$acronym .= $word_section[0];
+
+				}
+			}
+
+		} else {
+			$postacronym .= $pretext;
+		}
+		return strtoupper($acronym) . $postacronym;
 	} else {
-		return $word[0];
+		return $pretext;
 	}
 }
 

@@ -271,7 +271,9 @@
 			check_autocomplete_input($(this).val(), city_list);
 		}
 		$('#search-button').attr('disabled', true);
+	});
 
+	$('#search-input').keyup(function (e) {
 		if ($(this).val().length > 0){
 			$('#search-clear').show();
 		}else{
