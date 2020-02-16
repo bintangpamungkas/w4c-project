@@ -95,8 +95,8 @@
 					</a>
 
 					<div class="collapse navbar-collapse align-items-center flex-sm-row" id="navBar2">
-						<div <?= $this->agent->is_mobile() ? 'class="row no-gutters"' : 'class="row no-gutters justify-content-around" style="width: calc(100% + 33px); margin-left:-33px"' ?>" >
-							<div class="<?=$service->service_portfolio_url == 1 ? 'col-7' : 'col-9'?>">
+						<div <?= $this->agent->is_mobile() ? 'class="row no-gutters"' : 'class="row no-gutters justify-content-around" style="width: calc(100% + 17px); margin-left:-33px"' ?>" >
+							<div class="col-12" <?= empty($parent_service->service_portfolio_url) && $service->service_portfolio_url != 1 ? 'data-header-fix-moment-exclude="col-12" data-header-fix-moment-classes="col-9"' : 'data-header-fix-moment-exclude="col-12" data-header-fix-moment-classes="col-7"'?>">
 								<ul class="navbar-nav text-uppercase g-font-weight-600 mr-auto <?= $this->agent->is_mobile() ? '' : '' ?>">
 									<?= $this->agent->is_mobile() ? '' : '<table><tr>' ?>
 									<?php foreach ($subnav as $subnav): ?>
@@ -114,13 +114,12 @@
 								</ul>
 							</div>
 							<?php if (!$this->agent->is_mobile()) { // desktop view only ?>
-								<div class="<?=$service->service_portfolio_url == 1 ? 'col-5' : 'col-3'?>">
+								<div <?= empty($parent_service->service_portfolio_url) && $service->service_portfolio_url != 1 ?  'class="col-3"' : 'class="col-5"'?>" >
 									<div class="row no-gutters justify-content-end">
 										<div class="col">
 											<a class="click_scroll btn btn-info btn-block g-color-white g-brd-white-opacity-0_2 g-font-size-13 g-rounded-50 g-px-20 g-py-9 d-none"
 											   href="<?= site_url('service/' . $service_id . '/join') ?>"
-											   data-header-fix-moment-exclude="d-none"
-											   data-header-fix-moment-classes="d-block"> <?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : strtoupper(get_lang('get-proposal')) ?>
+											   data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block"> <?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : strtoupper(get_lang('get-proposal')) ?>
 												<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3"> <i class="fa fa-info"></i> </span>
 											</a>
 										</div>
@@ -128,8 +127,7 @@
 											<?php if ($service->service_portfolio_url == 1) { ?>
 												<div class="col">
 													<a class="click_scroll btn btn-outline-info btn-block g-font-size-13 g-rounded-50 g-px-20 g-brd-2 g-ml-15  g-py-9 d-none"
-													   href="<?= base_url(DIR_SERVICE . $service_id . '/portfolio/' . $lang . '.pdf') ?>" data-header-fix-moment-exclude="d-none"
-													   data-header-fix-moment-classes="d-block"> <?= strtoupper(get_lang('get-portfolio')) ?>
+													   href="<?= base_url(DIR_SERVICE . $service_id . '/portfolio/' . $lang . '.pdf') ?>" data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block"> <?= strtoupper(get_lang('get-portfolio')) ?>
 														<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3"> <i
 																class="fa fa-info"></i> </span>
 													</a>
