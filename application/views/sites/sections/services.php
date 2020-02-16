@@ -270,7 +270,10 @@
 	];
 	$(function () {
 		$("#search-input").autocomplete({
-			source: city_list
+			source: city_list,
+			select: function (event, ui) {
+				$('#search-button').attr('disabled', false);
+			}
 		});
 	});
 
@@ -281,9 +284,7 @@
 			check_autocomplete_input($(this).val(), city_list);
 		}
 		$('#search-button').attr('disabled', true);
-		setInterval(function(){
-			$('#search-button').attr('disabled', false);
-		},2000);
+
 		if ($(this).val().length > 0){
 			$('#search-clear').show();
 		}else{

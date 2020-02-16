@@ -21,6 +21,22 @@ TODO implement method
 
 
 		<?php
+		if	(!empty($second_coverages)){
+
+			echo 'var second_locations = [';
+		foreach ($second_coverages as $coverage) {
+			if (!empty($coverage->city_coordinate)) {
+				$coor = explode(',', $coverage->city_coordinate);
+				echo '[{lat:' . $coor[0] . ',lng:' . $coor[1] . '},"' . $coverage->city_name . '"],';
+			}
+			if ($coverage->city_name == 'Seluruh Kota di Indonesia') {
+				echo '[{lat:1.5901668,lng:117.8198982},"' . $coverage->city_name . '"],';
+				$seluruh_indonesia = true;
+			}
+		}
+			}
+//
+
 		echo 'var locations = [';
 		$seluruh_indonesia = false;
 		foreach ($coverages as $coverage) {
@@ -42,7 +58,18 @@ TODO implement method
 			echo 'var seluruh_indonesia=false;';
 		}
 		?>
-		var icon = '<?=base_url() . DIR_ICON?>pin/blue.png'
+		var icon = {
+			blue: {
+				url: '<?=base_url() . DIR_ICON?>pin/blue.png',
+				labelOrigin: {x: 20, y: -10}
+
+			},
+			green: {
+				url: '<?=base_url() . DIR_ICON?>pin/green.png',
+				labelOrigin: {x: 20, y: -10}
+
+			},
+		};
 		var polygon, i;
 
 		function initMap() {
@@ -58,10 +85,8 @@ TODO implement method
 			var markers = locations.map(function (location, i) {
 				return new google.maps.Marker({
 					position: location[0],
-					icon: {
-						url: icon,
-						labelOrigin: {x: 20, y: -10}
-					},
+					icon: icon['blue'],
+					
 					//icon: {url: '<?//=base_url() . DIR_ICON?>//pin/blue.png'}
 					title: location[1],
 					label: {
@@ -72,6 +97,25 @@ TODO implement method
 					// pixelOffset: new google.maps.Size(100,140)
 				});
 			});
+			if (typeof second_locations !== 'undefined'){
+				var markerss = second_locations.map(function (second_locations, i) {
+					return new google.maps.Marker({
+						position: second_locations[0],
+						icon: {
+							url: icon['blue'],
+							labelOrigin: {x: 20, y: -10}
+						},
+						//icon: {url: '<?//=base_url() . DIR_ICON?>//pin/blue.png'}
+						title: second_locations[1],
+						label: {
+							text: second_locations[1],
+							color: '#000',
+							fontSize: '15px'
+						}
+						// pixelOffset: new google.maps.Size(100,140)
+					});
+				});
+			}
 
 			// Add a marker clusterer to manage the markers.
 			var markerCluster = new MarkerClusterer(map, markers,

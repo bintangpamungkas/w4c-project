@@ -157,7 +157,9 @@ class Service extends MY_Controller
 				$data['recommendations'] = $this->crud_model->select('service_recomendation', QUERY_RESULT, ['recomendation_icon', 'recomendation_color', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=recomendation_name AND language_code="' . $lang . '" limit 1) as recomendation_name'], ['service_recomendation.service_id' => $service->service_id, 'service_recomendation.deleted_at' => null], ['service_recomendation' => ['recomendation' => 'recomendation_id']]);
 			}
 			if ($section->section_slug == 'our-coverage' || $section->section_slug == 'our-coverage-try') {
+//				$child_service = $this->crud_model->select()
 				$data['coverages'] = $this->crud_model->select('service_coverage', QUERY_RESULT, ['city_name', 'city_coordinate'], ['service_coverage.service_id' => $service->service_id, 'service_coverage.deleted_at' => null],['service_coverage'=>['place_city'=>'city_id']]);
+//				$data['second_coverages'] = $this->crud_model->select('service_coverage', QUERY_RESULT, ['city_name', 'city_coordinate'], ['service_coverage.service_id' => $service->service_id, 'service_coverage.deleted_at' => null],['service_coverage'=>['place_city'=>'city_id']]);
 			}
 		}
 
