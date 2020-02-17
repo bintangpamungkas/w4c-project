@@ -80,6 +80,8 @@
 				$('.my_tab_content').addClass('d-none');
 				$(tab_target).removeClass('d-none');
 				$('input[name=target]').val($(this).data('id'));
+				$(this).find('.owl-item').attr('style', 'width: 303px;margin-right:20px');
+				// $('#service-2-carousel .owl-item').attr('style', 'width: 303px;margin-right:20px');
 			})
 		</script>
 
@@ -153,8 +155,8 @@
 										},
 										navText: ['<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-left g-color-gray-light-v1 nav-arrow-left' : 'fa fa-angle-left g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>', '<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-right g-color-gray-light-v1 nav-arrow-right' : 'fa fa-angle-right g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>']
 									});
-
-									$('#service-<?= $target->service_target_id ?>-carousel .owl-item').attr('style', 'width: 303px;margin-right:20px');
+									// $('.cloned').addClass('d-none');
+									//$('#service-<?//= $target->service_target_id ?>//-carousel .owl-item').attr('style', 'width: 303px;margin-right:20px');
 									$(element_id + ' .owl-controls').attr('style', 'margin-top: 5px;margin-bottom: 20px');
 
 									$(element_id + ' .owl-stage-outer').css({'padding-top': 1});

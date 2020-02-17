@@ -108,7 +108,7 @@
 	}();
 
 	$(document).ready(function () {
-		if (<?=IS_ONLINE?> == 1) {
+		if (<?=IS_ONLINE?> == 0) {
 			logger.disableLogger();
 		} else {
 			logger.enableLogger();
