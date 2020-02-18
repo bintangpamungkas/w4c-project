@@ -169,7 +169,7 @@
 							<i class="fa fa-share-alt g-color-white g-font-size-10"></i>
 						</a>
 						<a target="_blank" href="<?= $blog['blog_url'] ?>" class="g-bg-white g-color-info g-color-blue--hover g-mr-10 g-mb-15 g-font-weight-700 text-uppercase g-text-underline--none--hover"
-						   style="">Read More <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
+						   style=""><?=get_lang('read-more')?> <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
 					</div>
 				</article>
 			</div>

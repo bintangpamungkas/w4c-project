@@ -148,12 +148,12 @@
 										navText: ['<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-left g-color-gray-light-v1 nav-arrow-left' : 'fa fa-angle-left g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>', '<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-right g-color-gray-light-v1 nav-arrow-right' : 'fa fa-angle-right g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>']
 									});
 									// $('.cloned').addClass('d-none');
-									$(element_id + ' .owl-item').attr('style', 'width: 303px;margin-right:20px');
 									$(element_id + ' .owl-controls').attr('style', 'margin-top: 5px;margin-bottom: 20px');
 
 									$(element_id + ' .owl-stage-outer').css({'padding-top': 1});
 									$(element_id + ' .owl-stage').css('padding-left', 10);
-
+									// $(element_id + ' .owl-item').attr('style', 'width: calc(100vw - 15px);;margin-right:20px');
+									console.log()
 									var screen_display = <?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
 									// console.log(screen_display);
 									var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '60' : '80' ?>) / 100) / 2;

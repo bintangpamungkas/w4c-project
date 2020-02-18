@@ -336,8 +336,9 @@ function view_number($number)
 
 function view_js_counter($prenumber,$lang){
 	if (is_numeric($prenumber)) {
-		$numbers = str_split((int)$prenumber, 3);
-		foreach ($numbers as $index => $number) {
+		$numbers =  number_format((int)$prenumber, 0, ',', '.');
+		$array_number = explode('.', $numbers);
+		foreach ($array_number as $index => $number) {
 			if ($index != 0) {
 				echo '<span style="margin-left: -10px;margin-right: -10px">';
 				if ($lang == 'id') {
