@@ -80,7 +80,7 @@
 				$('.my_tab_content').addClass('d-none');
 				$(tab_target).removeClass('d-none');
 				$('input[name=target]').val($(this).data('id'));
-				$(this).find('.owl-item').attr('style', 'width: 303px;margin-right:20px');
+				// $(tab_target).find('.owl-item').attr('style', 'width: 303px;margin-right:20px');
 				// $('#service-2-carousel .owl-item').attr('style', 'width: 303px;margin-right:20px');
 			})
 		</script>
@@ -94,29 +94,21 @@
 			foreach ($service_targets as $target) {
 				?>
 				<div class="my_tab_content <?= $i > 1 ? 'd-none' : '' ?>" id="tab-<?= $target->service_target_id ?>">
-					<div class="animated fadeIn row g-ma-0 g-rounded-7"
-					     style="background-size: cover;background-position: left;background-repeat: no-repeat">
+					<div class="animated fadeIn row g-ma-0 g-rounded-7" style="background-size: cover;background-position: left;background-repeat: no-repeat">
 						<div class="col-md-9 col-12 g-pa-0">
-							<div id="service-<?= $target->service_target_id ?>-carousel"
-							     class="owl-carousel row owl-theme" style="margin: 0!important;">
+							<div id="service-<?= $target->service_target_id ?>-carousel" class="owl-carousel row owl-theme" style="margin: 0!important;">
 								<?php
 								$service_id = 0;
 								foreach ($target->list as $service) {
 									if ($service->service_id != $service_id) {
 										?>
 										<div class="service-item-content g-mb-20 g-bg-white g-mt-10 box-shadow-down">
-											<div
-												style="height: 200px;background: url(<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/' . $service->service_thumbnail_image) ?>);background-size: cover;"></div>
-											<div class="bg-white g-mx-20 g-px-30 g-py-20"
-											     onclick="window.location.href='<?= $service->service_page_url ?>'"
-											     style="margin-top: -40px; min-height:250px">
+											<div style="height: 200px;background: url(<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/' . $service->service_thumbnail_image) ?>);background-size: cover;"></div>
+											<div class="bg-white g-mx-20 g-px-30 g-py-20" onclick="window.location.href='<?= $service->service_page_url ?>'" style="margin-top: -40px; min-height:250px">
 												<div>
-													<h6
-														class="g-color-black-opacity-0_5 g-font-weight-600 g-mb-5 g-font-size-12 text-uppercase"> <?= $service->service_category_name ?> </h6>
-													<h4 class="g-color-black g-font-weight-600 g-mb-5 g-font-size-20"
-													    style="min-height: 50px"><?= $service->service_name ?></h4>
-													<em
-														class="d-block g-color-black-opacity-0_8 g-font-style-normal g-font-size-12 g-mb-10"><?= $service->service_description ?></em>
+													<h6 class="g-color-black-opacity-0_5 g-font-weight-600 g-mb-5 g-font-size-12 text-uppercase"> <?= $service->service_category_name ?> </h6>
+													<h4 class="g-color-black g-font-weight-600 g-mb-5 g-font-size-20" style="min-height: 50px"><?= $service->service_name ?></h4>
+													<em class="d-block g-color-black-opacity-0_8 g-font-style-normal g-font-size-12 g-mb-10"><?= $service->service_description ?></em>
 												</div>
 												<a class="g-color-info g-color-blue--hover g-font-size-12 g-mt-10 g-font-weight-900"
 												   href="<?= $service->service_page_url ?>"><?= strtoupper(get_lang('learn-more')) ?>
@@ -140,23 +132,23 @@
 										dots: true,
 										nav: true,
 										autoplay: true,
-										autoplayTimeout: 10000,
+										autoplayTimeout: 5000,
 										autoplayHoverPause: true,
 										responsive: {
 											0: {
 												items: 1
 											},
 											600: {
-												items: 2
+												items: 1
 											},
 											1000: {
-												items: 2
+												items: 1
 											}
 										},
 										navText: ['<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-left g-color-gray-light-v1 nav-arrow-left' : 'fa fa-angle-left g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>', '<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-right g-color-gray-light-v1 nav-arrow-right' : 'fa fa-angle-right g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>']
 									});
 									// $('.cloned').addClass('d-none');
-									//$('#service-<?//= $target->service_target_id ?>//-carousel .owl-item').attr('style', 'width: 303px;margin-right:20px');
+									$(element_id + ' .owl-item').attr('style', 'width: 303px;margin-right:20px');
 									$(element_id + ' .owl-controls').attr('style', 'margin-top: 5px;margin-bottom: 20px');
 
 									$(element_id + ' .owl-stage-outer').css({'padding-top': 1});
@@ -288,9 +280,9 @@
 	});
 
 	$('#search-input').keyup(function (e) {
-		if ($(this).val().length > 0){
+		if ($(this).val().length > 0) {
 			$('#search-clear').show();
-		}else{
+		} else {
 			$('#search-clear').hide();
 		}
 	});
@@ -300,7 +292,7 @@
 		check_autocomplete_input(input_city, city_list);
 	});
 
-	$('#search-clear').click(function(){
+	$('#search-clear').click(function () {
 		$('#search-input').val('');
 		$(this).hide();
 	});

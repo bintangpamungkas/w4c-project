@@ -108,20 +108,20 @@ function view_sort_name($pretext, $limit_char = null, $limit_word = null)
 				for ($i = 0; $i <= $limit_word; $i++) {
 					$char_per_limit_word += strlen($words[$i]);
 				}
-				if ((strlen($word_section[0]) ) <= $limit_char) {
+				if ((strlen($word_section[0])) <= $limit_char) {
 					return (strlen($word_section[0])) . ' <=limit_char';
 					$postacronym .= $pretext;
 
 //					for ($i = 0; $i < $limit_word; $i++) {
 //						$acronym .= $words[$i][0];
 //					}
-				} else if ($char_per_limit_word+ ($limit_word-1) < $limit_char) {
+				} else if ($char_per_limit_word + ($limit_word - 1) < $limit_char) {
 //					for ($i = 0; $i < $limit_word; $i++) {
 //						$acronym .= $words[$i][0];
 //					}
 					$postacronym .= $pretext;
 
-					return $char_per_limit_word + ($limit_word-1) . 'limit_word kata <= limit_char';
+					return $char_per_limit_word + ($limit_word - 1) . 'limit_word kata <= limit_char';
 				} else {
 //					return 'panjang kombinasi';
 					for ($i = 0; $i <= $limit_word; $i++) {
@@ -331,6 +331,30 @@ function view_number($number)
 		return number_format($number, 0, ',', '.');
 	} else {
 		return $number;
+	}
+}
+
+function view_js_counter($prenumber,$lang){
+	if (is_numeric($prenumber)) {
+		$numbers = str_split((int)$prenumber, 3);
+		foreach ($numbers as $index => $number) {
+			if ($index != 0) {
+				echo '<span style="margin-left: -10px;margin-right: -10px">';
+				if ($lang == 'id') {
+					echo '.';
+				} else {
+					echo ',';
+				}
+				echo '</span>';
+			}
+			?>
+			<span class="js-counter"><?= (int)$number ?></span>
+			<?php
+		}
+	} else {
+		?>
+		<span><?= $achievement->achievement_count ?></span>
+		<?php
 	}
 }
 

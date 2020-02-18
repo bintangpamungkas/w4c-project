@@ -21,32 +21,44 @@ TODO implement method
 
 
 		<?php
-		if	(!empty($second_coverages)){
-
-			echo 'var second_locations = [';
-		foreach ($second_coverages as $coverage) {
-			if (!empty($coverage->city_coordinate)) {
-				$coor = explode(',', $coverage->city_coordinate);
-				echo '[{lat:' . $coor[0] . ',lng:' . $coor[1] . '},"' . $coverage->city_name . '"],';
-			}
-			if ($coverage->city_name == 'Seluruh Kota di Indonesia') {
-				echo '[{lat:1.5901668,lng:117.8198982},"' . $coverage->city_name . '"],';
-				$seluruh_indonesia = true;
-			}
-		}
-			}
+//		print_r($second_coverages);
+//		if (!empty($second_coverages)) {
 //
+//			echo 'var second_locations = [';
+//			foreach ($second_coverages as $coverage) {
+//				if (!empty($coverage->city_coordinate)) {
+//					$coor = explode(',', $coverage->city_coordinate);
+//					echo '[{lat:' . $coor[0] . ',lng:' . $coor[1] . '},"' . $coverage->city_name . '"],';
+//				}
+//				if ($coverage->city_name == 'Seluruh Kota di Indonesia') {
+//					echo '[{lat:1.5901668,lng:117.8198982},"' . $coverage->city_name . '"],';
+//					$seluruh_indonesia = true;
+//				}
+//			}
+//		}
+//		echo '];';
+
+		
 
 		echo 'var locations = [';
 		$seluruh_indonesia = false;
 		foreach ($coverages as $coverage) {
 			if (!empty($coverage->city_coordinate)) {
 				$coor = explode(',', $coverage->city_coordinate);
-				echo '[{lat:' . $coor[0] . ',lng:' . $coor[1] . '},"' . $coverage->city_name . '"],';
+				echo '[{lat:' . $coor[0] . ',lng:' . $coor[1] . '},"' . $coverage->city_name . '","blue"],';
 			}
 			if ($coverage->city_name == 'Seluruh Kota di Indonesia') {
-				echo '[{lat:1.5901668,lng:117.8198982},"' . $coverage->city_name . '"],';
+				echo '[{lat:1.5901668,lng:117.8198982},"' . $coverage->city_name . '","blue"],';
 				$seluruh_indonesia = true;
+			}
+		}
+		if (!empty($second_coverages)) {
+
+			foreach ($second_coverages as $coverage) {
+				if (!empty($coverage->city_coordinate)) {
+					$coor = explode(',', $coverage->city_coordinate);
+					echo '[{lat:' . $coor[0] . ',lng:' . $coor[1] . '},"' . $coverage->city_name . '","green"],';
+				}
 			}
 		}
 
@@ -58,14 +70,17 @@ TODO implement method
 			echo 'var seluruh_indonesia=false;';
 		}
 		?>
+		if (typeof second_locations !== 'undefined') {
+			console.log('not empty');
+		}
 		var icon = {
 			blue: {
-				url: '<?=base_url() . DIR_ICON?>pin/blue.png',
+				url: '<?=base_url() . DIR_ICON?>pin/icon-pin2.png',
 				labelOrigin: {x: 20, y: -10}
 
 			},
 			green: {
-				url: '<?=base_url() . DIR_ICON?>pin/green.png',
+				url: '<?=base_url() . DIR_ICON?>pin/icon-pin1.png',
 				labelOrigin: {x: 20, y: -10}
 
 			},
@@ -74,8 +89,8 @@ TODO implement method
 
 		function initMap() {
 			var map = new google.maps.Map(document.getElementById('map'), {
-				zoom: 5.25,
-				center: {lat: -0.2871615, lng: 115.1199001}
+				zoom: 5.35,
+				center: {lat: -2, lng: 117}
 			});
 
 			// Add some markers to the map.
@@ -85,8 +100,8 @@ TODO implement method
 			var markers = locations.map(function (location, i) {
 				return new google.maps.Marker({
 					position: location[0],
-					icon: icon['blue'],
-					
+					icon: icon[location[2]],
+
 					//icon: {url: '<?//=base_url() . DIR_ICON?>//pin/blue.png'}
 					title: location[1],
 					label: {
@@ -97,25 +112,6 @@ TODO implement method
 					// pixelOffset: new google.maps.Size(100,140)
 				});
 			});
-			if (typeof second_locations !== 'undefined'){
-				var markerss = second_locations.map(function (second_locations, i) {
-					return new google.maps.Marker({
-						position: second_locations[0],
-						icon: {
-							url: icon['blue'],
-							labelOrigin: {x: 20, y: -10}
-						},
-						//icon: {url: '<?//=base_url() . DIR_ICON?>//pin/blue.png'}
-						title: second_locations[1],
-						label: {
-							text: second_locations[1],
-							color: '#000',
-							fontSize: '15px'
-						}
-						// pixelOffset: new google.maps.Size(100,140)
-					});
-				});
-			}
 
 			// Add a marker clusterer to manage the markers.
 			var markerCluster = new MarkerClusterer(map, markers,

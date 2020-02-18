@@ -18,12 +18,12 @@ class Service extends MY_Controller
 		$target = $this->input->get('target');
 		$input_city = $this->input->get('city');
 
-		$temp_input_city=explode(', ',$input_city);
+		$temp_input_city = explode(', ', $input_city);
 		$city_name = $temp_input_city[0];
 
-		if	(empty($temp_input_city[1])){
+		if (empty($temp_input_city[1])) {
 			$province_name = $temp_input_city[0];
-		}else{
+		} else {
 			$province_name = $temp_input_city[1];
 		}
 
@@ -44,13 +44,13 @@ class Service extends MY_Controller
 		}
 
 		//check input city
-		$check_city = $this->service_model->check_city($city_name,$province_name);
+		$check_city = $this->service_model->check_city($city_name, $province_name);
 
 		if (empty($check_city)) { // input city tidak ditemukan
 			$message = $this->crud_model->select('dictionary', QUERY_ROW, ['dictionary_content'], ['dictionary_slug' => 'no-result-found-for', 'language_code' => $lang], '', '', 1)->dictionary_content . ': <span class="g-font-weight-700">' . $input_city . '</span>.<br> <small>Mohon masukkan nama kota yang valid.</small>';
 		} else { // city tersedia
 			$services = $this->service_model->service_list_by_coverage($lang, $city_name, '', $service_target_id);
-			if (empty($services)){
+			if (empty($services)) {
 				$services = $this->service_model->service_list_by_coverage($lang, '', $province_name, $service_target_id);
 			}
 			$service_list = [];
@@ -69,7 +69,7 @@ class Service extends MY_Controller
 		}
 
 		$data['service_targets'] = $this->crud_model->select('service_target', QUERY_RESULT, ['service_target_name service_target_slug', 'dictionary.dictionary_content service_target_name', 'service_target_icon'], ['language_code' => $lang, 'deleted_at' => null], ['service_target' => ['dictionary' => 'dictionary_slug=service_target_name']]);
-		$data['coverage_cities'] = $this->crud_model->select('place_city', QUERY_RESULT, ['city_name','province_name'], '',['place_city'=>['place_province'=>'province_id']]);
+		$data['coverage_cities'] = $this->crud_model->select('place_city', QUERY_RESULT, ['city_name', 'province_name'], '', ['place_city' => ['place_province' => 'province_id']]);
 		if (!empty($input_city)) {
 			$data['search_message'] = $message;
 		}
@@ -157,12 +157,23 @@ class Service extends MY_Controller
 				$data['recommendations'] = $this->crud_model->select('service_recomendation', QUERY_RESULT, ['recomendation_icon', 'recomendation_color', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=recomendation_name AND language_code="' . $lang . '" limit 1) as recomendation_name'], ['service_recomendation.service_id' => $service->service_id, 'service_recomendation.deleted_at' => null], ['service_recomendation' => ['recomendation' => 'recomendation_id']]);
 			}
 			if ($section->section_slug == 'our-coverage' || $section->section_slug == 'our-coverage-try') {
-//				$child_service = $this->crud_model->select()
-				$data['coverages'] = $this->crud_model->select('service_coverage', QUERY_RESULT, ['city_name', 'city_coordinate'], ['service_coverage.service_id' => $service->service_id, 'service_coverage.deleted_at' => null],['service_coverage'=>['place_city'=>'city_id']]);
-//				$data['second_coverages'] = $this->crud_model->select('service_coverage', QUERY_RESULT, ['city_name', 'city_coordinate'], ['service_coverage.service_id' => $service->service_id, 'service_coverage.deleted_at' => null],['service_coverage'=>['place_city'=>'city_id']]);
+				$child_service = $this->crud_model->select('service', QUERY_RESULT, ['service_id'], ['service_parent_id' => $service->service_id]);
+				$data['coverages'] = $this->crud_model->select('service_coverage', QUERY_RESULT, ['city_name', 'city_coordinate'], ['service_coverage.service_id' => $service->service_id, 'service_coverage.deleted_at' => null], ['service_coverage' => ['place_city' => 'city_id']]);
+				$second_coverages = [];
+				foreach ($child_service as $index => $child) {
+					$sec_cov = $this->crud_model->select('service_coverage', QUERY_RESULT, ['city_name', 'city_coordinate'], ['service_coverage.service_id' => $child->service_id, 'service_coverage.deleted_at' => null], ['service_coverage' => ['place_city' => 'city_id']]);
+					if (!empty($sec_cov)) {
+						foreach ($sec_cov as $cov) {
+							$second_coverages[] = $cov;
+						}
+					}
+				}
 			}
 		}
 
+		$data['second_coverages'] = $second_coverages;
+//		print_r($data['second_coverages']);
+//die();
 		$data['service'] = $service;
 		$data['sections'] = $sections;
 
@@ -174,7 +185,7 @@ class Service extends MY_Controller
 		$lang = $this->get_language();
 
 		$service = $this->service_model->get_service($lang, $service_slug);
-		$parent_service = $this->crud_model->select('service', QUERY_ROW, ['service_slug', 'service_short_name','service_portfolio_url', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_name AND language_code="' . $lang . '" limit 1) as service_name'], ['service_id' => $service->service_parent_id]);
+		$parent_service = $this->crud_model->select('service', QUERY_ROW, ['service_slug', 'service_short_name', 'service_portfolio_url', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_name AND language_code="' . $lang . '" limit 1) as service_name'], ['service_id' => $service->service_parent_id]);
 
 		$sections = $this->crud_model->select('service_section', QUERY_RESULT, ['service_section.deleted_at', 'service_section.service_id', 'section.section_id', 'section_slug', '(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_menu_name AND dictionary.language_code="' . $lang . '") as section_menu_name', '(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_name AND dictionary.language_code="' . $lang . '") as section_name'], ['service_section.service_id' => $service->service_id, 'service_section.deleted_at' => null], ['service_section' => ['section' => 'section_id']]);
 
