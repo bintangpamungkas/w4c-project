@@ -334,9 +334,10 @@ function view_number($number)
 	}
 }
 
-function view_js_counter($prenumber,$lang){
+function view_js_counter($prenumber, $lang)
+{
 	if (is_numeric($prenumber)) {
-		$numbers =  number_format((int)$prenumber, 0, ',', '.');
+		$numbers = number_format((int)$prenumber, 0, ',', '.');
 		$array_number = explode('.', $numbers);
 		foreach ($array_number as $index => $number) {
 			if ($index != 0) {
@@ -348,8 +349,17 @@ function view_js_counter($prenumber,$lang){
 				}
 				echo '</span>';
 			}
+
+			$pre = '';
+			if ($number[0] == 0) {
+				$pre = '<span style="margin-right: -10px">0</span>';
+				if ($number[1] == 0) {
+					$pre = '<span style="margin-right: -10px">00</span>';
+				}
+			}
 			?>
-			<span class="js-counter"><?= (int)$number ?></span>
+			<?=$pre?>
+			<span class="js-counter"><?= $number ?></span>
 			<?php
 		}
 	} else {

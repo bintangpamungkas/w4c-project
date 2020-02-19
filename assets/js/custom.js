@@ -1,11 +1,12 @@
 window.onresize = function (event) {
-	if((window.fullScreen) || (window.innerWidth == screen.width && window.innerHeight == screen.height)) {
-		$('.tab-service-container').addClass('fullscreen');
-		console.log('fullscreen');
-	}else{
-		$('.tab-service-container').removeClass('fullscreen');
-		console.log('notfullscreen');
-	}
+	window.location.reload(1);
+	// if((window.fullScreen) || (window.innerWidth == screen.width && window.innerHeight == screen.height)) {
+	// 	$('.tab-service-container').addClass('fullscreen');
+	// 	console.log('fullscreen');
+	// }else{
+	// 	$('.tab-service-container').removeClass('fullscreen');
+	// 	console.log('notfullscreen');
+	// }
 };
 
 $(window).scroll(function () {

@@ -8,16 +8,16 @@
 		</div>
 		<div class="row text-center">
 			<div class="col-md-4 col-xs-12 mb-4">
-				<div class="js-counter g-color-w4c-blue-v1 g-font-size-50 g-font-weight-900" data-comma-separated="true">
-					198
+				<div class="g-color-w4c-blue-v1 g-font-size-50 g-font-weight-900">
+					<?=view_js_counter(198,$lang)?>
 				</div>
 				<div class="g-font-weight-700 g-font-size-18">
 					<?= get_lang('clients') ?>
 				</div>
 			</div>
 			<div class="col-md-4 col-xs-12 mb-4">
-				<div class="js-counter g-color-w4c-blue-v1 g-font-size-50 g-font-weight-900" data-comma-separated="true">
-					175
+				<div class="g-color-w4c-blue-v1 g-font-size-50 g-font-weight-900" >
+					<?=view_js_counter(175,$lang)?>
 				</div>
 				<div class="g-font-weight-700 g-font-size-18">
 					<?= get_lang('projects') ?>
@@ -25,7 +25,7 @@
 			</div>
 			<div class="col-md-4 col-xs-12 mb-4 ">
 				<div class="g-color-w4c-blue-v1 g-font-size-50 g-font-weight-900">
-					<div class="js-counter" style="display: inline" data-comma-separated="true">441041</div>
+					<?=view_js_counter(5404041,$lang)?>
 				</div>
 				<div class="g-font-weight-700 g-font-size-18">
 					<?= get_lang('waste-manage') ?>

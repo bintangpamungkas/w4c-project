@@ -1,3 +1,9 @@
+<?php
+// Date in the past
+header("Cache-Control: no-cache , must-revalidate");
+header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+header("Pragma: no-cache");
+?>
 <!DOCTYPE html>
 <!--[if IE 9]>
 <html lang="en" class="ie9"> <![endif]-->
@@ -79,6 +85,7 @@
 		google_analytic(false);
 	} ?>
 
+
 </head>
 
 <script>
@@ -86,7 +93,7 @@
 		<?php if($this->uri->segment(1) == ''):?>
 		// $('#PopUpModal').modal('show');
 		<?php endif; ?>
-	})
+	});
 	var logger = function () {
 		var oldConsoleLog = null;
 		var pub = {};
@@ -108,7 +115,7 @@
 	}();
 
 	$(document).ready(function () {
-		if (<?=IS_ONLINE?> == 0) {
+		if (<?=IS_ONLINE?> == 1) {
 			logger.disableLogger();
 		} else {
 			logger.enableLogger();
@@ -139,8 +146,7 @@
 	<div class="modal fade in" id="PopUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="z-index: 99999">
 		<div class="modal-dialog <?= $this->agent->is_mobile() ? 'g-ml-25 g-mr-25' : '' ?>" role="document" <?= $this->agent->is_mobile() ? '' : 'style="max-width:700px"' ?>>
 			<div class="modal-content" style="border-radius: 0!important;margin-top: calc(50vh - 250px)">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"
-				        style="position: absolute;padding: 10px 15px;background: red;z-index: 999;opacity: 1;color: white;border-radius: 50px;right: -20px;top: -20px;"><span aria-hidden="true">&times;</span>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute;padding: 10px 15px;background: red;z-index: 999;opacity: 1;color: white;border-radius: 50px;right: -20px;top: -20px;"><span aria-hidden="true">&times;</span>
 				</button>
 				<div class="modal-body welcome_list g-pa-0">
 					<a class="dismiss-modal" href="<?php echo POIN_ADES_URL ?>">
