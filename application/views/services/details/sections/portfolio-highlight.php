@@ -165,7 +165,7 @@
 										?>
 										<div class="col-12">
 											<div class="no-gutters g-line-height-1_3 g-mt-20">
-												<a class="btn btn-outline-info g-font-weight-700 text-uppercase g-rounded-25 g-brd-2" href="<?= get_url($porto->portfolio_url) ?>"><?= get_lang('view_project') ?> <i
+												<a class="btn btn-outline-info g-font-weight-700 text-uppercase g-rounded-25 g-brd-2" href="<?= get_url($porto->portfolio_url) ?>"><?= get_lang('view-project') ?> <i
 														class="fa fa-angle-right g-font-weight-900 g-ml-10"></i></a>
 											</div>
 										</div>

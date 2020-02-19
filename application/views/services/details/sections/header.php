@@ -35,7 +35,7 @@
 						</div>
 						<div class="pt-4 <?= $this->agent->is_mobile() ? 'g-mt-20' : 'g-mt-20' ?>">
 							<div class="<?= $this->agent->is_mobile() ? '' : '' ?>">
-								<div class="text-muted">Client:<br>
+								<div class="g-color-black-opacity-0_6"><?=get_lang('client')?>:<br>
 									<?=$service->service_client_name?>
 								</div>
 							</div>
