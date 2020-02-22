@@ -42,7 +42,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
 <div id="container">
-	<img src="<?= SITE_URL . 'assets/img/404.jpg' ?>">
+	<img src="<?= SITE_URL . 'assets/img/error/404.jpg' ?>">
 	<br>
 	<a class="btn btn-outline-success g-color-white--parent-hover g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-ma-10" href="<?= SITE_URL ?>"><?= get_lang('back_to_home') ?></a>
 	<a class="btn btn-outline-success g-color-white--parent-hover g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-ma-10" onclick="window.history.back()"><?= get_lang('back_to_previous_page') ?></a>

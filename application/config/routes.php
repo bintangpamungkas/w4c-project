@@ -1,4 +1,4 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 /*
 | -------------------------------------------------------------------------
 | URI ROUTING
@@ -42,8 +42,8 @@ $route['default_controller'] = "Site/index";
 $route['join'] = "Site/join";
 $route['join_as_brand'] = "Site/join_as_brand";
 $route['service'] = "Service/index";
-	$route['contact'] = "Site/contact";
-	$route['about'] = "Site/about";
+$route['contact'] = "Site/contact";
+$route['about'] = "Site/about";
 $route['id'] = "Site/id";
 $route['en'] = "Site/en";
 $route['service/(:any)'] = "Service/detail/$1";
@@ -52,5 +52,4 @@ $route['project/(:any)'] = "Service/project/$1";
 $route['(:any)'] = "Brand/index/$1";
 
 //error_page
-//$route['404_override'] = '';
-$route['404_override'] = '';
+$route['404_override'] = 'site/page_404';
