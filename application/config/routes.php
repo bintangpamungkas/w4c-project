@@ -52,4 +52,5 @@ $route['project/(:any)'] = "Service/project/$1";
 $route['(:any)'] = "Brand/index/$1";
 
 //error_page
+//$route['404_override'] = '';
 $route['404_override'] = '';

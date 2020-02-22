@@ -68,6 +68,7 @@ class Service_model extends CI_Model
 //			$this->db->where('service.has_page',1);
 		$this->db->where('service_parent_id', null);
 		$this->db->group_by('service.service_id');
+		$this->db->where('service.deleted_at',null);
 
 		if ($is_new != null) {
 			$this->db->where('service.is_new', 1);

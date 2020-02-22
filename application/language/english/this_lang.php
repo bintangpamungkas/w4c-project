@@ -355,3 +355,8 @@ $lang['order_now']="Order Now";
 //LOREM
 $lang['long_lorem']="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra eu ante malesuada vulputate. Quisque at enim elit. Aliquam porta laoreet semper. In sodales rutrum sodales. Etiam ullamcorper est eget pulvinar dictum. Proin posuere venenatis felis vitae consequat. Quisque eget enim vitae mauris scelerisque mollis. Mauris venenatis mi ornare nisl sollicitudin porta. Vivamus vel ipsum neque. Pellentesque vel justo vitae neque efficitur placerat. Donec at nibh dui. In dapibus, lectus ac dictum aliquam, nunc est venenatis felis, id pharetra est lectus id eros.";
 $lang['short_lorem']="Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+
+//404
+$lang['page_not_found']="Page not found";
+$lang['back_to_home']="Back to Home";
+$lang['back_to_previous_page']="Back to Previous Page";

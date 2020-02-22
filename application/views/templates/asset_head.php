@@ -91,7 +91,7 @@ header("Pragma: no-cache");
 <script>
 	$(function () {
 		<?php if($this->uri->segment(1) == ''):?>
-		// $('#PopUpModal').modal('show');
+		$('#PopUpModal').modal('show');
 		<?php endif; ?>
 	});
 	var logger = function () {
@@ -100,7 +100,7 @@ header("Pragma: no-cache");
 
 		pub.enableLogger = function enableLogger() {
 			if (oldConsoleLog == null)
-				return;
+				 return;
 
 			window['console']['log'] = oldConsoleLog;
 		};
@@ -151,9 +151,9 @@ header("Pragma: no-cache");
 				<div class="modal-body welcome_list g-pa-0">
 					<a class="dismiss-modal" href="<?php echo POIN_ADES_URL ?>">
 						<?php if ($this->agent->is_mobile()): ?>
-							<img src="<?php echo base_url('assets/img/bg/services/ades/popup-mobile.jpg') ?>" class="img-fluid">
+							<img src="<?php echo base_url('assets/img/bg/services/ades/3-popup-mobile.jpg') ?>" class="img-fluid">
 						<?php else: ?>
-							<img src="<?php echo base_url('assets/img/bg/services/ades/popup-desktop.jpg') ?>" style="width:100%">
+							<img src="<?php echo base_url('assets/img/bg/services/ades/3-popup-desktop.jpg') ?>" style="width:100%">
 						<?php endif; ?>
 					</a>
 				</div>

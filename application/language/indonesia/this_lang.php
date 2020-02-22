@@ -352,3 +352,8 @@ $lang['career']="karir";
 //pricing
 $lang['pricing']="Harga";
 $lang['order_now']="Pilih Paket";
+
+//404
+$lang['page_not_found']="Halaman tidak ditemukan";
+$lang['back_to_home']="Kembali ke Beranda";
+$lang['back_to_previous_page']="Kembali ke Halaman Sebelumnya";

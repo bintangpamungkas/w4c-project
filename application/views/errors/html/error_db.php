@@ -3,62 +3,52 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Database Error</title>
-<style type="text/css">
+	<meta charset="utf-8">
+	<title>404 <?=lang('page_not_found')?></title>
+	<link rel="stylesheet" href="<?= SITE_URL . 'assets/vendor/bootstrap/bootstrap.min.css' ?>">
+	<link rel="stylesheet" href="<?= SITE_URL . 'assets/css/custom.css' ?>">
+	<link rel="stylesheet" href="<?= SITE_URL . 'assets/css/unify-globals.css' ?>">
+	<style type="text/css">
 
-::selection { background-color: #E13300; color: white; }
-::-moz-selection { background-color: #E13300; color: white; }
+		::selection {
+			background-color: #E13300;
+			color: white;
+		}
 
-body {
-	background-color: #fff;
-	margin: 40px;
-	font: 13px/20px normal Helvetica, Arial, sans-serif;
-	color: #4F5155;
-}
+		::-moz-selection {
+			background-color: #E13300;
+			color: white;
+		}
 
-a {
-	color: #003399;
-	background-color: transparent;
-	font-weight: normal;
-}
+		body {
+			background-color: #fff;
+			margin: 40px;
+			font: 13px/20px normal Helvetica, Arial, sans-serif;
+			color: #4F5155;
+		}
 
-h1 {
-	color: #444;
-	background-color: transparent;
-	border-bottom: 1px solid #D0D0D0;
-	font-size: 19px;
-	font-weight: normal;
-	margin: 0 0 14px 0;
-	padding: 14px 15px 10px 15px;
-}
+		#container {
+			margin: 10px;
+			text-align: center;
+		}
 
-code {
-	font-family: Consolas, Monaco, Courier New, Courier, monospace;
-	font-size: 12px;
-	background-color: #f9f9f9;
-	border: 1px solid #D0D0D0;
-	color: #002166;
-	display: block;
-	margin: 14px 0 14px 0;
-	padding: 12px 10px 12px 10px;
-}
+		img {
+			margin-top: calc(12.5vh - 50px);
+			height: 50vh;
+		}
 
-#container {
-	margin: 10px;
-	border: 1px solid #D0D0D0;
-	box-shadow: 0 0 8px #D0D0D0;
-}
-
-p {
-	margin: 12px 15px 12px 15px;
-}
-</style>
+	</style>
 </head>
 <body>
-	<div id="container">
+<div id="container">
+	<img src="<?= SITE_URL . 'assets/img/404.jpg' ?>">
+	<br>
+	<a class="btn btn-outline-success g-color-white--parent-hover g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-ma-10" href="<?= SITE_URL ?>"><?= lang('back_to_home') ?></a>
+	<a class="btn btn-outline-success g-color-white--parent-hover g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-ma-10" href="" onclick="window.history.back()"><?= lang('back_to_previous_page') ?></a>
+	<div class="<?= DEBUG_CLASS ?>">
 		<h1><?php echo $heading; ?></h1>
 		<?php echo $message; ?>
 	</div>
+</div>
 </body>
 </html>
