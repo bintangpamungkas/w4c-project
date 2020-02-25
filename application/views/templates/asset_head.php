@@ -115,11 +115,11 @@ header("Pragma: no-cache");
 	}();
 
 	$(document).ready(function () {
-		if (<?=IS_ONLINE?> == 1) {
-			logger.disableLogger();
-		} else {
-			logger.enableLogger();
-		}
+		//if (<?//=IS_ONLINE?>// == 1) {
+		//	logger.disableLogger();
+		//} else {
+		//	logger.enableLogger();
+		//}
 	});
 </script>
 
@@ -143,7 +143,7 @@ header("Pragma: no-cache");
 	Loading...
 </div>
 <main>
-	<div class="modal fade in" id="PopUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="z-index: 99999">
+	<div class="modal fade in" id="PopUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="z-index: 9998">
 		<div class="modal-dialog <?= $this->agent->is_mobile() ? 'g-ml-25 g-mr-25' : '' ?>" role="document" <?= $this->agent->is_mobile() ? '' : 'style="max-width:700px"' ?>>
 			<div class="modal-content" style="border-radius: 0!important;margin-top: calc(50vh - 250px)">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute;padding: 10px 15px;background: red;z-index: 999;opacity: 1;color: white;border-radius: 50px;right: -20px;top: -20px;"><span aria-hidden="true">&times;</span>

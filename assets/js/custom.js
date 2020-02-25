@@ -106,7 +106,7 @@ $(document).on('click', '.nav-toggle', function () {
 	$('.navbar-collapse').removeClass('show');
 });
 
-$(window).ready(function () {
+$(document).ready(function () {
 	var screen_height = window.innerHeight;
 	var header_height = $('header').height();
 	var content_middle_fullscreen = $('.content-middle-fullscreen');
@@ -176,6 +176,12 @@ $(window).ready(function () {
 		$("#preloading").addClass('d-none');
 	}, 1000);
 
+});
+
+$(window).load(function(){
+	setInterval(function(){
+		$("#preloading").addClass('d-none');
+	}, 4000);
 });
 
 
