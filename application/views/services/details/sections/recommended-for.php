@@ -10,26 +10,32 @@
 		<!-- Icon Blocks -->
 		<div class="align-height-list row justify-content-center">
 			<?php
-			$number = 1;
-			foreach ($recommendations as $rec):
-				?>
-				<div class="col-lg-4 col-xs-12 g-mb-20">
-					<!-- Icon Blocks -->
-					<div class=" u-shadow-v21 g-bg-white rounded g-py-15 g-px-30 u-shadow-v20">
-						<div class="media align-height-item">
-							<div class="d-flex align-self-center mr-4">
+				$number = 1;
+				foreach ($recommendations as $rec):
+					?>
+					<div class="col-lg-4 col-xs-12 g-mb-20">
+						<!-- Icon Blocks -->
+						<div class=" u-shadow-v21 g-bg-white rounded g-py-15 g-px-30 u-shadow-v20">
+							<div class="media align-height-item">
+								<div class="d-flex align-self-center mr-4">
 								<span class="g-font-size-26" style="color:<?= $rec->recomendation_color ?>">
-									<i class="<?= $rec->recomendation_icon ?>"></i>
+									<?php
+										if (strpos($rec->recomendation_icon,'.') !== false ) {
+											echo '<img src="'.base_url(DIR_ICON.$rec->recomendation_icon).'" alt="" style="max-width: 30px; max-height: 30px;margin-top:-5px">';
+											} else {
+											echo '<i class="' . $rec->recomendation_icon . '"></i>';
+										}
+									?>
                 </span>
-							</div>
-							<div class="media-body align-self-center">
-								<h3 class="h5 g-color-black g-mt-5 text-capitalize"><?= $rec->recomendation_name ?></h3>
-								<div class="g-width-30 g-brd-bottom g-brd-primary g-my-15 d-none"></div>
+								</div>
+								<div class="media-body align-self-center">
+									<h3 class="h5 g-color-black g-mt-5 text-capitalize"><?= $rec->recomendation_name ?></h3>
+									<div class="g-width-30 g-brd-bottom g-brd-primary g-my-15 d-none"></div>
+								</div>
 							</div>
 						</div>
+						<!-- End Icon Blocks -->
 					</div>
-					<!-- End Icon Blocks -->
-				</div>
-			<?php endforeach; ?>
+				<?php endforeach; ?>
 		</div>
 </section>
