@@ -154,6 +154,7 @@
 	});
 
 	function list_service(service_target_id) {
+		$('#service_list').html('<div class="animated fadeIn text-center" style="padding: 100px;"> <div class="lds-spinner"> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> </div> <br>Loading...</div>');
 		var dataSend = {
 			target: service_target_id,
 		};

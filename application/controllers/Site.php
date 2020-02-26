@@ -182,81 +182,78 @@
 			$lang = $this->get_language();
 			$service_target = [];
 			$services = $this->service_model->service_list_by_coverage($lang, '', '', $service_target_id, true);
+
 			if ($this->agent->is_mobile()) { //Mobile View
-
 				?>
-				<div class="my_tab_content" id="tab">
-					<div class="animated fadeIn row g-ma-0 g-rounded-7" style="background-size: cover;background-position: left;background-repeat: no-repeat">
-						<div class="col-md-9 col-12 g-pa-0">
-							<div id="service-carousel" class="owl-carousel row owl-theme" style="margin: 0!important;">
-								<?php
-									foreach ($services as $service) {
-										?>
-										<div class="service-item-content g-mb-20 g-bg-white g-mt-10 box-shadow-down">
-											<div style="height: 200px;background: url(<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/' . $service->service_thumbnail_image) ?>);background-size: cover;"></div>
-											<div class="bg-white g-mx-20 g-px-30 g-py-20" onclick="window.location.href='<?= $service->service_page_url ?>'" style="margin-top: -40px; min-height:250px">
-												<div>
-													<h6 class="g-color-black-opacity-0_5 g-font-weight-600 g-mb-5 g-font-size-12 text-uppercase"> <?= $service->service_category_name ?> </h6>
-													<h4 class="g-color-black g-font-weight-600 g-mb-5 g-font-size-20" style="min-height: 50px"><?= $service->service_name ?></h4>
-													<em class="d-block g-color-black-opacity-0_8 g-font-style-normal g-font-size-12 g-mb-10"><?= $service->service_description ?></em>
-												</div>
-												<a class="g-color-info g-color-blue--hover g-font-size-12 g-mt-10 g-font-weight-900"
-												   href="<?= $service->service_page_url ?>"><?= strtoupper(get_lang('learn-more')) ?>
-													<i class="fa fa-angle-right g-ml-10 g-font-size-15"></i>
-												</a>
+				<div class="my_tab_content animated fadeIn row g-ma-0 " style="background-size: cover;background-position: left;background-repeat: no-repeat">
+					<div class="col-md-9 col-12 g-pa-0">
+						<div id="service-carousel" class="owl-carousel row owl-theme" style="margin: 0!important;">
+							<?php
+								foreach ($services as $service) {
+									?>
+									<div class="service-item-content g-mb-20 g-bg-white g-mt-10 box-shadow-down">
+										<div style="height: 200px;background: url(<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/' . $service->service_thumbnail_image) ?>);background-size: cover;"></div>
+										<div class="bg-white g-mx-20 g-px-30 g-py-20" onclick="window.location.href='<?= $service->service_page_url ?>'" style="margin-top: -40px; min-height:250px">
+											<div>
+												<h6 class="g-color-black-opacity-0_5 g-font-weight-600 g-mb-5 g-font-size-12 text-uppercase"> <?= $service->service_category_name ?> </h6>
+												<h4 class="g-color-black g-font-weight-600 g-mb-5 g-font-size-20" style="min-height: 50px"><?= $service->service_name ?></h4>
+												<em class="d-block g-color-black-opacity-0_8 g-font-style-normal g-font-size-12 g-mb-10"><?= $service->service_description ?></em>
 											</div>
+											<a class="g-color-info g-color-blue--hover g-font-size-12 g-mt-10 g-font-weight-900"
+											   href="<?= $service->service_page_url ?>"><?= strtoupper(get_lang('learn-more')) ?>
+												<i class="fa fa-angle-right g-ml-10 g-font-size-15"></i>
+											</a>
 										</div>
-										<?php
-										$service_id = $service->service_id;
-									} //End foreach($target->list as $service)
-								?>
-							</div>
-							<script>
-								$(window).ready(function () {
-									carousel();
-								});
+									</div>
+									<?php
+								} //End foreach($target->list as $service)
+							?>
+						</div>
+						<script>
+							$(window).ready(function () {
+								carousel();
+							});
 
-								function carousel() {
-									var element_id = '#service-carousel';
-									$(element_id).owlCarousel({
-										stagePadding: <?= $this->agent->is_mobile() ? '30' : '70' ?>,
-										loop: true,
-										margin: 20,
-										dots: true,
-										nav: true,
-										autoplay: true,
-										autoplayTimeout: 5000,
-										autoplayHoverPause: true,
-										responsive: {
-											0: {
-												items: 1
-											},
-											600: {
-												items: 1
-											},
-											1000: {
-												items: 1
-											}
+							function carousel() {
+								var element_id = '#service-carousel';
+								$(element_id).owlCarousel({
+									stagePadding: <?= $this->agent->is_mobile() ? '30' : '70' ?>,
+									loop: true,
+									margin: 20,
+									dots: true,
+									nav: true,
+									autoplay: true,
+									autoplayTimeout: 5000,
+									autoplayHoverPause: true,
+									responsive: {
+										0: {
+											items: 1
 										},
-										navText: ['<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-left g-color-gray-light-v1 nav-arrow-left' : 'fa fa-angle-left g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>', '<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-right g-color-gray-light-v1 nav-arrow-right' : 'fa fa-angle-right g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>']
-									});
-									// $('.cloned').addClass('d-none');
-									$(element_id + ' .owl-controls').attr('style', 'margin-top: 5px;margin-bottom: 20px');
+										600: {
+											items: 1
+										},
+										1000: {
+											items: 1
+										}
+									},
+									navText: ['<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-left g-color-gray-light-v1 nav-arrow-left' : 'fa fa-angle-left g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>', '<i class="<?=$this->agent->is_mobile() ? 'fa fa-angle-right g-color-gray-light-v1 nav-arrow-right' : 'fa fa-angle-right g-color-w4c-blue-v1' ?>" aria-hidden="true" style="transform: scale(<?=$this->agent->is_mobile() ? '2' : '4'?>)"></i>']
+								});
+								// $('.cloned').addClass('d-none');
+								$(element_id + ' .owl-controls').attr('style', 'margin-top: 5px;margin-bottom: 20px');
 
-									$(element_id + ' .owl-stage-outer').css({'padding-top': 1});
-									$(element_id + ' .owl-stage').css('padding-left', 10);
-									// $(element_id + ' .owl-item').attr('style', 'width: calc(100vw - 15px);;margin-right:20px');
-									var screen_display = <?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
-									// console.log(screen_display);
-									var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '60' : '80' ?>) / 100) / 2;
-									// console.log('screen :/ '+screen_display+'nav : '+screen_display*<?= $this->agent->is_mobile() ? '8' : '9' ?>0/100+'batas : '+margin_side);
-									// console.log($('.owl-stage').height());
-									$(element_id + ' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: ' + ($('.owl-stage').height() + 10) + 'px;width: 74%;right: ' + margin_side + 'px;');
-								}
-							</script>
-						</div>
-						<div class="col-md-3 g-pa-0">
-						</div>
+								$(element_id + ' .owl-stage-outer').css({'padding-top': 1});
+								$(element_id + ' .owl-stage').css('padding-left', 10);
+								// $(element_id + ' .owl-item').attr('style', 'width: calc(100vw - 15px);;margin-right:20px');
+								var screen_display = <?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
+								// console.log(screen_display);
+								var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '60' : '80' ?>) / 100) / 2;
+								// console.log('screen :/ '+screen_display+'nav : '+screen_display*<?= $this->agent->is_mobile() ? '8' : '9' ?>0/100+'batas : '+margin_side);
+								// console.log($('.owl-stage').height());
+								$(element_id + ' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: ' + ($('.owl-stage').height() + 10) + 'px;width: 74%;right: ' + margin_side + 'px;');
+							}
+						</script>
+					</div>
+					<div class="col-md-3 g-pa-0">
 					</div>
 				</div>
 				<div class="g-mx-30">
@@ -266,55 +263,51 @@
 					<a
 						class="btn btn-info btn-block g-color-white g-brd-2 g-font-size-13 g-rounded-50  g-px-30 g-py-9 g-color-white--active"
 						href="<?= site_url('service') ?>"><?= strtoupper(get_lang('all-services')) ?></a>
-
 					<a class="btn btn-outline-info btn-block g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9"
 					   href="<?= site_url('contact') ?>"><?= strtoupper(get_lang('talk-to-our-expert')) ?></a>
 				</div>
 				<?php
 			} else { //desktop view
 				?>
-				<div class="my_tab_content g-rounded-7" id="tab">
-					<div id="service_list" class="row">
-
-						<?php
-							$i = 0;
-							$service_id = 0;
-							foreach ($services as $service) {
-								if ($service->service_id != $service_id && $i < 5) {
-									?>
-									<div class="col-md-4 col-sm-6">
-										<div class="service-item-content g-mb-5 g-bg-white <?= $this->agent->is_mobile() ? 'g-mt-10' : 'g-mt-25' ?> box-shadow-down">
-											<div style="height: 200px;background: url(<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/' . $service->service_thumbnail_image) ?>);background-size: cover;"></div>
-											<div class="bg-white g-mx-20 g-px-30 g-py-20" onclick="window.location.href='<?= $service->service_page_url ?>'" style="margin-top: -40px; min-height:250px">
-												<div>
-													<h6 class="g-color-black-opacity-0_5 g-font-weight-600 g-mb-5 g-font-size-12 text-uppercase"> <?= $service->service_category_name ?> </h6>
-													<h4 class="g-color-black g-font-weight-600 g-mb-5 g-font-size-20" style="min-height: 50px"><?= $service->service_name ?></h4>
-													<em class="d-block g-color-black-opacity-0_8 g-font-style-normal g-font-size-12 g-mb-10"><?= $service->service_description ?></em>
-												</div>
-												<a class="g-color-info g-color-blue--hover g-font-size-12 g-mt-10 g-font-weight-900" href="<?= $service->service_page_url ?>"><?= strtoupper(get_lang('learn-more')) ?>
-													<i class="fa fa-angle-right g-ml-10 g-font-size-15"></i>
-												</a>
+				<div id="service_list" class="my_tab_content animated fadeIn row">
+					<?php
+						$i = 0;
+						$service_id = 0;
+						foreach ($services as $service) {
+							if ($service->service_id != $service_id && $i < 5) {
+								?>
+								<div class="col-md-4 col-sm-6">
+									<div class="service-item-content g-mb-5 g-bg-white <?= $this->agent->is_mobile() ? 'g-mt-10' : 'g-mt-25' ?> box-shadow-down">
+										<div style="height: 200px;background: url(<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/' . $service->service_thumbnail_image) ?>);background-size: cover;"></div>
+										<div class="bg-white g-mx-20 g-px-30 g-py-20" onclick="window.location.href='<?= $service->service_page_url ?>'" style="margin-top: -40px; min-height:250px">
+											<div>
+												<h6 class="g-color-black-opacity-0_5 g-font-weight-600 g-mb-5 g-font-size-12 text-uppercase"> <?= $service->service_category_name ?> </h6>
+												<h4 class="g-color-black g-font-weight-600 g-mb-5 g-font-size-20" style="min-height: 50px"><?= $service->service_name ?></h4>
+												<em class="d-block g-color-black-opacity-0_8 g-font-style-normal g-font-size-12 g-mb-10"><?= $service->service_description ?></em>
 											</div>
+											<a class="g-color-info g-color-blue--hover g-font-size-12 g-mt-10 g-font-weight-900" href="<?= $service->service_page_url ?>"><?= strtoupper(get_lang('learn-more')) ?>
+												<i class="fa fa-angle-right g-ml-10 g-font-size-15"></i>
+											</a>
 										</div>
 									</div>
-									<?php
-									$i++;
-									$service_id = $service->service_id;
-								}
-							} //End foreach($target->list as $service)
-						?>
-						<div class="col-md-4 col-sm-6">
-							<div class="service-item-all g-mb-5 g-bg-white <?= $this->agent->is_mobile() ? 'g-mt-10' : 'g-mt-25' ?> box-shadow-down">
-								<div class="text-center bg-white g-mx-20 g-px-30 g-py-20">
-									<div class="g-mt-100">
-										<div class="g-font-weight-700 g-font-size-20 mb-4">
-											<?= get_lang('cant-found-the-solution-you-are-looking-for?') ?>
-										</div>
-										<a class="btn btn-info btn-block g-color-white  g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9"
-										   href="<?= site_url('service') ?>"><?= strtoupper(get_lang('all-services')) ?></a>
-										<a class="btn btn-outline-info btn-block g-brd-2 g-font-size-13 g-rounded-50  g-px-30 g-py-9"
-										   href="<?= site_url('contact') ?>"><?= strtoupper(get_lang('talk-to-our-expert')) ?></a>
+								</div>
+								<?php
+								$i++;
+								$service_id = $service->service_id;
+							}
+						} //End foreach($target->list as $service)
+					?>
+					<div class="col-md-4 col-sm-6">
+						<div class="service-item-all g-mb-5 g-bg-white <?= $this->agent->is_mobile() ? 'g-mt-10' : 'g-mt-25' ?> box-shadow-down">
+							<div class="text-center bg-white g-mx-20 g-px-30 g-py-20">
+								<div class="g-mt-100">
+									<div class="g-font-weight-700 g-font-size-20 mb-4">
+										<?= get_lang('cant-found-the-solution-you-are-looking-for?') ?>
 									</div>
+									<a class="btn btn-info btn-block g-color-white  g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9"
+									   href="<?= site_url('service') ?>"><?= strtoupper(get_lang('all-services')) ?></a>
+									<a class="btn btn-outline-info btn-block g-brd-2 g-font-size-13 g-rounded-50  g-px-30 g-py-9"
+									   href="<?= site_url('contact') ?>"><?= strtoupper(get_lang('talk-to-our-expert')) ?></a>
 								</div>
 							</div>
 						</div>
@@ -325,16 +318,16 @@
 			?>
 			<script>
 				// make item same height as other item
-				// var detail = $(".service-item-content");
-				// var tempHeight = 0;
-				//
-				// jQuery.each(detail, function (index, value) {
-				// 	if (tempHeight < $(this).height()) {
-				// 		tempHeight = $(this).height();
-				// 	}
-				// });
-				// detail.height(tempHeight);
-				// $(".service-item-all").height(tempHeight);
+				var detail = $(".service-item-content");
+				var tempHeight = 0;
+
+				jQuery.each(detail, function (index, value) {
+					if (tempHeight < $(this).height()) {
+						tempHeight = $(this).height();
+					}
+				});
+				detail.height(tempHeight);
+				$(".service-item-all").height(tempHeight);
 			</script>
 			<?php
 		}
