@@ -25,8 +25,7 @@
 				<div class="col-md-6 col-12">
 					<div class="<?= $this->agent->is_mobile() ? 'bg-white g-mx-10 g-px-10' : '' ?>" style="<?= $this->agent->is_mobile() ? 'margin-top:-50px; box-shadow:1px 3px 10px 0px rgba(0, 0, 0, 0.1)' : '' ?>">
 						<h5 class="g-color-black-opacity-0_7 <?= $this->agent->is_mobile() ? 'g-font-size-15' : 'g-font-size-20' ?> pt-3"><?= $service->service_subcategory_name ?></h5>
-						<h3 class="g-color-w4c-blue-v1 g-font-weight-700 <?= $this->agent->is_mobile() ? 'g-font-size-30' : 'g-font-size-40' ?> mb-4 g-font-asap"
-						    style="text-align:justify;text-justify: inter-word;line-height: 1.2"><?= $service->service_name ?></h3>
+						<h3 class="g-color-w4c-blue-v1 g-font-weight-700 <?= $this->agent->is_mobile() ? 'g-font-size-25' : 'g-font-size-40' ?> mb-4 g-font-asap"><?= $service->service_name ?></h3>
 						<div class="row">
 							<div class="col-md-12">
 								<!-- <h3 class="g-color-black-opacity-0_7 <?= $this->agent->is_mobile() ? 'g-font-size-14' : 'g-font-size-16' ?> g-line-height-1_5 mb-3"><?= ucfirst($service->service_description) ?></h3> -->

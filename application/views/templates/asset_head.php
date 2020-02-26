@@ -94,7 +94,7 @@ header("Pragma: no-cache");
 <script>
 	$(function () {
 		<?php if($this->uri->segment(1) == ''):?>
-		// $('#PopUpModal').modal('show');
+		$('#PopUpModal').modal('show');
 		<?php endif; ?>
 	});
 	var logger = function () {
@@ -143,7 +143,7 @@ header("Pragma: no-cache");
 		<div></div>
 	</div>
 	<br>
-	Loading...
+	<?=lang('loading')?>...
 </div>
 <main>
 	<div class="modal fade in" id="PopUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="z-index: 9998">

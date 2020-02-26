@@ -20,7 +20,7 @@
 				'blog_image' => 'https://waste4change.com/wp-content/uploads/DSC9637-580x390.jpg',
 			],
 			[
-				'blog_title' => 'Bank Mandiri’s CSR Program in Lombok: Gili Trawangan Bebas Sampah',
+				'blog_title' => 'Bank Mandiri\'s CSR Program in Lombok: Gili Trawangan Bebas Sampah',
 				'blog_category' => 'WASTE MANAGEMENT',
 				'blog_content' => 'Gili Trawangan. Source: dakatour.com The Gili Trawangan island that is located in Mataram, North Lombok is one of the tourist destinations whose popularity is rising, and...',
 				'blog_author' => 'MIRIAM BAHAGIJO',
@@ -78,7 +78,7 @@
 							   data-url="<?= $blog['blog_url'] ?>" style="background-color: #159CBD">
 								<i class="fa fa-share-alt g-color-white g-font-size-10"></i>
 							</a>
-							<a target="_blank" href="<?= $blog['blog_url'] ?>" class="g-bg-white g-color-info g-color-blue--hover g-mr-10 g-mb-15 g-font-weight-700 text-uppercase g-text-underline--none--hover"
+							<a target="_blank" href="<?= $blog['blog_url'] ?>" class="g-bg-white g-color-info g-mr-10 g-mb-15 g-font-weight-700 text-uppercase g-text-underline--none--hover"
 							   style="color:#117a8b"><?= get_lang('read-more') ?> <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
 
 						</div>
