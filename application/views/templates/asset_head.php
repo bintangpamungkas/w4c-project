@@ -5,6 +5,7 @@ header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
 header("Pragma: no-cache");
 ?>
 <!DOCTYPE html>
+
 <!--[if IE 9]>
 <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
@@ -34,7 +35,9 @@ header("Pragma: no-cache");
 	<!-- Required Meta Tags Always Come First -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<!--	<meta http-equiv="x-ua-compatible" content="ie=edge">-->
 	<?php if (IS_ONLINE == 1) {
 		// <!-- Meta Data SEO-->
 		meta_data(true);
@@ -115,11 +118,11 @@ header("Pragma: no-cache");
 	}();
 
 	$(document).ready(function () {
-		//if (<?//=IS_ONLINE?>// == 1) {
-		//	logger.disableLogger();
-		//} else {
-		//	logger.enableLogger();
-		//}
+		if (<?=IS_ONLINE?> == 1) {
+			logger.disableLogger();
+		} else {
+			logger.enableLogger();
+		}
 	});
 </script>
 
