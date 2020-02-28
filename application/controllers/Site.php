@@ -199,7 +199,7 @@
 												<h4 class="g-color-black g-font-weight-600 g-mb-5 g-font-size-20" style="min-height: 50px"><?= $service->service_name ?></h4>
 												<em class="d-block g-color-black-opacity-0_8 g-font-style-normal g-font-size-12 g-mb-10"><?= $service->service_description ?></em>
 											</div>
-											<a class="g-color-info g-color-blue--hover g-font-size-12 g-mt-10 g-font-weight-900"
+											<a class="g-color-info g-color-blue-dark-v1--hover g-text-underline--none--hover g-font-size-12 g-mt-10 g-font-weight-900"
 											   href="<?= $service->service_page_url ?>"><?= strtoupper(get_lang('learn-more')) ?>
 												<i class="fa fa-angle-right g-ml-10 g-font-size-15"></i>
 											</a>
@@ -257,7 +257,7 @@
 					</div>
 				</div>
 				<div class="g-mx-30">
-					<div class="g-font-weight-700 g-font-size-20 mb-4">
+					<div class="g-font-weight-700 g-font-size-20 mb-4 text-center">
 						<?= get_lang('cant-found-the-solution-you-are-looking-for?') ?>
 					</div>
 					<a
@@ -271,10 +271,11 @@
 				?>
 				<div id="service_list" class="my_tab_content animated fadeIn row">
 					<?php
-						$i = 0;
+						$service_count=0;
 						$service_id = 0;
-						foreach ($services as $service) {
-							if ($service->service_id != $service_id && $i < 5) {
+						foreach ($services as $index => $service) {
+							if ($service->service_id != $service_id && $index < 4) {
+								$service_count++;
 								?>
 								<div class="col-md-4 col-sm-6">
 									<div class="service-item-content g-mb-5 g-bg-white <?= $this->agent->is_mobile() ? 'g-mt-10' : 'g-mt-25' ?> box-shadow-down">
@@ -285,29 +286,38 @@
 												<h4 class="g-color-black g-font-weight-600 g-mb-5 g-font-size-20" style="min-height: 50px"><?= $service->service_name ?></h4>
 												<em class="d-block g-color-black-opacity-0_8 g-font-style-normal g-font-size-12 g-mb-10"><?= $service->service_description ?></em>
 											</div>
-											<a class="g-color-info g-color-blue--hover g-font-size-12 g-mt-10 g-font-weight-900" href="<?= $service->service_page_url ?>"><?= strtoupper(get_lang('learn-more')) ?>
+											<a class="g-color-info g-color-blue-dark-v1--hover g-text-underline--none--hover  g-font-size-12 g-mt-10 g-font-weight-900" href="<?= $service->service_page_url ?>"><?= strtoupper(get_lang('learn-more')) ?>
 												<i class="fa fa-angle-right g-ml-10 g-font-size-15"></i>
 											</a>
 										</div>
 									</div>
 								</div>
 								<?php
-								$i++;
 								$service_id = $service->service_id;
 							}
 						} //End foreach($target->list as $service)
+						$service_all_col_md = (3 - ($service_count % 3)) * 4;
+						$service_all_col_sm = (2 - ($service_count % 2)) * 6;
 					?>
-					<div class="col-md-4 col-sm-6">
-						<div class="service-item-all g-mb-5 g-bg-white <?= $this->agent->is_mobile() ? 'g-mt-10' : 'g-mt-25' ?> box-shadow-down">
+					<div class="col-md-<?= $service_all_col_md ?> col-sm-<?= $service_all_col_sm ?>">
+						<div class="<?= ($service_all_col_md==12) ?'':'service-item-all'?> g-mb-5 g-bg-white <?= $this->agent->is_mobile() ? 'g-mt-10' : 'g-mt-25' ?> box-shadow-down">
 							<div class="text-center bg-white g-mx-20 g-px-30 g-py-20">
-								<div class="g-mt-100">
-									<div class="g-font-weight-700 g-font-size-20 mb-4">
+								<div class="<?= ($service_all_col_md == 12) ?'g-my-20':'g-mt-100'?>">
+									<div class="g-font-weight-700 g-font-size-20 mb-4 text-center">
 										<?= get_lang('cant-found-the-solution-you-are-looking-for?') ?>
 									</div>
-									<a class="btn btn-info btn-block g-color-white  g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9"
-									   href="<?= site_url('service') ?>"><?= strtoupper(get_lang('all-services')) ?></a>
-									<a class="btn btn-outline-info btn-block g-brd-2 g-font-size-13 g-rounded-50  g-px-30 g-py-9"
-									   href="<?= site_url('contact') ?>"><?= strtoupper(get_lang('talk-to-our-expert')) ?></a>
+									<div class="row">
+										<div class="col">
+										</div>
+										<div class="col">
+											<a class="btn btn-info btn-block g-color-white  g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9"
+											   href="<?= site_url('service') ?>"><?= strtoupper(get_lang('all-services')) ?></a>
+											<a class="btn btn-outline-info btn-block g-brd-2 g-font-size-13 g-rounded-50  g-px-30 g-py-9"
+											   href="<?= site_url('contact') ?>"><?= strtoupper(get_lang('talk-to-our-expert')) ?></a>
+										</div>
+										<div class="col">
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>

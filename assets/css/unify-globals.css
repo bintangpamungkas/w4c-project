@@ -4755,29 +4755,29 @@
 
 /* Color Blue */
 .g-color-blue {
-  color: #3398dc !important; }
-
+  color: #1f9cbd !important; }
 .g-color-blue--hover:hover {
-  color: #3398dc !important; }
-
+  color: #1f9cbd !important; }
 .g-color-blue--focus:focus {
-  color: #3398dc !important; }
+  color: #1f9cbd !important; }
 
 .g-color-blue-dark-v1 {
   color: #175a88 !important; }
-
-.g-color-blue-dark-v1--focus:focus {
-  color: #17a2b8 !important; }
+.g-color-blue-dark-v1--hover:hover{
+  color: #175a88 !important; }
+.g-color-blue-dark-v1--active:active{
+  color: #175a88 !important; }
+.g-color-blue-dark-v1--focus:focus{
+  color: #175a88 !important; }
 
 .g-color-blue-dark-v2 {
-  color: #159CBD !important; }
-
+  color: #093e5d !important; }
 .g-color-blue-dark-v2--hover:hover{
-  color: #159CBD !important; }
+  color: #093e5d !important; }
 .g-color-blue-dark-v2--active:active{
-  color: #159CBD !important; }
+  color: #093e5d !important; }
 .g-color-blue-dark-v2--focus:focus{
-  color: #159CBD !important; }
+  color: #093e5d !important; }
 
 /* Color Light Blue */
 .g-color-lightblue {

@@ -78,7 +78,7 @@
 							   data-url="<?= $blog['blog_url'] ?>" style="background-color: #159CBD">
 								<i class="fa fa-share-alt g-color-white g-font-size-10"></i>
 							</a>
-							<a target="_blank" href="<?= $blog['blog_url'] ?>" class="g-bg-white g-color-info g-mr-10 g-mb-15 g-font-weight-700 text-uppercase g-text-underline--none--hover"
+							<a target="_blank" href="<?= $blog['blog_url'] ?>" class="g-bg-white g-color-info g-color-blue-dark-v1--hover g-mr-10 g-mb-15 g-font-weight-700 text-uppercase g-text-underline--none--hover"
 							   style="color:#117a8b"><?= get_lang('read-more') ?> <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
 
 						</div>
@@ -168,7 +168,7 @@
 						   data-title="<?= $blog['blog_title'] ?>" data-content="<?= $blog['blog_content'] ?>" data-url="<?= $blog['blog_url'] ?>" style=" height: 30px; width: 30px; background-color:#159CBD">
 							<i class="fa fa-share-alt g-color-white g-font-size-10"></i>
 						</a>
-						<a target="_blank" href="<?= $blog['blog_url'] ?>" class="g-bg-white g-color-info g-color-blue--hover g-mr-10 g-mb-15 g-font-weight-700 text-uppercase g-text-underline--none--hover"
+						<a target="_blank" href="<?= $blog['blog_url'] ?>" class="g-bg-white g-color-info g-color-blue-dark-v1--hover g-mr-10 g-mb-15 g-font-weight-700 text-uppercase g-text-underline--none--hover"
 						   style=""><?=get_lang('read-more')?> <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
 					</div>
 				</article>
