@@ -1,7 +1,7 @@
 <!-- Promo Block -->
 <section id="<?= $section_slug ?>" class="bg-white">
 	<div class="">
-		<div class="container bg-white">
+		<div class="container <?= $this->agent->is_mobile() ? 'g-bg-gray-light-v5' : 'bg-white'?>">
 			<div class="row with-header" style="<?= $this->agent->is_mobile() ? 'margin-top:100px' : 'margin-top:150px' ?>">
 				<?php if (!$this->agent->is_mobile()): ?>
 					<div class="col-12 g-pb-20" style="">
@@ -23,7 +23,7 @@
 					</div>
 				<?php endif; ?>
 				<div class="col-md-6 col-12">
-					<div class="<?= $this->agent->is_mobile() ? 'bg-white g-mx-10 g-px-10' : '' ?>" style="<?= $this->agent->is_mobile() ? 'margin-top:-50px; box-shadow:1px 3px 10px 0px rgba(0, 0, 0, 0.1)' : '' ?>">
+					<div class="<?= $this->agent->is_mobile() ? 'bg-white g-mx-10 g-px-15 g-pb-10' : '' ?>" style="<?= $this->agent->is_mobile() ? 'margin-top:-50px; box-shadow:1px 3px 10px 0px rgba(0, 0, 0, 0.1);margin-bottom:-22px' : '' ?>">
 						<h5 class="g-color-black-opacity-0_7 <?= $this->agent->is_mobile() ? 'g-font-size-15' : 'g-font-size-20' ?> pt-3"><?= $service->service_subcategory_name ?></h5>
 						<h3 class="g-color-w4c-blue-v1 g-font-weight-700 <?= $this->agent->is_mobile() ? 'g-font-size-25' : 'g-font-size-40' ?> mb-4 g-font-asap"><?= $service->service_name ?></h3>
 						<div class="row">

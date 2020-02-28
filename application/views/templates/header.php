@@ -97,13 +97,13 @@
 					<div class="collapse navbar-collapse align-items-center flex-sm-row" id="navBar2">
 						<div <?= $this->agent->is_mobile() ? 'class="row no-gutters"' : 'class="row no-gutters justify-content-around" style="width: calc(100% + 17px); margin-left:-33px"' ?>" >
 							<div class="col-12" <?= empty($parent_service->service_portfolio_url) && $service->service_portfolio_url != 1 ? 'data-header-fix-moment-exclude="col-12" data-header-fix-moment-classes="col-9"' : 'data-header-fix-moment-exclude="col-12" data-header-fix-moment-classes="col-7"'?>">
-								<ul class="navbar-nav text-uppercase g-font-weight-600 mr-auto <?= $this->agent->is_mobile() ? '' : '' ?>">
+								<ul class="navbar-nav text-uppercase g-font-weight-600 mr-auto">
 									<?= $this->agent->is_mobile() ? '' : '<table><tr>' ?>
 									<?php foreach ($subnav as $subnav): ?>
 										<?php if (!empty($subnav->section_menu_name)): ?>
 											<?= $this->agent->is_mobile() ? '' : '<td>' ?>
 												<li class="nav-item g-my-2 <?= $this->agent->is_mobile() ? 'g-my-10' : '' ?> g-mx-20--lg">
-													<a href="#<?= $subnav->section_slug ?>" class="font-weight-normal g-font-size-11 click_scroll nav-link px-0 b-color-white g-color-blue--hover g-py-9"
+													<a href="<?= strpos($_SERVER['REQUEST_URI'], 'join') ?  site_url('service/'.$service->service_slug.'#'.$subnav->section_slug) :'#'.$subnav->section_slug ?>" class="font-weight-normal g-font-size-11 click_scroll nav-link px-0 b-color-white g-color-blue--hover g-py-9"
 													   style="line-height: 1"><?= $subnav->section_menu_name ?>
 													</a>
 												</li>

@@ -249,7 +249,7 @@
 								var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '60' : '80' ?>) / 100) / 2;
 								// console.log('screen :/ '+screen_display+'nav : '+screen_display*<?= $this->agent->is_mobile() ? '8' : '9' ?>0/100+'batas : '+margin_side);
 								// console.log($('.owl-stage').height());
-								$(element_id + ' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: ' + ($('.owl-stage').height() + 10) + 'px;width: 74%;right: ' + margin_side + 'px;');
+								$(element_id + ' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: ' + ($('.owl-stage').height() + 10) + 'px;width: 67%;right: ' + margin_side + 'px;');
 							}
 						</script>
 					</div>

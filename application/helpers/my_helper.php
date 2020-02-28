@@ -149,7 +149,7 @@ function get_url($url)
 	if (strpos($url, 'http') !== false) {
 		$directory = $url;
 	} else {
-		$directory = site_url($url);
+		$directory = HOST.$url;
 	}
 	return $directory;
 }

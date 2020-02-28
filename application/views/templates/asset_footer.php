@@ -34,7 +34,7 @@
 <script src="<?= base_url('assets/js/components/hs.go-to.js') ?>"></script>
 
 <!-- JS Custom -->
-<script src="<?= base_url('assets/js/custom.js') ?>"></script>
+<script src="<?= base_url('assets/js/customv2.js') ?>"></script>
 <script src="<?= base_url('assets/js/click-scroll.js') ?>"></script>
 
 <script src="<?= base_url('assets/vendor/custombox/custombox.min.js') ?>"></script>
