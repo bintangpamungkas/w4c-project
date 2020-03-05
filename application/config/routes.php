@@ -54,4 +54,4 @@ $route['(:any)'] = "Brand/index/$1";
 //error_page
 $route['404_override'] = '';
 //$route['404_override'] = 'My404';
-$route['errorasasd'] = 'Site/page_404';
+//$route['errorasasd'] = 'Site/page_404';

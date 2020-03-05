@@ -1,6 +1,6 @@
 # Waste4Change Official
 
-/* INSTALATION INSTRUCTION */
+/* INSTALLATIONS INSTRUCTION */
 
 This system use CodeIgniter Framework version 3.1.2.
 

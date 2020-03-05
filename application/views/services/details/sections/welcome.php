@@ -36,7 +36,7 @@
 								<div class="row justify-content-center">
 									<div class="col-md-12 col-xs-3">
 										<a class="click_scroll btn btn-info btn-block g-color-white g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-mb-10" href="<?= site_url('service/' . $service_id . '/join') ?>">
-											<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : strtoupper(get_lang('get-proposal')) ?>
+											<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 33 ||$service->service_id == 34 ) ? strtoupper(get_lang('subscribe-now')) : strtoupper(get_lang('get-proposal'))) ?>
 										</a>
 									</div>
 								</div>

@@ -70,7 +70,7 @@
 								 <?= $this->agent->is_mobile() ? ' data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block"' : '' ?>>
 							<a class="btn btn-info btn-xs g-color-white g-brd-white-opacity-0_2 g-rounded-50 g-py-5 g-px-20 g-mt-3"
 							   href="<?= site_url('service/' . $service_id . '/join') ?>">
-								<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : strtoupper(get_lang('get-proposal')) ?>
+								<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 33 ||$service->service_id == 34 ) ? strtoupper(get_lang('get-it-now')) :strtoupper(get_lang('get-proposal'))) ?>
 							</a>
 						</div>
 					<?php endif; ?>
@@ -119,7 +119,7 @@
 										<div class="col">
 											<a class="click_scroll btn btn-info btn-block g-color-white g-brd-white-opacity-0_2 g-font-size-13 g-rounded-50 g-px-15 g-py-9 d-none"
 											   href="<?= site_url('service/' . $service_id . '/join') ?>"
-											   data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block"> <?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : strtoupper(get_lang('get-proposal')) ?>
+											   data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block"> <?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 33 ||$service->service_id == 34 ) ? strtoupper(get_lang('get-it-now')) : strtoupper(get_lang('get-proposal'))) ?>
 												<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3"> <i class="fa fa-info"></i> </span>
 											</a>
 										</div>

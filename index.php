@@ -39,7 +39,7 @@
 date_default_timezone_set('Asia/Jakarta');
 /* CONSTANTS */
 define('IS_ONLINE', 0);
-define('HOST', 'http://192.168.100.63/w4c/');
+define('HOST', 'http://localhost/w4c/');
 define('PREFIX_TABLE', '');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');

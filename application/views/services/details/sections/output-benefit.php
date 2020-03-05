@@ -9,7 +9,7 @@
 			<div class="row">
 				<?php $category = '';$i=1; ?>
 				<?php foreach ($benefits as $benefit): ?>
-					<?php if ($benefit->benefit_category == 'general'): ?>
+					<?php if (strtolower($benefit->benefit_category) == 'general'): ?>
 						<div class="col-md-6 col-xs-12 g-line-height-1_3">
 							<div class="row no-gutters g-my-10">
 								<div class="col-auto">

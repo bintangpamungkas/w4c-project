@@ -9,82 +9,83 @@
 		</div>
 
 		<?php
-		$blogs = [
-			[
-				'blog_title' => 'Responsible Waste Management in Tourism Sites: EcoRanger in Pulau Merah, Banyuwangi',
-				'blog_category' => 'WASTE MANAGEMENT',
-				'blog_content' => 'Tourism sites that suffer from overtourism, from mount Everest to Boracay beach in Philippines, as well as Venice the canal city, almost always experience a...',
-				'blog_author' => 'MIRIAM BAHAGIJO',
-				'blog_url' => 'https://waste4change.com/responsible-waste-management-in-tourism-sites-ecoranger-in-pulau-merah-banyuwangi/',
-				'blog_date' => '02/12/2020',
-				'blog_image' => 'https://waste4change.com/wp-content/uploads/DSC9637-580x390.jpg',
-			],
-			[
-				'blog_title' => 'Bank Mandiri\'s CSR Program in Lombok: Gili Trawangan Bebas Sampah',
-				'blog_category' => 'WASTE MANAGEMENT',
-				'blog_content' => 'Gili Trawangan. Source: dakatour.com The Gili Trawangan island that is located in Mataram, North Lombok is one of the tourist destinations whose popularity is rising, and...',
-				'blog_author' => 'MIRIAM BAHAGIJO',
-				'blog_url' => 'https://waste4change.com/bank-mandiris-csr-program-in-lombok-gili-trawangan-bebas-sampah/',
-				'blog_date' => '02/07/2020',
-				'blog_image' => 'https://waste4change.com/wp-content/uploads/IMG_20170825_084414_HDR-580x390.jpg',
-			],
-			[
-				'blog_title' => 'If AMDAL is Abolished, What is the Best Solution for the Environmental Feasibility Study in Indonesia?',
-				'blog_category' => 'WASTE MANAGEMENT',
-				'blog_content' => 'What is AMDAL AMDAL is a study of the significant impacts of a business plan and activities on the environment. The purpose is to guarantee...',
-				'blog_author' => 'MIRIAM BAHAGIJO',
-				'blog_url' => 'https://waste4change.com/if-amdal-is-abolished-what-is-the-best-solution-for-the-environmental-feasibility-study-in-indonesia/',
-				'blog_date' => '02/05/2020',
-				'blog_image' => 'https://waste4change.com/wp-content/uploads/pabrik-dan-lingkungan-pinterest-580x390.png',
-			],
-		];
-		if ($this->agent->is_mobile()): //MOBILE VIEW
+			$blogs = [
+				[
+					'blog_title' => 'Jakarta’s Regulation on Environmentally-Friendly Shopping Bag: What We Need to Know and Prepare',
+					'blog_category' => 'WASTE MANAGEMENT',
+					'blog_content' => 'Source: Indonesia Diet Kantong Plastik Good news came from the capital city of Jakarta at the end of 2019, because Jakarta’s Governor Anies Baswedan has...',
+					'blog_author' => 'MIRIAM BAHAGIJO',
+					'blog_url' => 'https://waste4change.com/jakartas-ban-on-single-use-plastic-bag/',
+					'blog_date' => '02/26/2020',
+					'blog_image' => 'https://waste4change.com/wp-content/uploads/11659860-3x2-xlarge-580x390.jpg',
+				],
+				[
+					'blog_title' => 'Responsible Waste Management in Tourism Sites: EcoRanger in Pulau Merah, Banyuwangi',
+					'blog_category' => 'WASTE MANAGEMENT',
+					'blog_content' => 'Tourism sites that suffer from overtourism, from mount Everest to Boracay beach in Philippines, as well as Venice the canal city, almost always experience a...',
+					'blog_author' => 'MIRIAM BAHAGIJO',
+					'blog_url' => 'https://waste4change.com/responsible-waste-management-in-tourism-sites-ecoranger-in-pulau-merah-banyuwangi/',
+					'blog_date' => '02/12/2020',
+					'blog_image' => 'https://waste4change.com/wp-content/uploads/DSC9637-580x390.jpg',
+				],
+				[
+					'blog_title' => 'Bank Mandiri\'s CSR Program in Lombok: Gili Trawangan Bebas Sampah',
+					'blog_category' => 'WASTE MANAGEMENT',
+					'blog_content' => 'Gili Trawangan. Source: dakatour.com The Gili Trawangan island that is located in Mataram, North Lombok is one of the tourist destinations whose popularity is rising, and...',
+					'blog_author' => 'MIRIAM BAHAGIJO',
+					'blog_url' => 'https://waste4change.com/bank-mandiris-csr-program-in-lombok-gili-trawangan-bebas-sampah/',
+					'blog_date' => '02/07/2020',
+					'blog_image' => 'https://waste4change.com/wp-content/uploads/IMG_20170825_084414_HDR-580x390.jpg',
+				],
+			];
+			if ($this->agent->is_mobile()): //MOBILE VIEW
 		?>
 		<div class="clearfix">
 			<div id="blog-carousel" class="row owl-theme" style="margin: 0 0 30px 0!important;">
 				<?php
-				$number = 1;
-				foreach ($blogs as $blog) :
-					?>
-					<article class="g-bg-white" style="box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.1)">
-						<figure class="g-pos-rel">
-							<div class="img-fluid w-100 g-min-height-200" style="background: url(<?= $blog['blog_image'] ?>);background-size: cover"></div>
-							<figcaption class="text-uppercase text-center g-line-height-1_2 g-color-white g-pos-abs g-top-20 g-px-15 g-py-10 bg-w4c-green-v1">
-								<span class="d-block"><?= date('F d, Y', strtotime($blog['blog_date'])) ?></span>
-							</figcaption>
-						</figure>
+					$number = 1;
+					foreach ($blogs as $blog) :
+						?>
+						<article class="g-bg-white" style="box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.1)">
+							<figure class="g-pos-rel">
+								<div class="img-fluid w-100 g-min-height-200" style="background: url(<?= $blog['blog_image'] ?>);background-size: cover"></div>
+								<figcaption class="text-uppercase text-center g-line-height-1_2 g-color-white g-pos-abs g-top-20 g-px-15 g-py-10 bg-w4c-green-v1">
+									<span class="d-block"><?= date('F d, Y', strtotime($blog['blog_date'])) ?></span>
+								</figcaption>
+							</figure>
 
-						<div class="g-pa-30">
-							<div style="min-height: 80px" class="d-none">
-								<div class="mb-1">
-									<small>
-										<span class="g-color-gray-dark-v4">By</span>
-										<a class="g-color-info" href="#!"><?= $blog['blog_author'] ?></a>
-									</small>
+							<div class="g-pa-30">
+								<div style="min-height: 80px" class="d-none">
+									<div class="mb-1">
+										<small>
+											<span class="g-color-gray-dark-v4">By</span>
+											<a class="g-color-info" href="#!"><?= $blog['blog_author'] ?></a>
+										</small>
+									</div>
+									<div class="mb-2">
+										<small>
+											<span class="g-color-gray-dark-v4">In</span>
+											<a class="g-color-info" href="#!"><?= $blog['blog_category'] ?></a>
+										</small>
+									</div>
 								</div>
-								<div class="mb-2">
-									<small>
-										<span class="g-color-gray-dark-v4">In</span>
-										<a class="g-color-info" href="#!"><?= $blog['blog_category'] ?></a>
-									</small>
-								</div>
+								<h3 class="h5 g-mb-15" style="min-height: 80px">
+									<a class="u-link-v5 g-color-gray-dark-v2 g-color-info--hover g-font-weight-700" href="<?= $blog['blog_url'] ?>" style="word-wrap: break-word"><?= $blog['blog_title'] ?></a>
+								</h3>
+								<hr class="g-brd-gray-light-v4 g-mt-40">
+								<a title="Share Story" class="float-right g-brd-0 g-color-white--hover g-bg-linkedin--hover u-icon-v2 g-rounded-50x g-bg-info"
+								   style=" height: 30px; width: 30px; background-color:#117a8b" href="#" onclick="blogShare(this)" data-title="<?= $blog['blog_title'] ?>" data-content="<?= $blog['blog_content'] ?>"
+								   data-url="<?= $blog['blog_url'] ?>" style="background-color: #159CBD">
+									<i class="fa fa-share-alt g-color-white g-font-size-10"></i>
+								</a>
+								<a target="_blank" href="<?= $blog['blog_url'] ?>"
+								   class="g-bg-white g-color-info g-color-blue-dark-v1--hover g-mr-10 g-mb-15 g-font-weight-700 text-uppercase g-text-underline--none--hover"
+								   style="color:#117a8b"><?= get_lang('read-more') ?> <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
+
 							</div>
-							<h3 class="h5 g-mb-15" style="min-height: 80px">
-								<a class="u-link-v5 g-color-gray-dark-v2 g-color-info--hover g-font-weight-700" href="<?= $blog['blog_url'] ?>" style="word-wrap: break-word"><?= $blog['blog_title'] ?></a>
-							</h3>
-							<hr class="g-brd-gray-light-v4 g-mt-40">
-							<a title="Share Story" class="float-right g-brd-0 g-color-white--hover g-bg-linkedin--hover u-icon-v2 g-rounded-50x g-bg-info"
-							   style=" height: 30px; width: 30px; background-color:#117a8b" href="#" onclick="blogShare(this)" data-title="<?= $blog['blog_title'] ?>" data-content="<?= $blog['blog_content'] ?>"
-							   data-url="<?= $blog['blog_url'] ?>" style="background-color: #159CBD">
-								<i class="fa fa-share-alt g-color-white g-font-size-10"></i>
-							</a>
-							<a target="_blank" href="<?= $blog['blog_url'] ?>" class="g-bg-white g-color-info g-color-blue-dark-v1--hover g-mr-10 g-mb-15 g-font-weight-700 text-uppercase g-text-underline--none--hover"
-							   style="color:#117a8b"><?= get_lang('read-more') ?> <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
-
-						</div>
-					</article>
-				<?php
-				endforeach;
+						</article>
+					<?php
+					endforeach;
 				?>
 			</div>
 
@@ -127,53 +128,54 @@
 		</div>
 	</div>
 
-	<?php else: // DESKTOP VIEW  ?>
+	<?php else: // DESKTOP VIEW   ?>
 
 	<div class="row align-height-list">
 		<?php
-		foreach ($blogs as $blog):
-			?>
-			<div class="col-lg-4 g-mb-30">
-				<article class="g-bg-white" style="box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.1)">
-					<figure class="g-pos-rel">
-						<div class="img-fluid w-100 g-min-height-200" style="background: url(<?= $blog['blog_image'] ?>);background-size: cover"></div>
-						<figcaption class="text-uppercase text-center g-line-height-1_2 g-color-white g-pos-abs g-top-20 g-px-15 g-py-10 bg-w4c-green-v1">
-							<span class="d-block"><?= date('F d, Y', strtotime($blog['blog_date'])) ?></span>
-						</figcaption>
-					</figure>
+			foreach ($blogs as $blog):
+				?>
+				<div class="col-lg-4 g-mb-30">
+					<article class="g-bg-white" style="box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.1)">
+						<figure class="g-pos-rel">
+							<div class="img-fluid w-100 g-min-height-200" style="background: url(<?= $blog['blog_image'] ?>);background-size: cover"></div>
+							<figcaption class="text-uppercase text-center g-line-height-1_2 g-color-white g-pos-abs g-top-20 g-px-15 g-py-10 bg-w4c-green-v1">
+								<span class="d-block"><?= date('F d, Y', strtotime($blog['blog_date'])) ?></span>
+							</figcaption>
+						</figure>
 
-					<div class="g-pa-30">
-						<div style="min-height: 80px" class="d-none">
-							<div class="mb-1">
-								<small>
-									<span class="g-color-gray-dark-v4">By</span>
-									<a class="g-color-info" href="#!"><?= $blog['blog_author'] ?></a>
-								</small>
+						<div class="g-pa-30">
+							<div style="min-height: 80px" class="d-none">
+								<div class="mb-1">
+									<small>
+										<span class="g-color-gray-dark-v4">By</span>
+										<a class="g-color-info" href="#!"><?= $blog['blog_author'] ?></a>
+									</small>
+								</div>
+								<div class="mb-2">
+									<small>
+										<span class="g-color-gray-dark-v4">In</span>
+										<a class="g-color-info" href="#!"><?= $blog['blog_category'] ?></a>
+									</small>
+								</div>
 							</div>
-							<div class="mb-2">
-								<small>
-									<span class="g-color-gray-dark-v4">In</span>
-									<a class="g-color-info" href="#!"><?= $blog['blog_category'] ?></a>
-								</small>
+							<div class="align-height-item">
+								<h3 class="h5 g-mb-15" style="min-height: 80px">
+									<a class="u-link-v5 g-color-gray-dark-v2 g-color-info--hover g-font-weight-700" href="<?= $blog['blog_url'] ?>" style="word-wrap: break-word"><?= $blog['blog_title'] ?></a>
+								</h3>
+								<div class="g-font-size-13"><?= $blog['blog_content'] ?></div>
 							</div>
+							<hr class="g-brd-gray-light-v4 g-mt-40">
+							<a title="Share Story" class="float-right g-brd-0 g-color-white--hover g-bg-linkedin--hover u-icon-v2 g-rounded-50x g-bg-info" href="#blog" onclick="blogShare(this)"
+							   data-title="<?= $blog['blog_title'] ?>" data-content="<?= $blog['blog_content'] ?>" data-url="<?= $blog['blog_url'] ?>" style=" height: 30px; width: 30px; background-color:#159CBD">
+								<i class="fa fa-share-alt g-color-white g-font-size-10"></i>
+							</a>
+							<a target="_blank" href="<?= $blog['blog_url'] ?>"
+							   class="g-bg-white g-color-info g-color-blue-dark-v1--hover g-mr-10 g-mb-15 g-font-weight-700 text-uppercase g-text-underline--none--hover"
+							   style=""><?= get_lang('read-more') ?> <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
 						</div>
-						<div class="align-height-item">
-							<h3 class="h5 g-mb-15" style="min-height: 80px">
-								<a class="u-link-v5 g-color-gray-dark-v2 g-color-info--hover g-font-weight-700" href="<?= $blog['blog_url'] ?>" style="word-wrap: break-word"><?= $blog['blog_title'] ?></a>
-							</h3>
-							<div class="g-font-size-13"><?= $blog['blog_content'] ?></div>
-						</div>
-						<hr class="g-brd-gray-light-v4 g-mt-40">
-						<a title="Share Story" class="float-right g-brd-0 g-color-white--hover g-bg-linkedin--hover u-icon-v2 g-rounded-50x g-bg-info" href="#blog" onclick="blogShare(this)"
-						   data-title="<?= $blog['blog_title'] ?>" data-content="<?= $blog['blog_content'] ?>" data-url="<?= $blog['blog_url'] ?>" style=" height: 30px; width: 30px; background-color:#159CBD">
-							<i class="fa fa-share-alt g-color-white g-font-size-10"></i>
-						</a>
-						<a target="_blank" href="<?= $blog['blog_url'] ?>" class="g-bg-white g-color-info g-color-blue-dark-v1--hover g-mr-10 g-mb-15 g-font-weight-700 text-uppercase g-text-underline--none--hover"
-						   style=""><?=get_lang('read-more')?> <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
-					</div>
-				</article>
-			</div>
-		<?php endforeach; ?>
+					</article>
+				</div>
+			<?php endforeach; ?>
 		<?php endif; //End Dektop view ?>
 	</div>
 	<div class="text-center g-mb-50 <?= $this->agent->is_mobile() ? 'g-pt-5' : 'g-pt-40' ?>">
@@ -184,7 +186,7 @@
 				</p>
 				<br>
 			</div>
-				<div class="col-md-3 col-9">
+			<div class="col-md-3 col-9">
 				<a target="_blank" class="btn btn-outline-info btn-block g-brd-2 g-font-size-13 g-rounded-50 g-pl-20 g-pr-15 g-py-9 text-uppercase" href="http://waste4change.com/blog">
 					<?= strtoupper(get_lang('more-article')) ?>
 				</a>
