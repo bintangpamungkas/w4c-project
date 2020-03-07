@@ -11,9 +11,9 @@
 		<?php
 			$blogs = [
 				[
-					'blog_title' => 'Jakarta’s Regulation on Environmentally-Friendly Shopping Bag: What We Need to Know and Prepare',
+					'blog_title' => 'Jakarta\'s Regulation on Environmentally-Friendly Shopping Bag: What We Need to Know and Prepare',
 					'blog_category' => 'WASTE MANAGEMENT',
-					'blog_content' => 'Source: Indonesia Diet Kantong Plastik Good news came from the capital city of Jakarta at the end of 2019, because Jakarta’s Governor Anies Baswedan has...',
+					'blog_content' => 'Source: Indonesia Diet Kantong Plastik Good news came from the capital city of Jakarta at the end of 2019, because Jakarta\'s Governor Anies Baswedan has...',
 					'blog_author' => 'MIRIAM BAHAGIJO',
 					'blog_url' => 'https://waste4change.com/jakartas-ban-on-single-use-plastic-bag/',
 					'blog_date' => '02/26/2020',

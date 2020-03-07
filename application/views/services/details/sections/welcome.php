@@ -32,11 +32,11 @@
 							</div>
 						</div>
 						<div class="row <?= $this->agent->is_mobile() ? 'justify-content-center pt-3 g-pb-40' : 'pt-5 g-pb-60' ?>">
-							<div class="col-md-5 col-xs-12">
+							<div class="col-md-auto col-xs-12">
 								<div class="row justify-content-center">
 									<div class="col-md-12 col-xs-3">
 										<a class="click_scroll btn btn-info btn-block g-color-white g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-mb-10" href="<?= site_url('service/' . $service_id . '/join') ?>">
-											<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 33 ||$service->service_id == 34 ) ? strtoupper(get_lang('subscribe-now')) : strtoupper(get_lang('get-proposal'))) ?>
+											<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34 ) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe-now')) : strtoupper(get_lang('get-proposal')))) ?>
 										</a>
 									</div>
 								</div>

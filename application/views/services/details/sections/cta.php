@@ -7,13 +7,13 @@
 		<div class="container g-pt-100 g-pb-50">
 			<div class="text-center g-mb-50">
 				<h4 class="g-font-asap g-color-black g-font-weight-500 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= get_lang('start_your') ?>
-					<strong> <?= empty($parent_service->service_name) ? $service->service_name : $parent_service->service_name ?> </strong> <?= get_lang('now!') ?></h4>
+					<strong> <?=$service->service_id == 32 ? get_lang('design') : ''?> <?= $service->service_id == 34 ? get_lang('composting') : (empty($parent_service->service_name) ? $service->service_name : $parent_service->service_name) ?> </strong>  <?=$service->service_id == 31 ? get_lang('in-your-house') : ''?><?= $service->service_id ==34  ? get_lang('now') : get_lang('now!') ?></h4>
 				<div class="row justify-content-center g-mt-30">
 					<div class="col-md-3 col-10">
 						<div class="row justify-content-center">
 							<div class="col-12">
 								<a class="btn btn-block btn-info g-color-white g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-mb-10" href="<?= site_url('service/' . $service_id . '/join') ?>">
-									<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 33 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : strtoupper(lang('get_proposal'))) ?>
+									<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe-now')) : strtoupper(lang('get_proposal')))) ?>
 								</a>
 							</div>
 							<?php

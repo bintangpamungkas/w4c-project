@@ -475,4 +475,13 @@
 				return $database->dictionary_content;
 			}
 		}
+		function get_url($url)
+		{
+			if (strpos($url, 'http') !== false) {
+				$directory = $url;
+			} else {
+				$directory = HOST.$url;
+			}
+			return $directory;
+		}
 	}

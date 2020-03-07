@@ -65,7 +65,7 @@
 	$lang["about_we_create_responsible_2"] = "Pengelolaan Sampah yang Bertanggung Jawab";
 	$lang["about_we_create_responsible_3"] = "pertama di Indonesia";
 	$lang["about_strategy"] = "Strategi";
-	$lang["about_strategy_content"] = "Kami mengubah ekosistem untuk sebuah pengelolaan sampah bertanggung jawab dengan kolaborasi dan teknologi menuju implementasi Circular Economy Dan bebas sampah Indonesia";
+	$lang["about_strategy_content"] = "Perubahan ekosistem pengelolaan sampah yang bertanggung jawab berlandaskan kolaborasi dan teknologi menuju penerapan ekonomi melingkar (circular economy) dan Indonesia bebas sampah";
 	$lang["about_vision"] = "Visi";
 	$lang["about_vision_content"] = "Menjadi pemimpin dalam menyediakan pengelolaan sampah yang bertanggung jawab dan beretika";
 	$lang["about_what_we_do"] = "Yang Dapat Anda Lakukan Bersama Kami";

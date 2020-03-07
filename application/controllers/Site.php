@@ -193,14 +193,14 @@
 									?>
 									<div class="service-item-content g-mb-20 g-bg-white g-mt-10 box-shadow-down">
 										<div style="height: 200px;background: url(<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/' . $service->service_thumbnail_image) ?>);background-size: cover;"></div>
-										<div class="bg-white g-mx-20 g-px-30 g-py-20" onclick="window.location.href='<?= $service->service_page_url ?>'" style="margin-top: -40px; min-height:250px">
+										<div class="bg-white g-mx-20 g-px-30 g-py-20" onclick="window.location.href='<?= $this->get_url($service->service_page_url) ?>'" style="margin-top: -40px; min-height:250px">
 											<div>
 												<h6 class="g-color-black-opacity-0_5 g-font-weight-600 g-mb-5 g-font-size-12 text-uppercase"> <?= $service->service_category_name ?> </h6>
 												<h4 class="g-color-black g-font-weight-600 g-mb-5 g-font-size-20" style="min-height: 50px"><?= $service->service_name ?></h4>
 												<em class="d-block g-color-black-opacity-0_8 g-font-style-normal g-font-size-12 g-mb-10"><?= $service->service_description ?></em>
 											</div>
 											<a class="g-color-info g-color-blue-dark-v1--hover g-text-underline--none--hover g-font-size-12 g-mt-10 g-font-weight-900"
-											   href="<?= $service->service_page_url ?>"><?= strtoupper(get_lang('learn-more')) ?>
+											   href="<?= $this->get_url($service->service_page_url) ?>"><?= strtoupper(get_lang('learn-more')) ?>
 												<i class="fa fa-angle-right g-ml-10 g-font-size-15"></i>
 											</a>
 										</div>
@@ -280,14 +280,14 @@
 								<div class="col-md-4 col-sm-6">
 									<div class="service-item-content g-mb-5 g-bg-white <?= $this->agent->is_mobile() ? 'g-mt-10' : 'g-mt-25' ?> box-shadow-down">
 										<div style="height: 200px;background: url(<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/' . $service->service_thumbnail_image) ?>);background-size: cover;"></div>
-										<div class="bg-white g-mx-20 g-px-30 g-py-20" onclick="window.location.href='<?= $service->service_page_url ?>'" style="margin-top: -40px; min-height:250px">
+										<div class="bg-white g-mx-20 g-px-30 g-py-20" onclick="window.location.href='<?= $this->get_url($service->service_page_url) ?>'" style="margin-top: -40px; min-height:250px">
 											<div>
 												<h6 class="g-color-black-opacity-0_5 g-font-weight-600 g-mb-5 g-font-size-12 text-uppercase"> <?= $service->service_category_name ?> </h6>
 												<h4 class="g-color-black g-font-weight-600 g-mb-5 g-font-size-20" style="min-height: 50px"><?= $service->service_name ?></h4>
 												<em class="d-block g-color-black-opacity-0_8 g-font-style-normal g-font-size-12 g-mb-10"><?= $service->service_description ?></em>
 											</div>
 											<a class="g-color-info g-color-blue-dark-v1--hover g-text-underline--none--hover  g-font-size-12 g-mt-10 g-font-weight-900"
-											   href="<?= $service->service_page_url ?>"><?= strtoupper(get_lang('learn-more')) ?>
+											   href="<?= $this->get_url($service->service_page_url) ?>"><?= strtoupper(get_lang('learn-more')) ?>
 												<i class="fa fa-angle-right g-ml-10 g-font-size-15"></i>
 											</a>
 										</div>

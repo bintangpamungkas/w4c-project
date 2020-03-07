@@ -63,7 +63,7 @@
 	$lang["about_we_create_responsible_2"] = "Responsible Waste Management";
 	$lang["about_we_create_responsible_3"] = "In Indonesia";
 	$lang["about_strategy"] = "Strategy";
-	$lang["about_strategy_content"] = "Behaviour change in Waste Management with collaboration and technology towards zero-waste Indonesia.";
+	$lang["about_strategy_content"] = "Ecosystem change in waste management with collaboration and technology towards circular economy implementation and zero-waste in Indonesia";
 	$lang["about_vision"] = "Vision";
 	$lang["about_vision_content"] = "To become leader in providing ethical and responsible waste management solutions.";
 	$lang["about_what_we_do"] = "WHAT YOU CAN DO TOGETHER WITH US ";
