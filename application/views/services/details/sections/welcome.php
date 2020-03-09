@@ -3,7 +3,7 @@
 	<div id="<?= $section_slug ?>" class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall "
 	     data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
 		<div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center"
-		     style="height: 100%;background: url(<?= base_url('assets/img/service/' . $service_id . '/bg/header.jpg') ?>);background-size: cover;<?= $this->agent->is_mobile() ? 'background-position-x: right;' : '' ?>"></div>
+		     style="height: 100%;background: url(<?= base_url('assets/img/service/' . $service_id . '/bg/'.$service->service_header_image) ?>);background-size: cover;<?= $this->agent->is_mobile() ? 'background-position-x: right;' : '' ?>"></div>
 		<div class="full-height-block pending-show animated d-zap"
 		     style="background-image: <?= $this->agent->is_mobile() ? 'linear-gradient(180deg, rgba(255, 255, 255, 0.7) 20%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.6) 100%)' : 'linear-gradient( 100deg , rgba(255, 255, 255,0.9) 0%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255,0) 100%);' ?>">
 			<div class="container">
