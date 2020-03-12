@@ -20,23 +20,7 @@ class Crud_model extends CI_Model
     return $this->db->insert(PREFIX_TABLE.$table,$param);
   }
 
-  function read($table, $where=null, $select=null,$order=null){
-    if ($select != null) {
-      $this->db->select($select);
-    }else {
-      $this->db->select('*');
-    }
-    $this->db->from(PREFIX_TABLE.$table);
-    if ($where !=null) {
-      $this->db->where($where);
-    }
-    if ($order !=null) {
-      $this->db->order_by($order);
-    }
-    return $this->db->get();
-  }
-
-  function select($table,$query=null, $select=null, $where=null, $join_from=null, $order_by=null, $limit=null){
+    function select($table,$query=null, $select=null, $where=null, $join_from=null, $order_by=null, $limit=null){
     if($select!=null){
       $this->db->select($select);
     }else{

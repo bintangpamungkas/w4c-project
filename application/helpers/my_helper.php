@@ -40,7 +40,7 @@ function get_image($image, $replace = null)
 	$parsed = parse_url($url); // analyse the URL
 	if (isset($parsed['scheme']) && strtolower($parsed['scheme']) == 'https') {
 		// If it is https, change it to http
-		$url = 'http://' . substr($url, 8);
+		$url = 'https://' . substr($url, 8);
 	}
 
 	if (@getimagesize($url)) {

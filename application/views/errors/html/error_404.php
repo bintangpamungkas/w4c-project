@@ -55,13 +55,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
 <div id="container">
-	<img src="<?= SITE_URL . 'assets/img/error/404 2.png' ?>" >
+	<img src="<?= SITE_URL . 'assets/img/error/404_2.png' ?>" >
 	<div>
 		<h1 class="g-font-size-36 g-font-weight-700 g-mb-20 g-mt-minus-30"> Oops !</h1>
 		<div class="g-font-size-15 g-color-black-opacity-0_5 g-mb-50">Halaman yang anda tuju tidak dapat diakses.</div>
 	</div>
 <!--	<a class="btn btn-outline-success g-color-white--parent-hover g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-ma-10" href="--><?//= SITE_URL ?><!--">--><?//= get_lang('back_to_home') ?><!--</a>-->
-	<a class="btn btn-info g-color-white g-brd-2 text-uppercase g-rounded-50 g-px-30 g-py-9 g-ma-10" href="#" onclick="window.history.back()"><?= get_lang('back_to_previous_page') ?></a>
+	<a class="btn btn-info g-color-white g-brd-30 text-uppercase g-rounded-50 g-px-30 g-py-9 g-ma-10" href="#" onclick="window.history.back()"><?= get_lang('back_to_previous_page') ?></a>
 	<div class="<?= DEBUG_CLASS ?>">
 		<br>
 		<h1><?php echo $heading; ?></h1>

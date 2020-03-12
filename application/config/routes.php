@@ -51,6 +51,9 @@ $route['service/(:any)/join'] = "Service/join/$1";
 $route['project/(:any)'] = "Service/project/$1";
 $route['(:any)'] = "Brand/index/$1";
 
+	$route['trial_test_1'] = "Test/form";
+	$route['trial_test_2'] = "Site/trial_form/2";
+
 //error_page
 $route['404_override'] = '';
 //$route['404_override'] = 'My404';

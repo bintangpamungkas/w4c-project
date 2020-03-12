@@ -54,7 +54,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
 <div id="container">
-	<img src="<?= SITE_URL . 'assets/img/error/404 2.png' ?>" >
+	<img src="<?= SITE_URL . 'assets/img/error/404_2.png' ?>" >
 	<div>
 		<h1 class="g-font-size-36 g-font-weight-700 g-mb-20 g-mt-minus-30"> Oops !</h1>
 		<div class="g-font-size-15 g-color-black-opacity-0_5 g-mb-50">Halaman yang anda tuju tidak dapat diakses.</div>
