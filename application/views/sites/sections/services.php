@@ -41,11 +41,11 @@
 					<form id="search-form" action="<?= site_url('service') ?>" method="get">
 						<div class="autocomplete">
 							<div class="input-group pull-right">
-								<div class="input-group-prepend">
+								<div class="input-group-prepend" style="z-index: 1; margin-right: -29px;">
 									<span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1 g-pa-10 border-right-0" style="border:1px solid #0B90B9;"><i class="fa fa-map-marker"></i></span>
 								</div>
 								<input id="search-input"
-								       class="form-control form-control-md border-left-0 rounded-0 g-pa-10 pl-0 border-right-0 g-box-shadow-none "
+								       class="form-control form-control-md border-left-0 rounded-0 g-pa-10 pl-0 border-right-0 g-box-shadow-none g-pl-30"
 								       type="text"
 								       name="city"
 								       value="<?= empty($input_city) ? '' : $input_city ?>"

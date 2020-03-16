@@ -132,7 +132,7 @@
 
 					<ul class="list-inline mb-0">
 						<li class="list-inline-item g-mr-10">
-							<a class="u-icon-v3 u-icon-size--md g-bg-white-opacity-0_1 g-bg-white-opacity-0_2--hover g-color-white-opacity-0_6 g-rounded-50x" href="https://facebook.com/waste4change" target="_blank">
+							<a class="u-icon-v3 u-icon-size--md g-bg-white-opacity-0_1 g-bg-white-opacity-0_2--hover g-color-white-opacity-0_6 g-rounded-50x" href="https://www.facebook.com/sharer/sharer.php?u=https://waste4change.com/jakartas-ban-on-single-use-plastic-bag/" target="_blank">
 								<i class="fa fa-facebook"></i>
 							</a>
 						</li>

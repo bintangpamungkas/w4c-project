@@ -20524,7 +20524,7 @@ img.u-block-hover__main--magnifier-top-left {
 
 .ui-autocomplete .ui-menu-item {
   padding: 0px;
-  background-color: rgba(51, 152, 220, 0.1);
+  background-color: white;
   padding: 10px;
   border-bottom: 1px solid #d4d4d4;
 }
@@ -20543,7 +20543,7 @@ img.u-block-hover__main--magnifier-top-left {
 
 .ui-autocomplete .ui-menu-item:hover {
   color: #555;
-  background-color: white;
+  background-color: rgba(51, 152, 220, 0.1);
 }
 
 .ui-autocomplete .ui-menu-item:hover .ui-menu-item-wrapper {

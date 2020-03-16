@@ -11,6 +11,17 @@
 			$this->load->model('crud_model');
 		}
 
+		public function trial_form($value)
+		{
+			$data['title'] = 'Trial Form '.$value;
+			$data['id'] = 'site';
+			$data['subtitle'] = 'information';
+			$data['data_mode'] = 'general';
+			$data['page_heading'] = APP_NAME;
+			$data['is_bilingual'] = true;
+			$data['value'] = $value;
+			$this->render_page('sites/join_test', $data);
+		}
 		public function index()
 		{
 			$this->load->model('service_model');
