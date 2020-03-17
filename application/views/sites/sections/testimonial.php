@@ -1,5 +1,5 @@
 <section id="testimonial" class="g-bg-secondary">
-  <div class="divimage dzsparallaxer--target w-100 d-none" style="height: 110%; background-image: url(<?= base_url('assets/img/bg/img36.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
+  <div class="divimage dzsparallaxer--target w-100 d-none" style="height: 110%; background-image: url(<?= base_url(DIR_IMG.'bg/img36.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
   <div class="container <?= $this->agent->is_mobile() ? 'g-py-50' : 'g-py-70' ?>">
     <div class="text-center g-mb-50">
       <h2 class="g-font-asap g-color-black g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?=get_lang('testimonial')?></h2>
@@ -16,7 +16,7 @@
             <div class="align-height-item g-pa-30 g-mt-10" style="box-shadow: 0 0 20px rgba(0, 0, 0, 0.05)">
               <div class="row">
                 <div class="col-auto">
-                  <img class="d-inline- <?=$this->agent->is_mobile() ? ' g-width-55 g-height-55 ' : ' g-width-80 g-height-80 ' ?>rounded-circle" src="<?= base_url('assets/img/testimonial/'.$testi->testimony_photo) ?>" alt="Photo <?=$testi->testimony_name?>">
+                  <img class="d-inline- <?=$this->agent->is_mobile() ? ' g-width-55 g-height-55 ' : ' g-width-80 g-height-80 ' ?>rounded-circle" src="<?= base_url(DIR_IMG.'testimonial/'.$testi->testimony_photo) ?>" alt="Photo <?=$testi->testimony_name?>">
                 </div>
                 <div class="col">
                   <!-- <i class="d-block g-color-info g-font-size-50 g-line-height-0_7 g-pos-rel g-top-15 g-mb-20">&#8220;</i> -->

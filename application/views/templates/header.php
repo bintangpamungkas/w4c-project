@@ -44,7 +44,7 @@
 
 				<!-- Logo -->
 				<a href="<?= W4C_URL ?>" class="navbar-brand">
-					<img src="<?= base_url('assets/img/logo/logo-W4C_179_web.png') ?>" alt="Image Description" style="height: <?= $this->agent->is_mobile() ? '29px' : '39px' ?>">
+					<img src="<?= base_url(DIR_IMG.'logo/logo-W4C_179_web.png') ?>" alt="Image Description" style="height: <?= $this->agent->is_mobile() ? '29px' : '39px' ?>">
 				</a>
 
 				<?php

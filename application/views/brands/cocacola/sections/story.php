@@ -29,19 +29,19 @@
                     'title' => 'Why A World Without Waste Is Possible',
                     'subtitle' => '',
                     'url' => 'https://www.coca-colacompany.com/stories/why-a-world-without-waste-is-possible',
-                    'story_bg' => base_url('assets/img/bg/brands/cocacola/media/WorldWithoutWaste3.rendition.940.456.jpg'),
+                    'story_bg' => base_url(DIR_IMG.'bg/brands/cocacola/media/WorldWithoutWaste3.rendition.940.456.jpg'),
                 ],
                 [
                     'title' => 'Mengurangi Penggunaan Plastik dengan Teknologi ASSP',
                     'subtitle' => '',
                     'url' => 'https://www.cocacola.co.id/cerita/coca-cola-indonesia-memperkenalkan-teknologi-assp-yang-mengurang-penggunaan-plastik-lebih-dari-40-persen',
-                    'story_bg' => base_url('assets/img/bg/brands/cocacola/media/Coca-Cola-ASSP-2.rendition.598.336.jpg'),
+                    'story_bg' => base_url(DIR_IMG.'bg/brands/cocacola/media/Coca-Cola-ASSP-2.rendition.598.336.jpg'),
                 ],
                 [
                     'title' => 'Ellen Mac Arthur Foundation Our Oceans Pledge',
                     'subtitle' => '',
                     'url' => 'https://www.coca-colacompany.com/press-center/company-statements/ellen-macarthur-foundation-our-oceans-pledge',
-                    'story_bg' => base_url('assets/img/bg/brands/cocacola/media/JB4A0988.rendition.598.336.jpg'),
+                    'story_bg' => base_url(DIR_IMG.'bg/brands/cocacola/media/JB4A0988.rendition.598.336.jpg'),
                 ],
             ];
 

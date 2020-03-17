@@ -23,7 +23,7 @@ echo $this->session->flashdata('user_message');
                             <div class="thumbnail">
                                 <button id="btn-choose-filex" type="button" class="hidden btn-social btn-twitter-filled btn-circle" style="position: absolute;right: 25px;margin-top: 10px"><i class="fa fa-image"></i></button>
                                 <form class="submit_form_file" data-url="<?= site_url('User/uploadImage') ?>" enctype="multipart/form-data" method="post" accept-charset="iso-8859-1" style="margin-bottom: 5px">
-                                    <img class="img-upload" src="<?= file_exists('assets/img/users/'.$login_user->photo)==FALSE || $login_user->photo=='' ? base_url('assets/img/sampahmuda/no-photo.jpg') : base_url('assets/img/users/'.$user->photo) ?>" alt="profile-image" style="height: 160px;width: 160px;border-radius: 50%">
+                                    <img class="img-upload" src="<?= file_exists(DIR_IMG.'users/'.$login_user->photo)==FALSE || $login_user->photo=='' ? base_url(DIR_IMG.'sampahmuda/no-photo.jpg') : base_url(DIR_IMG.'users/'.$user->photo) ?>" alt="profile-image" style="height: 160px;width: 160px;border-radius: 50%">
                                     <div style="position: absolute;top: 115px;right: 15px;">
                                         <button type="button" id="btn-choose-file" class="btn btn-primary-filled box-to-radius-50" style="border-radius: 50px !important;padding: 13px 7px;"><i class="fa fa-image"></i></button>
                                     </div>

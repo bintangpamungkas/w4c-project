@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-8">
-      <img src="<?php echo base_url('assets/img/inline/career-banner.svg') ?>" alt=""  hei>
+      <img src="<?php echo base_url(DIR_IMG.'inline/career-banner.svg') ?>" alt=""  hei>
       <div class="form-group g-mb-20 text-center" style="padding: 15px 8px;">
         <h2 class="text-uppercase"><?= lang('career_title') ?></h2>
         <h6 class=""><?= lang('career_subtitle') ?></h6>

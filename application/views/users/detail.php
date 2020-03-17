@@ -24,7 +24,7 @@ echo $this->session->flashdata('user_message');
 
                             <div class="thumbnail">
                                 <button id="btn-choose-filex" type="button" class="hidden btn-social btn-twitter-filled btn-circle" style="position: absolute;right: 25px;margin-top: 10px"><i class="fa fa-image"></i></button>
-                                <img class="img-upload" src="<?= $user->photo!='' ? base_url('assets/img/users/'.$user->photo) : base_url('assets/img/products/no-image.png') ?>" alt="profile-image" style="height: 153px;width: 153px">
+                                <img class="img-upload" src="<?= $user->photo!='' ? base_url(DIR_IMG.'users/'.$user->photo) : base_url(DIR_IMG.'products/no-image.png') ?>" alt="profile-image" style="height: 153px;width: 153px">
                                 <form class="submit_form_image_user" data-url="<?= site_url('User/uploadImage') ?>" enctype="multipart/form-data" method="post" accept-charset="iso-8859-1">
                                     <div class="hidden">
                                         <input name="user_id" value="<?= ($user->user_id) ?>">

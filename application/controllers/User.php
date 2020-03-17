@@ -368,7 +368,7 @@ class User extends MY_Controller
         $new_file_name=$unique_id.'_img_user_'.$param_id.'.'.$original_file_extension;
 
         //header('Content-Type: application/json');
-        $config['upload_path']   = 'assets/img/users/';
+        $config['upload_path']   = DIR_IMG.'users/';
         $config['allowed_types'] = 'gif|jpg|png';
         $config['max_size']      = 1024;
         $config['file_name']     = $new_file_name;

@@ -291,7 +291,7 @@
                                         foreach ($x['waste'] as $waste):
                                             ?>
                                             <div class="col-md-3 col-6 u-block-hover pb-2">
-                                                <img class="img-fluid u-block-hover__main--zoom-v1" src="<?= base_url('assets/img/waste/all/'.$waste['waste_image']) ?>">
+                                                <img class="img-fluid u-block-hover__main--zoom-v1" src="<?= base_url(DIR_IMG.'waste/all/'.$waste['waste_image']) ?>">
                                                 <div class="text-center mt-4"><?= $waste['waste_name'] ?></div>
                                             </div>
                                             <?php

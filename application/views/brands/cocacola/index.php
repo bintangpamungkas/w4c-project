@@ -1,7 +1,7 @@
 
 <!-- Promo Block -->
 <section id="welcome" class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
-    <div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center" style="height: 120%; background-image: url(<?= base_url('assets/img/bg/'.$brand_id.'_bg.jpg') ?>);"></div>
+    <div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center" style="height: 120%; background-image: url(<?= base_url(DIR_IMG.'bg/'.$brand_id.'_bg.jpg') ?>);"></div>
 
     <div class="<?= $this->agent->is_mobile() ? 'g-py-130 mb-5' : 'g-py-200' ?>" style="background-color: rgba(0,0,0,0.5)">
         <div class="container">

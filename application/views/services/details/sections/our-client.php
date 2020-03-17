@@ -1,7 +1,7 @@
 <?php if (!empty($clients)): ?>
 	<section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-overflow-hidden" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
 		<div id="<?= $section_slug ?>" style="height: 10px;position: absolute;width: 80%;margin-top: -100px"></div>
-		<div class="divimage dzsparallaxer--target w-100" style="height: 130%; background-image: url(<?= base_url('assets/img/bg/sleek_bg_image_black.png') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
+		<div class="divimage dzsparallaxer--target w-100" style="height: 130%; background-image: url(<?= base_url(DIR_IMG.'bg/sleek_bg_image_black.png') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
 		<div style="background:radial-gradient(circle farthest-side at 80% 60%, rgba(244,244,244,0.91), rgba(244,244,244,0.92))">
 			<div class="container <?= $this->agent->is_mobile() ? 'g-pt-80 g-pb-50' : 'g-py-70' ?>">
 				<div class="text-center g-mb-50">
@@ -31,7 +31,7 @@
 								?>
 								<div class="<?= $carousel == true ? '' : ($this->agent->is_mobile() ? 'col-6' : 'col-3') ?> text-center">
 									<div class="g-bg-white rounded g-pa-10 <?= $this->agent->is_mobile() ? 'g-mx-3 g-mb-5' : 'g-px-30 g-mx-10 g-mb-10' ?>">
-										<img class="img-fluid mx-auto" src="<?= get_image('assets/img/service/' . $service_id . '/client/' . $client->client_logo) ?>" alt="Logo <?= $client->client_name ?>">
+										<img class="img-fluid mx-auto" src="<?= get_image(DIR_IMG.'service/' . $service_id . '/client/' . $client->client_logo) ?>" alt="Logo <?= $client->client_name ?>">
 									</div>
 									<small><?= $client->client_name ?></small>
 								</div>

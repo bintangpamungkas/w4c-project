@@ -9,13 +9,13 @@
             <tr>
                 <td style="text-align: right">
                     <a href="<?= $company->facebook ?>">
-                        <img src="<?= base_url('assets/img/sampahmuda/facebook.png') ?>" style="width: 30px">
+                        <img src="<?= base_url(DIR_IMG.'sampahmuda/facebook.png') ?>" style="width: 30px">
                     </a>
                 </td>
                 <td style="width: 10px"></td>
                 <td style="text-align: left">
                     <a href="<?= $company->instagram ?>">
-                        <img src="<?= base_url('assets/img/sampahmuda/instagram.png') ?>" style="width: 30px">
+                        <img src="<?= base_url(DIR_IMG.'sampahmuda/instagram.png') ?>" style="width: 30px">
                     </a>
                 </td>
             </tr>

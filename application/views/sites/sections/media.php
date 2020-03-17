@@ -1,5 +1,5 @@
 <section class="g-bg-white dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-overflow-hidden" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
-    <div class="divimage dzsparallaxer--target w-100 d-none" style="height: 130%; background-image: url(<?= base_url('assets/img/bg/img36.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
+    <div class="divimage dzsparallaxer--target w-100 d-none" style="height: 130%; background-image: url(<?= base_url(DIR_IMG.'bg/img36.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
     <div class="container <?= $this->agent->is_mobile() ? 'g-pt-75 g-pb-50' : 'g-pt-140 g-pb-70' ?>">
         <div class="text-center g-mb-50">
             <h2 class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= strtoupper(lang('as_seen_title')) ?></h2>
@@ -610,7 +610,7 @@
                         ?>
                         <a target="_blank" class="text-black-important" href="<?= $media['media_url'] ?>">
                             <div class="g-brd-left g-brd-bottom g-brd-right g-brd-top g-brd-gray-light-v4 g-py-40--lg g-py-20 text-center">
-                                <img class="img-fluid g-transition-0_2 g-px-50--lg g-px-10" src="<?= base_url('assets/img/logo/media/'.$media['media_photo'].'.jpg') ?>" alt="Image Description">
+                                <img class="img-fluid g-transition-0_2 g-px-50--lg g-px-10" src="<?= base_url(DIR_IMG.'logo/media/'.$media['media_photo'].'.jpg') ?>" alt="Image Description">
                                 <h6><?= $media['media_name'] ?></h6>
                             </div>
                         </a>

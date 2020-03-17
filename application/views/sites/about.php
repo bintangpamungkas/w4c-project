@@ -48,8 +48,8 @@
                 foreach ($gallery as $gallery):
                 ?>
                 <div class="col-md-4 col-6 g-px-5 g-mb-10">
-                    <a class="js-fancybox" href="<?= base_url('assets/img/bg/about/'.$gallery['image']) ?>" title="Lightbox Gallery" data-fancybox-gallery="lightbox-gallery" data-fancybox-speed="500" data-fancybox-slide-speed="1000">
-                        <div style="background: url(<?= base_url('assets/img/bg/about/'.$gallery['image']) ?>);height: 200px;background-size: cover;background-position: center"></div>
+                    <a class="js-fancybox" href="<?= base_url(DIR_IMG.'bg/about/'.$gallery['image']) ?>" title="Lightbox Gallery" data-fancybox-gallery="lightbox-gallery" data-fancybox-speed="500" data-fancybox-slide-speed="1000">
+                        <div style="background: url(<?= base_url(DIR_IMG.'bg/about/'.$gallery['image']) ?>);height: 200px;background-size: cover;background-position: center"></div>
                     </a>
                 </div>
                 <?php

@@ -82,7 +82,7 @@
                             <div class="js-slide g-pb-70 g-pb-100--sm" data-title="<?= $x['type'] ?>">
                                 <!-- Dynamic Process -->
                                 <div class="row no-gutters">
-                                    <div class="col-lg-8 g-min-height-200 g-bg-size-cover g-bg-pos-center" style="background-image: url(<?= base_url('assets/img/bg/'.$x_image)?>);"></div>
+                                    <div class="col-lg-8 g-min-height-200 g-bg-size-cover g-bg-pos-center" style="background-image: url(<?= base_url(DIR_IMG.'bg/'.$x_image)?>);"></div>
                                     <div class="col-lg-4 g-bg-black-opacity-0_1 g-pa-30 g-pa-50--sm">
                                         <h3 class="h3 g-color-blue g-font-weight-700 g-mb-10"><small class="g-font-size-14"><?= lang('treatment_for') ?> </small><br><?= $x['type'] ?></h3>
 

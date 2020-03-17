@@ -12,9 +12,9 @@
                     <?php if($nav['for']=='language'):
                         if(!$this->session->userdata('language') || $this->session->userdata('language')=='id'):
                             ?>
-                            <img src="<?= base_url('assets/img/icons/flag_indonesia.png') ?>" style="border: 1px solid rgba(0,0,0,0.1);height: 13px;margin-bottom: 2px">
+                            <img src="<?= base_url(DIR_IMG.'icons/flag_indonesia.png') ?>" style="border: 1px solid rgba(0,0,0,0.1);height: 13px;margin-bottom: 2px">
                         <?php else: ?>
-                            <img src="<?= base_url('assets/img/icons/flag_england.png') ?>" style="border: 1px solid rgba(0,0,0,0.1);height: 13px;margin-bottom: 2px">
+                            <img src="<?= base_url(DIR_IMG.'icons/flag_england.png') ?>" style="border: 1px solid rgba(0,0,0,0.1);height: 13px;margin-bottom: 2px">
                         <?php endif; ?>
                     <?php endif; ?>
                     <?= $nav['title'] ?>

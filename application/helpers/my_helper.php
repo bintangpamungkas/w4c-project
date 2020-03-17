@@ -50,10 +50,10 @@ function get_image($image, $replace = null)
 			if (file_exists($replace)) {
 				return $replace;
 			} else {
-				return base_url('assets/img/error/1x2.png');
+				return base_url(DIR_IMG.'error/1x2.png');
 			}
 		} else {
-			return base_url('assets/img/error/1x2.png');
+			return base_url(DIR_IMG.'error/1x2.png');
 		}
 	}
 }
@@ -578,7 +578,7 @@ function meta_data($activation)
 				<meta property="og:site_name" content="<?php echo APP_NAME ?>"/>
 				<meta property="og:title" content="<?php echo $param['title_2'] ?>">
 				<meta property="og:description" content="<?php echo $param['description_2'] ?>"/>
-				<meta property="og:image" content="<?= base_url('assets/img/logo/favicon.jpg') ?>">
+				<meta property="og:image" content="<?= base_url(DIR_IMG.'logo/favicon.jpg') ?>">
 				<meta property="og:image:type" content="image/jpg">
 				<meta property="og:image:width" content="1024">
 				<meta property="og:image:height" content="1024">

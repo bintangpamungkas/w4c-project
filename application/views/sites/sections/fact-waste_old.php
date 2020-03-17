@@ -1,7 +1,7 @@
 
 <!-- Blog Grid Blocks -->
 <section id="fact" class="g-bg-gray-light-v5 dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-overflow-hidden" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
-    <div class="divimage dzsparallaxer--target w-100 d-none" style="height: 130%; background-image: url(<?= base_url('assets/img/bg/img36.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
+    <div class="divimage dzsparallaxer--target w-100 d-none" style="height: 130%; background-image: url(<?= base_url(DIR_IMG.'bg/img36.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
     <div class="container g-pt-140">
         <div class="text-center g-mb-50">
             <h2 class="g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= strtoupper(lang('fact_title')) ?></h2>
@@ -54,7 +54,7 @@
             <div id="fact-carousel" class="owl-theme" style="margin: 0 0 30px 0!important;">
                 <article class="d-flex flex-wrap text-center g-color-white g-font-size-16">
                     <div class="order-<?= $this->agent->is_mobile() ? '2' : '1' ?> w-100">
-                        <img class="w-100" src="<?= base_url('assets/img/bg/sampah_laut.jpg') ?>" alt="Image Description">
+                        <img class="w-100" src="<?= base_url(DIR_IMG.'bg/sampah_laut.jpg') ?>" alt="Image Description">
                     </div>
                     <div class="order-<?= $this->agent->is_mobile() ? '1' : '2' ?> w-100 u-ns-bg-v1-<?= $this->agent->is_mobile() ? 'bottom' : 'top' ?> g-bg-primary g-z-index-1 g-py-50 g-px-50 g-min-height-360" style="background: #0babce!important;">
                         <h3 class="h5 g-mb-20 g-font-weight-700 text-uppercase d-none">FACT #2</h3>
@@ -68,7 +68,7 @@
                 </article>
                 <article class="d-flex flex-wrap text-center g-font-size-16">
                     <div class="order-2 w-100">
-                        <img class="w-100" src="<?= base_url('assets/img/bg/fact2.jpg') ?>" alt="Image Description">
+                        <img class="w-100" src="<?= base_url(DIR_IMG.'bg/fact2.jpg') ?>" alt="Image Description">
                     </div>
                     <div class="order-1 w-100 u-ns-bg-v1-bottom g-bg-white g-z-index-1 g-py-50 g-px-50 g-min-height-360">
                         <h3 class="h5 g-color-info g-font-weight-700 text-uppercase g-mb-20 d-none">FACT #1</h3>
@@ -82,7 +82,7 @@
                 </article>
                 <article class="d-flex flex-wrap text-center g-color-white g-font-size-16">
                     <div class="order-<?= $this->agent->is_mobile() ? '2' : '1' ?> w-100">
-                        <img class="w-100" src="<?= base_url('assets/img/bg/fact3.jpg') ?>" alt="Image Description">
+                        <img class="w-100" src="<?= base_url(DIR_IMG.'bg/fact3.jpg') ?>" alt="Image Description">
                     </div>
                     <div class="order-<?= $this->agent->is_mobile() ? '1' : '2' ?> w-100 u-ns-bg-v1-<?= $this->agent->is_mobile() ? 'bottom' : 'top' ?> g-bg-primary g-z-index-1 g-py-50 g-px-50 g-min-height-360" style="background: #0babce!important;">
                         <h3 class="h5 g-mb-20 g-font-weight-700 text-uppercase d-none">FACT #2</h3>
@@ -96,7 +96,7 @@
                 </article>
                 <article class="d-flex flex-wrap text-center g-font-size-16">
                     <div class="order-2 w-100">
-                        <img class="w-100" src="<?= base_url('assets/img/bg/fact4.jpg') ?>" alt="Image Description">
+                        <img class="w-100" src="<?= base_url(DIR_IMG.'bg/fact4.jpg') ?>" alt="Image Description">
                     </div>
                     <div class="order-1 w-100 u-ns-bg-v1-bottom g-bg-white g-z-index-1 g-py-50 g-px-50 g-min-height-360">
                         <h3 class="h5 g-color-info g-font-weight-700 text-uppercase g-mb-20 d-none">FACT #3</h3>

@@ -25,31 +25,31 @@
 
             $story_image=[
                 [
-                    'story_bg' => base_url('assets/img/bg/brands/tetrapak/tetrapak_recycling.jpg'),
+                    'story_bg' => base_url(DIR_IMG.'bg/brands/tetrapak/tetrapak_recycling.jpg'),
                 ],
                 [
-                    'story_bg' => base_url('assets/img/bg/brands/tetrapak/tetra-prisma-aseptic-package-fsc-label.jpg'),
+                    'story_bg' => base_url(DIR_IMG.'bg/brands/tetrapak/tetra-prisma-aseptic-package-fsc-label.jpg'),
                 ],
                 [
-                    'story_bg' => base_url('assets/img/bg/brands/tetrapak/Event_FSC_Friday.jpg'),
+                    'story_bg' => base_url(DIR_IMG.'bg/brands/tetrapak/Event_FSC_Friday.jpg'),
                 ],
                 [
-                    'story_bg' => base_url('assets/img/bg/brands/tetrapak/Event_FSC_Friday_Dropbox.jpg'),
+                    'story_bg' => base_url(DIR_IMG.'bg/brands/tetrapak/Event_FSC_Friday_Dropbox.jpg'),
                 ],
                 [
-                    'story_bg' => base_url('assets/img/bg/brands/tetrapak/Event_Hello_Nature_2017_1.jpg'),
+                    'story_bg' => base_url(DIR_IMG.'bg/brands/tetrapak/Event_Hello_Nature_2017_1.jpg'),
                 ],
                 [
-                    'story_bg' => base_url('assets/img/bg/brands/tetrapak/Event_Visit_Aisle.jpg'),
+                    'story_bg' => base_url(DIR_IMG.'bg/brands/tetrapak/Event_Visit_Aisle.jpg'),
                 ],
                 [
-                    'story_bg' => base_url('assets/img/bg/brands/tetrapak/Hasil_Key_Chain.jpg'),
+                    'story_bg' => base_url(DIR_IMG.'bg/brands/tetrapak/Hasil_Key_Chain.jpg'),
                 ],
                 [
-                    'story_bg' => base_url('assets/img/bg/brands/tetrapak/Hasil_Note_Book.jpg'),
+                    'story_bg' => base_url(DIR_IMG.'bg/brands/tetrapak/Hasil_Note_Book.jpg'),
                 ],
                 [
-                    'story_bg' => base_url('assets/img/bg/brands/tetrapak/Hasil_Rumah_Baca_1.jpg'),
+                    'story_bg' => base_url(DIR_IMG.'bg/brands/tetrapak/Hasil_Rumah_Baca_1.jpg'),
                 ],
             ];
             ?>

@@ -44,41 +44,41 @@ header("Pragma: no-cache");
 	} ?>
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="<?= base_url('assets/img/logo/favicon.png') ?>">
+	<link rel="shortcut icon" href="<?= base_url(DIR_IMG.'logo/favicon.png') ?>">
 	<!-- Google Fonts -->
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C500%2C600%2C700%7CPlayfair+Display%7CRoboto%7CRaleway%7CSpectral%7CRubik">
 	<link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
 	<!-- CSS Global Compulsory -->
-	<link rel="stylesheet" href="<?= base_url('assets/vendor/bootstrap/bootstrap.min.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/vendor/bootstrap/offcanvas.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'bootstrap/bootstrap.min.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'bootstrap/offcanvas.css') ?>">
 	<!-- CSS Global Icons -->
-	<link rel="stylesheet" href="<?= base_url('assets/vendor/icon-awesome/css/font-awesome.min.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/vendor/icon-line/css/simple-line-icons.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/vendor/icon-etlinefont/style.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/vendor/icon-line-pro/style.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/vendor/icon-hs/style.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/vendor/dzsparallaxer/dzsparallaxer.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/vendor/dzsparallaxer/dzsscroller/scroller.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/vendor/dzsparallaxer/advancedscroller/plugin.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/vendor/animate.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/vendor/hamburgers/hamburgers.min.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/vendor/hs-megamenu/src/hs.megamenu.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/vendor/slick-carousel/slick/slick.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/vendor/fancybox/jquery.fancybox.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'icon-awesome/css/font-awesome.min.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'icon-line/css/simple-line-icons.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'icon-etlinefont/style.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'icon-line-pro/style.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'icon-hs/style.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'dzsparallaxer/dzsparallaxer.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'dzsparallaxer/dzsscroller/scroller.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'dzsparallaxer/advancedscroller/plugin.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'animate.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'hamburgers/hamburgers.min.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'hs-megamenu/src/hs.megamenu.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'malihu-scrollbar/jquery.mCustomScrollbar.min.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'slick-carousel/slick/slick.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'fancybox/jquery.fancybox.css') ?>">
 
-	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/vendor/owl-carousel/owl.carousel.css') ?>" media="screen">
+	<link rel="stylesheet" type="text/css" href="<?= base_url(DIR_VENDOR.'owl-carousel/owl.carousel.css') ?>" media="screen">
 
 	<!-- CSS Unify -->
-	<link rel="stylesheet" href="<?= base_url('assets/css/unify-core.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/css/unify-components.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/css/unify-globalsv2.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/vendor/custombox/custombox.min.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/vendor/jquery-ui/themes/base/jquery-ui.min.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_CSS.'unify-core.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_CSS.'unify-components.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_CSS.'unify-globalsv2.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'custombox/custombox.min.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'jquery-ui/themes/base/jquery-ui.min.css') ?>">
 
 	<!-- CSS Customization -->
-	<link rel="stylesheet" href="<?= base_url('assets/css/customv2.css') ?>">
-	<script src="<?= base_url('assets/vendor/jquery/jquery.min.js') ?>"></script>
+	<link rel="stylesheet" href="<?= base_url(DIR_CSS.'customv2.css') ?>">
+	<script src="<?= base_url(DIR_VENDOR.'jquery/jquery.min.js') ?>"></script>
 	<?php if (IS_ONLINE == 1) {
 
 		// <!-- Hotjar Tracking -->
@@ -154,9 +154,9 @@ header("Pragma: no-cache");
 				<div class="modal-body welcome_list g-pa-0">
 					<a class="dismiss-modal" href="<?php echo POIN_ADES_URL ?>">
 						<?php if ($this->agent->is_mobile()): ?>
-							<img src="<?php echo base_url('assets/img/bg/services/ades/3-popup-mobile.jpg') ?>" class="img-fluid">
+							<img src="<?php echo base_url(DIR_IMG.'bg/services/ades/3-popup-mobile.jpg') ?>" class="img-fluid">
 						<?php else: ?>
-							<img src="<?php echo base_url('assets/img/bg/services/ades/3-popup-desktop.jpg') ?>" style="width:100%">
+							<img src="<?php echo base_url(DIR_IMG.'bg/services/ades/3-popup-desktop.jpg') ?>" style="width:100%">
 						<?php endif; ?>
 					</a>
 				</div>

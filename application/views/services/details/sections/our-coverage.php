@@ -10942,6 +10942,6 @@
 
 	</script>
 	<!--	<script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js">-->
-	<script src="<?= base_url() ?>assets/vendor/markerclusterer/markerclustererplus.min.js"></script>
+	<script src="<?= base_url(DIR_VENDOR.'markerclusterer/markerclustererplus.min.js') ?>"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2mKD5ZgMQMlX8JwbhpzkyiGdNXvxl6PY&callback=initMap" async defer></script>
 <?php endif; ?>

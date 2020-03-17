@@ -88,7 +88,7 @@
                                 ?>
                                 <li class="d-flex justify-content-start g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-10">
                                     <div class="g-mt-2">
-                                        <img class="g-width-50 g-height-50 rounded-circle" src="<?= base_url('assets/img-temp/100x100/img17.jpg') ?>" alt="Image Description">
+                                        <img class="g-width-50 g-height-50 rounded-circle" src="<?= base_url(DIR_ASSET.'/img-temp/100x100/img17.jpg') ?>" alt="Image Description">
                                     </div>
                                     <div class="align-self-center g-px-10" style="width: 100%">
                                         <span class="u-label u-label--sm g-px-10 pull-right g-color-black-opacity-0_3">10 KM</span>

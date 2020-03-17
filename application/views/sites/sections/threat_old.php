@@ -114,7 +114,7 @@
                             <div class="tab-pane fade show <?= $x['number']==1 ? 'active' : '' ?>" id="nav-1-1-default-hor-left-big-icons-notext--<?= $x['number'] ?>" role="tabpanel">
                                 <div class="row no-gutters">
                                     <div class="col-lg-8 g-min-height-400 g-bg-size-cover g-bg-pos-center py-4 px-4">
-                                        <img class="img-fluid" src="<?= base_url('assets/img/bg/'.$x_image)?>">
+                                        <img class="img-fluid" src="<?= base_url(DIR_IMG.'bg/'.$x_image)?>">
                                     </div>
                                     <div class="col-lg-4 g-pa-30 g-pa-50--sm">
                                         <h3 class="h3 g-color-blue g-font-weight-700 g-mb-10"><small class="g-font-size-14"><?= lang('treatment_for') ?> </small><br><?= $x['type'] ?></h3>
@@ -138,7 +138,7 @@
 
                 <div class="shortcode-scripts">
                     <!-- JS Unify -->
-                    <script  src="<?= base_url('assets/js/components/hs.tabs.js') ?>"></script>
+                    <script  src="<?= base_url(DIR_JS.'/components/hs.tabs.js') ?>"></script>
 
                     <!-- JS Plugins Init. -->
                     <script >

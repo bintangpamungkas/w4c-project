@@ -12,11 +12,11 @@
               if($nav['for']=='language'){
                 if(!$this->session->userdata('language') || $this->session->userdata('language')=='id'){
                   ?>
-                  <img src="<?= base_url('assets/img/icons/flag_indonesia.png') ?>" style="border: 1px solid rgba(0,0,0,0.1);height: 13px;margin-bottom: 2px">
+                  <img src="<?= base_url(DIR_IMG.'icons/flag_indonesia.png') ?>" style="border: 1px solid rgba(0,0,0,0.1);height: 13px;margin-bottom: 2px">
                   <?php
                 }else{
                   ?>
-                  <img src="<?= base_url('assets/img/icons/flag_england.png') ?>" style="border: 1px solid rgba(0,0,0,0.1);height: 13px;margin-bottom: 2px">
+                  <img src="<?= base_url(DIR_IMG.'icons/flag_england.png') ?>" style="border: 1px solid rgba(0,0,0,0.1);height: 13px;margin-bottom: 2px">
                   <?php
                 }
               } // end $nav['for']=='language'
@@ -170,7 +170,7 @@
       ?>
       <div class="hs-has-sub-menu nav-item g-mx-20--lg" data-animation-in="fadeIn" data-animation-out="fadeOut" data-position="right">
         <a href="javascript:void()" class="nav-change-scroll g-color-black g-font-size-12 nav-link px-0  g-color-white" style="line-height: 1" aria-haspopup="true" aria-expanded="false">
-          <img src="https://localhost/w4c/official/assets/img/icons/flag_indonesia.png" style="border: 1px solid rgba(0,0,0,0.1);height: 13px;margin-bottom: 2px">
+          <img src="<?= base_url(DIR_IMG.'icons/flag_indonesia.png')?>" style="border: 1px solid rgba(0,0,0,0.1);height: 13px;margin-bottom: 2px">
           ID
         </a>
         <ul class="hs-sub-menu list-unstyled box-shadow-down g-mt-14 g-min-width-65 animated hs-position-right fadeOut" id="nav-submenu--features" aria-labelledby="nav-link--features" style="display: none;">

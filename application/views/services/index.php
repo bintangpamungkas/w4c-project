@@ -103,8 +103,8 @@
 								?>
 								<div class="bg-white g-my-20 box-shadow-down">
 									<div
-										style="height: 200px;background: url(<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/thumbnail.jpg', base_url('assets/img/error/1x2.png')) ?>);background-size: cover;"></div>
-									<!-- <img class="img-fluid w-100" src="<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/thumbnail.jpg', base_url('assets/img/error/1x2.png')) ?>" alt="<?= $service->service_name . ' image' ?>"> -->
+										style="height: 200px;background: url(<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/thumbnail.jpg', base_url(DIR_IMG.'error/1x2.png')) ?>);background-size: cover;"></div>
+									<!-- <img class="img-fluid w-100" src="<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/thumbnail.jpg', base_url(DIR_IMG.'error/1x2.png')) ?>" alt="<?= $service->service_name . ' image' ?>"> -->
 									<div class="bg-white g-mx-20 g-pa-20" style=" margin-top: -40px;">
 								<span
 									class="g-color-black-opacity-0_8 g-font-weight-600 g-font-size-12 text-uppercase"><?= strtolower($service->service_category_name) == strtolower($service->service_name) ? 'GENERAL' : $service->service_category_name ?></span>
@@ -143,7 +143,7 @@
 											<?php if ($i % 2 == 1) { ?>
 												<div class="col-6">
 													<img class="img-fluid w-100 h-100"
-													     src="<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/thumbnail.jpg', base_url('assets/img/error/1x2.png')) ?>"
+													     src="<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/thumbnail.jpg', base_url(DIR_IMG.'error/1x2.png')) ?>"
 													     alt="<?= $service->service_name . ' image' ?>"
 													     style="-webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));">
 												</div>
@@ -205,7 +205,7 @@
 												</div>
 												<div class="col-6">
 													<img class="img-fluid w-100 h-100"
-													     src="<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/thumbnail.jpg', base_url('assets/img/error/1x2.png')) ?>"
+													     src="<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/thumbnail.jpg', base_url(DIR_IMG.'error/1x2.png')) ?>"
 													     alt="<?= $service->service_name . ' image' ?>"
 													     style="-webkit-mask-image: -webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));">
 												</div>

@@ -16,7 +16,7 @@
 			</div>
 			<div class="text-center">
 				<div class="image-icon">
-					<img src="<?= base_url('assets/img/sampahmuda/welcome.png') ?>">
+					<img src="<?= base_url(DIR_IMG.'sampahmuda/welcome.png') ?>">
 				</div>
 			</div>
 			<div class="text-center">
@@ -41,7 +41,7 @@
 			</div>
 			<div class="text-center">
 				<div class="image-icon">
-					<img src="<?= base_url('assets/img/sampahmuda/welcome.png') ?>">
+					<img src="<?= base_url(DIR_IMG.'sampahmuda/welcome.png') ?>">
 				</div>
 			</div>
 			
@@ -56,7 +56,7 @@
 			</div>
 			<div class="text-center">
 				<div class="image-icon">
-					<img src="<?= base_url('assets/img/sampahmuda/welcome.png') ?>">
+					<img src="<?= base_url(DIR_IMG.'sampahmuda/welcome.png') ?>">
 				</div>
 			</div>
 			<div class="text-center">
@@ -78,7 +78,7 @@
 			</div>
 			<div class="text-center">
 				<div class="image-icon">
-					<img src="<?= base_url('assets/img/sampahmuda/welcome.png') ?>">
+					<img src="<?= base_url(DIR_IMG.'sampahmuda/welcome.png') ?>">
 				</div>
 			</div>
 			<div class="text-center">
@@ -105,7 +105,7 @@
 			</div>
 			<div class="text-center">
 				<div class="image-icon">
-					<img src="<?= base_url('assets/img/sampahmuda/welcome.png') ?>">
+					<img src="<?= base_url(DIR_IMG.'sampahmuda/welcome.png') ?>">
 				</div>
 			</div>
 			<?php

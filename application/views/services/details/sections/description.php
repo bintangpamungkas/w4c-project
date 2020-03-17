@@ -10,7 +10,7 @@
             <span class="g-font-asap g-color-black-dark-v2 g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-20' : '' ?>"><?=$section_name?></span>
               <hr class="g-width-50 g-my-5 g-brd-2 g-brd-blue">
             </div>
-          <div style="background: url('<?= get_image('assets/img/project/'.$service_id.'/about.jpg') ?>');height: 200px;background-size: cover"></div>
+          <div style="background: url('<?= get_image(DIR_IMG.'project/'.$service_id.'/about.jpg') ?>');height: 200px;background-size: cover"></div>
         </div>    
         <div class="col-md-6">
           <div class="g-mb-5--lg g-px-20" style="margin-top:-30px">
@@ -24,7 +24,7 @@
       }else{
         ?>
           <div class="col-lg-6 g-mb-30" style="z-index:2">
-            <div style="background: url('<?= get_image('assets/img/project/'.$service_id.'/about.jpg') ?>');height: 250px;background-size: cover;"></div>
+            <div style="background: url('<?= get_image(DIR_IMG.'project/'.$service_id.'/about.jpg') ?>');height: 250px;background-size: cover;"></div>
           </div>
           <div class="col-md-6 g-mb-30">
             <div class="g-ml-10--lg">

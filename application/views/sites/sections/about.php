@@ -1,7 +1,7 @@
 
 <section id="about" class="<?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-5' : 'g-pt-140 g-pb-80' ?>">
     <div class="container">
-        <div class="g-pb-70" style="background-image: url(<?= base_url('assets/img/maps/map3.png') ?>);background-repeat: no-repeat">
+        <div class="g-pb-70" style="background-image: url(<?= base_url(DIR_IMG.'maps/map3.png') ?>);background-repeat: no-repeat">
 
             <div class="row">
                 <div class="col-md-4">
@@ -14,7 +14,7 @@
                     </header>
 
                     <div class="<?= $this->agent->is_mobile() ? '' : 'd-none' ?>">
-                        <div class="g-bg-size-cover g-min-height-300 g-pos-rel rounded this_center_container" data-bg-img-src="<?= base_url('assets/img/bg/W4C_RPM_area_pemilahan_2.jpg') ?>" style="box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);background-position-x: -80px">
+                        <div class="g-bg-size-cover g-min-height-300 g-pos-rel rounded this_center_container" data-bg-img-src="<?= base_url(DIR_IMG.'bg/W4C_RPM_area_pemilahan_2.jpg') ?>" style="box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);background-position-x: -80px">
                             <a class="js-fancybox g-mr-10 g-mb-15 text-center" href="http://www.youtube.com/embed/4ad3mhRsdFw?autoplay=1" data-fancybox-speed="350">
                                 <span class="this_center g-bg-red g-col u-icon-v3 g-mt-120 u-icon-size--lg u-block-hover--scale g-font-size-18 g-rounded-50x g-cursor-pointer" style="border: 3px solid #ffffff63;">
                                     <i class="g-pos-rel g-left-2 fa fa-play g-color-white"></i>
@@ -63,7 +63,7 @@
                                 </h4>
                             </div>
                         </div>
-                        <div class="col-md-6 g-bg-size-cover g-min-height-300 g-pos-rel rounded g-top-minus-40 g-ml-minus-50 this_center_container2" data-bg-img-src="<?= base_url('assets/img/bg/W4C_RPM_area_pemilahan_2.jpg') ?>" style="box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);background-position-x: -150px">
+                        <div class="col-md-6 g-bg-size-cover g-min-height-300 g-pos-rel rounded g-top-minus-40 g-ml-minus-50 this_center_container2" data-bg-img-src="<?= base_url(DIR_IMG.'bg/W4C_RPM_area_pemilahan_2.jpg') ?>" style="box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);background-position-x: -150px">
                             <div class="g-pos-rel g-z-index-1 g-py-180 g-height-300">
                                 <a class="js-fancybox g-mr-10 g-mb-15 animated fadeIn" href="http://www.youtube.com/embed/4ad3mhRsdFw?autoplay=1" data-fancybox-speed="350">
                                     <span class="u-icon-v3 u-icon-size--lg u-block-hover--scale g-bg-red this_center2 g-color-black g-color-primary--hover g-font-size-18 g-rounded-50x g-cursor-pointer" style="margin-left: 140px;border: 3px solid #ffffff63;">

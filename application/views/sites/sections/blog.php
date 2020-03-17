@@ -1,6 +1,6 @@
 <section id="blog" class="g-bg-gray-light-v5 dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-overflow-hidden"
          data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
-	<div class="divimage dzsparallaxer--target w-100 d-none" style="height: 130%; background-image: url(<?= base_url('assets/img/bg/img36.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
+	<div class="divimage dzsparallaxer--target w-100 d-none" style="height: 130%; background-image: url(<?= base_url(DIR_IMG.'bg/img36.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
 	<div class="container <?= $this->agent->is_mobile() ? 'g-py-50' : 'g-py-70' ?>">
 		<div class="text-center g-mb-50">
 			<h2 class="g-font-asap g-color-black g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-18' : '' ?>"><?= strtoupper(get_lang('blog-and-news')) ?></h2>
@@ -11,31 +11,31 @@
 		<?php
 			$blogs = [
 				[
-					'blog_title' => 'Jakarta\'s Regulation on Environmentally-Friendly Shopping Bag: What We Need to Know and Prepare',
+					'blog_title' => 'Waste4Change Cooperates with Two Dutch-Based Companies, Afvalzorg and BreAd, to Improve Solid Waste Management in Indonesia',
 					'blog_category' => 'WASTE MANAGEMENT',
-					'blog_content' => 'Source: Indonesia Diet Kantong Plastik Good news came from the capital city of Jakarta at the end of 2019, because Jakarta\'s Governor Anies Baswedan has...',
+					'blog_content' => 'Jakarta, 10th March 2020 - Waste4Change signs Letter of Intent (LOI) with two Dutch-based companies, Afvalzorg and BreAd for the improvement of solid waste management...',
 					'blog_author' => 'MIRIAM BAHAGIJO',
-					'blog_url' => 'https://waste4change.com/jakartas-ban-on-single-use-plastic-bag/',
-					'blog_date' => '02/26/2020',
-					'blog_image' => 'https://waste4change.com/wp-content/uploads/11659860-3x2-xlarge-580x390.jpg',
+					'blog_url' => 'https://waste4change.com/waste4change-cooperates-with-two-dutch-based-companies-afvalzorg-and-bread-to-improve-solid-waste-management-in-indonesia/',
+					'blog_date' => '03/12/2020',
+					'blog_image' => 'https://waste4change.com/wp-content/uploads/WhatsApp-Image-2020-03-10-at-19.15.54-2-580x390.jpeg',
 				],
 				[
-					'blog_title' => 'Responsible Waste Management in Tourism Sites: EcoRanger in Pulau Merah, Banyuwangi',
+					'blog_title' => 'Waste4Change Launched Waste Management Governance Solution Supported by Information Technology (Smart City Platform) & Held a Talk Show on Waste Management Solution from Every Stakeholder',
 					'blog_category' => 'WASTE MANAGEMENT',
-					'blog_content' => 'Tourism sites that suffer from overtourism, from mount Everest to Boracay beach in Philippines, as well as Venice the canal city, almost always experience a...',
+					'blog_content' => 'Jakarta, 9 March 2020 - Located at CoHive, Plaza Kuningan, Jakarta, Waste4Change signed a Memorandum of Understanding with Bekasi City to have a partnership on...',
 					'blog_author' => 'MIRIAM BAHAGIJO',
-					'blog_url' => 'https://waste4change.com/responsible-waste-management-in-tourism-sites-ecoranger-in-pulau-merah-banyuwangi/',
-					'blog_date' => '02/12/2020',
-					'blog_image' => 'https://waste4change.com/wp-content/uploads/DSC9637-580x390.jpg',
+					'blog_url' => 'https://waste4change.com/waste4change-launched-waste-management-governance-solution-supported-by-information-technology-smart-city-platform-held-a-talk-show-on-waste-management-solution-from-every-stakeholder/',
+					'blog_date' => '03/11/2020',
+					'blog_image' => 'https://waste4change.com/wp-content/uploads/talkshow-8-580x390.jpg',
 				],
 				[
-					'blog_title' => 'Bank Mandiri\'s CSR Program in Lombok: Gili Trawangan Bebas Sampah',
+					'blog_title' => 'Waste Management Startup, Waste4Change, Receives Investment from Agaeti Ventures and Partners',
 					'blog_category' => 'WASTE MANAGEMENT',
-					'blog_content' => 'Gili Trawangan. Source: dakatour.com The Gili Trawangan island that is located in Mataram, North Lombok is one of the tourist destinations whose popularity is rising, and...',
+					'blog_content' => 'Jakarta, 9 March 2020 - Waste4Change announced the acquisition of investment funds from Agaeti Ventures together with East Ventures and SMDV which will be allocated...',
 					'blog_author' => 'MIRIAM BAHAGIJO',
-					'blog_url' => 'https://waste4change.com/bank-mandiris-csr-program-in-lombok-gili-trawangan-bebas-sampah/',
-					'blog_date' => '02/07/2020',
-					'blog_image' => 'https://waste4change.com/wp-content/uploads/IMG_20170825_084414_HDR-580x390.jpg',
+					'blog_url' => 'https://waste4change.com/waste-management-startup-waste4change-receives-investment-from-agaeti-ventures-and-partners/',
+					'blog_date' => '03/10/2020',
+					'blog_image' => 'https://waste4change.com/wp-content/uploads/DSC08642-580x390.jpg',
 				],
 			];
 			if ($this->agent->is_mobile()): //MOBILE VIEW

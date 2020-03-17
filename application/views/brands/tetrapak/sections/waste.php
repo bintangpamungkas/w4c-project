@@ -66,7 +66,7 @@
                     <div class="g-px-10 g-mb-20">
                         <!-- Projects -->
                         <div class="u-block-hover g-brd-around g-brd-gray-light-v4 g-color-black g-bg-white--hover text-center g-rounded-7 g-transition-0_3 g-px-30 g-py-50">
-                            <img class="img-fluid u-block-hover__main--zoom-v1 mb-5" src="<?= base_url('assets/img/waste/'.$brand_id.'/'.$x['img']) ?>" alt="Image Description">
+                            <img class="img-fluid u-block-hover__main--zoom-v1 mb-5" src="<?= base_url(DIR_IMG.'waste/'.$brand_id.'/'.$x['img']) ?>" alt="Image Description">
                             <!-- <span class="g-font-weight-600 g-font-size-12 text-uppercase"><?= $brand_id=='tetrapak' ? str_replace('_', ' ', substr($x['img'], 0, -4)) : $x['subtitle'] ?></span> -->
                             <span class="g-font-weight-600 g-font-size-12 text-uppercase"><?= $x['subtitle'] ?></span>
                             <div class="g-font-size-18 g-font-weight-600 mb-0 d-none"><?= strtoupper($x['title']) ?></div>

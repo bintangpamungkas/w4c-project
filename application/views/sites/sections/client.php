@@ -18,14 +18,14 @@
               ?>
               <div>
                 <div class="g-bg-white rounded g-pa-10 <?= $this->agent->is_mobile() ? 'g-mx-3 g-mb-5' : 'g-px-30 g-mx-10 g-mb-20' ?>">
-                  <img class="img-fluid mx-auto" src="<?= base_url('assets/img/logo/client/'.$number_client++.'.jpg') ?>" alt="Image Description">
+                  <img class="img-fluid mx-auto" src="<?= base_url(DIR_IMG.'logo/client/'.$number_client++.'.jpg') ?>" alt="Image Description">
                 </div>
                 <div class="g-bg-white rounded g-pa-10 <?= $this->agent->is_mobile() ? 'g-mx-3 g-mb-5' : 'g-px-30 g-mx-10 g-mb-20' ?>">
-                  <img class="img-fluid mx-auto" src="<?= base_url('assets/img/logo/client/'.$number_client++.'.jpg') ?>" alt="Image Description">
+                  <img class="img-fluid mx-auto" src="<?= base_url(DIR_IMG.'logo/client/'.$number_client++.'.jpg') ?>" alt="Image Description">
                 </div>
                 <?php if($this->agent->is_mobile()): ?>
                   <div class="g-bg-white rounded g-pa-10 <?= $this->agent->is_mobile() ? 'g-mx-3 g-mb-5' : 'g-px-30 g-mx-10 g-mb-20' ?>">
-                    <img class="img-fluid mx-auto" src="<?= base_url('assets/img/logo/client/'.$number_client++.'.jpg') ?>" alt="Image Description">
+                    <img class="img-fluid mx-auto" src="<?= base_url(DIR_IMG.'logo/client/'.$number_client++.'.jpg') ?>" alt="Image Description">
                   </div>
                 <?php endif; ?>
               </div>

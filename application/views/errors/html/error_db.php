@@ -5,9 +5,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<title>404 <?=get_lang('page_not_found')?></title>
-	<link rel="stylesheet" href="<?= SITE_URL . 'assets/vendor/bootstrap/bootstrap.min.css' ?>">
-	<link rel="stylesheet" href="<?= SITE_URL . 'assets/css/custom.css' ?>">
-	<link rel="stylesheet" href="<?= SITE_URL . 'assets/css/unify-globals.css' ?>">
+	<link rel="stylesheet" href="<?= SITE_URL . DIR_VENDOR . 'bootstrap/bootstrap.min.css' ?>">
+	<link rel="stylesheet" href="<?= SITE_URL . DIR_CSS. 'custom.css' ?>">
+	<link rel="stylesheet" href="<?= SITE_URL . DIR_CSS. 'unify-globals.css' ?>">
 
 	<style type="text/css">
 		@font-face {
@@ -54,7 +54,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
 <div id="container">
-	<img src="<?= SITE_URL . 'assets/img/error/404_2.png' ?>" >
+	<img src="<?= SITE_URL . DIR_IMG.'error/404_2.png' ?>" >
 	<div>
 		<h1 class="g-font-size-36 g-font-weight-700 g-mb-20 g-mt-minus-30"> Oops !</h1>
 		<div class="g-font-size-15 g-color-black-opacity-0_5 g-mb-50">Halaman yang anda tuju tidak dapat diakses.</div>

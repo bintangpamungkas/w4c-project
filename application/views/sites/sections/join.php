@@ -10,7 +10,7 @@
         <!-- Image, Text Block -->
         <div class="row d-flex align-items-lg-center flex-wrap g-mb-0--lg">
             <div class="col-md-6 col-lg-8 <?= $this->agent->is_mobile() ? 'd-none' : '' ?>">
-                <img class="img-fluid" src="<?= base_url('assets/img/bg/send-waste2x.jpg') ?>" alt="Image Description">
+                <img class="img-fluid" src="<?= base_url(DIR_IMG.'bg/send-waste2x.jpg') ?>" alt="Image Description">
             </div>
             <div class="col-md-6 col-lg-4">
                 <div class="g-mt-minus-30 g-mt-0--md g-ml-minus-100--lg" style="<?= $this->agent->is_mobile() ? 'margin-top: 20px!important;' : 'margin-top: -60px!important;' ?>">
