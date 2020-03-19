@@ -72,12 +72,12 @@ header("Pragma: no-cache");
 	<!-- CSS Unify -->
 	<link rel="stylesheet" href="<?= base_url(DIR_CSS.'unify-core.css') ?>">
 	<link rel="stylesheet" href="<?= base_url(DIR_CSS.'unify-components.css') ?>">
-	<link rel="stylesheet" href="<?= base_url(DIR_CSS.'unify-globalsv2.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_CSS.'unify-globals.css') ?>">
 	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'custombox/custombox.min.css') ?>">
 	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'jquery-ui/themes/base/jquery-ui.min.css') ?>">
 
 	<!-- CSS Customization -->
-	<link rel="stylesheet" href="<?= base_url(DIR_CSS.'customv2.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_CSS.'custom.css') ?>">
 	<script src="<?= base_url(DIR_VENDOR.'jquery/jquery.min.js') ?>"></script>
 	<?php if (IS_ONLINE == 1) {
 

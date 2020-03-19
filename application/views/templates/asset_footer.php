@@ -23,18 +23,14 @@
 
 <script src="<?= base_url(DIR_JS . 'components/hs.header.js') ?>"></script>
 <script src="<?= base_url(DIR_JS . 'helpers/hs.hamburgers.js') ?>"></script>
-
 <script src="<?= base_url(DIR_JS . 'components/hs.dropdown.js') ?>"></script>
 <script src="<?= base_url(DIR_JS . 'components/hs.scrollbar.js') ?>"></script>
 <script src="<?= base_url(DIR_JS . 'components/hs.popup.js') ?>"></script>
 <script src="<?= base_url(DIR_JS . 'components/hs.carousel.js') ?>"></script>
 <script src="<?= base_url(DIR_JS . 'components/hs.counter.js') ?>"></script>
-
-
 <script src="<?= base_url(DIR_JS . 'components/hs.go-to.js') ?>"></script>
-
 <!-- JS Custom -->
-<script src="<?= base_url(DIR_JS . 'customv2.js') ?>"></script>
+<script src="<?= base_url(DIR_JS . 'custom.js') ?>"></script>
 <script src="<?= base_url(DIR_JS . 'click-scroll.js') ?>"></script>
 
 <script src="<?= base_url(DIR_VENDOR . 'custombox/custombox.min.js') ?>"></script>
