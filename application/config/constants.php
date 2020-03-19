@@ -81,7 +81,7 @@
 	/*
 	DIRECTORY
 	*/
-	define('DIR_ASSET', VERSION . '.assets/');
+	define('DIR_ASSET', VERSION . 'assets/');
 	define('DIR_IMG', DIR_ASSET . 'img/');
 	define('DIR_CSS', DIR_ASSET . 'css/');
 	define('DIR_JS', DIR_ASSET . 'js/');

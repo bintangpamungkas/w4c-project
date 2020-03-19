@@ -62,8 +62,8 @@
 			$this->db->select('(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service_category.service_category_name AND dictionary.language_code="' . $lang . '" limit 1) as service_category_name');
 			$this->db->from('service');
 			$this->db->join('service_category', 'service_category.service_category_id=service.service_category_id', 'left');
-			$this->db->join('service_coverage', 'service_coverage.service_id=service.service_id', 'left');
-			$this->db->join('place_city', 'place_city.city_id=service_coverage.city_id', 'left');
+			$this->db->join('service_record', 'service_record.service_id=service.service_id', 'left');
+			$this->db->join('place_city', 'place_city.city_id=service_record.city_id', 'left');
 			$this->db->join('place_province', 'place_province.province_id=place_city.province_id', 'left');
 //			$this->db->where('service.has_page',1);
 			$this->db->where('service_parent_id', null);
@@ -107,10 +107,10 @@
 
 		function unique_coverage_city()
 		{
-			$this->db->select(['service_coverage_city']);
-			$this->db->group_by('service_coverage_city');
+			$this->db->select(['service_record_city']);
+			$this->db->group_by('service_record_city');
 //			$this->db->distinct('city_name');
-			$this->db->from('service_coverage');
+			$this->db->from('service_record');
 			return $this->db->get()->result();
 
 		}

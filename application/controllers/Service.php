@@ -173,19 +173,20 @@
 				if ($section->section_slug == 'recommended-for') {
 					$data['recommendations'] = $this->crud_model->select('service_recomendation', QUERY_RESULT, ['recomendation_icon', 'recomendation_color', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=recomendation_name AND language_code="' . $lang . '" limit 1) as recomendation_name'], ['service_recomendation.service_id' => $service->service_id, 'service_recomendation.deleted_at' => null], ['service_recomendation' => ['recomendation' => 'recomendation_id']]);
 				}
-				if ($section->section_slug == 'our-coverage' || $section->section_slug == 'our-coverage-try') {
+				if ($section->section_slug == 'our-coverage') {
 					$child_service = $this->crud_model->select('service', QUERY_RESULT, ['service_id'], ['service_parent_id' => $service->service_id]);
-					$data['coverages'] = $this->crud_model->select('service_coverage', QUERY_RESULT, ['city_name', 'city_coordinate'], ['service_coverage.service_id' => $service->service_id, 'service_coverage.deleted_at' => null], ['service_coverage' => ['place_city' => 'city_id']]);
+					$data['records'] = $this->crud_model->select('service_record', QUERY_RESULT, ['city_name', 'city_coordinate'], ['service_record.service_id' => $service->service_id, 'service_record.deleted_at' => null], ['service_record' => ['place_city' => 'city_id']]);
 					$second_coverages = [];
 					foreach ($child_service as $index => $child) {
-						$sec_cov = $this->crud_model->select('service_coverage', QUERY_RESULT, ['city_name', 'city_coordinate'], ['service_coverage.service_id' => $child->service_id, 'service_coverage.deleted_at' => null], ['service_coverage' => ['place_city' => 'city_id']]);
+						$sec_cov = $this->crud_model->select('service_record', QUERY_RESULT, ['city_name', 'city_coordinate'], ['service_record.service_id' => $child->service_id, 'service_record.deleted_at' => null], ['service_record' => ['place_city' => 'city_id']]);
 						if (!empty($sec_cov)) {
 							foreach ($sec_cov as $cov) {
 								$second_coverages[] = $cov;
 							}
 						}
 					}
-					$data['second_coverages'] = $second_coverages;
+					$data['second_records'] = $second_coverages;
+					$data['areas'] = $this->crud_model->select('service_coverage', QUERY_RESULT, '', ['service_id' => $service->service_id, 'deleted_at' => null]);
 				}
 			}
 			$data['service'] = $service;
