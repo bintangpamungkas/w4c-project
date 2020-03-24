@@ -88,7 +88,17 @@
 
 		public function detail($service_slug)
 		{
-
+			if ($service_slug == 'feasibility-study'){
+				redirect(site_url('service/solid-waste-management-research'));
+			}elseif ($service_slug == 'program-pendampingan-optimalisasi-tps3r'){
+				redirect(site_url('service/3r-school-program'));
+			}elseif ($service_slug == 'zero-waste-to-landfill-management'){
+				redirect(site_url('service/zero-waste-to-landfill'));
+			}elseif ($service_slug == 'akademi-bijak-sampah' || $service_slug=='edukasi-bijak-sampah'){
+				redirect(site_url('service/akabis-waste-management-academy'));
+			}elseif ($service_slug == 'extended-producer-responsibility'){
+				redirect(site_url('service/in-store-recycling'));
+			}
 			$lang = $this->get_language();
 
 			$service = $this->service_model->get_service($lang, $service_slug);
@@ -198,7 +208,17 @@
 
 		public function join($service_slug)
 		{
-
+			if ($service_slug == 'feasibility-study'){
+				redirect(site_url('service/solid-waste-management-research/join'));
+			}elseif ($service_slug == 'program-pendampingan-optimalisasi-tps3r'){
+				redirect(site_url('service/3r-school-program/join'));
+			}elseif ($service_slug == 'zero-waste-to-landfill-management'){
+				redirect(site_url('service/zero-waste-to-landfill/join'));
+			}elseif ($service_slug == 'akademi-bijak-sampah' || $service_slug=='edukasi-bijak-sampah'){
+				redirect(site_url('service/akabis-waste-management-academy/join'));
+			}elseif ($service_slug == 'extended-producer-responsibility'){
+				redirect(site_url('service/in-store-recycling/join'));
+			}
 			$lang = $this->get_language();
 
 			$service = $this->service_model->get_service($lang, $service_slug);

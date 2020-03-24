@@ -3,7 +3,6 @@
 	<div id="navigation-block"
 	     class="<?= $template == 'index' ? 'nav-type-transparent' : '' ?> navbar-toggle-btn  pb-10 u-header__section u-header__section--<?= $template == 'services' ? 'light bg-white' : 'dark' ?> g-py-10--lg"
 		<?= $template == 'index' ? 'data-header-fix-moment-exclude="pb-10 g-color-white" data-header-fix-moment-classes="g-bg-white u-shadow-v18 g-py-0"' : '' ?>>
-
 		<nav class="js-mega-menu navbar navbar-expand-lg">
 			<div class="container">
 				<?php if ($this->agent->is_mobile()): ?>
@@ -44,7 +43,7 @@
 
 				<!-- Logo -->
 				<a href="<?= W4C_URL ?>" class="navbar-brand">
-					<img src="<?= base_url(DIR_IMG.'logo/logo-W4C_179_web.png') ?>" alt="Image Description" style="height: <?= $this->agent->is_mobile() ? '29px' : '39px' ?>">
+					<img src="<?= base_url(DIR_IMG . 'logo/logo-W4C_179_web.png') ?>" alt="Image Description" style="height: <?= $this->agent->is_mobile() ? '29px' : '39px' ?>">
 				</a>
 
 				<?php
@@ -97,7 +96,7 @@
 						<div class="collapse navbar-collapse align-items-center flex-sm-row" id="navBar2">
 							<div <?= $this->agent->is_mobile() ? 'class="row no-gutters"' : 'class="row no-gutters justify-content-around" style="width: calc(100% + 17px); margin-left:-33px"' ?>" >
 							<div
-								class="col-12" <?= empty($parent_service->service_portfolio_url) && $service->service_portfolio_url != 1 ? 'data-header-fix-moment-exclude="col-12" data-header-fix-moment-classes="col-9"' : 'data-header-fix-moment-exclude="col-12" data-header-fix-moment-classes="col-7"' ?>
+								class="<?=empty($service->service_parent_id) ? 'col-12' : 'col'?>" <?= empty($service->service_parent_id) ? empty($parent_service->service_portfolio_url) && $service->service_portfolio_url != 1 ? 'data-header-fix-moment-exclude="col-12" data-header-fix-moment-classes="col-9"' : 'data-header-fix-moment-exclude="col-12" data-header-fix-moment-classes="col-7"' : ''?>
 							                                                                                                                                                                      ">
 							<ul class="navbar-nav text-uppercase g-font-weight-600 mr-auto">
 								<?= $this->agent->is_mobile() ? '' : '<table><tr>' ?>
@@ -118,39 +117,39 @@
 						</div>
 						<?php if (!$this->agent->is_mobile()) { // desktop view only ?>
 						<div <?= empty($parent_service->service_portfolio_url) && $service->service_portfolio_url != 1 ? 'class="col-3"' : 'class="col-5"' ?>" >
-						<div class="row no-gutters justify-content-end">
-							<div class="col">
-								<a class="click_scroll btn btn-info btn-block g-color-white g-brd-white-opacity-0_2 g-font-size-13 g-rounded-50 g-px-15 g-py-9 d-none"
-								   href="<?= site_url('service/' . $service_id . '/join') ?>"
-								   data-header-fix-moment-exclude="d-none"
-								   data-header-fix-moment-classes="d-block"> <?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe-now')) : strtoupper(get_lang('get-proposal')))) ?>
-									<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3"> <i class="fa fa-info"></i> </span>
-								</a>
+						<div class="<?= empty($service->service_parent_id) ? 'd-none' : 'd-block' ?>" data-header-fix-moment-exclude="<?= empty($service->service_parent_id) ? 'd-none' : 'd-block' ?>"
+						     data-header-fix-moment-classes="d-block">
+							<div class="row no-gutters justify-content-end">
+								<div class="col">
+									<a class="click_scroll btn btn-info btn-block g-color-white g-brd-white-opacity-0_2 g-font-size-13 g-rounded-50 g-px-15 g-py-9"
+									   href="<?= site_url('service/' . $service_id . '/join') ?>"> <?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe-now')) : strtoupper(get_lang('get-proposal')))) ?>
+										<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3"> <i class="fa fa-info"></i> </span>
+									</a>
+								</div>
+								<?php if (empty($parent_service->service_portfolio_url)) { ?>
+									<?php if ($service->service_portfolio_url == 1) { ?>
+										<div class="col">
+											<a class="click_scroll btn btn-outline-info btn-block g-font-size-13 g-rounded-50 g-brd-2 g-ml-15 g-px-15 g-py-9 "
+											   href="<?= base_url(DIR_SERVICE . $service_id . '/portfolio/' . $lang . '.pdf') ?>"> <?= strtoupper(get_lang('get-portfolio')) ?>
+												<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3"> <i
+														class="fa fa-info"></i> </span>
+											</a>
+										</div>
+									<?php } ?>
+								<?php } else { ?>
+									<?php if ($parent_service->service_portfolio_url == 1) { ?>
+										<div class="col">
+											<a class="click_scroll btn btn-outline-info btn-block g-font-size-13 g-rounded-50 g-brd-2 g-ml-15 g-px-15 g-py-9"
+											   href="<?= base_url(DIR_SERVICE . $parent_service->service_slug . '/portfolio/' . $lang . '.pdf') ?>"> <?= strtoupper(get_lang('get-portfolio')) ?>
+												<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3"> <i
+														class="fa fa-info"></i> </span>
+											</a>
+										</div>
+									<?php } ?>
+								<?php } ?>
 							</div>
-							<?php if (empty($parent_service->service_portfolio_url)) { ?>
-								<?php if ($service->service_portfolio_url == 1) { ?>
-									<div class="col">
-										<a class="click_scroll btn btn-outline-info btn-block g-font-size-13 g-rounded-50 g-brd-2 g-ml-15 g-px-15 g-py-9 d-none"
-										   href="<?= base_url(DIR_SERVICE . $service_id . '/portfolio/' . $lang . '.pdf') ?>" data-header-fix-moment-exclude="d-none"
-										   data-header-fix-moment-classes="d-block"> <?= strtoupper(get_lang('get-portfolio')) ?>
-											<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3"> <i
-													class="fa fa-info"></i> </span>
-										</a>
-									</div>
-								<?php } ?>
-							<?php } else { ?>
-								<?php if ($parent_service->service_portfolio_url == 1) { ?>
-									<div class="col">
-										<a class="click_scroll btn btn-outline-info btn-block g-font-size-13 g-rounded-50 g-brd-2 g-ml-15 g-px-15 g-py-9 d-none"
-										   href="<?= base_url(DIR_SERVICE . $parent_service->service_slug . '/portfolio/' . $lang . '.pdf') ?>" data-header-fix-moment-exclude="d-none"
-										   data-header-fix-moment-classes="d-block"> <?= strtoupper(get_lang('get-portfolio')) ?>
-											<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3"> <i
-													class="fa fa-info"></i> </span>
-										</a>
-									</div>
-								<?php } ?>
-							<?php } ?>
 						</div>
+
 					</div>
 					<?php }// end desktop view ?>
 			</div>
