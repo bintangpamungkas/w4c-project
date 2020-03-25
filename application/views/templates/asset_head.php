@@ -94,7 +94,7 @@ header("Pragma: no-cache");
 <script>
 	$(function () {
 		<?php if($this->uri->segment(1) == ''):?>
-		$('#PopUpModal').modal('show');
+		// $('#PopUpModal').modal('show');
 		<?php endif; ?>
 	});
 	var logger = function () {

@@ -24,8 +24,8 @@
 		}
 		public function index()
 		{
-//			echo 123;
-//			die();
+			$this->load->model('blog_model');
+
 			$this->load->model('service_model');
 			$input_city = $this->input->get('city');
 
@@ -46,7 +46,9 @@
 			$data['input_city'] = $input_city;
 			$data['coverage_cities'] = $this->crud_model->select('place_city', QUERY_RESULT, ['city_name', 'province_name'], '', ['place_city' => ['place_province' => 'province_id']]);
 			$data['testimonials'] = $this->crud_model->select('testimonial', QUERY_RESULT, '', ['language_code' => $lang, 'deleted_at' => null, 'service_id' => null]);
-
+			$data['blogs'] = $this->blog_model->get_blog();
+//print_r($data['blogs']);
+//die();
 			$data['title'] = '';
 			$data['id'] = 'site';
 			$data['subtitle'] = 'information';
