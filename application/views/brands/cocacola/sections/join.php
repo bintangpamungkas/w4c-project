@@ -41,7 +41,7 @@
                             <?php
                             $brand=isset($brand_id) ? $brand_id : '';
                             ?>
-                            <a class="g-brd-2 g-brd-white-opacity-0_3 btn btn-info g-brd-2 g-font-size-13 g-rounded-50 g-pl-20 g-pr-15 g-py-9" href="<?= (SEND_YOUR_WASTE_URL.'send?brand='.$brand) ?>" style="position: absolute;margin-top: -20px;left: 25px">
+                            <a class="g-brd-2 g-brd-white-opacity-0_3 btn btn-info g-brd-2 g-font-size-13 g-rounded-50 g-pl-20 g-pr-15 g-py-9" href="<?= SEND_YOUR_WASTE_URL ?>" style="position: absolute;margin-top: -20px;left: 25px">
                                 <?= strtoupper(lang('join_brand_btn_only')) ?>
                                 <span class="align-middle u-icon-v3 g-width-16 g-height-16 g-color-black g-bg-white g-font-size-11 rounded-circle ml-3">
                                     <i class="fa fa-angle-right"></i>
@@ -62,7 +62,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="g-brd-2 g-brd-white-opacity-0_3 btn btn-info g-brd-2 g-font-size-13 g-rounded-50 g-pl-20 g-pr-15 g-py-9" href="<?= (DROPBOX_URL.'send?brand='.$brand) ?>" style="position: absolute;margin-top: -20px;left: 25px">
+                            <a class="g-brd-2 g-brd-white-opacity-0_3 btn btn-info g-brd-2 g-font-size-13 g-rounded-50 g-pl-20 g-pr-15 g-py-9" href="<?= DROPBOX_URL ?>" style="position: absolute;margin-top: -20px;left: 25px">
                                 <?= strtoupper(lang('join_brand_btn_only')) ?>
                                 <span class="align-middle u-icon-v3 g-width-16 g-height-16 g-color-black g-bg-white g-font-size-11 rounded-circle ml-3">
                                     <i class="fa fa-angle-right"></i>

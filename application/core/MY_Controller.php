@@ -6,7 +6,7 @@
 	 * @property \Account_model $account_model
 	 * @property \User_model $user_model
 	 * @property \Service_model $service_model
-	 * @property \CRUD_model $crud_model
+	 * @property \Crud_model $crud_model
 	 */
 	class MY_Controller extends CI_Controller
 	{
@@ -38,9 +38,10 @@
 				}
 			}
 			$lang = $this->get_language();
-			
+
 			// GET service as menu
 			$service_target = $this->crud_model->select('service_target', QUERY_RESULT, ['service_target_id', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_target_name AND language_code="' . $lang . '" limit 1) as title', 'service_target_icon icon'], ['deleted_at' => null]);
+
 			$targets = [];
 			foreach ($service_target as $target) {
 				$service_category = $this->crud_model->select('service_category', QUERY_RESULT, ['service_category_id', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_category_name AND language_code="' . $lang . '" limit 1) as title', 'service_category_icon icon', 'service_target_id'], ['service_category.service_target_id' => $target->service_target_id]);
