@@ -88,17 +88,19 @@
 
 		public function detail($service_slug)
 		{
-			if ($service_slug == 'feasibility-study'){
+			if ($service_slug == 'feasibility-study') {
 				redirect(site_url('service/solid-waste-management-research'));
-			}elseif ($service_slug == 'program-pendampingan-optimalisasi-tps3r'){
+			} elseif ($service_slug == 'program-pendampingan-optimalisasi-tps3r') {
 				redirect(site_url('service/3r-school-program'));
-			}elseif ($service_slug == 'zero-waste-to-landfill-management'){
+			} elseif ($service_slug == 'zero-waste-to-landfill-management') {
 				redirect(site_url('service/zero-waste-to-landfill'));
-			}elseif ($service_slug == 'akademi-bijak-sampah' || $service_slug=='edukasi-bijak-sampah'){
+			} elseif ($service_slug == 'akademi-bijak-sampah' || $service_slug == 'edukasi-bijak-sampah') {
 				redirect(site_url('service/akabis-waste-management-academy'));
-			}elseif ($service_slug == 'extended-producer-responsibility'){
+			} elseif ($service_slug == 'extended-producer-responsibility') {
 				redirect(site_url('service/in-store-recycling'));
 			}
+
+
 			$lang = $this->get_language();
 
 			$service = $this->service_model->get_service($lang, $service_slug);
@@ -147,6 +149,7 @@
 
 			$data['subnav'] = $sections;
 			foreach ($sections as $section) {
+
 				if ($section->section_slug == 'our-achievement' || $section->section_slug == 'achievement-deliverable') {
 					$data['achievements'] = $this->crud_model->select('achievement', QUERY_RESULT, ['achievement_count', 'achievement_icon', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=achievement_name AND language_code="' . $lang . '" limit 1) as achievement_name'], ['achievement.service_id' => $service->service_id, 'achievement.deleted_at' => null]);
 				}
@@ -184,19 +187,41 @@
 					$data['recommendations'] = $this->crud_model->select('service_recomendation', QUERY_RESULT, ['recomendation_icon', 'recomendation_color', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=recomendation_name AND language_code="' . $lang . '" limit 1) as recomendation_name'], ['service_recomendation.service_id' => $service->service_id, 'service_recomendation.deleted_at' => null], ['service_recomendation' => ['recomendation' => 'recomendation_id']]);
 				}
 				if ($section->section_slug == 'our-coverage') {
-					$child_service = $this->crud_model->select('service', QUERY_RESULT, ['service_id'], ['service_parent_id' => $service->service_id]);
-					$data['records'] = $this->crud_model->select('service_record', QUERY_RESULT, ['city_name', 'city_coordinate'], ['service_record.service_id' => $service->service_id, 'service_record.deleted_at' => null], ['service_record' => ['place_city' => 'city_id']]);
-					$second_coverages = [];
+
+					$child_service = $this->crud_model->select('service', QUERY_RESULT, ['service_id', '(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service.service_subcategory_name AND dictionary.language_code="' . $lang . '") as service_subcategory_name'], ['service_parent_id' => $service->service_id]);
+					$coverages = [];
+					$cov = $this->service_model->get_service_coverage($service->service_id);
+
+					if (!empty($cov)) {
+						$coverages[0]['name'] = $service->service_name;
+						$coverages[0]['coverage'] = $cov;
+					}
 					foreach ($child_service as $index => $child) {
-						$sec_cov = $this->crud_model->select('service_record', QUERY_RESULT, ['city_name', 'city_coordinate'], ['service_record.service_id' => $child->service_id, 'service_record.deleted_at' => null], ['service_record' => ['place_city' => 'city_id']]);
-						if (!empty($sec_cov)) {
-							foreach ($sec_cov as $cov) {
-								$second_coverages[] = $cov;
-							}
+						$cov = $this->service_model->get_service_coverage($child->service_id);
+						if (!empty($cov)){
+							$coverages[$index+1]['name'] = $child->service_subcategory_name;
+							$coverages[$index+1]['coverage'] = $cov;
 						}
 					}
-					$data['second_records'] = $second_coverages;
-					$data['areas'] = $this->crud_model->select('service_coverage', QUERY_RESULT, '', ['service_id' => $service->service_id, 'deleted_at' => null]);
+//					print_r($cov);
+//					die();
+
+//					print_r($coverages);
+//die();
+//					$data['records'] = $this->crud_model->select('service_record', QUERY_RESULT, ['city_name', 'city_point'], ['service_record.service_id' => $service->service_id, 'service_record.deleted_at' => null], ['service_record' => ['place_city' => 'city_id']]);
+////					$second_coverages = [];
+////					foreach ($child_service as $index => $child) {
+////						$sec_cov = $this->crud_model->select('service_record', QUERY_RESULT, ['city_name', 'city_point'], ['service_record.service_id' => $child->service_id, 'service_record.deleted_at' => null], ['service_record' => ['place_city' => 'city_id']]);
+////						if (!empty($sec_cov)) {
+////							foreach ($sec_cov as $cov) {
+////								$second_coverages[] = $cov;
+////							}
+////						}
+////					}
+////					$data['second_records'] = $second_coverages;
+////					$data['areas'] = $this->crud_model->select('service_coverage', QUERY_RESULT, '', ['service_id' => $service->service_id, 'deleted_at' => null]);
+////					print_r($data['areas']);
+					$data['coverages']=$coverages;
 				}
 			}
 			$data['service'] = $service;
@@ -208,15 +233,15 @@
 
 		public function join($service_slug)
 		{
-			if ($service_slug == 'feasibility-study'){
+			if ($service_slug == 'feasibility-study') {
 				redirect(site_url('service/solid-waste-management-research/join'));
-			}elseif ($service_slug == 'program-pendampingan-optimalisasi-tps3r'){
+			} elseif ($service_slug == 'program-pendampingan-optimalisasi-tps3r') {
 				redirect(site_url('service/3r-school-program/join'));
-			}elseif ($service_slug == 'zero-waste-to-landfill-management'){
+			} elseif ($service_slug == 'zero-waste-to-landfill-management') {
 				redirect(site_url('service/zero-waste-to-landfill/join'));
-			}elseif ($service_slug == 'akademi-bijak-sampah' || $service_slug=='edukasi-bijak-sampah'){
+			} elseif ($service_slug == 'akademi-bijak-sampah' || $service_slug == 'edukasi-bijak-sampah') {
 				redirect(site_url('service/akabis-waste-management-academy/join'));
-			}elseif ($service_slug == 'extended-producer-responsibility'){
+			} elseif ($service_slug == 'extended-producer-responsibility') {
 				redirect(site_url('service/in-store-recycling/join'));
 			}
 			$lang = $this->get_language();
