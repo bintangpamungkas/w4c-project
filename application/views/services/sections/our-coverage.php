@@ -1,4 +1,4 @@
-<?php if (!empty($records)): ?>
+<?php if (!empty($coverages)): ?>
 	<!-- Promo Block -->
 	<div id="<?= $section_slug ?>" style="height: 200px;position: absolute;width: 80%;margin-top: -80px"></div>
 	<section class="g-bg-secondary  <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-0' : 'g-pt-70' ?>">
@@ -11,7 +11,7 @@
 			<!--		<iframe src="https://www.google.com/maps/d/embed?mid=1aSFRCFpHVBExx47pzwfwgMobooOb_a-Y" style="width: 100%;height: 600px"></iframe>-->
 		</div>
 		<div class="container g-py-20">
-			<div id="legend" class="row">
+			<div id="legend" class="row justify-content-center">
 			</div>
 		</div>
 	</section>
@@ -61,18 +61,18 @@
 		//		}
 
 
-		var icon = {
-			blue: {
-				url: '<?=base_url() . DIR_ICON?>pin/icon-pin2.png',
-				labelOrigin: {x: 20, y: -10}
-
-			},
-			green: {
-				url: '<?=base_url() . DIR_ICON?>pin/icon-pin1.png',
-				labelOrigin: {x: 20, y: -10}
-
-			},
-		};
+		//var icon = {
+		//	blue: {
+		//		url: '<?//=base_url() . DIR_ICON?>//pin/icon-pin2.png',
+		//		labelOrigin: {x: 20, y: -10}
+		//
+		//	},
+		//	green: {
+		//		url: '<?//=base_url() . DIR_ICON?>//pin/icon-pin1.png',
+		//		labelOrigin: {x: 20, y: -10}
+		//
+		//	},
+		//};
 		<?php
 		echo 'var areas = [';
 		foreach ($coverages as $index => $coverage) {
@@ -101,7 +101,7 @@
 					$city_point = '{lat:' . $city_point[0] . ',lng:' . $city_point[1] . '}';
 				}
 
-				echo '["' . $area->service_coverage_color . '", "' . $area->service_coverage_icon . '", "' . $area->province_name . '", ' . $province_point . ', [' . $area->province_area . '], "' . $area->city_name . '", ' . $city_point . ', "' . $area->city_area . '"]';
+				echo '["' . $area->service_coverage_color . '", "' . $area->service_coverage_icon . '", "' . $area->province_name . '", ' . $province_point . ', [' . $area->province_area . '], "' . $area->city_name . '", ' . $city_point . ', "' . $area->city_area . '","'.$area->service_coverage_type.'"]';
 			}
 			echo ']';
 			echo ']';
@@ -109,7 +109,7 @@
 		echo '];';
 		?>
 
-		var markers, polygon, i;
+		var markers, polygon, i, color, icon, type;
 
 		console.log(areas);
 
@@ -139,87 +139,95 @@
 			//	});
 			//});
 
-
 			jQuery.each(areas, function (i, area) {
-				$('#legend').append('<div class="col-md-12">' + area[0] + '</div>');
-				console.log(area[0]);
-				//markers = area[1].map(function (coverage, i) {
-				//		return new google.maps.Marker({
-				//			position: coverage[3],
-				//			icon: {
-				//				url: '<?//=base_url() . DIR_ICON?>//pin/' + coverage[1],
-				//				labelOrigin: {x: 20, y: -20}
-				//			},
-				//			title: coverage[2],
-				//			label: {
-				//				text: coverage[2],
-				//				color: '#000',
-				//				fontSize: '15px'
-				//			}
-				//		})
-				//	}
-				//);
+				console.log(area);
+				if (area !==undefined) {
+					console.log(area);
+					//markers = area[1].map(function (coverage, i) {
+					//		return new google.maps.Marker({
+					//			position: coverage[3],
+					//			icon: {
+					//				url: '<?//=base_url() . DIR_ICON?>//pin/' + coverage[1],
+					//				labelOrigin: {x: 20, y: -20}
+					//			},
+					//			title: coverage[2],
+					//			label: {
+					//				text: coverage[2],
+					//				color: '#000',
+					//				fontSize: '15px'
+					//			}
+					//		})
+					//	}
+					//);
 
-				jQuery.each(area[1], function (i, coverage) {
+					jQuery.each(area[1], function (i, coverage) {
 
-					if (coverage[2] !== "") {
+						if (coverage[2] !== "") {
 
-						markers = new google.maps.Marker({
-							position: coverage[3],
-							icon: {
-								url: '<?=base_url() . DIR_ICON?>pin/' + coverage[1],
-								labelOrigin: {x: 20, y: -20}
-							},
-							title: coverage[2],
-							label: {
-								text: coverage[2],
-								color: '#000',
-								fontSize: '15px'
-							}
-						});
-						markers.setMap(map);
+							markers = new google.maps.Marker({
+								position: coverage[3],
+								icon: {
+									url: '<?=base_url() . DIR_ICON?>pin/' + coverage[1],
+									labelOrigin: {x: 20, y: -20}
+								},
+								title: coverage[2],
+								label: {
+									text: coverage[2],
+									color: '#000',
+									fontSize: '15px'
+								}
+							});
+							markers.setMap(map);
 
-						//POLIGON DRAW
-						polygon = new google.maps.Polygon({
-							paths: coverage[4],
-							strokeColor: coverage[0],
-							strokeOpacity: 0.8,
-							strokeWeight: 1,
-							fillColor: coverage [0],
-							fillOpacity: 0.2
-						});
-						polygon.setMap(map);
+							//POLIGON DRAW
+							polygon = new google.maps.Polygon({
+								paths: coverage[4],
+								strokeColor: coverage[0],
+								strokeOpacity: 0.8,
+								strokeWeight: 1,
+								fillColor: coverage [0],
+								fillOpacity: 0.2
+							});
+							polygon.setMap(map);
+						}
+						if (coverage[5] !== "") {
+							markers = new google.maps.Marker({
+								position: coverage[6],
+								icon: {
+									url: '<?=base_url() . DIR_ICON?>pin/' + coverage[1],
+									labelOrigin: {x: 20, y: -20}
+								},
+								title: coverage[5],
+								label: {
+									text: coverage[5],
+									color: '#000',
+									fontSize: '15px'
+								}
+							});
+							markers.setMap(map);
+
+							//POLIGON DRAW
+							polygon = new google.maps.Polygon({
+								paths: coverage[7],
+								strokeColor: coverage[0],
+								strokeOpacity: 0.8,
+								strokeWeight: 1,
+								fillColor: coverage [0],
+								fillOpacity: 0.2
+							});
+							polygon.setMap(map);
+						}
+						color=coverage[0];
+						icon=coverage[1];
+						type=coverage[8];
+					});
+					if (type === 'point'){
+						$('#legend').append('<div class="col-md-6 text-center"> <img src="<?=base_url() . DIR_ICON?>pin/'+icon+'" alt="" style="height:30px; margin-right:10px; margin-bottom:0px">Area ' +area[0] + '</div>');
+
+					}else{
+						$('#legend').append('<div class="col-md-6 text-center"> <span style="display:inline-block; width: 20px;height: 20px; background-color: '+color+'40; border: 2px solid '+color+'bb; margin-right:10px; margin-bottom:-5px"></span> Area ' +area[0] + '</div>');
 					}
-					if (coverage[5] !== "") {
-						markers = new google.maps.Marker({
-							position: coverage[6],
-							icon: {
-								url: '<?=base_url() . DIR_ICON?>pin/' + coverage[1],
-								labelOrigin: {x: 20, y: -20}
-							},
-							title: coverage[5],
-							label: {
-								text: coverage[5],
-								color: '#000',
-								fontSize: '15px'
-							}
-						});
-						markers.setMap(map);
-
-						//POLIGON DRAW
-						polygon = new google.maps.Polygon({
-							paths: coverage[7],
-							strokeColor: coverage[0],
-							strokeOpacity: 0.8,
-							strokeWeight: 1,
-							fillColor: coverage [0],
-							fillOpacity: 0.2
-						});
-						polygon.setMap(map);
-					}
-
-				});
-
+				}
 			});
 
 			// Add a marker clusterer to manage the markers.

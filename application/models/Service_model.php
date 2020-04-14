@@ -130,7 +130,21 @@
 		}
 
 		function get_service_coverage($service_id){
-			$this->db->select(['service_id', 'service_coverage_color','service_coverage_icon',	'service_coverage_code',	'service_coverage_name']);
+			$this->db->select(['service_id', 'service_coverage_color','service_coverage_icon',	'service_coverage_code','service_coverage_type']);
+			$this->db->select('(SELECT province_point FROM place_province WHERE province_id=coverage.service_coverage_code) as province_point');
+			$this->db->select('(SELECT province_area FROM place_province WHERE province_id=coverage.service_coverage_code) as province_area');
+			$this->db->select('(SELECT province_name FROM place_province WHERE province_id=coverage.service_coverage_code) as province_name');
+			$this->db->select('(SELECT city_point FROM place_city WHERE city_id=coverage.service_coverage_code) as city_point');
+			$this->db->select('(SELECT city_area FROM place_city WHERE city_id=coverage.service_coverage_code) as city_area');
+			$this->db->select('(SELECT city_name FROM place_city WHERE city_id=coverage.service_coverage_code) as city_name');
+			$this->db->from('service_coverage coverage');
+			$this->db->where('coverage.service_id',$service_id);
+			$this->db->where('coverage.deleted_at', null);
+			return $this->db->get()->result();
+		}
+
+		function get_service_coverage2($service_id, $type){
+			$this->db->select(['service_id', 'service_coverage_color','service_coverage_icon',	'service_coverage_code']);
 			$this->db->select('(SELECT province_point FROM place_province WHERE province_id=coverage.service_coverage_code) as province_point');
 			$this->db->select('(SELECT province_area FROM place_province WHERE province_id=coverage.service_coverage_code) as province_area');
 			$this->db->select('(SELECT province_name FROM place_province WHERE province_id=coverage.service_coverage_code) as province_name');
