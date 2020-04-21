@@ -1,8 +1,8 @@
 <?php
-// Date in the past
-header("Cache-Control: no-cache , must-revalidate");
-header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
-header("Pragma: no-cache");
+	// Date in the past
+	header("Cache-Control: no-cache , must-revalidate");
+	header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+	header("Pragma: no-cache");
 ?>
 <!DOCTYPE html>
 
@@ -14,71 +14,75 @@ header("Pragma: no-cache");
 
 	<title>
 		<?php
-		if (empty($page_heading)) {
-			$page_heading = $is_bilingual == true ? lang($page_heading) : $page_heading;
-		} else {
-			$page_heading = $title;
-		}
-		if ($this->uri->segment(1) == '' || $this->uri->segment(1) == 'index') {
-			$web_title = APP_NAME . ' :: ' . APP_SLOGAN;
-		} else {
 			if (empty($page_heading)) {
-				$web_title = APP_NAME . ' :: ' . APP_SLOGAN;;
+				$page_heading = $is_bilingual == true ? lang($page_heading) : $page_heading;
 			} else {
-				$web_title = $page_heading . ' - ' . APP_NAME . ' :: ' . APP_SLOGAN;;
+				$page_heading = $title;
 			}
-		}
-		echo $web_title;
+			if ($this->uri->segment(1) == '' || $this->uri->segment(1) == 'index') {
+				$web_title = APP_NAME . ' :: ' . APP_SLOGAN;
+			} else {
+				if (empty($page_heading)) {
+					$web_title = APP_NAME . ' :: ' . APP_SLOGAN;;
+				} else {
+					$web_title = $page_heading . ' - ' . APP_NAME . ' :: ' . APP_SLOGAN;;
+				}
+			}
+			echo $web_title;
 		?>
 	</title>
 
 	<!-- Required Meta Tags Always Come First -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=9" />
-<!--	<meta http-equiv="x-ua-compatible" content="ie=edge">-->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<?php if (IS_ONLINE == 1) {
 		// <!-- Meta Data SEO-->
-		meta_data(true);
+		if (empty($meta_data)) {
+			meta_data(true);
+		} else {
+			meta_data(true, @$meta_data);
+		}
 	} ?>
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="<?= base_url(DIR_IMG.'logo/favicon.png') ?>">
+	<link rel="shortcut icon" href="<?= base_url(DIR_IMG . 'logo/favicon.png') ?>">
 	<!-- Google Fonts -->
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C500%2C600%2C700%7CPlayfair+Display%7CRoboto%7CRaleway%7CSpectral%7CRubik">
 	<link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
 	<!-- CSS Global Compulsory -->
-	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'bootstrap/bootstrap.min.css') ?>">
-	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'bootstrap/offcanvas.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR . 'bootstrap/bootstrap.min.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR . 'bootstrap/offcanvas.css') ?>">
 	<!-- CSS Global Icons -->
-	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'icon-awesome/css/font-awesome.min.css') ?>">
-	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'icon-line/css/simple-line-icons.css') ?>">
-	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'icon-etlinefont/style.css') ?>">
-	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'icon-line-pro/style.css') ?>">
-	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'icon-hs/style.css') ?>">
-	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'dzsparallaxer/dzsparallaxer.css') ?>">
-	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'dzsparallaxer/dzsscroller/scroller.css') ?>">
-	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'dzsparallaxer/advancedscroller/plugin.css') ?>">
-	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'animate.css') ?>">
-	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'hamburgers/hamburgers.min.css') ?>">
-	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'hs-megamenu/src/hs.megamenu.css') ?>">
-	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'malihu-scrollbar/jquery.mCustomScrollbar.min.css') ?>">
-	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'slick-carousel/slick/slick.css') ?>">
-	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'fancybox/jquery.fancybox.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR . 'icon-awesome/css/font-awesome.min.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR . 'icon-line/css/simple-line-icons.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR . 'icon-etlinefont/style.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR . 'icon-line-pro/style.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR . 'icon-hs/style.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR . 'dzsparallaxer/dzsparallaxer.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR . 'dzsparallaxer/dzsscroller/scroller.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR . 'dzsparallaxer/advancedscroller/plugin.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR . 'animate.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR . 'hamburgers/hamburgers.min.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR . 'hs-megamenu/src/hs.megamenu.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR . 'malihu-scrollbar/jquery.mCustomScrollbar.min.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR . 'slick-carousel/slick/slick.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR . 'fancybox/jquery.fancybox.css') ?>">
 
-	<link rel="stylesheet" type="text/css" href="<?= base_url(DIR_VENDOR.'owl-carousel/owl.carousel.css') ?>" media="screen">
+	<link rel="stylesheet" type="text/css" href="<?= base_url(DIR_VENDOR . 'owl-carousel/owl.carousel.css') ?>" media="screen">
 
 	<!-- CSS Unify -->
-	<link rel="stylesheet" href="<?= base_url(DIR_CSS.'unify-core.css') ?>">
-	<link rel="stylesheet" href="<?= base_url(DIR_CSS.'unify-components.css') ?>">
-	<link rel="stylesheet" href="<?= base_url(DIR_CSS.'unify-globals.css') ?>">
-	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'custombox/custombox.min.css') ?>">
-	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR.'jquery-ui/themes/base/jquery-ui.min.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_CSS . 'unify-core.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_CSS . 'unify-components.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_CSS . 'unify-globals.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR . 'custombox/custombox.min.css') ?>">
+	<link rel="stylesheet" href="<?= base_url(DIR_VENDOR . 'jquery-ui/themes/base/jquery-ui.min.css') ?>">
 
 	<!-- CSS Customization -->
-	<link rel="stylesheet" href="<?= base_url(DIR_CSS.'custom.css') ?>">
-	<script src="<?= base_url(DIR_VENDOR.'jquery/jquery.min.js') ?>"></script>
+	<link rel="stylesheet" href="<?= base_url(DIR_CSS . 'custom.css') ?>">
+	<script src="<?= base_url(DIR_VENDOR . 'jquery/jquery.min.js') ?>"></script>
 	<?php if (IS_ONLINE == 1) {
 
 		// <!-- Hotjar Tracking -->
@@ -103,7 +107,7 @@ header("Pragma: no-cache");
 
 		pub.enableLogger = function enableLogger() {
 			if (oldConsoleLog == null)
-				 return;
+				return;
 
 			window['console']['log'] = oldConsoleLog;
 		};
@@ -118,9 +122,13 @@ header("Pragma: no-cache");
 	}();
 
 	$(document).ready(function () {
-		if (<?=IS_ONLINE?> == 1) {
+		if (<?=IS_ONLINE?> == 1
+	)
+		{
 			logger.disableLogger();
-		} else {
+		}
+	else
+		{
 			logger.enableLogger();
 		}
 	});
@@ -143,20 +151,21 @@ header("Pragma: no-cache");
 		<div></div>
 	</div>
 	<br>
-	<?=lang('loading')?>...
+	<?= lang('loading') ?>...
 </div>
 <main>
 	<div class="modal fade in" id="PopUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="z-index: 9998">
 		<div class="modal-dialog <?= $this->agent->is_mobile() ? 'g-ml-25 g-mr-25' : '' ?>" role="document" <?= $this->agent->is_mobile() ? '' : 'style="max-width:700px"' ?>>
 			<div class="modal-content" style="border-radius: 0!important;margin-top: calc(50vh - 250px)">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute;padding: 10px 15px;background: red;z-index: 999;opacity: 1;color: white;border-radius: 50px;right: -20px;top: -20px;"><span aria-hidden="true">&times;</span>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"
+				        style="position: absolute;padding: 10px 15px;background: red;z-index: 999;opacity: 1;color: white;border-radius: 50px;right: -20px;top: -20px;"><span aria-hidden="true">&times;</span>
 				</button>
 				<div class="modal-body welcome_list g-pa-0">
 					<a class="dismiss-modal" href="<?php echo POIN_ADES_URL ?>">
 						<?php if ($this->agent->is_mobile()): ?>
-							<img src="<?php echo base_url(DIR_IMG.'bg/services/ades/3-popup-mobile.jpg') ?>" class="img-fluid">
+							<img src="<?php echo base_url(DIR_IMG . 'bg/services/ades/3-popup-mobile.jpg') ?>" class="img-fluid">
 						<?php else: ?>
-							<img src="<?php echo base_url(DIR_IMG.'bg/services/ades/3-popup-desktop.jpg') ?>" style="width:100%">
+							<img src="<?php echo base_url(DIR_IMG . 'bg/services/ades/3-popup-desktop.jpg') ?>" style="width:100%">
 						<?php endif; ?>
 					</a>
 				</div>
@@ -223,60 +232,60 @@ header("Pragma: no-cache");
 								<br>
 								<div class="row">
 									<?php
-									$nav = [
-										[
-											'caption' => 'Send Your Waste',
-											'icon' => 'et-icon-gift',
-											'url' => site_url('../sendyourwaste'),
-											'color' => 'blue',
-											'number' => '1'
-										],
-										[
-											'caption' => 'Dropping Box',
-											'icon' => 'icon-electronics-084 u-line-icon-pro',
-											'url' => '#',
-											'color' => 'orange',
-											'number' => '2'
-										],
-										[
-											'caption' => 'Waste Management',
-											'icon' => 'icon-transport-029 u-line-icon-pro',
-											'url' => '#',
-											'color' => 'primary',
-											'number' => '3'
+										$nav = [
+											[
+												'caption' => 'Send Your Waste',
+												'icon' => 'et-icon-gift',
+												'url' => site_url('../sendyourwaste'),
+												'color' => 'blue',
+												'number' => '1'
+											],
+											[
+												'caption' => 'Dropping Box',
+												'icon' => 'icon-electronics-084 u-line-icon-pro',
+												'url' => '#',
+												'color' => 'orange',
+												'number' => '2'
+											],
+											[
+												'caption' => 'Waste Management',
+												'icon' => 'icon-transport-029 u-line-icon-pro',
+												'url' => '#',
+												'color' => 'primary',
+												'number' => '3'
+											]
 										]
-									]
 									?>
 									<?php
-									foreach ($nav as $nav):
-										?>
-										<div class="col-12 mb-4">
+										foreach ($nav as $nav):
+											?>
+											<div class="col-12 mb-4">
 
-											<div class="u-block-hover g-brd-around g-brd-gray-light-v4 rounded g-transition-0_3 g-px-20 g-py-20"
-											     style="-webkit-box-shadow: 0 5px 25px 1px rgba(0,0,0,0.1);box-shadow: 0 5px 25px 1px rgba(0,0,0,0.1);">
-												<div style="display: inline-flex">
-													<div class="mr-4">
-														<i class="<?= $nav['icon'] ?> mb-5 g-font-size-50 g-color-<?= $nav['color'] ?>"></i>
-													</div>
-													<div>
-														<h5 class="h5 g-font-weight-600 mb-2 g-color-black">
-															<?= $nav['caption'] ?>
-														</h5>
-														<h6>
-															<small xml:lang="text-muted">Loremp Ipsum dolor sit amet sit adispicing malar conserato man sam alarto</small>
-														</h6>
+												<div class="u-block-hover g-brd-around g-brd-gray-light-v4 rounded g-transition-0_3 g-px-20 g-py-20"
+												     style="-webkit-box-shadow: 0 5px 25px 1px rgba(0,0,0,0.1);box-shadow: 0 5px 25px 1px rgba(0,0,0,0.1);">
+													<div style="display: inline-flex">
+														<div class="mr-4">
+															<i class="<?= $nav['icon'] ?> mb-5 g-font-size-50 g-color-<?= $nav['color'] ?>"></i>
+														</div>
+														<div>
+															<h5 class="h5 g-font-weight-600 mb-2 g-color-black">
+																<?= $nav['caption'] ?>
+															</h5>
+															<h6>
+																<small xml:lang="text-muted">Loremp Ipsum dolor sit amet sit adispicing malar conserato man sam alarto</small>
+															</h6>
+														</div>
 													</div>
 												</div>
+												<br>
+												<div class="pull-right" style="position: absolute;top: 70%;right: 40px;">
+													<a class="btn u-btn-<?= $nav['color'] ?> g-brd-2 g-font-size-13 g-rounded-50 g-pl-20 g-pr-15 g-py-9" href="<?= $nav['url'] ?>">
+														Learn More <i class="icon-arrow-right ml-2"></i>
+													</a>
+												</div>
 											</div>
-											<br>
-											<div class="pull-right" style="position: absolute;top: 70%;right: 40px;">
-												<a class="btn u-btn-<?= $nav['color'] ?> g-brd-2 g-font-size-13 g-rounded-50 g-pl-20 g-pr-15 g-py-9" href="<?= $nav['url'] ?>">
-													Learn More <i class="icon-arrow-right ml-2"></i>
-												</a>
-											</div>
-										</div>
-									<?php
-									endforeach;
+										<?php
+										endforeach;
 									?>
 								</div>
 							</div>

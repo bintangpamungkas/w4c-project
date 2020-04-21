@@ -1,7 +1,4 @@
 <section class="g-bg-white g-pa-30">
-
-	<div id="share" style="height: 10px;position: absolute;width: 80%;margin-top: -170px"></div>
-
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 <?= $this->agent->is_mobile() ? 'text-center' : '' ?> g-color-info">

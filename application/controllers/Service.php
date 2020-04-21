@@ -82,6 +82,34 @@
 			$data['page_heading'] = 'services_title';
 			$data['is_bilingual'] = true;
 			$data['service_target'] = $target;
+			if (empty($target) || $target="all"){
+				$data['meta_data'] = [
+					'site_url' => '/service/',
+					'title_1' => 'Waste4Change - All Service',
+					'description_1' => $this->get_lang('a-list-of-waste4changes-waste-management-services-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
+					'title_2' => $this->get_lang('a-list-of-waste4changes-waste-management-services'),
+					'description_2' => $this->get_lang('a-list-of-waste4changes-waste-management-services-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
+					'keywords' => $this->get_lang('waste4change-service-waste-service-waste-management-waste-processing-waste-education-waste-research-waste-study-waste-recycling-waste-collection-waste-recycling-waste-bin-trash-bag-trash-can'),
+				];
+			}else if($target="for-company"){
+				$data['meta_data'] = [
+					'site_url' => '/service/',
+					'title_1' => 'Waste4Change - All Service	',
+					'description_1' => $this->get_lang('a-list-of-waste4changes-waste-management-services-for-companies-institutions-schools-businesses-and-foundation-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
+					'title_2' => $this->get_lang('a-list-of-waste4changes-waste-management-services-for-companies-institutions-schools-businesses-and-foundation'),
+					'description_2' => $this->get_lang('a-list-of-waste4changes-waste-management-services-for-companies-institutions-schools-businesses-and-foundation-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
+					'keywords' => $this->get_lang('waste4change-service-waste-service-waste-management-waste-processing-waste-education-waste-research-waste-study-waste-recycling-waste-collection-waste-recycling-waste-bin-trash-bag-trash-can'),
+				];
+			}else if($target="for-individuals"){
+				$data['meta_data'] = [
+					'site_url' => '/service/',
+					'title_1' => 'Waste4Change - All Service',
+					'description_1' => $this->get_lang('a-list-of-waste4changes-waste-management-services-for-individual-from-waste-drop-points-waste-delivery-and-door-to-door-waste-collection'),
+					'title_2' => $this->get_lang('a-list-of-waste4changes-waste-management-services-for-individual'),
+					'description_2' => $this->get_lang('a-list-of-waste4changes-waste-management-services-for-individual-from-waste-drop-points-waste-delivery-and-door-to-door-waste-collection'),
+					'keywords' => $this->get_lang('waste-delivery-waste-pickup-waste-drop-off-waste-deposit-domestic-waste-household-waste-individual-waste-inorganic-waste-organic-waste-waste-segregation'),
+				];
+			}
 
 			$this->render_page('services/index', $data, 'services');
 		}
@@ -100,7 +128,6 @@
 				redirect(site_url('service/in-store-recycling'));
 			}
 
-
 			$lang = $this->get_language();
 
 			$service = $this->service_model->get_service($lang, $service_slug);
@@ -108,46 +135,7 @@
 				show_404();
 			}
 			$sections = $this->crud_model->select('service_section', QUERY_RESULT, ['service_section.deleted_at', 'service_section.service_id', 'section.section_id', 'section_slug', '(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_menu_name AND dictionary.language_code="' . $lang . '") as section_menu_name', '(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_name AND dictionary.language_code="' . $lang . '") as section_name'], ['service_section.service_id' => $service->service_id, 'service_section.deleted_at' => null], ['service_section' => ['section' => 'section_id']], ['section_order' => 'asc', 'section.section_id' => 'asc']);
-			$data['breadcrumb'] = [
-				[
-					'title' => $this->get_lang('home'),
-					'url' => '',
-					'active' => false
-				],
-				[
-					'title' => $this->get_lang('all-services'),
-					'url' => 'service',
-					'active' => false
-				]
-			];
-			if (!empty($service->service_parent_id)) {
-				$parent_service = $this->crud_model->select('service', QUERY_ROW, ['service_slug', 'service_short_name', 'service_portfolio_url', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_name AND language_code="' . $lang . '" limit 1) as service_name'], ['service_id' => $service->service_parent_id]);
-				$data['parent_service'] = $parent_service;
-				$data['breadcrumb'][] =
-					[
-						'title' => $parent_service->service_name,
-						'url' => 'service/' . $parent_service->service_slug,
-						'active' => false
-					];
-			}
 
-			$data['breadcrumb'][] =
-				[
-					'title' => $service->service_name,
-					'url' => '#welcome',
-					'active' => true
-				];
-
-			$data['title'] = $service->service_name;
-			$data['id'] = 'service';
-			$data['subtitle'] = 'information';
-			$data['data_mode'] = 'service';
-			$data['service_id'] = $service_slug;
-			$data['service_name'] = $service->service_name;
-			$data['page_heading'] = $data['service_name'];
-			$data['is_bilingual'] = true;
-
-			$data['subnav'] = $sections;
 			foreach ($sections as $section) {
 
 				if ($section->section_slug == 'our-achievement' || $section->section_slug == 'achievement-deliverable') {
@@ -236,18 +224,65 @@
 
 						}
 					}
-
 //					$data['records'] = $this->crud_model->select('service_record', QUERY_RESULT, ['city_name', 'city_point'], ['service_record.service_id' => $service->service_id, 'service_record.deleted_at' => null], ['service_record' => ['place_city' => 'city_id']]);
-
 					$data['coverages'] = $coverages;
 				}
 			}
 			$data['service'] = $service;
 			$data['sections'] = $sections;
 
+			// Page Information
+			$data['meta_data'] = [
+				'site_url' => $service->service_page_url,
+				'title_1' => 'Waste4Change - ' . $service->service_name,
+				'description_1' => $service->service_meta_description,
+				'title_2' => $service->service_meta_title,
+				'description_2' => $service->service_meta_description,
+				'keywords' => $service->service_meta_title,
+			];
+			$data['breadcrumb'] = [
+				[
+					'title' => $this->get_lang('home'),
+					'url' => '',
+					'active' => false
+				],
+				[
+					'title' => $this->get_lang('all-services'),
+					'url' => 'service',
+					'active' => false
+				]
+			];
+			if (!empty($service->service_parent_id)) {
+				$parent_service = $this->crud_model->select('service', QUERY_ROW, ['service_slug', 'service_short_name', 'service_portfolio_url', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_name AND language_code="' . $lang . '" limit 1) as service_name'], ['service_id' => $service->service_parent_id]);
+				$data['parent_service'] = $parent_service;
+				$data['breadcrumb'][] =
+					[
+						'title' => $parent_service->service_name,
+						'url' => 'service/' . $parent_service->service_slug,
+						'active' => false
+					];
+			}
+
+			$data['breadcrumb'][] =
+				[
+					'title' => $service->service_name,
+					'url' => '#welcome',
+					'active' => true
+				];
+			$data['subnav'] = $sections;
+
+
+			$data['title'] = $service->service_name;
+			$data['id'] = 'service';
+			$data['subtitle'] = 'information';
+			$data['data_mode'] = 'service';
+			$data['service_id'] = $service_slug;
+			$data['service_name'] = $service->service_name;
+			$data['page_heading'] = $data['service_name'];
+			$data['is_bilingual'] = true;
+
 			$this->render_page('services/detail', $data, 'services');
 		}
-
 
 		public function join($service_slug)
 		{
@@ -270,7 +305,15 @@
 			}
 			$sections = $this->crud_model->select('service_section', QUERY_RESULT, ['service_section.deleted_at', 'service_section.service_id', 'section.section_id', 'section_slug', '(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_menu_name AND dictionary.language_code="' . $lang . '") as section_menu_name', '(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_name AND dictionary.language_code="' . $lang . '") as section_name'], ['service_section.service_id' => $service->service_id, 'service_section.deleted_at' => null], ['service_section' => ['section' => 'section_id']]);
 
-			$data['title'] = $service->service_name;
+			$data['meta_data'] = [
+				'site_url' => $service->service_page_url.'/join',
+				'title_1' => 'Waste4Change - Join ' . $service->service_name,
+				'description_1' => $service->service_meta_description,
+				'title_2' => $service->service_meta_title,
+				'description_2' => $service->service_meta_description,
+				'keywords' => $service->service_meta_title,
+			];
+			$data['title'] = 'Join' . $service->service_name;
 			$data['id'] = 'service';
 			$data['subtitle'] = 'information';
 			$data['data_mode'] = 'service';

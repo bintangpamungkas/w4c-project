@@ -47,14 +47,21 @@
 			$data['coverage_cities'] = $this->crud_model->select('place_city', QUERY_RESULT, ['city_name', 'province_name'], '', ['place_city' => ['place_province' => 'province_id']]);
 			$data['testimonials'] = $this->crud_model->select('testimonial', QUERY_RESULT, '', ['language_code' => $lang, 'deleted_at' => null, 'service_id' => null]);
 			$data['blogs'] = $this->blog_model->get_blog();
-//print_r($data['blogs']);
-//die();
+
 			$data['title'] = '';
 			$data['id'] = 'site';
 			$data['subtitle'] = 'information';
 			$data['data_mode'] = 'general';
 			$data['page_heading'] = APP_NAME;
 			$data['is_bilingual'] = true;
+			$data['meta_data'] = [
+					'site_url' => '/official/',
+					'title_1' => 'Waste4Change',
+					'description_1' => $this->get_lang('a-social-entrepreneur-that-provides-segregated-and-responsible-waste-management-services-by-reducing-the-amount-of-waste-that-end-up-in-landfills'),
+					'title_2' => $this->get_lang('a-social-entrepreneur-that-provides-responsible-waste-management-services'),
+					'description_2' => $this->get_lang('a-social-entrepreneur-that-provides-segregated-and-responsible-waste-management-services-by-reducing-the-amount-of-waste-that-end-up-in-landfills'),
+					'keywords' => $this->get_lang('waste-management-waste-management-jakarta-waste-management-service-waste-management-using-modern-technology-recycling-service-waste-processing-service'),
+			];
 
 			$this->render_page('sites/index', $data, 'index');
 		}
@@ -67,6 +74,14 @@
 			$data['data_mode'] = 'general';
 			$data['page_heading'] = 'about_us';
 			$data['is_bilingual'] = true;
+			$data['meta_data'] = [
+					'site_url' => '/official/about',
+					'title_1' => 'Waste4Change - About',
+					'description_1' => $this->get_lang('a-social-entrepreneur-that-provides-segregated-and-responsible-waste-management-services-by-reducing-the-amount-of-waste-that-end-up-in-landfills'),
+					'title_2' => $this->get_lang('a-social-entrepreneur-that-provides-responsible-waste-management-services'),
+					'description_2' => $this->get_lang('a-social-entrepreneur-that-provides-segregated-and-responsible-waste-management-services-by-reducing-the-amount-of-waste-that-end-up-in-landfills'),
+					'keywords' => $this->get_lang('waste-management-waste-management-jakarta-waste-management-service-waste-management-using-modern-technology-recycling-service-waste-processing-service'),
+			];
 
 			$this->render_page('sites/about', $data, 'services');
 		}
@@ -92,7 +107,14 @@
 						'url' => site_url('send')
 					],
 				];
-
+			$data['meta_data'] = [
+				'site_url' => '/official/contact',
+				'title_1' => 'Waste4Change - Contact',
+				'description_1' => $this->get_lang('a-social-entrepreneur-that-provides-segregated-and-responsible-waste-management-services-by-reducing-the-amount-of-waste-that-end-up-in-landfills'),
+				'title_2' => $this->get_lang('a-social-entrepreneur-that-provides-responsible-waste-management-services'),
+				'description_2' => $this->get_lang('a-social-entrepreneur-that-provides-segregated-and-responsible-waste-management-services-by-reducing-the-amount-of-waste-that-end-up-in-landfills'),
+				'keywords' => $this->get_lang('waste-management-waste-management-jakarta-waste-management-service-waste-management-using-modern-technology-recycling-service-waste-processing-service'),
+			];
 
 			$this->render_page('sites/contact', $data, 'services');
 		}

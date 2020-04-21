@@ -463,128 +463,50 @@ function services_list_helper()
 	return $services;
 }
 
-function meta_data($activation)
+function meta_data($activation,$meta_data=false)
 {
 	$param = [
-		[
-			'site_url' => '/official/',
 			'title_1' => 'Waste4Change - Responsible Waste Management',
-			'decription_1' => 'Perusahaan sosial yang menyediakan layanan pengelolaan sampah untuk mengurangi timbunan sampah di TPA ',
-			'title_2' => 'Perusahaan sosial yang menyediakan pengelolaan sampah secara bertanggung jawab',
-			'description_2' => 'Perusahaan sosial yang menyediakan jasa pengolahan sampah terpilah secara bertanggung jawab dengan mengurangi timbunan sampah di TPA',
-			'keywords' => 'waste management, waste management jakarta, layanan pengelolaan sampah, pengelolaan sampah dengan teknologi modern, layanan daur ulang, jasa pengelola sampah',
-			'status' => true,
-		],
-		[
-			'site_url' => '/official/service/zero-waste-to-landfill-management',
-			'title_1' => 'Zero Waste to Landfill - Responsible Waste Management',
-			'decription_1' => 'Program pemilahan sampah dari sumber dan memastikan pengolahan seluruh sampah tidak ada yang dikirim ke TPA dengan pemberian pelaporan alur sampah yang lengkap.',
-			'title_2' => 'Layanan pengelolaan sampah untuk perusahaan yang memastikan tidak ada sampah yang berakhir di TPA',
-			'description_2' => 'Program pengelolaan sampah perusahaan dengan pengelolaan dan pengolahan secara bertanggung jawab tanpa ada sampah yang masuk ke TPA. Waste4Change akan memberikan pelaporan alur sampah',
-			'keywords' => 'waste management, pengolahan sampah, daur ulang, sampah anorganik, sampah organik, sampah perusahaan, sampah kantor, jenis material sampah, mitra waste4change, pengelolaan sampah, program daur ulang',
-			'status' => true,
-		],
-		[
-			'site_url' => '/official/service/responsible-waste-management',
-			'title_1' => 'Responsible Waste Management - Responsible Waste Management',
-			'decription_1' => 'Pengelolaan Sampah Bertanggung Jawab adalah penerapan sistem kelola sampah yang menerapkan pemilahan sampah di sumber dan memastikan pengolahan sampah lebih optimal, dan adanya pelaporan alur sampah.',
-			'title_2' => 'Program pengelolaan sampah secara optimal beserta pelaporan alur sampah',
-			'description_2' => 'Program pengelolaan sampah dari sumbernya yang dikelola secara optimal dengan pelaporan alur sampah',
-			'keywords' => 'program pengelolaan sampah, pengelolaan sampah, pengelolaan sampah dari sumber, pelaporan alur sampah, pengelolaan sampah secara optimal, pengelolaan sampah bertanggung jawab',
-			'status' => true,
-		],
-
-		[
-			'site_url' => '/official/service/inorganic-waste-management',
-			'title_1' => 'Inorganic Waste Management - Responsible Waste Management',
-			'decription_1' => 'Sistem kelola sampah anorganik yang menerapkan pemilahan sampah secara optimal dan memberikan pelaporan alur sampah yang lengkap',
-			'title_2' => 'Pengelolaan sampah anorganik dengan pemilahan yang optimal ',
-			'description_2' => 'Pengelolaan sampah anorganik dengan pemilahan sampah yang optimal dan pelaporan alur sampah yang lengkap',
-			'keywords' => 'pengelolaan sampah anorganik, pemilahan sampah, pemilahan sampah yang optimal, pelaporan alur sampah, sampah anorganik, waste management',
-			'status' => true,
-		],
-		[
-			'site_url' => '/official/service/edukasi-bijak-sampah',
-			'title_1' => 'Edukasi Bijak Sampah - Responsible Waste Management',
-			'decription_1' => 'Program edukasi dengan memberikan pemahaman untuk mengelola sampah secara bertanggung jawab dengan materi dan kegiatan yang menyenangkan sehingga dapat diterima dan peserta ikut berperan aktif dalam program ini',
-			'title_2' => 'Edukasi pengolahan sampah yang bertanggung jawab',
-			'description_2' => 'Program edukasi pengolahan dan pengelolaan sampah dengan memberikan pemahaman yang bertujuan untuk meningkatkan kesadaran peserta akan pentingnya pengelolaan sampah yang bertanggung jawab.',
-			'keywords' => 'program edukasi, pemahaman pengelolaan sampah, pengelolaan sampah, pengelolaan sampah bertanggung jawab, kampanye lingkungan, bijak kelola sampah',
-			'status' => true,
-		],
-		[
-			'site_url' => '/official/service/akademi-bijak-sampah',
-			'title_1' => 'Akademi Bijak Sampah - Responsible Waste Management',
-			'decription_1' => 'Program edukasi yang dirancang untuk memberikan pengalaman langsung kepada peserta dengan mengunjungi TPA dan Rumah Pemulihan Material Waste4change dan pemberian materi, diskusi serta permainan mengenai bijak kelola sampah',
-			'title_2' => 'Edukasi pengelolaan sampah dengan mengunjungi TPS dan tempat pengelolaan sampah ',
-			'description_2' => 'Program edukasi yang memberikan pengalaman langsung kepada peserta dengan mengunjungi TPA /TPS kota dan tempat proses daur ulang sampah dengan tujuan meningkatkan kesadaran peserta akan pentingnya pengelolaan sampah yang bertanggung jawab.',
-			'keywords' => 'program edukasi, kunjungan ke tempat pengelolaan sampah, kunjungan ke TPA, bijak mengelola sampah, kampanye lingkungan, aksi kelola sampah, bijak kelola sampah',
-			'status' => true,
-		],
-		[
-			'site_url' => '/official/service/event-waste-management',
-			'title_1' => 'Event Waste Management - Responsible Waste Management',
-			'decription_1' => 'Program pengelolaan sampah acara yang memastikan seluruh sampah acara dikelola dengan baik melalui tempat sampah terpilah di setiap titik keramaian dan pengadaan booth edukasi hingga pengangkutan sampah acara',
-			'title_2' => 'Pengelolaan dan edukasi sampah acara secara terpilah dan bertanggung jawab',
-			'description_2' => 'Program pengelolaan sampah melalui tempat sampah terpilah yang telah disediakan di titik keramaian acara dan pengadaan booth edukasi selama acara berlangsung.',
-			'keywords' => 'pengelolaan sampah acara, tempat sampah terpilah, booth edukasi sampah, pengangkutan sampah terpilah, kampanye lingkungan, bijak kelola sampah',
-			'status' => true,
-		],
-		[
-			'site_url' => '/official/service/extended-producer-responsibility',
-			'title_1' => 'Extended Producer Responsibility - Responsible Waste Management',
-			'decription_1' => 'Program pengelolaan sampah brand yang berasal dari proses produksi seperti cacat produksi, reject, atau sisa produksi, produk kadaluarsa, produk rusak, produk bekas pakai, sampah retur, sampah bekas pakai, sampah dari pengguna konsumen seperti kemasan kosong',
-			'title_2' => 'Proses pengelolaan sampah berlabel brand ',
-			'description_2' => 'Program EPR merupakan program pengelolaan sampah berlabel brand dari perusahaan dengan kriteria sampah seperti produk reject, cacat produksi, kedaluwarsa, bekas pakai yang akan dikelola secara optimal dan aman.',
-			'keywords' => 'pengelolaan sampah brand, sampah brand, sampah produk reject, sampah produk kedaluwarsa, sampah produk rusak, sampah kemasan kosong, sampah produk bekas pakai, proses pengelolaan sampah',
-			'status' => true,
-		],
-		[
-			'site_url' => '/official/service/program-pendampingan-optimalisasi-tps3r',
-			'title_1' => 'Extended Producer Responsibility - Responsible Waste Management',
-			'decription_1' => 'Program edukasi dan pendampingan kepada pengelola TPS3R setempat dan masyarakat sekitar dalam mengurangi sampah yang berakhir di TPA',
-			'title_2' => 'Edukasi dan pendampingan kepada penggerak TPS dengan mengedepankan 3R',
-			'description_2' => 'Program edukasi dan konsultasi serta pendampingan untuk mengurangi sampah yang berakhir di TPA untuk penggerak TPS3R',
-			'keywords' => 'jasa konsultasi, program edukasi, program pendampingan, TPS3R, mengurangi sampah di TPA, Optimalisasi pengelolaan sampah, pendampingan TPS, tempat pembuangan sampah, optimalisasi pengelolaan sampah,daur ulang sampah, penggerak TPS3R, kampanye lingkungan',
-			'status' => true,
-		],
-		[
-			'site_url' => '/official/service/feasibility-study',
-			'title_1' => 'Feasibility Study - Responsible Waste Management',
-			'decription_1' => 'Jasa Konsultasi pengelolaan sampah bertanggung jawab untuk gedung/perkantoran sesuai dengan Program Penilaian Peningkatan Kinerja Perusahaan (PROPER) dari KLHK (Kementerian Lingkungan Hidup dan Kehutanan) RI',
-			'title_2' => 'Jasa konsultasi pengelolaan sampah untuk gedung/perkantoran',
-			'description_2' => 'Layanan konsultasi pengelolaan sampah untuk gedung/perkantoran serta pendataan dari segi teknis lingkungan, sehingga client dapat menerapkan pengelolaan sampah bertanggung jawab',
-			'keywords' => 'jasa konsultasi, pengelolaan sampah gedung, pengelolaan sampah kantor, penerapan pengelolaan sampah, PROPER KLHK, jasa konsultasi pengelolaan sampah,aspek pengelolaan sampah',
-			'status' => true,
-		],
-		[
-			'site_url' => '/official/service/black-soldier-fly-learning-center',
-			'title_1' => 'Black Soldier Fly Learning Center - Responsible Waste Management',
-			'decription_1' => 'Program edukasi pengelolaan sampah organik menggunakan Black Soldier Fly (BSF) dengan metode pembudidayaan dan pembibitan BSF',
-			'title_2' => 'Edukasi penguraian sampah organik menggunakan Black Soldier Fly (BSF)',
-			'description_2' => 'Layanan edukasi penguraian sampah organik dan pembudidayaan bibit Black Soldier Fly (BSF)',
-			'keywords' => 'edukasi penguraian sampah, penguraian sampah, jasa penguraian sampah, pembudidayaan Black Soldier Fly, pembibitan Black Soldier Fly, pembuatan pupuk organik, pupuk organik',
-			'status' => true,
-
-		]
+			'description_1' => get_lang('a-social-entrepreneur-that-provides-segregated-and-responsible-waste-management-services-by-reducing-the-amount-of-waste-that-end-up-in-landfills'),
+			'title_2' => get_lang('a-social-entrepreneur-that-provides-responsible-waste-management-services'),
+			'description_2' => get_lang('a-social-entrepreneur-that-provides-segregated-and-responsible-waste-management-services-by-reducing-the-amount-of-waste-that-end-up-in-landfills'),
+			'keywords' => get_lang('waste-management-waste-management-jakarta-waste-management-service-waste-management-using-modern-technology-recycling-service-waste-processing-service'),
 	];
+//	print_r($param);
+//die();
 	if ($activation == true) {
-		foreach ($param as $param) {
-			if ($param['status'] == true && $_SERVER['REQUEST_URI'] == $param['site_url']) {
-				?>
-				<meta name="description" content="<?php echo @$param['description_1'] ?>">
-				<meta name="keywords" content="<?php echo $param['keywords'] ?>">
-				<meta property="og:url" content="<?php echo 'https://waste4change.com' . $param['site_url'] ?>"/>
-				<meta property="og:site_name" content="<?php echo APP_NAME ?>"/>
-				<meta property="og:title" content="<?php echo $param['title_2'] ?>">
-				<meta property="og:description" content="<?php echo $param['description_2'] ?>"/>
-				<meta property="og:image" content="<?= base_url(DIR_IMG.'logo/favicon.jpg') ?>">
-				<meta property="og:image:type" content="image/jpg">
-				<meta property="og:image:width" content="1024">
-				<meta property="og:image:height" content="1024">
-				<link rel="canonical" href="<?php echo 'https://waste4change.com' . $param['site_url'] ?>"/>
-				<?php
-			}
+		if (empty($meta_data)){
+//			foreach ($param as $param) {
+//				if ($param['status'] == true && $_SERVER['REQUEST_URI'] == $param['site_url']) {
+					?>
+					<meta name="description" content="<?= $param['description_1'] ?>">
+					<meta name="keywords" content="<?= $param['keywords'] ?>">
+					<meta property="og:url" content="<?= 'https://waste4change.com' . $_SERVER['REQUEST_URI'] ?>"/>
+					<meta property="og:site_name" content="<?= APP_NAME ?>"/>
+					<meta property="og:title" content="<?= $param['title_2'] ?>">
+					<meta property="og:description" content="<?= $param['description_2'] ?>"/>
+					<meta property="og:image" content="<?= base_url(DIR_IMG.'logo/favicon.jpg') ?>">
+					<meta property="og:image:type" content="image/jpg">
+					<meta property="og:image:width" content="1024">
+					<meta property="og:image:height" content="1024">
+					<link rel="canonical" href="<?= 'https://waste4change.com' . $param['site_url'] ?>"/>
+					<?php
+//				}
+//			}
+		}else{
+			?>
+			<meta name="description" content="<?= $meta_data['description_1'] ?>">
+			<meta name="keywords" content="<?= $meta_data['keywords'] ?>">
+			<meta property="og:url" content="<?= 'https://waste4change.com' . $meta_data['site_url'] ?>"/>
+			<meta property="og:site_name" content="<?= APP_NAME ?>"/>
+			<meta property="og:title" content="<?= $meta_data['title_2'] ?>">
+			<meta property="og:description" content="<?= $meta_data['description_2'] ?>"/>
+			<meta property="og:image" content="<?= base_url(DIR_IMG.'logo/favicon.jpg') ?>">
+			<meta property="og:image:type" content="image/jpg">
+			<meta property="og:image:width" content="1024">
+			<meta property="og:image:height" content="1024">
+			<link rel="canonical" href="<?= 'https://waste4change.com' . $meta_data['site_url'] ?>"/>
+			<?php
 		}
 	}
 }

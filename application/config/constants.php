@@ -37,7 +37,6 @@
 	define('OFFICIAL_NOREPLY_MAIL', 'noreply@sampahmuda.com');
 	define('OFFICIAL_NAME', APP_NAME . ' Support');
 	define('MODE', 'Dev');
-	define('VERSION', '');
 	define('DEV_YEAR', '2020');
 
 	define('DUMMY_CUSTOMER_ID', 1);

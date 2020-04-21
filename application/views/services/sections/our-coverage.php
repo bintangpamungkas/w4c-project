@@ -222,10 +222,10 @@
 						type=coverage[8];
 					});
 					if (type === 'point'){
-						$('#legend').append('<div class="col-md-6 text-center"> <img src="<?=base_url() . DIR_ICON?>pin/'+icon+'" alt="" style="height:30px; margin-right:10px; margin-bottom:0px">Area ' +area[0] + '</div>');
+						$('#legend').append('<div class="col-md-6 text-center"> <img src="<?=base_url() . DIR_ICON?>pin/'+icon+'" alt="" style="height:30px; margin-right:10px; margin-bottom:0px"><?= $section_name ?> ' +area[0] + '</div>');
 
 					}else{
-						$('#legend').append('<div class="col-md-6 text-center"> <span style="display:inline-block; width: 20px;height: 20px; background-color: '+color+'40; border: 2px solid '+color+'bb; margin-right:10px; margin-bottom:-5px"></span> Area ' +area[0] + '</div>');
+						$('#legend').append('<div class="col-md-6 text-center"> <span style="display:inline-block; width: 20px;height: 20px; background-color: '+color+'40; border: 2px solid '+color+'bb; margin-right:10px; margin-bottom:-5px"></span> <?= $section_name ?> ' +area[0] + '</div>');
 					}
 				}
 			});

@@ -107,7 +107,7 @@
 							'for' => 'menu',
 							'visible' => true,
 							'number' => '7',
-							'url' => site_url('site/contact'),
+							'url' => site_url('contact'),
 							'type' => '',
 							'submenu_type' => 'list',
 							'icon' => '',
