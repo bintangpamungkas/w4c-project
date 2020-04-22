@@ -12,10 +12,10 @@
 			$this->load->model('crud_model');
 		}
 
-		public function index($param)
+		public function index($brand_slug)
 		{
-			$data['brand_id'] = $param;
-			$data['brand_name'] = $param == 'tetrapak' ? 'tetra pak' : ($param == 'cocacola' ? 'Coca-Cola' : '');
+			$data['brand_id'] = $brand_slug;
+			$data['brand_name'] = $brand_slug == 'tetrapak' ? 'tetra pak' : ($brand_slug == 'cocacola' ? 'Coca-Cola' : '');
 			$data['title'] = 'brand';
 			$data['id'] = 'brand';
 			$data['subtitle'] = 'information';
@@ -50,8 +50,8 @@
 				],
 			];
 
-			if ($param == 'cocacola' || $param == 'tetrapak') {
-				$this->render_page('brands/' . $param . '/index', $data, 'brand');
+			if ($brand_slug == 'cocacola' || $brand_slug == 'tetrapak') {
+				$this->render_page('brands/' . $brand_slug . '/index', $data, 'brand');
 			} else {
 				show_404();
 			}

@@ -158,7 +158,7 @@
 		var dataSend = {
 			target: service_target_id,
 		};
-		console.log(dataSend);
+		// console.log(dataSend);
 		$.ajax({
 			type: "POST",
 			url: "<?php echo site_url()?>site/service_list",

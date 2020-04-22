@@ -489,7 +489,7 @@ function meta_data($activation,$meta_data=false)
 					<meta property="og:image:type" content="image/jpg">
 					<meta property="og:image:width" content="1024">
 					<meta property="og:image:height" content="1024">
-					<link rel="canonical" href="<?= 'https://waste4change.com' . $param['site_url'] ?>"/>
+					<link rel="canonical" href="<?= 'https://waste4change.com/'?>"/>
 					<?php
 //				}
 //			}

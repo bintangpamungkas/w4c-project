@@ -82,7 +82,7 @@
 			$data['page_heading'] = 'services_title';
 			$data['is_bilingual'] = true;
 			$data['service_target'] = $target;
-			if (empty($target) || $target="all"){
+			if (empty($target) || $target = "all") {
 				$data['meta_data'] = [
 					'site_url' => '/service/',
 					'title_1' => 'Waste4Change - All Service',
@@ -91,7 +91,7 @@
 					'description_2' => $this->get_lang('a-list-of-waste4changes-waste-management-services-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
 					'keywords' => $this->get_lang('waste4change-service-waste-service-waste-management-waste-processing-waste-education-waste-research-waste-study-waste-recycling-waste-collection-waste-recycling-waste-bin-trash-bag-trash-can'),
 				];
-			}else if($target="for-company"){
+			} else if ($target = "for-company") {
 				$data['meta_data'] = [
 					'site_url' => '/service/',
 					'title_1' => 'Waste4Change - All Service	',
@@ -100,7 +100,7 @@
 					'description_2' => $this->get_lang('a-list-of-waste4changes-waste-management-services-for-companies-institutions-schools-businesses-and-foundation-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
 					'keywords' => $this->get_lang('waste4change-service-waste-service-waste-management-waste-processing-waste-education-waste-research-waste-study-waste-recycling-waste-collection-waste-recycling-waste-bin-trash-bag-trash-can'),
 				];
-			}else if($target="for-individuals"){
+			} else if ($target = "for-individuals") {
 				$data['meta_data'] = [
 					'site_url' => '/service/',
 					'title_1' => 'Waste4Change - All Service',
@@ -174,59 +174,31 @@
 				if ($section->section_slug == 'recommended-for') {
 					$data['recommendations'] = $this->crud_model->select('service_recomendation', QUERY_RESULT, ['recomendation_icon', 'recomendation_color', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=recomendation_name AND language_code="' . $lang . '" limit 1) as recomendation_name'], ['service_recomendation.service_id' => $service->service_id, 'service_recomendation.deleted_at' => null], ['service_recomendation' => ['recomendation' => 'recomendation_id']]);
 				}
-				if ($section->section_slug == 'our-coverage') {
-//					$area_coverages = [];
-//					$point_coverages = [];
+				// COVERAGE BY DB POINT AND AREA
+
+				//				if ($section->section_slug == 'our-coverage') {
+
+//					$coverages = [];
+//					$child_service = $this->crud_model->select('service', QUERY_RESULT, ['service_id', '(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service.service_subcategory_name AND dictionary.language_code="' . $lang . '") as service_subcategory_name'], ['service_parent_id' => $service->service_id]);
 //
-//					$service_coverages = $this->crud_model->select('service_coverage', QUERY_RESULT, ['service_overage_type', 'service_coverage_level', 'service_overage_color'], ['service_id' => $service->service_id, 'deleted_at' => null]);
-//					foreach ($service_coverages as $coverage) {
-////						echo $coverage->service_coverage_level;
-////						echo $coverage->service_coverage_type;
-////						echo $coverage->service_coverage_code;
-////						die();
-//						$cov = $coverage;
-////						$cov[] = $this->crud_model->select('place_'.$coverage->service_coverage_level,QUERY_ROW,[$coverage->service_coverage_level.'_name name',$coverage->service_coverage_level.'_'.$coverage->service_coverage_type.' '.$coverage->service_coverage_type],[$coverage->service_coverage_level.'_id'=>$coverage->service_coverage_code]);
-////						$cov = $this->crud_model->select('place_city',QUERY_ROW,['city_name name','province_area area'],['province_id'=>$coverage->service_coverage_code]);
-////						print_r($cov);
-////die();
-//						if ($coverage->service_coverage_type == 'area') {
-//							if (!empty($cov)) {
-//								$area_coverages[0]['name'] = $service->service_name;
-//								$area_coverages[0]['coverage'] = $cov;
-//							}
-//						} else {
-//							if (!empty($cov)) {
-//								$point_coverages[0]['name'] = $service->service_name;
-//								$point_coverages[0]['coverage'] = $cov;
-//								$area_coverages[0]['coverages'] = $coverage;
-//							}
+//					$cov = $this->service_model->get_service_coverage($service->service_id);
+//
+//					if (!empty($cov)) {
+//						$coverages[0]['name'] = $service->service_name;
+//						$coverages[0]['coverage'] = $cov;
+//					}
+//					foreach ($child_service as $index => $child) {
+//						$cov = $this->service_model->get_service_coverage($child->service_id);
+//						if (!empty($cov)) {
+//							$coverages[$index + 1]['name'] = $child->service_subcategory_name;
+//							$coverages[$index + 1]['coverage'] = $cov;
+//
 //						}
 //					}
-//
-//					print_r($area_coverages);
-//					print_r($point_coverages);
-//					die();
-
-					$coverages = [];
-					$child_service = $this->crud_model->select('service', QUERY_RESULT, ['service_id', '(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=service.service_subcategory_name AND dictionary.language_code="' . $lang . '") as service_subcategory_name'], ['service_parent_id' => $service->service_id]);
-
-					$cov = $this->service_model->get_service_coverage($service->service_id);
-
-					if (!empty($cov)) {
-						$coverages[0]['name'] = $service->service_name;
-						$coverages[0]['coverage'] = $cov;
-					}
-					foreach ($child_service as $index => $child) {
-						$cov = $this->service_model->get_service_coverage($child->service_id);
-						if (!empty($cov)) {
-							$coverages[$index + 1]['name'] = $child->service_subcategory_name;
-							$coverages[$index + 1]['coverage'] = $cov;
-
-						}
-					}
 //					$data['records'] = $this->crud_model->select('service_record', QUERY_RESULT, ['city_name', 'city_point'], ['service_record.service_id' => $service->service_id, 'service_record.deleted_at' => null], ['service_record' => ['place_city' => 'city_id']]);
-					$data['coverages'] = $coverages;
-				}
+
+//					$data['coverages'] = $coverages->service_map_link;
+//				}
 			}
 			$data['service'] = $service;
 			$data['sections'] = $sections;
@@ -306,7 +278,7 @@
 			$sections = $this->crud_model->select('service_section', QUERY_RESULT, ['service_section.deleted_at', 'service_section.service_id', 'section.section_id', 'section_slug', '(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_menu_name AND dictionary.language_code="' . $lang . '") as section_menu_name', '(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_name AND dictionary.language_code="' . $lang . '") as section_name'], ['service_section.service_id' => $service->service_id, 'service_section.deleted_at' => null], ['service_section' => ['section' => 'section_id']]);
 
 			$data['meta_data'] = [
-				'site_url' => $service->service_page_url.'/join',
+				'site_url' => $service->service_page_url . '/join',
 				'title_1' => 'Waste4Change - Join ' . $service->service_name,
 				'description_1' => $service->service_meta_description,
 				'title_2' => $service->service_meta_title,
