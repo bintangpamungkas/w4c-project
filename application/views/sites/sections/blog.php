@@ -1,5 +1,5 @@
 <section id="blog" class="g-bg-gray-light-v5 dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-overflow-hidden"
-     data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
+         data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
 	<div class="divimage dzsparallaxer--target w-100 d-none" style="height: 130%; background-image: url(<?= base_url(DIR_IMG . 'bg/img36.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
 	<div class="container <?= $this->agent->is_mobile() ? 'g-py-50' : 'g-py-70' ?>">
 		<div class="text-center g-mb-50">
@@ -9,35 +9,6 @@
 		</div>
 
 		<?php
-			//			$blogs = [
-			//				[
-			//					'blog_title' => 'How to Deal with Your Disposable Medical Mask - The Responsible Way',
-			//					'blog_category' => 'WASTE MANAGEMENT',
-			//					'blog_content' => 'Due to the increasing panic of the COVID-19 pandemic, the use of medical masks has increased rapidly in many countries. Unfortunately, in most of the countries, this rise in medical masks demand is not accompanied by better-prepared medical mask handling protocols and education.',
-			//					'blog_author' => 'AMANDA BAHRAINI',
-			//					'blog_url' => 'https://waste4change.com/how-to-deal-with-your-disposable-medical-mask-the-responsible-way/',
-			//					'blog_date' => '03/24/2020',
-			//					'blog_image' => 'https://waste4change.com/wp-content/uploads/macau-photo-agency-O8KXb87sTZs-unsplash1-580x390.jpg',
-			//				],
-			//				[
-			//					'blog_title' => 'True of False? Debunking Myths about Waste',
-			//					'blog_category' => 'WASTE MANAGEMENT',
-			//					'blog_content' => 'Jakarta, 9 March 2020 - Located at CoHive, Plaza Kuningan, Jakarta, Waste4Change signed a Memorandum of Understanding with Bekasi City to have a partnership on...',
-			//					'blog_author' => 'MIRIAM BAHAGIJO',
-			//					'blog_url' => 'https://waste4change.com/true-of-false-debunking-myths-about-waste/',
-			//					'blog_date' => '03/17/2020',
-			//					'blog_image' => 'https://waste4change.com/wp-content/uploads/colin-czerwinski-GeG9AjZ4lEU-unsplash-580x390.jpg',
-			//				],
-			//				[
-			//					'blog_title' => 'Waste4Change Cooperates with Two Dutch-Based Companies, Afvalzorg and BreAd, to Improve Solid Waste Management in Indonesia',
-			//					'blog_category' => 'WASTE MANAGEMENT',
-			//					'blog_content' => 'Jakarta, 10th March 2020 - Waste4Change signs Letter of Intent (LOI) with two Dutch-based companies, Afvalzorg and BreAd for the improvement of solid waste management...',
-			//					'blog_author' => 'MIRIAM BAHAGIJO',
-			//					'blog_url' => 'https://waste4change.com/waste4change-cooperates-with-two-dutch-based-companies-afvalzorg-and-bread-to-improve-solid-waste-management-in-indonesia/',
-			//					'blog_date' => '03/12/2020',
-			//					'blog_image' => 'https://waste4change.com/wp-content/uploads/WhatsApp-Image-2020-03-10-at-19.15.54-2-580x390.jpeg',
-			//				],
-			//			];
 			if ($this->agent->is_mobile()): //MOBILE VIEW
 		?>
 		<div class="clearfix">
@@ -56,17 +27,19 @@
 
 							<div class="g-pa-30">
 								<h3 class="h5 g-mb-15" style="min-height: 80px">
-									<a class="u-link-v5 g-color-gray-dark-v2 g-color-info--hover g-font-weight-700" href="https://waste4change.com/<?= $blog->blog_url ?>" style="word-wrap: break-word"><?=  $blog->blog_title ?></a>
+									<a class="u-link-v5 g-color-gray-dark-v2 g-color-info--hover g-font-weight-700" href="https://waste4change.com/<?= $blog->blog_url ?>"
+									   style="word-wrap: break-word"><?= strip_tags(mb_convert_encoding($blog->blog_title, "Windows-1252", "UTF-8")) ?></a>
 								</h3>
 								<hr class="g-brd-gray-light-v4 g-mt-40">
 								<a title="Share Story" class="float-right g-brd-0 g-color-white--hover g-bg-linkedin--hover u-icon-v2 g-rounded-50x g-bg-info"
-								  style=" height: 30px; width: 30px; background-color:#117a8b" href="#" onclick="blogShare(this)" data-title="<?=  $blog->blog_title ?>" data-content="<?= empty($blog->post_excerpt) ? limit_word(strip_tags($blog->post_content),25): $blog->post_excerpt ?>"
-								  data-url="https://waste4change.com/<?= $blog->blog_url ?>" style="background-color: #159CBD">
+								   style=" height: 30px; width: 30px; background-color:#117a8b" href="#" onclick="blogShare(this)" data-title="<?= strip_tags(mb_convert_encoding($blog->blog_title , "Windows-1252", "UTF-8")) ?>"
+								   data-content="<?= empty($blog->post_excerpt) ? limit_word(strip_tags(mb_convert_encoding($blog->post_content, "Windows-1252", "UTF-8")), 25) : strip_tags(mb_convert_encoding($blog->post_excerpt, "Windows-1252", "UTF-8")) ?>"
+								   data-url="https://waste4change.com/<?= $blog->blog_url ?>" style="background-color: #159CBD">
 									<i class="fa fa-share-alt g-color-white g-font-size-10"></i>
 								</a>
 								<a target="_blank" href="https://waste4change.com/<?= $blog->blog_url ?>"
-								  class="g-bg-white g-color-info g-color-blue-dark-v1--hover g-mr-10 g-mb-15 g-font-weight-700 text-uppercase g-text-underline--none--hover"
-								  style="color:#117a8b"><?= get_lang('read-more') ?> <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
+								   class="g-bg-white g-color-info g-color-blue-dark-v1--hover g-mr-10 g-mb-15 g-font-weight-700 text-uppercase g-text-underline--none--hover"
+								   style="color:#117a8b"><?= get_lang('read-more') ?> <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
 
 							</div>
 						</article>
@@ -114,7 +87,7 @@
 		</div>
 	</div>
 
-	<?php else: // DESKTOP VIEW  ?>
+	<?php else: // DESKTOP VIEW   ?>
 
 	<div class="row align-height-list">
 		<?php
@@ -132,18 +105,22 @@
 						<div class="g-pa-30">
 							<div class="align-height-item">
 								<h3 class="h5 g-mb-15" style="min-height: 80px">
-									<a class="u-link-v5 g-color-gray-dark-v2 g-color-info--hover g-font-weight-700" href="https://waste4change.com/<?= $blog->blog_url ?>" style="word-wrap: break-word"><?=  $blog->blog_title ?></a>
+									<a class="u-link-v5 g-color-gray-dark-v2 g-color-info--hover g-font-weight-700" href="https://waste4change.com/<?= $blog->blog_url ?>"
+									   style="word-wrap: break-word"><?= strip_tags(mb_convert_encoding($blog->blog_title, "Windows-1252", "UTF-8")) ?></a>
 								</h3>
-								<div class="g-font-size-13"><?= empty($blog->post_excerpt) ? limit_word(strip_tags($blog->post_content),25): $blog->post_excerpt ?></div>
+								<div
+									class="g-font-size-13"><?= empty($blog->post_excerpt) ? limit_word(strip_tags(mb_convert_encoding($blog->post_content, "Windows-1252", "UTF-8")), 25) : strip_tags(mb_convert_encoding($blog->post_excerpt, "Windows-1252", "UTF-8")) ?></div>
 							</div>
 							<hr class="g-brd-gray-light-v4 g-mt-40">
 							<a title="Share Story" class="float-right g-brd-0 g-color-white--hover g-bg-linkedin--hover u-icon-v2 g-rounded-50x g-bg-info" href="#blog" onclick="blogShare(this)"
-							  data-title="<?=  $blog->blog_title ?>" data-content="<?= empty($blog->post_excerpt) ? limit_word(strip_tags($blog->post_content),25): $blog->post_excerpt  ?>" data-url="https://waste4change.com/<?= $blog->blog_url ?>" style=" height: 30px; width: 30px; background-color:#159CBD">
+							   data-title="<?= strip_tags(mb_convert_encoding($blog->blog_title , "Windows-1252", "UTF-8")) ?>"
+							   data-content="<?= empty($blog->post_excerpt) ? limit_word(strip_tags(mb_convert_encoding($blog->post_content, "Windows-1252", "UTF-8")), 25) : strip_tags(mb_convert_encoding($blog->post_excerpt, "Windows-1252", "UTF-8")) ?>"
+							   data-url="https://waste4change.com/<?= $blog->blog_url ?>" style=" height: 30px; width: 30px; background-color:#159CBD">
 								<i class="fa fa-share-alt g-color-white g-font-size-10"></i>
 							</a>
 							<a target="_blank" href="https://waste4change.com/<?= $blog->blog_url ?>"
-							  class="g-bg-white g-color-info g-color-blue-dark-v1--hover g-mr-10 g-mb-15 g-font-weight-700 text-uppercase g-text-underline--none--hover"
-							  style=""><?= get_lang('read-more') ?> <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
+							   class="g-bg-white g-color-info g-color-blue-dark-v1--hover g-mr-10 g-mb-15 g-font-weight-700 text-uppercase g-text-underline--none--hover"
+							   style=""><?= get_lang('read-more') ?> <i class="fa fa-angle-right g-ml-20 g-font-weight-900"></i> </a>
 						</div>
 					</article>
 				</div>
@@ -180,31 +157,31 @@
 			<div class="text-right row no-gutters justify-content-center">
 				<div class="col">
 					<a id="modalBlogShareInstagram" title="Share on Instagram" target="_blank"
-					  class="g-brd-2 g-color-info g-color-white--hover g-bg-purple--hover u-icon-v2 g-rounded-50x g-mb-15 g-mx-5 <?= $this->agent->is_mobile() ? 'g-width-40 g-height-40' : '' ?>" href="">
+					   class="g-brd-2 g-color-info g-color-white--hover g-bg-purple--hover u-icon-v2 g-rounded-50x g-mb-15 g-mx-5 <?= $this->agent->is_mobile() ? 'g-width-40 g-height-40' : '' ?>" href="">
 						<i class="fa fa-instagram <?= $this->agent->is_mobile() ? 'g-font-size-14' : '' ?>"></i>
 					</a>
 				</div>
 				<div class="col">
 					<a id="modalBlogShareFacebook" title="Share on Facebook" target="_blank"
-					  class="g-brd-2 g-color-info g-color-white--hover g-bg-facebook--hover u-icon-v2 g-rounded-50x g-mb-15 g-mx-5 <?= $this->agent->is_mobile() ? 'g-width-40 g-height-40' : '' ?>" href="">
+					   class="g-brd-2 g-color-info g-color-white--hover g-bg-facebook--hover u-icon-v2 g-rounded-50x g-mb-15 g-mx-5 <?= $this->agent->is_mobile() ? 'g-width-40 g-height-40' : '' ?>" href="">
 						<i class="fa fa-facebook <?= $this->agent->is_mobile() ? 'g-font-size-14' : '' ?>"></i>
 					</a>
 				</div>
 				<div class="col">
 					<a id="modalBlogShareTwitter" title="Share on Twitter" target="_blank"
-					  class="g-brd-2 g-color-info g-color-white--hover g-bg-twitter--hover u-icon-v2 g-rounded-50x g-mb-15 g-mx-5 <?= $this->agent->is_mobile() ? 'g-width-40 g-height-40' : '' ?>" href="">
+					   class="g-brd-2 g-color-info g-color-white--hover g-bg-twitter--hover u-icon-v2 g-rounded-50x g-mb-15 g-mx-5 <?= $this->agent->is_mobile() ? 'g-width-40 g-height-40' : '' ?>" href="">
 						<i class="fa fa-twitter <?= $this->agent->is_mobile() ? 'g-font-size-14' : '' ?>"></i>
 					</a>
 				</div>
 				<div class="col">
 					<a id="modalBlogShareLinkedIn" title="Share on LinkedIn" target="_blank"
-					  class="g-brd-2 g-color-info g-color-white--hover g-bg-linkedin--hover u-icon-v2 g-rounded-50x g-mb-15 g-mx-5 <?= $this->agent->is_mobile() ? 'g-width-40 g-height-40' : '' ?>" href="">
+					   class="g-brd-2 g-color-info g-color-white--hover g-bg-linkedin--hover u-icon-v2 g-rounded-50x g-mb-15 g-mx-5 <?= $this->agent->is_mobile() ? 'g-width-40 g-height-40' : '' ?>" href="">
 						<i class="fa fa-linkedin <?= $this->agent->is_mobile() ? 'g-font-size-14' : '' ?>"></i>
 					</a>
 				</div>
 				<div class="col">
 					<a id="modalBlogShareWhatsapp" title="Share on Whatsapp" target="_blank"
-					  class="g-brd-2 g-color-info g-color-white--hover g-bg-primary--hover u-icon-v2 g-rounded-50x g-mb-15 g-mx-5 <?= $this->agent->is_mobile() ? 'g-width-40 g-height-40' : '' ?>" href="">
+					   class="g-brd-2 g-color-info g-color-white--hover g-bg-primary--hover u-icon-v2 g-rounded-50x g-mb-15 g-mx-5 <?= $this->agent->is_mobile() ? 'g-width-40 g-height-40' : '' ?>" href="">
 						<i class="fa fa-whatsapp <?= $this->agent->is_mobile() ? 'g-font-size-14' : '' ?>"></i>
 					</a>
 				</div>
