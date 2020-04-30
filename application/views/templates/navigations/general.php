@@ -92,7 +92,7 @@
 									<li class="lvl-1 dropdown-item hs-has-sub-menu g-bg-blue-opacity-0_1--hover g-color-blue-dark-v2--focus g-color-blue-dark-v2--active g-parent">
 										<a class="nav-link g-color-black g-color-blue-dark-v2--hover  text-uppercase" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--others">
 											<i class="<?= $menu->icon ?> g-mr-10"></i>
-											<img class="g-mr-10 g-grayscale-100x g-grayscale-0--parent-hover" src="<?= get_image(DIR_ICON . $menu->icon) ?>" alt="" style="max-width: 30px; max-height: 30px;">
+											<img class="g-mr-10 g-grayscale-100x g-grayscale-0--parent-hover" src="<?= get_image(DIR_ICON . $menu->icon) ?>" alt="<?= $menu->title ?> icon" style="max-width: 30px; max-height: 30px;">
 											<?= $menu->title ?>
 										</a>
 										<ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-0 g-min-width-300 g-py-20 g-mt-minus-20" aria-labelledby="nav-link--pages--others">
@@ -146,7 +146,7 @@
 			?>
 			<div class="hs-has-sub-menu nav-item g-ml-20--lg" data-animation-in="fadeIn" data-animation-out="fadeOut" data-position="right">
 				<a href="javascript:void()" class="<?= $template == 'index' ? 'nav-change-scroll g-color-white' : '' ?> g-font-size-12 nav-link px-0" style="line-height: 1;color:black" aria-haspopup="true" aria-expanded="false">
-					<img src="<?= $this->session->userdata('language') ? ($this->session->userdata('language') == 'id' ? get_image(DIR_ICON . 'flag_indonesia.png') : get_image(DIR_ICON . 'flag_england.png')) : get_image(DIR_ICON . 'flag_indonesia.png') ?>" style="border: 1px solid rgba(0,0,0,0.1);height: 13px;margin-bottom: 2px">
+					<img src="<?= $this->session->userdata('language') ? ($this->session->userdata('language') == 'id' ? get_image(DIR_ICON . 'flag_indonesia.png') : get_image(DIR_ICON . 'flag_england.png')) : get_image(DIR_ICON . 'flag_indonesia.png') ?>" alt="<?= empty($this->session->userdata('language')) ? 'ID' : strtoupper($this->session->userdata('language')) ?>" style="border: 1px solid rgba(0,0,0,0.1);height: 13px;margin-bottom: 2px">
 					<?= empty($this->session->userdata('language')) ? 'ID' : strtoupper($this->session->userdata('language')) ?>
 				</a>
 				<ul class="hs-sub-menu list-unstyled box-shadow-down g-mt-14 g-min-width-65 animated hs-position-right fadeOut arrow-box" id="nav-submenu--features" aria-labelledby="nav-link--features" style="display: none; margin-left:-5px">
@@ -154,7 +154,7 @@
 						?>
 						<li class="dropdown-item">
 							<a class="nav-link <?= empty($this->session->userdata('language')) ? (($language->language_code == 'id') ? 'g-color-info' : 'g-color-black-opacity-0_8') : (($this->session->userdata('language') == $language->language_code) ? 'g-color-info' : 'g-color-black-opacity-0_8') ?> " href="<?= $this->session->userdata('language') == $language->language_code ? 'javascript:void()' : site_url($language->language_code) ?>">
-								<img class="g-mr-10" src="<?= get_image(DIR_ICON . $language->language_flag) ?>" style="border: 1px solid rgba(0,0,0,0.1);height: 13px;margin-bottom: 2px">
+								<img class="g-mr-10" src="<?= get_image(DIR_ICON . $language->language_flag) ?>" alt="<?=$language->language_code?>" style="border: 1px solid rgba(0,0,0,0.1);height: 13px;margin-bottom: 2px">
 								<?= strtoupper($language->language_code) ?>
 							</a>
 						</li>

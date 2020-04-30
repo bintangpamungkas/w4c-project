@@ -31,7 +31,7 @@
 								?>
 								<div class="<?= $carousel == true ? '' : ($this->agent->is_mobile() ? 'col-6' : 'col-3') ?> text-center">
 									<div class="g-bg-white rounded g-pa-10 <?= $this->agent->is_mobile() ? 'g-mx-3 g-mb-5' : 'g-px-30 g-mx-10 g-mb-10' ?>">
-										<img class="img-fluid mx-auto" src="<?= get_image(DIR_IMG.'service/' . $service_id . '/client/' . $client->client_logo) ?>" alt="Logo <?= $client->client_name ?>">
+										<img class="img-fluid mx-auto" src="<?= get_image(DIR_LOGO.'clients/' . $client->client_logo) ?>" alt="Logo <?= $client->client_name ?>">
 									</div>
 									<small><?= $client->client_name ?></small>
 								</div>

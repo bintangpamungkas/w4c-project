@@ -11,7 +11,7 @@
         <div class="col-md-6 col-xs-12 g-line-height-1_3">
           <div class="row no-gutters g-my-10">
             <div class="col-auto">
-	            <img src="<?=get_image(DIR_ICON.'check-circle.png')?>" alt="" style="<?=$this->agent->is_mobile() ? 'width:23px; margin-right: 13px' : 'width:30px; margin-right: 20px'?>">
+	            <img src="<?=get_image(DIR_ICON.'check-circle.png')?>" alt="check icon" style="<?=$this->agent->is_mobile() ? 'width:23px; margin-right: 13px' : 'width:30px; margin-right: 20px'?>">
             </div>
             <div class="col" style="<?=$this->agent->is_mobile() ? '' : 'margin-top:7px'?>">
               <?= $benefit->benefit_name?>
