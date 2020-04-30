@@ -36,7 +36,6 @@
 	define('OFFICIAL_MAIL', 'contact@waste4change.com');
 	define('OFFICIAL_NOREPLY_MAIL', 'noreply@sampahmuda.com');
 	define('OFFICIAL_NAME', APP_NAME . ' Support');
-	define('MODE', 'Dev');
 	define('DEV_YEAR', '2020');
 
 	define('DUMMY_CUSTOMER_ID', 1);
@@ -56,7 +55,6 @@
 	/*
 	WEBSITE URL
 	*/
-
 	define('W4C_URL', HOST . 'official/');
 	define('SEND_YOUR_WASTE_URL', HOST . 'sendyourwaste/');
 	define('DROPBOX_URL', HOST . 'dropbox/');
