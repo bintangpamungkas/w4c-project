@@ -101,11 +101,11 @@
 <div class="container g-pb-150">
     <div class="row">
         <?php
-        $w4c=[
+        $w4c_id=[
             [
                 '4c_title' => 'Consult',
                 '4c_number' => '1',
-                '4c_content' => 'We give consultation based on in depth research and training about responsible waste management',
+                '4c_content' => 'Kami memberikan jasa konsultasi berdasarkan penelitian yang mendalam dan pelatihan tentang pengelolaan sampah yang bertanggung jawab.',
                 '4c_list' => [
                     [
                         '4c_list_title' => 'Feasibility Study',
@@ -124,7 +124,7 @@
             [
                 '4c_title' => 'Campaign',
                 '4c_number' => '2',
-                '4c_content' => 'We educate Company, Residences, School, and Community about the importance of responsible waste management.',
+                '4c_content' => 'Kami mengedukasi perusahaan, perumahan, sekolah, dan komunitas mengenai pentingnya pengelolaan sampah yang bertanggung jawab.',
                 '4c_list' => [
                     [
                         '4c_list_title' => 'Send Your Waste',
@@ -167,7 +167,7 @@
             [
                 '4c_title' => 'Collect',
                 '4c_number' => '3',
-                '4c_content' => 'We help you to have responsible waste management in your area so that no more waste are mixed and minimised the number of waste that ends up in the landfill.',
+                '4c_content' => 'Kami membantu Anda memiliki sistem pengelolaaan sampah yang betanggung jawab di area tempat tinggal Anda sehingga tidak ada lagi sampah yang tercampur serta mengurangi jumlah timbulan sampah yang berakhir di TPA .',
                 '4c_list' => [
                     [
                         '4c_list_title' => 'Commercial Waste Management',
@@ -186,7 +186,7 @@
             [
                 '4c_title' => 'Create',
                 '4c_number' => '4',
-                '4c_content' => 'We collaborate with our trusted partner to transform you waste into recycled materials.',
+                '4c_content' => 'Kami bekerja sama dengan mitra-mitra terpercaya kami untuk mengubah sampah Anda menjadi material daur ulang.',
                 '4c_list' => [
                     [
                         '4c_list_title' => 'Inorganic Recycle Management',
@@ -203,6 +203,114 @@
                 ],
             ],
         ];
+					$w4c_en=[
+						[
+							'4c_title' => 'Consult',
+							'4c_number' => '1',
+							'4c_content' => 'We give consultation based on in depth research and training about responsible waste management',
+							'4c_list' => [
+								[
+									'4c_list_title' => 'Feasibility Study',
+									'4c_list_content' => 'We perform in depth research about your existing waste management and summarize it in a report.',
+									'4c_list_recomendation' => ['Corporation'],
+									'4c_list_url' => W4C_URL.'service/'.'#feasibility',
+								],
+								[
+									'4c_list_title' => '3R Program',
+									'4c_list_content' => 'We create a 3R program in community or schools in terms of your corporate social responsibility and business sustainibility.',
+									'4c_list_recomendation' => ['Corporation'],
+									'4c_list_url' => W4C_URL.'service/'.'#3r',
+								],
+							],
+						],
+						[
+							'4c_title' => 'Campaign',
+							'4c_number' => '2',
+							'4c_content' => 'We educate Company, Residences, School, and Community about the importance of responsible waste management.',
+							'4c_list' => [
+								[
+									'4c_list_title' => 'Send Your Waste',
+									'4c_list_content' => 'Send Your Waste is Waste4Changes recycling program to serve people who want to recycle their waste but doesnt know where to put their recyclables.',
+									'4c_list_recomendation' => ['Individual'],
+									'4c_list_url' => SEND_YOUR_WASTE_URL,
+								],
+								[
+									'4c_list_title' => 'Drop Box',
+									'4c_list_content' => 'Drop Box is a packaging waste collection service in which consumers can voluntarily submit their waste to the nearest dropping box',
+									'4c_list_recomendation' => ['Individual'],
+									'4c_list_url' => DROPBOX_URL,
+								],
+								[
+									'4c_list_title' => 'Personal Waste Management',
+									'4c_list_content' => 'We facilitate and collect waste with responsible approach from individual user and make sure to reduce waste that goes into landfills',
+									'4c_list_recomendation' => ['Individual'],
+									'4c_list_url' => W4C_URL.'service/'.'#personal',
+								],
+								[
+									'4c_list_title' => 'Event Waste Management',
+									'4c_list_content' => 'Collaborate your events with us and get responsible waste management during the event. No more dirty & messy after the event.',
+									'4c_list_recomendation' => ['Event Organizer'],
+									'4c_list_url' => W4C_URL.'service/'.'#event',
+								],
+								[
+									'4c_list_title' => 'Edukasi Bijak Sampah (EDUBIS)',
+									'4c_list_content' => 'EDUBIS is a program designed by Waste4Change in order to educate Company, School, and Community about importance of Responsible Waste Management.',
+									'4c_list_recomendation' => ['Management', 'Staff'],
+									'4c_list_url' => W4C_URL.'service/'.'#edubis',
+								],
+								[
+									'4c_list_title' => 'Akademi Bijak Sampah (AKABIS)',
+									'4c_list_content' => 'AKABIS is another program created to educate about responsible waste management with deeper and self experience approach.',
+									'4c_list_recomendation' => ['Company Champion Team', 'Environmental Agent Candidate', 'Government Employee'],
+									'4c_list_url' => W4C_URL.'service/'.'#akabis',
+								],
+							],
+						],
+						[
+							'4c_title' => 'Collect',
+							'4c_number' => '3',
+							'4c_content' => 'We help you to have responsible waste management in your area so that no more waste are mixed and minimised the number of waste that ends up in the landfill.',
+							'4c_list' => [
+								[
+									'4c_list_title' => 'Commercial Waste Management',
+									'4c_list_content' => 'We facilitate and collect waste with responsible approach from commercial area and make sure to reduce waste that goes into landfills.',
+									'4c_list_recomendation' => ['Corporation'],
+									'4c_list_url' => W4C_URL.'service/'.'#commercial',
+								],
+								[
+									'4c_list_title' => 'Residential Waste Management',
+									'4c_list_content' => 'We facilitate and collect waste with responsible approach from residential area and make sure to reduce waste that goes into landfills.',
+									'4c_list_recomendation' => ['Residential Developer'],
+									'4c_list_url' => W4C_URL.'service/'.'#residential',
+								],
+							],
+						],
+						[
+							'4c_title' => 'Create',
+							'4c_number' => '4',
+							'4c_content' => 'We collaborate with our trusted partner to transform you waste into recycled materials.',
+							'4c_list' => [
+								[
+									'4c_list_title' => 'Inorganic Recycle Management',
+									'4c_list_content' => 'We have Material Recovery Facility to process collected inorganic waste into a recycled materials.',
+									'4c_list_recomendation' => ['General'],
+									'4c_list_url' => W4C_URL.'service/'.'#feasibility',
+								],
+								[
+									'4c_list_title' => 'Organic Waste Composting',
+									'4c_list_content' => 'The collected organic waste will be used for composting ingredients and nourish our Farm4Life area.',
+									'4c_list_recomendation' => ['General'],
+									'4c_list_url' => W4C_URL.'service/'.'#feasibility',
+								],
+							],
+						],
+					];
+
+					if($lang == 'id'){
+						$w4c = $w4c_id;
+					}else{
+						$w4c = $w4c_en;
+					}
         $number=1;
         foreach ($w4c as $core):
             ?>

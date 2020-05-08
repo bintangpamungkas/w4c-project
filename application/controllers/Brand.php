@@ -15,8 +15,8 @@
 		public function index($brand_slug)
 		{
 			$data['brand_id'] = $brand_slug;
-			$data['brand_name'] = $brand_slug == 'tetrapak' ? 'tetra pak' : ($brand_slug == 'cocacola' ? 'Coca-Cola' : '');
-			$data['title'] = 'brand';
+			$data['brand_name'] = $brand_slug == 'tetrapak' ? 'Tetra Pak' : ($brand_slug == 'cocacola' ? 'Coca-Cola' : '');
+			$data['title'] = $brand_slug == 'tetrapak' ? 'Tetra Pak' : ($brand_slug == 'cocacola' ? 'Coca-Cola' : '');
 			$data['id'] = 'brand';
 			$data['subtitle'] = 'information';
 			$data['data_mode'] = 'general';

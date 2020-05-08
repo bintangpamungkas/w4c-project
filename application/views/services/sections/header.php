@@ -19,7 +19,7 @@
 				<?php endif; ?>
 				<?php if ($this->agent->is_mobile()): ?>
 					<div class="col-md-12 g-pa-0">
-						<img src="<?= get_image(DIR_IMG . 'project/' . $service->service_slug . '/header.jpg') ?>" alt="" style="max-width: 100vw; max-height: 260px; object-fit: cover">
+						<img src="<?= get_image(DIR_IMG . 'project/' . $service->service_slug . '/header.jpg') ?>" alt="Header <?=$service->service_name?>" style="max-width: 100vw; max-height: 260px; object-fit: cover">
 					</div>
 				<?php endif; ?>
 				<div class="col-md-6 col-12">
@@ -42,7 +42,7 @@
 				</div>
 				<?php if (!$this->agent->is_mobile()): ?>
 					<div class="col-md-6">
-						<img src="<?= get_image(DIR_IMG . 'project/' . $service->service_slug . '/l-thumbnail.jpg') ?>" alt="" style="width:100%">
+						<img src="<?= get_image(DIR_IMG . 'project/' . $service->service_slug . '/l-thumbnail.jpg') ?>" alt="Header <?=$service->service_name?>" style="width:100%">
 						<div style="height:30px; background: linear-gradient(90deg, rgba(11, 144, 185, 0.9), rgba(19, 182, 127, 0.9)); margin-left:50px;opacity:0.5">
 						</div>
 					</div>

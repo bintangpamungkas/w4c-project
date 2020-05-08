@@ -11,7 +11,7 @@
         <div class="col-md-4 col-xs-12 g-line-height-1_3">
           <div class="row no-gutters <?=$this->agent->is_mobile() ? 'g-my-20' : 'g-my-25'?> ">
             <div class="col-auto">
-              <img src="<?=get_image(DIR_ICON.'what-you-get/'.$achievement->achievement_icon)?>" alt="" style="<?=$this->agent->is_mobile() ? 'tmax-width: 60px;max-height: 60px;' : 'max-width: 70px;max-height: 70px;'?> margin-right: 10px; margin-top: -20px;">
+              <img src="<?=get_image(DIR_ICON.'what-you-get/'.$achievement->achievement_icon)?>" alt="<?= $section_name.' '.$achievement->achievement_name?>" style="<?=$this->agent->is_mobile() ? 'tmax-width: 60px;max-height: 60px;' : 'max-width: 70px;max-height: 70px;'?> margin-right: 10px; margin-top: -20px;">
             </div>
             <div class="col">
               <?=$achievement->achievement_name?>
