@@ -486,17 +486,16 @@
 	{
 		$param = [
 			'title_1' => 'Waste4Change - Responsible Waste Management',
-			'description_1' => get_lang('a-social-entrepreneur-that-provides-segregated-and-responsible-waste-management-services-by-reducing-the-amount-of-waste-that-end-up-in-landfills'),
-			'title_2' => get_lang('a-social-entrepreneur-that-provides-responsible-waste-management-services'),
-			'description_2' => get_lang('a-social-entrepreneur-that-provides-segregated-and-responsible-waste-management-services-by-reducing-the-amount-of-waste-that-end-up-in-landfills'),
-			'keywords' => get_lang('waste-management-waste-management-jakarta-waste-management-service-waste-management-using-modern-technology-recycling-service-waste-processing-service'),
+			'description_1' => get_lang('title-a-social-entrepreneur-that-provides-responsible-waste-management-services-'),
+			'title_2' => get_lang('title-a-social-entrepreneur-that-provides-responsible-waste-management-services-'),
+			'description_2' => get_lang('desc-a-social-entrepreneur-that-provides-segregated-and-responsible-waste-management-services-by-reducing-the-amount-of-waste-that-end-up-in-landfills'),
+			'keywords' => get_lang('key-waste-management-waste-management-jakarta-waste-management-service-waste-management-using-modern-technology-recycling-service-waste-processing-service-'),
 		];
-//	print_r($param);
-//die();
+		if (MODE != 'live') {
+			echo "<!--";
+		}
 		if ($activation == true) {
 			if (empty($meta_data)) {
-//			foreach ($param as $param) {
-//				if ($param['status'] == true && $_SERVER['REQUEST_URI'] == $param['site_url']) {
 				?>
 				<meta name="description" content="<?= $param['description_1'] ?>">
 				<meta name="keywords" content="<?= $param['keywords'] ?>">
@@ -510,8 +509,7 @@
 				<meta property="og:image:height" content="1024">
 				<link rel="canonical" href="<?= 'https://waste4change.com/' ?>"/>
 				<?php
-//				}
-//			}
+
 			} else {
 				?>
 				<meta name="description" content="<?= $meta_data['description_1'] ?>">
@@ -527,6 +525,9 @@
 				<link rel="canonical" href="<?= 'https://waste4change.com' . $meta_data['site_url'] ?>"/>
 				<?php
 			}
+		}
+		if (MODE != 'live') {
+			echo " -->";
 		}
 	}
 

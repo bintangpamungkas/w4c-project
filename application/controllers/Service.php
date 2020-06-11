@@ -85,29 +85,29 @@
 			if (empty($target) || $target = "all") {
 				$data['meta_data'] = [
 					'site_url' => '/service/',
-					'title_1' => 'Waste4Change - All Service',
-					'description_1' => $this->get_lang('a-list-of-waste4changes-waste-management-services-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
-					'title_2' => $this->get_lang('a-list-of-waste4changes-waste-management-services'),
-					'description_2' => $this->get_lang('a-list-of-waste4changes-waste-management-services-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
-					'keywords' => $this->get_lang('waste4change-service-waste-service-waste-management-waste-processing-waste-education-waste-research-waste-study-waste-recycling-waste-collection-waste-recycling-waste-bin-trash-bag-trash-can'),
+					'title_1' => 'Waste4Change - '.$this->get_lang('all-service'),
+					'description_1' => $this->get_lang('desc-a-list-of-waste4changes-waste-management-services-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
+					'title_2' => $this->get_lang('title-a-list-of-waste4changes-waste-management-services-'),
+					'description_2' => $this->get_lang('desc-a-list-of-waste4changes-waste-management-services-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
+					'keywords' => $this->get_lang('key-waste4change-service-waste-service-waste-management-waste-processing-waste-education-waste-research-waste-study-waste-recycling-waste-collection-waste-recycling-waste-bin-trash-bag-trash-can'),
 				];
 			} else if ($target = "for-company") {
 				$data['meta_data'] = [
 					'site_url' => '/service/',
-					'title_1' => 'Waste4Change - All Service	',
-					'description_1' => $this->get_lang('a-list-of-waste4changes-waste-management-services-for-companies-institutions-schools-businesses-and-foundation-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
-					'title_2' => $this->get_lang('a-list-of-waste4changes-waste-management-services-for-companies-institutions-schools-businesses-and-foundation'),
-					'description_2' => $this->get_lang('a-list-of-waste4changes-waste-management-services-for-companies-institutions-schools-businesses-and-foundation-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
-					'keywords' => $this->get_lang('waste4change-service-waste-service-waste-management-waste-processing-waste-education-waste-research-waste-study-waste-recycling-waste-collection-waste-recycling-waste-bin-trash-bag-trash-can'),
+					'title_1' => 'Waste4Change - '.$this->get_lang('for-company'),
+					'description_1' => $this->get_lang('desc-a-list-of-waste4changes-waste-management-services-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
+					'title_2' => $this->get_lang('title-a-list-of-waste4changes-waste-management-services-'),
+					'description_2' => $this->get_lang('desc-a-list-of-waste4changes-waste-management-services-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
+					'keywords' => $this->get_lang('key-waste4change-service-waste-service-waste-management-waste-processing-waste-education-waste-research-waste-study-waste-recycling-waste-collection-waste-recycling-waste-bin-trash-bag-trash-can'),
 				];
 			} else if ($target = "for-individuals") {
 				$data['meta_data'] = [
 					'site_url' => '/service/',
-					'title_1' => 'Waste4Change - All Service',
-					'description_1' => $this->get_lang('a-list-of-waste4changes-waste-management-services-for-individual-from-waste-drop-points-waste-delivery-and-door-to-door-waste-collection'),
-					'title_2' => $this->get_lang('a-list-of-waste4changes-waste-management-services-for-individual'),
-					'description_2' => $this->get_lang('a-list-of-waste4changes-waste-management-services-for-individual-from-waste-drop-points-waste-delivery-and-door-to-door-waste-collection'),
-					'keywords' => $this->get_lang('waste-delivery-waste-pickup-waste-drop-off-waste-deposit-domestic-waste-household-waste-individual-waste-inorganic-waste-organic-waste-waste-segregation'),
+					'title_1' => 'Waste4Change - '.$this->get_lang('for-individuals'),
+					'description_1' => $this->get_lang('desc-a-list-of-waste4changes-waste-management-services-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
+					'title_2' => $this->get_lang('title-a-list-of-waste4changes-waste-management-services-'),
+					'description_2' => $this->get_lang('desc-a-list-of-waste4changes-waste-management-services-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
+					'keywords' => $this->get_lang('key-waste4change-service-waste-service-waste-management-waste-processing-waste-education-waste-research-waste-study-waste-recycling-waste-collection-waste-recycling-waste-bin-trash-bag-trash-can'),
 				];
 			}
 

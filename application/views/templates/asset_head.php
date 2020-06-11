@@ -38,8 +38,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<?php if (IS_ONLINE == 1) {
-		// <!-- Meta Data SEO-->
+	<?php if (IS_ONLINE == 0) {
 		if (empty($meta_data)) {
 			meta_data(true);
 		} else {
@@ -96,7 +95,10 @@
 <script>
 	$(function () {
 		<?php if($this->uri->segment(1) == ''):?>
-		// $('#PopUpModal').modal('show');
+		$('#PopUpModal').modal('show');
+		<?php endif; ?>
+		<?php if($this->uri->segment(2) == 'personal-waste-management' && $this->uri->segment(3) != 'join'):?>
+		$('#PopUpModalPWM').modal('show');
 		<?php endif; ?>
 	});
 	var logger = function () {
@@ -153,19 +155,27 @@
 </div>
 <main>
 	<div class="modal fade in" id="PopUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="z-index: 9998">
-		<div class="modal-dialog <?= $this->agent->is_mobile() ? 'g-ml-25 g-mr-25' : '' ?>" role="document" <?= $this->agent->is_mobile() ? '' : 'style="max-width:700px"' ?>>
+		<div class="modal-dialog <?= $this->agent->is_mobile() ? 'g-ml-25 g-mr-25' : '' ?>" role="document" <?= $this->agent->is_mobile() ? '' : 'style="max-width:535px"' ?>>
 			<div class="modal-content" style="border-radius: 0!important;margin-top: calc(50vh - 250px)">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"
 				        style="position: absolute;padding: 10px 15px;background: red;z-index: 999;opacity: 1;color: white;border-radius: 50px;right: -20px;top: -20px;"><span aria-hidden="true">&times;</span>
 				</button>
 				<div class="modal-body welcome_list g-pa-0">
-					<a class="dismiss-modal" href="<?php echo POIN_ADES_URL ?>">
-						<?php if ($this->agent->is_mobile()): ?>
-							<img src="<?php echo base_url(DIR_IMG . 'bg/services/ades/3-popup-mobile.jpg') ?>" class="img-fluid">
-						<?php else: ?>
-							<img src="<?php echo base_url(DIR_IMG . 'bg/services/ades/3-popup-desktop.jpg') ?>" style="width:100%">
-						<?php endif; ?>
+					<a class="dismiss-modal" href="<?= site_url('service/personal-waste-management') ?>">
+						<img src="<?php echo base_url(DIR_IMG . 'service/personal-waste-management/pwm.jpg') ?>" class="img-fluid">
 					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade in" id="PopUpModalPWM" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="z-index: 9998">
+		<div class="modal-dialog <?= $this->agent->is_mobile() ? 'g-ml-25 g-mr-25' : '' ?>" role="document" <?= $this->agent->is_mobile() ? '' : 'style="max-width:535px"' ?>>
+			<div class="modal-content" style="border-radius: 0!important;margin-top: calc(50vh - 250px)">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"
+				        style="position: absolute;padding: 10px 15px;background: red;z-index: 999;opacity: 1;color: white;border-radius: 50px;right: -20px;top: -20px;"><span aria-hidden="true">&times;</span>
+				</button>
+				<div class="modal-body welcome_list g-pa-0" data-dismiss="modal" aria-label="Close">
+					<img src="<?php echo base_url(DIR_IMG . 'service/personal-waste-management/pwm.jpg') ?>" class="img-fluid">
 				</div>
 			</div>
 		</div>

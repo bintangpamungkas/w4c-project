@@ -226,13 +226,14 @@
 		</div>
 		<div class="g-bg-gray-light-v4 g-py-40">
 			<div class="container">
-				<div class="row no-gutters">
-					<div class="col-xs-12 col-md-auto">
+				<div class="row no-gutters justify-content-between">
+					<div class="col-xs-12 col-sm-12 col-md-auto">
 						<h3
 							class=" <?= $this->agent->is_mobile() ? 'h5 mb-4' : 'h3' ?> g-font-weight-700"><?= lang('services_not_found') ?></h3>
 					</div>
-					<div class="col-xs-12 col-md <?= $this->agent->is_mobile() ? 'text-center' : 'text-right' ?>">
-						<a class="btn btn-outline-info g-brd-2 g-font-size-12 g-rounded-50 text-uppercase g-letter-spacing-2 g-px-20"
+					<div class="col-xs-auto col-sm-auto col-md-1 col-lg-1"></div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-auto <?= $this->agent->is_mobile() ? 'text-center' : 'text-right' ?>">
+						<a class="btn btn-outline-info btn-block g-brd-2 g-font-size-13 g-rounded-50 g-pl-25 g-pr-25 g-py-9 text-uppercase"
 						   href="<?= site_url('contact') ?>"><?= lang('services_talk_to_expert') ?></a>
 					</div>
 				</div>

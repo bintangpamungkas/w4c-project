@@ -4632,7 +4632,7 @@
 .g-color-white {
   color: #fff !important; }
 
-.u-block-hover:hover .g-color-white--hover, .g-color-white--hover:hover {
+.u-block-hover:hover .g-color-white--hover, .g-color-white--hover:hover, .g-color-white--focus:focus {
   color: #fff !important; }
 
 .g-parent:hover .g-color-white--parent-hover {

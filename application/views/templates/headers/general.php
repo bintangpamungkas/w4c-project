@@ -67,9 +67,9 @@
 						<?php if (!empty($service->service_proposal_url)): ?>
 							<div class="d-none g-bg-transparent g-font-size-22 btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-30"
 								<?= $this->agent->is_mobile() ? ' data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block"' : '' ?>>
-								<a class="btn btn-info btn-xs g-color-white g-brd-white-opacity-0_2 g-rounded-50 g-py-5 g-px-20 g-mt-3"
+								<a class="btn btn-info btn-xs g-color-white g-brd-white-opacity-0_2 g-rounded-50 g-py-5 g-px-30 g-mt-3"
 								   href="<?= site_url('service/' . $service_id . '/join') ?>">
-									<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe-now')) : strtoupper(get_lang('get-proposal')))) ?>
+									<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe')) : strtoupper(get_lang('get-proposal')))) ?>
 								</a>
 							</div>
 						<?php endif; ?>
@@ -103,7 +103,7 @@
 								<?php foreach ($subnav as $subnav): ?>
 									<?php if (!empty($subnav->section_menu_name)): ?>
 										<?= $this->agent->is_mobile() ? '' : '<td>' ?>
-										<li class="nav-item g-my-2 <?= $this->agent->is_mobile() ? 'g-my-10' : '' ?> g-mx-20--lg">
+										<li class="nav-item g-my-2 <?= $this->agent->is_mobile() ? 'g-my-10' : '' ?> g-mx-15--lg">
 											<a href="<?= strpos($_SERVER['REQUEST_URI'], 'join') ? site_url('service/' . $service->service_slug . '#' . $subnav->section_slug) : '#' . $subnav->section_slug ?>"
 											   class="font-weight-normal g-font-size-11 click_scroll nav-link px-0 b-color-white g-color-blue--hover g-py-9"
 											   style="line-height: 1"><?= $subnav->section_menu_name ?>
@@ -120,16 +120,16 @@
 						<div class="<?= empty($service->service_parent_id) ? 'd-none' : 'd-block' ?>" data-header-fix-moment-exclude="<?= empty($service->service_parent_id) ? 'd-none' : 'd-block' ?>"
 						     data-header-fix-moment-classes="d-block">
 							<div class="row no-gutters justify-content-end">
-								<div class="col">
-									<a class="click_scroll btn btn-info btn-block g-color-white g-brd-white-opacity-0_2 g-font-size-13 g-rounded-50 g-px-15 g-py-9"
-									   href="<?= site_url('service/' . $service_id . '/join') ?>"> <?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe-now')) : strtoupper(get_lang('get-proposal')))) ?>
+								<div class="col<?=$service->service_id == 33 ? '-auto':''?>">
+									<a class="click_scroll btn btn-info btn-block g-color-white g-brd-white-opacity-0_2 g-font-size-13 g-rounded-50 g-px-30 g-py-9"
+									   href="<?= site_url('service/' . $service_id . '/join') ?>"> <?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe')) : strtoupper(get_lang('get-proposal')))) ?>
 										<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3"> <i class="fa fa-info"></i> </span>
 									</a>
 								</div>
 								<?php if (empty($parent_service->service_portfolio_url)) { ?>
 									<?php if ($service->service_portfolio_url == 1) { ?>
 										<div class="col">
-											<a class="click_scroll btn btn-outline-info btn-block g-font-size-13 g-rounded-50 g-brd-2 g-ml-15 g-px-15 g-py-9 "
+											<a class="click_scroll btn btn-outline-info btn-block g-font-size-13 g-rounded-50 g-brd-2 g-mx-7 g-px-15 g-py-9 "
 											   href="<?= base_url(DIR_SERVICE . $service_id . '/portfolio/' . $lang . '.pdf') ?>"> <?= strtoupper(get_lang('get-portfolio')) ?>
 												<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3"> <i
 														class="fa fa-info"></i> </span>
@@ -139,7 +139,7 @@
 								<?php } else { ?>
 									<?php if ($parent_service->service_portfolio_url == 1) { ?>
 										<div class="col">
-											<a class="click_scroll btn btn-outline-info btn-block g-font-size-13 g-rounded-50 g-brd-2 g-ml-15 g-px-15 g-py-9"
+											<a class="click_scroll btn btn-outline-info btn-block g-font-size-13 g-rounded-50 g-brd-2 g-mx-7 g-px-15 g-py-9"
 											   href="<?= base_url(DIR_SERVICE . $parent_service->service_slug . '/portfolio/' . $lang . '.pdf') ?>"> <?= strtoupper(get_lang('get-portfolio')) ?>
 												<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3"> <i
 														class="fa fa-info"></i> </span>

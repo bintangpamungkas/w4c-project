@@ -75,7 +75,7 @@
 												?>
 												<div class="g-color-black g-bg-white--hover text-center g-rounded-10 g-transition-0_3 g-px-40 g-py-10">
 													<div class="g-mx-auto g-mx-30" style="">
-														<img class="img-fluid u-block-hover__main--zoom-v1 mb-3" src="<?= get_image(DIR_ICON . 'flow/' . $flow->flow_icon) ?>" alt="Flow <?= $flow->flow_name ?>"
+														<img class="img-fluid u-block-hover__main--zoom-v1 mb-3" src="<?= get_image(DIR_ICON . 'flow/' . $flow->flow_icon) ?>" alt="Flow icon"
 														     style="width: 100%">
 													</div>
 													<div class="g-pa-15">
@@ -144,7 +144,7 @@
 											?>
 											<div class="g-color-black g-bg-white--hover text-center g-rounded-10 g-transition-0_3 g-px-40 g-py-10">
 												<div class="g-mx-auto g-mx-30" style="">
-													<img class="img-fluid u-block-hover__main--zoom-v1 mb-3" src="<?= get_image(DIR_ICON . 'flow/' . $flow->flow_icon) ?>" alt="Flow <?= $flow->flow_name ?>" style="width: 100%">
+													<img class="img-fluid u-block-hover__main--zoom-v1 mb-3" src="<?= get_image(DIR_ICON . 'flow/' . $flow->flow_icon) ?>" alt="Flow icon" style="width: 100%">
 												</div>
 												<div class="g-pa-15">
 													<h2 class="h5 g-color-black g-font-weight-300 mb-4 g-font-size-15" style="margin-bottom: 5px!important;">
@@ -228,7 +228,7 @@
 						?>
 						<div class="row justify-content-center">
 							<?php foreach ($flows as $flow): ?>
-								<div class="col-md-4">
+								<div class="<?=$service->service_id==33 ? 'col-md-3' : 'col-md-4'?>">
 									<article class="g-transition-0_3">
 										<div class="g-color-black g-bg-white--hover text-center g-rounded-10 g-transition-0_3 g-px-20 g-py-10" style="padding: 30px 0 0 0!important;">
 											<img class="img-fluid u-block-hover__main--zoom-v1 mb-3" src="<?= base_url(DIR_ICON . 'flow/' . $flow->flow_icon) ?>" alt="Image Description" style="width: 40%">
@@ -246,6 +246,9 @@
 					} //if ($count_category > 1)
 					} //end desktop
 				?>
+				<?php if ($service->service_id==33): ?>
+					<div class="text-center <?= $this->agent->is_mobile() ? 'g-px-25' : 'g-mt-70'?> "><?= get_lang('1 Blue Recycled Trash Bag for Paper Waste and 1 Orange Recycled Trash Bag for Non-Paper Waste')?></div>
+				<?php endif; ?>
 			</div>
 		</section>
 		<!-- End Mockup Block -->
