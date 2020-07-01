@@ -285,7 +285,7 @@
 				'description_2' => $service->service_meta_description,
 				'keywords' => $service->service_meta_title,
 			];
-			$data['title'] = 'Join' . $service->service_name;
+			$data['title'] = 'Join ' . $service->service_name;
 			$data['id'] = 'service';
 			$data['subtitle'] = 'information';
 			$data['data_mode'] = 'service';

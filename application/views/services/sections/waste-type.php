@@ -7,7 +7,7 @@
 				'icon' => 'accepted.png'
 			],
 			[
-				'title' => 'TIDAK DITERIMA',x`x
+				'title' => 'TIDAK DITERIMA',
 				'subtitle' => 'Saat ini kami belum menerima sampah organik, sampah elektronik, sampah medis, sampah B3, dan sampah popok/pembalut via program ini.',
 				'icon' => 'not-accepted.png'
 			]

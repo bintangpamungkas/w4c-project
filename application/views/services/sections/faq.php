@@ -9,14 +9,15 @@
 			'question' => 'Berapa biaya yang harus saya bayar jika ingin mulai berlangganan layanan Personal Waste Management dari Waste4Change? ',
 			'answer' => 'Besar biaya layanan PWM di tahun 2020* dibayarkan sesuai dengan paket yang dipilih: 
 <ul>
-<li>Paket 6 Bulan** (Rp 990.000) atau</li> 
+<li>Paket 3 Bulan** (Rp 495.000) atau</li> 
+<li>Paket 6 Bulan (Rp 990.000) atau</li> 
 <li>Paket 1 Tahun (Rp. 1.980.000)</li> 
 </ul>
 
 <div class="text-muted">
 <small>
 * Biaya PWM sedang diskon selama tahun 2020 <br>
-**Minimal berlangganan paket 6 Bulan
+**Minimal berlangganan paket 3 Bulan
 </small>
 </div>',
 			'number' => 2,
@@ -77,13 +78,14 @@
 			'question' => 'How much do I have to pay if I want to start subscribing to the Personal Waste Management service from Waste4Change?',
 			'answer' => 'The cost of PWM services in 2020 * is paid according to the package chosen:
 <ul>
-<li>6-Month Package ** (Rp. 990,000) or</li> 
+<li>3-Month Package ** (Rp. 495,000) or</li> 
+<li>6-Month Package (Rp. 990,000) or</li> 
 <li>1-Year Package (Rp. 1,980,000)</li> 
 </ul>
 <div class="text-muted">
 <small>
 * PWM fees are on discount throughout 2020 <br>
-** The minimum subscription is the 6-month package
+** The minimum subscription is the 3-month package
 </small>
 </div>',
 			'number' => 2,

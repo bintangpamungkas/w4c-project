@@ -535,36 +535,11 @@
 	{
 		$param = [
 			[
-				'site_url' => '/official/',
-				'site_name' => '<!-- Hotjar Tracking Code for htttps://waste4change.com/official -->',
-				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
-				'tracking_code' => '1102073',
-				'status' => true,
-				'dev_status' => IS_ONLINE == 1 ? true : false,
-			],
-			[
-				'site_url' => '/official/contact',
-				'site_name' => '<!-- Hotjar Tracking Code for htttps://waste4change.com/official/contact -->',
-				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
-				'tracking_code' => '1796811',
-				'status' => true,
-				'dev_status' => IS_ONLINE == 1 ? true : false,
-			],
-			[
-				'site_url' => '/official/about',
-				'site_name' => '<!-- Hotjar Tracking Code for htttps://waste4change.com/official/contact/about -->',
-				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
-				'tracking_code' => '1796810',
-				'status' => true,
-				'dev_status' => IS_ONLINE == 1 ? true : false,
-			],
-			[
 				'site_url' => '/official/service/zero-waste-to-landfill',
 				'site_name' => '<!-- Hotjar Tracking Code for https://waste4change.com/official/service/zero-waste-to-landfill -->',
 				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 				'tracking_code' => '1380850',
 				'status' => true,
-				'dev_status' => IS_ONLINE == 1 ? true : false,
 			],
 			[
 				'site_url' => '/official/service/responsible-waste-management',
@@ -572,7 +547,6 @@
 				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 				'tracking_code' => '1380868',
 				'status' => true,
-				'dev_status' => IS_ONLINE == 1 ? true : false,
 			],
 			[
 				'site_url' => '/official/service/solid-waste-management-research',
@@ -580,7 +554,6 @@
 				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 				'tracking_code' => '1780943',
 				'status' => true,
-				'dev_status' => IS_ONLINE == 1 ? true : false,
 			],
 			[
 				'site_url' => '/official/service/community-based-implementation',
@@ -588,7 +561,6 @@
 				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 				'tracking_code' => '1779647',
 				'status' => true,
-				'dev_status' => IS_ONLINE == 1 ? true : false,
 			],
 			[
 				'site_url' => '/official/service/inorganic-waste-management',
@@ -596,7 +568,6 @@
 				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 				'tracking_code' => '1384509',
 				'status' => true,
-				'dev_status' => IS_ONLINE == 1 ? true : false,
 			],
 			[
 				'site_url' => '/official/service/edukasi-bijak-sampah',
@@ -604,7 +575,6 @@
 				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 				'tracking_code' => '1380875',
 				'status' => true,
-				'dev_status' => IS_ONLINE == 1 ? true : false,
 			],
 			[
 				'site_url' => '/official/service/akabis-waste-management-academy',
@@ -612,7 +582,6 @@
 				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 				'tracking_code' => '1380883',
 				'status' => true,
-				'dev_status' => IS_ONLINE == 1 ? true : false,
 			],
 			[
 				'site_url' => '/official/service/event-waste-management',
@@ -620,7 +589,6 @@
 				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 				'tracking_code' => '1380864',
 				'status' => true,
-				'dev_status' => IS_ONLINE == 1 ? true : false,
 			],
 			[
 				'site_url' => '/official/service/extended-producer-responsibility',
@@ -628,7 +596,6 @@
 				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 				'tracking_code' => '1384512',
 				'status' => true,
-				'dev_status' => IS_ONLINE == 1 ? true : false,
 			],
 			[
 				'site_url' => '/official/service/program-pendampingan-optimalisasi-tps3r',
@@ -636,7 +603,6 @@
 				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 				'tracking_code' => '1384513',
 				'status' => true,
-				'dev_status' => IS_ONLINE == 1 ? true : false,
 			],
 			[
 				'site_url' => '/official/service/feasibility-study',
@@ -644,7 +610,6 @@
 				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 				'tracking_code' => '1384515',
 				'status' => true,
-				'dev_status' => IS_ONLINE == 1 ? true : false,
 			],
 			[
 				'site_url' => '/official/service/black-soldier-fly-learning-center',
@@ -652,7 +617,6 @@
 				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 				'tracking_code' => '1384517',
 				'status' => true,
-				'dev_status' => IS_ONLINE == 1 ? true : false,
 			],
 			[
 				'site_url' => '/official/service/3r-school-program',
@@ -660,7 +624,6 @@
 				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 				'tracking_code' => '1384513',
 				'status' => true,
-				'dev_status' => IS_ONLINE == 1 ? true : false,
 			],
 			[
 				'site_url' => '/official/service/personal-waste-management',
@@ -668,7 +631,6 @@
 				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 				'tracking_code' => '1780959',
 				'status' => true,
-				'dev_status' => IS_ONLINE == 1 ? true : false,
 			],
 			[
 				'site_url' => '/official/service/composting-tools-supplies',
@@ -676,7 +638,6 @@
 				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 				'tracking_code' => '1780965',
 				'status' => true,
-				'dev_status' => IS_ONLINE == 1 ? true : false,
 			],
 			[
 				'site_url' => '/official/service/in-store-recycling',
@@ -684,7 +645,6 @@
 				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 				'tracking_code' => '1787097',
 				'status' => true,
-				'dev_status' => IS_ONLINE == 1 ? true : false,
 			],
 			[
 				'site_url' => '/official/service/custom-waste-bin',
@@ -692,7 +652,6 @@
 				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 				'tracking_code' => '1787100',
 				'status' => true,
-				'dev_status' => IS_ONLINE == 1 ? true : false,
 			],
 			[
 				'site_url' => '/official/service/digital-epr',
@@ -700,16 +659,50 @@
 				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 				'tracking_code' => '1790660',
 				'status' => true,
-				'dev_status' => IS_ONLINE == 1 ? true : false,
+			],
+			[
+				'site_url' => '/official/cocacola',
+				'site_name' => '<!-- Hotjar Tracking Code for https://waste4change.com/official/cocacola -->',
+				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
+				'tracking_code' => '1102081',
+				'status' => true,
+			],
+			[
+				'site_url' => '/official/tetrapak',
+				'site_name' => '<!-- Hotjar Tracking Code for https://waste4change.com/official/tetrapak -->',
+				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
+				'tracking_code' => '1102076',
+				'status' => true,
+			],
+			[
+				'site_url' => '/official/contact',
+				'site_name' => '<!-- Hotjar Tracking Code for htttps://waste4change.com/official/contact -->',
+				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
+				'tracking_code' => '1796811',
+				'status' => true,
+			],
+			[
+				'site_url' => '/official/about',
+				'site_name' => '<!-- Hotjar Tracking Code for htttps://waste4change.com/official/contact/about -->',
+				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
+				'tracking_code' => '1796810',
+				'status' => true,
+			],			
+			[
+				'site_url' => '/official',
+				'site_name' => '<!-- Hotjar Tracking Code for htttps://waste4change.com/official -->',
+				'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
+				'tracking_code' => '1102073',
+				'status' => true,
 			],
 		];
+	
 		if ($activation == true) {
 			foreach ($param as $param) {
-				if ($param['dev_status'] == true && $param['status'] == true && $_SERVER['REQUEST_URI'] == $param['site_url']) {
+				if ($param['status'] == true && strstr($_SERVER['REQUEST_URI'],$param['site_url']) == true) {
+					echo '<!-- Hotjar Tracking Code for '.HOST.$param['site_url'].' -->';
+					if (MODE != 'live') {echo "<!--";}
 					?>
-					<?= $param['site_name'] ?>
-					<?= $param['site_source'] ?>
-
 					<script>
 						(function (h, o, t, j, a, r) {
 							h.hj = h.hj || function () {
@@ -724,6 +717,8 @@
 						})(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
 					</script>
 					<?php
+					if (MODE != 'live') { echo " -->"; }
+					break;
 				}
 			}
 		}
@@ -737,18 +732,16 @@
 				'site_source' => '<!-- Waste4Change @Beta from kertasmuda@gmail.com -->',
 				'tracking_code' => 'UA-134685047-1',
 				'status' => true,
-				'dev_status' => IS_ONLINE == 1 ? true : false,
 			],
 		];
 		if ($activation == true) {
 			foreach ($param as $param) {
-				if ($param['dev_status'] == true && $param['status'] == true) {
-					?>
-					<!-- Global site tag (gtag.js) - Google Analytics -->
-
-					<?= $param['site_name'] ?>
-
-					<?= $param['site_source'] ?>
+				if ( $param['status'] == true) {
+					echo '<!-- Global site tag (gtag.js) - Google Analytics -->
+					';
+					echo $param['site_name'];
+					if (MODE != 'live') { echo " <!--"; }
+					?>		
 
 					<script async src="https://www.googletagmanager.com/gtag/js?id=<?= $param['tracking_code'] ?>"></script>
 					<script>
@@ -764,6 +757,7 @@
 					</script>
 
 					<?php
+					if (MODE != 'live') { echo " -->"; }
 				}
 			}
 		}

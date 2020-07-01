@@ -5,6 +5,13 @@
 		$pricings = [
 			'id' => [
 				[
+					'price_title' => 'PAKET 3 BULAN',
+					'price_subtitle' => 'Anda akan berlangganan selama 3 bulan',
+					'price_discount' => 'Rp.577.500',
+					'price_new' => 'Rp.495.000',
+					'price_tax' => 'Termasuk PPN',
+				],
+				[
 					'price_title' => 'PAKET 6 BULAN',
 					'price_subtitle' => 'Anda akan berlangganan selama 6 bulan',
 					'price_discount' => 'Rp.1.155.000',
@@ -20,6 +27,13 @@
 				],
 			],
 			'en' => [
+				[
+					'price_title' => 'PACKAGE FOR 3 MONTHS',
+					'price_subtitle' => 'You will subscribe for 3 months',
+					'price_discount' => 'Rp.577.500',
+					'price_new' => 'Rp.495.000',
+					'price_tax' => 'including VAT',
+				],
 				[
 					'price_title' => 'PACKAGE FOR 6 MONTHS',
 					'price_subtitle' => 'You will subscribe for 6 months',
