@@ -214,9 +214,9 @@
 		var url = $(that).data('url');
 		$('#modalBlogShare').modal('show');
 		$('#modalBlogShareInstagram').attr('href', 'https://instagram.com/waste4change');
-		$('#modalBlogShareFacebook').attr('href', 'https://facebook.com/sharer/sharer.php?u=' + url);
+		$('#modalBlogShareFacebook').attr('href', 'https://facebook.com/sharer/sharer.php?display=page&u=' + url);
 		$('#modalBlogShareTwitter').attr('href', 'https://twitter.com/intent/tweet/?text=' + title + ' ' + url);
-		$('#modalBlogShareLinkedIn').attr('href', 'https://www.linkedin.com/shareArticle?mini=true&amp;url=' + url + '&title=' + title);
+		$('#modalBlogShareLinkedIn').attr('href', 'https://www.linkedin.com/sharing/share-offsite/?url=' + url);
 		$('#modalBlogShareWhatsapp').attr('href', 'https://wa.me/?text=*' + title + '* ' + url);
 	}
 </script>

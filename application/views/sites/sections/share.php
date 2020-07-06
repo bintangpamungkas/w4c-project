@@ -13,13 +13,15 @@
 				<div class="<?= $this->agent->is_mobile() ? 'text-center' : 'text-right' ?> pt-4 row no-gutters justify-content-end">
 					<?php
 					foreach (share_social_media() as $social):
+						if (!empty($social['share_url'])):
 						?>
 						<div class="col<?= $this->agent->is_mobile() ? '' : '-auto' ?>">
-							<a title="Share on <?= $social['social_name'] ?>" target="_blank" class="<?= $social['social_color'] ?> u-icon-v2 g-rounded-50x g-mb-15 <?=$this->agent->is_mobile() ? 'g-mx-3' : 'g-mx-10'?>" href="<?= $social['social_url'] ?>" <?=$this->agent->is_mobile() ? 'style="width: 3rem;height: 3rem"' : ''?>>
+							<a title="Share on <?= $social['social_name'] ?>" target="_blank" class="<?= $social['social_color'] ?> u-icon-v2 g-rounded-50x g-mb-15 <?=$this->agent->is_mobile() ? 'g-mx-3' : 'g-mx-10'?>" href="<?= $social['share_url'] ?>" <?=$this->agent->is_mobile() ? 'style="width: 3rem;height: 3rem"' : ''?>>
 								<i class="<?= $social['social_icon'] ?> <?= $this->agent->is_mobile() ? 'g-font-size-16' : '' ?>"></i>
 							</a>
 						</div>
 					<?php
+					endif;
 					endforeach;
 					?>
 				</div>

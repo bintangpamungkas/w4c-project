@@ -101,11 +101,11 @@
 $(function() {
   <?php
   if ($this->uri->segment(1) == ''): ?>
-    $('#PopUpModal').modal('show'); 
+    // $('#PopUpModal').modal('show'); 
 	<?php endif; ?>
   <?php
   if ($this->uri->segment(2) == 'personal-waste-management' && $this->uri->segment(3) != 'join'): ?>
-    $('#PopUpModalPWM').modal('show'); 
+    // $('#PopUpModalPWM').modal('show'); 
 	<?php endif; ?>
 });
 var logger = function() {
