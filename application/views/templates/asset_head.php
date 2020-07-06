@@ -91,7 +91,10 @@
 		// Hotjar Tracking
 		hotjar_tracking(true);
 		// Google Analytic Tracking
-		google_analytic(true);
+    google_analytic(true);
+    // Facebook Pixel Tracking
+    facebook_pixel(true);
+    
 	} ?>
 
 
@@ -110,7 +113,7 @@ $(function() {
 });
 var logger = function() {
   var oldConsoleLog = null;
-  var pub = {};
+  var pub = {};x
 
   pub.enableLogger = function enableLogger() {
     if (oldConsoleLog == null)
