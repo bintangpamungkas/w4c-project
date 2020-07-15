@@ -2,6 +2,8 @@
 $get = false;
 if (isset($_GET['cat'])) {
     $get = true;
+    $cat = $_GET['cat'];
+    $search = $_GET['search'];
 }
 ?>
 
@@ -17,37 +19,34 @@ if (isset($_GET['cat'])) {
 
             <div class="<?= $this->agent->is_mobile() ? 'col-2' : 'col-6'; ?> text-right <?= $this->agent->is_mobile() ? 'align-self-center' : 'align-self-end'; ?>">
                 <?php if (!$this->agent->is_mobile()) : ?>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <!-- Text Input with Both Appended Icon -->
-                            <div class="form-group g-mb-20">
-                                <div class="g-brd-primary--focus">
-                                    <select id="search-category" class="form-control rounded-0">
-                                        <option value="<?= site_url('research') ?>"><?= lang('all-categories') ?></option>
-                                        <?php for ($i = 0; $i < count($researchs); $i++) : ?>
-                                            <?php if ($i > 0 && $researchs[$i]['category'][$lang] == $researchs[$i - 1]['category'][$lang]) : ?>
-                                                <?php continue; ?>
-                                            <?php endif; ?>
-                                            <option <?= ($researchs[$i]['category'][$lang] == ($get ? $_GET['cat'] : '')) ? 'selected' : '' ?> value="<?= site_url('research?cat=' . htmlentities($researchs[$i]['category'][$lang])) ?>"><?= $researchs[$i]['category'][$lang] ?></option>
-                                        <?php endfor; ?>
-                                    </select>
-                                </div>
+                    <form id="search-form" class="g-mb-10" action="<?= site_url('research'); ?>" method="get">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <select name="cat" class="form-control rounded-0 g-box-shadow-none" style="border:1px solid #bbb; border-radius:0">
+                                    <option value="all"><?= lang('all-categories') ?></option>
+                                    <?php for ($i = 0; $i < count($researchs); $i++) : ?>
+                                        <?php if ($i > 0 && $researchs[$i]['category'][$lang] == $researchs[$i - 1]['category'][$lang]) : ?>
+                                            <?php continue; ?>
+                                        <?php endif; ?>
+                                        <option <?= ($researchs[$i]['category'][$lang] == ($get ? $_GET['cat'] : '')) ? 'selected' : '' ?> value="<?= $researchs[$i]['category'][$lang] ?>">
+                                            <?= $researchs[$i]['category'][$lang] ?>
+                                        </option>
+                                    <?php endfor; ?>
+                                </select>
                             </div>
-                        </div>
 
-                        <div class="col-md-6">
-                            <div class="form-group g-mb-20">
-                                <div class="input-group g-brd-primary--focus">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-magnifier"></i></span>
+                            <div class="col-md-6">
+                                <div class="input-group pull-right">
+                                    <div class="input-group-prepend" style="z-index: 1; margin-right: -29px;">
+                                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1 border-right-0" style="border:1px solid #bbb;">
+                                            <i class="fa fa-search"></i>
+                                        </span>
                                     </div>
-                                    <input id="search" class="form-control border-left-0 rounded-0 px-0" type="text" placeholder="<?= lang('search') ?>">
+                                    <input class="form-control rounded-0 g-box-shadow-none g-pl-30" type="text" name="search" value="<?= $get ? $_GET['search'] : '' ?>" style="border:1px solid #bbb; border-radius:0" placeholder="Search.." autocomplete="off">
                                 </div>
-                                <!-- End Text Input with Both Appended Icon -->
                             </div>
-                            <ul class="list-unstyled g-bg-white text-left" id="result" style="overflow-x: auto; width: max-content; right: 14px; z-index: 1;"></ul>
                         </div>
-                    </div>
+                    </form>
                 <?php else : ?>
                     <div class="g-color-black-light-v1">
                         <i class="icon-magnifier g-font-size-24 g-mr-10"></i>
@@ -59,9 +58,15 @@ if (isset($_GET['cat'])) {
     </section>
 
     <section class="<?= $this->agent->is_mobile() ? 'fluid-container' : 'container'; ?>">
-        <?php
-        $this->load->view('research/sections/carousel');
-        ?>
+        <?php if (!$get) : ?>
+            <?php
+            $this->load->view('research/sections/carousel');
+            ?>
+        <?php else : ?>
+            <div class="alert alert-info g-mt-30" role="alert" style="background-color: rgba(42, 199, 105, 0.15);">
+                <span id="search-total">0</span> Search result found
+            </div>
+        <?php endif ?>
     </section>
 
     <section class="container g-mb-30 g-mt-45">
@@ -107,8 +112,9 @@ if (isset($_GET['cat'])) {
     });
 
     $(document).ready(function() {
+        var searchTotal = 0;
         <?php if ($get) : ?>
-            getJsonData('<?= $_GET['cat'] ?>');
+            getJsonData('<?= $_GET['search'] ?>');
         <?php endif; ?>
 
         $.ajaxSetup({
@@ -132,18 +138,16 @@ if (isset($_GET['cat'])) {
 
         function getJsonData(expression) {
             $.getJSON('<?= site_url(DIR_STATIC_DB . 'research.json') ?>', function(data) {
-                $.each(data, function(key, value) {
-                    <?php if (!$get) : ?>
+                <?php if ($get) : ?>
+                    $.each(data, function(key, value) {
                         if (value.title.<?= $lang ?>.search(expression) != -1 || value.keyword.<?= $lang ?>.search(expression) != -1) {
-                            appendResult(value);
-                        }
-                    <?php else : ?>
-                        if (value.category.<?= $lang ?>.search(expression) != -1) {
+                            searchTotal += 1;
+                            $("#search-total").text(searchTotal);
                             loadContent(value);
                         }
-                    <?php endif; ?>
-                });
-            });
+                    });
+                <?php endif ?>
+            })
         }
 
         function loadContent(value) {
