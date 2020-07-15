@@ -99,8 +99,49 @@
     box-shadow: 0px 18px 24px 0px rgba(0,0,0,0.1);
 }
 
-.g-color-info{
+.g-color-info {
     color: #17a2b8!important;
+}
+
+.g-social-icon {
+    background: #23aed159 !important;
+    color: #26B3C9 !important;
+    font-size: 26px;
+    width: 45px;
+    height: 45px;
+}
+
+.g-text-rotate {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.g-icon-rotate {
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=6);
+}
+
+#result {
+    position: absolute;
+    width: 100%;
+    max-width:870px;
+    cursor: pointer;
+    overflow-y: auto;
+    max-height: 400px;
+    box-sizing: border-box;
+    z-index: 1001;
+}
+
+.link-class:hover{
+    background-color:#f1f1f1;
 }
 
 .g-bg-info{
