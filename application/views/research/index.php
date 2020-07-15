@@ -103,11 +103,11 @@ if (isset($_GET['cat'])) {
     </section>
 
     <?php if (!$get) : ?>
-        <section class="<?= $this->agent->is_mobile() ? 'fluid-container' : 'container'; ?>">
-            <?php
-            $this->load->view('research/sections/carousel');
-            ?>
-        </section>
+        <!-- <section class="<?= $this->agent->is_mobile() ? 'fluid-container' : 'container'; ?>"> -->
+        <?php
+        // $this->load->view('research/sections/carousel');
+        ?>
+        <!-- </section> -->
     <?php else : ?>
         <section class="container<?= $this->agent->is_mobile() ? ' g-mt-minus-20 g-mb-minus-20 ' : ' '; ?>">
             <div class="<?= $this->agent->is_mobile() ? 'g-py-20 ' : ' '; ?>alert alert-info g-mt-30 g-font-weight-500" role="alert" style="background-color: rgba(42, 199, 105, 0.15); color: rgba(42, 199, 105);">
