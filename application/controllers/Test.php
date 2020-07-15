@@ -11,7 +11,7 @@
 		public function index()
 		{
 			echo 11;
-	die();
+	die(); 
 			$data['title'] = '';
 			$data['id'] = 'site';
 			$data['subtitle'] = 'information';

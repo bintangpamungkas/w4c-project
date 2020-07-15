@@ -1,0 +1,206 @@
+{
+  "banner": {
+    "title": "Be A Part of Waste4Change, Be A Part of the Change"
+  },
+  "search_bar": {
+    "position": "Position",
+    "Location": "Location",
+    "Type": "Type",
+    "Search": "Search",
+    "ViewJobList": "View Job List"
+  },
+  "value": {
+    "title": "Our Values",
+    "items": [
+      {
+        "title": "Integrity",
+        "image": "Integrity.png"
+      },
+      {
+        "title": "Solution",
+        "image": "Solution.png"
+      },
+      {
+        "title": "Responsible",
+        "image": "Responsible.png"
+      },
+      {
+        "title": "Collaborative",
+        "image": "Collaborative.png"
+      },
+      {
+        "title": "Caring",
+        "image": "Caring.png"
+      }
+    ]
+  },
+  "culture": {
+    "title": "Our Culture",
+    "subtitle": "Here's A Glimpse of What Life at Waste4Change Looks Like ",
+    "items": [
+      {
+        "title": "img1",
+        "image": "img1.png"
+      },
+      {
+        "title": "img2",
+        "image": "img2.png"
+      },
+      {
+        "title": "img3",
+        "image": "img3.png"
+      },
+      {
+        "title": "img4",
+        "image": "img4.png"
+      }
+    ]
+  },
+  "job_category": {
+    "title": "Job Categories",
+    "subtitle": "What Are You Most Passionate About?",
+    "items": [
+      {
+        "title": "Coorporate Function",
+        "job": [
+          "lorem",
+          "ipsum",
+          "sir",
+          "dor amet"
+        ],
+        "image": "img1.png",
+        "icon": "icon-bag"
+      },
+      {
+        "title": "Tech",
+        "job": [
+          "lorem",
+          "ipsum",
+          "sir",
+          "dor amet"
+        ],
+        "image": "img1.png",
+        "icon": "icon-screen-desktop"
+      },
+      {
+        "title": "Waste Management Operations",
+        "job": [
+          "lorem",
+          "ipsum",
+          "sir",
+          "dor amet"
+        ],
+        "image": "img1.png",
+        "icon": "icon-trash"
+      },
+      {
+        "title": "Waste Management Consultancy & Educations",
+        "job": [
+          "lorem",
+          "ipsum",
+          "sir",
+          "dor amet"
+        ],
+        "image": "img1.png",
+        "icon": "icon-notebook"
+      }
+    ]
+  },
+  "testimony": {
+    "title": "Testimonial",
+    "subtitle": "Hear What Our Employees Have to Say throughout their Career with Waste4Change",
+    "item": [
+      {
+        "name": "Adhitya Prayoga",
+        "position": "Circular Economy Strategist",
+        "message": "I have found my Ikigai by working at Waste4Change. I do not need to make up stories when the future generation asks me \"What did you do in the fight against climate change?\" I can proudly say \"I did it with Waste4Change\".",
+        "image": "img1.jpg"
+      },
+      {
+        "name": "Saka Dwi Hanggara",
+        "position": "Behaviour Change Engineer",
+        "message": "I found great colleagues and a fun working environment here at Waste4Change. In addition, I take pride in the works that we perform because we know that  we're doing something great!",
+        "image": ""
+      },
+      {
+        "name": "Khairunnisa Yusmalina Humaam",
+        "position": "Organic SPV",
+        "message": "I joined Waste4Change ever since its organic waste processing methods were still very simple, and now we already have 2 effective organic waste processing methods, which are Open Windrow and Black Soldier Flies. From that process alone, I learned a lot about leadership, strategic thinking, and solution-based mindset. There is not a more suitable place for those who want to keep learning and develop themselves than in Waste4Change",
+        "image": ""
+      },
+      {
+        "name": "Muhamad Andriansyah",
+        "position": "Site Manager MRF",
+        "message": "Working in Waste4Change has enabled me to gain a holistic understanding about the recycling industry, as well as learning about its business process from upstream to downstream. Moreover I also managed to obtain knowledge regarding the business opportunity in waste management sector, all while contributing to the environment",
+        "image": ""
+      },
+      {
+        "name": "Siti Annisa",
+        "position": "Project Coordinator",
+        "message": "Waste4Change has become one of the places in which I can contribute both in knowledge and concrete actions to initiate real environmental changes. As a graduate from Environmental Engineering, it is very thrilling to be able to work in Waste4Change. This is because I get to know many colleagues and friends who are very supportive towards each other, while at the same time, I am given the opportunity (and the luxury) to implement the knowledge that I have obtained",
+        "image": ""
+      }
+    ]
+  },
+  "internship_program": {
+    "title": "An Exciting 3-month Internship Program for You to Discover and Explore Your Passion in Waste Management Issues",
+    "subtitle": "Description: Becoming an intern at Waste4Change means a full-time experience that simulates the dynamic working conditions here at Waste4Change’s office for a duration of 3 months. Interns can choose which division they want to be a part of, or what kind of cause they want to be involved in.",
+    "image": ""
+  },
+  "internship_testimony": {
+    "title": "Past Intern Testimoniis",
+    "subtitle": "See What Our Past Interns Have to Say About Waste4Change’s Internship Program",
+    "items": [
+      {
+        "name": "Amira R. Nadhifa",
+        "message": "The whole experience taught me a lot of things, starting with interpersonal communication, teamwork, and problem solving. The company’s work ambience is very appreciative, and you’ll find them always being supportive of each other. I took part mostly in assisting the optimization of the TPS 3R project, which was challenging, but I learned a lot and am still learning more about it"
+      },
+      {
+        "name": "Working in a social enterprise that focuses on giving services in responsible waste management taught me a whole new lesson. I learned a lot of new skills, especially about business and waste management, which was the most exciting thing that I never had before. I can express and sharpen my skills in event and project management, partnership, teamwork, and public speaking",
+        "message": "Fanny Ramadhanti"
+      },
+      {
+        "name": "This internship provided me with valuable hands-on experience and a better idea about what knowledge areas and skills I should develop. I learned various types of HR functions and responsibilities, such as recruitment process, people development and designing performance appraisal. This is also my first time working with an output-based mechanism, which means we are not tied with regular office hours, but instead focusing on the project’s goals and timelines. In order to adapt, I learned how to work effectively, produced a high quality output, and set priorities.",
+        "message": "Ivanna Zahra"
+      },
+      {
+        "name": "After 3 months of internship, I gained a deep understanding on how we can co-exist with waste. We don’t need to go back to ancient times where we can’t enjoy the simplicity of a product, but rather create a harmony to build a safe and sustainable ecosystem, just like a forest. Waste4change is trying to make that ecosystem where waste management could be handled responsibly with a holistic 4Cs approach: Consult, Campaign, Collect and Create.",
+        "message": "Khusnaedi Azhar"
+      }
+    ]
+  },
+  "latest_job": {
+    "title": "Job Categories",
+    "subtitle": "What Are You Most Passionate About?"
+  },
+  "faq": {
+    "title": "Frequently-Asked Questions (FAQ)",
+    "items": {
+      "1": {
+        "question": "Sunt consequat minim ad aute ipsum?",
+        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+      },
+      "2": {
+        "id": 2,
+        "question": "Sunt consequat minim ad aute ipsum?",
+        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+      },
+      "3": {
+        "question": "Sunt consequat minim ad aute ipsum?",
+        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+      },
+      "4": {
+        "question": "Sunt consequat minim ad aute ipsum?",
+        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+      },
+      "5": {
+        "question": "Sunt consequat minim ad aute ipsum?",
+        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+      },
+      "6": {
+        "question": "Sunt consequat minim ad aute ipsum?",
+        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+      }
+    }
+  }
+}

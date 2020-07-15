@@ -114,6 +114,18 @@
 							'is_new' => false,
 							'menu' => '',
 					],
+					[
+						'title' => lang('career'),
+						'for' => 'menu',
+						'visible' => true,
+						'number' => '7',
+						'url' => site_url('career'),
+						'type' => '',
+						'submenu_type' => 'list',
+						'icon' => '',
+						'is_new' => false,
+						'menu' => '',
+				],
 			];
 			if ($this->session->userdata('login_email')) {
 				//$login_value = $this->session->userdata('login_email');
@@ -389,27 +401,27 @@
 		public function alert_modal($content)
 		{
 			return '
-  <script type="text/javascript">
-  $(window).load(function(){
-    $("#modalNotif").modal("show");
-  });
-  </script>
-  <div class="modal fade" id="modalNotif" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-  <div class="modal-content round-xs">
-  <div class="modal-body" style="min-height: 200px">
-  <div class="clearfix text-center" style="padding-top: 0">' . $content . '</div>
+				<script type="text/javascript">
+				$(window).load(function(){
+					$("#modalNotif").modal("show");
+				});
+				</script>
+				<div class="modal fade" id="modalNotif" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+				<div class="modal-content round-xs">
+				<div class="modal-body" style="min-height: 200px">
+				<div class="clearfix text-center" style="padding-top: 0">' . $content . '</div>
 
-  <button type="button" class="close hidden" data-dismiss="modal" aria-label="Close">
-  <span aria-hidden="true">&times;</span>
-  </button>
-  </div>
-  </div>
-  </div>
-  <div class="close-modal"></div>
+				<button type="button" class="close hidden" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				</div>
+				</div>
+				<div class="close-modal"></div>
 
-  </div>
-  ';
+				</div>
+				';
 		}
 		
 		public function view_time($time, $with_second = NULL)

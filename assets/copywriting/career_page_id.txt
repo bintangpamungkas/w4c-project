@@ -1,0 +1,206 @@
+
+{
+  "banner": {
+    "title": "Menjadi Bagian dari Waste4Change Berarti Menjadi Bagian dari Perubahan"
+  },
+  "search_bar": {
+    "position": "Posisi",
+    "Location": "Lokasi",
+    "Type": "Tipe",
+    "Search": "Cari",
+    "ViewJobList": "Daftar Pekerjaan"
+  },
+  "value": {
+    "title": "NILAI-NILAI WASTE4CHANGE",
+    "items": [
+      {
+        "title": "Integritas",
+        "image": "Integrity.png"
+      },
+      {
+        "title": "Solutif",
+        "image": "Solution.png"
+      },
+      {
+        "title": "Bertanggung Jawab",
+        "image": "Responsible.png"
+      },
+      {
+        "title": "Kolaboratif",
+        "image": "Collaborative.png"
+      },
+      {
+        "title": "Peduli",
+        "image": "Caring.png"
+      }
+    ]
+  },
+  "culture": {
+    "title": "Our Culture",
+    "subtitle": "Sekilas Tentang Kehidupan di Waste4Change yang Dinamis",
+    "items": [
+      {
+        "title": "img1",
+        "image": "img1.png"
+      },
+      {
+        "title": "img2",
+        "image": "img2.png"
+      },
+      {
+        "title": "img3",
+        "image": "img3.png"
+      },
+      {
+        "title": "img4",
+        "image": "img4.png"
+      }
+    ]
+  },
+  "job_category": {
+    "title": "Kategori Pekerjaan",
+    "subtitle": "Bidang Apa yang Paling Menarik Minat dan Perhatianmu?",
+    "items": [
+      {
+        "title": "Coorporate Function",
+        "job": [
+          "lorem",
+          "ipsum",
+          "sir",
+          "dor amet"
+        ],
+        "image": "img1.png",
+        "icon": "icon-bag"
+      },
+      {
+        "title": "Tech",
+        "job": [
+          "lorem",
+          "ipsum",
+          "sir",
+          "dor amet"
+        ],
+        "image": "img1.png",
+        "icon": "icon-screen-desktop"
+      },
+      {
+        "title": "Waste Management Operations",
+        "job": [
+          "lorem",
+          "ipsum",
+          "sir",
+          "dor amet"
+        ],
+        "image": "img1.png",
+        "icon": "icon-trash"
+      },
+      {
+        "title": "Waste Management Consultancy & Educations",
+        "job": [
+          "lorem",
+          "ipsum",
+          "sir",
+          "dor amet"
+        ],
+        "image": "img1.png",
+        "icon": "icon-notebook"
+      }
+    ]
+  },
+  "testimony": {
+    "title": "Testimonial",
+    "subtitle": "Cari Tahu Kata Pegawai Kami Tentang Menjalani Karir di Waste4Change",
+    "item": [
+      {
+        "name": "Adhitya Prayoga",
+        "position": "Circular Economy Strategist",
+        "message": "I have found my Ikigai by working at Waste4Change. I do not need to make up stories when the future generation asks me \"What did you do in the fight against climate change?\" I can proudly say \"I did it with Waste4Change\".",
+        "image": "img1.jpg"
+      },
+      {
+        "name": "Saka Dwi Hanggara",
+        "position": "Behaviour Change Engineer",
+        "message": "Selama bekerja di Waste4Change saya menemukan lingkungan serta rekan kerja yang asik dan seru. Selain itu, ada rasa bangga di setiap pekerjaan yang kita lakukan karena kita tahu, we're doing something great!",
+        "image": ""
+      },
+      {
+        "name": "Khairunnisa Yusmalina Humaam",
+        "position": "Organic SPV",
+        "message": "Saya bergabung di Waste4Change sejak sistem pengolahan sampah organiknya masih sangat sederhana, sampai sekarang sudah ada 2 metode pengolahan efektif yaitu Open Windrow dan BSF. Dari proses tersebut saya belajar tentang kepemimpinan, berpikir strategis dan solutif. Waste4Change tempat yang cocok untuk teman-teman yg ingin belajar dan terus mengembangkan diri",
+        "image": ""
+      },
+      {
+        "name": "Muhamad Andriansyah",
+        "position": "Site Manager MRF",
+        "message": "Bekerja di Waste4Change membuat saya memahami industri daur ulang serta mengetahui proses bisnisnya dari hulu ke hilir. Selain itu saya juga jadi memahami peluang bisnis dalam pengelolaan sampah, sekaligus dapat berkontribusi untuk lingkungan",
+        "image": ""
+      },
+      {
+        "name": "Siti Annisa",
+        "position": "Project Coordinator",
+        "message": "Waste4Change merupakan salah satu ruang dimana saya bisa memberikan kontribusi ilmu dan aksi yang nyata untuk perubahan lingkungan yang konkrit. Sebagai lulusan Teknik Lingkungan, sangat menyenangkan untuk dapat bekerja di Waste4Change. Hal ini karena saya punya teman dan kolega  yang saling mendukung satu sama lain, sekaligus diberi kesempatan (dan kemewahan) untuk dapat mengaplikasikan ilmu yang sudah dipelajari",
+        "image": ""
+      }
+    ]
+  },
+  "internship_program": {
+    "title": "Program Magang 3 Bulan yang Membantu Anda untuk Mengeksplor dan Mendalami Minat Anda terhadap Isu Pengelolaan Sampah",
+    "subtitle": "Deskripsi: Menjadi tenaga magang di Waste4Change akan mengekspos Anda terhadap dunia kerja yang senantiasa dinamis di Waste4Change selama kurang lebih 3 bulan lamanya. Nantinya para tenaga magang akan bisa memilih di divisi mana mereka ingin berkontribusi dan terlibat. ",
+    "image": ""
+  },
+  "internship_testimony": {
+    "title": "Past Intern Testimoniis",
+    "subtitle": "See What Our Past Interns Have to Say About Waste4Change’s Internship Program",
+    "items": [
+      {
+        "name": "Amira R. Nadhifa",
+        "message": "Pengalaman magang ini mengajari saya banyak hal, mulai dari komunikasi interpersonal, kerjasama tim, serta pemecahan masalah. Kultur kerja perusahaannya sangat apresiatif dan saya bisa melihat bagaimana mereka selalu mendukung satu sama lain. Saya paling banyak membantu di proyek optimalisasi TPS 3R, yang notabene cukup menantang, tapi saya telah dan masih belajar banyak dari situ."
+      },
+      {
+        "name": "Bekerja di perusahaan sosial yang berfokus pada pengelolaan sampah yang bertanggung jawab mengajari saya hal-hal yang benar-benar baru. Saya belajar banyak keahlian, terutama yang terkait dengan bisnis dan pengelolaan sampah, yang juga sangat mengasyikkan karena saya belum pernah belajar tentang hal ini sebelumnya. Saya bisa menyalurkan dan mengasah kemampuan saya dalam hal manajemen proyek dan acara, bekerja dalam tim, serta kemampuan berbicara di depan umum.",
+        "message": "Fanny Ramadhanti"
+      },
+      {
+        "name": "Program magang ini memberikan saya pelajaran berharga dimana saya bisa mendapatkan pengalaman dan masukkan terkait kemampuan apa saja yang harus saya kembangkan di kemudian hari. Saya belajar tentang beragam fungsi dan tanggung jawab dari Human Resources mulai dari proses rekrutmen pegawai, pengembangan SDM, serta merumuskan mekanisme penilaian performa. Ini juga pertama kalinya bagi saya untuk bekerja dengan berorientasi pada hasil, dengan kata lain saya tidak terikat jam kerja pada umumnya, melainkan berfokus pada timeline serta tujuan dari proyek yang sedang dikerjakan. Untuk bisa beradaptasi, saya kemudian belajar untuk bekerja secara lebih efektif, produktif, dan juga mengatur prioritas.",
+        "message": "Ivanna Zahra"
+      },
+      {
+        "name": "Setelah 3 bulan menjalani program magang, saya mendapatkan pemahaman yang lebih mendalam mengenai bagaimana kita bisa hidup berdampingan dengan sampah Kita tidak perlu kembali ke masa lampau dimana kita tidak bisa menikmati produk-produk yang membuat hidup menjadi lebih mudah. Yang kita butuhkan hanyalah untuk bisa hidup secara harmonis dan berkelanjutan dengan alam, layaknya sebuah ekosistem hutan. Itulah hal yang Waste4Change tengah perjuangkan: sebuah ekosistem dimana pengelolaan sampah dapat dilakukan secara bertanggung jawab menggunakan pendekatan holistik yang disingkat menjadi 4C: Consult, Campaign, Collect and Create.",
+        "message": "Khusnaedi Azhar"
+      }
+    ]
+  },
+  "latest_job": {
+    "title": "Job Categories",
+    "subtitle": "What Are You Most Passionate About?"
+  },
+  "faq": {
+    "title": "Frequently-Asked Questions (FAQ)",
+    "items": [
+      {
+        "question": "Sunt consequat minim ad aute ipsum?",
+        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+      },
+      {
+        "question": "Sunt consequat minim ad aute ipsum?",
+        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+      },
+      {
+        "question": "Sunt consequat minim ad aute ipsum?",
+        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+      },
+      {
+        "question": "Sunt consequat minim ad aute ipsum?",
+        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+      },
+      {
+        "question": "Sunt consequat minim ad aute ipsum?",
+        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+      },
+      {
+        "question": "Sunt consequat minim ad aute ipsum?",
+        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+      }
+    ]
+  }
+}

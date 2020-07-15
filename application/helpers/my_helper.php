@@ -18,7 +18,6 @@
 		if (empty($database)) {
 			if (empty(lang($slug))) {
 				return $slug;
-//        return 'Lorem Ipsum...';
 			} else {
 				return lang($slug);
 			}
