@@ -185,14 +185,14 @@
         <div class="row g-bg-lightblue g-py-40 g-mt-10 text-center rounded justify-content-center">
             <div class="col-md-5 <?= $this->agent->is_mobile() ? 'g-mb-10 g-px-50' : '' ?>">
                 <p><img width="32" height="32" src="<?= site_url(DIR_IMG . 'icons/flag_england.svg') ?>" alt=""> <span class="g-ml-10 <?= $this->agent->is_mobile() ? 'g-font-size-12' : 'g-font-size-14' ?>">English Version</span></p>
-                <a href="<?= $research['file']['links']['download']['en'] ?>" class="btn btn-md u-btn-outline-blue u-btn-hover-v1-4 g-rounded-50 g-mr-10 g-mb-15 g-mt-5 w-100 g-py-15" style="color: #17A2B8; border-width: 1.5px;">
+                <a class="btn btn-outline-info btn-block g-brd-2 g-font-size-13 g-rounded-50  g-px-30 g-py-9" href="<?= $research['file']['links']['download']['en'] ?>">
                     Download <i class="g-ml-10 icon-cloud-download"></i>
                 </a>
             </div>
 
             <div class="col-md-5 <?= $this->agent->is_mobile() ? 'g-mt-10 g-px-50' : '' ?>">
                 <p><img width="32" height="32" src="<?= site_url(DIR_IMG . 'icons/flag_indonesia.svg') ?>" alt=""> <span class="g-ml-10 <?= $this->agent->is_mobile() ? 'g-font-size-12' : 'g-font-size-14' ?>">Indonesian Version</span></p>
-                <a href="<?= $research['file']['links']['download']['id'] ?>" class="btn btn-md u-btn-outline-blue u-btn-hover-v1-4 g-rounded-50 g-mr-10 g-mb-15 g-mt-5 w-100 g-py-15" style="color: #17A2B8; border-width: 1.5px;">
+                <a class="btn btn-outline-info btn-block g-brd-2 g-font-size-13 g-rounded-50  g-px-30 g-py-9" href="<?= $research['file']['links']['download']['id'] ?>">
                     Download <i class="g-ml-10 icon-cloud-download"></i>
                 </a>
             </div>
