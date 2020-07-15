@@ -21,7 +21,10 @@
             }
         },
         "banner": {
-            "thumb_image": "http://demo.waste4change.com/official/assets/img/banner/research-banner-thumb-1.svg",
+            "thumb_image": {
+                "id": "http://demo.waste4change.com/official/assets/img/banner/thumbnail-pusat-in.jpg",
+                "en": "http://demo.waste4change.com/official/assets/img/banner/thumbnail-pusat-en.jpg"
+            },
             "thumb_detail_image": "http://demo.waste4change.com/official/assets/img/banner/banner-detail-overview.svg",
             "large_image": "http://demo.waste4change.com/official/assets/img/banner/research-banner-large.svg",
             "title": {
@@ -95,7 +98,10 @@
             }
         },
         "banner": {
-            "thumb_image": "http://demo.waste4change.com/official/assets/img/banner/research-banner-thumb-2.svg",
+            "thumb_image": {
+                "id": "http://demo.waste4change.com/official/assets/img/banner/thumbnail-daerah-in.jpg",
+                "en": "http://demo.waste4change.com/official/assets/img/banner/thumbnail-daerah-en.jpg"
+            },
             "thumb_detail_image": "http://demo.waste4change.com/official/assets/img/banner/banner-detail-overview.svg",
             "large_image": "http://demo.waste4change.com/official/assets/img/banner/research-banner-large.svg",
             "title": {

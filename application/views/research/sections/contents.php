@@ -2,7 +2,7 @@
     <!-- Content -->
     <div class="row g-mb-50">
         <div class="col-md-4">
-            <img class="w-100" src="<?= $research['banner']['thumb_image']; ?>" alt="Image Description">
+            <img class="w-100" src="<?= $research['banner']['thumb_image'][$lang]; ?>" alt="Image Description">
         </div>
 
         <div class="col-md-8">

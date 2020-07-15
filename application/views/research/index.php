@@ -122,7 +122,7 @@ if (isset($_GET['cat'])) {
             <div class="col-md-9 <?= $this->agent->is_mobile() ? 'text-center' : '' ?>">
                 <div class="u-heading-v2-1">
                     <h2 class="g-font-asap g-color-black-dark-v2 g-font-weight-600 <?= $this->agent->is_mobile() ? 'g-font-size-24' : ''; ?>"><?= lang('research_latest_publication') ?></h2>
-                    <hr class="g-width-120 g-mb-20 g-brd-2 g-brd-blue <?= $this->agent->is_mobile() ? 'g-mt-20' : 'g-mt-10 g-mx-0'; ?>">
+                    <hr class="g-width-120 g-mb-20 g-brd-2 <?= $this->agent->is_mobile() ? 'g-mt-20' : 'g-mt-10 g-mx-0'; ?>" style="border-color: #17A2B8;">
                 </div>
             </div>
 

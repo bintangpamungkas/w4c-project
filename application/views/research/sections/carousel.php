@@ -10,7 +10,7 @@
                             <?php if (!$this->agent->is_mobile()) : ?>
                                 <article class="row align-items-stretch mx-0">
                                     <!-- Article Image -->
-                                    <div class="col-4 my-10 g-width-100x--md g-bg-size-cover" data-bg-img-src="<?= $research['banner']['thumb_image'] ?>"></div>
+                                    <div class="col-4 my-10 g-width-100x--md g-bg-size-cover" data-bg-img-src="<?= $research['banner']['thumb_image'][$lang] ?>"></div>
                                     <!-- End Article Image -->
 
                                     <!--Article Content-->
