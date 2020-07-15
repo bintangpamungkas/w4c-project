@@ -55,6 +55,7 @@ $lang["release-date"] = "Release Date";
 $lang["file-type"] = "File Type";
 $lang["total-pages"] = "Total Pages";
 $lang["file-size"] = "File Size";
+$lang["detail"] = "Detail";
 
 //Welcome W4C
 $lang["welcome_title_1"] = "It's time to";

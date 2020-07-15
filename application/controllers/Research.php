@@ -65,8 +65,13 @@ class Research extends MY_Controller
                 ],
                 [
                     'title' => lang('research'),
-                    'active' => true,
+                    'active' => false,
                     'url' => site_url('research')
+                ],
+                [
+                    'title' => lang('detail'),
+                    'active' => true,
+                    'url' => site_url('research/' . $slug)
                 ],
             ];
         $data['researchs'] = $this->getDatas();

@@ -56,6 +56,7 @@ $lang["release-date"] = "Tanggal Rilis";
 $lang["file-type"] = "Tipe File";
 $lang["total-pages"] = "Jumlah Halaman";
 $lang["file-size"] = "Ukuran File";
+$lang["detail"] = "Detail";
 
 //Welcome W4C
 $lang["welcome_title_1"] = "Saatnya Mengelola Sampah";

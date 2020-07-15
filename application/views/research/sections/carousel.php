@@ -37,9 +37,9 @@
                             <?php else : ?>
                                 <article class="row align-items-stretch mx-0">
                                     <!--Article Content-->
-                                    <div class="col-12 px-0 g-bg-size-cover" data-bg-img-src="<?= $research['banner']['large_image'] ?>" style="height: <?= $this->agent->is_mobile() ? '179px' : '294px'; ?>">
+                                    <div class="col-12 px-0 g-bg-size-cover g-bg-position" data-bg-img-src="<?= $research['banner']['large_image'] ?>" style="height: <?= $this->agent->is_mobile() ? '179px' : '294px'; ?>">
 
-                                        <img class="img-fluid" style="position: absolute; top: 13%;" width="149" height="56" src="<?= $research['banner']['thumb_image'] ?>" alt="">
+                                        <img class="img-fluid" style="position: absolute; top: 13%;" width="149" height="56" src="<?= $research['banner']['thumb_image'][$lang] ?>" alt="">
 
                                         <div class="w-100 g-width-100x--md <?= $this->agent->is_mobile() ? 'g-py-25 g-pl-165 g-pr-15' : 'g-py-45 g-px-25'; ?> ml-auto" style="background: rgba(21, 156, 189, 0.81); height: <?= $this->agent->is_mobile() ? '179px' : '294px'; ?>;">
                                             <div class="g-flex-middle-item">

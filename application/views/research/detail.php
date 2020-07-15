@@ -92,15 +92,15 @@
                                 </div>
                             </div>
                         <?php else : ?>
-                            <div class="u-shadow-v1-3 g-line-height-2 g-px-10 g-bg-white" style="display: block; position: fixed; top: 190px; right: 0; z-index: 999;">
-                                <div class="g-mb-10 g-px-10">
-                                    <a class="g-font-size-23 g-color-black">
+                            <div class="u-shadow-v1-3 g-px-10 g-bg-white" style="display: block; position: fixed; top: 190px; right: 0; z-index: 999;">
+                                <div class="g-px-10 g-pb-10 g-pt-5">
+                                    <a class="g-font-size-23">
                                         <img id="arrow-btn" src="<?= site_url(DIR_IMG . 'icons/arrow-right.svg') ?>" width="24">
                                     </a>
                                 </div>
 
                                 <div id="sidebar-share">
-                                    <div class="g-mb-10">
+                                    <div class="g-mt-10 g-mb-10">
                                         <a class="u-icon-v3 g-social-icon g-rounded-50x g-color-white--hover" href="https://api.whatsapp.com/send?text=<?= site_url('research/' . $research['slug']) ?>" target="_blank">
                                             <i class="fa fa-whatsapp"></i>
                                         </a>
@@ -222,7 +222,9 @@
                 });
 
                 $('#arrow-btn').on('click', function() {
-                    $(this).toggleClass('g-icon-rotate');
+                    $(this).attr('src', function(index, attr) {
+                        return attr == '<?= site_url(DIR_IMG . 'icons/arrow-right.svg') ?>' ? '<?= site_url(DIR_IMG . 'icons/share.svg') ?>' : '<?= site_url(DIR_IMG . 'icons/arrow-right.svg') ?>';
+                    });
                     $('#sidebar-share').slideToggle();
                 });
 
