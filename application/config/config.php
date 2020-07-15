@@ -1,4 +1,4 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 date_default_timezone_set('Asia/Jakarta');
 /*
 |--------------------------------------------------------------------------
@@ -47,7 +47,7 @@ $config['index_page'] = '';
 | 'ORIG_PATH_INFO'	Uses the ORIG_PATH_INFO
 |
 */
-$config['uri_protocol']	= 'AUTO';
+$config['uri_protocol']    = 'AUTO';
 
 /*
 |--------------------------------------------------------------------------
@@ -72,7 +72,7 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
-$config['language']	= 'indonesia';
+$config['language']    = 'indonesia';
 
 /*
 |--------------------------------------------------------------------------
@@ -110,6 +110,28 @@ $config['enable_hooks'] = FALSE;
 |
 */
 $config['subclass_prefix'] = 'MY_';
+
+/*
+|--------------------------------------------------------------------------
+| Composer auto-loading
+|--------------------------------------------------------------------------
+|
+| Enabling this setting will tell CodeIgniter to look for a Composer
+| package auto-loader script in application/vendor/autoload.php.
+|
+|	$config['composer_autoload'] = TRUE;
+|
+| Or if you have your vendor/ directory located somewhere else, you
+| can opt to set a specific path as well:
+|
+|	$config['composer_autoload'] = '/path/to/vendor/autoload.php';
+|
+| For more information about Composer, please visit http://getcomposer.org/
+|
+| Note: This will NOT disable or override the CodeIgniter-specific
+|	autoloading (application/config/autoload.php)
+*/
+$config['composer_autoload'] = 'vendor/autoload.php';
 
 
 /*
@@ -157,11 +179,11 @@ $config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-';
 | use segment based URLs.
 |
 */
-$config['allow_get_array']		= TRUE;
+$config['allow_get_array']        = TRUE;
 $config['enable_query_strings'] = FALSE;
-$config['controller_trigger']	= 'c';
-$config['function_trigger']		= 'm';
-$config['directory_trigger']	= 'd'; // experimental not currently in use
+$config['controller_trigger']    = 'c';
+$config['function_trigger']        = 'm';
+$config['directory_trigger']    = 'd'; // experimental not currently in use
 
 /*
 |--------------------------------------------------------------------------
@@ -247,16 +269,16 @@ $config['encryption_key'] = 'obengkencryption';
 | 'sess_time_to_update'		= how many seconds between CI refreshing Session Information
 |
 */
-$config['sess_cookie_name']		= 'ci_session';
-$config['sess_expiration']		= 7200;
-$config['sess_expire_on_close']	= FALSE;
-$config['sess_encrypt_cookie']	= FALSE;
-$config['sess_use_database']	= FALSE;
-$config['sess_table_name']		= 'ci_sessions';
-$config['sess_match_ip']		= FALSE;
-$config['sess_match_useragent']	= TRUE;
-$config['sess_time_to_update']	= 300;
-$config['sess_save_path']	    = sys_get_temp_dir();
+$config['sess_cookie_name']        = 'ci_session';
+$config['sess_expiration']        = 7200;
+$config['sess_expire_on_close']    = FALSE;
+$config['sess_encrypt_cookie']    = FALSE;
+$config['sess_use_database']    = FALSE;
+$config['sess_table_name']        = 'ci_sessions';
+$config['sess_match_ip']        = FALSE;
+$config['sess_match_useragent']    = TRUE;
+$config['sess_time_to_update']    = 300;
+$config['sess_save_path']        = sys_get_temp_dir();
 
 /*
 |--------------------------------------------------------------------------
@@ -269,10 +291,10 @@ $config['sess_save_path']	    = sys_get_temp_dir();
 | 'cookie_secure' =  Cookies will only be set if a secure HTTPS connection exists.
 |
 */
-$config['cookie_prefix']	= "";
-$config['cookie_domain']	= "";
-$config['cookie_path']		= "/";
-$config['cookie_secure']	= FALSE;
+$config['cookie_prefix']    = "";
+$config['cookie_domain']    = "";
+$config['cookie_path']        = "/";
+$config['cookie_secure']    = FALSE;
 
 /*
 |--------------------------------------------------------------------------

@@ -46,10 +46,13 @@ $route['contact'] = "Site/contact";
 $route['about'] = "Site/about";
 $route['id'] = "Site/id";
 $route['en'] = "Site/en";
+$route['research'] = "Research/index";
+$route['research/data'] = "Research/getData";
+$route['research/(:any)'] = "Research/detail/$1";
 $route['service/(:any)'] = "Service/detail/$1";
 $route['service/(:any)/join'] = "Service/join/$1";
 $route['project/(:any)'] = "Service/detail/$1";
-$route['career'] = "Career/index";
+$route['(:any)'] = "Brand/index/$1";
 
 $route['trial_form/(:any)'] = "Site/trial_form/$1";
 $route['(:any)'] = "Brand/index/$1";
