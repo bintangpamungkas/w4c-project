@@ -110,7 +110,7 @@ if (isset($_GET['cat'])) {
         <!-- </section> -->
     <?php else : ?>
         <section class="container<?= $this->agent->is_mobile() ? ' g-mt-minus-20 g-mb-minus-20 ' : ' '; ?>">
-            <div class="<?= $this->agent->is_mobile() ? 'g-py-20 ' : ' '; ?>alert alert-info g-mt-30 g-font-weight-500" role="alert" style="background-color: rgba(42, 199, 105, 0.15); color: rgba(42, 199, 105);">
+            <div class="<?= $this->agent->is_mobile() ? 'g-py-20 ' : ' '; ?>alert alert-error g-mt-30 g-font-weight-500" role="alert" style="background-color: rgba(230, 75, 59, 0.15); color: rgba(230, 75, 59);">
                 <span id="search-total">0</span> Search result found
             </div>
         </section>
@@ -189,7 +189,10 @@ if (isset($_GET['cat'])) {
                     $.each(data, function(key, value) {
                         if (value.title.<?= $lang ?>.search(expression) != -1 || value.keyword.<?= $lang ?>.search(expression) != -1) {
                             searchTotal += 1;
-                            $("#search-total").text(searchTotal);
+                            $("#search-total").text(searchTotal).parent().css({
+                                "background-color": "rgba(42, 199, 105, 0.15)",
+                                "color": "rgba(42, 199, 105)"
+                            });
                             loadContent(value);
                         }
                     });
@@ -200,7 +203,7 @@ if (isset($_GET['cat'])) {
         function loadContent(value) {
             $('#content').append(`<div class="row g-mb-50">
         <div class="col-md-4">
-            <img class="w-100" src="` + value.banner.thumb_image + `" alt="Image Description">
+            <img class="w-100" src="` + value.banner.thumb_image.<?= $lang ?> + `" alt="Image Description">
         </div>
 
         <div class="col-md-8">
