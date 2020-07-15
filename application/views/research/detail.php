@@ -92,7 +92,7 @@
                                 </div>
                             </div>
                         <?php else : ?>
-                            <div class="u-shadow-v1-3 g-px-10 g-bg-white" style="display: block; position: fixed; top: 190px; right: 0; z-index: 999;">
+                            <div id="side-box" class="u-shadow-v1-3 g-px-10 g-bg-info g-bg-white" style="display: block; position: fixed; top: 190px; right: 0; z-index: 999;">
                                 <div class="g-px-10 g-pb-10 g-pt-5">
                                     <a class="g-font-size-23">
                                         <img id="arrow-btn" src="<?= site_url(DIR_IMG . 'icons/arrow-right.svg') ?>" width="24">
@@ -224,7 +224,10 @@
                 $('#arrow-btn').on('click', function() {
                     $(this).attr('src', function(index, attr) {
                         return attr == '<?= site_url(DIR_IMG . 'icons/arrow-right.svg') ?>' ? '<?= site_url(DIR_IMG . 'icons/share.svg') ?>' : '<?= site_url(DIR_IMG . 'icons/arrow-right.svg') ?>';
+                    }).attr('width', function(index, attr) {
+                        return attr == '24' ? '26' : '24';
                     });
+                    $('#side-box').toggleClass('g-bg-white');
                     $('#sidebar-share').slideToggle();
                 });
 
