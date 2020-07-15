@@ -1,5 +1,5 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
-	/*
+/*
 	| -------------------------------------------------------------------
 	| DATABASE CONNECTIVITY SETTINGS
 	| -------------------------------------------------------------------
@@ -45,41 +45,41 @@
 	| the active record class
 	*/
 
-	$active_group = 'default';
-	$active_record = TRUE;
-	$query_builder = TRUE;
+$active_group = 'default';
+$active_record = TRUE;
+$query_builder = TRUE;
 
-	$db['default']['hostname'] = DB_HOSTNAME;
-	$db['default']['username'] = DB_USERNAME;
-	$db['default']['password'] = DB_PASSWORD;
-	$db['default']['database'] = DB_DATABASE;
+$db['default']['hostname'] = DB_HOSTNAME;
+$db['default']['username'] = DB_USERNAME;
+$db['default']['password'] = DB_PASSWORD;
+$db['default']['database'] = DB_DATABASE;
 
-	$db['default']['dbdriver'] = 'mysqli';
-	$db['default']['dbprefix'] = '';
-	$db['default']['pconnect'] = TRUE;
-	$db['default']['db_debug'] = TRUE;
-	$db['default']['cache_on'] = FALSE;
-	$db['default']['cachedir'] = '';
-	$db['default']['char_set'] = 'utf8';
-	$db['default']['dbcollat'] = 'utf8_general_ci';
-	$db['default']['swap_pre'] = '';
-	$db['default']['autoinit'] = TRUE;
-	$db['default']['stricton'] = FALSE;
+$db['default']['dbdriver'] = 'mysqli';
+$db['default']['dbprefix'] = '';
+$db['default']['pconnect'] = TRUE;
+$db['default']['db_debug'] = TRUE;
+$db['default']['cache_on'] = FALSE;
+$db['default']['cachedir'] = '';
+$db['default']['char_set'] = 'utf8';
+$db['default']['dbcollat'] = 'utf8_general_ci';
+$db['default']['swap_pre'] = '';
+$db['default']['autoinit'] = TRUE;
+$db['default']['stricton'] = FALSE;
 
-	$db['blogdb']['hostname'] = DB_HOSTNAME;
-	$db['blogdb']['username'] = DB_USERNAME;
-	$db['blogdb']['password'] = DB_PASSWORD;
-	$db['blogdb']['database'] = "w4c_blog";
-	$db['blogdb']['dbdriver'] = "mysqli";
-	$db['blogdb']['dbprefix'] = "";
-	$db['blogdb']['pconnect'] = TRUE;
-	$db['blogdb']['db_debug'] = FALSE;
-	$db['blogdb']['cache_on'] = FALSE;
-	$db['blogdb']['cachedir'] = "";
-	$db['blogdb']['char_set'] = "utf8";
-	$db['blogdb']['dbcollat'] = "utf8_general_ci";
-	$db['blogdb']['swap_pre'] = "";
-	$db['blogdb']['autoinit'] = TRUE;
-	$db['blogdb']['stricton'] = FALSE;
+$db['blogdb']['hostname'] = DB_HOSTNAME;
+$db['blogdb']['username'] = DB_USERNAME;
+$db['blogdb']['password'] = DB_PASSWORD;
+$db['blogdb']['database'] = "u4631431_w4c";
+$db['blogdb']['dbdriver'] = "mysqli";
+$db['blogdb']['dbprefix'] = "";
+$db['blogdb']['pconnect'] = TRUE;
+$db['blogdb']['db_debug'] = FALSE;
+$db['blogdb']['cache_on'] = FALSE;
+$db['blogdb']['cachedir'] = "";
+$db['blogdb']['char_set'] = "utf8";
+$db['blogdb']['dbcollat'] = "utf8_general_ci";
+$db['blogdb']['swap_pre'] = "";
+$db['blogdb']['autoinit'] = TRUE;
+$db['blogdb']['stricton'] = FALSE;
 	/* End of file database.php */
 	/* Location: ./application/config/database.php */
