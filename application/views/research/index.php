@@ -48,8 +48,53 @@ if (isset($_GET['cat'])) {
                         </div>
                     </form>
                 <?php else : ?>
-                    <div class="g-color-black-light-v1">
+                    <div id="mobile-search" class="g-color-black-light-v1" data-toggle="modal" data-target="#modal-mobile-search">
                         <i class="icon-magnifier g-font-size-24 g-mr-10"></i>
+                    </div>
+
+                    <div id="modal-mobile-search" class="modal text-center g-font-asap <?= $this->agent->is_mobile() ? 'g-px-0 g-mx-10' : 'g-px-20' ?>" tabindex="-1" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content g-py-20">
+                                <button type="button" class="close g-pr-10 text-right g-font-size-18 g-mt-minus-10" data-dismiss="modal" aria-label="Close">
+                                    <i class="hs-icon hs-icon-close g-color-black g-font-weight-900"></i>
+                                </button>
+
+                                <div id="modal-box">
+                                    <form id="search-form" class="g-mb-10" action="<?= site_url('research'); ?>" method="get">
+                                        <div class="row g-mt-20 g-px-30">
+                                            <div class="col-12 g-mb-20">
+                                                <select name="cat" class="form-control rounded-0 g-box-shadow-none" style="border:1px solid #bbb; border-radius:0">
+                                                    <option value="all"><?= lang('all-categories') ?></option>
+                                                    <?php for ($i = 0; $i < count($researchs); $i++) : ?>
+                                                        <?php if ($i > 0 && $researchs[$i]['category'][$lang] == $researchs[$i - 1]['category'][$lang]) : ?>
+                                                            <?php continue; ?>
+                                                        <?php endif; ?>
+                                                        <option <?= ($researchs[$i]['category'][$lang] == ($get ? $_GET['cat'] : '')) ? 'selected' : '' ?> value="<?= $researchs[$i]['category'][$lang] ?>">
+                                                            <?= $researchs[$i]['category'][$lang] ?>
+                                                        </option>
+                                                    <?php endfor; ?>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-12 g-mb-20">
+                                                <div class="input-group pull-right">
+                                                    <div class="input-group-prepend" style="z-index: 1; margin-right: -29px;">
+                                                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1 border-right-0" style="border:1px solid #bbb;">
+                                                            <i class="fa fa-search"></i>
+                                                        </span>
+                                                    </div>
+                                                    <input class="form-control rounded-0 g-box-shadow-none g-pl-30" type="text" name="search" value="<?= $get ? $_GET['search'] : '' ?>" style="border:1px solid #bbb; border-radius:0" placeholder="Search.." autocomplete="off">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <button class="btn btn-info btn-block g-color-white g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9">Search</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 <?php endif; ?>
             </div>
@@ -57,17 +102,19 @@ if (isset($_GET['cat'])) {
         <!-- End Heading -->
     </section>
 
-    <section class="<?= $this->agent->is_mobile() ? 'fluid-container' : 'container'; ?>">
-        <?php if (!$get) : ?>
+    <?php if (!$get) : ?>
+        <section class="<?= $this->agent->is_mobile() ? 'fluid-container' : 'container'; ?>">
             <?php
             $this->load->view('research/sections/carousel');
             ?>
-        <?php else : ?>
-            <div class="alert alert-info g-mt-30" role="alert" style="background-color: rgba(42, 199, 105, 0.15);">
+        </section>
+    <?php else : ?>
+        <section class="container<?= $this->agent->is_mobile() ? ' g-mt-minus-20 g-mb-minus-20 ' : ' '; ?>">
+            <div class="<?= $this->agent->is_mobile() ? 'g-py-20 ' : ' '; ?>alert alert-info g-mt-30 g-font-weight-500" role="alert" style="background-color: rgba(42, 199, 105, 0.15); color: rgba(42, 199, 105);">
                 <span id="search-total">0</span> Search result found
             </div>
-        <?php endif ?>
-    </section>
+        </section>
+    <?php endif ?>
 
     <section class="container g-mb-30 g-mt-45">
         <!-- Heading -->
