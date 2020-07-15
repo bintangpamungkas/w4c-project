@@ -21,9 +21,9 @@
             }
         },
         "banner": {
-            "thumb_image": "http://localhost/w4c/official/assets/img/banner/research-banner-thumb-1.svg",
-            "thumb_detail_image": "http://localhost/w4c/official/assets/img/banner/banner-detail-overview.svg",
-            "large_image": "http://localhost/w4c/official/assets/img/banner/research-banner-large.svg",
+            "thumb_image": "http://demo.waste4change.com/official/assets/img/banner/research-banner-thumb-1.svg",
+            "thumb_detail_image": "http://demo.waste4change.com/official/assets/img/banner/banner-detail-overview.svg",
+            "large_image": "http://demo.waste4change.com/official/assets/img/banner/research-banner-large.svg",
             "title": {
                 "id": {
                     "desktop": "Banner Title 1 Indonesia",
@@ -95,9 +95,9 @@
             }
         },
         "banner": {
-            "thumb_image": "http://localhost/w4c/official/assets/img/banner/research-banner-thumb-2.svg",
-            "thumb_detail_image": "http://localhost/w4c/official/assets/img/banner/banner-detail-overview.svg",
-            "large_image": "http://localhost/w4c/official/assets/img/banner/research-banner-large.svg",
+            "thumb_image": "http://demo.waste4change.com/official/assets/img/banner/research-banner-thumb-2.svg",
+            "thumb_detail_image": "http://demo.waste4change.com/official/assets/img/banner/banner-detail-overview.svg",
+            "large_image": "http://demo.waste4change.com/official/assets/img/banner/research-banner-large.svg",
             "title": {
                 "id": {
                     "desktop": "Banner Title 2 Indonesia",
@@ -119,7 +119,7 @@
                 }
             }
         },
-        "prefilled_form": "The+Governance+of+Solid+Waste+Institutions+Indonesia+Part+I+-+Central+Government",
+        "prefilled_form": "The+Governance+of+Solid+Waste+Institutions+in+Indonesia+Part+II+-+Regional+Government",
         "file": {
             "type": "PDF",
             "release": {
