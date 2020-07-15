@@ -92,10 +92,10 @@
                                 </div>
                             </div>
                         <?php else : ?>
-                            <div id="side-box" class="u-shadow-v1-3 g-px-10 g-bg-info g-bg-white" style="display: block; position: fixed; top: 190px; right: 0; z-index: 999;">
-                                <div class="g-px-10 g-pb-10 g-pt-5">
-                                    <a class="g-font-size-23">
-                                        <img id="arrow-btn" src="<?= site_url(DIR_IMG . 'icons/arrow-right.svg') ?>" width="24">
+                            <div id="side-box" class="g-px-10 g-bg-info g-bg-white" style="display: block; position: fixed; top: 190px; right: 0; z-index: 999;">
+                                <div class="g-px-10 g-pb-5 g-pt-5">
+                                    <a id="arrow-btn" class="g-font-size-23">
+                                        <img src="<?= site_url(DIR_IMG . 'icons/arrow-right.svg') ?>" width="24">
                                     </a>
                                 </div>
 
@@ -222,11 +222,9 @@
                 });
 
                 $('#arrow-btn').on('click', function() {
-                    $(this).attr('src', function(index, attr) {
-                        return attr == '<?= site_url(DIR_IMG . 'icons/arrow-right.svg') ?>' ? '<?= site_url(DIR_IMG . 'icons/share.svg') ?>' : '<?= site_url(DIR_IMG . 'icons/arrow-right.svg') ?>';
-                    }).attr('width', function(index, attr) {
-                        return attr == '24' ? '26' : '24';
-                    });
+                    $(this).html(function(index, value) {
+                        return value !== '<i class="fa fa-share-alt"></i>' ? '<i class="fa fa-share-alt"></i>' : '<img src="<?= site_url(DIR_IMG . 'icons/arrow-right.svg') ?>" width="24">';
+                    }).toggleClass('g-font-size-26');
                     $('#side-box').toggleClass('g-bg-white');
                     $('#sidebar-share').slideToggle();
                 });
