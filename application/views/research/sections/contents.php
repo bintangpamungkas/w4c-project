@@ -26,8 +26,10 @@
     <!-- End Content -->
 <?php endforeach; ?>
 
-<div class=" <?= $this->agent->is_mobile() ? 'g-mt-50 ' : 'g-mt-80 g-mb-50 ' ?>text-center">
-    <a class="u-link-v5 g-color-blue g-color-main--hover" href="#">
-        Load More Contents
-    </a>
-</div>
+<?php if (count($researchs) > 5) : ?>
+    <div class=" <?= $this->agent->is_mobile() ? 'g-mt-50 ' : 'g-mt-80 g-mb-50 ' ?>text-center">
+        <a class="u-link-v5 g-color-blue g-color-main--hover" href="#">
+            Load More Contents
+        </a>
+    </div>
+<?php endif ?>
