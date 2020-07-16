@@ -21,7 +21,7 @@ if (isset($_GET['cat'])) {
                 <?php if (!$this->agent->is_mobile()) : ?>
                     <form id="search-form" class="g-mb-10" action="<?= site_url('research'); ?>" method="get">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-5">
                                 <select name="cat" class="form-control rounded-0 g-box-shadow-none" style="border:1px solid #bbb; border-radius:0">
                                     <option value="all"><?= lang('all-categories') ?></option>
                                     <?php for ($i = 0; $i < count($researchs); $i++) : ?>
@@ -35,14 +35,14 @@ if (isset($_GET['cat'])) {
                                 </select>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-7">
                                 <div class="input-group pull-right">
-                                    <div class="input-group-prepend" style="z-index: 1; margin-right: -29px;">
-                                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1 border-right-0" style="border:1px solid #bbb;">
+                                    <input class="form-control rounded-0 g-box-shadow-none" type="text" name="search" value="<?= $get ? $_GET['search'] : '' ?>" style="border:1px solid #bbb; border-radius:0;" placeholder="Search.." autocomplete="off">
+                                    <div class="input-group-prepend" style="z-index: 1;">
+                                        <button type="submit" class="btn btn-info rounded-0 g-color-white" style="border:1px solid #bbb; margin-left: 10px; cursor: pointer;">
                                             <i class="fa fa-search"></i>
-                                        </span>
+                                        </button>
                                     </div>
-                                    <input class="form-control rounded-0 g-box-shadow-none g-pl-30" type="text" name="search" value="<?= $get ? $_GET['search'] : '' ?>" style="border:1px solid #bbb; border-radius:0" placeholder="Search.." autocomplete="off">
                                 </div>
                             </div>
                         </div>
@@ -187,7 +187,7 @@ if (isset($_GET['cat'])) {
             $.getJSON('<?= site_url(DIR_STATIC_DB . 'research.json') ?>', function(data) {
                 <?php if ($get) : ?>
                     $.each(data, function(key, value) {
-                        if (value.title.<?= $lang ?>.search(expression) != -1 || value.keyword.<?= $lang ?>.search(expression) != -1) {
+                        if (value.title.<?= $lang ?>.toLowerCase().search(expression.toLowerCase().trim()) != -1 || value.keyword.<?= $lang ?>.toLowerCase().search(expression.toLowerCase().trim()) != -1) {
                             searchTotal += 1;
                             $("#search-total").text(searchTotal).parent().css({
                                 "background-color": "rgba(42, 199, 105, 0.15)",
