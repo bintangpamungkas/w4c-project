@@ -21,7 +21,7 @@ if (isset($_GET['cat'])) {
                 <?php if (!$this->agent->is_mobile()) : ?>
                     <form id="search-form" class="g-mb-10" action="<?= site_url('research'); ?>" method="get">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-5">
                                 <select name="cat" class="form-control rounded-0 g-box-shadow-none" style="border:1px solid #bbb; border-radius:0">
                                     <option value="all"><?= lang('all-categories') ?></option>
                                     <?php for ($i = 0; $i < count($researchs); $i++) : ?>
@@ -35,14 +35,21 @@ if (isset($_GET['cat'])) {
                                 </select>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-7">
                                 <div class="input-group pull-right">
-                                    <div class="input-group-prepend" style="z-index: 1; margin-right: -29px;">
-                                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1 border-right-0" style="border:1px solid #bbb;">
-                                            <i class="fa fa-search"></i>
-                                        </span>
+                                    <input id="input-search" class="form-control rounded-0 g-box-shadow-none<?= $get ? ' border-right-0' : '' ?>" type="text" name="search" value="<?= $get ? $_GET['search'] : '' ?>" style="border:1px solid #bbb; border-radius:0;" placeholder="Search.." autocomplete="off">
+                                    <div class="input-group-prepend">
+                                        <?php if ($get) : ?>
+                                            <span class="input-reset input-group-text rounded-0 g-bg-white g-color-gray-light-v1 border-left-0" style="cursor: pointer;">
+                                                <i class="fa fa-times"></i>
+                                            </span>
+                                        <?php endif; ?>
                                     </div>
-                                    <input class="form-control rounded-0 g-box-shadow-none g-pl-30" type="text" name="search" value="<?= $get ? $_GET['search'] : '' ?>" style="border:1px solid #bbb; border-radius:0" placeholder="Search.." autocomplete="off">
+                                    <div class="input-group-prepend" style="z-index: 1;">
+                                        <button type="submit" class="btn btn-info rounded-0 g-color-white" style="border:1px solid #bbb; margin-left: 10px; cursor: pointer;">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +117,12 @@ if (isset($_GET['cat'])) {
         <!-- </section> -->
     <?php else : ?>
         <section class="container<?= $this->agent->is_mobile() ? ' g-mt-minus-20 g-mb-minus-20 ' : ' '; ?>">
-            <div class="<?= $this->agent->is_mobile() ? 'g-py-20 ' : ' '; ?>alert alert-info g-mt-30 g-font-weight-500" role="alert" style="background-color: rgba(42, 199, 105, 0.15); color: rgba(42, 199, 105);">
+            <div class="<?= $this->agent->is_mobile() ? 'g-py-20 ' : ' '; ?>alert alert-error alert-dismissible fade show g-mt-30 g-font-weight-500" role="alert" style="background-color: rgba(230, 75, 59, 0.15); color: rgba(230, 75, 59);">
+                <button type="button" class="input-reset close g-font-size-16 g-mt-5 g-pt-10 g-font-weight-400" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">
+                        Reset
+                    </span>
+                </button>
                 <span id="search-total">0</span> Search result found
             </div>
         </section>
@@ -168,6 +180,10 @@ if (isset($_GET['cat'])) {
             cache: false
         });
 
+        $('.input-reset').on('click', function() {
+            $('#input-search').val('').focus();
+        });
+
         $('#search').keyup(function() {
             $('#result').html('');
             $('#state').val('');
@@ -187,9 +203,12 @@ if (isset($_GET['cat'])) {
             $.getJSON('<?= site_url(DIR_STATIC_DB . 'research.json') ?>', function(data) {
                 <?php if ($get) : ?>
                     $.each(data, function(key, value) {
-                        if (value.title.<?= $lang ?>.search(expression) != -1 || value.keyword.<?= $lang ?>.search(expression) != -1) {
+                        if (value.hidden_title.<?= $lang ?>.toLowerCase().search(expression.toLowerCase().trim()) != -1 || value.keyword.<?= $lang ?>.toLowerCase().search(expression.toLowerCase().trim()) != -1) {
                             searchTotal += 1;
-                            $("#search-total").text(searchTotal);
+                            $("#search-total").text(searchTotal).parent().css({
+                                "background-color": "rgba(42, 199, 105, 0.15)",
+                                "color": "rgba(42, 199, 105)"
+                            });
                             loadContent(value);
                         }
                     });
@@ -200,7 +219,7 @@ if (isset($_GET['cat'])) {
         function loadContent(value) {
             $('#content').append(`<div class="row g-mb-50">
         <div class="col-md-4">
-            <img class="w-100" src="` + value.banner.thumb_image + `" alt="Image Description">
+            <img class="w-100" src="` + value.banner.thumb_image.<?= $lang ?> + `" alt="Image Description">
         </div>
 
         <div class="col-md-8">
