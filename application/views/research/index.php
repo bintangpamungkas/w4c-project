@@ -203,7 +203,7 @@ if (isset($_GET['cat'])) {
             $.getJSON('<?= site_url(DIR_STATIC_DB . 'research.json') ?>', function(data) {
                 <?php if ($get) : ?>
                     $.each(data, function(key, value) {
-                        if (value.title.<?= $lang ?>.toLowerCase().search(expression.toLowerCase().trim()) != -1 || value.keyword.<?= $lang ?>.toLowerCase().search(expression.toLowerCase().trim()) != -1) {
+                        if (value.hidden_title.<?= $lang ?>.toLowerCase().search(expression.toLowerCase().trim()) != -1 || value.keyword.<?= $lang ?>.toLowerCase().search(expression.toLowerCase().trim()) != -1) {
                             searchTotal += 1;
                             $("#search-total").text(searchTotal).parent().css({
                                 "background-color": "rgba(42, 199, 105, 0.15)",
