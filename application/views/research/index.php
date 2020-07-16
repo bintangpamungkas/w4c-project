@@ -37,7 +37,14 @@ if (isset($_GET['cat'])) {
 
                             <div class="col-md-7">
                                 <div class="input-group pull-right">
-                                    <input class="form-control rounded-0 g-box-shadow-none" type="text" name="search" value="<?= $get ? $_GET['search'] : '' ?>" style="border:1px solid #bbb; border-radius:0;" placeholder="Search.." autocomplete="off">
+                                    <input id="input-search" class="form-control rounded-0 g-box-shadow-none<?= $get ? ' border-right-0' : '' ?>" type="text" name="search" value="<?= $get ? $_GET['search'] : '' ?>" style="border:1px solid #bbb; border-radius:0;" placeholder="Search.." autocomplete="off">
+                                    <div class="input-group-prepend">
+                                        <?php if ($get) : ?>
+                                            <span class="input-reset input-group-text rounded-0 g-bg-white g-color-gray-light-v1 border-left-0" style="cursor: pointer;">
+                                                <i class="fa fa-times"></i>
+                                            </span>
+                                        <?php endif; ?>
+                                    </div>
                                     <div class="input-group-prepend" style="z-index: 1;">
                                         <button type="submit" class="btn btn-info rounded-0 g-color-white" style="border:1px solid #bbb; margin-left: 10px; cursor: pointer;">
                                             <i class="fa fa-search"></i>
@@ -110,7 +117,12 @@ if (isset($_GET['cat'])) {
         <!-- </section> -->
     <?php else : ?>
         <section class="container<?= $this->agent->is_mobile() ? ' g-mt-minus-20 g-mb-minus-20 ' : ' '; ?>">
-            <div class="<?= $this->agent->is_mobile() ? 'g-py-20 ' : ' '; ?>alert alert-error g-mt-30 g-font-weight-500" role="alert" style="background-color: rgba(230, 75, 59, 0.15); color: rgba(230, 75, 59);">
+            <div class="<?= $this->agent->is_mobile() ? 'g-py-20 ' : ' '; ?>alert alert-error alert-dismissible fade show g-mt-30 g-font-weight-500" role="alert" style="background-color: rgba(230, 75, 59, 0.15); color: rgba(230, 75, 59);">
+                <button type="button" class="input-reset close g-font-size-16 g-mt-5 g-pt-10 g-font-weight-400" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">
+                        Reset
+                    </span>
+                </button>
                 <span id="search-total">0</span> Search result found
             </div>
         </section>
@@ -166,6 +178,10 @@ if (isset($_GET['cat'])) {
 
         $.ajaxSetup({
             cache: false
+        });
+
+        $('.input-reset').on('click', function() {
+            $('#input-search').val('').focus();
         });
 
         $('#search').keyup(function() {
