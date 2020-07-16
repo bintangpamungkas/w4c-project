@@ -34,9 +34,9 @@
 
       //language, section, general info (title, subtitle, order), item (specific content)
 
-      $data['copy'] = json_decode(file_get_contents(base_url('assets/copywriting/career_page_'.$lang.'.txt')));
+      $data['copy'] = json_decode(file_get_contents(base_url('database/json/career_page_'.$lang.'.json')));
 
-      $this->render_page('sites/career', $data, 'services');
+      $this->render_page('careers/index', $data, 'services');
 		}
 	}
 ?>

@@ -4,7 +4,7 @@
     "title": "Menjadi Bagian dari Waste4Change Berarti Menjadi Bagian dari Perubahan"
   },
   "search_bar": {
-    "position": "Posisi",
+    "Position": "Posisi",
     "Location": "Lokasi",
     "Type": "Tipe",
     "Search": "Cari",
@@ -15,23 +15,23 @@
     "items": [
       {
         "title": "Integritas",
-        "image": "Integrity.png"
+        "image": "integrity.png"
       },
       {
         "title": "Solutif",
-        "image": "Solution.png"
+        "image": "solution.png"
       },
       {
         "title": "Bertanggung Jawab",
-        "image": "Responsible.png"
+        "image": "responsible.png"
       },
       {
         "title": "Kolaboratif",
-        "image": "Collaborative.png"
+        "image": "collaborative.png"
       },
       {
         "title": "Peduli",
-        "image": "Caring.png"
+        "image": "caring.png"
       }
     ]
   },
@@ -41,11 +41,11 @@
     "items": [
       {
         "title": "img1",
-        "image": "img1.png"
+        "image": "culture1.png"
       },
       {
         "title": "img2",
-        "image": "img2.png"
+        "image": "culture2.png"
       },
       {
         "title": "img3",
@@ -60,7 +60,7 @@
   "job_category": {
     "title": "Kategori Pekerjaan",
     "subtitle": "Bidang Apa yang Paling Menarik Minat dan Perhatianmu?",
-    "items": [
+    "items":  [
       {
         "title": "Coorporate Function",
         "job": [
@@ -69,7 +69,7 @@
           "sir",
           "dor amet"
         ],
-        "image": "img1.png",
+        "image": "cf.png",
         "icon": "icon-bag"
       },
       {
@@ -80,7 +80,7 @@
           "sir",
           "dor amet"
         ],
-        "image": "img1.png",
+        "image": "tech.png",
         "icon": "icon-screen-desktop"
       },
       {
@@ -91,7 +91,7 @@
           "sir",
           "dor amet"
         ],
-        "image": "img1.png",
+        "image": "wm.png",
         "icon": "icon-trash"
       },
       {
@@ -102,7 +102,7 @@
           "sir",
           "dor amet"
         ],
-        "image": "img1.png",
+        "image": "wmce.png",
         "icon": "icon-notebook"
       }
     ]
@@ -110,7 +110,7 @@
   "testimony": {
     "title": "Testimonial",
     "subtitle": "Cari Tahu Kata Pegawai Kami Tentang Menjalani Karir di Waste4Change",
-    "item": [
+    "items": [
       {
         "name": "Adhitya Prayoga",
         "position": "Circular Economy Strategist",
@@ -144,35 +144,93 @@
     ]
   },
   "internship_program": {
-    "title": "Program Magang 3 Bulan yang Membantu Anda untuk Mengeksplor dan Mendalami Minat Anda terhadap Isu Pengelolaan Sampah",
-    "subtitle": "Deskripsi: Menjadi tenaga magang di Waste4Change akan mengekspos Anda terhadap dunia kerja yang senantiasa dinamis di Waste4Change selama kurang lebih 3 bulan lamanya. Nantinya para tenaga magang akan bisa memilih di divisi mana mereka ingin berkontribusi dan terlibat. ",
-    "image": ""
+    "title": "W4C INTERNSHIP PROGRAM",
+    "subtitle":"Program Magang 3 Bulan yang Membantu Anda untuk Mengeksplor dan Mendalami Minat Anda terhadap Isu Pengelolaan Sampah",
+    "message": "Deskripsi: Menjadi tenaga magang di Waste4Change akan mengekspos Anda terhadap dunia kerja yang senantiasa dinamis di Waste4Change selama kurang lebih 3 bulan lamanya. Nantinya para tenaga magang akan bisa memilih di divisi mana mereka ingin berkontribusi dan terlibat. ",
+    "image": "internship.png"
   },
   "internship_testimony": {
     "title": "Past Intern Testimoniis",
-    "subtitle": "See What Our Past Interns Have to Say About Waste4Change’s Internship Program",
+    "subtitle": "Cari Tahu tentang Kesan dan Pesan Tenaga Magang Waste4Change yang Terdahulu",
     "items": [
       {
         "name": "Amira R. Nadhifa",
         "message": "Pengalaman magang ini mengajari saya banyak hal, mulai dari komunikasi interpersonal, kerjasama tim, serta pemecahan masalah. Kultur kerja perusahaannya sangat apresiatif dan saya bisa melihat bagaimana mereka selalu mendukung satu sama lain. Saya paling banyak membantu di proyek optimalisasi TPS 3R, yang notabene cukup menantang, tapi saya telah dan masih belajar banyak dari situ."
       },
       {
-        "name": "Bekerja di perusahaan sosial yang berfokus pada pengelolaan sampah yang bertanggung jawab mengajari saya hal-hal yang benar-benar baru. Saya belajar banyak keahlian, terutama yang terkait dengan bisnis dan pengelolaan sampah, yang juga sangat mengasyikkan karena saya belum pernah belajar tentang hal ini sebelumnya. Saya bisa menyalurkan dan mengasah kemampuan saya dalam hal manajemen proyek dan acara, bekerja dalam tim, serta kemampuan berbicara di depan umum.",
-        "message": "Fanny Ramadhanti"
+        "message": "Bekerja di perusahaan sosial yang berfokus pada pengelolaan sampah yang bertanggung jawab mengajari saya hal-hal yang benar-benar baru. Saya belajar banyak keahlian, terutama yang terkait dengan bisnis dan pengelolaan sampah, yang juga sangat mengasyikkan karena saya belum pernah belajar tentang hal ini sebelumnya. Saya bisa menyalurkan dan mengasah kemampuan saya dalam hal manajemen proyek dan acara, bekerja dalam tim, serta kemampuan berbicara di depan umum.",
+        "name": "Fanny Ramadhanti"
       },
       {
-        "name": "Program magang ini memberikan saya pelajaran berharga dimana saya bisa mendapatkan pengalaman dan masukkan terkait kemampuan apa saja yang harus saya kembangkan di kemudian hari. Saya belajar tentang beragam fungsi dan tanggung jawab dari Human Resources mulai dari proses rekrutmen pegawai, pengembangan SDM, serta merumuskan mekanisme penilaian performa. Ini juga pertama kalinya bagi saya untuk bekerja dengan berorientasi pada hasil, dengan kata lain saya tidak terikat jam kerja pada umumnya, melainkan berfokus pada timeline serta tujuan dari proyek yang sedang dikerjakan. Untuk bisa beradaptasi, saya kemudian belajar untuk bekerja secara lebih efektif, produktif, dan juga mengatur prioritas.",
-        "message": "Ivanna Zahra"
+        "message": "Program magang ini memberikan saya pelajaran berharga dimana saya bisa mendapatkan pengalaman dan masukkan terkait kemampuan apa saja yang harus saya kembangkan di kemudian hari. Saya belajar tentang beragam fungsi dan tanggung jawab dari Human Resources mulai dari proses rekrutmen pegawai, pengembangan SDM, serta merumuskan mekanisme penilaian performa. Ini juga pertama kalinya bagi saya untuk bekerja dengan berorientasi pada hasil, dengan kata lain saya tidak terikat jam kerja pada umumnya, melainkan berfokus pada timeline serta tujuan dari proyek yang sedang dikerjakan. Untuk bisa beradaptasi, saya kemudian belajar untuk bekerja secara lebih efektif, produktif, dan juga mengatur prioritas.",
+        "name": "Ivanna Zahra"
       },
       {
-        "name": "Setelah 3 bulan menjalani program magang, saya mendapatkan pemahaman yang lebih mendalam mengenai bagaimana kita bisa hidup berdampingan dengan sampah Kita tidak perlu kembali ke masa lampau dimana kita tidak bisa menikmati produk-produk yang membuat hidup menjadi lebih mudah. Yang kita butuhkan hanyalah untuk bisa hidup secara harmonis dan berkelanjutan dengan alam, layaknya sebuah ekosistem hutan. Itulah hal yang Waste4Change tengah perjuangkan: sebuah ekosistem dimana pengelolaan sampah dapat dilakukan secara bertanggung jawab menggunakan pendekatan holistik yang disingkat menjadi 4C: Consult, Campaign, Collect and Create.",
-        "message": "Khusnaedi Azhar"
+        "message": "Setelah 3 bulan menjalani program magang, saya mendapatkan pemahaman yang lebih mendalam mengenai bagaimana kita bisa hidup berdampingan dengan sampah Kita tidak perlu kembali ke masa lampau dimana kita tidak bisa menikmati produk-produk yang membuat hidup menjadi lebih mudah. Yang kita butuhkan hanyalah untuk bisa hidup secara harmonis dan berkelanjutan dengan alam, layaknya sebuah ekosistem hutan. Itulah hal yang Waste4Change tengah perjuangkan: sebuah ekosistem dimana pengelolaan sampah dapat dilakukan secara bertanggung jawab menggunakan pendekatan holistik yang disingkat menjadi 4C: Consult, Campaign, Collect and Create.",
+        "name": "Khusnaedi Azhar"
       }
     ]
   },
   "latest_job": {
-    "title": "Job Categories",
-    "subtitle": "What Are You Most Passionate About?"
+    "title": "Latest Job",
+    "items": [
+      {
+        "title": "Product Designer",
+        "category": "Tech",
+        "location": "Semarang",
+        "type": {
+          "title": "Full Time",
+          "color": "#17A2B8"
+        }
+      },
+      {
+        "title": "Product Designer",
+        "category": "Tech",
+        "location": "Semarang",
+        "type": {
+          "title": "Part Time",
+          "color": "#2AC769"
+        }
+      },
+      {
+        "title": "Product Designer",
+        "category": "Tech",
+        "location": "Semarang",
+        "type": {
+          "title": "Intern",
+          "color": "#F6A609"
+        }
+      },
+      {
+        "title": "Product Designer",
+        "category": "Tech",
+        "location": "Semarang",
+        "type": {
+          "title": "Full Time",
+          "color": "#17A2B8"
+        }
+      },
+      {
+        "title": "Product Designer",
+        "category": "Tech",
+        "location": "Semarang",
+        "type": {
+          "title": "Part Time",
+          "color": "#2AC769"
+        }
+      },
+      {
+        "title": "Product Designer",
+        "category": "Tech",
+        "location": "Semarang",
+        "type": {
+          "title": "Intern",
+          "color": "#F6A609"
+        }
+      }
+    ],
+    "SeeDetail": "Selengkapnya",
+    "CTA":"Lihat Lainnya"
   },
   "faq": {
     "title": "Frequently-Asked Questions (FAQ)",

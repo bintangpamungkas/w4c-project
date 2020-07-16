@@ -682,6 +682,10 @@
 
 .g-bg-blue--hover:hover {
   background-color: #3398dc !important; }
+  /* .g-bg-purple-opacity-0_9--after::after */
+
+*:hover > .g-bg-blue--hover-parent--after::after {
+    border-color: #3398dc !important; }
 
 /* Color Light Blue */
 .g-bg-lightblue {
