@@ -71,11 +71,11 @@ $lang["register_description"] = "Isi form berikut untuk mendaftarkan diri Anda";
 //About W4C
 $lang["about"] = "Solusi <strong>Waste4Change</strong>";
 $lang["about_title"] = "Pengelolaan Sampah yang Bertanggung Jawab";
-$lang["about_description"] = "Waste4Change adalah perusahaan sosial yang menyediakan layanan pengelolaan sampah dari hulu ke hilir dengan visi untuk mengurangi timbunan sampah di tempat pembuangan akhir sampah. Bersama-sama kami ingin mengubah perilaku penduduk Indonesia terhadap pengelolaan sampah dengan teknologi dan kolaborasi dengan sektor formal & informal yang ada";
+$lang["about_description"] = "Waste4Change adalah perusahaan menyediakan layanan pengelolaan sampah dari hulu ke hilir dengan visi untuk mengurangi timbunan sampah di tempat pembuangan akhir sampah. Bersama-sama kami ingin mengubah perilaku penduduk Indonesia terhadap pengelolaan sampah dengan teknologi dan kolaborasi dengan sektor formal & informal yang ada";
 $lang["about_description_footer"] = "Waste4Change adalah perusahaan sosial yang menyediakan layanan pengelolaan sampah dari hulu ke hilir dengan visi untuk mengurangi tumpukan sampah di tempat pembuangan akhir sampah";
 $lang["about_quote"] = "Membangun Ekosistem Pengelolaan Sampah yang Bertanggung Jawab";
 $lang["learn_more"] = "Pelajari Lebih Lanjut";
-$lang["about_description_small"] = "Waste4Change adalah  perusahaan sosial yang didirikan pada tahun 2014 dengan misi memberikan layanan pengelolaan sampah yang ramah lingkungan dan bertanggung jawab untuk Indonesia bebas sampah";
+$lang["about_description_small"] = "Waste4Change adalah perusahaan yang didirikan pada tahun 2014 dengan misi memberikan layanan pengelolaan sampah yang ramah lingkungan dan bertanggung jawab untuk Indonesia bebas sampah";
 $lang["about_we_create_responsible_1"] = "Terdepan dalam memberi layanan";
 $lang["about_we_create_responsible_2"] = "Pengelolaan Sampah yang Bertanggung Jawab";
 $lang["about_we_create_responsible_3"] = "pertama di Indonesia";
