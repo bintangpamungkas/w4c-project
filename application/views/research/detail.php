@@ -59,9 +59,9 @@
                             <?= lang('research-overview') ?>
                         </h3>
 
-                        <p class="g-font-size-14 g-mb-20"><?= lang('category') ?> : <i class="g-color-blue"><?= $research['category'][$lang] ?></i></p>
+                        <p class="g-font-size-14 g-mb-20"><?= lang('category') ?> : <i class="g-color-black"><?= $research['category'][$lang] ?></i></p>
 
-                        <p class="g-font-size-16 g-mb-30 text-justify">
+                        <p class="g-font-size-16 g-mb-30 text-left">
                             <?= $research['content'][$lang]['detail'] ?>
                         </p>
 
@@ -74,16 +74,16 @@
                                 </div>
 
                                 <div class="col-sm-8 text-right">
-                                    <a class="u-icon-v3 g-social-icon g-rounded-50x g-color-white--hover g-mr-10" href="https://api.whatsapp.com/send?text=<?= site_url('research/' . $research['slug']) ?>" target="_blank">
+                                    <a class="u-icon-v3 g-social-icon g-rounded-50x g-color-white--hover g-mr-10" href="https://api.whatsapp.com/send?text=<?= $research['hidden_title'][$lang] ?> - <?= site_url('research/' . $research['slug']) ?>" target="_blank">
                                         <i class="fa fa-whatsapp"></i>
                                     </a>
                                     <a class="u-icon-v3 popup g-social-icon g-rounded-50x g-color-white--hover g-mr-10" href="https://www.facebook.com/sharer/sharer.php?u=<?= site_url('research/' . $research['slug']) ?>&display=popup&ref=plugin">
                                         <i class="fa fa-facebook"></i>
                                     </a>
-                                    <a class="u-icon-v3 popup g-social-icon g-rounded-50x g-color-white--hover g-mr-10" href="http://twitter.com/share?text=<?= $research['title'][$lang] ?>&url=<?= site_url('research/' . $research['slug']) ?>&via=<?= APP_NAME ?>">
+                                    <a class="u-icon-v3 popup g-social-icon g-rounded-50x g-color-white--hover g-mr-10" href="http://twitter.com/share?text=<?= $research['hidden_title'][$lang] ?>&url=<?= site_url('research/' . $research['slug']) ?>&via=<?= APP_NAME ?>">
                                         <i class="fa fa-twitter"></i>
                                     </a>
-                                    <a class="u-icon-v3 popup g-social-icon g-rounded-50x g-color-white--hover g-mr-10" href="https://www.linkedin.com/shareArticle?mini=true&url=<?= site_url('research/' . $research['slug']) ?>&source=<?= APP_NAME ?>">
+                                    <a class="u-icon-v3 popup g-social-icon g-rounded-50x g-color-white--hover g-mr-10" href="https://www.linkedin.com/shareArticle?mini=true&url=<?= site_url('research/' . $research['slug']) ?>&title=<?= $research['hidden_title'][$lang] ?>&source=<?= APP_NAME ?>">
                                         <i class="fa fa-linkedin"></i>
                                     </a>
                                     <a id="copyLink" class="u-icon-v3 g-social-icon g-rounded-50x g-color-white--hover g-mr-10 g-text-rotate" href="<?= site_url('research/' . $research['slug']) ?>" data-toggle="tooltip" data-placement="top" title="Copy Link">
@@ -101,7 +101,7 @@
 
                                 <div id="sidebar-share">
                                     <div class="g-mt-10 g-mb-10">
-                                        <a class="u-icon-v3 g-social-icon g-rounded-50x g-color-white--hover" href="https://api.whatsapp.com/send?text=<?= site_url('research/' . $research['slug']) ?>" target="_blank">
+                                        <a class="u-icon-v3 g-social-icon g-rounded-50x g-color-white--hover g-mr-10" href="https://api.whatsapp.com/send?text=<?= $research['hidden_title'][$lang] ?> - <?= site_url('research/' . $research['slug']) ?>" target="_blank">
                                             <i class="fa fa-whatsapp"></i>
                                         </a>
                                     </div>
@@ -111,12 +111,12 @@
                                         </a>
                                     </div>
                                     <div class="g-mb-10">
-                                        <a class="u-icon-v3 popup g-social-icon g-rounded-50x g-color-white--hover" href="http://twitter.com/share?text=<?= $research['title'][$lang] ?>&url=<?= site_url('research/' . $research['slug']) ?>&via=<?= APP_NAME ?>">
+                                        <a class="u-icon-v3 popup g-social-icon g-rounded-50x g-color-white--hover" href="http://twitter.com/share?text=<?= $research['hidden_title'][$lang] ?>&url=<?= site_url('research/' . $research['slug']) ?>&via=<?= APP_NAME ?>">
                                             <i class="fa fa-twitter"></i>
                                         </a>
                                     </div>
                                     <div class="g-mb-10">
-                                        <a class="u-icon-v3 popup g-social-icon g-rounded-50x g-color-white--hover" href="https://www.linkedin.com/shareArticle?mini=true&url=<?= site_url('research/' . $research['slug']) ?>&source=<?= APP_NAME ?>">
+                                        <a class="u-icon-v3 popup g-social-icon g-rounded-50x g-color-white--hover g-mr-10" href="https://www.linkedin.com/shareArticle?mini=true&url=<?= site_url('research/' . $research['slug']) ?>&title=<?= $research['hidden_title'][$lang] ?>&source=<?= APP_NAME ?>">
                                             <i class="fa fa-linkedin"></i>
                                         </a>
                                     </div>

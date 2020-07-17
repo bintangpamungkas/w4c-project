@@ -12,12 +12,12 @@
                 </h2>
             </a>
             <p class="g-font-size-14">
-                <span class="g-mr-40"><?= lang('category') ?> : <i class="g-color-blue"><?= $research['category'][$lang] ?></i></span>
+                <span class="g-mr-40"><?= lang('category') ?> : <i class="g-color-black"><?= $research['category'][$lang] ?></i></span>
             </p>
             <p class="g-font-size-14">
-                <span class="g-mr-40"><?= lang('release-date') ?> : <i class="g-color-blue"><?= $research['file']['release'][$lang] ?></i></span>
+                <span class="g-mr-40"><?= lang('release-date') ?> : <i class="g-color-black"><?= $research['file']['release'][$lang] ?></i></span>
             </p>
-            <p class="g-font-size-16 g-mb-20 g-mt-20">
+            <p class="g-font-size-16 g-mb-20 g-mt-20 text-left">
                 <?= $research['content'][$lang]['overview'] ?>
             </p>
             <a href="<?= site_url('research/' . $research['slug']) ?>" class="btn btn-info <?= $this->agent->is_mobile() ? 'btn-block' : '' ?> g-color-white g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-mt-10"><?= lang('learn-more') ?></a>
