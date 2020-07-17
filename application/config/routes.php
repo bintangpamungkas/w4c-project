@@ -53,6 +53,7 @@ $route['service/(:any)'] = "Service/detail/$1";
 $route['service/(:any)/join'] = "Service/join/$1";
 $route['project/(:any)'] = "Service/detail/$1";
 $route['career'] = "Career/index";
+$route['career/joblist'] = "Career/job_list";
 
 $route['trial_form/(:any)'] = "Site/trial_form/$1";
 $route['(:any)'] = "Brand/index/$1";

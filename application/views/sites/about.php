@@ -386,14 +386,14 @@
         'en' => [
             'title' => 'Start your <span class="g-font-weight-600">Impactful Journey and Grow</span> together with Waste4Change',
             'button'=> [
-                'url' => site_url('carrer'),
+                'url' => site_url('career'),
                 'title' => 'Go To Carrer Page'
             ]
         ],
         'id' => [
             'title' => 'Mulai Perjalanan yang <span class="g-font-weight-600">Penuh Dampak dan Berkembanglah</span> bersama Waste4Change',
             'button'=> [
-                'url' => site_url('carrer'),
+                'url' => site_url('career'),
                 'title' => 'Halaman Karir'
             ]
         ]
@@ -410,12 +410,12 @@
   <div style="background:linear-gradient(rgba(248,248,248,0.98), rgba(243,243,243,0.8))">
     <div class="container <?= $this->agent->is_mobile() ? 'text-center g-py-50' : 'g-py-70' ?>">
       <div class="row justify-content-center">
-        <div class="col-md-9 col-10 g-mb-15 pt-5">
+        <div class="col-md-8 col-10 g-mb-15 pt-5 align-self-center">
           <div class="g-color-black <?= $this->agent->is_mobile() ? 'g-font-size-20' : 'h2' ?>">
             <?= $cta_copywriting->$lang->title ?></div>
         </div>
-        <div class="col-md-3 col-10 g-mb-15 pt-5">
-          <a class="btn btn-block btn-info g-color-white g-font-size-13 g-rounded-50 g-py-10 "
+        <div class="col-md-4 col-10 g-mb-15 pt-5 align-self-center">
+          <a class="btn btn-block btn-info g-color-white g-font-size-20 g-font-weight-600 g-rounded-50 g-py-15 g-px-50"
             href="<?= $cta_copywriting->$lang->button->url ?>">
             <?= strtoupper($cta_copywriting->$lang->button->title) ?>
           </a>

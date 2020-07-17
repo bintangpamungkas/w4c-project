@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>404 <?=get_lang('page_not_found')?></title>
+	<title>404 Page Not Found</title>
 	<link rel="stylesheet" href="<?= SITE_URL . DIR_VENDOR.'/bootstrap/bootstrap.min.css' ?>">
 	<link rel="stylesheet" href="<?= SITE_URL . DIR_CSS.'/custom.css' ?>">
 	<link rel="stylesheet" href="<?= SITE_URL . DIR_CSS.'/unify-globals.css' ?>">
@@ -61,7 +61,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="g-font-size-15 g-color-black-opacity-0_5 g-mb-50">Halaman yang anda tuju tidak dapat diakses.</div>
 	</div>
 <!--	<a class="btn btn-outline-success g-color-white--parent-hover g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-ma-10" href="--><?//= SITE_URL ?><!--">--><?//= get_lang('back_to_home') ?><!--</a>-->
-	<a class="btn btn-info g-color-white g-brd-30 text-uppercase g-rounded-50 g-px-30 g-py-9 g-ma-10" href="#" onclick="window.history.back()"><?= get_lang('back_to_previous_page') ?></a>
+	<a class="btn btn-info g-color-white g-brd-30 text-uppercase g-rounded-50 g-px-30 g-py-9 g-ma-10" href="#" onclick="window.history.back()">Back to previous page</a>
 	<div class="<?= DEBUG_CLASS ?>">
 		<br>
 		<h1><?php echo $heading; ?></h1>

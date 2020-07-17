@@ -1,0 +1,14 @@
+{
+  "1": {
+    "name": "Full Time",
+    "color": "#17A2B8"
+  },
+  "2": {
+    "name": "Part Time",
+    "color": "#2AC769"
+  },
+  "3": {
+    "name": "Intern",
+    "color": "#F6A609"
+  }
+}

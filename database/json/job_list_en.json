@@ -1,0 +1,15 @@
+{
+  "JobList": "Job List",
+  "Position": "Position",
+  "Location": "Location",
+  "Type": "Type",
+  "Search": "Search",
+  "AllJobs": "AllJobs",
+  "SeeDetail": "See Detail",
+    "CTA": "See More",
+  "ViewJobList": "View Job List",
+  "SortBy": "Sort By",
+  "CantFindWhatYouAreLookingFor": "Can't find what you are looking for?",
+  "DropCV": "Drop CV",
+  "ContactUs": "Contact Us"
+}

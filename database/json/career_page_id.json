@@ -1,4 +1,3 @@
-
 {
   "banner": {
     "title": "Menjadi Bagian dari Waste4Change Berarti Menjadi Bagian dari Perubahan"
@@ -60,7 +59,7 @@
   "job_category": {
     "title": "Kategori Pekerjaan",
     "subtitle": "Bidang Apa yang Paling Menarik Minat dan Perhatianmu?",
-    "items":  [
+    "items": [
       {
         "title": "Coorporate Function",
         "job": [
@@ -145,7 +144,7 @@
   },
   "internship_program": {
     "title": "W4C INTERNSHIP PROGRAM",
-    "subtitle":"Program Magang 3 Bulan yang Membantu Anda untuk Mengeksplor dan Mendalami Minat Anda terhadap Isu Pengelolaan Sampah",
+    "subtitle": "Program Magang 3 Bulan yang Membantu Anda untuk Mengeksplor dan Mendalami Minat Anda terhadap Isu Pengelolaan Sampah",
     "message": "Deskripsi: Menjadi tenaga magang di Waste4Change akan mengekspos Anda terhadap dunia kerja yang senantiasa dinamis di Waste4Change selama kurang lebih 3 bulan lamanya. Nantinya para tenaga magang akan bisa memilih di divisi mana mereka ingin berkontribusi dan terlibat. ",
     "image": "internship.png"
   },
@@ -230,34 +229,35 @@
       }
     ],
     "SeeDetail": "Selengkapnya",
-    "CTA":"Lihat Lainnya"
+    "CTA": "Lihat Lainnya"
   },
   "faq": {
     "title": "Frequently-Asked Questions (FAQ)",
+    "subtitle": "Punya pertanyaan terkait proses rekrutmen di Waste4Change? Silahkan membaca F.A.Q kami terlebih dahulu",
     "items": [
       {
-        "question": "Sunt consequat minim ad aute ipsum?",
-        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+        "question": "Bagaimana cara melamar pekerjaan di Waste4Change?",
+        "answer": "Silahkan langsung menuju halaman karir kami di w4c.id/career dan cari lowongan di divisi atau bahkan posisi tertentu dengan mengisi kolom pencarian. Kamu juga bisa mencari berdasarkan lokasi, jabatan, atau tipe lowongan. Selamat mencari dan menentukan lowongan yang paling sesuai dengan yang kamu inginkan."
       },
       {
-        "question": "Sunt consequat minim ad aute ipsum?",
-        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+        "question": "Bagaimana dengan proses rekrutmennya? ",
+        "answer": "Proses rekrutmen akan dimulai setelah Anda melamar pekerjaan dengan cara mengisi form online yang sudah disediakan. Nantinya, pengalaman dan kemampuan Anda akan dinilai terlebih dahulu oleh tim rekrutmen kami. Apabila persyaratan dan kualifikasi Anda sesuai dengan yang dicari oleh tim rekrutmen dan Users, maka Anda akan menerima surel terkait undangan untuk sesi wawancara. <br>Di sesi wawancara, biasanya Anda akan bertemu dengan tim Human Capital dan juga Users terkait dengan posisi yang Anda lamar. Tim kami akan menggali lebih lanjut terkait soft skills dan hard skills Anda, sekaligus tentang sifat dan kepribadian Anda. Selain itu, Anda juga akan menjadi lebih tahu tentang Waste4Change. <br>Jika semuanya dirasa cocok dan kami menginginkan Anda untuk bergabung ke dalam tim, kami akan mengirimkan surat penawaran (offering letter) ke alamat email Anda. Mohon diingat bahwa proses rekrutmen bisa berbeda dan bergantung pada kondisi serta posisi yang Anda lamar. Selain itu, bisa jadi ada sedikit perbedaan antar departemen dan posisi. "
       },
       {
-        "question": "Sunt consequat minim ad aute ipsum?",
-        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+        "question": "Apakah Waste4Change akan menghubungi perihal hasil dari lamaran pekerjaan saya?",
+        "answer": "Apabila Anda lulus seleksi dokumen dan diundang ke sesi wawancara, maka kami akan menghubungi Anda lewat email terkait keputusan tersebut. Akan tetapi, apabila Anda belum mendengar kabar dari kami selama 2 bulan setelah mengirimkan lamaran pekerjaan, maka kami mohon maaf karena artinya kualifikasi Anda belum sesuai dengan yang kami butuhkan. <br>Meski begitu, izinkan kami untuk mengucapkan terima kasih karena telah tertarik untuk bekerja di Waste4Change. Berkas aplikasi Anda akan kami simpan di dalam database kami untuk dipakai sebagai bahan pertimbangan jika ada lowongan yang serupa di masa depan. "
       },
       {
-        "question": "Sunt consequat minim ad aute ipsum?",
-        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+        "question": "Bolehkah saya mencoba melamar pekerjaan bahkan ketika tidak ada lowongan yang sesuai untuk saya?",
+        "answer": "Tentu saja boleh. Kami menyambut hangat antusiasme orang-orang yang punya semangat dan kemauan kuat untuk menjadi bagian dari Waste4Change. Silahkan kunjungi halaman Job List, kemudian klik “Setor CV” dan unggah berkas lamaran Anda. Nantinya berkas tersebut akan kami proses sesuai dengan kondisi dan kebutuhan perusahaan."
       },
       {
-        "question": "Sunt consequat minim ad aute ipsum?",
-        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+        "question": "Apa yang bisa saya harapkan dari bekerja di Waste4Change?",
+        "answer": "Pertama-tama, kami akan menyambut setiap karyawan yang baru masuk sebagai bagian dari keluarga besar Waste4Change. Kami juga akan berusaha semaksimal mungkin untuk memanfaatkan waktu Anda selama bekerja di Waste4Change dengan sebaik-baiknya untuk memberi dampak dan solusi nyata terhadap permasalahan sampah di Indonesia  <br>Di hari pertama bekerja, Anda akan diajak untuk mengetahui secara lebih mendalam tentang Waste4Change, berkeliling kantor dan fasilitas pengelolaan sampah yang kami miliki, serta bertemu dan berkenalan dengan orang-orang yang juga bekerja di Waste4Change, semua dalam satu hari. Setelah itu, Anda akan diperkenalkan kepada Users/manager terkait yang akan memberikan gambaran tentang pekerjaan Anda. Seiring waktu, Anda akan belajar sedikit demi sedikit mengenai nilai dan kultur Waste4Change, serta kiat-kiat untuk dapat terus memberikan hasil dan keluaran yang signifikan dalam pekerjaan Anda."
       },
       {
-        "question": "Sunt consequat minim ad aute ipsum?",
-        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+        "question": "Selain lowongan pekerjaan, apakah Waste4change memiliki program magang dan kerelawanan yang bisa saya ikuti?",
+        "answer": "Program magang kami bernama \"Waste4Change Internship Program (WIP)\" dan diadakan selama 3 kali dalam setahun. Nantinya, pembukaan lowongan magang juga akan diumumkan di halaman Karir kami. Selain program magang resmi, kami juga menerima murid atau mahasiswa yang membutuhkan magang sebagai program wajib dari sekolah atau universitas mereka. Kami akan berusaha semaksimal mungkin untuk menempatkan Anda di program atau posisi yang paling sesuai dengan keperluan Anda."
       }
     ]
   }

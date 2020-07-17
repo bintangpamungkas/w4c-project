@@ -229,36 +229,36 @@
       }
     ],
     "SeeDetail": "See Detail",
-    "CTA":"See More"
+    "CTA": "See More"
   },
   "faq": {
     "title": "Frequently-Asked Questions (FAQ)",
-    "items": {
-      "1": {
-        "question": "Sunt consequat minim ad aute ipsum?",
-        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+    "subtitle": "Have some questions regarding the recruitment process? Check out our F.A.Q",
+    "items": [
+      {
+        "question": "How do I apply for a job at Waste4Change?",
+        "answer": "Head straight to our career page and search for a certain section or specific position in the search bar. You can search by location, job title or types of position and find the most desirable position for you to apply to. "
       },
-      "2": {
-        "id": 2,
-        "question": "Sunt consequat minim ad aute ipsum?",
-        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+      {
+        "question": "How is the application process? ",
+        "answer": "The process will start after you apply through our online form. Your experience and skills will be assessed by our recruiters. If your qualifications match with what the recruiters and users are looking for, they will email you an invitation for an interview. <br> At the interview session, usually you will meet the Human Capital team and Users for your position. We will learn more about you regarding your soft skills and hard skills, as well as your personality. Also, you will understand more about Waste4Change. <br> If everything is synchronized and we want you in our team, we will send an offering letter straight to your email. Please note that the recruitment process may vary depending on the position and situation you are applying for. There might be a little variation between Departments and positions."
       },
-      "3": {
-        "question": "Sunt consequat minim ad aute ipsum?",
-        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+      {
+        "question": "Would Waste4Change contact me regarding the results of my application?",
+        "answer": "If you are invited to the interview session, we will absolutely email you for any decisions. On the other hand, if you haven’t heard anything from us after 2 months since you submitted your application, we’re very sorry to inform you that our qualification does not yet match with you. <br>Even so, we are very thankful for your application, and we will keep your documents in our database to be checked on for future openings."
       },
-      "4": {
-        "question": "Sunt consequat minim ad aute ipsum?",
-        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+      {
+        "question": "Can I try applying even if there is no available position for me?",
+        "answer": "Of course, passionate people are always welcomed to apply. <br>You can go to our Job List Page, click \"Drop CV\" and submit your documents. Your documents would be processed accordingly. "
       },
-      "5": {
-        "question": "Sunt consequat minim ad aute ipsum?",
-        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+      {
+        "question": "What can I expect from working at Waste4Change?",
+        "answer": "To start with, we welcome and consider every new employee as a part of the Waste4Change family, and we will try our best to make the most of your time working here in order to generate meaningful impacts in addressing the ongoing waste crisis in Indonesia.<br>On your first day, you will get to know Waste4Change a little deeper, take a stroll in our office and facilities, as well as meeting everybody who are working at Waste4Change, all within the same day. After that, you will be assigned to your user/manager for further explanation on your job overview. From that day, you will learn step-by-step about Waste4Change values, culture and how to keep-up in creating meaningful outputs for your work."
       },
-      "6": {
-        "question": "Sunt consequat minim ad aute ipsum?",
-        "answer": "Id cillum consequat consequat tempor. Culpa magna anim culpa cillum. Do fugiat ut eiusmod minim pariatur duis eiusmod reprehenderit id aliquip eu. Ut qui est eu duis. Culpa commodo eiusmod sit nulla occaecat Lorem eiusmod consectetur."
+      {
+        "question": "Does Waste4change offer internships and volunteer programs?",
+        "answer": "We do have a Waste4Change Internship Program (WIP) that is held three times a year. Internship openings will be announced on our Career Page. Outside of our WIP, students can apply for their mandatory internship for school or university credits. We will do our best to search for the right position or projects for you."
       }
-    }
+    ]
   }
 }
