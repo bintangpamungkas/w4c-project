@@ -3,7 +3,7 @@
     "title": "Be A Part of Waste4Change, Be A Part of the Change"
   },
   "search_bar": {
-    "position": "Position",
+    "Position": "Position",
     "Location": "Location",
     "Type": "Type",
     "Search": "Search",
@@ -14,23 +14,23 @@
     "items": [
       {
         "title": "Integrity",
-        "image": "Integrity.png"
+        "image": "integrity.png"
       },
       {
         "title": "Solution",
-        "image": "Solution.png"
+        "image": "solution.png"
       },
       {
         "title": "Responsible",
-        "image": "Responsible.png"
+        "image": "responsible.png"
       },
       {
         "title": "Collaborative",
-        "image": "Collaborative.png"
+        "image": "collaborative.png"
       },
       {
         "title": "Caring",
-        "image": "Caring.png"
+        "image": "caring.png"
       }
     ]
   },
@@ -40,11 +40,11 @@
     "items": [
       {
         "title": "img1",
-        "image": "img1.png"
+        "image": "culture1.png"
       },
       {
         "title": "img2",
-        "image": "img2.png"
+        "image": "culture2.png"
       },
       {
         "title": "img3",
@@ -68,7 +68,7 @@
           "sir",
           "dor amet"
         ],
-        "image": "img1.png",
+        "image": "cf.png",
         "icon": "icon-bag"
       },
       {
@@ -79,7 +79,7 @@
           "sir",
           "dor amet"
         ],
-        "image": "img1.png",
+        "image": "tech.png",
         "icon": "icon-screen-desktop"
       },
       {
@@ -90,7 +90,7 @@
           "sir",
           "dor amet"
         ],
-        "image": "img1.png",
+        "image": "wm.png",
         "icon": "icon-trash"
       },
       {
@@ -101,7 +101,7 @@
           "sir",
           "dor amet"
         ],
-        "image": "img1.png",
+        "image": "wmce.png",
         "icon": "icon-notebook"
       }
     ]
@@ -109,7 +109,7 @@
   "testimony": {
     "title": "Testimonial",
     "subtitle": "Hear What Our Employees Have to Say throughout their Career with Waste4Change",
-    "item": [
+    "items": [
       {
         "name": "Adhitya Prayoga",
         "position": "Circular Economy Strategist",
@@ -143,35 +143,93 @@
     ]
   },
   "internship_program": {
-    "title": "An Exciting 3-month Internship Program for You to Discover and Explore Your Passion in Waste Management Issues",
-    "subtitle": "Description: Becoming an intern at Waste4Change means a full-time experience that simulates the dynamic working conditions here at Waste4Change’s office for a duration of 3 months. Interns can choose which division they want to be a part of, or what kind of cause they want to be involved in.",
-    "image": ""
+    "title": "W4C INTERNSHIP PROGRAM",
+    "subtitle": "An Exciting 3-month Internship Program for You to Discover and Explore Your Passion in Waste Management Issues",
+    "message": "Description: Becoming an intern at Waste4Change means a full-time experience that simulates the dynamic working conditions here at Waste4Change's office for a duration of 3 months. Interns can choose which division they want to be a part of, or what kind of cause they want to be involved in.",
+    "image": "internship.png"
   },
   "internship_testimony": {
     "title": "Past Intern Testimoniis",
-    "subtitle": "See What Our Past Interns Have to Say About Waste4Change’s Internship Program",
+    "subtitle": "See What Our Past Interns Have to Say About Waste4Change's Internship Program",
     "items": [
       {
         "name": "Amira R. Nadhifa",
-        "message": "The whole experience taught me a lot of things, starting with interpersonal communication, teamwork, and problem solving. The company’s work ambience is very appreciative, and you’ll find them always being supportive of each other. I took part mostly in assisting the optimization of the TPS 3R project, which was challenging, but I learned a lot and am still learning more about it"
+        "message": "The whole experience taught me a lot of things, starting with interpersonal communication, teamwork, and problem solving. The company's work ambience is very appreciative, and you'll find them always being supportive of each other. I took part mostly in assisting the optimization of the TPS 3R project, which was challenging, but I learned a lot and am still learning more about it"
       },
       {
-        "name": "Working in a social enterprise that focuses on giving services in responsible waste management taught me a whole new lesson. I learned a lot of new skills, especially about business and waste management, which was the most exciting thing that I never had before. I can express and sharpen my skills in event and project management, partnership, teamwork, and public speaking",
-        "message": "Fanny Ramadhanti"
+        "name": "Fanny Ramadhanti",
+        "message": "Working in a social enterprise that focuses on giving services in responsible waste management taught me a whole new lesson. I learned a lot of new skills, especially about business and waste management, which was the most exciting thing that I never had before. I can express and sharpen my skills in event and project management, partnership, teamwork, and public speaking"
       },
       {
-        "name": "This internship provided me with valuable hands-on experience and a better idea about what knowledge areas and skills I should develop. I learned various types of HR functions and responsibilities, such as recruitment process, people development and designing performance appraisal. This is also my first time working with an output-based mechanism, which means we are not tied with regular office hours, but instead focusing on the project’s goals and timelines. In order to adapt, I learned how to work effectively, produced a high quality output, and set priorities.",
-        "message": "Ivanna Zahra"
+        "name": "Ivanna Zahra",
+        "message": "This internship provided me with valuable hands-on experience and a better idea about what knowledge areas and skills I should develop. I learned various types of HR functions and responsibilities, such as recruitment process, people development and designing performance appraisal. This is also my first time working with an output-based mechanism, which means we are not tied with regular office hours, but instead focusing on the project's goals and timelines. In order to adapt, I learned how to work effectively, produced a high quality output, and set priorities."
       },
       {
-        "name": "After 3 months of internship, I gained a deep understanding on how we can co-exist with waste. We don’t need to go back to ancient times where we can’t enjoy the simplicity of a product, but rather create a harmony to build a safe and sustainable ecosystem, just like a forest. Waste4change is trying to make that ecosystem where waste management could be handled responsibly with a holistic 4Cs approach: Consult, Campaign, Collect and Create.",
-        "message": "Khusnaedi Azhar"
+        "name": "Khusnaedi Azhar",
+        "message": "After 3 months of internship, I gained a deep understanding on how we can co-exist with waste. We don't need to go back to ancient times where we can't enjoy the simplicity of a product, but rather create a harmony to build a safe and sustainable ecosystem, just like a forest. Waste4change is trying to make that ecosystem where waste management could be handled responsibly with a holistic 4Cs approach: Consult, Campaign, Collect and Create."
       }
     ]
   },
   "latest_job": {
-    "title": "Job Categories",
-    "subtitle": "What Are You Most Passionate About?"
+    "title": "Latest Job",
+    "items": [
+      {
+        "title": "Product Designer",
+        "category": "Tech",
+        "location": "Semarang",
+        "type": {
+          "title": "Full Time",
+          "color": "#17A2B8"
+        }
+      },
+      {
+        "title": "Product Designer",
+        "category": "Tech",
+        "location": "Semarang",
+        "type": {
+          "title": "Part Time",
+          "color": "#2AC769"
+        }
+      },
+      {
+        "title": "Product Designer",
+        "category": "Tech",
+        "location": "Semarang",
+        "type": {
+          "title": "Intern",
+          "color": "#F6A609"
+        }
+      },
+      {
+        "title": "Product Designer",
+        "category": "Tech",
+        "location": "Semarang",
+        "type": {
+          "title": "Full Time",
+          "color": "#17A2B8"
+        }
+      },
+      {
+        "title": "Product Designer",
+        "category": "Tech",
+        "location": "Semarang",
+        "type": {
+          "title": "Part Time",
+          "color": "#2AC769"
+        }
+      },
+      {
+        "title": "Product Designer",
+        "category": "Tech",
+        "location": "Semarang",
+        "type": {
+          "title": "Intern",
+          "color": "#F6A609"
+        }
+      }
+    ],
+    "SeeDetail": "See Detail",
+    "CTA":"See More"
   },
   "faq": {
     "title": "Frequently-Asked Questions (FAQ)",

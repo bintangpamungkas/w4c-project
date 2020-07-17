@@ -48,7 +48,7 @@ define('PREFIX_TABLE', '');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
-define('DB_DATABASE', 'u4631431_official_demo');
+define('DB_DATABASE', 'w4c_official_demo');
 if (IS_UNDER_MAINTENANCE == 1) {
 	if (empty($_COOKIE['DEMOW4CCONSTRUCTIONSITE'])) {
 		header('Location:' . HOST . '/under-maintenance');
