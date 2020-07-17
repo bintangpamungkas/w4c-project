@@ -153,10 +153,10 @@
 				if ($section->section_slug == 'expertise-and-experience') {
 					$data['expertises'] = $this->crud_model->select('expertise', QUERY_RESULT, ['(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=expertise_name AND language_code="' . $lang . '" limit 1) as expertise_name'], ['service_id' => $service->service_id, 'deleted_at' => null]);
 				}
-				if ($section->section_slug == 'what-you-get') {
+				if ($section->section_slug == 'what-you-get'|| $section->section_slug == 'whatyouget') {
 					$data['facilities'] = $this->crud_model->select('facility', QUERY_RESULT, ['facility_icon', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=facility_name AND language_code="' . $lang . '" limit 1) as facility_name'], ['service_id' => $service->service_id, 'deleted_at' => null]);
 				}
-				if ($section->section_slug == 'waste-flow' || $section->section_slug == 'waste-bin-option' || $section->section_slug == 'whatyouget') {
+				if ($section->section_slug == 'waste-flow' || $section->section_slug == 'waste-bin-option' ) {
 					$data['flows'] = $this->crud_model->select('flow', QUERY_RESULT, ['flow_category', 'flow_icon', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=flow_name AND language_code="' . $lang . '" limit 1) as flow_name'], ['service_id' => $service->service_id, 'deleted_at' => null]);
 				}
 				if ($section->section_slug == 'program-highlight' || $section->section_slug == 'research-highlight') {

@@ -3,24 +3,24 @@
 		'id' => [
 			[
 				'title' => 'DITERIMA',
-				'subtitle' => 'Kami menerima sampah anorganik kertas (HVS, karton, kardus) dan non-kertas (plastik, kaca, logam, sachet).',
+				'subtitle' => 'Kami menerima sampah anorganik kertas (HVS, karton, kardus) dan non-kertas (plastik, kaca, logam, sachet, karet, tekstil).',
 				'icon' => 'accepted.png'
 			],
 			[
 				'title' => 'TIDAK DITERIMA',
-				'subtitle' => 'Saat ini kami belum menerima sampah organik, sampah elektronik, sampah medis, sampah B3, dan sampah popok/pembalut via program ini.',
+				'subtitle' => 'Saat ini kami belum menerima sampah organik, sampah elektronik, sampah medis dan sampah B3.',
 				'icon' => 'not-accepted.png'
 			]
 		],
 		'en' => [
 			[
 				'title' => 'ACCEPTED',
-				'subtitle' => 'We accept inorganic paper waste (HVS, carton, cardboard) and non-paper waste (plastic, glass, metal, sachets).',
+				'subtitle' => 'We accept inorganic paper waste (HVS, carton, cardboard) and non-paper waste (plastic, glass, metal, sachets, rubber, textile).',
 				'icon' => 'accepted.png'
 			],
 			[
 				'title' => 'NOT ACCEPTED',
-				'subtitle' => 'Currently we do not accept the following waste: electronic waste, medical waste, toxic and hazardous waste (B3), as well as diapers/sanitary products via this progam.',
+				'subtitle' => 'Currently we do not accept the following waste: electronic waste, medical waste, toxic and hazardous waste (B3).',
 				'icon' => 'not-accepted.png'
 			]
 		]
