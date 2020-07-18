@@ -1,6 +1,3 @@
-<script>
-
-</script>
 <!-- Search Bar -->
 <section class="g-white g-bg-white u-shadow-v20 g-pt-80">
   <div>
@@ -76,9 +73,9 @@
         </div>
         <!-- Sorting -->
         <div class="col-md-4 col-12">
-          <div class="form-group g-color-black-opacity-0_7<?= $this->agent->is_mobile() ? 'g-mb-10' : 'g-mb-20' ?> float-right">
+          <div class="form-group g-color-black-opacity-0_7<?= $this->agent->is_mobile() ? 'g-mb-10 g-px-15' : 'g-mb-20 float-right' ?>">
             <div class="g-brd-primary--focus">
-              <select onchange="sorting(this)" class="form-control g-pa-12 g-font-size-16" style="height: 50px;width: 250px;">
+              <select onchange="sorting(this)" class="form-control g-pa-12 g-font-size-16" style="height: 50px;width: <?= $this->agent->is_mobile() ? '100%' : '250px' ?>;">
                 <option disabled selected><?= $copy->SortBy ?></option>
                 <option value="title"><?= $copy->Position ?></option>
                 <option value="location"><?= $copy->Location ?></option>
@@ -106,14 +103,14 @@
         <?php foreach ($jobs as $index=>$job): ?>
         <div class="col-md-4 col-12 <?= $this->agent->is_mobile() ? 'g-px-10 g-py-5' : 'g-pa-5'?> job-item type--<?= $job->category ?>" data-collapsed="false" style="overflow:hidden; transition:height 0.3s ease-out;height:auto;">
           <div class="align-height-item g-bg-white g-pos-rel <?= $this->agent->is_mobile() ? 'g-px-25 g-py-20' : 'g-pa-30'?>" style="box-shadow:1px 6px 20px 2px rgba(0, 0, 0, 0.1) position:relative;">
-            <div class="btn btn-outline-info g-font-size-12 float-right g-rounded-50 text-uppercase g-mt-5 g-py-5 g-px-12"
+            <div class="btn btn-outline-info g-font-size-12 float-right g-rounded-50 text-uppercase g-mt-5 g-ml-10 g-py-5 g-px-12"
               style="background: <?= $job_type->{$job->type}->color ?>20 !important; border-color: <?= $job_type->{$job->type}->color ?>; color:<?= $job_type->{$job->type}->color ?>">
               <span class="job-type"><?= $job_type->{$job->type}->name ?></span></div>
             <div class="job-title g-color-black g-font-size-22 g-font-weight-700 g-line-height-1_2 text-uppercase"><?= $job->title ?></div>
             <div class="job-category g-font-size-16 text-uppercase g-mb-20"><?= $job_category->{$job->category}->name ?></div>
             <div class="g-color-w4c-blue-v2 g-font-size-16 text-uppercase g-pb-30"><i class="icon-location-pin mr-2"></i><span class="job-location"><?= $job->location ?></span></div>
             <div class="g-pos-abs" style="right:0px;bottom:30px;<?= $this->agent->is_mobile() ? 'bottom:20px;right:25px' : 'bottom:30px;right:30px'?>">
-              <a href="<?= site_url('career/detail') ?>" class="g-color-w4c-blue-v2 g-font-size-<?= $this->agent->is_mobile() ? '20' :'24'?> g-font-weight-700 text-uppercase"><?= $copy->SeeDetail ?></a>
+              <a href="<?= site_url('career/job/'.$index) ?>" class="g-color-w4c-blue-v2 g-font-size-<?= $this->agent->is_mobile() ? '20' :'24'?> g-font-weight-700 text-uppercase"><?= $copy->SeeDetail ?></a>
             </div>
           </div>
         </div>

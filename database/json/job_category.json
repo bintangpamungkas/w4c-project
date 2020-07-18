@@ -1,11 +1,14 @@
 {
   "1": {
-    "name": "Corporate Function"
+    "name": "Corporate Function",
+    "image": "cf.png"
   },
   "2": {
-    "name": "Waste Management Operation"
+    "name": "Waste Management Operation",
+    "image": "wm.png"
   },
   "3": {
-    "name": "Tech"
+    "name": "Tech",
+    "image": "tech.png"
   }
 }

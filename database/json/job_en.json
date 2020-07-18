@@ -1,5 +1,5 @@
 {
-  "1": {
+  "ux-researcher": {
     "status": 1,
     "title": "UX Researcher",
     "category": 3,
@@ -25,7 +25,7 @@
       "Have experiences regarding user research, prototyping, design sprint & communication"
     ]
   },
-  "2": {
+  "product-ui-ux-designer": {
     "status": 1,
     "title": "Product UI/UX Designer",
     "category": 3,
@@ -44,7 +44,7 @@
       "Have knowledge regarding UI UX Design, excellent visual design skills with sensitivity to user-system interaction"
     ]
   },
-  "3": {
+  "fullstack-wordpress-web-engineer": {
     "status": 1,
     "title": "Fullstack & Wordpress Web Engineer",
     "category": 3,
@@ -65,7 +65,7 @@
       "Stay up to date with the industry development and have a good learning spirit"
     ]
   },
-  "4": {
+  "hse-officer": {
     "status": 1,
     "title": "HSE Officer",
     "category": 2,
@@ -86,7 +86,7 @@
       "Have a personal laptop"
     ]
   },
-  "5": {
+  "surveyor": {
     "status": 1,
     "title": "Surveyor",
     "category": 2,
@@ -106,7 +106,7 @@
       "Honest and responsible for the sampling data "
     ]
   },
-  "6": {
+  "po-tetrapak": {
     "status": 1,
     "title": "PO Tetrapak",
     "category": 2,
@@ -128,7 +128,7 @@
       "Good negotiation and communication skill"
     ]
   },
-  "7": {
+  "collect-supervisor": {
     "status": 1,
     "title": "Collect Supervisor",
     "category": 2,
@@ -147,7 +147,7 @@
       "Good communication skill"
     ]
   },
-  "8": {
+  "inovation-oficer": {
     "status": 1,
     "title": "Inovation Oficer",
     "category": 2,
@@ -166,7 +166,7 @@
       "Have a personal laptop and can operate it well"
     ]
   },
-  "9": {
+  "recruiter": {
     "status": 1,
     "title": "Recruiter",
     "category": 2,
@@ -191,7 +191,7 @@
       "Will be placed in Bekasi"
     ]
   },
-  "10": {
+  "innovation-officer": {
     "status": 1,
     "title": "Innovation Officer",
     "category": 2,
@@ -210,7 +210,7 @@
       "Develop the quality of the product/services that the company provide "
     ]
   },
-  "11": {
+  "officer-administration-and-procurement-officer": {
     "status": 1,
     "title": "Officer Administration and Procurement Officer",
     "category": 2,
@@ -236,7 +236,7 @@
       "Have a personal laptop "
     ]
   },
-  "12": {
+  "customer-service": {
     "status": 1,
     "title": "Customer Service",
     "category": 2,
@@ -260,7 +260,7 @@
       "Ensure customers’ satisfaction and provide professional customer support "
     ]
   },
-  "13": {
+  "enumeration": {
     "status": 1,
     "title": "Enumeration",
     "category": 2,
