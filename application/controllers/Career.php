@@ -43,7 +43,7 @@
 		public function job_list()
 		{
       $lang = $this->get_language();
-
+			
 			$data['title'] = get_lang('Job List');
 			$data['id'] = 'site';
 			$data['subtitle'] = 'information';
@@ -68,7 +68,9 @@
 					'active' => true
 				]
       ];
-
+			$data['position'] = $this->input->get('position');
+			$data['location'] = $this->input->get('location');
+			$data['type'] = $this->input->get('type');
       //language, section, general info (title, subtitle, order), item (specific content)
       $data['copy'] = json_decode(file_get_contents(base_url('database/json/job_list_'.$lang.'.json')));
       $data['jobs'] = json_decode(file_get_contents(base_url('database/json/job_'.$lang.'.json')));

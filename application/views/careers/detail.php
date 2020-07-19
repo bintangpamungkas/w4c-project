@@ -31,6 +31,8 @@ ul.list-blue li::before {
       <?php endif; ?>
       <?php endforeach; ?>
     </div>
+    <form action="<?= site_url('career/job') ?>" method="get">
+
     <div class="row justify-align-center g-pt-50">
       <?php if ($this->agent->is_mobile()) : ?>
       <div class="col">
@@ -70,7 +72,7 @@ ul.list-blue li::before {
       </div>
       <?php endif; ?>
     </div>
-    <!-- </form> -->
+    </form>
   </div>
 </section>
 <!-- End Search Bar -->
@@ -81,19 +83,32 @@ ul.list-blue li::before {
     <div class="row">
       <div class="col">
         <div class="job-title g-color-black g-font-size-<?= $this->agent->is_mobile() ? '22' : '36' ?> g-font-weight-700 g-line-height-1_2 text-uppercase  g-mb-13"><?= $job->title ?></div>
-        <div class="row g-mb-45">
-          <div class="col-auto align-self-center">
-            <div class="job-category g-font-size-16 text-uppercase"><?= $job_category->{$job->category}->name ?></div>
-          </div>
-          <div class="col-auto align-self-center">
-            <div class="g-color-w4c-blue-v2 g-font-size-16 text-uppercase"><i class="icon-location-pin mr-2"></i><span class="job-location"><?= $job->location ?></span></div>
-          </div>
-          <div class="col-auto align-self-center">
-            <div class="btn btn-outline-info g-font-size-12 float-right g-rounded-50 text-uppercase"
-              style="background: <?= $job_type->{$job->type}->color ?>20 !important; border-color: <?= $job_type->{$job->type}->color ?>; color:<?= $job_type->{$job->type}->color ?>">
-              <span class="job-type"><?= $job_type->{$job->type}->name ?></span></div>
-          </div>
-        </div>
+        <table class="g-mb-45" width="100%">
+          <tr>
+            <td class="g-pr-10">
+              <div class="job-category g-font-size-16 text-uppercase"><?= $job_category->{$job->category}->name ?></div>
+            </td>
+            <td class="g-pr-10">
+              <div class="g-color-w4c-blue-v2 g-font-size-16 text-uppercase row no-gutters">
+                <div class="col-auto">
+                  <i class="icon-location-pin mr-2"></i>
+                </div>
+                <div class="col job-location">
+                  <?php foreach ($job->location as $location): ?>
+                    <?= $location ?><br>               
+                  <?php endforeach; ?>
+                </div>
+              </div>
+            </td>
+            <td class="g-pr-10">
+              <div class="col-auto align-self-center">
+                <div class="btn btn-outline-info g-font-size-12 float-right g-rounded-50 text-uppercase"
+                  style="background: <?= $job_type->{$job->type}->color ?>20 !important; border-color: <?= $job_type->{$job->type}->color ?>; color:<?= $job_type->{$job->type}->color ?>">
+                  <span class="job-type"><?= $job_type->{$job->type}->name ?></span></div>
+              </div>
+            </td>
+          </tr>
+        </table>
         <?php if($this->agent->is_mobile()):?>
         <div id="#accordion-11" class="u-accordion u-accordion-color-primary" role="tablist" aria-multiselectable="true">
           <div class="row justify-content-center">
@@ -153,7 +168,7 @@ ul.list-blue li::before {
           </div>
         </div>
 
-				<?php else: ?>
+        <?php else: ?>
         <div class="g-py-15">
           <div class="g-font-size-22 g-font-weight-600 text-uppercase g-mb-10"><?= $copy->JobDescription ?></div>
           <ul class="list-blue">
@@ -178,10 +193,10 @@ ul.list-blue li::before {
       <!-- End Detail Section -->
       <!-- Share Section -->
       <div class="col-md-auto">
-				<?php if($this->agent->is_mobile()):?>
-					<a class="btn btn-info btn-block g-font-size-18 g-font-weight-600 g-py-12 g-my-35 g-rounded-50 text-uppercase" href="http://w4c.id/formofficerw4c"><?= $copy->ApplyNow ?></a>
+        <?php if($this->agent->is_mobile()):?>
+        <a class="btn btn-info btn-block g-font-size-18 g-font-weight-600 g-py-12 g-my-35 g-rounded-50 text-uppercase" href="http://w4c.id/formofficerw4c"><?= $copy->ApplyNow ?></a>
 
-				<?php else: ?>
+        <?php else: ?>
         <div class="" style="border:1px solid #C4C4C4">
           <img src="<?= get_image(DIR_BG.'career/'.$job_category->{$job->category}->image) ?>" alt="" style="height:273px; width:393px;object-fit:cover">
           <div class="g-px-20 g-py-30">
@@ -219,8 +234,8 @@ ul.list-blue li::before {
               </tr>
             </table>
           </div>
-				</div>
-				<?php endif; ?>
+        </div>
+        <?php endif; ?>
       </div>
       <!-- End Share Section -->
     </div>
@@ -230,45 +245,55 @@ ul.list-blue li::before {
 
 <!-- Related Job -->
 <section class="g-bg-white <?= $this->agent->is_mobile() ? 'g-pt-80 g-pb-50' : 'g-py-90' ?>">
-	<div class="container">
-		<div class="g-mb-50">
-			<?php if(!$this->agent->is_mobile()):?>
-				<a class="btn btn-info float-right g-rounded-50 g-py-10 g-px-80 g-font-size-18 text-uppercase" href="<?= site_url('career/job') ?>"><?= $copy->SeeMore ?></a>
-			<?php endif; ?>
-			<div class="g-font-asap g-color-black text-uppercase g-font-weight-600 g-font-size-24 g-mb-10 <?= $this->agent->is_mobile() ? 'text-center' : ''?>"><?= $copy->RelatedJob ?></div>
-			<hr class="g-width-120 g-mt-20 g-mb-40 <?= $this->agent->is_mobile() ? '' : 'g-ml-0'?> g-brd-2 g-brd-blue">
-		</div>
-		<div class="container">
-			<div class="row justify-content-center">
-					<?php 
+  <div class="container">
+    <div class="g-mb-50">
+      <?php if(!$this->agent->is_mobile()):?>
+      <a class="btn btn-info float-right g-rounded-50 g-py-10 g-px-80 g-font-size-18 text-uppercase" href="<?= site_url('career/job') ?>"><?= $copy->SeeMore ?></a>
+      <?php endif; ?>
+      <div class="g-font-asap g-color-black text-uppercase g-font-weight-600 g-font-size-24 g-mb-10 <?= $this->agent->is_mobile() ? 'text-center' : ''?>"><?= $copy->RelatedJob ?></div>
+      <hr class="g-width-120 g-mt-20 g-mb-40 <?= $this->agent->is_mobile() ? '' : 'g-ml-0'?> g-brd-2 g-brd-blue">
+    </div>
+    <div class="container">
+      <div class="row align-height-list">
+        <?php 
 					if($this->agent->is_mobile()){ $show=2; }else{ $show=5; }
 					$i=1;
 					foreach ($jobs as $index=>$item): 
-						if($i <= $show && $item->category == $job->category):?> 
-						<div class="col-md-4 col-12 <?= $this->agent->is_mobile() ? 'g-px-10 g-py-5' : 'g-pa-5'?>">
-							<div class="g-bg-white <?= $this->agent->is_mobile() ? 'g-px-25 g-py-20' : 'g-pa-30'?>" style="box-shadow:1px 6px 20px 2px rgba(0, 0, 0, 0.1)">
-								<div style="position:relative;">
-									<div class="btn btn-outl ine-info g-font-size-12 float-right g-rounded-50 text-uppercase g-mt-5 g-ml-10 g-py-5 g-px-12" style="background: <?= $job_type->{$item->type}->color ?>20 !important; border-color: <?= $job_type->{$item->type}->color ?>; color:<?= $job_type->{$item->type}->color?>"><?= $job_type->{$item->type}->name ?></div>
-									<div class="g-color-black g-font-size-22 g-font-weight-900 text-uppercase"><?= $item->title ?></div>
-									<div class="g-font-size-16 text-uppercase g-mb-20"><?= $job_category->{$item->category}->name ?></div>
-									<div class="g-color-w4c-blue-v2 g-font-size-16 text-uppercase"><i class="icon-location-pin mr-2"></i><?= $item->location ?></div>
-									<div class="g-mt-30 text-right">
-										<a href="<?= site_url('career/job/'.$index) ?>" class="g-color-w4c-blue-v2 g-font-size-<?= $this->agent->is_mobile() ? '20' :'24'?> g-font-weight-900 text-uppercase"><?= $copy->SeeDetail ?></a>
-									</div>
-								</div>
-							</div>
-						</div>					
-						<?php $i++; 
+						if($i <= $show && $item->category == $job->category):?>
+        <div class="col-md-4 col-12 <?= $this->agent->is_mobile() ? 'g-px-10 g-py-5' : 'g-pa-5'?>">
+          <div class="g-bg-white <?= $this->agent->is_mobile() ? 'g-px-25 g-py-20' : 'g-pa-30 align-height-item'?>" style="box-shadow:1px 6px 20px 2px rgba(0, 0, 0, 0.1);position:relative;">
+            <div style="">
+              <div class="btn btn-outl ine-info g-font-size-12 float-right g-rounded-50 text-uppercase g-mt-5 g-ml-10 g-py-5 g-px-12"
+                style="background: <?= $job_type->{$item->type}->color ?>20 !important; border-color: <?= $job_type->{$item->type}->color ?>; color:<?= $job_type->{$item->type}->color?>"><?= $job_type->{$item->type}->name ?></div>
+              <div class="g-color-black g-font-size-22 g-font-weight-900 text-uppercase"><?= $item->title ?></div>
+              <div class="g-font-size-16 text-uppercase g-mb-20"><?= $job_category->{$item->category}->name ?></div>
+              <div class="g-color-w4c-blue-v2 g-font-size-16 text-uppercase g-pb-30 row no-gutters">
+              <div class="col-auto">
+                <i class="icon-location-pin mr-2"></i>
+              </div>
+              <div class="col-auto job-location">
+                <?php foreach ($job->location as $index=>$location): ?>
+                  <?= $location ?><br>               
+                <?php endforeach; ?>
+              </div>
+            </div>
+              <div class="g-pos-abs" style="right:0px;bottom:30px;<?= $this->agent->is_mobile() ? 'bottom:20px;right:25px' : 'bottom:30px;right:30px'?>">
+                <a href="<?= site_url('career/job/'.$index) ?>" class="g-color-w4c-blue-v2 g-font-size-<?= $this->agent->is_mobile() ? '20' :'24'?> g-font-weight-700 text-uppercase"><?= $copy->SeeDetail ?></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <?php $i++; 
 						endif;
 					endforeach; ?>
-			</div>
-			<?php if($this->agent->is_mobile()):?>	
-				<div class="text-center g-mt-50 g-mb-80">
-					<a class="btn btn-info btn-block g-rounded-50 g-py-10 g-px-80 g-font-size-14 text-uppercase" href="<?= site_url('career/job') ?>"><?=$copy->SeeMore ?></a>			
-				</div>
-			<?php endif; ?>
+      </div>
+      <?php if($this->agent->is_mobile()):?>
+      <div class="text-center g-mt-50 g-mb-80">
+        <a class="btn btn-info btn-block g-rounded-50 g-py-10 g-px-80 g-font-size-14 text-uppercase" href="<?= site_url('career/job') ?>"><?=$copy->SeeMore ?></a>
+      </div>
+      <?php endif; ?>
 
-		</div>
-	</div>
+    </div>
+  </div>
 </section>
 <!-- End Related Job -->

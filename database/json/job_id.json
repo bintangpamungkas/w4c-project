@@ -2,9 +2,9 @@
   "ux-researcher": {
     "status": 1,
     "title": "UX Researcher",
-    "category": 3,
+    "category": "tech",
     "type": 1,
-    "location": "Semarang",
+    "location": ["Semarang"],
     "description": [
       "Manage and conduct user research and concept development",
       "Research and investigate user persona & their behavior",
@@ -28,9 +28,9 @@
   "product-ui-ux-designer": {
     "status": 1,
     "title": "Product UI/UX Designer",
-    "category": 3,
+    "category": "tech",
     "type": 1,
-    "location": "Semarang",
+    "location": ["Semarang"],
     "description": [
       "Create product design UI & Flow",
       "Collaborate with other teams to define and implement solutions for the software direction, visuals, and experience",
@@ -47,9 +47,9 @@
   "fullstack-wordpress-web-engineer": {
     "status": 1,
     "title": "Fullstack & Wordpress Web Engineer",
-    "category": 3,
+    "category": "tech",
     "type": 1,
-    "location": "Semarang",
+    "location": ["Semarang"],
     "description": [
       "Create system design and product development plan",
       "Build a reliable product from scratch & WordPress environment",
@@ -68,9 +68,9 @@
   "hse-officer": {
     "status": 1,
     "title": "HSE Officer",
-    "category": 2,
+    "category": "wmo",
     "type": 1,
-    "location": "Semarang",
+    "location": ["Semarang"],
     "description": [
       "Formulate and analyze the improvement of Occupational Health and Safety (OHS) management standard ",
       "Give internal training and education to employees regarding Occupational Health and Safety (OHS) management standard",
@@ -89,9 +89,9 @@
   "surveyor": {
     "status": 1,
     "title": "Surveyor",
-    "category": 2,
-    "type": 1,
-    "location": "Surabaya, Mojokerto, Babat-Lamongan",
+    "category": "wmce",
+    "type": 2,
+    "location": ["Surabaya", "Mojokerto", "Babat-Lamongan"],
     "description": [
       " Conduct on-ground sampling three days a week",
       "Input data daily",
@@ -109,9 +109,9 @@
   "po-tetrapak": {
     "status": 1,
     "title": "PO Tetrapak",
-    "category": 2,
+    "category": "wmo",
     "type": 1,
-    "location": "Jakarta",
+    "location": ["Jakarta"],
     "description": [
       "Be in charge of Tetrapak’s project pertaining to Collection",
       "Coordinate with existing partners ",
@@ -131,9 +131,9 @@
   "collect-supervisor": {
     "status": 1,
     "title": "Collect Supervisor",
-    "category": 2,
+    "category": "wmo",
     "type": 1,
-    "location": "Jakarta",
+    "location": ["Jakarta"],
     "description": [
       "Plan and execute the flow of the transport system management services",
       "Increase both the efficiency and effectivity relating to transport services flow",
@@ -150,9 +150,9 @@
   "inovation-oficer": {
     "status": 1,
     "title": "Inovation Oficer",
-    "category": 2,
+    "category": "wmo",
     "type": 1,
-    "location": "Jakarta",
+    "location": ["Jakarta"],
     "description": [
       "Coordinate with external parties who are going to establish cooperation with the company regarding the procurement of things and services for research activities and the company’s development",
       "Analyze and develop the company’s service line",
@@ -169,9 +169,9 @@
   "recruiter": {
     "status": 1,
     "title": "Recruiter",
-    "category": 2,
+    "category": "cf",
     "type": 1,
-    "location": "Bekasi",
+    "location": ["Bekasi"],
     "description": [
       "Manage and develop human resources, including to plan, execute, and supervise the company’s human resources as well as to develop and improve the quality of the human resources",
       "Be in charge of the company’s needs for new employees",
@@ -194,9 +194,9 @@
   "innovation-officer": {
     "status": 1,
     "title": "Innovation Officer",
-    "category": 2,
+    "category": "wmo",
     "type": 1,
-    "location": "Bekasi",
+    "location": ["Bekasi"],
     "description": [
       "Female/Male max.35 years old",
       "At least a Bachelor’s Degree from Environmental Engineering",
@@ -213,9 +213,9 @@
   "officer-administration-and-procurement-officer": {
     "status": 1,
     "title": "Officer Administration and Procurement Officer",
-    "category": 2,
+    "category": "cf",
     "type": 1,
-    "location": "Bekasi",
+    "location": ["Bekasi"],
     "description": [
       "Create a procurement system and procedure ",
       "Execute goods purchasing procedure",
@@ -239,9 +239,9 @@
   "customer-service": {
     "status": 1,
     "title": "Customer Service",
-    "category": 2,
+    "category": "wmo",
     "type": 1,
-    "location": "Bekasi",
+    "location": ["Bekasi"],
     "description": [
       "At least a High School/Vocational School graduate (Social or Tourism major preferred)",
       "Candidates with previous exprience in a similar field are more preferred",
@@ -263,9 +263,9 @@
   "enumeration": {
     "status": 1,
     "title": "Enumeration",
-    "category": 2,
-    "type": 1,
-    "location": "Bekasi",
+    "category": "wmce",
+    "type": 2,
+    "location": ["Bekasi"],
     "description": [
       "Interview respondents using the questionnare that has been provided",
       "Perform coding based on the interview results ",
