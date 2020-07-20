@@ -1,0 +1,253 @@
+{
+  "slide": {
+    "title": "Solusi Pengelolaan Sampah yang Bertanggung Jawab  ",
+    "items": [
+      {
+        "title": "Solusi Bijak sampah",
+        "image": "slide.png"
+      },
+      {
+        "title": "Solusi Bijak sampah",
+        "image": "slide.png"
+      },
+      {
+        "title": "Solusi Bijak sampah",
+        "image": "slide.png"
+      },
+      {
+        "title": "Solusi Bijak sampah",
+        "image": "slide.png"
+      }
+    ]
+  },
+  "history": {
+    "title": "SEJARAH DAN RIWAYAT SINGKAT WASTE4CHANGE",
+    "items": [
+      {
+        "year": "2014",
+        "image": "2020.png",
+        "content": [
+          "Waste4Change pertama kali tercetus dari diskusi antara PT Greeneration Indonesia & Ecobali (PT Bumi Lestari Bali) untuk membentuk perusahaan pengelolaan sampah yang memiliki misi mengurangi jumlah sampah yang berakhir di TPA",
+          "Waste4Change resmi didirikan oleh Mohamad Bijaksana Junerosano dengan nama PT Wasteforchange Alam Indonesia"
+        ]
+      },
+      {
+        "year": "2015",
+        "image": "2020.png",
+        "content": [
+          "Rumah Pemulihan Material pertama Waste4Change resmi dibangun di komplek VIDA Bumipala, Bekasi Timur, Indonesia"
+        ]
+      },
+      {
+        "year": "2016",
+        "image": "2020.png",
+        "content": [
+          "Waste4Change bekerja sama dengan mitra daur ulang penyedia RDF Technology guna meluncurkan program Zero Waste to Landfill",
+          "Waste4Change meluncurkan program Extended Producer Responsibility (EPR)"
+        ]
+      },
+      {
+        "year": "2017",
+        "image": "2020.png",
+        "content": [
+          "Waste4Change bekerja sama dengan Greeneration Foundation mengadakan Indonesia Circular Economy Forum (ICEF) yang pertama kalinya"
+        ]
+      },
+      {
+        "year": "2018",
+        "image": "2020.png",
+        "content": [
+          "Waste4Change meluncurkan program Send Your Waste (SYW) & Dropbox Waste4Change",
+          "Waste4Change termasuk dalam 1 dari 8 perusahaan sosial yang terpilih dalam DBS-NUS Social Venture Challenge Asia 2018",
+          "Waste4Change resmi mengakuisisi fasilitas pengembangbiakan Black Soldier Flies (BSF) di Sidoarjo"
+        ]
+      },
+      {
+        "year": "2019",
+        "image": "2020.png",
+        "content": [
+          "Waste4Change mendapatkan penghargaan sebagai The Most Responsible Company dari World’s Most Valued Business (MVB) Indonesia",
+          "Waste4Change mendapatkan investasi dari Agaeti Ventures dan Partners untuk meningkatkan kualitas dan kuantitas pemrosesan sampah di Rumah Pemulihan Material Waste4Change",
+          "Waste4Change meluncurkan program Recycle 4.0 yang bertujuan untuk menggandeng mitra daur ulang dan bank sampah lokal di seluruh Indonesia untuk mengelola sampah secara bertanggung jawab",
+          "Waste4Change mendapatkan pendanaan King Sejong & Jang Yeongsil Prize dari KOICA untuk pengembangan pengelolaan sampah berbasis platform smart city"
+        ]
+      },
+      {
+        "year": "2020",
+        "image": "2020.png",
+        "content": [
+          "Waste4Change resmi mengakuisisi Sampah Muda, startup penggerak persampahan yang berbasis di Semarang",
+          "Waste4Change terpilih menjadi pemenang dari 15 peserta Social Entrepreneur Bootcamp DBS Bank Indonesia"
+        ]
+      }
+    ]
+  },
+  "mission": {
+    "title": "Misi",
+    "message": "Perubahan Ekosistem Pengelolaan Sampah yang Bertanggung Jawab dengan Berlandaskan Kolaborasi dan Teknologi Menuju Penerapan Ekonomi Melingkar (Circular Economy) dan Indonesia Bebas Sampah"
+  },
+  "vision":{
+    "title": "Visi",
+    "message": "Menjadi Pemimpin dalam Menyediakan Solusi Pengelolaan Sampah yang Bertanggung Jawab"
+  },
+  "w4c": {
+    "title":"4 SERVIS INTI WASTE4CHANGE",
+    "example":"Example of service",
+    "items":[
+      {
+        "title": "Consult",
+        "description": "Menyediakan riset berbasis data serta masukkan dari ahli-ahli persampahan di tingkat lokal dalam rangka mengoptimalkan solusi pengelolaan sampah ",
+        "example": [
+          "Solid Waste Management Research"
+        ],
+        "image":"consult.png"
+      },
+      {
+        "title": "Campaign",
+        "description": "Memfasilitasi program sosialisasi dan edukasi antar pemangku kepentingan untuk menciptakan perubahan ekosistem dalam rangka mewujudkan Ekonomi Sirkular",
+        "example": [
+          "AKABIS (Waste Management Academy)"
+        ],
+        "image":"campaign.png"
+      },
+      {
+        "title": "Collect",
+        "description": "Memfasilitasi klien dengan pengangkutan sampah terpilah, tempat sampah terpilah, serta laporan mengenai alur sampah ",
+        "example": [
+          "Residential Area Waste Management",
+          "Personal Waste Management",
+          "Event Waste Management",
+          "Commercial Area Waste Management"
+        ],
+        "image":"collect.png"
+      },
+      {
+        "title": "Create",
+        "description": "Memproses sampah yang terkumpul dengan cara yang bertanggung jawab untuk diubah menjadi material daur ulang ",
+        "example": [
+          "Extended Producer Responsibility",
+          "In-Store Recycling"
+        ],
+        "image":"create.png"
+      }
+    ]
+  },
+  "accomplishment": {
+    "title": "Pencapaian",
+    "items": [
+      {
+        "title": "Klien",
+        "icon": "icon-bag",
+        "message": [
+          "Lebih dari 50 Perusahaan Swasta dan Badan Pemerintah",
+          "6 Kedutaan dan Organisasi Internasional",
+          "Lebih dari 2,000 Rumah",
+          "27 Acara",
+          "Lebih dari 4,000 Orang Lulus dari AKABIS (Akademi Bijak Sampah)"          
+        ]
+      },
+      {
+        "title": "Facilities & Manpower",
+        "icon": "icon-bag",
+        "message": [
+          "2 Rumah Pemulihan Material Untuk Sampah Organik dan Anorganik",
+          "49 Petugas Operator dan Pengangkut Sampah",
+          "7 Unit Truk Pengangkut Sampah "          
+        ]
+      },
+      {
+        "title": "Number of Waste Collected and Managed",
+        "icon": "icon-bag",
+        "message": [
+          "Total 5,456 ton Sampah yang telah Diangkut dan Dikelola",
+          "Kapasitas Rata-Rata Pengelolaan Sampah Sebanyak 10 Ton Per Hari"          
+        ]
+      }
+    ]
+  },
+  "value": {
+    "title": "Nilai-nilai Waste4change",
+    "items": [
+      {
+        "title": "Integritas",
+        "image": "integrity.png"
+      },
+      {
+        "title": "Solutif",
+        "image": "solution.png"
+      },
+      {
+        "title": "Bertanggung Jawab",
+        "image": "responsible.png"
+      },
+      {
+        "title": "Kolaboratif",
+        "image": "collaborative.png"
+      },
+      {
+        "title": "Peduli",
+        "image": "caring.png"
+      }
+    ]
+  },
+  "culture": {
+    "title": "Our Culture",
+    "subtitle": "Sekilas Tentang Kehidupan di Waste4Change yang Dinamis",
+    "items": [
+      {
+        "title": "img1",
+        "image": "culture1.png"
+      },
+      {
+        "title": "img2",
+        "image": "culture2.png"
+      },
+      {
+        "title": "img3",
+        "image": "img3.png"
+      },
+      {
+        "title": "img4",
+        "image": "img4.png"
+      }
+    ]
+  },
+  "team": {
+    "title": "Meet Our Team",
+    "subtitle": "Temui Orang-Orang yang Bekerja Sepenuh Hati Mencari Solusi bagi Permasalahan Sampah di Indonesia ",
+    "items": [
+      {
+        "name": "Adhitya Prayoga",
+        "position": "Circular Economy Strategist",
+        "image": "img1.jpg"
+      },
+      {
+        "name": "Saka Dwi Hanggara",
+        "position": "Behaviour Change Engineer",
+        "image": ""
+      },
+      {
+        "name": "Khairunnisa Yusmalina Humaam",
+        "position": "Organic SPV",
+        "image": ""
+      },
+      {
+        "name": "Muhamad Andriansyah",
+        "position": "Site Manager MRF",
+        "image": ""
+      },
+      {
+        "name": "Siti Annisa",
+        "position": "Project Coordinator",
+        "image": ""
+      }
+    ]
+  },
+  "cta": {
+    "title": "Mulai Perjalanan yang <span class='g-font-weight-600'>Penuh Dampak dan Berkembanglah</span> bersama Waste4Change",
+    "button": {
+      "url": "career",
+      "title": "Halaman Karir"
+    }
+  }
+}

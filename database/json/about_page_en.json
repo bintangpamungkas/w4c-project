@@ -1,0 +1,245 @@
+{
+  "slide": {
+    "title": "Your Responsible Waste Management Solution",
+    "banner": [
+      {
+        "title": "Solusi Bijak sampah",
+        "image": "img.jpg"
+      },
+      {
+        "title": "Solusi Bijak sampah",
+        "image": "img.jpg"
+      },
+      {
+        "title": "Solusi Bijak sampah",
+        "image": "img.jpg"
+      },
+      {
+        "title": "Solusi Bijak sampah",
+        "image": "img.jpg"
+      }
+    ]
+  },
+  "history": {
+    "title": "WASTE4CHANGE'S HISTORY AND MILESTONES",
+    "items": [
+      {
+        "year": "2014",
+        "image": "img.jpg",
+        "content": [
+          "Waste4Change was first initiated based on a discussion between PT Greeneration Indonesia & Ecobali (PT Bumi Lestari Bali) in an effort to create a company whose mission is to reduce the number of waste that end up in landfills ",
+          "Waste4Change is officially founded by Mohamad Bijaksana Junerosano under the name PT Wasteforchange Alam Indonesia"
+        ]
+      },
+      {
+        "year": "2015",
+        "image": "img.jpg",
+        "content": [
+          "Waste4Change’s very first Material Recovery Facility is constructed in Vida Bumipala, East Bekasi, Indonesia"
+        ]
+      },
+      {
+        "year": "2016",
+        "image": "img.jpg",
+        "content": [
+          "Waste4Change cooperated with RDF technology provider to launch the Zero Waste to Landfill program ",
+          "Waste4Change launched the Extended Producer Responsibility (EPR) program"
+        ]
+      },
+      {
+        "year": "2017",
+        "image": "img.jpg",
+        "content": [
+          "Waste4Change co-organized the first Indonesia Circular Economy Forum (ICEF) in collaboration with Greeneration Foundation "
+        ]
+      },
+      {
+        "year": "2018",
+        "image": "img.jpg",
+        "content": [
+          "Waste4Change launched its Send Your Waste (SYW) and Dropbox programs",
+          "Waste4Change was selected as 1 out of 8 chosen social entrepreneurs in the DBS-NUS Social Venture Challenge Asia 2018",
+          "Waste4Change officially acquired the Black Soldier Flies (BSF) breeding facility in Sidoarjo"
+        ]
+      },
+      {
+        "year": "2019",
+        "image": "img.jpg",
+        "content": [
+          "Waste4Change was awarded as The Most Responsible Company by World’s Most Valued Business (MVB) Indonesia",
+          "Waste4Change acquired investments from Agaeti Ventures and Partners to increase the waste-processing quality and quantity in the Material Recovery Facility ",
+          "Waste4Change launched Recycle 4.0 program to establish collaboration with local recycling partners and waste banks throughout Indonesia for responsible waste management",
+          "Waste4Change received King Sejong & Jang Yeongsil Prize grant from KOICA for the development of waste management system based on a smart-city platform"
+        ]
+      },
+      {
+        "year": "2020",
+        "image": "img.jpg",
+        "content": [
+          "Waste4Change officially acquired Sampah Muda, a waste management startup based ini Semarang",
+          "Waste4Change is selected as the winner out of 15 participants of Social Entrepreneur Bootcamp DBS Bank Indonesia"
+        ]
+      }
+    ]
+  },
+  "mission": {
+    "title": "Mission",
+    "message": "Shifting the Waste Management Ecosystem towards a More Responsible, Collaborative, and Technology-based Waste Management System that Supports the Implementation of Circular Economy"
+  },
+  "vision": {
+    "title": "Vision",
+    "message": "To Become A Leader in Providing Ethical and Responsible Waste Management Solutions"
+  },
+  "w4c": {
+    "title": "WASTE4CHANGE CORE SERVICE",
+    "items": [
+      {
+        "title": "Consult",
+        "description": "Provide data-driven analysis and local expert insights to optimize waste management solutions",
+        "example": [
+          "Solid Waste Management Research"
+        ]
+      },
+      {
+        "title": "Campaign",
+        "description": "Offer facilitation and education program across stakeholders to create ecosystem change towards Circular Economy",
+        "example": [
+          "AKABIS (Waste Management Academy)"
+        ]
+      },
+      {
+        "title": "Collect",
+        "description": "Provide segregated waste collection, segregated waste bin, as well as waste journey report ",
+        "example": [
+          "Residential Area Waste Management",
+          "Personal Waste Management",
+          "Event Waste Management",
+          "Commercial Area Waste Management"
+        ]
+      },
+      {
+        "title": "Create",
+        "description": "Process the collected waste in a responsible way to become recycled material",
+        "example": [
+          "Extended Producer Responsibility",
+          "In-Store Recycling"
+        ]
+      }
+    ]
+  },
+  "accomplishment": {
+    "title": "Accomplishments",
+    "items": [
+      {
+        "title": "Client",
+        "message": [
+          "More than 50 Private Companies and Government Bodies",
+          "6 Embassies and International Organizations",
+          "More than 2,0000 Houses for Residential Waste Pickup ",
+          "27 Events",
+          "More than 4,000 People Graduated from Responsible Waste Management Academy (AKABIS)"
+        ]
+      },
+      {
+        "title": "Facilities & Manpower",
+        "message": [
+          "2 Existing Material Recovery Facilities: Organic and Inorganic Waste Processing",
+          "49 Waste Collectors and Operators",
+          "7 Trucks for Waste Collection"
+        ]
+      },
+      {
+        "title": "Number of Waste Collected and Managed",
+        "message": [
+          "A Total of 5,456 tons of Waste Collected and Managed",
+          "An Average of 10 Tons of Waste Processed Per Day"
+        ]
+      }
+    ]
+  },
+  "value": {
+    "title": "Our Values",
+    "items": [
+      {
+        "title": "Integrity",
+        "image": "integrity.png"
+      },
+      {
+        "title": "Solution",
+        "image": "solution.png"
+      },
+      {
+        "title": "Responsible",
+        "image": "responsible.png"
+      },
+      {
+        "title": "Collaborative",
+        "image": "collaborative.png"
+      },
+      {
+        "title": "Caring",
+        "image": "caring.png"
+      }
+    ]
+  },
+  "culture": {
+    "title": "Our Culture",
+    "subtitle": "Here's A Glimpse of What Life at Waste4Change Looks Like ",
+    "items": [
+      {
+        "title": "img1",
+        "image": "culture1.png"
+      },
+      {
+        "title": "img2",
+        "image": "culture2.png"
+      },
+      {
+        "title": "img3",
+        "image": "img3.png"
+      },
+      {
+        "title": "img4",
+        "image": "img4.png"
+      }
+    ]
+  },
+  "team": {
+    "title": "Meet Our Team",
+    "subtitle": "Meet The People Who are Working Passionately to Solve Indonesia’s Waste Problems",
+    "items": [
+      {
+        "name": "Adhitya Prayoga",
+        "position": "Circular Economy Strategist",
+        "image": "img1.jpg"
+      },
+      {
+        "name": "Saka Dwi Hanggara",
+        "position": "Behaviour Change Engineer",
+        "image": ""
+      },
+      {
+        "name": "Khairunnisa Yusmalina Humaam",
+        "position": "Organic SPV",
+        "image": ""
+      },
+      {
+        "name": "Muhamad Andriansyah",
+        "position": "Site Manager MRF",
+        "image": ""
+      },
+      {
+        "name": "Siti Annisa",
+        "position": "Project Coordinator",
+        "image": ""
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start your <span class='g-font-weight-600'>Impactful Journey and Grow</span> together with Waste4Change",
+    "button": {
+      "url": "career",
+      "title": "Go To Carrer Page"
+    }
+  }
+}

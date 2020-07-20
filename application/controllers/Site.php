@@ -83,6 +83,11 @@
 				'keywords' => $this->get_lang('key-waste-management-waste-management-jakarta-waste-management-service-waste-management-using-modern-technology-recycling-service-waste-processing-service-'),
 			];
 
+			$lang = $this->get_language();
+
+      $data['copy'] = json_decode(file_get_contents(base_url('database/json/about_page_'.$lang.'.json')));
+			// print_r($data['copy']);
+			// die();
 			$this->render_page('sites/about', $data, 'services');
 		}
 

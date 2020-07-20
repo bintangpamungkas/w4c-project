@@ -888,3 +888,7 @@
         width: 100%;
     }
 }
+
+*:hover > .g-none--hover-parent {
+    display:none !important; 
+}
