@@ -16,12 +16,12 @@ class Research extends MY_Controller
 
     public function index()
     {
-        $order = null;
-        if (isset($_GET['o'])) {
-            $order = $_GET['o'];
+        $sort = null;
+        if (isset($_GET['sort'])) {
+            $sort = $_GET['sort'];
         }
 
-        $data['order'] = $order;
+        $data['sort'] = $sort;
         $data['lang'] = $this->get_language();
         $data['title'] = APP_NAME;
         $data['id'] = 'brand';
@@ -51,7 +51,7 @@ class Research extends MY_Controller
                     'url' => site_url('research')
                 ],
             ];
-        $data['researchs'] = $this->getData($order);
+        $data['researchs'] = $this->getData($sort);
 
         $this->render_page('research/index', $data, 'services');
     }
@@ -107,19 +107,12 @@ class Research extends MY_Controller
     public function getData($sortBy = null)
     {
         $array = $this->getDatas();
-
         if ($sortBy !== null) {
-            usort($array, function ($value1, $value2) use ($sortBy) {
-                if ($sortBy === 'date') {
-                    $title1 = $value1['file']['release'][$this->get_language()];
-                    $title2 = $value2['file']['release'][$this->get_language()];
-                } else {
-                    $title1 = $value1['title'][$this->get_language()];
-                    $title2 = $value2['title'][$this->get_language()];
-                }
-
-                return $title1 - $title2;
-            });
+            if ($sortBy === 'date') {
+                $array = $this->array_orderby($array, 'file', SORT_DESC);
+            } else {
+                $array = $this->array_orderby($array, 'hidden_title', SORT_ASC);
+            }
         }
 
         return $array;
@@ -129,5 +122,22 @@ class Research extends MY_Controller
     {
         $res = $this->client->request('GET', site_url(DIR_STATIC_DB . 'research.json'));
         return json_decode($res->getBody(), true);
+    }
+
+    public function array_orderby()
+    {
+        $args = func_get_args();
+        $data = array_shift($args);
+        foreach ($args as $n => $field) {
+            if (is_string($field)) {
+                $tmp = array();
+                foreach ($data as $key => $row)
+                    $tmp[$key] = $row[$field];
+                $args[$n] = $tmp;
+            }
+        }
+        $args[] = &$data;
+        call_user_func_array('array_multisort', $args);
+        return array_pop($args);
     }
 }

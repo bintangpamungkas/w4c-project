@@ -144,8 +144,8 @@ if (isset($_GET['cat'])) {
                     <div class="g-brd-primary--focus">
                         <select class="orderBy form-control rounded-0 g-box-shadow-none" style="border:1px solid #bbb; border-radius:0">
                             <option value="<?= site_url('research') ?>"><?= lang('sort-by') ?></option>
-                            <option <?= $order == 'date' ? 'selected' : '' ?> value="<?= site_url('research?o=date') ?>"><?= lang('date') ?></option>
-                            <option <?= $order == 'title' ? 'selected' : '' ?> value="<?= site_url('research?o=title') ?>"><?= lang('title') ?></option>
+                            <option <?= $sort == 'date' ? 'selected' : '' ?> value="<?= site_url('research?sort=date') ?>"><?= lang('date') ?></option>
+                            <option <?= $sort == 'title' ? 'selected' : '' ?> value="<?= site_url('research?sort=title') ?>"><?= lang('title') ?></option>
                         </select>
                     </div>
                 </div>
