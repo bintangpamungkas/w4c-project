@@ -37,7 +37,7 @@ if (isset($_GET['cat'])) {
 
                             <div class="col-md-7">
                                 <div class="input-group pull-right">
-                                    <input id="input-search" class="form-control rounded-0 g-box-shadow-none<?= $get ? ' border-right-0' : '' ?>" type="text" name="search" value="<?= $get ? $_GET['search'] : '' ?>" style="border:1px solid #bbb; border-radius:0;" placeholder="Search.." autocomplete="off">
+                                    <input class="input-search form-control rounded-0 g-box-shadow-none<?= $get ? ' border-right-0' : '' ?>" type="text" name="search" value="<?= $get ? $_GET['search'] : '' ?>" style="border:1px solid #bbb; border-radius:0;" placeholder="Search.." autocomplete="off">
                                     <div class="input-group-prepend">
                                         <?php if ($get) : ?>
                                             <span class="input-reset input-group-text rounded-0 g-bg-white g-color-gray-light-v1 border-left-0" style="cursor: pointer;">
@@ -90,7 +90,14 @@ if (isset($_GET['cat'])) {
                                                             <i class="fa fa-search"></i>
                                                         </span>
                                                     </div>
-                                                    <input class="form-control rounded-0 g-box-shadow-none g-pl-30" type="text" name="search" value="<?= $get ? $_GET['search'] : '' ?>" style="border:1px solid #bbb; border-radius:0" placeholder="Search.." autocomplete="off">
+                                                    <input class="input-search form-control rounded-0 g-box-shadow-none g-pl-30<?= $get ? ' border-right-0' : '' ?>" type="text" name="search" value="<?= $get ? $_GET['search'] : '' ?>" style="border:1px solid #bbb; border-radius:0" placeholder="Search.." autocomplete="off">
+                                                    <div class="input-group-prepend">
+                                                        <?php if ($get) : ?>
+                                                            <span class="input-reset input-group-text rounded-0 g-bg-white g-color-gray-light-v1 border-left-0" style="cursor: pointer;">
+                                                                <i class="fa fa-times"></i>
+                                                            </span>
+                                                        <?php endif; ?>
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -181,7 +188,9 @@ if (isset($_GET['cat'])) {
         });
 
         $('.input-reset').on('click', function() {
-            $('#input-search').val('').focus();
+            $('.input-search').val('').focus();
+            $('.input-reset i').hide();
+            $('.alert').hide();
         });
 
         $('#search').keyup(function() {
