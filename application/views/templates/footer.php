@@ -16,6 +16,9 @@
               <a class="g-color-white-opacity-0_8" href="<?= get_url('official/about') ?>"><?= get_lang('about-us') ?></a>
             </li>
             <li class="g-mb-5">
+              <a class="g-color-white-opacity-0_8" href="<?= get_url('official/research') ?>"><?= lang('research') ?></a>
+            </li>
+            <li class="g-mb-5">
               <a class="g-color-white-opacity-0_8" href="<?= get_url('https://waste4change.com/blog') ?>"><?= get_lang('blog-and-news') ?></a>
             </li>
             <li class="g-mb-5">
@@ -26,9 +29,6 @@
             </li>
             <li class="g-mb-5">
               <a class="g-color-white-opacity-0_8" href="http://w4c.id/internship"><?= get_lang('internship') ?></a>
-            </li>
-            <li class="g-mb-5">
-              <a class="g-color-white-opacity-0_8" href="<?= get_url('official/research') ?>"><?= lang('research') ?></a>
             </li>
           </ul>
         </div>
