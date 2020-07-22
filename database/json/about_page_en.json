@@ -1,22 +1,22 @@
 {
   "slide": {
     "title": "Your Responsible Waste Management Solution",
-    "banner": [
+    "items": [
       {
         "title": "Solusi Bijak sampah",
-        "image": "img.jpg"
+        "image": "slide.png"
       },
       {
         "title": "Solusi Bijak sampah",
-        "image": "img.jpg"
+        "image": "slide.png"
       },
       {
         "title": "Solusi Bijak sampah",
-        "image": "img.jpg"
+        "image": "slide.png"
       },
       {
         "title": "Solusi Bijak sampah",
-        "image": "img.jpg"
+        "image": "slide.png"
       }
     ]
   },
@@ -25,7 +25,7 @@
     "items": [
       {
         "year": "2014",
-        "image": "img.jpg",
+        "image": "2020.png",
         "content": [
           "Waste4Change was first initiated based on a discussion between PT Greeneration Indonesia & Ecobali (PT Bumi Lestari Bali) in an effort to create a company whose mission is to reduce the number of waste that end up in landfills ",
           "Waste4Change is officially founded by Mohamad Bijaksana Junerosano under the name PT Wasteforchange Alam Indonesia"
@@ -33,14 +33,14 @@
       },
       {
         "year": "2015",
-        "image": "img.jpg",
+        "image": "2020.png",
         "content": [
-          "Waste4Change’s very first Material Recovery Facility is constructed in Vida Bumipala, East Bekasi, Indonesia"
+          "Waste4Change's very first Material Recovery Facility is constructed in Vida Bumipala, East Bekasi, Indonesia"
         ]
       },
       {
         "year": "2016",
-        "image": "img.jpg",
+        "image": "2020.png",
         "content": [
           "Waste4Change cooperated with RDF technology provider to launch the Zero Waste to Landfill program ",
           "Waste4Change launched the Extended Producer Responsibility (EPR) program"
@@ -48,14 +48,14 @@
       },
       {
         "year": "2017",
-        "image": "img.jpg",
+        "image": "2020.png",
         "content": [
           "Waste4Change co-organized the first Indonesia Circular Economy Forum (ICEF) in collaboration with Greeneration Foundation "
         ]
       },
       {
         "year": "2018",
-        "image": "img.jpg",
+        "image": "2020.png",
         "content": [
           "Waste4Change launched its Send Your Waste (SYW) and Dropbox programs",
           "Waste4Change was selected as 1 out of 8 chosen social entrepreneurs in the DBS-NUS Social Venture Challenge Asia 2018",
@@ -64,9 +64,9 @@
       },
       {
         "year": "2019",
-        "image": "img.jpg",
+        "image": "2020.png",
         "content": [
-          "Waste4Change was awarded as The Most Responsible Company by World’s Most Valued Business (MVB) Indonesia",
+          "Waste4Change was awarded as The Most Responsible Company by World's Most Valued Business (MVB) Indonesia",
           "Waste4Change acquired investments from Agaeti Ventures and Partners to increase the waste-processing quality and quantity in the Material Recovery Facility ",
           "Waste4Change launched Recycle 4.0 program to establish collaboration with local recycling partners and waste banks throughout Indonesia for responsible waste management",
           "Waste4Change received King Sejong & Jang Yeongsil Prize grant from KOICA for the development of waste management system based on a smart-city platform"
@@ -74,7 +74,7 @@
       },
       {
         "year": "2020",
-        "image": "img.jpg",
+        "image": "2020.png",
         "content": [
           "Waste4Change officially acquired Sampah Muda, a waste management startup based ini Semarang",
           "Waste4Change is selected as the winner out of 15 participants of Social Entrepreneur Bootcamp DBS Bank Indonesia"
@@ -92,20 +92,23 @@
   },
   "w4c": {
     "title": "WASTE4CHANGE CORE SERVICE",
+    "example":"Example of service",
     "items": [
       {
         "title": "Consult",
         "description": "Provide data-driven analysis and local expert insights to optimize waste management solutions",
         "example": [
           "Solid Waste Management Research"
-        ]
+        ],
+        "image":"consult.png"
       },
       {
         "title": "Campaign",
         "description": "Offer facilitation and education program across stakeholders to create ecosystem change towards Circular Economy",
         "example": [
           "AKABIS (Waste Management Academy)"
-        ]
+        ],
+        "image":"campaign.png"
       },
       {
         "title": "Collect",
@@ -115,7 +118,8 @@
           "Personal Waste Management",
           "Event Waste Management",
           "Commercial Area Waste Management"
-        ]
+        ],
+        "image":"collect.png"
       },
       {
         "title": "Create",
@@ -123,7 +127,8 @@
         "example": [
           "Extended Producer Responsibility",
           "In-Store Recycling"
-        ]
+        ],
+        "image":"create.png"
       }
     ]
   },
@@ -206,7 +211,7 @@
   },
   "team": {
     "title": "Meet Our Team",
-    "subtitle": "Meet The People Who are Working Passionately to Solve Indonesia’s Waste Problems",
+    "subtitle": "Meet The People Who are Working Passionately to Solve Indonesia's Waste Problems",
     "items": [
       {
         "name": "Adhitya Prayoga",

@@ -39,9 +39,9 @@ ul.list-blue li::before {
         <div class="form-group g-m-reset">
           <div class="input-group g-brd-primary--focus">
             <div class="input-group-prepend g-brd-right-none">
-              <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1 g-brd-right-none"><i class="icon-magnifier"></i></span>
+              <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1 g-brd-right-none g-brd-blue--focus"><i class="icon-magnifier"></i></span>
             </div>
-            <input class="form-control g-pa-12 g-brd-left-none" type="text" placeholder="<?= $copy->Search . ' ' . $copy->Position . ', ' . $copy->Location . ', ' . $copy->Type ?>">
+            <input class="form-control g-pa-12 g-brd-left-none g-brd-blue--focus" type="text" placeholder="<?= $copy->Search . ' ' . $copy->Position . ', ' . $copy->Location . ', ' . $copy->Type ?>">
           </div>
         </div>
         <div class="form-group g-ma-0">
@@ -50,17 +50,17 @@ ul.list-blue li::before {
       <?php else : ?>
       <div class="col g-px-8">
         <div class="form-group g-ma-0">
-          <input id="inputPosition" class="form-control g-pa-12" type="text" placeholder="<?= $copy->Position ?>">
+          <input id="inputPosition" class="form-control g-pa-12 g-brd-blue--focus" type="text" placeholder="<?= $copy->Position ?>">
         </div>
       </div>
       <div class="col g-px-8">
         <div class="form-group g-ma-0">
-          <input id="inputLocation" class="form-control g-pa-12" type="text" placeholder="<?= $copy->Location ?>">
+          <input id="inputLocation" class="form-control g-pa-12 g-brd-blue--focus" type="text" placeholder="<?= $copy->Location ?>">
         </div>
       </div>
       <div class="col g-px-8">
         <div class="form-group g-ma-0">
-          <input id="inputType" class="form-control g-pa-12" type="text" placeholder="<?= $copy->Type ?>">
+          <input id="inputType" class="form-control g-pa-12 g-brd-blue--focus" type="text" placeholder="<?= $copy->Type ?>">
         </div>
       </div>
       <div class="col g-px-8">

@@ -167,27 +167,31 @@
   <?php else : // DESKTOP 
   ?>
     <style>
-      #custom-nav-history .line{
+      #custom-nav-history .line {
         border-top: 2px solid #C4C4C4;
-        width:100%;
+        width: 100%;
         margin-bottom: -20px;
         width: 88%;
         margin-left: auto;
         margin-right: auto;
       }
-      #custom-nav-history .owl-dots{
-        margin-top:7px;
+
+      #custom-nav-history .owl-dots {
+        margin-top: 7px;
       }
+
       #custom-nav-history span {
         background-color: white;
         border: 2px solid #C4C4C4;
       }
+
       #custom-nav-history .owl-dot span {
         margin-left: auto;
-        margin-right:auto;
+        margin-right: auto;
         height: 15px;
         width: 15px;
       }
+
       #custom-nav-history .owl-dot.active span {
         border: 3px solid #17A2B8;
         height: 20px;
@@ -197,9 +201,11 @@
       #custom-nav-history.owl-carousel .active span {
         background: white !important;
       }
+
       #custom-nav-history .owl-dot .text {
         font-size: 18px;
       }
+
       #custom-nav-history .owl-dot.active .text {
         position: inline-block;
         color: #17A2B8;
@@ -208,7 +214,7 @@
     <div class="container g-px-100 g-my-60">
       <div id="custom-nav-history" class="owl-carousel owl-theme owl-loaded">
         <div class="owl-controls">
-        <div class="line"></div>
+          <div class="line"></div>
           <div class="owl-dots text-left g-ml-minus-5 row">
             <?php foreach ($copy->history->items as $i => $item) : ?>
               <div class="col text-center owl-dot <?= $i == 0 ? 'active' : '' ?>"><span></span>
@@ -226,7 +232,7 @@
         <!-- Job Item -->
         <div class="row g-mb-30 g-rounded-5 no-gutters">
           <div class="col">
-            <div class="g-color-white g-bg-info g-font-size-14 g-pl-60 g-pt-60 g-pb-15 g-pr-15 align-height-item" style="background-image: url(<?= get_image(DIR_BG . 'career/' . $item->image) ?>; opacity: 0.5;">
+            <div class="g-color-white g-bg-info g-font-size-14 g-pl-60 g-pt-60 g-pb-15 g-pr-15  align-height-item" style="background-image: url(<?= get_image(DIR_BG . 'career/' . $item->image) ?>; opacity: 0.5;">
               <div class="g-font-asap g-color-white g-font-weight-600 g-font-size-30 "><?= $item->year ?></div>
               <ul class="g-pl-20">
                 <?php foreach ($item->content as $content) : ?>
@@ -238,60 +244,63 @@
             </div>
 
           </div>
-          <div class="col">
-            <img class="" src="<?= get_image(DIR_BG . 'career/' . $item->image) ?>" alt="Image Description" style="height:100%;object-fit:cover">
-          </div>
-          <div class="">
-
-          </div>
+          <div class="col g-pos-rel">
+              <div class="img" style="background-image: url(<?= get_image(DIR_BG . 'career/' . $item->image) ?>); height: 100%;padding-bottom: 62.5%;background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;" ></div>
+            <!-- <img class="" src="" alt="<?= $item->year ?>" style="object-fit:cover"> -->
         </div>
-        <!-- End Job Item -->
-      <?php endforeach; ?>
-      <!-- End Items Iteration -->
+        <div class="">
+
+        </div>
     </div>
+    <!-- End Job Item -->
+  <?php endforeach; ?>
+  <!-- End Items Iteration -->
+  </div>
 
-    <script>
-      $(window).ready(function() {
-        var element_id = '#history-carousel';
-        $(element_id).owlCarousel({
-          loop: true,
-          margin: 0,
-          dots: false,
-          nav: false,
-          autoplay: false,
-          autoplayTimeout: 1500,
-          autoplayHoverPause: true,
-          responsive: {
-            0: {
-              items: 1
-            },
-            600: {
-              items: 1
-            },
-            1000: {
-              items: 1
-            }
+  <script>
+    $(window).ready(function() {
+      var element_id = '#history-carousel';
+      $(element_id).owlCarousel({
+        loop: false,
+        margin: 0,
+        dots: false,
+        nav: false,
+        autoplay: false,
+        autoplayTimeout: 1500,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1
           },
-          navText: ['', '']
-        });
-
-        //$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
-        $(element_id + ' .owl-controls').attr('style', 'margin-top: 30px;');
-        var screen_display = <?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
-        // console.log(screen_display);
-        var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '60' : '98.5' ?>) / 100) / 2;
-        //console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
-        // $(element_id + ' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 410px;width: 70%;right: ' + margin_side + 'px;')
-        //Hide last item after carousel init because if hide first courosel not working
-
-        // Custom Click DOt
-        $('#custom-nav-history').find('.owl-dot').click(function() {
-          $(element_id).trigger('to.owl.carousel', [$(this).index(), 300]);
-        });
+          600: {
+            items: 1
+          },
+          1000: {
+            items: 1
+          }
+        },
+        navText: ['', '']
       });
-    </script>
-  <?php endif; //end desktop 
-  ?>
+
+      //$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
+      $(element_id + ' .owl-controls').attr('style', 'margin-top: 30px;');
+      var screen_display = <?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
+      // console.log(screen_display);
+      var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '60' : '98.5' ?>) / 100) / 2;
+      //console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
+      // $(element_id + ' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 410px;width: 70%;right: ' + margin_side + 'px;')
+      //Hide last item after carousel init because if hide first courosel not working
+
+      // Custom Click DOt
+      $('#custom-nav-history').find('.owl-dot').click(function() {
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+        $(element_id).trigger('to.owl.carousel', [$(this).index(), 300, true]);
+      });
+    });
+  </script>
+<?php endif; //end desktop 
+?>
 </section>
 <!-- End History -->
 
@@ -488,7 +497,7 @@
 <!-- End 4C -->
 
 <!-- Accomplistment -->
-<section class="g-bg-gray-light-v4 <?= $this->agent->is_mobile() ? 'g-pt-40' : 'g-pb-50 g-pt-100' ?>">
+<section class="d-none g-bg-gray-light-v4 <?= $this->agent->is_mobile() ? 'g-pt-40' : 'g-pb-50 g-pt-100' ?>">
   <div class="<?= $this->agent->is_mobile() ? '' : 'container' ?>">
     <div class="row justify-content-center my_tab_content no-gutters">
       <div class="col-md-12">
