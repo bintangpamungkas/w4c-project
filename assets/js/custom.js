@@ -1,10 +1,10 @@
 window.onresize = function (event) {
 	if((window.fullScreen) || (window.innerWidth == screen.width && window.innerHeight == screen.height)) {
 		$('.tab-service-container').addClass('fullscreen');
-		console.log('fullscreen');
+		// console.log('fullscreen');
 	}else{
 		$('.tab-service-container').removeClass('fullscreen');
-		console.log('notfullscreen');
+		// console.log('notfullscreen');
 	}
 };
 
@@ -115,7 +115,7 @@ $(window).ready(function () {
 	if (tab_service_height===null){
 		tab_service_height=100;
 	}
-	console.log(tab_service_height);
+	// console.log(tab_service_height);
 	if (screen_height <= 450) {
 		full_height_block_height = screen_height + (tab_service_height);
 	} else if (screen_height <= 550 && screen_height > 450) {
@@ -162,9 +162,9 @@ $(window).ready(function () {
 			if (tempHeights < $(this).height()) {
 				tempHeights = $(this).height();
 			}
-			console.log($(this).attr('class')+':'+$(this).height());
+			// console.log($(this).attr('class')+':'+$(this).height());
 		});
-		console.log('final:'+tempHeights);
+		// console.log('final:'+tempHeights);
 		item.height(tempHeights);
 	});
 
