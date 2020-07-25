@@ -12,5 +12,6 @@
   "CantFindWhatYouAreLookingFor": "Can't find what you are looking for?",
   "DropCV": "Drop CV",
   "ContactUs": "Contact Us",
-  "SearchResultFound":"search result found"
+  "SearchResultFound":"search result found",
+  "DropCVUrl" : "https://docs.google.com/forms/d/e/1FAIpQLSdo7bKfIOLYWl2_GKiT02AEVhPoWDajNBNvKlAQP0-3G0DSWg/viewform"
 }

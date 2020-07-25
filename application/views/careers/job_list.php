@@ -202,7 +202,7 @@
             <?= $copy->CantFindWhatYouAreLookingFor ?></div>
         </div>
         <div class="col-md-3 col-10 g-mb-15 align-self-center">
-          <a class="btn btn-block btn-info g-color-white g-font-size-<?= $this->agent->is_mobile() ? '14' : '18' ?> g-font-weight-600 g-rounded-50 g-py-15 g-px-50" href="http://w4c.id/formofficerw4c">
+          <a class="btn btn-block btn-info g-color-white g-font-size-<?= $this->agent->is_mobile() ? '14' : '18' ?> g-font-weight-600 g-rounded-50 g-py-15 g-px-50" href="<?= $copy->DropCVUrl ?>">
             <?= strtoupper($copy->DropCV) ?>
           </a>
         </div>

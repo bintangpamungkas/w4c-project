@@ -58,53 +58,7 @@
   },
   "job_category": {
     "title": "Kategori Pekerjaan",
-    "subtitle": "Bidang Apa yang Paling Menarik Minat dan Perhatianmu?",
-    "items": [
-      {
-        "title": "Coorporate Function",
-        "job": [
-          "lorem",
-          "ipsum",
-          "sir",
-          "dor amet"
-        ],
-        "image": "cf.png",
-        "icon": "icon-bag"
-      },
-      {
-        "title": "Tech",
-        "job": [
-          "lorem",
-          "ipsum",
-          "sir",
-          "dor amet"
-        ],
-        "image": "tech.png",
-        "icon": "icon-screen-desktop"
-      },
-      {
-        "title": "Waste Management Operations",
-        "job": [
-          "lorem",
-          "ipsum",
-          "sir",
-          "dor amet"
-        ],
-        "image": "wm.png",
-        "icon": "icon-trash"
-      },
-      {
-        "title": "Waste Management Consultancy & Educations",
-        "job": [
-          "lorem",
-          "ipsum",
-          "sir",
-          "dor amet"
-        ],
-        "image": "wmce.png",
-        "icon": "icon-notebook"
-      }
-    ]
+    "subtitle": "Bidang Apa yang Paling Menarik Minat dan Perhatianmu?"
   },
   "testimony": {
     "title": "Testimonial",
@@ -114,31 +68,31 @@
         "name": "Adhitya Prayoga",
         "position": "Circular Economy Strategist",
         "message": "I have found my Ikigai by working at Waste4Change. I do not need to make up stories when the future generation asks me \"What did you do in the fight against climate change?\" I can proudly say \"I did it with Waste4Change\".",
-        "image": "img1.jpg"
+        "image": "Adhitya-Prayoga.jpg"
       },
       {
         "name": "Saka Dwi Hanggara",
         "position": "Behaviour Change Engineer",
         "message": "Selama bekerja di Waste4Change saya menemukan lingkungan serta rekan kerja yang asik dan seru. Selain itu, ada rasa bangga di setiap pekerjaan yang kita lakukan karena kita tahu, we're doing something great!",
-        "image": ""
+        "image": "Saka-Dwi-Hanggara.jpg"
       },
       {
         "name": "Khairunnisa Yusmalina Humaam",
         "position": "Organic SPV",
         "message": "Saya bergabung di Waste4Change sejak sistem pengolahan sampah organiknya masih sangat sederhana, sampai sekarang sudah ada 2 metode pengolahan efektif yaitu Open Windrow dan BSF. Dari proses tersebut saya belajar tentang kepemimpinan, berpikir strategis dan solutif. Waste4Change tempat yang cocok untuk teman-teman yg ingin belajar dan terus mengembangkan diri",
-        "image": ""
+        "image": "Khairunnisa-Yusmalina-Humaam.jpg"
       },
       {
         "name": "Muhamad Andriansyah",
         "position": "Site Manager MRF",
         "message": "Bekerja di Waste4Change membuat saya memahami industri daur ulang serta mengetahui proses bisnisnya dari hulu ke hilir. Selain itu saya juga jadi memahami peluang bisnis dalam pengelolaan sampah, sekaligus dapat berkontribusi untuk lingkungan",
-        "image": ""
+        "image": "Muhamad-Andriansyah.jpg"
       },
       {
         "name": "Siti Annisa",
         "position": "Project Coordinator",
         "message": "Waste4Change merupakan salah satu ruang dimana saya bisa memberikan kontribusi ilmu dan aksi yang nyata untuk perubahan lingkungan yang konkrit. Sebagai lulusan Teknik Lingkungan, sangat menyenangkan untuk dapat bekerja di Waste4Change. Hal ini karena saya punya teman dan kolega  yang saling mendukung satu sama lain, sekaligus diberi kesempatan (dan kemewahan) untuk dapat mengaplikasikan ilmu yang sudah dipelajari",
-        "image": ""
+        "image": "Siti-Annisa.jpg"
       }
     ]
   },
@@ -172,62 +126,6 @@
   },
   "latest_job": {
     "title": "Latest Job",
-    "items": [
-      {
-        "title": "Product Designer",
-        "category": "Tech",
-        "location": "Semarang",
-        "type": {
-          "title": "Full Time",
-          "color": "#17A2B8"
-        }
-      },
-      {
-        "title": "Product Designer",
-        "category": "Tech",
-        "location": "Semarang",
-        "type": {
-          "title": "Part Time",
-          "color": "#2AC769"
-        }
-      },
-      {
-        "title": "Product Designer",
-        "category": "Tech",
-        "location": "Semarang",
-        "type": {
-          "title": "Intern",
-          "color": "#F6A609"
-        }
-      },
-      {
-        "title": "Product Designer",
-        "category": "Tech",
-        "location": "Semarang",
-        "type": {
-          "title": "Full Time",
-          "color": "#17A2B8"
-        }
-      },
-      {
-        "title": "Product Designer",
-        "category": "Tech",
-        "location": "Semarang",
-        "type": {
-          "title": "Part Time",
-          "color": "#2AC769"
-        }
-      },
-      {
-        "title": "Product Designer",
-        "category": "Tech",
-        "location": "Semarang",
-        "type": {
-          "title": "Intern",
-          "color": "#F6A609"
-        }
-      }
-    ],
     "SeeDetail": "Selengkapnya",
     "CTA": "Lihat Lainnya"
   },

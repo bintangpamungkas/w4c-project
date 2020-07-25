@@ -11,10 +11,11 @@
   <div>
     <div id="slide-carousel" class="g-mt-20">
       <!-- Items Iteration -->
-      <?php if ($this->agent->is_mobile()) : ?>
+      <?php if ($this->agent->is_mobile()) : //mobile
+      ?>
         <?php foreach ($copy->slide->items as $item) : ?>
-          <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-ml-15 g-rounded-5" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}' style="height:220px">
-            <div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center" style="height: 220px;background: url(<?= get_image(DIR_BG . 'career/' . $item->image) ?>);background-size: cover;<?= $this->agent->is_mobile() ? 'background-position-x: right;' : '' ?>"></div>
+          <div class="dzsparallaxer height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-ml-15 g-rounded-5" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}' style="height:220px">
+            <div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center" style="height: 220px;background: url(<?= get_image(DIR_BG . 'about/banner/' . $item->image) ?>);background-size: cover;<?= $this->agent->is_mobile() ? 'background-position-x: right;' : '' ?>"></div>
             <div class=" pending-show animated d-zap" style="height: 573px; background-image: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0.9) 26.51%, rgba(255, 255, 255, 0.74) 47.79%, rgba(255, 255, 255, 0) 84.53%)">
               <div class="container">
                 <div class="content-middle-fullscreen with-header middle-top justify-content-center">
@@ -30,10 +31,11 @@
             </div>
           </div> -->
         <?php endforeach; ?>
-      <?php else : ?>
+      <?php else : //dekstop
+      ?>
         <?php foreach ($copy->slide->items as $item) : ?>
-          <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
-            <div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center" style="height: 573px;background: url(<?= get_image(DIR_BG . 'career/' . $item->image) ?>);background-size: cover;<?= $this->agent->is_mobile() ? 'background-position-x: right;' : '' ?>"></div>
+          <div class="dzsparallaxer height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
+            <div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center" style="height: 573px;background: url(<?= get_image(DIR_BG . 'about/banner/' . $item->image) ?>);background-size: cover;<?= $this->agent->is_mobile() ? 'background-position-x: right;' : '' ?>"></div>
             <div class=" pending-show animated d-zap" style="height: 573px; background-image: <?= $this->agent->is_mobile() ? 'linear-gradient(180deg, rgba(255, 255, 255, 0.7) 20%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.6) 100%)' : 'linear-gradient( 100deg , rgba(255, 255, 255,0.9) 0%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255,0) 100%);' ?>">
               <div class="container">
                 <div class="content-middle-fullscreen with-header middle-top <?= $this->agent->is_mobile() ? 'justify-content-center' : '' ?>">
@@ -104,27 +106,28 @@
   <?php if ($this->agent->is_mobile()) : ?>
     <div class="row justify-content-center g-mt-50 no-gutters ">
       <div id="history-carousel" class="col-md-11 col-12 align-self-end align-height-list">
-        <!-- Items Iteration -->
-        <?php foreach ($copy->history->items as $item) : ?>
-          <!-- Job Item -->
+        <?php foreach ($copy->history->items as $item) : // Items Iteration
+        ?>
           <div class="col-sm-3 g-px-13 g-mb-30 g-rounded-5">
             <article class="u-block-hover g-rounded-5">
-              <img class="" src="<?= get_image(DIR_BG . 'career/' . $item->image) ?>" alt="Image Description" style="height:200px;object-fit:cover">
-              <div class="g-color-white g-bg-info g-font-size-14 g-py-30 g-px-15 align-height-item">
-                <div class="g-font-asap g-color-white g-font-weight-600 g-font-size-30 "><?= $item->year ?></div>
-                <ul class="g-pl-20">
-                  <?php foreach ($item->content as $content) : ?>
-                    <li>
-                      <?= $content ?>
-                    </li>
-                  <?php endforeach; ?>
-                </ul>
+              <img class="" src="<?= get_image(DIR_BG . 'about/history/' . $item->image) ?>" alt="Image Description" style="height:200px;object-fit:cover">
+              <div class="dzsparallaxer height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
+                <div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center" style="height: 100%;background: url(<?= get_image(DIR_BG . 'about/history/' . $item->image) ?>);background-size: cover;background-position-x: right;"></div>
+                <div class="pending-show animated d-zap g-color-white g-font-size-14 g-py-30 g-px-15 align-height-item" style="height: 100%; background-image: linear-gradient( 100deg , rgba(23, 162, 184, 0.9) 0%, rgba(23, 162, 184, 0.9) 70%, rgba(23, 162, 184, 0.9) 100%);">
+                  <div class="g-font-asap g-color-white g-font-weight-600 g-font-size-30 "><?= $item->year ?></div>
+                  <ul class="g-pl-20">
+                    <?php foreach ($item->content as $content) : ?>
+                      <li>
+                        <?= $content ?>
+                      </li>
+                    <?php endforeach; ?>
+                  </ul>
+                </div>
               </div>
             </article>
           </div>
-          <!-- End Job Item -->
-        <?php endforeach; ?>
-        <!-- End Items Iteration -->
+        <?php endforeach; //End Items Iteration 
+        ?>
       </div>
     </div>
 
@@ -226,114 +229,116 @@
       </div>
     </div>
 
-    <div id="history-carousel" class="g-mt-20 align-height-list">
-      <!-- Items Iteration -->
-      <?php foreach ($copy->history->items as $item) : ?>
-        <!-- Job Item -->
+    <div id="history-carousel" class="g-mt-20 align-height-list container">
+      <?php foreach ($copy->history->items as $item) : //Items Iteration
+      ?>
         <div class="row g-mb-30 g-rounded-5 no-gutters">
           <div class="col">
-            <div class="g-color-white g-bg-info g-font-size-14 g-pl-60 g-pt-60 g-pb-15 g-pr-15  align-height-item" style="background-image: url(<?= get_image(DIR_BG . 'career/' . $item->image) ?>; opacity: 0.5;">
-              <div class="g-font-asap g-color-white g-font-weight-600 g-font-size-30 "><?= $item->year ?></div>
-              <ul class="g-pl-20">
-                <?php foreach ($item->content as $content) : ?>
-                  <li>
-                    <?= $content ?>
-                  </li>
-                <?php endforeach; ?>
-              </ul>
+            <div class="dzsparallaxer height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
+              <div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center" style="height: 100%;background: url(<?= get_image(DIR_BG . 'about/history/' . $item->image) ?>);background-size: cover;<?= $this->agent->is_mobile() ? 'background-position-x: right;' : '' ?>"></div>
+              <div class="pending-show animated d-zap g-color-white g-font-size-14 g-pl-60 g-pt-60 g-pb-15 g-pr-15  align-height-item" style="height: 100%; background-image: linear-gradient( 100deg , rgba(23, 162, 184, 0.9) 0%, rgba(23, 162, 184, 0.9) 70%, rgba(23, 162, 184, 0.9) 100%);">
+                <div class="g-font-asap g-color-white g-font-weight-600 g-font-size-30 "><?= $item->year ?></div>
+                <ul class="g-pl-20">
+                  <?php foreach ($item->content as $content) : ?>
+                    <li>
+                      <?= $content ?>
+                    </li>
+                  <?php endforeach; ?>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="col g-pos-rel">
-              <div class="img" style="background-image: url(<?= get_image(DIR_BG . 'career/' . $item->image) ?>); height: 100%;padding-bottom: 62.5%;background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;" ></div>
-            <!-- <img class="" src="" alt="<?= $item->year ?>" style="object-fit:cover"> -->
-        </div>
-        <div class="">
+            <div class="img" style="background-image: url(<?= get_image(DIR_BG . 'about/history/' . $item->image) ?>); height: 100%;padding-bottom: 62.5%;background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"></div>
+          </div>
+          <div class="">
 
+          </div>
         </div>
+      <?php endforeach; // End Items Iteration
+      ?>
     </div>
-    <!-- End Job Item -->
-  <?php endforeach; ?>
-  <!-- End Items Iteration -->
-  </div>
 
-  <script>
-    $(window).ready(function() {
-      var element_id = '#history-carousel';
-      $(element_id).owlCarousel({
-        loop: false,
-        margin: 0,
-        dots: false,
-        nav: false,
-        autoplay: false,
-        autoplayTimeout: 1500,
-        autoplayHoverPause: true,
-        responsive: {
-          0: {
-            items: 1
+    <script>
+      $(window).ready(function() {
+        var element_id = '#history-carousel';
+        $(element_id).owlCarousel({
+          loop: false,
+          margin: 0,
+          dots: false,
+          nav: false,
+          autoplay: false,
+          autoplayTimeout: 1500,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1
+            },
+            600: {
+              items: 1
+            },
+            1000: {
+              items: 1
+            }
           },
-          600: {
-            items: 1
-          },
-          1000: {
-            items: 1
-          }
-        },
-        navText: ['', '']
-      });
+          navText: ['', '']
+        });
 
-      //$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
-      $(element_id + ' .owl-controls').attr('style', 'margin-top: 30px;');
-      var screen_display = <?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
-      // console.log(screen_display);
-      var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '60' : '98.5' ?>) / 100) / 2;
-      //console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
-      // $(element_id + ' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 410px;width: 70%;right: ' + margin_side + 'px;')
-      //Hide last item after carousel init because if hide first courosel not working
+        //$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
+        $(element_id + ' .owl-controls').attr('style', 'margin-top: 30px;');
+        var screen_display = <?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
+        // console.log(screen_display);
+        var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '60' : '98.5' ?>) / 100) / 2;
+        //console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
+        // $(element_id + ' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 410px;width: 70%;right: ' + margin_side + 'px;')
+        //Hide last item after carousel init because if hide first courosel not working
 
-      // Custom Click DOt
-      $('#custom-nav-history').find('.owl-dot').click(function() {
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-        $(element_id).trigger('to.owl.carousel', [$(this).index(), 300, true]);
+        // Custom Click DOt
+        $('#custom-nav-history').find('.owl-dot').click(function() {
+          $(this).siblings().removeClass('active');
+          $(this).addClass('active');
+          $(element_id).trigger('to.owl.carousel', [$(this).index(), 300, true]);
+        });
       });
-    });
-  </script>
-<?php endif; //end desktop 
-?>
+    </script>
+  <?php endif; //end desktop 
+  ?>
 </section>
 <!-- End History -->
 
 <!-- Strategy & Vision -->
 <section>
   <?php if ($this->agent->is_mobile()) : ?>
-    <div class="g-py-60 g-color-white" style="background: linear-gradient(90deg, rgba(11, 144, 185, 0.9), rgba(19, 182, 127, 0.9));">
-      <div class="container">
-        <div class="g-bg-white g-pa-40 g-rounded-5" style="box-shadow:1px 6px 20px 2px rgba(0, 0, 0, 0.1)">
-          <div class="g-color-black g-font-size-24 g-font-weight-600 g-mb-00">
-            <?= $copy->mission->title ?>
-          </div>
-          <div class="g-font-size-18 g-color-black-opacity-0_8 g-mb-30">
-            <div class="g-font-size-36 g-color-blue float-left g-line-height-0" style="padding-top: 21px;padding-right: 10px;">" </div>
-            <?= $copy->mission->message ?>
-            <div class="g-font-size-36 g-color-blue g-bg-transparent" style="display: inline; margin-top:25; line-height:0.5"> "</div>
-          </div>
-          <div class="g-color-black g-font-size-24 g-font-weight-600 g-mb-30">
-            <?= $copy->vision->title ?>
-          </div>
-          <div class="g-font-size-18 g-color-black-opacity-0_8">
-            <div class="g-font-size-36 g-color-blue float-left g-line-height-0" style="padding-top: 21px;padding-right: 10px;">" </div>
-            <?= $copy->vision->message ?>
-            <div class="g-font-size-36 g-color-blue g-bg-transparent" style="display: inline; margin-top:25; line-height:0.5"> "</div>
+    <div class="u-bg-overlay g-bg-w4c-blue-gradient-v1--after g-bg-img-hero" style="background-image: url(<?= base_url(DIR_BG . 'about/strategy.png') ?>);">
+      <div class="container u-bg-overlay__inner g-color-white">
+        <div class="g-py-60 g-color-white">
+          <div class="container">
+            <div class="g-bg-white g-pa-40 g-rounded-5" style="box-shadow:1px 6px 20px 2px rgba(0, 0, 0, 0.1)">
+              <div class="g-color-black g-font-size-24 g-font-weight-600 g-mb-00">
+                <?= $copy->mission->title ?>
+              </div>
+              <div class="g-font-size-18 g-color-black-opacity-0_8 g-mb-30">
+                <div class="g-font-size-36 g-color-blue float-left g-line-height-0" style="padding-top: 21px;padding-right: 10px;">" </div>
+                <?= $copy->mission->message ?>
+                <div class="g-font-size-36 g-color-blue g-bg-transparent" style="display: inline; margin-top:25; line-height:0.5"> "</div>
+              </div>
+              <div class="g-color-black g-font-size-24 g-font-weight-600 g-mb-30">
+                <?= $copy->vision->title ?>
+              </div>
+              <div class="g-font-size-18 g-color-black-opacity-0_8">
+                <div class="g-font-size-36 g-color-blue float-left g-line-height-0" style="padding-top: 21px;padding-right: 10px;">" </div>
+                <?= $copy->vision->message ?>
+                <div class="g-font-size-36 g-color-blue g-bg-transparent" style="display: inline; margin-top:25; line-height:0.5"> "</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- <div class="g-py-60 g-color-white u-bg-overlay g-bg-w4c-blue-gradient-v1--after g-bg-img-hero g-py-200--md g-py-80" style="background-image: url(<?= base_url(DIR_BG . 'about/strategy.png') ?>);"> -->
+
   <?php else : ?>
-    <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-overflow-hidden" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
-      <div class="divimage dzsparallaxer--target w-100" background-image: url(<?= base_url(DIR_IMG . 'bg/2-conversion-homepage.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);">
-      </div>
-      <div style="background:linear-gradient(101.14deg, #17A2B8CC 2.37%, #22B78CCC 56.12%, #2AC769CC 98.58%); <?= $this->agent->is_mobile() ?: 'height: 367px' ?>;">
-      </div>
+    <div class="u-bg-overlay g-bg-w4c-blue-gradient-v1--after g-bg-img-hero g-py-200--md g-py-80" style="background-image: url(<?= base_url(DIR_BG . 'about/strategy.png') ?>);">
     </div>
     <div class="container" style="margin-top:-280px">
       <div class="row justify-content-center align-height-list" style="margin-bottom:-30px">
@@ -386,7 +391,7 @@
                 <div class="g-bg-cover g-bg-black-opacity-0_6--after g-bg-primary-opacity-0_3--hover">
                   <img class="u-block-hover__main--mover-down" src="<?= get_image(DIR_BG . 'career/' . $item->image) ?>" alt="Image Description" style="height:400px">
                 </div>
-                <div class="" style="position: absolute; bottom: 0px; g-z-index-1">
+                <div class="g-z-index-1" style="position: absolute; bottom: 0px; ">
                   <div class="g-pl-20 d-block g-color-white g-font-weight-600 g-font-size-36 g-mb-20 g-line-height-1_2 g-bg-transparent"><?= $item->title ?></div>
                   <!-- <h2 class="h2 g-color-white g-font-weight-600 mb-3">
 									<a class="u-link-v5 g-color-white g-color-primary--hover g-cursor-pointer" href="#!">Talking Why Her?</a>
@@ -457,7 +462,7 @@
           <!-- Job Item -->
           <div class="col-md-3">
             <div class="u-block-hover">
-              <div class="g-bg-cover g-bg-black-opacity-0_6--after g-bg-blue--hover-parent g-none--hover-parent">
+              <div class="g-bg-cover g-bg-black-opacity-0_6--after g-bg-blue--hover-parent">
                 <img class="u-block-hover__main--mover-down" src="<?= get_image(DIR_BG . 'career/' . $item->image) ?>" alt="Image Description" style="height:450px">
               </div>
               <div class="u-block-hover__additional--partially-slide-up g-z-index-1">
@@ -789,7 +794,7 @@
         <!-- Items Iteration -->
         <?php foreach ($copy->team->items as $index => $item) : ?>
           <div class="g-pos-rel g-bg-white align-height-item g-my-20 g-mx-15 box-shadow-down text-center">
-            <img class="rounded-circle" src="<?= get_image(DIR_IMG . 'testimonial/' . $item->image) ?>" alt="Photo <?= $item->name ?>" style="height:376.31px;object-fit:cover;">
+            <img src="<?= get_image(DIR_BG . 'about/team/' . $item->image) ?>" alt="Photo <?= $item->name ?>" style="height:376.31px;object-fit:cover;">
             <div class="g-pa-30">
               <div class="g-color-black g-font-weight-600 g-font-size-18 g-line-height-1 g-mb-30"><?= $item->name ?></div>
               <div class="text-center" style="position:absolute;bottom:30px;left:0px;width:100%">
@@ -854,7 +859,8 @@
             <?= $copy->cta->title ?></div>
         </div>
         <div class="col-md-4 col-10 g-mb-15 pt-5 align-self-center">
-          <a class="btn btn-block btn-info g-color-white g-font-size-20 g-font-weight-600 g-rounded-50 g-py-15 g-px-50" href="<?= $copy->cta->button->url ?>">
+        <!-- <a class="btn btn-info float-right g-rounded-50 g-py-10 g-px-80 g-font-size-18 text-uppercase" href="http://localhost/w4c/official/career/job">See More</a> -->
+          <a class="btn btn-info float-right g-rounded-50 g-py-10 g-px-80 g-font-size-18 text-uppercase g-py-15" href="<?= $copy->cta->button->url ?>">
             <?= strtoupper($copy->cta->button->title) ?>
           </a>
         </div>

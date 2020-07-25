@@ -58,53 +58,7 @@
   },
   "job_category": {
     "title": "Job Categories",
-    "subtitle": "What Are You Most Passionate About?",
-    "items": [
-      {
-        "title": "Coorporate Function",
-        "job": [
-          "lorem",
-          "ipsum",
-          "sir",
-          "dor amet"
-        ],
-        "image": "cf.png",
-        "icon": "icon-bag"
-      },
-      {
-        "title": "Tech",
-        "job": [
-          "lorem",
-          "ipsum",
-          "sir",
-          "dor amet"
-        ],
-        "image": "tech.png",
-        "icon": "icon-screen-desktop"
-      },
-      {
-        "title": "Waste Management Operations",
-        "job": [
-          "lorem",
-          "ipsum",
-          "sir",
-          "dor amet"
-        ],
-        "image": "wm.png",
-        "icon": "icon-trash"
-      },
-      {
-        "title": "Waste Management Consultancy & Educations",
-        "job": [
-          "lorem",
-          "ipsum",
-          "sir",
-          "dor amet"
-        ],
-        "image": "wmce.png",
-        "icon": "icon-notebook"
-      }
-    ]
+    "subtitle": "What Are You Most Passionate About?"
   },
   "testimony": {
     "title": "Testimonial",
@@ -114,31 +68,31 @@
         "name": "Adhitya Prayoga",
         "position": "Circular Economy Strategist",
         "message": "I have found my Ikigai by working at Waste4Change. I do not need to make up stories when the future generation asks me \"What did you do in the fight against climate change?\" I can proudly say \"I did it with Waste4Change\".",
-        "image": "img1.jpg"
+        "image": "Adhitya-Prayoga.jpg"
       },
       {
         "name": "Saka Dwi Hanggara",
         "position": "Behaviour Change Engineer",
         "message": "I found great colleagues and a fun working environment here at Waste4Change. In addition, I take pride in the works that we perform because we know that  we're doing something great!",
-        "image": ""
+        "image": "Saka-Dwi-Hanggara.jpg"
       },
       {
         "name": "Khairunnisa Yusmalina Humaam",
         "position": "Organic SPV",
         "message": "I joined Waste4Change ever since its organic waste processing methods were still very simple, and now we already have 2 effective organic waste processing methods, which are Open Windrow and Black Soldier Flies. From that process alone, I learned a lot about leadership, strategic thinking, and solution-based mindset. There is not a more suitable place for those who want to keep learning and develop themselves than in Waste4Change",
-        "image": ""
+        "image": "Khairunnisa-Yusmalina-Humaam.jpg"
       },
       {
         "name": "Muhamad Andriansyah",
         "position": "Site Manager MRF",
         "message": "Working in Waste4Change has enabled me to gain a holistic understanding about the recycling industry, as well as learning about its business process from upstream to downstream. Moreover I also managed to obtain knowledge regarding the business opportunity in waste management sector, all while contributing to the environment",
-        "image": ""
+        "image": "Muhamad-Andriansyah.jpg"
       },
       {
         "name": "Siti Annisa",
         "position": "Project Coordinator",
         "message": "Waste4Change has become one of the places in which I can contribute both in knowledge and concrete actions to initiate real environmental changes. As a graduate from Environmental Engineering, it is very thrilling to be able to work in Waste4Change. This is because I get to know many colleagues and friends who are very supportive towards each other, while at the same time, I am given the opportunity (and the luxury) to implement the knowledge that I have obtained",
-        "image": ""
+        "image": "Siti-Annisa.jpg"
       }
     ]
   },
@@ -172,62 +126,6 @@
   },
   "latest_job": {
     "title": "Latest Job",
-    "items": [
-      {
-        "title": "Product Designer",
-        "category": "Tech",
-        "location": "Semarang",
-        "type": {
-          "title": "Full Time",
-          "color": "#17A2B8"
-        }
-      },
-      {
-        "title": "Product Designer",
-        "category": "Tech",
-        "location": "Semarang",
-        "type": {
-          "title": "Part Time",
-          "color": "#2AC769"
-        }
-      },
-      {
-        "title": "Product Designer",
-        "category": "Tech",
-        "location": "Semarang",
-        "type": {
-          "title": "Intern",
-          "color": "#F6A609"
-        }
-      },
-      {
-        "title": "Product Designer",
-        "category": "Tech",
-        "location": "Semarang",
-        "type": {
-          "title": "Full Time",
-          "color": "#17A2B8"
-        }
-      },
-      {
-        "title": "Product Designer",
-        "category": "Tech",
-        "location": "Semarang",
-        "type": {
-          "title": "Part Time",
-          "color": "#2AC769"
-        }
-      },
-      {
-        "title": "Product Designer",
-        "category": "Tech",
-        "location": "Semarang",
-        "type": {
-          "title": "Intern",
-          "color": "#F6A609"
-        }
-      }
-    ],
     "SeeDetail": "See Detail",
     "CTA": "See More"
   },

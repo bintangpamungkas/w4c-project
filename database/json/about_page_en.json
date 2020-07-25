@@ -4,19 +4,11 @@
     "items": [
       {
         "title": "Solusi Bijak sampah",
-        "image": "slide.png"
+        "image": "1.jpg"
       },
       {
         "title": "Solusi Bijak sampah",
-        "image": "slide.png"
-      },
-      {
-        "title": "Solusi Bijak sampah",
-        "image": "slide.png"
-      },
-      {
-        "title": "Solusi Bijak sampah",
-        "image": "slide.png"
+        "image": "2.jpg"
       }
     ]
   },
@@ -25,7 +17,7 @@
     "items": [
       {
         "year": "2014",
-        "image": "2020.png",
+        "image": "2014.jpg",
         "content": [
           "Waste4Change was first initiated based on a discussion between PT Greeneration Indonesia & Ecobali (PT Bumi Lestari Bali) in an effort to create a company whose mission is to reduce the number of waste that end up in landfills ",
           "Waste4Change is officially founded by Mohamad Bijaksana Junerosano under the name PT Wasteforchange Alam Indonesia"
@@ -33,14 +25,14 @@
       },
       {
         "year": "2015",
-        "image": "2020.png",
+        "image": "2015.jpg",
         "content": [
           "Waste4Change's very first Material Recovery Facility is constructed in Vida Bumipala, East Bekasi, Indonesia"
         ]
       },
       {
         "year": "2016",
-        "image": "2020.png",
+        "image": "2016.jpg",
         "content": [
           "Waste4Change cooperated with RDF technology provider to launch the Zero Waste to Landfill program ",
           "Waste4Change launched the Extended Producer Responsibility (EPR) program"
@@ -48,14 +40,14 @@
       },
       {
         "year": "2017",
-        "image": "2020.png",
+        "image": "2017.jpg",
         "content": [
           "Waste4Change co-organized the first Indonesia Circular Economy Forum (ICEF) in collaboration with Greeneration Foundation "
         ]
       },
       {
         "year": "2018",
-        "image": "2020.png",
+        "image": "2018.jpg",
         "content": [
           "Waste4Change launched its Send Your Waste (SYW) and Dropbox programs",
           "Waste4Change was selected as 1 out of 8 chosen social entrepreneurs in the DBS-NUS Social Venture Challenge Asia 2018",
@@ -64,7 +56,7 @@
       },
       {
         "year": "2019",
-        "image": "2020.png",
+        "image": "2019.jpg",
         "content": [
           "Waste4Change was awarded as The Most Responsible Company by World's Most Valued Business (MVB) Indonesia",
           "Waste4Change acquired investments from Agaeti Ventures and Partners to increase the waste-processing quality and quantity in the Material Recovery Facility ",
@@ -74,7 +66,7 @@
       },
       {
         "year": "2020",
-        "image": "2020.png",
+        "image": "2020.jpg",
         "content": [
           "Waste4Change officially acquired Sampah Muda, a waste management startup based ini Semarang",
           "Waste4Change is selected as the winner out of 15 participants of Social Entrepreneur Bootcamp DBS Bank Indonesia"
@@ -83,7 +75,7 @@
     ]
   },
   "mission": {
-    "title": "Mission",
+    "title": "Strategy",
     "message": "Shifting the Waste Management Ecosystem towards a More Responsible, Collaborative, and Technology-based Waste Management System that Supports the Implementation of Circular Economy"
   },
   "vision": {
@@ -123,7 +115,7 @@
       },
       {
         "title": "Create",
-        "description": "Process the collected waste in a responsible way to become recycled material",
+        "description": "Process the collected waste in a responsible way to become recycled material ",
         "example": [
           "Extended Producer Responsibility",
           "In-Store Recycling"
@@ -216,27 +208,32 @@
       {
         "name": "Adhitya Prayoga",
         "position": "Circular Economy Strategist",
-        "image": "img1.jpg"
+        "image": "Adhitya-Prayoga.jpg"
       },
       {
         "name": "Saka Dwi Hanggara",
         "position": "Behaviour Change Engineer",
-        "image": ""
+        "image": "Saka-Dwi-Hanggara.jpg"
+      },
+      {
+        "name" : "Bilqis Rulista A. Z",
+        "position": "Community Development Designer",
+        "image": "Bilqis-Rulista-A.-Z.jpg"
       },
       {
         "name": "Khairunnisa Yusmalina Humaam",
         "position": "Organic SPV",
-        "image": ""
+        "image": "Khairunnisa-Yusmalina-Humaam.jpg"
       },
       {
         "name": "Muhamad Andriansyah",
         "position": "Site Manager MRF",
-        "image": ""
+        "image": "Muhamad-Andriansyah.jpg"
       },
       {
         "name": "Siti Annisa",
         "position": "Project Coordinator",
-        "image": ""
+        "image": "Siti-Annisa.jpg"
       }
     ]
   },

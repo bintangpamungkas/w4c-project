@@ -670,8 +670,19 @@
 .bg-w4c-green-v1{
   background-color: #88C662!important;
 }
+.g-bg-w4c-blue-gradient-v1 {
+    background: linear-gradient(101.14deg, #17A2B8CC 2.37%, #22B78CCC 56.12%, #2AC769CC 98.58%) !important;
+}
 
-.arrow-box:before{
+.g-bg-w4c-blue-gradient-v1--after::after {
+    background-image: linear-gradient(101.14deg, #17A2B8CC 1.37%, #22B78CCC 46.12%, #2AC769CC 88.58%) !important;
+}
+
+.g-bg-w4c-blue-gradient-v1--before::before {
+    background-image: linear-gradient(101.14deg, #17A2B8CC 1.37%, #22B78CCC 46.12%, #2AC769CC 88.58%) !important;
+}
+
+.arrow-box:before {
     bottom: 100%;
     left: 20%;
     border: solid transparent;

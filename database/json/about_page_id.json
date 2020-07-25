@@ -4,20 +4,12 @@
     "items": [
       {
         "title": "Solusi Bijak sampah",
-        "image": "slide.png"
+        "image": "1.jpg"
       },
       {
         "title": "Solusi Bijak sampah",
-        "image": "slide.png"
-      },
-      {
-        "title": "Solusi Bijak sampah",
-        "image": "slide.png"
-      },
-      {
-        "title": "Solusi Bijak sampah",
-        "image": "slide.png"
-      }
+        "image": "2.jpg"
+      }     
     ]
   },
   "history": {
@@ -25,7 +17,7 @@
     "items": [
       {
         "year": "2014",
-        "image": "2020.png",
+        "image": "2014.jpg",
         "content": [
           "Waste4Change pertama kali tercetus dari diskusi antara PT Greeneration Indonesia & Ecobali (PT Bumi Lestari Bali) untuk membentuk perusahaan pengelolaan sampah yang memiliki misi mengurangi jumlah sampah yang berakhir di TPA",
           "Waste4Change resmi didirikan oleh Mohamad Bijaksana Junerosano dengan nama PT Wasteforchange Alam Indonesia"
@@ -33,14 +25,14 @@
       },
       {
         "year": "2015",
-        "image": "2020.png",
+        "image": "2015.jpg",
         "content": [
           "Rumah Pemulihan Material pertama Waste4Change resmi dibangun di komplek VIDA Bumipala, Bekasi Timur, Indonesia"
         ]
       },
       {
         "year": "2016",
-        "image": "2020.png",
+        "image": "2016.jpg",
         "content": [
           "Waste4Change bekerja sama dengan mitra daur ulang penyedia RDF Technology guna meluncurkan program Zero Waste to Landfill",
           "Waste4Change meluncurkan program Extended Producer Responsibility (EPR)"
@@ -48,14 +40,14 @@
       },
       {
         "year": "2017",
-        "image": "2020.png",
+        "image": "2017.jpg",
         "content": [
           "Waste4Change bekerja sama dengan Greeneration Foundation mengadakan Indonesia Circular Economy Forum (ICEF) yang pertama kalinya"
         ]
       },
       {
         "year": "2018",
-        "image": "2020.png",
+        "image": "2018.jpg",
         "content": [
           "Waste4Change meluncurkan program Send Your Waste (SYW) & Dropbox Waste4Change",
           "Waste4Change termasuk dalam 1 dari 8 perusahaan sosial yang terpilih dalam DBS-NUS Social Venture Challenge Asia 2018",
@@ -64,7 +56,7 @@
       },
       {
         "year": "2019",
-        "image": "2020.png",
+        "image": "2019.jpg",
         "content": [
           "Waste4Change mendapatkan penghargaan sebagai The Most Responsible Company dari World's Most Valued Business (MVB) Indonesia",
           "Waste4Change mendapatkan investasi dari Agaeti Ventures dan Partners untuk meningkatkan kualitas dan kuantitas pemrosesan sampah di Rumah Pemulihan Material Waste4Change",
@@ -74,7 +66,7 @@
       },
       {
         "year": "2020",
-        "image": "2020.png",
+        "image": "2020.jpg",
         "content": [
           "Waste4Change resmi mengakuisisi Sampah Muda, startup penggerak persampahan yang berbasis di Semarang",
           "Waste4Change terpilih menjadi pemenang dari 15 peserta Social Entrepreneur Bootcamp DBS Bank Indonesia"
@@ -83,7 +75,7 @@
     ]
   },
   "mission": {
-    "title": "Misi",
+    "title": "Strategi",
     "message": "Perubahan Ekosistem Pengelolaan Sampah yang Bertanggung Jawab dengan Berlandaskan Kolaborasi dan Teknologi Menuju Penerapan Ekonomi Melingkar (Circular Economy) dan Indonesia Bebas Sampah"
   },
   "vision":{
@@ -104,7 +96,7 @@
       },
       {
         "title": "Campaign",
-        "description": "Memfasilitasi program sosialisasi dan edukasi antar pemangku kepentingan untuk menciptakan perubahan ekosistem dalam rangka mewujudkan Ekonomi Sirkular",
+        "description": "Memfasilitasi program sosialisasi dan edukasi antar pemangku kepentingan untuk menciptakan perubahan ekosistem dalam rangka mewujudkan Ekonomi Sirkular  ",
         "example": [
           "AKABIS (Waste Management Academy)"
         ],
@@ -123,7 +115,7 @@
       },
       {
         "title": "Create",
-        "description": "Memproses sampah yang terkumpul dengan cara yang bertanggung jawab untuk diubah menjadi material daur ulang ",
+        "description": "Memproses sampah yang terkumpul dengan cara yang bertanggung jawab untuk diubah menjadi material daur ulang",
         "example": [
           "Extended Producer Responsibility",
           "In-Store Recycling"
@@ -219,27 +211,32 @@
       {
         "name": "Adhitya Prayoga",
         "position": "Circular Economy Strategist",
-        "image": "img1.jpg"
+        "image": "Adhitya-Prayoga.jpg"
       },
       {
         "name": "Saka Dwi Hanggara",
         "position": "Behaviour Change Engineer",
-        "image": ""
+        "image": "Saka-Dwi-Hanggara.jpg"
+      },
+      {
+        "name" : "Bilqis Rulista A. Z",
+        "position": "Community Development Designer",
+        "image": "Bilqis-Rulista-A.-Z.jpg"
       },
       {
         "name": "Khairunnisa Yusmalina Humaam",
         "position": "Organic SPV",
-        "image": ""
+        "image": "Khairunnisa-Yusmalina-Humaam.jpg"
       },
       {
         "name": "Muhamad Andriansyah",
         "position": "Site Manager MRF",
-        "image": ""
+        "image": "Muhamad-Andriansyah.jpg"
       },
       {
         "name": "Siti Annisa",
         "position": "Project Coordinator",
-        "image": ""
+        "image": "Siti-Annisa.jpg"
       }
     ]
   },
