@@ -242,7 +242,6 @@
                 <?php endforeach; ?>
               </ul>
             </div>
-
           </div>
           <div class="col g-pos-rel">
               <div class="img" style="background-image: url(<?= get_image(DIR_BG . 'career/' . $item->image) ?>); height: 100%;padding-bottom: 62.5%;background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;" ></div>

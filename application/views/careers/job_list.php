@@ -1,102 +1,106 @@
 <!-- Search Bar -->
 <section class="g-white g-bg-white u-shadow-v20 g-pt-80">
-  <div>
-    <div class="container">
-      <div class="">
-        <!-- <form action=""> -->
-        <div class="text-right g-pt-<?= $this->agent->is_mobile() ? '10' : '50' ?>">
-          <?php foreach ($breadcrumb as $bread) : ?>
-            <?php if ($bread['active'] != true) : ?>
-              <a class="g-color-blue g-text-transform-none" href="<?= site_url($bread['url']) ?>">
-                <?php echo $bread['title'] ?>
-              </a>
-              <i class="g-color-black fa fa-angle-right g-mx-10"></i>
-            <?php else : ?>
-              <span class="g-color-black"><?php echo $bread['title'] ?> </span>
-            <?php endif; ?>
-          <?php endforeach; ?>
-        </div>
-        <div class="row justify-align-center <?= ($this->agent->is_mobile()) ? ' g-pt-50' : ' g-py-50' ?>">
-          <?php if ($this->agent->is_mobile()) : ?>
-            <div class="col">
-              <div class="form-group g-m-reset" data-toggle="modal" data-target="#modal-mobile-search">
-                <div class="input-group g-brd-primary--focus">
-                  <div class="input-group-prepend g-brd-right-none">
-                    <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1 g-brd-right-none g-brd-blue--focus"><i class="icon-magnifier"></i></span>
-                  </div>
-                  <input class="form-control g-pa-12 g-brd-left-none g-brd-blue--focus" type="text" placeholder="<?= $copy->Search . ' ' . $copy->Position . ', ' . $copy->Location . ', ' . $copy->Type ?>">
+  <div class="container">
+    <div class="">
+      <div class="text-right g-pt-<?= $this->agent->is_mobile() ? '10' : '50' ?>">
+        <?php foreach ($breadcrumb as $bread) : ?>
+          <?php if ($bread['active'] != true) : ?>
+            <a class="g-color-blue g-text-transform-none" href="<?= site_url($bread['url']) ?>">
+              <?php echo $bread['title'] ?>
+            </a>
+            <i class="g-color-black fa fa-angle-right g-mx-10"></i>
+          <?php else : ?>
+            <span class="g-color-black"><?php echo $bread['title'] ?> </span>
+          <?php endif; ?>
+        <?php endforeach; ?>
+      </div>
+      <div class="row justify-align-center <?= ($this->agent->is_mobile()) ? ' g-pt-50' : ' g-py-50' ?>">
+        <?php if ($this->agent->is_mobile()) : ?>
+          <div class="col">
+            <div class="form-group g-m-reset" data-toggle="modal" data-target="#modal-mobile-search">
+              <div class="input-group g-brd-primary--focus">
+                <div class="input-group-prepend g-brd-right-none">
+                  <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1 g-brd-right-none g-brd-blue--focus"><i class="icon-magnifier"></i></span>
                 </div>
+                <input id="inputSearch" class="form-control g-pa-12 g-brd-left-none g-brd-blue--focus" type="text" placeholder="<?= $copy->Search . ' ' . $copy->Position . ', ' . $copy->Location . ', ' . $copy->Type ?>">
               </div>
-              <style>
-                .ui-autocomplete {
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-                  z-index: 1510 !important;
-                }
-              </style>
+            </div>
+            <style>
+              .ui-autocomplete {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1510 !important;
+              }
+            </style>
 
-              <!-- Modal Search -->
-              <div id="modal-mobile-search" class="modal text-center g-font-asap g-px-0 g-mx-10">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content g-py-20">
-                    <button type="button" class="close text-right g-font-size-18 g-px-10 g-mt-0" data-dismiss="modal" aria-label="Close">
-                      <i class="hs-icon hs-icon-close g-color-black g-font-weight-900 g-font-size-20"></i>
-                    </button>
-                    <div id="modal-box">
-                      <div class="row g-mt-20 g-px-30">
-                        <div class="col-12 g-pa-5">
-                          <div class="form-group g-ma-0">
-                            <input id="inputPosition" class="form-control g-pa-12 g-brd-blue--focus" type="text" value="<?= @$position ?>" placeholder="<?= $copy->Position ?>">
-                          </div>
+            <!-- Modal Search -->
+            <div id="modal-mobile-search" class="modal text-center g-font-asap g-px-0 g-mx-10">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content g-py-20">
+                  <button type="button" class="close text-right g-font-size-18 g-px-10 g-mt-0" data-dismiss="modal" aria-label="Close">
+                    <i class="hs-icon hs-icon-close g-color-black g-font-weight-900 g-font-size-20"></i>
+                  </button>
+                  <div id="modal-box">
+                    <div class="row g-mt-20 g-px-30">
+                      <div class="col-12 g-pa-5">
+                        <div class="form-group g-ma-0">
+                          <input id="inputPosition" class="form-control g-pa-12 g-brd-blue--focus" type="text" value="<?= @$position ?>" placeholder="<?= $copy->Position ?>">
                         </div>
-                        <div class="col-12 g-pa-5">
-                          <div class="form-group g-ma-0">
-                            <input id="inputLocation" class="form-control g-pa-12 g-brd-blue--focus" type="text" value="<?= @$location ?>" placeholder="<?= $copy->Location ?>">
-                          </div>
+                      </div>
+                      <div class="col-12 g-pa-5">
+                        <div class="form-group g-ma-0">
+                          <input id="inputLocation" class="form-control g-pa-12 g-brd-blue--focus" type="text" value="<?= @$location ?>" placeholder="<?= $copy->Location ?>">
                         </div>
-                        <div class="col-12 g-pa-5">
-                          <div class="form-group g-ma-0">
-                            <input id="inputType" class="form-control g-pa-12 g-brd-blue--focus" type="text" value="<?= @$type ?>" placeholder="<?= $copy->Type ?>">
-                          </div>
+                      </div>
+                      <div class="col-12 g-pa-5">
+                        <div class="form-group g-ma-0">
+                          <input id="inputType" class="form-control g-pa-12 g-brd-blue--focus" type="text" value="<?= @$type ?>" placeholder="<?= $copy->Type ?>">
                         </div>
-                        <div class="col-12 g-pa-5">
-                          <button id="search" onclick="search()" class="btn btn-info btn-block g-pa-12 g-rounded-50 g-brd-2"><?= strtoupper($copy->Search) ?></button>
-                          <input class="d-none" id="inputCategory" class="form-control g-pa-12" type="text">
-                        </div>
+                      </div>
+                      <div class="col-12 g-pa-5">
+                        <button id="search" onclick="search()" class="btn btn-info btn-block g-pa-12 g-rounded-50 g-brd-2"><?= strtoupper($copy->Search) ?></button>
+                        <input class="d-none" id="inputCategory" class="form-control g-pa-12" type="text">
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- End Modal Search -->
             </div>
-          <?php else : ?>
-            <div class="col g-px-8">
-              <div class="form-group g-ma-0">
-                <input id="inputPosition" class="form-control g-pa-12 g-brd-blue--focus" type="text" value="<?= @$position ?>" placeholder="<?= $copy->Position ?>">
-              </div>
+            <!-- End Modal Search -->
+          </div>
+          <div class="col-12 <?= $this->agent->is_mobile() ? ' g-px-15 g-pt-10' : ' g-px-5' ?>">
+            <div id="search-message" class="<?= $this->agent->is_mobile() ? '' : ' '; ?>alert alert-dismissible fade show g-font-weight-500 g-mb-0 g-px-20 g-py-15 d-none" role="alert">
+              <button type="button" class="input-reset close g-font-size-16 g-mt-5 g-pt-10 g-font-weight-400" onclick="reset()">
+                <span aria-hidden="true">x</span>
+              </button>
+              <span id="search-total">0</span> Search result found
             </div>
-            <div class="col g-px-8">
-              <div class="form-group g-ma-0">
-                <input id="inputLocation" class="form-control g-pa-12 g-brd-blue--focus" type="text" value="<?= @$location ?>" placeholder="<?= $copy->Location ?>">
-              </div>
+          </div>
+        <?php else : ?>
+          <div class="col g-px-8">
+            <div class="form-group g-ma-0">
+              <input id="inputPosition" class="form-control g-pa-12 g-brd-blue--focus" type="text" value="<?= @$position ?>" placeholder="<?= $copy->Position ?>">
             </div>
-            <div class="col g-px-8">
-              <div class="form-group g-ma-0">
-                <input id="inputType" class="form-control g-pa-12 g-brd-blue--focus" type="text" value="<?= @$type ?>" placeholder="<?= $copy->Type ?>">
-              </div>
+          </div>
+          <div class="col g-px-8">
+            <div class="form-group g-ma-0">
+              <input id="inputLocation" class="form-control g-pa-12 g-brd-blue--focus" type="text" value="<?= @$location ?>" placeholder="<?= $copy->Location ?>">
             </div>
-            <div class="col g-px-8">
-              <button id="search" onclick="search()" class="btn btn-info btn-block g-pa-12 g-rounded-50 g-brd-2"><?= strtoupper($copy->Search) ?></button>
-              <input class="d-none" id="inputCategory" class="form-control g-pa-12" type="text">
+          </div>
+          <div class="col g-px-8">
+            <div class="form-group g-ma-0">
+              <input id="inputType" class="form-control g-pa-12 g-brd-blue--focus" type="text" value="<?= @$type ?>" placeholder="<?= $copy->Type ?>">
             </div>
-            <!-- <div class="col g-px-8">
+          </div>
+          <div class="col g-px-8">
+            <button id="search" onclick="search()" class="btn btn-info btn-block g-pa-12 g-rounded-50 g-brd-2"><?= strtoupper($copy->Search) ?></button>
+            <input class="d-none" id="inputCategory" class="form-control g-pa-12" type="text">
+          </div>
+          <!-- <div class="col g-px-8">
               <button class="btn btn-outline-info btn-block g-pa-12 g-rounded-50 g-brd-2"><?= strtoupper($copy->ViewJobList) ?></button>
             </div> -->
-          <?php endif; ?>
-        </div>
-        <!-- </form> -->
+        <?php endif; ?>
       </div>
     </div>
   </div>
@@ -105,13 +109,15 @@
 
 <!-- Job View -->
 <section class="">
-  <div class="<?= $this->agent->is_mobile() ? 'g-bg-white' : 'g-bg-gray-light-v4' ?> g-pt-35 g-pb-10">
+  <div class="<?= $this->agent->is_mobile() ? 'g-bg-white g-pt-10' : 'g-bg-gray-light-v4 g-pt-35' ?> g-pb-10">
     <div class="<?= $this->agent->is_mobile() ? '' : 'container' ?>">
       <div class="row g-mb-10">
-        <div class="col-md-8 col-12">
-          <div class="g-font-asap g-color-black text-uppercase g-font-weight-600 g-font-size-24 g-mb-10 <?= $this->agent->is_mobile() ? 'text-center' : '' ?>"><?= $copy->JobList ?></div>
-          <hr class="g-width-120 g-mt-20 g-mb-<?= $this->agent->is_mobile() ? '40' : '30 g-ml-0' ?> g-brd-2 g-brd-blue">
-        </div>
+        <?php if (!$this->agent->is_mobile()) : ?>
+          <div class="col-md-8 col-12">
+            <div class="g-font-asap g-color-black text-uppercase g-font-weight-600 g-font-size-24 g-mb-10 <?= $this->agent->is_mobile() ? 'text-center' : '' ?>"><?= $copy->JobList ?></div>
+            <hr class="g-width-120 g-mt-20 g-mb-<?= $this->agent->is_mobile() ? '40' : '30 g-ml-0' ?> g-brd-2 g-brd-blue">
+          </div>
+        <?php endif; ?>
         <!-- Sorting -->
         <div class="col-md-4 col-12">
           <div class="form-group g-color-black-opacity-0_7<?= $this->agent->is_mobile() ? 'g-mb-10 g-px-15' : 'g-mb-20 float-right' ?>">
@@ -126,25 +132,31 @@
           </div>
         </div>
         <!-- End Sorting -->
-        <div class="col-12 g-mb-20">
-          <div class="job-category g-pb-10" style="overflow: auto; white-space: nowrap;">
-            <button class="btn btn-info g-rounded-50 text-uppercase g-ml-15 g-mr-15 g-px-20 <?= $this->agent->is_mobile() ? 'g-font-size-14' : 'g-font-size-18' ?>" data-filter="*"><?= $copy->AllJobs ?></button>
-            <?php foreach ($job_category as $index => $category) : ?>
-              <button onclick="filterByCategory(this)" class="btn btn-outline-info g-rounded-50 text-uppercase g-mr-15 g-px-20 <?= $this->agent->is_mobile() ? 'g-font-size-14' : 'g-font-size-18' ?>" data-filter=".type--<?= $index ?>"><?= $category->name ?></button>
-            <?php endforeach; ?>
-          </div>
-        </div>
-        <div class="col-12 <?= $this->agent->is_mobile() ? ' g-px-25' : ' g-px-5' ?>">
-          <div id="search-message" class="<?= $this->agent->is_mobile() ? '' : ' '; ?>alert alert-dismissible fade show g-font-weight-500 g-mb-0 g-px-20 g-py-15 d-none" role="alert">
-            <button type="button" class="input-reset close g-font-size-16 g-mt-5 g-pt-10 g-font-weight-400" onclick="reset()">
-              <span aria-hidden="true">x</span>
-            </button>
-            <span id="search-total">0</span> Search result found
-          </div>
-        </div>
-      </div>
 
+        <?php if (!$this->agent->is_mobile()) : ?>
+          <div class="col-12 g-mb-20">
+            <div class="job-category g-pb-10" style="overflow: auto; white-space: nowrap;">
+              <button class="btn btn-info g-rounded-50 text-uppercase g-ml-15 g-mr-15 g-px-20 <?= $this->agent->is_mobile() ? 'g-font-size-14' : 'g-font-size-18' ?>" data-filter="*"><?= $copy->AllJobs ?></button>
+              <?php foreach ($job_category as $index => $category) : ?>
+                <button onclick="filterByCategory(this)" class="btn btn-outline-info g-rounded-50 text-uppercase g-mr-15 g-px-20 <?= $this->agent->is_mobile() ? 'g-font-size-14' : 'g-font-size-18' ?>" data-filter=".type--<?= $index ?>"><?= $category->name ?></button>
+              <?php endforeach; ?>
+            </div>
+          </div>
+          <div class="col-12 <?= $this->agent->is_mobile() ? ' g-px-25' : ' g-px-5' ?>">
+            <div id="search-message" class="<?= $this->agent->is_mobile() ? '' : ' '; ?>alert alert-dismissible fade show g-font-weight-500 g-mb-0 g-px-20 g-py-15 d-none" role="alert">
+              <button type="button" class="input-reset close g-font-size-16 g-mt-5 g-pt-10 g-font-weight-400" onclick="reset()">
+                <span aria-hidden="true">x</span>
+              </button>
+              <span id="search-total">0</span> Search result found
+            </div>
+          </div>
+        <?php else : ?>
+
+        <?php endif; ?>
+      </div>
     </div>
+
+  </div>
   </div>
   <div class="g-bg-gray-light-v4 g-pb-20">
     <div class="container">
@@ -240,6 +252,7 @@
     listitems.sort(function(a, b) {
       return $(a).find('.job-' + sortBy).html().toUpperCase().localeCompare($(b).find('.job-' + sortBy).html().toUpperCase());
     });
+    // console.log(listitems);
     $.each(listitems, function(index, item) {
       mylist.append(item);
     });
@@ -285,7 +298,6 @@
         $(this).fadeOut("slow");
       }
 
-
     });
     $('#search-message').removeClass('d-none');
     $('#search-message').addClass('d-block');
@@ -301,7 +313,33 @@
         'color': 'rgba(230, 75, 59)'
       });
     }
-    <?= $this->agent->mobile() ? '$("#modal-mobile-search").modal("hide")' : ''?>
+    <?php if ($this->agent->mobile()) : ?>
+      $("#modal-mobile-search").modal("hide");
+      var inputs = [],
+        input = '';
+      if ($('#inputPosition') != '') {
+        inputs.push($('#inputPosition').val());
+      }
+      if ($('#inputLocation') != '') {
+        inputs.push($('#inputLocation').val());
+      }
+      if ($('#inputType') != '') {
+        inputs.push($('#inputType').val());
+      }
+      $.each(inputs, function(index, value) {
+        // console.log(index+value);
+        console.log(input);
+        if (value != '') {
+          if (input != '') {
+            input = input + ", ";
+          }
+          input = input + value;
+        }
+      });
+
+      $('#inputSearch').val(input);
+    <?php endif; ?>
+
   }
 
   /** Drop Down Data */
@@ -346,6 +384,7 @@
     $("#inputLocation").autocomplete({
       source: locations,
       select: function(event, ui) {
+
         $('#search').attr('disabled', false);
       }
     });
@@ -370,7 +409,7 @@
       $('#search-form').submit();
     }
   }
-  
+
   function reset() {
     $('#inputPosition').val('');
     $('#inputLocation').val('');
