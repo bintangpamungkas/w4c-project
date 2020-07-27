@@ -676,6 +676,13 @@ function hotjar_tracking($activation)
 			'status' => true,
 		],
 		[
+			'site_url' => '/official/research',
+			'site_name' => '<!-- Hotjar Tracking Code for htttps://waste4change.com/official/contact/research -->',
+			'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
+			'tracking_code' => '1919444',
+			'status' => true,
+		],
+		[
 			'site_url' => '/official',
 			'site_name' => '<!-- Hotjar Tracking Code for htttps://waste4change.com/official -->',
 			'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',

@@ -88,9 +88,7 @@
 
 			$lang = $this->get_language();
 
-      $data['copy'] = json_decode(file_get_contents(base_url('database/json/about_page_'.$lang.'.json')));
-			// print_r($data['copy']);
-			// die();
+      $data['copy'] = json_decode(file_get_contents(base_url('database/json/about/about_page_'.$lang.'.json')));
 			$this->render_page('sites/about', $data, 'services');
 		}
 
