@@ -22,7 +22,7 @@
     <div class="text-right g-pt-<?= $this->agent->is_mobile() ? '10' : '50' ?>">
       <?php foreach ($breadcrumb as $bread) : ?>
         <?php if ($bread['active'] != true) : ?>
-          <a class="g-color-blue g-text-transform-none" href="<?= site_url($bread['url']) ?>">
+          <a class="w4c-color-blue g-text-transform-none" href="<?= site_url($bread['url']) ?>">
             <?php echo $bread['title'] ?>
           </a>
           <i class="g-color-black fa fa-angle-right g-mx-10"></i>
@@ -38,9 +38,9 @@
             <div class="form-group g-m-reset" data-toggle="modal" data-target="#modal-mobile-search">
               <div class="input-group g-brd-primary--focus">
                 <div class="input-group-prepend g-brd-right-none">
-                  <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1 g-brd-right-none g-brd-blue--focus"><i class="icon-magnifier"></i></span>
+                  <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1 g-brd-right-none g-brd-none--focus"><i class="icon-magnifier"></i></span>
                 </div>
-                <input class="form-control g-pa-12 g-brd-left-none g-brd-blue--focus" type="text" placeholder="<?= $copy->Search . ' ' . $copy->Position . ', ' . $copy->Location . ', ' . $copy->Type ?>">
+                <input class="form-control g-pa-12 g-brd-left-none g-brd-none--focus" type="text" placeholder="<?= $copy->Search . ' ' . $copy->Position . ', ' . $copy->Location . ', ' . $copy->Type ?>">
               </div>
             </div>
             <style>
@@ -63,25 +63,25 @@
                     <div class="row g-mt-20 g-px-30">
                       <div class="col-12 g-pa-5">
                         <div class="form-group g-ma-0">
-                          <input id="inputPosition" class="form-control g-pa-12 g-brd-blue--focus" type="text" name="position" value="<?= @$position ?>" placeholder="<?= $copy->Position ?>">
+                          <input id="inputPosition" class="form-control g-pa-12 g-brd-none--focus" type="text" name="position" value="<?= @$position ?>" placeholder="<?= $copy->Position ?>">
                         </div>
                       </div>
                       <div class="col-12 g-pa-5">
                         <div class="form-group g-ma-0">
-                          <input id="inputLocation" class="form-control g-pa-12 g-brd-blue--focus" type="text" name="location" value="<?= @$location ?>" placeholder="<?= $copy->Location ?>">
+                          <input id="inputLocation" class="form-control g-pa-12 g-brd-none--focus" type="text" name="location" value="<?= @$location ?>" placeholder="<?= $copy->Location ?>">
                         </div>
                       </div>
                       <div class="col-12 g-pa-5">
                         <div class="form-group g-ma-0">
-                          <input id="inputType" class="form-control g-pa-12 g-brd-blue--focus" type="text" name="type" value="<?= @$type ?>" placeholder="<?= $copy->Type ?>">
+                          <input id="inputType" class="form-control g-pa-12 g-brd-none--focus" type="text" name="type" value="<?= @$type ?>" placeholder="<?= $copy->Type ?>">
                         </div>
                       </div>
                       <div class="col-12 g-pa-5">
                         <button id="search" class="btn btn-info btn-block g-pa-12 g-rounded-50 g-brd-2"><?= strtoupper($copy->Search) ?></button>
                       </div>
                       <div class="col-12 g-pa-5">
-													<a class="btn btn-outline-info btn-block g-pa-12 g-rounded-50 g-brd-2" href="<?= site_url('career/job') ?>"><?= strtoupper($copy->ViewJobList) ?></a>
-												</div>
+                        <a class="btn btn-outline-info btn-block g-pa-12 g-rounded-50 g-brd-2" href="<?= site_url('career/job') ?>"><?= strtoupper($copy->ViewJobList) ?></a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -92,17 +92,17 @@
         <?php else : ?>
           <div class="col g-px-8">
             <div class="form-group g-ma-0">
-              <input id="inputPosition" class="form-control g-pa-12 g-brd-blue--focus" name="position" type="text" placeholder="<?= $copy->Position ?>">
+              <input id="inputPosition" class="form-control g-pa-12 g-brd-none--focus" name="position" type="text" placeholder="<?= $copy->Position ?>">
             </div>
           </div>
           <div class="col g-px-8">
             <div class="form-group g-ma-0">
-              <input id="inputLocation" class="form-control g-pa-12 g-brd-blue--focus" name="location" type="text" placeholder="<?= $copy->Location ?>">
+              <input id="inputLocation" class="form-control g-pa-12 g-brd-none--focus" name="location" type="text" placeholder="<?= $copy->Location ?>">
             </div>
           </div>
           <div class="col g-px-8">
             <div class="form-group g-ma-0">
-              <input id="inputType" class="form-control g-pa-12 g-brd-blue--focus" name="type" type="text" placeholder="<?= $copy->Type ?>">
+              <input id="inputType" class="form-control g-pa-12 g-brd-none--focus" name="type" type="text" placeholder="<?= $copy->Type ?>">
             </div>
           </div>
           <div class="col g-px-8">
@@ -151,6 +151,11 @@
           </tr>
         </table>
         <?php if ($this->agent->is_mobile()) : ?>
+          <div class="g-flex-centered g-bg-img-hero u-bg-overlay w4c-bg-blue-opacity-0_5--after g-py-20 g-mb-25" style="background-image: url(<?= get_image(DIR_BG . 'career/' . $job_category->{$job->category}->image) ?>); height:161px; width:100%;object-fit:cover">
+            <div class="container u-bg-overlay__inner text-center">
+              <img class="g-opacity-0_5" src="<?= get_image(DIR_LOGO . 'logo-W4C_179_web_white.png') ?>" alt="Logo w4c">
+            </div>
+          </div>
           <div id="#accordion-11" class="u-accordion u-accordion-color-primary" role="tablist" aria-multiselectable="true">
             <div class="row justify-content-center">
               <div class="col-lg-8 col-xs-12">
@@ -208,6 +213,7 @@
           </div>
 
         <?php else : ?>
+
           <div class="g-py-15">
             <div class="g-font-size-22 g-font-weight-600 text-uppercase g-mb-10"><?= $copy->JobDescription ?></div>
             <ul class="list-blue">
@@ -234,10 +240,48 @@
       <div class="col-md-auto">
         <?php if ($this->agent->is_mobile()) : ?>
           <a class="btn btn-info btn-block g-font-size-18 g-font-weight-600 g-py-12 g-my-35 g-rounded-50 text-uppercase" href="http://w4c.id/formofficerw4c"><?= $copy->ApplyNow ?></a>
+          <div id="side-box" class="g-px-10 g-bg-info g-bg-white" style="display: block; position: fixed; top: 70px; right: 0; z-index: 999;">
+            <div class="g-px-10 g-pb-5 g-pt-5">
+              <a id="arrow-btn" class="g-font-size-23">
+                <img src="<?= site_url(DIR_IMG . 'icons/arrow-right.svg') ?>" width="24">
+              </a>
+            </div>
 
+            <div id="sidebar-share">
+              <div class="g-mt-10 g-mb-10">
+              <a class="u-icon-v3 g-social-icon g-rounded-50x g-color-white--hover" href="https://api.whatsapp.com/send?text=<?= site_url('career/' . key($job)) ?>" target="_blank" style="width: 55px;height: 55px;">
+                      <i class="fa fa-whatsapp"></i>
+                    </a>
+              </div>
+              <div class="g-mb-10">
+              <a class="u-icon-v3 popup g-social-icon g-rounded-50x g-color-white--hover" href="https://www.facebook.com/sharer/sharer.php?u=<?= site_url('career/' . key($job)) ?>&display=popup&ref=plugin" style="width: 55px;height: 55px;">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+              </div>
+              <div class="g-mb-10">
+              <a class="u-icon-v3 popup g-social-icon g-rounded-50x g-color-white--hover" href="http://twitter.com/share?text=<?= $job->title ?>&url=<?= site_url('career/' . key($job)) ?>&via=<?= APP_NAME ?>" style="width: 55px;height: 55px;">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+              </div>
+              <div class="g-mb-10">
+              <a class="u-icon-v3 popup g-social-icon g-rounded-50x g-color-white--hover" href="https://www.linkedin.com/shareArticle?mini=true&url=<?= site_url('career/' . key($job)) ?>&source=<?= APP_NAME ?>" style="width: 55px;height: 55px;">
+                      <i class="fa fa-linkedin"></i>
+                    </a>
+              </div>
+              <div class="g-mb-10">
+              <a id="copyLink" class="u-icon-v3 g-social-icon g-rounded-50x g-color-white--hover g-text-rotate" href="<?= site_url('career/' . key($job)) ?>" data-toggle="tooltip" data-placement="top" title="Copy Link" style="width: 55px;height: 55px;">
+                      <i class="fa fa-link"></i>
+                    </a>
+              </div>
+            </div>
+          </div>
         <?php else : ?>
           <div class="" style="border:1px solid #C4C4C4">
-            <img src="<?= get_image(DIR_BG . 'career/' . $job_category->{$job->category}->image) ?>" alt="" style="height:273px; width:393px;object-fit:cover">
+            <div class="g-flex-centered g-bg-img-hero u-bg-overlay w4c-bg-blue-opacity-0_5--after g-py-20" style="background-image: url(<?= get_image(DIR_BG . 'career/' . $job_category->{$job->category}->image) ?>); height:273px; width:393px;object-fit:cover">
+              <div class="container u-bg-overlay__inner text-center">
+                <img class="g-opacity-0_5" src="<?= get_image(DIR_LOGO . 'logo-W4C_179_web_white.png') ?>" alt="Logo w4c">
+              </div>
+            </div>
             <div class="g-px-20 g-py-30">
               <a class="btn btn-info btn-block g-font-size-18 g-font-weight-600 g-py-12 g-mb-35 g-rounded-50 text-uppercase" href="http://w4c.id/formofficerw4c"><?= $copy->ApplyNow ?></a>
               <div class="g-color-black-opacity-0_7 g-font-size-18 text-uppercase g-mb-20"><?= $copy->ShareThisJob ?></div>
@@ -289,7 +333,7 @@
         <a class="btn btn-info float-right g-rounded-50 g-py-10 g-px-80 g-font-size-18 text-uppercase" href="<?= site_url('career/job') ?>"><?= $copy->SeeMore ?></a>
       <?php endif; ?>
       <div class="g-font-asap g-color-black text-uppercase g-font-weight-600 g-font-size-24 g-mb-10 <?= $this->agent->is_mobile() ? 'text-center' : '' ?>"><?= $copy->RelatedJob ?></div>
-      <hr class="g-width-120 g-mt-20 g-mb-40 <?= $this->agent->is_mobile() ? '' : 'g-ml-0' ?> g-brd-2 g-brd-blue">
+      <hr class="g-width-120 g-mt-20 g-mb-40 <?= $this->agent->is_mobile() ? '' : 'g-ml-0' ?> g-brd-2 w4c-brd-blue">
     </div>
     <div class="container">
       <div class="row align-height-list">
@@ -302,13 +346,13 @@
         $i = 1;
         foreach ($jobs as $index => $item) :
           if ($i <= $show && $item->category == $job->category) : ?>
-            <div class="col-md-4 col-12 <?= $this->agent->is_mobile() ? 'g-px-10 g-py-5' : 'g-pa-5' ?>">
+            <div class="col-md-4 col-12 g-line-height-1_2 <?= $this->agent->is_mobile() ? 'g-px-10 g-py-5' : 'g-pa-5' ?>">
               <div class="g-bg-white <?= $this->agent->is_mobile() ? 'g-px-25 g-py-20' : 'g-pa-30 align-height-item' ?>" style="box-shadow:1px 6px 20px 2px rgba(0, 0, 0, 0.1);position:relative;">
                 <div style="">
-                  <div class="btn btn-outl ine-info g-font-size-12 float-right g-rounded-50 text-uppercase g-mt-5 g-ml-10 g-py-5 g-px-12" style="background: <?= $job_type->{$item->type}->color ?>20 !important; border-color: <?= $job_type->{$item->type}->color ?>; color:<?= $job_type->{$item->type}->color ?>"><?= $job_type->{$item->type}->name ?></div>
-                  <div class="g-color-black g-font-size-22 g-font-weight-900 text-uppercase"><?= $item->title ?></div>
-                  <div class="g-font-size-16 text-uppercase g-mb-20"><?= $job_category->{$item->category}->name ?></div>
-                  <div class="g-color-w4c-blue-v2 g-font-size-16 text-uppercase g-pb-30 row no-gutters">
+                  <div class="btn btn-outl ine-info g-font-size-<?= $this->agent->is_mobile() ? '10' : '12' ?> float-right g-rounded-50 text-uppercase g-mt-5 g-ml-10 g-py-5 g-px-12" style="background: <?= $job_type->{$item->type}->color ?>20 !important; border-color: <?= $job_type->{$item->type}->color ?>; color:<?= $job_type->{$item->type}->color ?>"><?= $job_type->{$item->type}->name ?></div>
+                  <div class="g-color-black g-font-size-<?= $this->agent->is_mobile() ? '18' : '22' ?> g-font-weight-900 text-uppercase g-mb-5"><?= $item->title ?></div>
+                  <div class="g-font-size-<?= $this->agent->is_mobile() ? '12' : '16' ?> text-uppercase g-mb-20"><?= $job_category->{$item->category}->name ?></div>
+                  <div class="w4c-color-blue g-font-size-<?= $this->agent->is_mobile() ? '12' : '16' ?> text-uppercase g-pb-30 row no-gutters">
                     <div class="col-auto">
                       <i class="icon-location-pin mr-2"></i>
                     </div>
@@ -319,7 +363,7 @@
                     </div>
                   </div>
                   <div class="g-pos-abs" style="right:0px;bottom:30px;<?= $this->agent->is_mobile() ? 'bottom:20px;right:25px' : 'bottom:30px;right:30px' ?>">
-                    <a href="<?= site_url('career/job/' . $index) ?>" class="g-color-w4c-blue-v2 g-font-size-<?= $this->agent->is_mobile() ? '20' : '24' ?> g-font-weight-700 text-uppercase"><?= $copy->SeeDetail ?></a>
+                    <a href="<?= site_url('career/job/' . $index) ?>" class="w4c-color-blue g-font-size-<?= $this->agent->is_mobile() ? '20' : '24' ?> g-font-weight-700 text-uppercase"><?= $copy->SeeDetail ?></a>
                   </div>
                 </div>
               </div>
@@ -341,7 +385,6 @@
 
 
 <script>
-	
   /** Drop Down Data */
   var positions = [
     <?php foreach ($jobs as $job) {
@@ -389,8 +432,8 @@
       }
     });
 
-	});
-	
+  });
+
   $('#inputPosition').keydown(function(e) {
     if (e.keyCode == 13) {
       e.preventDefault();
@@ -417,4 +460,28 @@
       $('#search-form').submit();
     }
   }
+  $('#arrow-btn').on('click', function() {
+                    $(this).html(function(index, value) {
+                        return value !== '<i class="fa fa-share-alt g-mr-15"></i>' ? '<i class="fa fa-share-alt g-mr-15"></i>' : '<img src="<?= site_url(DIR_IMG . 'icons/arrow-right.svg') ?>" width="24">';
+                    }).toggleClass('g-font-size-26');
+                    $('#side-box').toggleClass('g-bg-white');
+                    $('#sidebar-share').slideToggle();
+                });
+                $('#copyLink').on('click', function() {
+                    event.preventDefault();
+                    var $temp = $("<input>");
+                    $("body").append($temp);
+                    $temp.val($(this).attr('href')).select();
+                    document.execCommand("copy");
+                    $(this).tooltip('hide')
+                        .attr('data-original-title', 'Copied!')
+                        .tooltip('show');
+                    $temp.remove();
+                });
+
+                $('#copyLink').on('mouseout', function() {
+                    $(this).attr('data-original-title', 'Copy Link')
+                        .tooltip('hide');
+                });
+
 </script>

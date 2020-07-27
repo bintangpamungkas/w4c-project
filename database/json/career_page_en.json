@@ -39,20 +39,24 @@
     "subtitle": "Here's A Glimpse of What Life at Waste4Change Looks Like ",
     "items": [
       {
-        "title": "img1",
-        "image": "culture1.png"
+        "title": "culture1",
+        "image": "1.jpg"
       },
       {
-        "title": "img2",
-        "image": "culture2.png"
+        "title": "culture2",
+        "image": "2.jpg"
       },
       {
-        "title": "img3",
-        "image": "img3.png"
+        "title": "culture3",
+        "image": "3.jpg"
       },
       {
-        "title": "img4",
-        "image": "img4.png"
+        "title": "culture4",
+        "image": "4.jpg"
+      },
+      {
+        "title": "culture5",
+        "image": "5.jpg"
       }
     ]
   },
@@ -143,7 +147,7 @@
       },
       {
         "question": "Would Waste4Change contact me regarding the results of my application?",
-        "answer": "If you are invited to the interview session, we will absolutely email you for any decisions. On the other hand, if you haven’t heard anything from us after 2 months since you submitted your application, we’re very sorry to inform you that our qualification does not yet match with you. <br>Even so, we are very thankful for your application, and we will keep your documents in our database to be checked on for future openings."
+        "answer": "If you are invited to the interview session, we will absolutely email you for any decisions. On the other hand, if you haven't heard anything from us after 2 months since you submitted your application, we're very sorry to inform you that our qualification does not yet match with you. <br>Even so, we are very thankful for your application, and we will keep your documents in our database to be checked on for future openings."
       },
       {
         "question": "Can I try applying even if there is no available position for me?",

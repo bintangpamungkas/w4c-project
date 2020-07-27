@@ -11,13 +11,44 @@
     font-family: 'Asap', sans-serif!important;
 }
 
-/* Color Blue W4C */
+/* Color W4C */
+
+/* Old */
+.g-font-color-w4c-1 {
+    color: #159CBD !important;
+}
+
+.g-font-color-w4c-2 {
+    color: #0B90B9 !important;
+}
+
+.g-color-w4c-blue-v1 {
+    color: #159CBD !important;
+}
+
+.g-color-w4c-blue-v2 {
+    color: #0B90B9 !important;
+}
+
+.g-color-w4c-green-v1 {
+    color: #88C662 !important;
+}
+
+.g-bg-w4c-blue-v1 {
+    background-color: #159CBD !important;
+}
+.g-bg-w4c-green-v1 {
+    background-color: #88C662 !important;
+}
+.bg-w4c-green-v1 {
+    background-color: #88C662 !important;
+}
 .g-bg-bluew {
-    background-color: rgba(21, 156, 189, 1) !important; }
-
+    background-color: rgba(21, 156, 189, 1) !important;
+}
 .g-bg-bluew-opacity-0_1 {
-    background-color: rgba(21, 156, 189, 0.1) !important; }
-
+    background-color: rgba(21, 156, 189, 0.1) !important;
+}
 .g-bg-bluew-opacity-0_7 {
     background-color: rgba(21, 156, 189, 0.7) !important; }
 
@@ -30,6 +61,41 @@
 .display-inline-table{
     display: inline-table!important;
 }
+
+/* Font Color */
+.w4c-color-blue{
+    color:#17A2B8!important;
+}
+.w4c-color-green{
+    background-color: #88C662!important;
+}
+
+/* Background */
+.w4c-bg-blue{
+    background-color:#17A2B8!important;
+}
+.w4c-bg-green{
+    background-color:#88C662!important;
+}
+
+.w4c-bg-blue-opacity-0_5, .w4c-bg-blue-opacity-0_5--hover:hover, .w4c-bg-blue-opacity-0_5--after::after {
+    background-color: rgba(23, 162, 184, 0.5) !important; 
+}
+.w4c-bg-blue-opacity-0_7, .w4c-bg-blue-opacity-0_7--hover:hover, .w4c-bg-blue-opacity-0_7--after::after {
+    background-color: rgba(23, 162, 184, 0.7) !important; 
+}
+
+    
+
+/* Border */
+.w4c-brd-blue{
+    border-color:#17A2B8!important;
+}
+.w4c-brd-green{
+    border-color: #88C662!important;
+}
+
+
 
 .d-zap{
     opacity: 0!important;
@@ -198,9 +264,19 @@
 }
 
 
-
+/* Box Shadow */
 .box-shadow-down{
     box-shadow: 1px 6px 20px 2px rgba(0, 0, 0, 0.05);
+}
+
+.box-shadow-down-v2{
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+}
+.box-shadow-down-30-0_15{
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+}
+.box-shadow-down-10-1{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .u-ns-bg-v1-top.g-bg-primary::before,
@@ -286,30 +362,6 @@
     border-color: rgba(8, 8, 8, 0.05) !important;
 }
 
-.g-font-color-w4c-1{
-  color:#159CBD!important;
-}
-.g-font-color-w4c-2{
-  color:#0B90B9!important;
-}
-.g-color-w4c-blue-v1{
-  color:#159CBD!important;
-}
-.g-color-w4c-blue-v2{
-  color:#0B90B9!important;
-}
-.g-color-w4c-green-v1{
-  color: #88C662!important;
-}
-.g-bg-w4c-blue-v1{
-  background-color:#159CBD!important;
-}
-.g-bg-w4c-green-v1{
-  background-color:#88C662!important;
-}
-.bg-w4c-green-v1{
-  background-color: #88C662!important;
-}
 
 .arrow-box:before{
     bottom: 100%;
@@ -904,9 +956,57 @@
     display:none !important; 
 }
 
-.g-brd-blue--focus:focus{
-    border-color:#17a2b8 !important;
+.g-brd-blue--focus:focus {
+    border-color: #17a2b8 !important;
 }
-.g-brd-none--focus:focus{
+
+.g-brd-none--focus:focus {
     border: none !important;
+}
+
+/* scroll bar */
+/* Horizontal */
+.h-scroll .h-scroll-item {
+    margin-top:12px;
+    display: inline-block;
+    position: relative;
+  }
+
+
+  .h-scroll {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transform: rotate(270deg) translateX(-100%);
+    transform-origin: top left;
+    /* background-color: #999; */
+    position: absolute;
+    width: 100vh;
+    height: calc(100vw - 200px);
+  }
+
+  .h-scroll-wrapper {
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    white-space: nowrap;
+    font-size: 0;
+  }
+
+/* hide */
+.scroll-hide::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+.scroll-hide::-webkit-scrollbar-track {
+    background: transparent;
+    /* color of the tracking area */
+}
+
+.scroll-hide::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 1px solid transparent;
+    /* creates padding around scroll thumb */
 }

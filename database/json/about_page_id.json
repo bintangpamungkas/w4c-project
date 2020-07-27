@@ -4,12 +4,16 @@
     "items": [
       {
         "title": "Solusi Bijak sampah",
-        "image": "1.jpg"
+        "image": "1.png"
       },
       {
         "title": "Solusi Bijak sampah",
         "image": "2.jpg"
-      }     
+      },
+      {
+        "title": "Solusi Bijak sampah",
+        "image": "3.jpg"
+      }          
     ]
   },
   "history": {
@@ -80,7 +84,8 @@
   },
   "vision":{
     "title": "Visi",
-    "message": "Menjadi Pemimpin dalam Menyediakan Solusi Pengelolaan Sampah yang Bertanggung Jawab"
+    "message": "Menjadi Pemimpin dalam Menyediakan Solusi Pengelolaan Sampah yang Bertanggung Jawab",
+    "image":"vision.png"
   },
   "w4c": {
     "title":"4 SERVIS INTI WASTE4CHANGE",
@@ -187,20 +192,24 @@
     "subtitle": "Sekilas Tentang Kehidupan di Waste4Change yang Dinamis",
     "items": [
       {
-        "title": "img1",
-        "image": "culture1.png"
+        "title": "culture1",
+        "image": "1.jpg"
       },
       {
-        "title": "img2",
-        "image": "culture2.png"
+        "title": "culture2",
+        "image": "2.jpg"
       },
       {
-        "title": "img3",
-        "image": "img3.png"
+        "title": "culture3",
+        "image": "3.jpg"
       },
       {
-        "title": "img4",
-        "image": "img4.png"
+        "title": "culture4",
+        "image": "4.jpg"
+      },
+      {
+        "title": "culture5",
+        "image": "5.jpg"
       }
     ]
   },

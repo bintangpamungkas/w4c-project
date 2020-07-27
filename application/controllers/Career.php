@@ -71,6 +71,7 @@
 			$data['position'] = $this->input->get('position');
 			$data['location'] = $this->input->get('location');
 			$data['type'] = $this->input->get('type');
+			$data['category'] = $this->input->get('category');
       //language, section, general info (title, subtitle, order), item (specific content)
       $data['copy'] = json_decode(file_get_contents(base_url('database/json/job_list_'.$lang.'.json')));
       $data['jobs'] = json_decode(file_get_contents(base_url('database/json/job_'.$lang.'.json')));

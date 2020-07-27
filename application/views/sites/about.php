@@ -45,14 +45,8 @@
               </div>
             </div>
           </div>
-          <!-- <div class="g-color-black g-bg-white--hover text-center g-rounded-10 g-transition-0_3">
-            <div class="g-mx-auto">
-              <img class="img-fluid u-block-hover__main--zoom-v1 mb-3" src="<?= get_image(DIR_BG . 'career/' . $item->image) ?>" alt="<?= $copy->value->title . ' ' . $item->title ?>" style="height:573px;object-fit:cover">
-            </div>
-          </div> -->
         <?php endforeach; ?>
       <?php endif; ?>
-
       <!-- End Items Iteration -->
     </div>
   </div>
@@ -101,7 +95,7 @@
 <section class="g-bg-white <?= $this->agent->is_mobile() ? 'g-pt-60 g-pb-40' : 'g-bg-white g-pb-50 g-pt-100' ?>">
   <div class="container">
     <h2 class="g-font-asap g-color-black text-uppercase text-center g-font-weight-600 g-font-size-<?= $this->agent->is_mobile() ? '24' : '35 g-mb-10' ?>"><?= $copy->history->title ?></h2>
-    <hr class="g-width-120 g-mt-20 g-mb-0 g-brd-2 g-brd-blue">
+    <hr class="g-width-120 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
   </div>
   <?php if ($this->agent->is_mobile()) : ?>
     <div class="row justify-content-center g-mt-50 no-gutters ">
@@ -135,7 +129,7 @@
       $(window).ready(function() {
         var element_id = '#history-carousel';
         $(element_id).owlCarousel({
-          loop: true,
+          loop: false,
           margin: 0,
           dots: true,
           nav: false,
@@ -153,17 +147,23 @@
               items: 1
             }
           },
-          navText: ['<i class="<?= $this->agent->is_mobile() ? ' fa fa-angle-left g-color-gray-light-v1 nav-arrow-left ' : ' fa fa-angle-left g-color-w4c-blue-v1 ' ?>" aria-hidden="true" style="transform: scale(<?= $this->agent->is_mobile() ? '  2 ' : ' 4 ' ?>)"></i>', '<i class="<?= $this->agent->is_mobile() ? 'fa fa-angle-right g-color-gray-light-v1 nav-arrow-right ' : ' fa fa-angle-right g-color-w4c-blue-v1 ' ?>" aria-hidden="true" style="transform: scale(<?= $this->agent->is_mobile() ? '  2 ' : '  4 ' ?>)"></i>']
+          // navText: ['<i class="<?= $this->agent->is_mobile() ? ' fa fa-angle-left g-color-gray-light-v1 nav-arrow-left ' : ' fa fa-angle-left g-color-w4c-blue-v1 ' ?>" aria-hidden="true" style="transform: scale(<?= $this->agent->is_mobile() ? '  2 ' : ' 4 ' ?>)"></i>', '<i class="<?= $this->agent->is_mobile() ? 'fa fa-angle-right g-color-gray-light-v1 nav-arrow-right ' : ' fa fa-angle-right g-color-w4c-blue-v1 ' ?>" aria-hidden="true" style="transform: scale(<?= $this->agent->is_mobile() ? '  2 ' : '  4 ' ?>)"></i>']
+          navText: ['','']
         });
 
         //$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
         $(element_id + ' .owl-controls').attr('style', 'margin-top: 30px;');
         var screen_display = <?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
         // console.log(screen_display);
-        var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '60' : '98.5' ?>) / 100) / 2;
-        //console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
-        // $(element_id + ' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 410px;width: 70%;right: ' + margin_side + 'px;')
+        // var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '60' : '98.5' ?>) / 100) / 2;
+        // console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
+        // $(element_id + ' .owl-nav').attr('style', 'width: 100%;left: ' + margin_side + 'px;')
         //Hide last item after carousel init because if hide first courosel not working
+        var add_side = 15
+				var height=$(element_id + ' .owl-stage-outer').height();
+				// var width=$(element_id + ' .owl-item').width()+add_side;
+				// $(element_id + ' .owl-nav').attr('style', 'position:absolute;left:'+add_side*2+'px;margin-top:'+height+'px;width: '+ (screen_display) +'px;')
+				$(element_id + ' .owl-dots').attr('style', 'margin-top:30px;')
       });
     </script>
 
@@ -236,7 +236,7 @@
           <div class="col">
             <div class="dzsparallaxer height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
               <div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center" style="height: 100%;background: url(<?= get_image(DIR_BG . 'about/history/' . $item->image) ?>);background-size: cover;<?= $this->agent->is_mobile() ? 'background-position-x: right;' : '' ?>"></div>
-              <div class="pending-show animated d-zap g-color-white g-font-size-14 g-pl-60 g-pt-60 g-pb-15 g-pr-15  align-height-item" style="height: 100%; background-image: linear-gradient( 100deg , rgba(23, 162, 184, 0.9) 0%, rgba(23, 162, 184, 0.9) 70%, rgba(23, 162, 184, 0.9) 100%);">
+              <div class="pending-show animated d-zap g-color-white g-font-size-14 g-pl-60 g-pt-60 g-pb-15 g-pr-15  align-height-item" style="height: 100%; background-image: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0.9) 26.51%, rgba(255, 255, 255, 0.75) 47.79%, rgba(255, 255, 255, 0) 84.53%);">
                 <div class="g-font-asap g-color-white g-font-weight-600 g-font-size-30 "><?= $item->year ?></div>
                 <ul class="g-pl-20">
                   <?php foreach ($item->content as $content) : ?>
@@ -307,62 +307,50 @@
 <!-- End History -->
 
 <!-- Strategy & Vision -->
-<section>
+<section class="g-pt-60 g-pb-50" style="background: linear-gradient(270deg, #F9F9F9 0%, #F9F9F9 100%);">
   <?php if ($this->agent->is_mobile()) : ?>
-    <div class="u-bg-overlay g-bg-w4c-blue-gradient-v1--after g-bg-img-hero" style="background-image: url(<?= base_url(DIR_BG . 'about/strategy.png') ?>);">
-      <div class="container u-bg-overlay__inner g-color-white">
-        <div class="g-py-60 g-color-white">
-          <div class="container">
-            <div class="g-bg-white g-pa-40 g-rounded-5" style="box-shadow:1px 6px 20px 2px rgba(0, 0, 0, 0.1)">
-              <div class="g-color-black g-font-size-24 g-font-weight-600 g-mb-00">
-                <?= $copy->mission->title ?>
-              </div>
-              <div class="g-font-size-18 g-color-black-opacity-0_8 g-mb-30">
-                <div class="g-font-size-36 g-color-blue float-left g-line-height-0" style="padding-top: 21px;padding-right: 10px;">" </div>
-                <?= $copy->mission->message ?>
-                <div class="g-font-size-36 g-color-blue g-bg-transparent" style="display: inline; margin-top:25; line-height:0.5"> "</div>
-              </div>
-              <div class="g-color-black g-font-size-24 g-font-weight-600 g-mb-30">
-                <?= $copy->vision->title ?>
-              </div>
-              <div class="g-font-size-18 g-color-black-opacity-0_8">
-                <div class="g-font-size-36 g-color-blue float-left g-line-height-0" style="padding-top: 21px;padding-right: 10px;">" </div>
-                <?= $copy->vision->message ?>
-                <div class="g-font-size-36 g-color-blue g-bg-transparent" style="display: inline; margin-top:25; line-height:0.5"> "</div>
-              </div>
+    <div class="container">
+      <div class="row no-gutters g-font-asap">
+        <div class="col-md col-12">
+          <div class="g-pa-20" style="background: linear-gradient(270deg, #F6F6F6 0%, #FFFFFF 57.76%); box-shadow: -4px 0px 20px rgba(0, 0, 0, 0.02);">
+            <div class="w4c-color-blue g-font-size-30 g-font-weight-900 g-mb-20">
+              <?= $copy->mission->title ?>
+            </div>
+            <div class="g-font-size-14 g-color-black g-mb-25">
+              <?= $copy->mission->message ?>
+            </div>
+            <div class="w4c-color-blue g-font-size-30 g-font-weight-900 g-mb-20">
+              <?= $copy->vision->title ?>
+            </div>
+            <div class="g-font-size-14 g-color-black g-mb-25">
+              <?= $copy->vision->message ?>
             </div>
           </div>
+        </div>
+        <div class="col-12">
+          <img src="<?= get_image(DIR_BG . 'about/' . $copy->vision->image) ?>" alt="vision" style="width: 100%; object-fit: cover;">
         </div>
       </div>
     </div>
-    <!-- <div class="g-py-60 g-color-white u-bg-overlay g-bg-w4c-blue-gradient-v1--after g-bg-img-hero g-py-200--md g-py-80" style="background-image: url(<?= base_url(DIR_BG . 'about/strategy.png') ?>);"> -->
-
   <?php else : ?>
-    <div class="u-bg-overlay g-bg-w4c-blue-gradient-v1--after g-bg-img-hero g-py-200--md g-py-80" style="background-image: url(<?= base_url(DIR_BG . 'about/strategy.png') ?>);">
+    <div class="col-md-5 col-12 float-right g-pa-0">
+      <img src="<?= get_image(DIR_BG . 'about/' . $copy->vision->image) ?>" alt="vision" style="height: 100%; margin-bottom: -100px; object-fit: cover; float: right;">
     </div>
-    <div class="container" style="margin-top:-280px">
-      <div class="row justify-content-center align-height-list" style="margin-bottom:-30px">
+    <div class="container">
+      <div class="row no-gutters g-font-asap ">
         <div class="col-md col-12">
-          <div class="g-bg-white g-pa-40 align-height-item" style="box-shadow:1px 6px 20px 2px rgba(0, 0, 0, 0.1)">
-            <div class="g-color-black g-font-size-35 g-font-weight-600 g-mb-40">
+          <div class="g-pt-40 g-pb-30 g-pl-50 g-pr-35" style="background: linear-gradient(270deg, #F6F6F6 0%, #FFFFFF 57.76%); box-shadow: -4px 0px 20px rgba(0, 0, 0, 0.02);">
+            <div class="w4c-color-blue g-font-size-36 g-font-weight-600 g-mb-20">
               <?= $copy->mission->title ?>
             </div>
-            <div class="g-font-size-25 g-color-black-opacity-0_8">
-              <div class="g-font-size-48 g-color-blue float-left g-line-height-0" style="padding-top: 21px;padding-right: 10px;">" </div>
+            <div class="g-font-size-22 g-color-black g-mb-25">
               <?= $copy->mission->message ?>
-              <div class="g-font-size-48 g-color-blue g-bg-transparent" style="display: inline; line-height:0.5"> "</div>
             </div>
-          </div>
-        </div>
-        <div class="col-md col-12">
-          <div class="g-bg-white box-shadow-down g-pa-40 align-height-item">
-            <div class="g-color-black g-font-size-35 g-font-weight-600 g-mb-40">
+            <div class="w4c-color-blue g-font-size-36 g-font-weight-600 g-mb-20">
               <?= $copy->vision->title ?>
             </div>
-            <div class="g-font-size-25 g-color-black-opacity-0_8">
-              <div class="g-font-size-48 g-color-blue float-left g-line-height-0" style="padding-top: 21px;padding-right: 10px;">" </div>
+            <div class="g-font-size-22 g-color-black g-mb-25">
               <?= $copy->vision->message ?>
-              <div class="g-font-size-48 g-color-blue g-bg-transparent" style="display: inline; margin-top:25; line-height:0.5"> "</div>
             </div>
           </div>
         </div>
@@ -377,15 +365,14 @@
 <section class="g-bg-white <?= $this->agent->is_mobile() ? 'g-pt-60 g-pb-40' : 'g-bg-white g-pb-50 g-pt-100' ?>">
   <div class="">
     <h2 class="g-font-asap g-color-black text-uppercase text-center g-font-weight-600 g-font-size-<?= $this->agent->is_mobile() ? '24' : '35 g-mb-10' ?>"><?= $copy->w4c->title ?></h2>
-    <hr class="g-width-120 g-mt-20 g-mb-0 g-brd-2 g-brd-blue">
+    <hr class="g-width-120 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
     <div class="mt-2 mb-4 g-px-10 text-center"><?= @$copy->w4c->subtitle ?></div>
 
     <?php if ($this->agent->is_mobile()) : ?>
       <div class="row justify-content-center g-mt-50 no-gutters ">
         <div id="job-carousel" class="col-md-11 col-12 align-self-end">
-          <!-- Items Iteration -->
-          <?php foreach ($copy->w4c->items as $item) : ?>
-            <!-- Job Item -->
+          <?php foreach ($copy->w4c->items as $item) : //Item Iteration
+          ?>
             <div class="col-sm-3 g-px-13 g-mb-30 g-rounded-5">
               <article class="u-block-hover g-rounded-5">
                 <div class="g-bg-cover g-bg-black-opacity-0_6--after g-bg-primary-opacity-0_3--hover">
@@ -393,9 +380,6 @@
                 </div>
                 <div class="g-z-index-1" style="position: absolute; bottom: 0px; ">
                   <div class="g-pl-20 d-block g-color-white g-font-weight-600 g-font-size-36 g-mb-20 g-line-height-1_2 g-bg-transparent"><?= $item->title ?></div>
-                  <!-- <h2 class="h2 g-color-white g-font-weight-600 mb-3">
-									<a class="u-link-v5 g-color-white g-color-primary--hover g-cursor-pointer" href="#!">Talking Why Her?</a>
-								</h2> -->
                   <p class="g-color-white-opacity-0_7 mb-0"></p>
                   <div class="d-inline-block g-color-white g-bg-info g-font-size-14 g-pa-25 ">
                     <?= $item->description ?>
@@ -412,9 +396,8 @@
                 </div>
               </article>
             </div>
-            <!-- End Job Item -->
-          <?php endforeach; ?>
-          <!-- End Items Iteration -->
+          <?php endforeach; //End Items Iteration
+          ?>
         </div>
       </div>
 
@@ -506,7 +489,7 @@
     <div class="row justify-content-center my_tab_content no-gutters">
       <div class="col-md-12">
         <h2 class="g-font-asap g-color-black text-uppercase g-font-weight-600 text-center g-font-size-<?= $this->agent->is_mobile() ? '24' : '35 g-mb-10' ?>"><?= $copy->accomplishment->title ?></h2>
-        <hr class="g-width-120 g-mt-20 g-mb-0 g-brd-2 g-brd-blue">
+        <hr class="g-width-120 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
       </div>
       <?php if ($this->agent->is_mobile()) : ?>
 
@@ -597,7 +580,7 @@
 <section class="g-bg-white <?= $this->agent->is_mobile() ? 'g-pt-60 g-pb-40' : 'g-bg-white g-pb-50 g-pt-100' ?>">
   <div class="container">
     <h2 class="g-font-asap g-color-black text-uppercase text-center g-font-weight-600 g-font-size-<?= $this->agent->is_mobile() ? '24' : '35 g-mb-10' ?>"><?= $copy->value->title ?></h2>
-    <hr class="g-width-120 g-mt-20 g-mb-0 g-brd-2 g-brd-blue">
+    <hr class="g-width-120 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
     <?php if ($this->agent->is_mobile()) : ?>
       <div class="row justify-content-center my_tab_content">
         <div class="col-md-11 col-12 align-self-end">
@@ -688,7 +671,7 @@
     <div class="row justify-content-center my_tab_content">
       <div class="col-md-3">
         <h2 class="g-font-asap g-color-black text-uppercase g-font-weight-600 g-font-size-<?= $this->agent->is_mobile() ? '24  text-center' : '35 g-mb-10' ?>"><?= $copy->culture->title ?></h2>
-        <hr class="g-width-120 g-mt-20 g-mb-0 <?= $this->agent->is_mobile() ? '' : 'g-ml-0' ?> g-brd-2 g-brd-blue">
+        <hr class="g-width-120 g-mt-20 g-mb-0 <?= $this->agent->is_mobile() ? '' : 'g-ml-0' ?> g-brd-2 w4c-brd-blue">
         <div class="mt-2 mb-4 <?= $this->agent->is_mobile() ? 'g-px-10 text-center' : '' ?>"><?= $copy->culture->subtitle ?></div>
         <?php if (!$this->agent->is_mobile()) : ?>
           <div id="custom-nav" class="owl-carousel owl-theme owl-loaded">
@@ -714,11 +697,11 @@
 				</div> -->
       </div>
       <div class="col-md-9 col-12 align-self-end">
-        <div id="culture-carousel" class="col-md-12 owl-theme" style="margin: 0 0 30px 0!important;">
+        <div id="culture-carousel" class="col-md-12 owl-theme align-height-list" style="margin: 0 0 30px 0!important;">
           <!-- Items Iteration -->
           <?php foreach ($copy->culture->items as $index => $item) : ?>
-            <div class="g-color-black g-bg-white--hover text-center g-rounded-10 g-transition-0_3">
-              <img class="img-fluid u-block-hover__main--zoom-v1 mb-3" src="<?= get_image(DIR_BG . 'career/' . $item->image) ?>" alt="<?= $copy->culture->title . ' ' . $item->title ?>" style="max-height:320px; object-fit:cover">
+            <div class="g-color-black g-bg-white--hover text-center g-rounded-10 g-transition-0_3 align-height-item">
+              <img class="img-fluid u-block-hover__main--zoom-v1 mb-3" src="<?= get_image(DIR_BG . 'about/culture/' . $item->image) ?>" alt="<?= $copy->culture->title . ' ' . $item->title ?>" style="height:100%; object-fit:cover">
             </div>
           <?php endforeach; ?>
           <!-- End Items Iteration -->
@@ -746,24 +729,21 @@
               items: 1
             },
             1000: {
-              items: 2.1
+              items: 2
             }
           },
           navText: ['', '']
         });
 
-        //$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
         $(element_id + ' .owl-controls').attr('style', 'margin-top: 30px;');
         var screen_display = <?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
-        // console.log(screen_display);
         var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '69' : '70' ?>) / 100) / 2;
-        //console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
         $(element_id + ' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 220px;width: 74%;right: ' + margin_side + 'px;')
         //Hide last item after carousel init because if hide first courosel not working
 
         // Custom Click DOt
         $('#custom-nav').find('.owl-dot').click(function() {
-          $(element_id).trigger('to.owl.carousel', [$(this).index(), 300]);
+          $(element_id).trigger('to.owl.carousel', [jQuery(this).index(), 300, true]);
         });
         //Custom Navigation 
         $('#custom-nav').find('.owl-next').click(function() {
@@ -780,12 +760,12 @@
 <!-- End Our Culture -->
 
 <!-- Our Team -->
-<section class="g-bg-gray-light-v4 <?= $this->agent->is_mobile() ? 'g-pt-40' : 'g-pb-50 g-pt-100' ?>">
+<section class="g-bg-gray-light-v4 <?= $this->agent->is_mobile() ? 'g-pt-40 g-pb-30' : 'g-pb-50 g-pt-100' ?>">
   <div class="<?= $this->agent->is_mobile() ? '' : 'container' ?>">
     <div class="row justify-content-center my_tab_content no-gutters">
       <div class="col-md-12">
         <h2 class="g-font-asap g-color-black text-uppercase g-font-weight-600 text-center g-font-size-<?= $this->agent->is_mobile() ? '24' : '35 g-mb-10' ?>"><?= $copy->team->title ?></h2>
-        <hr class="g-width-120 g-mt-20 g-mb-0 g-brd-2 g-brd-blue">
+        <hr class="g-width-120 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
         <?php if (!$this->agent->is_mobile()) : ?>
           <div class="mt-2 mb-4 g-px-10 text-center"><?= $copy->team->subtitle ?></div>
         <?php endif; ?>
@@ -813,7 +793,7 @@
         $(element_id).owlCarousel({
           loop: true,
           margin: 0,
-          dots: false,
+          dots: <?= $this->agent->is_mobile() ? 'true' : 'false' ?>,
           nav: true,
           autoplay: false,
           autoplayTimeout: 1500,
@@ -827,19 +807,30 @@
               items: 1
             },
             1000: {
-              items: 3.3
+              items: 3
             }
           },
-          navText: ['', '']
+
+          <?php if ($this->agent->is_mobile()) : ?>
+            navText: [
+              '<i class="fa fa-angle-left g-color-gray-light-v1 nav-arrow-left" aria-hidden="true" style="transform: scale(2)"></i>',
+              '<i class="fa fa-angle-right g-color-gray-light-v1 nav-arrow-right" aria-hidden="true" style="transform: scale(2)"></i>'
+            ]
+          <?php else : ?>
+            navText: ['<i class="fa fa-angle-left g-color-gray-light-v1 nav-arrow-left g-opacity-0_5" aria-hidden="true" style="transform: scale(2)"></i>',
+              '<i class="fa fa-angle-right g-color-gray-light-v1 nav-arrow-right g-opacity-0_5" aria-hidden="true" style="transform: scale(2)"></i>'
+            ]
+          <?php endif; ?>
         });
 
-        //$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
         $(element_id + ' .owl-controls').attr('style', 'margin-top: 30px;');
         var screen_display = <?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
-        // console.log(screen_display);
-        var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '69' : '70' ?>) / 100) / 2;
-        //console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
-        $(element_id + ' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 220px;width: 74%;right: ' + margin_side + 'px;')
+        var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '60' : '88' ?>) / 100) / 2;
+        <?php if ($this->agent->is_mobile()) : ?>
+          $(element_id + ' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 570px;width: 70%;right: ' + margin_side + 'px;')
+        <?php else : ?>
+          $(element_id + ' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 220px;width: 91%;right: ' + margin_side + 'px;')
+        <?php endif; ?>
 
       });
     </script>
@@ -858,9 +849,9 @@
           <div class="g-color-black <?= $this->agent->is_mobile() ? 'g-font-size-20' : 'h2' ?>">
             <?= $copy->cta->title ?></div>
         </div>
-        <div class="col-md-4 col-10 g-mb-15 pt-5 align-self-center">
-        <!-- <a class="btn btn-info float-right g-rounded-50 g-py-10 g-px-80 g-font-size-18 text-uppercase" href="http://localhost/w4c/official/career/job">See More</a> -->
-          <a class="btn btn-info float-right g-rounded-50 g-py-10 g-px-80 g-font-size-18 text-uppercase g-py-15" href="<?= $copy->cta->button->url ?>">
+        <div class="col-md-4 col-12 g-mb-15 pt-5 align-self-center">
+          <!-- <a class="btn btn-info float-right g-rounded-50 g-py-10 g-px-80 g-font-size-18 text-uppercase" href="http://localhost/w4c/official/career/job">See More</a> -->
+          <a class="btn btn-info g-rounded-50 g-py-10 g-px-<?= $this->agent->is_mobile() ? '60 g-font-size-14' : '80 float-right g-font-size-18' ?>  text-uppercase g-py-15" href="<?= $copy->cta->button->url ?>">
             <?= strtoupper($copy->cta->button->title) ?>
           </a>
         </div>
