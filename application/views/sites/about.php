@@ -4,7 +4,7 @@
   }
 </style>
 <!-- Slider -->
-<section class="g-bg-white g-pt-150 g-pb-40">
+<section class="g-bg-white g-pt-<?= $this->agent->is_mobile() ? '80' : '150' ?> g-pb-40">
   <div class="container g-font-asap g-font-color-w4c-1 g-font-size-<?= $this->agent->is_mobile() ? '24' : '35' ?> g-font-weight-600 text-center g-line-height-1_2">
     <?= $copy->slide->title ?>
   </div>
@@ -148,7 +148,7 @@
             }
           },
           // navText: ['<i class="<?= $this->agent->is_mobile() ? ' fa fa-angle-left g-color-gray-light-v1 nav-arrow-left ' : ' fa fa-angle-left g-color-w4c-blue-v1 ' ?>" aria-hidden="true" style="transform: scale(<?= $this->agent->is_mobile() ? '  2 ' : ' 4 ' ?>)"></i>', '<i class="<?= $this->agent->is_mobile() ? 'fa fa-angle-right g-color-gray-light-v1 nav-arrow-right ' : ' fa fa-angle-right g-color-w4c-blue-v1 ' ?>" aria-hidden="true" style="transform: scale(<?= $this->agent->is_mobile() ? '  2 ' : '  4 ' ?>)"></i>']
-          navText: ['','']
+          navText: ['', '']
         });
 
         //$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
@@ -160,10 +160,10 @@
         // $(element_id + ' .owl-nav').attr('style', 'width: 100%;left: ' + margin_side + 'px;')
         //Hide last item after carousel init because if hide first courosel not working
         var add_side = 15
-				var height=$(element_id + ' .owl-stage-outer').height();
-				// var width=$(element_id + ' .owl-item').width()+add_side;
-				// $(element_id + ' .owl-nav').attr('style', 'position:absolute;left:'+add_side*2+'px;margin-top:'+height+'px;width: '+ (screen_display) +'px;')
-				$(element_id + ' .owl-dots').attr('style', 'margin-top:30px;')
+        var height = $(element_id + ' .owl-stage-outer').height();
+        // var width=$(element_id + ' .owl-item').width()+add_side;
+        // $(element_id + ' .owl-nav').attr('style', 'position:absolute;left:'+add_side*2+'px;margin-top:'+height+'px;width: '+ (screen_display) +'px;')
+        $(element_id + ' .owl-dots').attr('style', 'margin-top:30px;')
       });
     </script>
 
@@ -234,13 +234,12 @@
       ?>
         <div class="row g-mb-30 g-rounded-5 no-gutters">
           <div class="col">
-            <div class="dzsparallaxer height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
-              <div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center" style="height: 100%;background: url(<?= get_image(DIR_BG . 'about/history/' . $item->image) ?>);background-size: cover;<?= $this->agent->is_mobile() ? 'background-position-x: right;' : '' ?>"></div>
-              <div class="pending-show animated d-zap g-color-white g-font-size-14 g-pl-60 g-pt-60 g-pb-15 g-pr-15  align-height-item" style="height: 100%; background-image: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0.9) 26.51%, rgba(255, 255, 255, 0.75) 47.79%, rgba(255, 255, 255, 0) 84.53%);">
-                <div class="g-font-asap g-color-white g-font-weight-600 g-font-size-30 "><?= $item->year ?></div>
-                <ul class="g-pl-20">
+            <div class="u-bg-overlay w4c-bg-blue-opacity-0_9--after g-bg-img-hero g-color-white g-font-size-14 g-pl-60 g-pt-60 g-pb-15 g-pr-15  align-height-item" style="background-image: url(<?= get_image(DIR_BG . 'about/history/' . $item->image) ?>);">
+              <div class="container u-bg-overlay__inner g-color-white">
+                <div class="g-font-asap g-color-white g-font-weight-900 g-font-size-30 g-mb-25"><?= $item->year ?></div>
+                <ul class="g-pl-20 g-font-size-18">
                   <?php foreach ($item->content as $content) : ?>
-                    <li>
+                    <li class=" g-mb-15 g-line-height-1_3">
                       <?= $content ?>
                     </li>
                   <?php endforeach; ?>
@@ -376,7 +375,7 @@
             <div class="col-sm-3 g-px-13 g-mb-30 g-rounded-5">
               <article class="u-block-hover g-rounded-5">
                 <div class="g-bg-cover g-bg-black-opacity-0_6--after g-bg-primary-opacity-0_3--hover">
-                  <img class="u-block-hover__main--mover-down" src="<?= get_image(DIR_BG . 'career/' . $item->image) ?>" alt="Image Description" style="height:400px">
+                  <img class="u-block-hover__main--mover-down" src="<?= get_image(DIR_BG . 'about/4c/' . $item->image) ?>" alt="Image Description" style="height:400px">
                 </div>
                 <div class="g-z-index-1" style="position: absolute; bottom: 0px; ">
                   <div class="g-pl-20 d-block g-color-white g-font-weight-600 g-font-size-36 g-mb-20 g-line-height-1_2 g-bg-transparent"><?= $item->title ?></div>
@@ -446,7 +445,7 @@
           <div class="col-md-3">
             <div class="u-block-hover">
               <div class="g-bg-cover g-bg-black-opacity-0_6--after g-bg-blue--hover-parent">
-                <img class="u-block-hover__main--mover-down" src="<?= get_image(DIR_BG . 'career/' . $item->image) ?>" alt="Image Description" style="height:450px">
+                <img class="u-block-hover__main--mover-down" src="<?= get_image(DIR_BG . 'about/4c/' . $item->image) ?>" alt="Image Description" style="height:450px">
               </div>
               <div class="u-block-hover__additional--partially-slide-up g-z-index-1">
                 <div class="u-block-hover__visible g-pa-25">

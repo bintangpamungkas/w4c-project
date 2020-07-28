@@ -10,5 +10,11 @@
   "SeeDetail": "Selengkapnya",
   "RelatedJob": "Pekerjaan Serupa",
   "JobDescription": "Deskripsi Pekerjaan",
-  "Requirement": "Kriteria"
+  "Requirement": "Kriteria",
+  "WhatsApp"  : "Whatsapp",
+  "Facebook":"Facebook",
+  "Twitter":"Twitter",
+  "LinkedIn": "LinkedIn",
+  "CopyUrl":"Salin Url",
+  "Cancel":"Batal"
 }

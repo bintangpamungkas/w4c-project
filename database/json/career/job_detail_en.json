@@ -10,5 +10,11 @@
   "SeeDetail": "See Detail",
   "RelatedJob": "Related Job",
   "JobDescription": "Job Description",
-  "Requirement": "Requirement"
+  "Requirement": "Requirement",
+  "WhatsApp"  : "Whatsapp",
+  "Facebook":"Facebook",
+  "Twitter":"Twitter",
+  "LinkedIn": "LinkedIn",
+  "CopyUrl":"Copy Url",
+  "Cancel":"Cancel"
 }

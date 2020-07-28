@@ -64,7 +64,7 @@
 				],
 				[
 					'title' => $this->get_lang('Job List'),
-					'url' => 'carrer/job',
+					'url' => 'career/job',
 					'active' => true
 				]
       ];
@@ -114,12 +114,12 @@
 				],
 				[
 					'title' => $this->get_lang('Job List'),
-					'url' => 'carrer/job',
+					'url' => 'career/job',
 					'active' => false
 				],
 				[
 					'title' => $this->get_lang('Job Detail'),
-					'url' => 'carrer/job',
+					'url' => 'career/job',
 					'active' => true
 				]
 			];

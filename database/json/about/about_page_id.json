@@ -3,15 +3,15 @@
     "title": "Solusi Pengelolaan Sampah yang Bertanggung Jawab  ",
     "items": [
       {
-        "title": "Solusi Bijak sampah",
+        "title": "Solusi bijak kelola sampah",
         "image": "1.png"
       },
       {
-        "title": "Solusi Bijak sampah",
+        "title": "Solusi bijak kelola sampah",
         "image": "2.jpg"
       },
       {
-        "title": "Solusi Bijak sampah",
+        "title": "Solusi bijak kelola sampah",
         "image": "3.jpg"
       }          
     ]
@@ -97,7 +97,7 @@
         "example": [
           "Solid Waste Management Research"
         ],
-        "image":"consult.png"
+        "image":"consult.jpg"
       },
       {
         "title": "Campaign",
@@ -105,7 +105,7 @@
         "example": [
           "AKABIS (Waste Management Academy)"
         ],
-        "image":"campaign.png"
+        "image":"campaign.jpg"
       },
       {
         "title": "Collect",
@@ -125,7 +125,7 @@
           "Extended Producer Responsibility",
           "In-Store Recycling"
         ],
-        "image":"create.png"
+        "image":"create.jpg"
       }
     ]
   },

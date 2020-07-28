@@ -1,7 +1,7 @@
 <!-- Persuasive Banner Section -->
 <section>
 	<div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
-		<div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-black-opacity-0_6--after" style="height: 100%;background: url(<?= base_url(DIR_BG . 'zero-waste-desk-lunch-1-1100x735.jpg') ?>);background-size: cover;">
+		<div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-black-opacity-0_6--after" style="height: 100%;background: url(<?= base_url(DIR_BG . 'career/Main-Banner1.jpg') ?>);background-size: cover;">
 		</div>
 		<div class="">
 			<div class="container">

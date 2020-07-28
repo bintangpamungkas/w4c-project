@@ -84,6 +84,12 @@
 .w4c-bg-blue-opacity-0_7, .w4c-bg-blue-opacity-0_7--hover:hover, .w4c-bg-blue-opacity-0_7--after::after {
     background-color: rgba(23, 162, 184, 0.7) !important; 
 }
+.w4c-bg-blue-opacity-0_8, .w4c-bg-blue-opacity-0_8--hover:hover, .w4c-bg-blue-opacity-0_8--after::after {
+    background-color: rgba(23, 162, 184, 0.8) !important; 
+}
+.w4c-bg-blue-opacity-0_9, .w4c-bg-blue-opacity-0_9--hover:hover, .w4c-bg-blue-opacity-0_9--after::after {
+    background-color: rgba(23, 162, 184, 0.9) !important; 
+}
 
     
 

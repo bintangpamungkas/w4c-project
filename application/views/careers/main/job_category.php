@@ -11,7 +11,7 @@
 					<!-- Items Iteration -->
 					<?php foreach ($job_category as $key => $category) : ?>
 						<!-- Job Item -->
-						<div class="g-mx-10 g-rounded-5">
+						<div class="g-mx-10 g-rounded-5" onclick="location.href='<?=site_url('career/job?category='.$category->name)?>'">
 						<div class="u-bg-overlay g-bg-blue-opacity-0_8--after g-bg-img-hero " style="background-image: url(<?= get_image(DIR_BG . 'career/' . $category->image) ?>);">
 							<div class="container u-bg-overlay__inner g-color-white align-height-item row align-items-end">
 								<div class="col-12 g-px-13 g-mb-20">
@@ -88,7 +88,7 @@
 				<!-- Job Item Iteration -->
 				<?php foreach ($job_category as $key => $category) : ?>
 					<!-- Job Item -->
-					<div class="col-md-3 g-px-13 g-mb-30"  onclick="location.href='<?=site_url('career/job?category='.$category->name)?>'">
+					<div class="col-md-3 g-px-13 g-mb-30" onclick="location.href='<?=site_url('career/job?category='.$category->name)?>'">
 						<div class="u-block-hover">
 							<div class="g-bg-cover g-bg-black-opacity-0_6--after g-bg-blue--hover-parent--after">
 								<img class="u-block-hover__main--mover-down" src="<?= get_image(DIR_BG . 'career/' . $category->image) ?>" alt="Image Description" style="height:360px">

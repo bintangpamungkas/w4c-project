@@ -4,25 +4,23 @@
     "title": "UX Researcher",
     "category": "tech",
     "type": 1,
-    "location": ["Semarang"],
+    "location": [
+      "Semarang"
+    ],
     "description": [
-      "Manage and conduct user research and concept development",
-      "Research and investigate user persona & their behavior",
-      "Collaborate with other teams to define and implement solutions for the software direction, visuals, and experience",
-      "Review & iterate product functions by collaborating with product engineers",
-      "Create product design (flow, mockup, prototyping, etc) and product development plan"
+      "Mengelola dan melakukan user research dan pengembangan konsep",
+      "Riset dan menganalisa user persona & karakteristiknya",
+      "Berkolaborasi dengan tim lainnya untuk merancang dan mengimplementasikan solusi untuk software direction, visual dan experience",
+      "Reviu dan iterate fungsi produk dengan product engineers",
+      "Membuat desain produk (flow, mockup, prototyping, dll) dan rencana pengembangan produk"
     ],
     "requirement": [
-      "Vocational / Bachelor Degree in Computer Science or related major",
-      "Experienced in handling at least 2 projects with a similar role",
-      "Strong knowledge on Design Sprint, Scrum & PDLC",
-      "Experience with conducting user research",
-      "Have the ability to design UI websites & apps using prototype tools (Figma, Adobe XD, Sketch, Marvel, etc)",
-      "Able to communicate clearly, both oral and written",
-      "Able to work in a team",
-      "Have a personal laptop",
-      "Willing to be placed in the Waste4Change Semarang Office",
-      "Have experiences regarding user research, prototyping, design sprint & communication"
+      "Pria/Wanita",
+      "Pendidikan minimal D3/S1",
+      "Memiliki pengalaman mengerjakan 2 proyek serupa",
+      "Memiliki pengetahuan dalam design sprint, scrum & PDLC",
+      "Memiliki pengalaman dalam membuat riset user ",
+      "Memiliki kemampuan desain UI website dan aplikasi menggunakan prototype tools (Figma, Adobe XD, Sketch, Marvel, dll)"
     ]
   },
   "product-ui-ux-designer": {
@@ -30,18 +28,20 @@
     "title": "Product UI/UX Designer",
     "category": "tech",
     "type": 1,
-    "location": ["Semarang"],
+    "location": [
+      "Semarang"
+    ],
     "description": [
-      "Create product design UI & Flow",
-      "Collaborate with other teams to define and implement solutions for the software direction, visuals, and experience",
-      "Execute design stages from concept to final hand-off to the engineering team",
-      "Review, test, & iterate product functions by collaborating with product engineers"
+      "Membuat desain UI & Flow produk ",
+      "Berkolaborasi dengan tim lainnya untuk merancang dan mengimplementasikan solusi untuk software direction, visual dan experience ",
+      "Eksekusi tahapan-tahapan desain mulai dari konsep sampai final hand-off ke tim engineering ",
+      "Reviu, menguji dan iterate fungsi produk dengan product engineers"
     ],
     "requirement": [
-      "A minimum of 1-year experience",
-      "Max 30 years old",
-      "Good understanding of product design process (Design Thinking, User Story, Product Requirement, etc)",
-      "Have knowledge regarding UI UX Design, excellent visual design skills with sensitivity to user-system interaction"
+      "Pria/Wanita maksimal umur 30 tahun",
+      "Minimal pengalaman 1 tahun ",
+      "Memiliki pemahaman dalam proses desain produk (Design Thinking, User Story, Product Requirement, dll)",
+      "Memiliki pengetahuan dalam desain UI UX, desain visual yang baik dengan sensitivitas terhadap interaksi user-system"
     ]
   },
   "fullstack-wordpress-web-engineer": {
@@ -49,20 +49,22 @@
     "title": "Fullstack & Wordpress Web Engineer",
     "category": "tech",
     "type": 1,
-    "location": ["Semarang"],
+    "location": [
+      "Semarang"
+    ],
     "description": [
-      "Create system design and product development plan",
-      "Build a reliable product from scratch & WordPress environment",
-      "Manage system infrastructure"
+      "Merancang desain sistem dan rencana pengembangan produk",
+      "Membangun produk yang baik dengan scratch dan wordpress ",
+      "Mengelola infrastruktur sistem "
     ],
     "requirement": [
-      "A minimum of 1-year experience",
-      "Understand web development using JS, CSS, HTML, Ajax, PHP using framework (Laravel, CI, WordPress)",
-      "Possess good knowledge about Event-Driven Protocols (REST API, Webhook, Websocket, etc)",
-      "Proficiency with Git & Composer",
-      "Able to work with the product development team",
-      "Have good leadership and work attitude",
-      "Stay up to date with the industry development and have a good learning spirit"
+      "Minimal pengalaman 1 tahun ",
+      "Memiliki pemahaman web development menggunakan JS, CSS, HTML, Ajax, PHP menggunakan framework (Laravel, CI, Wordpress)",
+      "Memiliki pengetahuan mengenai Event-Driven Protocols (REST API, Webhook, Websocket, etc)",
+      "Kemahiran dalam menggunakan Git & Composer",
+      "Dapat bekerja dengan tim product development ",
+      "Memiliki kemampuan kepemimpinan dan etos kerja yang baik ",
+      "Mengetahui pengembangan terbaru dalam industri terkait dan memiliki semangat belajar yang tinggi"
     ]
   },
   "hse-officer": {
@@ -70,20 +72,22 @@
     "title": "HSE Officer",
     "category": "wmo",
     "type": 1,
-    "location": ["Bekasi"],
+    "location": [
+      "Bekasi"
+    ],
     "description": [
-      "Formulate and analyze the improvement of Occupational Health and Safety (OHS) management standard ",
-      "Give internal training and education to employees regarding Occupational Health and Safety (OHS) management standard",
-      "Formulate programs related to Occupational Health and Safety (OHS) management standard ",
-      "Conduct an audit regarding Occupational Health and Safety (OHS) aspects in work areas ",
-      "Make reports regarding the results of data analysis towards Occupation Health and Safety (OHS)"
+      "Bertanggung jawab menyusun & menganalisa perbaikan/peningkatan standar SMK3",
+      "Bertanggung Jawab memberikan edukasi internal (training) kepada karyawan yang berkaitan dengan SMK3",
+      "Bertanggung Jawab menyusun program-program yang berkaitan dengan SMK3",
+      "Mengaudit K3 di area kerja.",
+      "Membuat laporan analisis data K3."
     ],
     "requirement": [
-      "Min. Vocational/Bachelor Degree in Public Health/Environmental Engineering/ Hiperkes (K3)",
-      "Have a certificate in general Occupational Health and Safety (OHS)",
-      "Male / Female max 30 years old",
-      "Candidates who are based in either Bekasi/Jakarta will be prioritized ",
-      "Have a personal laptop"
+      "Pendidikan minimal D3/S1 Kesehatan Masyarakat/Teknik Lingkungan/ Hiperkes (K3)",
+      "Memiliki sertifikat di bidang K3 Umum ",
+      "Pria/ Wanita maksimal berusia 30 tahun",
+      "Diutamakan berdomisili Bekasi/Jakarta",
+      "Memiliki laptop pribadi"
     ]
   },
   "surveyor": {
@@ -91,19 +95,23 @@
     "title": "Surveyor",
     "category": "wmce",
     "type": 2,
-    "location": ["Surabaya", "Mojokerto", "Babat-Lamongan"],
+    "location": [
+      "Surabaya",
+      "Mojokerto",
+      "Babat-Lamongan"
+    ],
     "description": [
-      " Conduct on-ground sampling three days a week",
-      "Input data daily",
-      "Conduct composition sampling",
-      "Coordinate with the surveyor manager regarding technical matters and also for reporting "
+      "Melakukan sampling lapangan 3 hari dalam seminggu",
+      "Menginput data harian",
+      "Melakukan sampling komposisi",
+      "Koordinasi dengan surveyor manager terkait hal teknis dan pelaporan"
     ],
     "requirement": [
-      "Final Year Student from Environmental/Marine Engineering",
-      "Proficient in operating Ms. Excel and Ms. Powerpoint",
-      "Have a private vehicle, since the job will require you to move from one location to another",
-      "Have a personal laptop",
-      "Honest and responsible for the sampling data "
+      "Semester akhir Jurusan Teknik Lingkungan/ Teknik Kelautan",
+      "Memahami penggunaan Ms. Excel dan Ms. Powerpoint",
+      "Memiliki motor atau mobil pribadi dikarenakan pekerjaannya yang mengharuskan mobile ke beberapa lokasi",
+      "Memiliki laptop pribadi",
+      "Jujur dan bertanggung jawab atas data hasil sampling"
     ]
   },
   "po-tetrapak": {
@@ -111,21 +119,23 @@
     "title": "PO Tetrapak",
     "category": "wmo",
     "type": 1,
-    "location": ["Bekasi"],
+    "location": [
+      "Bekasi"
+    ],
     "description": [
-      "Be in charge of Tetrapak's project pertaining to Collection",
-      "Coordinate with existing partners ",
-      "Formulate work plan with the Strategic Services division",
-      "Capable of fulfilling the designated target",
-      "Make sure and oversee that the shipment and transportation of the Used Beverage Cartons (UBC) went well",
-      "Make monthly report"
+      "Bertanggung jawab atas keberlangsungan Project Tetrapak terkait Collection",
+      "Melakukan koordinasi dengan Mitra Eksisting",
+      "Menyusun rencana kerja dengan Strategic Services ",
+      "Mampu mencapai target yang sudah di tetapkan",
+      "Memastikan dan mengawal pengiriman Used Beverage Cartons (UBC) berlangsung dengan baik",
+      "Membuat laporan setiap bulan "
     ],
     "requirement": [
-      "At least a Bachelor's Degree, preferred from Social Sciences",
-      "Experienced in leading a team",
-      "Have a personal laptop and is proficient with Microsoft Office (Word, Excel, dan PowerPoint)",
-      "Preferred candidates with extensive knowledge in recycling",
-      "Good negotiation and communication skill"
+      "Minimal S1 diutamakan latar belakang Ilmu Sosial",
+      "Mempunyai pengalaman memimpin tim",
+      "Memiliki laptop pribadi dan terbiasa menggunakan microsoft office (Word, Excel, dan Power Point)",
+      "Diutamakan memiliki wawasan mengenai daur ulang sampah",
+      "Memiliki kemampuan negosiasi dan komunikasi yang baik"
     ]
   },
   "collect-supervisor": {
@@ -133,18 +143,20 @@
     "title": "Collect Supervisor",
     "category": "wmo",
     "type": 1,
-    "location": ["Bekasi"],
+    "location": [
+      "Bekasi"
+    ],
     "description": [
-      "Plan and execute the flow of the transport system management services",
-      "Increase both the efficiency and effectivity relating to transport services flow",
-      "Control and supervise the performance of each personnel relating to the activities "
+      "Merencanakan atau melaksanakan manajemen sistem arus jasa pengangkutan",
+      "Meningkatkan efisiensi dan efektivitas terkait arus jasa pengangkutan",
+      "Melakukan kendali dan pengawasan terhadap kinerja dari masing-masing personel terkait dengan aktifitas tersebut."
     ],
     "requirement": [
-      "Male, max. 35 years old",
-      "At least a Bachelor's Degree, preferred from Logistic Management",
-      "Preferred candidates with work experience in the logistic division",
-      "Experienced in leading a team",
-      "Good communication skill"
+      "Pria maksimal 35 tahun",
+      "Minimal S1, diutamakan jurusan Management Logistik",
+      "Diutamakan memiliki pengalaman kerja dalam bidang logistik",
+      "Memiliki kemampuan dalam memimpin tim",
+      "Memiliki kemampuan komunikasi yang baik"
     ]
   },
   "inovation-oficer": {
@@ -152,18 +164,20 @@
     "title": "Inovation Oficer",
     "category": "wmo",
     "type": 1,
-    "location": ["Bekasi"],
+    "location": [
+      "Bekasi"
+    ],
     "description": [
-      "Coordinate with external parties who are going to establish cooperation with the company regarding the procurement of things and services for research activities and the company's development",
-      "Analyze and develop the company's service line",
-      "Develop and improve the quality of the products/services that the company produce/provides "
+      "Melakukan koordinasi dengan pihak luar yang hendak melakukan kerjasama dengan perusahaan berkaitan dengan pengadaan barang dan jasa untuk aktivitas riset dan pengembangan perusahaan",
+      "Melakukan analisa dan mengembangkan lini jasa perusahaan ",
+      "Melakukan pengembangan terkait dengan peningkatan kualitas produk / jasa yang dihasilkan perusahaan"
     ],
     "requirement": [
-      "Female/Male max. 35 years old",
-      "At least a Bachelor's Degree from Environmental Engineering",
-      "Proficient in English",
-      "Strong analytical and problem-solving skills",
-      "Have a personal laptop and can operate it well"
+      "Wanita/Pria maksimal berusia 35 tahun",
+      "Pendidikan minimal S1 Jurusan Teknik Lingkungan",
+      "Mahir berbahasa inggris",
+      "Memiliki kemampuan analisis dan pemecahan masalah yang kuat",
+      "Memiliki laptop pribadi dan mengoperasikannya dengan baik"
     ]
   },
   "recruiter": {
@@ -171,24 +185,28 @@
     "title": "Recruiter",
     "category": "cf",
     "type": 1,
-    "location": ["Bekasi"],
+    "location": [
+      "Bekasi"
+    ],
     "description": [
-      "Manage and develop human resources, including to plan, execute, and supervise the company's human resources as well as to develop and improve the quality of the human resources",
-      "Be in charge of the company's needs for new employees",
-      "Conduct and supervise recruitment process, starting from the selection process up to the contract signing",
-      "Formulate recruitment strategy as well as evaluate the existing recruitment process",
-      "Conduct networking with relevant stakeholders who will be able to provide references in recruiting new employees such as the Labor Agency, educational institution, as well as public figures"
+      "Bertanggung jawab mengelola dan mengembangkan sumber daya manusia termasuk perencanaan, pelaksanaan dan pengawasan sumber daya manusia dan pengembangan kualitas sumber daya manusia.",
+      "Membuat sistem HR yang efektif dan efisien seperti training and development system dll.",
+      "Bertanggung jawab penuh dalam proses rekrutmen karyawan, mulai dari mencari calon karyawan, wawancara hingga seleksi.",
+      "Melakukan kegiatan pembinaan, pelatihan dan kegiatan-kegiatan yang berhubungan dengan pengembangan kemampuan, potensi, mental, keterampilan dan pengetahuan karyawan yang sesuai dengan standar perusahaan.",
+      "Membuat kontrak kerja karyawan serta memperbaharui masa berlakunya kontrak kerja.",
+      "Melakukan tindakan disiplin pada karyawan yang melanggar peraturan atau kebijakan perusahaan.",
+      "Menyusun laporan berkala atas performa HR terhadap management"
     ],
     "requirement": [
-      "Male / Female max. 30 years old",
-      "Bachelor Degree from Psychology/ HR Management",
-      "Have experience as a Recruiter for at least 2 years",
-      "Capable of using measuring instrument in the selection process of a potential employee",
-      "Good communication and negotiation skill",
-      "Candidates with at least 1 HR Certification (Recruitment and Selection) are more preferred",
-      "English proficiency, especially in reading and writing",
-      "Have a personal laptop",
-      "Will be placed in Bekasi"
+      "Min. S1 Psikologi/Manajemen SDM",
+      "Pria/Wanita, max 30 tahun",
+      "Jujur, teliti, dan bertanggungjawab",
+      "Memiliki pengalaman minimal 2 tahun di bidang HR",
+      "Diutamakan memiliki sertifikasi manajemen sumber daya manusia",
+      "Memiliki kemampuan komunikasi yang baik",
+      "Mahir dalam mengoperasikan Ms. Officer",
+      "Bersedia ditempatkan di Kantor Waste4Change Bekasi",
+      "Memilik Laptop pribadi"
     ]
   },
   "innovation-officer": {
@@ -196,18 +214,20 @@
     "title": "Innovation Officer",
     "category": "wmo",
     "type": 1,
-    "location": ["Bekasi"],
+    "location": [
+      "Bekasi"
+    ],
     "description": [
-      "Female/Male max.35 years old",
-      "At least a Bachelor's Degree from Environmental Engineering",
-      "Proficient in English",
-      "Good analytic and problem-solving skills",
-      "Have a personal laptop and is able to operate it well "
+      "Melakukan koordinasi dengan pihak luar yang hendak melakukan kerjasama dengan perusahaan berkaitan dengan pengadaan barang dan jasa untuk aktivitas riset dan pengembangan perusahaan",
+      "Melakukan analisa dan mengembangkan lini jasa perusahaan ",
+      "Melakukan pengembangan terkait dengan peningkatan kualitas produk / jasa yang dihasilkan perusahaan"
     ],
     "requirement": [
-      "Coordinate with external parties who are intending to cooperate with the company in regards to the procurement of services and goods for research and development purposes",
-      "Perform analysis and develop the company's service line ",
-      "Develop the quality of the product/services that the company provide "
+      "Wanita/Pria maksimal berusia 35 tahun",
+      "Pendidikan minimal S1 Jurusan Teknik Lingkungan",
+      "Mahir berbahasa inggris",
+      "Memiliki kemampuan analisis dan pemecahan masalah yang kuat",
+      "Memiliki laptop pribadi dan mengoperasikannya dengan baik"
     ]
   },
   "office-administration-and-procurement-officer": {
@@ -215,25 +235,27 @@
     "title": "Office Administration and Procurement Officer",
     "category": "cf",
     "type": 1,
-    "location": ["Bekasi"],
+    "location": [
+      "Bekasi"
+    ],
     "description": [
-      "Create a procurement system and procedure ",
-      "Execute goods purchasing procedure",
-      "Actively looking for and updating the supplier contact data ",
-      "Negotiate and evaluate suppliers",
-      "Perform daily administration tasks",
-      "Manage purchase request from all departments",
-      "Perform asset recording system "
+      "Membuat prosedur dan sistem pengadaan ",
+      "Menjalankan prosedur pembelian barang ",
+      "Aktif mencari dan melakukan update data kontak supplier ",
+      "Melakukan negosiasi dan evaluasi  pada suplier",
+      "Melaksanakan kegiatan administrasi harian",
+      "Mangelola permintaan pembelian dari seluruh departemen",
+      "Menjalankan sistem pencatatan aset dengan baik"
     ],
     "requirement": [
-      "Male/Female Max. 30 years old",
-      "Have at least 2 years of experience in the same field or in administration/purchasing / GA",
-      "Proficient in English, both written and spoken",
-      "Discipline, thorough, and is responsible",
-      "Highly initiative",
-      "Good communication, negotiation, presentation, and interpersonal skills",
-      "Have leadership skills and able to work in a team",
-      "Have a personal laptop "
+      "Pria/Wanita Maks 30 tahun",
+      "Memiliki pengalaman min. 2 tahun dibidang yang sama atau administrasi / purchasing / GA",
+      "Dapat berbahasa Inggris (tulis & lisan)",
+      "Disiplin, teliti dan bertanggung jawab",
+      "Memiliki inisiatif yang tinggi",
+      "Memiliki kemampuan komunikasi, negosiasi, presentasi dan interpersonal yang sangat baik",
+      "Berjiwa kepemimpinan dan dapat bekerja dalam team",
+      "Memiliki laptop pribadi"
     ]
   },
   "customer-service": {
@@ -241,23 +263,25 @@
     "title": "Customer Service",
     "category": "wmo",
     "type": 1,
-    "location": ["Bekasi"],
+    "location": [
+      "Bekasi"
+    ],
     "description": [
-      "At least a High School/Vocational School graduate (Social or Tourism major preferred)",
-      "Candidates with previous exprience in a similar field are more preferred",
-      "Good communication and interpersonal skills",
-      "Candidates with English proficiency (at least written) are preffered",
-      "Honest, tenacious, and is responsible",
-      "Able to operate Windows Microsoft Office",
-      "Able to work under pressure",
-      "Have a personal laptop "
+      "Menanggapi pertanyaan dari setiap pelanggan",
+      "Selesaikan masalah pelanggan",
+      "Menyimpan catatan interaksi pelanggan, transaksi, komentar dan keluhan",
+      "Memberikan umpan balik tentang efisiensi proses layanan pelanggan",
+      "Pastikan kepuasan pelanggan dan berikan dukungan pelanggan profesional"
     ],
     "requirement": [
-      "Respond to every customer's inquiry",
-      "Help address the issues that are experienced by the customers",
-      "Record and archive every interaction. transcation, comment, and complaint with and from customers",
-      "Good communication, negotiation, presentation, and interpersonal skills,Give feedback regarding the customer service process and eficiency",
-      "Ensure customers' satisfaction and provide professional customer support "
+      "Pendidikan Min. SMA/SMK (diutamakan jurusan Sosial/Pariwisata/Perhotelan)",
+      "Diutamakan memiliki pengalaman pada bidang yang sama",
+      "Memiliki kemampuan komunikasi dan interpersonal yang baik",
+      "Diutamakan dapat berbahasa inggris (minimal tulisan)",
+      "Jujur, ulet, bertanggung jawab",
+      "Mampu mengoperasikan Windows Microsoft Office",
+      "Mampu bekerja diawah tekanan",
+      "Memiliki Laptop Pribadi"
     ]
   },
   "enumerator": {
@@ -265,21 +289,23 @@
     "title": "Enumerator",
     "category": "wmce",
     "type": 2,
-    "location": ["Bekasi"],
+    "location": [
+      "Bekasi"
+    ],
     "description": [
-      "Interview respondents using the questionnare that has been provided",
-      "Perform coding based on the interview results ",
-      " Deliver reports regarding the results of daily coding",
-      " Perform data cleaning whenever necessary "
+      "Melakukan wawancara menggunakan kuesioner yang telah disediakan",
+      "Melakukan coding dari hasil wawancara",
+      "Memberikan laporan hasil coding harian",
+      "Melakukan data cleaning jika dibutuhkan"
     ],
     "requirement": [
-      "At least a Final Year or Fresh Graduate from Sociology/Anthropology",
-      "Candidates with previous experience as enumerator are preferred",
-      "Good communication skill",
-      "Have a private vehicle and a driving license (SIM C)",
-      "Have a personal laptop",
-      "Willing to be placed in Kedungwaringin, Bekasi",
-      "Willing to work between the period from 3rd August until 7th September 2020"
+      "Pendidikan Min. Mahasiswa Tingkat Akhir atau Freshgraduate S1 Sosiologi/Antropologi",
+      "Memiliki pengalaman sebagai enumerator lebih diutamakan",
+      "Memiliki kemampuan komunikasi yang baik",
+      "Memiliki kendaraan pribadi dan SIM C",
+      "Memiliki laptop pribadi",
+      "Bersedia ditempatkan di Kedungwaringin, Bekasi ",
+      "Bersedia bekerja pada periode 3 Agustus - 7 September 2020"
     ]
   },
   "salesmanager": {
@@ -287,21 +313,22 @@
     "title": "Sales Manager",
     "category": "wmo",
     "type": 1,
-    "location": ["Bekasi"],
+    "location": [
+      "Bekasi"
+    ],
     "description": [
-      "Interview respondents using the questionnare that has been provided",
-      "Perform coding based on the interview results ",
-      " Deliver reports regarding the results of daily coding",
-      " Perform data cleaning whenever necessary "
+      "Mengembangkan dan mengelola peluang bisnis baru dengan pelanggan yang ada dan calon pelanggan.",
+      " Memimpin fungsi penjualan Departemen Operational Services.",
+      "Mengembangkan strategi penjualan untuk meningkatkan angka pasar dan profitabilitas.",
+      "Mengorganisir dan mengontrol penerapan taktik pemasaran dan penjualan",
+      "Melakukan analisa kebutuhan market dan program penjualan "
     ],
     "requirement": [
-      "At least a Final Year or Fresh Graduate from Sociology/Anthropology",
-      "Candidates with previous experience as enumerator are preferred",
-      "Good communication skill",
-      "Have a private vehicle and a driving license (SIM C)",
-      "Have a personal laptop",
-      "Willing to be placed in Kedungwaringin, Bekasi",
-      "Willing to work between the period from 3rd August until 7th September 2020"
+      "Wanita/Pria maksimal 35 tahun",
+      "S1/S2 jurusan Marketing/Manajemen Bisnis",
+      "Fluent English (oral & written)",
+      "Memiliki pengalaman kerja selama sebagai Sales Manager dengan keberhasilan yang ditunjukkan sebagai pemain yang kuat, lebih disukai dalam bidang waste management services ",
+      "Memiliki kemampuan analisis, negosiasi, dan Manajerial yang baik"
     ]
-  }  
+  }
 }

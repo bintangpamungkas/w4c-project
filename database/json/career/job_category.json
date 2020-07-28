@@ -1,22 +1,22 @@
 {
   "cf": {
     "name": "Corporate Function",
-    "image": "cf.png",
+    "image": "cf.jpg",
     "icon" : "icon-bag"
   },
   "tech": {
     "name": "Tech",
-    "image": "tech.png",
+    "image": "tech.jpg",
     "icon": "icon-screen-desktop"
   },
   "wmo": {
     "name": "Waste Management Operations",
-    "image": "wm.png",
+    "image": "wm.jpg",
     "icon": "icon-trash"
   },
   "wmce": {
     "name": "Waste Management Consultant & Education",
-    "image": "wmce.png",
+    "image": "wmce.jpg",
     "icon": "icon-notebook"
   }
 }

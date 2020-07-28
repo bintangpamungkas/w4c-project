@@ -75,27 +75,26 @@
     }
   }
   $('#arrow-btn').on('click', function() {
-                    $(this).html(function(index, value) {
-                        return value !== '<i class="fa fa-share-alt g-mr-15"></i>' ? '<i class="fa fa-share-alt g-mr-15"></i>' : '<img src="<?= site_url(DIR_IMG . 'icons/arrow-right.svg') ?>" width="24">';
-                    }).toggleClass('g-font-size-26');
-                    $('#side-box').toggleClass('g-bg-white');
-                    $('#sidebar-share').slideToggle();
-                });
-                $('#copyLink').on('click', function() {
-                    event.preventDefault();
-                    var $temp = $("<input>");
-                    $("body").append($temp);
-                    $temp.val($(this).attr('href')).select();
-                    document.execCommand("copy");
-                    $(this).tooltip('hide')
-                        .attr('data-original-title', 'Copied!')
-                        .tooltip('show');
-                    $temp.remove();
-                });
+    $(this).html(function(index, value) {
+      return value !== '<i class="fa fa-share-alt g-mr-15"></i>' ? '<i class="fa fa-share-alt g-mr-15"></i>' : '<img src="<?= site_url(DIR_IMG . 'icons/arrow-right.svg') ?>" width="24">';
+    }).toggleClass('g-font-size-26');
+    $('#side-box').toggleClass('g-bg-white');
+    $('#sidebar-share').slideToggle();
+  });
+  $('#copyLink').on('click', function() {
+    event.preventDefault();
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(this).attr('href')).select();
+    document.execCommand("copy");
+    $(this).tooltip('hide')
+      .attr('data-original-title', 'Copied!')
+      .tooltip('show');
+    $temp.remove();
+  });
 
-                $('#copyLink').on('mouseout', function() {
-                    $(this).attr('data-original-title', 'Copy Link')
-                        .tooltip('hide');
-                });
-
+  $('#copyLink').on('mouseout', function() {
+    $(this).attr('data-original-title', 'Copy Link')
+      .tooltip('hide');
+  });
 </script>

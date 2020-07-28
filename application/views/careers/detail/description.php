@@ -1,10 +1,41 @@
 <!-- Descripition Section -->
-<section class="g-white g-bg-white u-shadow-v20 g-pt-20">
+<section class="g-white g-bg-white u-shadow-v20 g-pt-30">
   <div class="container">
     <div class="row">
       <div class="col">
-        <div class="job-title g-color-black g-font-size-<?= $this->agent->is_mobile() ? '22' : '36' ?> g-font-weight-700 g-line-height-1_2 text-uppercase  g-mb-13"><?= $job->title ?></div>
-        <table class="g-mb-45" width="100%">
+        <div class="job-title g-color-black g-font-size-<?= $this->agent->is_mobile() ? '22' : '36' ?> g-font-weight-700 g-line-height-1_2 text-uppercase  g-mb-5"><?= $job->title ?></div>
+        <div class="row no-gutters g-mb-40">
+          <div class="col-auto g-pr-10 g-pt-15">
+            <div class="job-category g-font-size-16 text-uppercase"><?= $job_category->{$job->category}->name ?></div>
+          </div>
+          <div class="col g-pt-10">
+            <table class="g-color-w4c-blue-v2 g-font-size-16 text-uppercase row no-gutters" width="100%">
+              <tr>
+                <td width="1%">
+                  <i class="icon-location-pin mr-2"></i>
+                </td>
+                <td class="job-location  g-pr-15">
+                  <?php foreach ($job->location as $location) : ?>
+                    <?= $location ?><br>
+                  <?php endforeach; ?>
+                </td>
+                <td class="">
+                  <div class="btn btn-outline-info g-font-size-12 float-right g-rounded-50 text-uppercase <?= $this->agent->is_mobile() ? ' g-px-10 g-py-4' : '' ?>" style="background: <?= $job_type->{$job->type}->color ?>20 !important; border-color: <?= $job_type->{$job->type}->color ?>; color:<?= $job_type->{$job->type}->color ?>">
+                    <span class="job-type"><?= $job_type->{$job->type}->name ?></span>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-auto">
+
+          </div>
+          <!-- <div class="col">
+            <div class="btn btn-outline-info g-font-size-12 float-right g-rounded-50 text-uppercase" style="background: <?= $job_type->{$job->type}->color ?>20 !important; border-color: <?= $job_type->{$job->type}->color ?>; color:<?= $job_type->{$job->type}->color ?>">
+              <span class="job-type"><?= $job_type->{$job->type}->name ?></span></div>
+          </div> -->
+        </div>
+        <!-- <table class="g-mb-45" width="100%">
           <tr>
             <td class="g-pr-10">
               <div class="job-category g-font-size-16 text-uppercase"><?= $job_category->{$job->category}->name ?></div>
@@ -28,7 +59,7 @@
               </div>
             </td>
           </tr>
-        </table>
+        </table> -->
         <?php if ($this->agent->is_mobile()) : ?>
           <div class="g-flex-centered g-bg-img-hero u-bg-overlay w4c-bg-blue-opacity-0_5--after g-py-20 g-mb-25" style="background-image: url(<?= get_image(DIR_BG . 'career/' . $job_category->{$job->category}->image) ?>); height:161px; width:100%;object-fit:cover">
             <div class="container u-bg-overlay__inner text-center">
@@ -117,44 +148,7 @@
       <!-- End Detail Section -->
       <!-- Share Section -->
       <div class="col-md-auto">
-        <?php if ($this->agent->is_mobile()) : ?>
-          <a class="btn btn-info btn-block g-font-size-18 g-font-weight-600 g-py-12 g-my-35 g-rounded-50 text-uppercase" href="http://w4c.id/formofficerw4c"><?= $copy->ApplyNow ?></a>
-          <div id="side-box" class="g-px-10 g-bg-info g-bg-white" style="display: block; position: fixed; top: 70px; right: 0; z-index: 999;">
-            <div class="g-px-10 g-pb-5 g-pt-5">
-              <a id="arrow-btn" class="g-font-size-23">
-                <img src="<?= site_url(DIR_IMG . 'icons/arrow-right.svg') ?>" width="24">
-              </a>
-            </div>
-
-            <div id="sidebar-share">
-              <div class="g-mt-10 g-mb-10">
-              <a class="u-icon-v3 g-social-icon g-rounded-50x g-color-white--hover" href="https://api.whatsapp.com/send?text=<?= site_url('career/' . key($job)) ?>" target="_blank" style="width: 55px;height: 55px;">
-                      <i class="fa fa-whatsapp"></i>
-                    </a>
-              </div>
-              <div class="g-mb-10">
-              <a class="u-icon-v3 popup g-social-icon g-rounded-50x g-color-white--hover" href="https://www.facebook.com/sharer/sharer.php?u=<?= site_url('career/' . key($job)) ?>&display=popup&ref=plugin" style="width: 55px;height: 55px;">
-                      <i class="fa fa-facebook"></i>
-                    </a>
-              </div>
-              <div class="g-mb-10">
-              <a class="u-icon-v3 popup g-social-icon g-rounded-50x g-color-white--hover" href="http://twitter.com/share?text=<?= $job->title ?>&url=<?= site_url('career/' . key($job)) ?>&via=<?= APP_NAME ?>" style="width: 55px;height: 55px;">
-                      <i class="fa fa-twitter"></i>
-                    </a>
-              </div>
-              <div class="g-mb-10">
-              <a class="u-icon-v3 popup g-social-icon g-rounded-50x g-color-white--hover" href="https://www.linkedin.com/shareArticle?mini=true&url=<?= site_url('career/' . key($job)) ?>&source=<?= APP_NAME ?>" style="width: 55px;height: 55px;">
-                      <i class="fa fa-linkedin"></i>
-                    </a>
-              </div>
-              <div class="g-mb-10">
-              <a id="copyLink" class="u-icon-v3 g-social-icon g-rounded-50x g-color-white--hover g-text-rotate" href="<?= site_url('career/' . key($job)) ?>" data-toggle="tooltip" data-placement="top" title="Copy Link" style="width: 55px;height: 55px;">
-                      <i class="fa fa-link"></i>
-                    </a>
-              </div>
-            </div>
-          </div>
-        <?php else : ?>
+        <?php if (!$this->agent->is_mobile()) : ?>
           <div class="" style="border:1px solid #C4C4C4">
             <div class="g-flex-centered g-bg-img-hero u-bg-overlay w4c-bg-blue-opacity-0_5--after g-py-20" style="background-image: url(<?= get_image(DIR_BG . 'career/' . $job_category->{$job->category}->image) ?>); height:273px; width:393px;object-fit:cover">
               <div class="container u-bg-overlay__inner text-center">
