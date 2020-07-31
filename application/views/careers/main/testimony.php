@@ -4,7 +4,7 @@
 		<div class="row justify-content-center my_tab_content no-gutters">
 			<div class="col-md-12">
 				<h2 class="g-font-asap g-color-black text-uppercase g-font-weight-600 text-center g-font-size-<?= $this->agent->is_mobile() ? '24' : '35 g-mb-10' ?>"><?= $copy->testimony->title ?></h2>
-				<hr class="g-width-120 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
+				<hr class="g-width-30 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
 				<?php if (!$this->agent->is_mobile()) : ?>
 					<div class="mt-2 mb-4 g-px-10 text-center"><?= $copy->testimony->subtitle ?></div>
 				<?php endif; ?>

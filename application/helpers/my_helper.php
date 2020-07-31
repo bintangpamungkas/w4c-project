@@ -477,41 +477,33 @@ function meta_data($activation, $meta_data = false)
 		'title_2' => get_lang('title-a-social-entrepreneur-that-provides-responsible-waste-management-services-'),
 		'description_2' => get_lang('desc-a-social-entrepreneur-that-provides-segregated-and-responsible-waste-management-services-by-reducing-the-amount-of-waste-that-end-up-in-landfills'),
 		'keywords' => get_lang('key-waste-management-waste-management-jakarta-waste-management-service-waste-management-using-modern-technology-recycling-service-waste-processing-service-'),
+		'image' => base_url(DIR_IMG . 'logo/favicon.jpg')
 	];
 	if (MODE != 'live') {
 		echo "<!--";
 	}
 	if ($activation == true) {
-		if (empty($meta_data)) {
-		?>
-			<meta name="description" content="<?= $param['description_1'] ?>">
-			<meta name="keywords" content="<?= $param['keywords'] ?>">
-			<meta property="og:url" content="<?= SITE_URL . $_SERVER['REQUEST_URI'] ?>" />
-			<meta property="og:site_name" content="<?= APP_NAME ?>" />
-			<meta property="og:title" content="<?= $param['title_2'] ?>">
-			<meta property="og:description" content="<?= $param['description_2'] ?>" />
-			<meta property="og:image" content="<?= base_url(DIR_IMG . 'logo/favicon.jpg') ?>">
-			<meta property="og:image:type" content="image/jpg">
-			<meta property="og:image:width" content="1024">
-			<meta property="og:image:height" content="1024">
-			<link rel="canonical" href="<?= SITE_URL ?>" />
-		<?php
 
-		} else {
 		?>
-			<meta name="description" content="<?= $meta_data['description_1'] ?>">
-			<meta name="keywords" content="<?= $meta_data['keywords'] ?>">
-			<meta property="og:url" content="<?= SITE_URL . $meta_data['site_url'] ?>" />
+			<meta name="description" content="<?= empty($meta_data['description_1']) ? $param['description_1'] : $meta_data['description_1'] ?>">
+			<meta name="keywords" content="<?= empty($meta_data['keywords']) ? $param['keywords'] : $meta_data['keywords']?>">
+			<meta property="og:url" content="<?= empty($meta_data['site_url']) ? SITE_URL : SITE_URL . $meta_data['site_url'] ?>" />
 			<meta property="og:site_name" content="<?= APP_NAME ?>" />
-			<meta property="og:title" content="<?= $meta_data['title_2'] ?>">
-			<meta property="og:description" content="<?= $meta_data['description_2'] ?>" />
-			<meta property="og:image" content="<?= $meta_data['image'] ?>">
+			<meta property="og:title" content="<?= empty($meta_data['title_2']) ? $param['title_2'] : $meta_data['title_2'] ?>">
+			<meta property="og:description" content="<?= empty($meta_data['description_2']) ? $param['description_2'] : $meta_data['description_2'] ?>" />
+			<meta property="og:image" content="<?= empty($meta_data['image']) ? $param['image'] : $meta_data['image'] ?>">
 			<meta property="og:image:type" content="image/jpg">
-			<meta property="og:image:width" content="1024">
-			<meta property="og:image:height" content="1024">
-			<link rel="canonical" href="<?= SITE_URL . $meta_data['site_url'] ?>" />
+			<meta property="og:image:width" content="780" />
+			<meta property="og:image:height" content="439" />
+			<meta name="twitter:card" content="summary_large_image" />
+			<meta name="twitter:description" content="<?= empty($meta_data['description_2']) ? $param['description_2'] : $meta_data['description_2'] ?>" />
+			<meta name="twitter:title" content="<?= empty($meta_data['title_2']) ? $param['title_2'] : $meta_data['title_2'] ?>" />
+			<meta name="twitter:site" content="@Waste4Change" />
+			<meta name="twitter:image" content="<?= empty($meta_data['image']) ? $param['image'] : $meta_data['image'] ?>" />
+			<meta name="twitter:creator" content="@Waste4Change" />
+			<link rel="canonical" href="<?= empty($meta_data['site_url']) ? SITE_URL : SITE_URL . $meta_data['site_url'] ?>" />
 			<?php
-		}
+
 	}
 	if (MODE != 'live') {
 		echo " -->";

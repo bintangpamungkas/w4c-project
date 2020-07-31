@@ -2,13 +2,13 @@
 <section class="g-bg-white g-py-80 <?= $this->agent->is_mobile() ? '' : 'g-px-30' ?>">
 	<?php if ($this->agent->is_mobile()) : ?>
 		<div class="g-font-asap g-color-black text-uppercase text-center g-font-weight-600 g-font-size-24 g-mb-10"><?= $copy->internship_program->title ?></div>
-		<hr class="g-width-120 g-mt-20 g-mb-40 g-brd-2 w4c-brd-blue">
+		<hr class="g-width-30 g-mt-20 g-mb-40 g-brd-2 w4c-brd-blue">
 		<div class="g-bg-gray-light-v5 g-pa-15">
 			<div class="g-bg-white box-shadow-down g-rounded-10 g-pa-20">
 				<div style="height: 200px;background: url(<?= get_image(DIR_BG . 'career/' . $copy->internship_program->image) ?>);background-size: cover;"></div>
 				<div class="g-mt-minus-100 g-pa-20 g-pt-50" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0)  0%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 100%);">
 					<div class="mt-2 mb-4 g-font-size-18 g-color-black g-font-weight-600 g-line-height-1_5"><?= $copy->internship_program->subtitle ?></div>
-					<hr class="g-width-120 g-my-20 g-ml-0 g-brd-2 w4c-brd-blue">
+					<hr class="g-width-30 g-my-20 g-ml-0 g-brd-2 w4c-brd-blue">
 					<div class=""><?= $copy->internship_program->message ?></div>
 				</div>
 			</div>
@@ -18,7 +18,7 @@
 			<div class="row justify-content-center my_tab_content">
 				<div class="col-md-6">
 					<div class="g-font-asap g-color-black text-uppercase g-font-weight-600 g-font-size-35 g-mb-10"><?= $copy->internship_program->title ?></div>
-					<hr class="g-width-120 g-mt-20 g-mb-40 g-ml-0 g-brd-2 w4c-brd-blue">
+					<hr class="g-width-30 g-mt-20 g-mb-40 g-ml-0 g-brd-2 w4c-brd-blue">
 					<div class="mt-2 mb-4 g-font-size-22 g-color-black g-font-weight-600"><?= $copy->internship_program->subtitle ?></div>
 					<div class="mt-2 mb-4 "><?= $copy->internship_program->message ?></div>
 				</div>

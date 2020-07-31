@@ -289,9 +289,7 @@
     "title": "Enumerator",
     "category": "wmce",
     "type": 2,
-    "location": [
-      "Bekasi"
-    ],
+    "location": ["Bekasi"],
     "description": [
       "Melakukan wawancara menggunakan kuesioner yang telah disediakan",
       "Melakukan coding dari hasil wawancara",

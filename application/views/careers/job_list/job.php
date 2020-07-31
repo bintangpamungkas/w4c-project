@@ -6,7 +6,7 @@
         <?php if (!$this->agent->is_mobile()) : ?>
           <div class="col-md-8 col-12">
             <div class="g-font-asap g-color-black text-uppercase g-font-weight-600 g-font-size-24 g-mb-10 <?= $this->agent->is_mobile() ? 'text-center' : '' ?>"><?= $copy->JobList ?></div>
-            <hr class="g-width-120 g-mt-20 g-mb-<?= $this->agent->is_mobile() ? '40' : '30 g-ml-0' ?> g-brd-2 g-brd-blue">
+            <hr class="g-width-30 g-mt-20 g-mb-<?= $this->agent->is_mobile() ? '40' : '30 g-ml-0' ?> g-brd-2 g-brd-blue">
           </div>
         <?php endif; ?>
         <!-- Sorting -->

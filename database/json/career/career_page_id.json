@@ -139,7 +139,7 @@
     "items": [
       {
         "question": "Bagaimana cara melamar pekerjaan di Waste4Change?",
-        "answer": "Silahkan langsung menuju halaman karir kami di w4c.id/career dan cari lowongan di divisi atau bahkan posisi tertentu dengan mengisi kolom pencarian. Kamu juga bisa mencari berdasarkan lokasi, jabatan, atau tipe lowongan. Selamat mencari dan menentukan lowongan yang paling sesuai dengan yang kamu inginkan."
+        "answer": "Silahkan langsung menuju halaman karir kami di <a class='w4c-color-blue g-font-weight-900' href='w4c.id/career'>w4c.id/career</a> dan cari lowongan di divisi atau bahkan posisi tertentu dengan mengisi kolom pencarian. Kamu juga bisa mencari berdasarkan lokasi, jabatan, atau tipe lowongan. Selamat mencari dan menentukan lowongan yang paling sesuai dengan yang kamu inginkan."
       },
       {
         "question": "Bagaimana dengan proses rekrutmennya? ",
@@ -151,7 +151,7 @@
       },
       {
         "question": "Bolehkah saya mencoba melamar pekerjaan bahkan ketika tidak ada lowongan yang sesuai untuk saya?",
-        "answer": "Tentu saja boleh. Kami menyambut hangat antusiasme orang-orang yang punya semangat dan kemauan kuat untuk menjadi bagian dari Waste4Change. Silahkan kunjungi halaman Job List, kemudian klik “Setor CV” dan unggah berkas lamaran Anda. Nantinya berkas tersebut akan kami proses sesuai dengan kondisi dan kebutuhan perusahaan."
+        "answer": "Tentu saja boleh. Kami menyambut hangat antusiasme orang-orang yang punya semangat dan kemauan kuat untuk menjadi bagian dari Waste4Change. Silahkan kunjungi halaman Job List, kemudian klik \"Setor CV\" dan unggah berkas lamaran Anda. Nantinya berkas tersebut akan kami proses sesuai dengan kondisi dan kebutuhan perusahaan."
       },
       {
         "question": "Apa yang bisa saya harapkan dari bekerja di Waste4Change?",

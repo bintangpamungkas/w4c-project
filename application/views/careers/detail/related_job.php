@@ -6,7 +6,7 @@
         <a class="btn btn-info float-right g-rounded-50 g-py-10 g-px-80 g-font-size-18 text-uppercase" href="<?= site_url('career/job') ?>"><?= $copy->SeeMore ?></a>
       <?php endif; ?>
       <div class="g-font-asap g-color-black text-uppercase g-font-weight-600 g-font-size-24 g-mb-10 <?= $this->agent->is_mobile() ? 'text-center' : '' ?>"><?= $copy->RelatedJob ?></div>
-      <hr class="g-width-120 g-mt-20 g-mb-40 <?= $this->agent->is_mobile() ? '' : 'g-ml-0' ?> g-brd-2 w4c-brd-blue">
+      <hr class="g-width-30 g-mt-20 g-mb-40 <?= $this->agent->is_mobile() ? '' : 'g-ml-0' ?> g-brd-2 w4c-brd-blue">
     </div>
     <div class="container">
       <div class="row align-height-list">
@@ -18,7 +18,7 @@
         }
         $i = 1;
         foreach ($jobs as $itemi => $item) :
-          if ($i <= $show && $item->category == $job->category) : ?>
+          if ($item->category == $job->category) : ?>
             <div class="col-md-4 col-12 g-line-height-1_2 <?= $this->agent->is_mobile() ? 'g-px-10 g-py-5' : 'g-pa-5' ?>">
               <div class="g-bg-white <?= $this->agent->is_mobile() ? 'g-px-25 g-py-20' : 'g-pa-30 align-height-item' ?>" style="box-shadow:1px 6px 20px 2px rgba(0, 0, 0, 0.1);position:relative;">
                   <div class="btn btn-outl ine-info g-font-size-<?= $this->agent->is_mobile() ? '10' : '12' ?> float-right g-rounded-50 text-uppercase g-mt-5 g-ml-10 g-py-5 g-px-12" style="background: <?= $job_type->{$item->type}->color ?>20 !important; border-color: <?= $job_type->{$item->type}->color ?>; color:<?= $job_type->{$item->type}->color ?>"><?= $job_type->{$item->type}->name ?></div>

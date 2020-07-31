@@ -37,6 +37,13 @@
 			$data['jobs'] = json_decode(file_get_contents(base_url('database/json/career/job_'.$lang.'.json')));
       $data['job_category'] = json_decode(file_get_contents(base_url('database/json/career/job_category.json')));
 			$data['job_type'] = json_decode(file_get_contents(base_url('database/json/career/job_type.json')));
+			$data['meta_data'] = [
+				'site_url' => 'career',
+				'title_1' => 'Waste4Change - ' . ucwords(lang('career')),
+				'description_1' => $data['copy']->banner->title,
+				'title_2' => 'Waste4Change - ' . ucwords(lang('career')),
+				'description_2' => $data['copy']->banner->title,
+			];
       $this->render_page('careers/main/index', $data, 'services');
 		}
 
@@ -77,8 +84,13 @@
       $data['jobs'] = json_decode(file_get_contents(base_url('database/json/career/job_'.$lang.'.json')));
       $data['job_category'] = json_decode(file_get_contents(base_url('database/json/career/job_category.json')));
 			$data['job_type'] = json_decode(file_get_contents(base_url('database/json/career/job_type.json')));
-			// print_r(key($data['jobs']));
-			// die(print_r($data['jobs']));
+			$data['meta_data'] = [
+				'site_url' => 'career/job',
+				'title_1' => 'Waste4Change - Job List',
+				'description_1' => json_decode(file_get_contents(base_url('database/json/career/career_page_'.$lang.'.json')))->banner->title,
+				'title_2' => 'Waste4Change - Job List',
+				'description_2' => json_decode(file_get_contents(base_url('database/json/career/career_page_'.$lang.'.json')))->banner->title,
+			];
       $this->render_page('careers/job_list/index', $data, 'services');
 		}
 		
@@ -88,6 +100,7 @@
 
 			$job = json_decode(file_get_contents(base_url('database/json/career/job_'.$lang.'.json')));
 			$data['job'] = $job->{$slug};
+			$data['job_slug'] = $slug;
 			
 			if (empty($data['job'])){
 				redirect('career/job_list');
@@ -123,12 +136,21 @@
 					'active' => true
 				]
 			];
-
+		
       //language, section, general info (title, subtitle, order), item (specific content)
       $data['copy'] = json_decode(file_get_contents(base_url('database/json/career/job_detail_'.$lang.'.json')));
       $data['jobs'] = json_decode(file_get_contents(base_url('database/json/career/job_'.$lang.'.json')));
       $data['job_category'] = json_decode(file_get_contents(base_url('database/json/career/job_category.json')));
 			$data['job_type'] = json_decode(file_get_contents(base_url('database/json/career/job_type.json')));
+
+			$data['meta_data'] = [
+				'site_url' => 'career/job/'.$slug,
+				'title_1' => 'Waste4Change - ' . $data['job']->title,
+				'description_1' => $data['job']->title.' - '. json_decode(file_get_contents(base_url('database/json/career/career_page_'.$lang.'.json')))->banner->title,
+				'title_2' => 'Waste4Change - ' . $data['job']->title,
+				'description_2' => $data['job']->title.' - '. json_decode(file_get_contents(base_url('database/json/career/career_page_'.$lang.'.json')))->banner->title,
+				'image' => SITE_URL . DIR_BG . 'career/' . $data['job_category']->{$data['job']->category}->image,
+			];
       $this->render_page('careers/detail/index', $data, 'services');
 		}
 	}

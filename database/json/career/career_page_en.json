@@ -139,7 +139,7 @@
     "items": [
       {
         "question": "How do I apply for a job at Waste4Change?",
-        "answer": "Head straight to our career page and search for a certain section or specific position in the search bar. You can search by location, job title or types of position and find the most desirable position for you to apply to. "
+        "answer": "Head straight to our career page on <a class='w4c-color-blue g-font-weight-900' href='w4c.id/career'>w4c.id/career</a> and search for a certain section or specific position in the search bar. You can search by location, job title or types of position and find the most desirable position for you to apply to. "
       },
       {
         "question": "How is the application process? ",

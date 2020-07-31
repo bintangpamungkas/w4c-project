@@ -3,7 +3,7 @@
 	<div class="">
 		<div class="text-center g-mb-50">
 			<h2 class="g-font-asap g-color-black-dark-v2 g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-20' : '' ?>"><?= $copy->internship_testimony->title ?></h2>
-			<hr class="g-width-120 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
+			<hr class="g-width-30 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
 			<div class="mt-2 mb-4 g-px-10 text-center"><?= $copy->internship_testimony->subtitle ?></div>
 		</div>
 		<div class="g-bg-gray-light-v5">

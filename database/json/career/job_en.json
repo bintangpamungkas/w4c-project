@@ -265,7 +265,9 @@
     "title": "Enumerator",
     "category": "wmce",
     "type": 2,
-    "location": ["Bekasi"],
+    "location": [
+        "Bekasi"
+    ],
     "description": [
       "Interview respondents using the questionnare that has been provided",
       "Perform coding based on the interview results ",
