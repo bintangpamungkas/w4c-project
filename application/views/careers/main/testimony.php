@@ -13,9 +13,10 @@
 				<!-- Items Iteration -->
 				<?php foreach ($copy->testimony->items as $index => $item) : ?>
 					<div class="g-bg-white g-rounded-10 align-height-item g-px-30 g-py-20 g-my-20 g-mx-15 box-shadow-down text-center">
-						<img class="rounded-circle" src="<?= base_url(DIR_BG . 'about/team/' . $item->image) ?>" alt="Photo <?= $item->name ?>" style="height:90px;width:90px;object-fit:cover;margin-left: auto; margin-right: auto;">
-						<div class="g-color-black g-font-weight-600 g-font-size-18"><?= $item->name ?></div>
-						<div class="g-color-info g-font-size-16 g-mb-20"><?= $item->position ?></div>
+						<img class="rounded-circle g-mb-20" src="<?= base_url(DIR_BG . 'about/team/' . $item->image) ?>" alt="Photo <?= $item->name ?>" style="height:90px;width:90px;object-fit:cover;margin-left: auto; margin-right: auto;">
+						<div class="g-color-black g-font-weight-600 g-font-size-18 g-line-height-1_1 g-mb-10"><?= $item->name ?></div>
+						<div class="g-color-info g-font-size-16 g-line-height-1_2"><?= $item->position ?></div>
+						<div class="g-font-size-16 g-mb-20 g-line-height-1_2"><?= $item->division ?></div>
 						<div class="g-color-black-opacity-0_8g-font-size-18 g-line-height-1_4"><?= $item->message ?></div>
 					</div>
 				<?php endforeach; ?>

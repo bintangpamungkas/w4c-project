@@ -71,9 +71,12 @@
           </div>
           <div class="col-12 <?= $this->agent->is_mobile() ? ' g-px-15 g-pt-10' : ' g-px-5' ?>">
             <div id="search-message" class="<?= $this->agent->is_mobile() ? '' : ' '; ?>alert alert-dismissible fade show g-font-weight-500 g-mb-0 g-px-20 g-py-15 d-none" role="alert">
-              <button type="button" class="input-reset close g-font-size-16 g-mt-5 g-pt-10 g-font-weight-400" onclick="reset()">
-                <span aria-hidden="true">x</span>
-              </button>
+              <div class="close g-font-size-16 g-mt-6 g-mr-20 g-pt-10 g-font-weight-900" onclick="reset()">
+                  Reset
+                </div>
+              <div class="input-reset close g-font-size-16 g-mt-5 g-pt-10 g-font-weight-400" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden=" true">x</span>
+              </div>
               <span id="search-total">0</span> Search result found
             </div>
           </div>

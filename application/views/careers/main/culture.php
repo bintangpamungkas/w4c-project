@@ -1,8 +1,8 @@
 <!-- Our Culture -->
 <section class="g-bg-gray-light-v5 <?= $this->agent->is_mobile() ? 'g-py-40' : 'g-bg-white g-pb-50 g-pt-140' ?>">
-	<div class="" style="<?= $this->agent->is_mobile() ? '' : 'margin-left:15%' ?>">
+	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-md-2">
+			<div class="col-md-3">
 				<h2 class="g-font-asap g-color-black text-uppercase g-font-weight-600 g-font-size-<?= $this->agent->is_mobile() ? '24  text-center' : '35 g-mb-10' ?>"><?= $copy->culture->title ?></h2>
 				<hr class="g-width-30 g-mt-20 g-mb-0 <?= $this->agent->is_mobile() ? '' : 'g-ml-0' ?> g-brd-2 w4c-brd-blue">
 				<div class="mt-2 mb-4 <?= $this->agent->is_mobile() ? 'g-px-10 text-center' : '' ?>"><?= $copy->culture->subtitle ?></div>
@@ -26,11 +26,11 @@
 					</div>
 				<?php endif; ?>
 			</div>
-			<div class="col-md-10 col-12">
+			<div class="col-md-9 col-12">
 				<div id="culture-carousel">
 					<!-- Items Iteration -->
 					<?php foreach ($copy->culture->items as $index => $item) : ?>
-							<img src="<?= get_image(DIR_BG . 'about/culture/' . $item->image) ?>" alt="<?= $copy->culture->title . ' ' . $item->title ?>" style="height:<?= $this->agent->is_mobile() ? '200px' : '320px' ?>; object-fit:cover">
+							<img src="<?= get_image(DIR_BG . 'about/culture/' . $item->image) ?>" alt="<?= $copy->culture->title . ' ' . $item->title ?>" style="height:<?= $this->agent->is_mobile() ? '200px' : '270px' ?>; object-fit:cover">
 					<?php endforeach; ?>
 					<!-- End Items Iteration -->
 				</div>

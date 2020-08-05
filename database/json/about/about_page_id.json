@@ -88,8 +88,8 @@
     "image":"vision.png"
   },
   "w4c": {
-    "title":"WASTE4CHANGE CORE SERVICES",
-    "example":"Example of service",
+    "title":"Servis-Servis Waste4change",
+    "example":"Contoh Program",
     "items":[
       {
         "title": "Consult",
@@ -218,37 +218,43 @@
     ]
   },
   "team": {
-    "title": "Meet Our Team",
+    "title": "Bertemu Dengan Team Kami",
     "subtitle": "Temui Orang-Orang yang Bekerja Sepenuh Hati Mencari Solusi bagi Permasalahan Sampah di Indonesia ",
     "items": [
       {
         "name": "Adhitya Prayoga",
         "position": "Circular Economy Strategist",
+        "division": "Divisi Strategic Service",
         "image": "Adhitya-Prayoga.jpg"
       },
       {
         "name": "Saka Dwi Hanggara",
         "position": "Behaviour Change Engineer",
+        "division": "Divisi Strategic Service",
         "image": "Saka-Dwi-Hanggara.jpg"
       },
       {
         "name" : "Bilqis Rulista A. Z",
         "position": "Community Development Designer",
+        "division": "Divisi Strategic Service",
         "image": "Bilqis-Rulista-A.-Z.jpg"
       },
       {
         "name": "Khairunnisa Yusmalina Humaam",
         "position": "Organic SPV",
+        "division": "Divisi Operational Service",
         "image": "Khairunnisa-Yusmalina-Humaam.jpg"
       },
       {
         "name": "Muhamad Andriansyah",
         "position": "Site Manager MRF",
+        "division": "Divisi Operational Service",
         "image": "Muhamad-Andriansyah.jpg"
       },
       {
         "name": "Siti Annisa",
         "position": "Project Coordinator",
+        "division": "Divisi Operational Service",
         "image": "Siti-Annisa.jpg"
       }
     ]

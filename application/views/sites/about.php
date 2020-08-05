@@ -30,7 +30,7 @@
             <div style="height: 573px; background-image: linear-gradient( 100deg , rgba(255, 255, 255,0.9) 0%, rgba(255, 255, 255, 0.65) 60%, rgba(255, 255, 255,0) 90%);">
               <div class="container u-bg-overlay__inner g-color-white g-height-100x">
                 <div class="row align-items-center g-height-100x">
-                  <div class="col w4c-color-blue g-font-weight-700 g-font-size-50 g-mt-30 mb-4 g-font-asap" style="line-height: 1.2"><?= $item->title ?></div>
+                  <div class="col w4c-color-blue g-font-weight-700 g-font-size-50 g-mt-30 g-pl-20 mb-4 g-font-asap" style="line-height: 1.2"><?= $item->title ?></div>
                 </div>
               </div>
             </div>
@@ -47,9 +47,9 @@
       $(element_id).owlCarousel({
         loop: true,
         margin: 0,
-        dots: false,
+        dots: true,
         nav: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 1500,
         autoplayHoverPause: true,
         responsive: {
@@ -78,8 +78,12 @@
 			var width=$(element_id + ' .owl-stage-outer').width()-(margin_side*4);
 			$(element_id + ' .owl-nav').attr('style', 'position:absolute;left:'+margin_side+'px;margin-top:'+top+'px;width: calc(100vw - '+ (margin_side*4) +'px );')
 			$(element_id + ' .owl-prev').attr('style', 'margin-left:'+margin_side+'px;')
-			$(element_id + ' .owl-next').attr('style', 'margin-right:'+margin_side+'px;')
-			$(element_id + ' .owl-dots').attr('style', 'margin-top:50px;')
+      $(element_id + ' .owl-next').attr('style', 'margin-right:'+margin_side+'px;')
+      <?php if($this->agent->is_mobile()):?>
+        $(element_id + ' .owl-dots').attr('style', 'margin-top:10px;')
+        <?php else: ?>
+          $(element_id + ' .owl-dots').attr('style', 'margin-top:-50px;')
+        <?php endif; ?>
     });
   </script>
 </section>
@@ -674,9 +678,9 @@
 
 <!-- Our Culture -->
 <section class="g-bg-gray-light-v5 <?= $this->agent->is_mobile() ? 'g-py-40' : 'g-bg-white g-pb-50 g-pt-100' ?>">
-  <div style="<?= $this->agent->is_mobile() ? '' : 'margin-left:15%' ?>">
+  <div class="container">
     <div class="row justify-content-center">
-      <div class="col-md-2">
+      <div class="col-md-3">
         <div class="g-font-asap g-color-black text-uppercase g-font-weight-600 g-font-size-<?= $this->agent->is_mobile() ? '24  text-center' : '35 g-mb-10' ?>"><?= $copy->culture->title ?></div>
         <hr class="g-width-30 g-mt-20 g-mb-0 <?= $this->agent->is_mobile() ? '' : 'g-ml-0' ?> g-brd-2 w4c-brd-blue">
         <div class="mt-2 mb-4 <?= $this->agent->is_mobile() ? 'g-px-10 text-center' : '' ?>"><?= $copy->culture->subtitle ?></div>
@@ -703,11 +707,11 @@
 			<div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div>
 				</div> -->
       </div>
-      <div class="col-md-10 col-12">
+      <div class="col-md-9 col-12">
         <div id="culture-carousel">
           <!-- Items Iteration -->
           <?php foreach ($copy->culture->items as $index => $item) : ?>
-            <img src="<?= get_image(DIR_BG . 'about/culture/' . $item->image) ?>" alt="<?= $copy->culture->title . ' ' . $item->title ?>" style="height:<?= $this->agent->is_mobile() ? '200px' : '320px' ?>; object-fit:cover">
+            <img src="<?= get_image(DIR_BG . 'about/culture/' . $item->image) ?>" alt="<?= $copy->culture->title . ' ' . $item->title ?>" style="height:<?= $this->agent->is_mobile() ? '200px' : '270px' ?>; object-fit:cover">
           <?php endforeach; ?>
           <!-- End Items Iteration -->
         </div>
@@ -780,9 +784,7 @@
       <div class="col-md-12">
         <h2 class="g-font-asap g-color-black text-uppercase g-font-weight-600 text-center g-font-size-<?= $this->agent->is_mobile() ? '24' : '35 g-mb-10' ?>"><?= $copy->team->title ?></h2>
         <hr class="g-width-30 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
-        <?php if (!$this->agent->is_mobile()) : ?>
-          <div class="mt-2 mb-4 g-px-10 text-center"><?= $copy->team->subtitle ?></div>
-        <?php endif; ?>
+        <div class="mt-2 mb-4 g-px-10 text-center"><?= $copy->team->subtitle ?></div>
       </div>
       <div id="team-carousel" class="col-12 align-self-end align-height-list">
         <!-- Items Iteration -->
@@ -790,10 +792,9 @@
           <div class="g-pos-rel g-bg-white align-height-item g-my-20 g-mx-15 box-shadow-down text-center">
             <img src="<?= get_image(DIR_BG . 'about/team/' . $item->image) ?>" alt="Photo <?= $item->name ?>" style="height:376.31px;object-fit:cover;">
             <div class="g-pa-30">
-              <div class="g-color-black g-font-weight-600 g-font-size-18 g-line-height-1 g-mb-30"><?= $item->name ?></div>
-              <div class="text-center" style="position:absolute;bottom:30px;left:0px;width:100%">
-                <div class="g-color-info g-font-size-16"><?= $item->position ?></div>
-              </div>
+              <div class="g-color-black g-font-weight-600 g-font-size-18 g-line-height-1 g-mb-10"><?= $item->name ?></div>
+              <div class="g-color-info g-font-size-16 g-line-height-1_2"><?= $item->position ?></div>
+              <div class="g-font-size-16 g-line-height-1_2"><?= $item->division ?></div>
             </div>
           </div>
         <?php endforeach; ?>

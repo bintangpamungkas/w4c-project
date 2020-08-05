@@ -35,6 +35,7 @@
       //language, section, general info (title, subtitle, order), item (specific content)
       $data['copy'] = json_decode(file_get_contents(base_url('database/json/career/career_page_'.$lang.'.json')));
 			$data['jobs'] = json_decode(file_get_contents(base_url('database/json/career/job_'.$lang.'.json')));
+		
       $data['job_category'] = json_decode(file_get_contents(base_url('database/json/career/job_category.json')));
 			$data['job_type'] = json_decode(file_get_contents(base_url('database/json/career/job_type.json')));
 			$data['meta_data'] = [
@@ -81,7 +82,9 @@
 			$data['category'] = $this->input->get('category');
       //language, section, general info (title, subtitle, order), item (specific content)
       $data['copy'] = json_decode(file_get_contents(base_url('database/json/career/job_list_'.$lang.'.json')));
-      $data['jobs'] = json_decode(file_get_contents(base_url('database/json/career/job_'.$lang.'.json')));
+			$data['jobs'] = json_decode(file_get_contents(base_url('database/json/career/job_'.$lang.'.json')));
+			// print_r($data['jobs']);
+			// die();
       $data['job_category'] = json_decode(file_get_contents(base_url('database/json/career/job_category.json')));
 			$data['job_type'] = json_decode(file_get_contents(base_url('database/json/career/job_type.json')));
 			$data['meta_data'] = [

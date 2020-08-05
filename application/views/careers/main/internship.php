@@ -6,8 +6,8 @@
 		<div class="g-bg-gray-light-v5 g-pa-15">
 			<div class="g-bg-white box-shadow-down g-rounded-10 g-pa-20">
 				<div style="height: 200px;background: url(<?= get_image(DIR_BG . 'career/' . $copy->internship_program->image) ?>);background-size: cover;"></div>
-				<div class="g-mt-minus-100 g-pa-20 g-pt-50" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0)  0%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 100%);">
-					<div class="mt-2 mb-4 g-font-size-18 g-color-black g-font-weight-600 g-line-height-1_5"><?= $copy->internship_program->subtitle ?></div>
+				<div class="g-mt-minus-100 g-pa-20 g-pt-50" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0)  0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 100%);">
+					<!-- <div class="mt-2 mb-4 g-font-size-18 g-color-black g-font-weight-600 g-line-height-1_5"><?= $copy->internship_program->subtitle ?></div> -->
 					<hr class="g-width-30 g-my-20 g-ml-0 g-brd-2 w4c-brd-blue">
 					<div class=""><?= $copy->internship_program->message ?></div>
 				</div>

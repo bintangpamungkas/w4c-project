@@ -1,7 +1,14 @@
 <script>
   <?php if ($position != '' || $location != '' || $type != '' || $category != '') { ?>
     $(window).load(function() {
-      search();
+      let count = search();
+      console.log(count);
+      <?php if ($position == '' && $location == '' && $type == '') { ?>
+        if (count > 0) {
+          $('#search-message').removeClass('d-block');
+          $('#search-message').addClass('d-none');
+        }
+      <?php } ?>
     })
   <?php } ?>
 
@@ -23,7 +30,12 @@
     } else {
       $('#inputCategory').val($(that).html());
     }
-    search();
+    let count = search();
+    if (count > 0) {
+      $('#search-message').removeClass('d-block');
+      $('#search-message').addClass('d-none');
+    }
+
   };
 
   /** Sorting alphabetical */
@@ -40,7 +52,7 @@
     $.each(listitems, function(index, item) {
       mylist.append(item);
     });
-    search();
+
   }
 
   /** Searhing by input */
@@ -112,7 +124,7 @@
       }
       $.each(inputs, function(index, value) {
         // console.log(index+value);
-        console.log(input);
+        // console.log(input);
         if (value != '') {
           if (input != '') {
             input = input + ", ";
@@ -123,7 +135,7 @@
 
       $('#inputSearch').val(input);
     <?php endif; ?>
-
+    return item_count;
   }
 
   /** Drop Down Data */

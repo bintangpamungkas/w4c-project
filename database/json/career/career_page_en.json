@@ -75,30 +75,35 @@
       {
         "name": "Adhitya Prayoga",
         "position": "Circular Economy Strategist",
+        "division": "Divisi Strategic Service",
         "message": "I have found my Ikigai by working at Waste4Change. I do not need to make up stories when the future generation asks me \"What did you do in the fight against climate change?\" I can proudly say \"I did it with Waste4Change\".",
         "image": "Adhitya-Prayoga.jpg"
       },
       {
         "name": "Saka Dwi Hanggara",
         "position": "Behaviour Change Engineer",
+        "division": "Divisi Strategic Service",
         "message": "I found great colleagues and a fun working environment here at Waste4Change. In addition, I take pride in the works that we perform because we know that  we're doing something great!",
         "image": "Saka-Dwi-Hanggara.jpg"
       },
       {
         "name": "Khairunnisa Yusmalina Humaam",
         "position": "Organic SPV",
+        "division": "Divisi Operational Service",
         "message": "I joined Waste4Change ever since its organic waste processing methods were still very simple, and now we already have 2 effective organic waste processing methods, which are Open Windrow and Black Soldier Flies. From that process alone, I learned a lot about leadership, strategic thinking, and solution-based mindset. There is not a more suitable place for those who want to keep learning and develop themselves than in Waste4Change",
         "image": "Khairunnisa-Yusmalina-Humaam.jpg"
       },
       {
         "name": "Muhamad Andriansyah",
         "position": "Site Manager MRF",
+        "division": "Divisi Operational Service",
         "message": "Working in Waste4Change has enabled me to gain a holistic understanding about the recycling industry, as well as learning about its business process from upstream to downstream. Moreover I also managed to obtain knowledge regarding the business opportunity in waste management sector, all while contributing to the environment",
         "image": "Muhamad-Andriansyah.jpg"
       },
       {
         "name": "Siti Annisa",
         "position": "Project Coordinator",
+        "division": "Divisi Operational Service",
         "message": "Waste4Change has become one of the places in which I can contribute both in knowledge and concrete actions to initiate real environmental changes. As a graduate from Environmental Engineering, it is very thrilling to be able to work in Waste4Change. This is because I get to know many colleagues and friends who are very supportive towards each other, while at the same time, I am given the opportunity (and the luxury) to implement the knowledge that I have obtained",
         "image": "Siti-Annisa.jpg"
       }
@@ -143,7 +148,7 @@
     "items": [
       {
         "question": "How do I apply for a job at Waste4Change?",
-        "answer": "Head straight to our career page on <a class='w4c-color-blue g-font-weight-900' href='w4c.id/career'>w4c.id/career</a> and search for a certain section or specific position in the search bar. You can search by location, job title or types of position and find the most desirable position for you to apply to. "
+        "answer": "Head straight to our career page and search for a certain section or specific position in the search bar. You can search by location, job title or types of position and find the most desirable position for you to apply to. "
       },
       {
         "question": "How is the application process? ",

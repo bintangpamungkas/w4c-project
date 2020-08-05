@@ -42,12 +42,12 @@
           </div>
           <div class="col-12 <?= $this->agent->is_mobile() ? ' g-px-25' : ' g-px-10' ?>">
             <div id="search-message" class="<?= $this->agent->is_mobile() ? '' : ' '; ?>alert alert-dismissible fade show g-font-weight-500 g-mb-0 g-px-20 g-py-15 g-my-20 d-none" role="alert">
-              <button type="button" class="close g-font-size-16 g-mt-7 g-mr-20 g-pt-10 g-font-weight-900" onclick="reset()">
+              <div class="close g-font-size-16 g-mt-6 g-mr-20 g-pt-10 g-font-weight-900" onclick="reset()">
                 Reset
-              </button>
-              <button type="button" class="input-reset close g-font-size-16 g-mt-5 g-pt-10 g-font-weight-400" data-dismiss="alert" aria-label="Close">
+              </div>
+              <div class="input-reset close g-font-size-16 g-mt-5 g-pt-10 g-font-weight-400" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden=" true">x</span>
-              </button>
+              </div>
               <span id="search-total">0</span> Search result found
             </div>
           </div>

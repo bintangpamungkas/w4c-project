@@ -166,28 +166,6 @@
     ],
     "talentaUrl":"https://recruitment.talenta.co/waste4change/a2JNdDVackF4SFJFb2RjdWpSdm5XZz09"
   },
-  "inovation-oficer": {
-    "status": 1,
-    "title": "Inovation Oficer",
-    "category": "wmo",
-    "type": 1,
-    "location": [
-      "Bekasi"
-    ],
-    "description": [
-      "Melakukan koordinasi dengan pihak luar yang hendak melakukan kerjasama dengan perusahaan berkaitan dengan pengadaan barang dan jasa untuk aktivitas riset dan pengembangan perusahaan",
-      "Melakukan analisa dan mengembangkan lini jasa perusahaan ",
-      "Melakukan pengembangan terkait dengan peningkatan kualitas produk / jasa yang dihasilkan perusahaan"
-    ],
-    "requirement": [
-      "Wanita/Pria maksimal berusia 35 tahun",
-      "Pendidikan minimal S1 Jurusan Teknik Lingkungan",
-      "Mahir berbahasa inggris",
-      "Memiliki kemampuan analisis dan pemecahan masalah yang kuat",
-      "Memiliki laptop pribadi dan mengoperasikannya dengan baik"
-    ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/UlMzU0xvdzhEZ0JrNTRVdjVTbUNEQT09"
-  },
   "recruiter": {
     "status": 1,
     "title": "Recruiter",
@@ -267,7 +245,7 @@
       "Berjiwa kepemimpinan dan dapat bekerja dalam team",
       "Memiliki laptop pribadi"
     ],
-    "taletaUrl":"https://recruitment.talenta.co/waste4change/UlMzU0xvdzhEZ0JrNTRVdjVTbUNEQT09"
+    "talentaUrl":"https://recruitment.talenta.co/waste4change/UlMzU0xvdzhEZ0JrNTRVdjVTbUNEQT09"
   },
   "customer-service": {
     "status": 1,
@@ -320,7 +298,7 @@
     "talentaUrl":""    
   },
   "salesmanager": {
-    "status": 0,
+    "status": 1,
     "title": "Sales Manager",
     "category": "wmo",
     "type": 1,

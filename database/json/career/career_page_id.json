@@ -75,24 +75,28 @@
       {
         "name": "Adhitya Prayoga",
         "position": "Circular Economy Strategist",
+        "division": "Divisi Strategic Service",
         "message": "Saya telah menemukan Ikigai saya sejak bergabung dengan Waste4Change. Karena itu saya tidak perlu mengarang cerita jika suatu saat generasi di masa depan bertanya \"Apa yang telah Anda lakukan untuk melawan krisis iklim?\". Dengan bangga saya akan menjawab \"Saya telah melakukan bagian saya bersama-sama dengan Waste4Change\".",
         "image": "Adhitya-Prayoga.jpg"
       },
       {
         "name": "Saka Dwi Hanggara",
         "position": "Behaviour Change Engineer",
+        "division": "Divisi Strategic Service",
         "message": "Selama bekerja di Waste4Change saya menemukan lingkungan serta rekan kerja yang asik dan seru. Selain itu, ada rasa bangga di setiap pekerjaan yang kita lakukan karena kita tahu, we're doing something great!",
         "image": "Saka-Dwi-Hanggara.jpg"
       },
       {
         "name": "Khairunnisa Yusmalina Humaam",
         "position": "Organic SPV",
+        "division": "Divisi Operational Service",
         "message": "Saya bergabung di Waste4Change sejak sistem pengolahan sampah organiknya masih sangat sederhana, sampai sekarang sudah ada 2 metode pengolahan efektif yaitu Open Windrow dan BSF. Dari proses tersebut saya belajar tentang kepemimpinan, berpikir strategis dan solutif. Waste4Change tempat yang cocok untuk teman-teman yg ingin belajar dan terus mengembangkan diri",
         "image": "Khairunnisa-Yusmalina-Humaam.jpg"
       },
       {
         "name": "Muhamad Andriansyah",
         "position": "Site Manager MRF",
+        "division": "Divisi Operational Service",
         "message": "Bekerja di Waste4Change membuat saya memahami industri daur ulang serta mengetahui proses bisnisnya dari hulu ke hilir. Selain itu saya juga jadi memahami peluang bisnis dalam pengelolaan sampah, sekaligus dapat berkontribusi untuk lingkungan",
         "image": "Muhamad-Andriansyah.jpg"
       },
@@ -100,18 +104,19 @@
         "name": "Siti Annisa",
         "position": "Project Coordinator",
         "message": "Waste4Change merupakan salah satu ruang dimana saya bisa memberikan kontribusi ilmu dan aksi yang nyata untuk perubahan lingkungan yang konkrit. Sebagai lulusan Teknik Lingkungan, sangat menyenangkan untuk dapat bekerja di Waste4Change. Hal ini karena saya punya teman dan kolega  yang saling mendukung satu sama lain, sekaligus diberi kesempatan (dan kemewahan) untuk dapat mengaplikasikan ilmu yang sudah dipelajari",
+        "division": "Divisi Operational Service",
         "image": "Siti-Annisa.jpg"
       }
     ]
   },
   "internship_program": {
-    "title": "W4C INTERNSHIP PROGRAM",
+    "title": "Program Magang Waste4Change",
     "subtitle": "Program Magang 4 Bulan yang Membantu Anda untuk Mengeksplor dan Mendalami Minat Anda terhadap Isu Pengelolaan Sampah",
-    "message": "Deskripsi: Menjadi peserta magang di Waste4Change akan mengekspos Anda terhadap dunia kerja yang senantiasa dinamis di Waste4Change selama kurang lebih 4 bulan lamanya. Nantinya para peserta magang akan bisa memilih di divisi mana mereka ingin berkontribusi dan terlibat. ",
+    "message": "Menjadi peserta magang di Waste4Change akan mengekspos Anda terhadap lingkungan kerja yang senantiasa dinamis di kantor Waste4Change selama kurang lebih 4 bulan lamanya. Nantinya para peserta magang akan bisa memilih di divisi mana mereka ingin berkontribusi dan terlibat. ",
     "image": "internship.jpg"
   },
   "internship_testimony": {
-    "title": "Past Intern Testimonis",
+    "title": "Testimoni Intern Program WIP",
     "subtitle": "Cari Tahu tentang Kesan dan Pesan Peserta Magang Waste4Change yang Terdahulu",
     "items": [
       {
@@ -143,7 +148,7 @@
     "items": [
       {
         "question": "Bagaimana cara melamar pekerjaan di Waste4Change?",
-        "answer": "Silahkan langsung menuju halaman karir kami di <a class='w4c-color-blue g-font-weight-900' href='w4c.id/career'>w4c.id/career</a> dan cari lowongan di divisi atau bahkan posisi tertentu dengan mengisi kolom pencarian. Kamu juga bisa mencari berdasarkan lokasi, jabatan, atau tipe lowongan. Selamat mencari dan menentukan lowongan yang paling sesuai dengan yang kamu inginkan."
+        "answer": "Silahkan langsung menuju halaman karir di website kami dan temukan Departemen atau posisi yang cocok denganmu. Kamu juga bisa mencari berdasarkan lokasi, jabatan, atau tipe lowongan. Selamat mencari dan menentukan posisi yang paling sesuai dengan yang kamu inginkan."
       },
       {
         "question": "Bagaimana dengan proses rekrutmennya? ",
@@ -155,7 +160,7 @@
       },
       {
         "question": "Bolehkah saya mencoba melamar pekerjaan bahkan ketika tidak ada lowongan yang sesuai untuk saya?",
-        "answer": "Tentu saja boleh. Kami menyambut hangat antusiasme orang-orang yang punya semangat dan kemauan kuat untuk menjadi bagian dari Waste4Change. Silahkan kunjungi halaman Job List, kemudian klik \"Setor CV\" dan unggah berkas lamaran Anda. Nantinya berkas tersebut akan kami proses sesuai dengan kondisi dan kebutuhan perusahaan."
+        "answer": "Tentu saja boleh. Kami menyambut hangat antusiasme orang-orang yang punya semangat dan kemauan kuat untuk menjadi bagian dari Waste4Change. Silahkan kunjungi halaman Job List, kemudian klik \"Kirimkan CV\" dan unggah berkas lamaran Anda. Nantinya berkas tersebut akan kami proses sesuai dengan kondisi dan kebutuhan perusahaan."
       },
       {
         "question": "Apa yang bisa saya harapkan dari bekerja di Waste4Change?",
