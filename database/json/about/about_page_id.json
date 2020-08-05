@@ -3,17 +3,17 @@
     "title": "Solusi Pengelolaan Sampah yang Bertanggung Jawab  ",
     "items": [
       {
-        "title": "Solusi bijak kelola sampah",
+        "title": "Solusi Bijak<br>Kelola Sampah",
         "image": "1.png"
       },
       {
-        "title": "Solusi bijak kelola sampah",
+        "title": "Solusi Bijak<br>Kelola Sampah",
         "image": "2.jpg"
       },
       {
-        "title": "Solusi bijak kelola sampah",
+        "title": "Solusi Bijak<br>Kelola Sampah",
         "image": "3.jpg"
-      }          
+      }      
     ]
   },
   "history": {
@@ -88,7 +88,7 @@
     "image":"vision.png"
   },
   "w4c": {
-    "title":"4 SERVIS INTI WASTE4CHANGE",
+    "title":"WASTE4CHANGE CORE SERVICES",
     "example":"Example of service",
     "items":[
       {
@@ -210,6 +210,10 @@
       {
         "title": "culture5",
         "image": "5.jpg"
+      },
+      {
+        "title": "culture6",
+        "image": "6.jpg"
       }
     ]
   },

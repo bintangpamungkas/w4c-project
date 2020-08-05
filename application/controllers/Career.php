@@ -102,10 +102,9 @@
 			$data['job'] = $job->{$slug};
 			$data['job_slug'] = $slug;
 			
-			if (empty($data['job'])){
+			if (empty($data['job']) || empty($data['job']->talentaUrl)){
 				redirect('career/job_list');
 			}
-
 
 			$data['title'] = $data['job']->title;
 			$data['id'] = 'site';

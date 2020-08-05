@@ -18,7 +18,7 @@
 					$show = 5;
 				}
 				foreach ($jobs as $index => $item) :
-					if ($i <= $show) : ?>
+					if ($i <= $show && $item->status == 1 && !empty($item->talentaUrl)) : ?>
 						<div class="col-md-4 col-12  g-line-height-1_2 <?= $this->agent->is_mobile() ? 'g-px-10 g-py-5' : 'g-pa-5' ?>">
 							<div class="g-bg-white <?= $this->agent->is_mobile() ? 'g-px-25 g-py-20' : 'g-pa-30 align-height-item' ?>" style="box-shadow:1px 6px 20px 2px rgba(0, 0, 0, 0.1);position:relative;">
 								<div class="btn btn-outline-info g-font-size-<?= $this->agent->is_mobile() ? '10' : '12' ?> float-right g-rounded-50 text-uppercase g-mt-5 g-ml-10 g-py-5 g-px-12" style="background: <?= $job_type->{$item->type}->color ?>20 !important; border-color: <?= $job_type->{$item->type}->color ?>; color:<?= $job_type->{$item->type}->color ?>"><?= $job_type->{$item->type}->name ?></div>
@@ -35,7 +35,7 @@
 									</div>
 								</div>
 								<div class="g-pos-abs" style="right:0px;bottom:30px;<?= $this->agent->is_mobile() ? 'bottom:20px;right:25px' : 'bottom:30px;right:30px' ?>">
-									<a href="<?= site_url('career/job/' . $index) ?>" class="w4c-color-blue g-font-size-<?= $this->agent->is_mobile() ? '18' : '24' ?> g-font-weight-700 text-uppercase"><?= $copy->latest_job->SeeDetail ?></a>
+									<a href="<?= $item->talentaUrl ?>" class="w4c-color-blue g-font-size-<?= $this->agent->is_mobile() ? '18' : '24' ?> g-font-weight-700 text-uppercase"><?= $copy->latest_job->SeeDetail ?></a>
 								</div>
 							</div>
 						</div>

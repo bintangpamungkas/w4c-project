@@ -1,5 +1,5 @@
 <!-- Our Job Category -->
-<section class="g-bg-white <?= $this->agent->is_mobile() ? 'g-py-40' : 'g-bg-white g-pb-50 g-pt-140' ?>">
+<section class="g-bg-white <?= $this->agent->is_mobile() ? 'g-py-40' : 'g-bg-white g-pb-30 g-pt-80' ?>">
 	<h2 class="g-font-asap g-color-black text-uppercase text-center g-font-weight-600 g-font-size-<?= $this->agent->is_mobile() ? '24' : '35 g-mb-10' ?>"><?= $copy->job_category->title ?></h2>
 	<hr class="g-width-30 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
 	<div class="mt-2 mb-4 g-px-10 text-center"><?= $copy->job_category->subtitle ?></div>
@@ -81,7 +81,7 @@
 
 	<?php else : // DESKTOP  
 	?>
-		<div class="row g-mb-70  g-mt-50">
+		<div class="row g-mb-0  g-mt-50">
 			<!-- Job Item Iteration -->
 			<?php foreach ($job_category as $key => $category) : ?>
 				<div class="col-md-3 g-px-13 g-mb-30" onclick="location.href='<?= site_url('career/job?category=' . $category->name) ?>'">

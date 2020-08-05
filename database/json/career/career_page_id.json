@@ -1,6 +1,6 @@
 {
   "banner": {
-    "title": "Menjadi Bagian dari Waste4Change Berarti Menjadi Bagian dari Perubahan"
+    "title": "Be A Part of Waste4Change, Be A Part of the Change"
   },
   "search_bar": {
     "Position": "Posisi",
@@ -57,6 +57,10 @@
       {
         "title": "culture5",
         "image": "5.jpg"
+      },
+      {
+        "title": "culture6",
+        "image": "6.jpg"
       }
     ]
   },
@@ -71,7 +75,7 @@
       {
         "name": "Adhitya Prayoga",
         "position": "Circular Economy Strategist",
-        "message": "I have found my Ikigai by working at Waste4Change. I do not need to make up stories when the future generation asks me \"What did you do in the fight against climate change?\" I can proudly say \"I did it with Waste4Change\".",
+        "message": "Saya telah menemukan Ikigai saya sejak bergabung dengan Waste4Change. Karena itu saya tidak perlu mengarang cerita jika suatu saat generasi di masa depan bertanya \"Apa yang telah Anda lakukan untuk melawan krisis iklim?\". Dengan bangga saya akan menjawab \"Saya telah melakukan bagian saya bersama-sama dengan Waste4Change\".",
         "image": "Adhitya-Prayoga.jpg"
       },
       {
@@ -102,13 +106,13 @@
   },
   "internship_program": {
     "title": "W4C INTERNSHIP PROGRAM",
-    "subtitle": "Program Magang 3 Bulan yang Membantu Anda untuk Mengeksplor dan Mendalami Minat Anda terhadap Isu Pengelolaan Sampah",
-    "message": "Deskripsi: Menjadi tenaga magang di Waste4Change akan mengekspos Anda terhadap dunia kerja yang senantiasa dinamis di Waste4Change selama kurang lebih 3 bulan lamanya. Nantinya para tenaga magang akan bisa memilih di divisi mana mereka ingin berkontribusi dan terlibat. ",
-    "image": "internship.png"
+    "subtitle": "Program Magang 4 Bulan yang Membantu Anda untuk Mengeksplor dan Mendalami Minat Anda terhadap Isu Pengelolaan Sampah",
+    "message": "Deskripsi: Menjadi peserta magang di Waste4Change akan mengekspos Anda terhadap dunia kerja yang senantiasa dinamis di Waste4Change selama kurang lebih 4 bulan lamanya. Nantinya para peserta magang akan bisa memilih di divisi mana mereka ingin berkontribusi dan terlibat. ",
+    "image": "internship.jpg"
   },
   "internship_testimony": {
     "title": "Past Intern Testimonis",
-    "subtitle": "Cari Tahu tentang Kesan dan Pesan Tenaga Magang Waste4Change yang Terdahulu",
+    "subtitle": "Cari Tahu tentang Kesan dan Pesan Peserta Magang Waste4Change yang Terdahulu",
     "items": [
       {
         "name": "Amira R. Nadhifa",
@@ -159,7 +163,7 @@
       },
       {
         "question": "Selain lowongan pekerjaan, apakah Waste4change memiliki program magang dan kerelawanan yang bisa saya ikuti?",
-        "answer": "Program magang kami bernama \"Waste4Change Internship Program (WIP)\" dan diadakan selama 3 kali dalam setahun. Nantinya, pembukaan lowongan magang juga akan diumumkan di halaman Karir kami. Selain program magang resmi, kami juga menerima murid atau mahasiswa yang membutuhkan magang sebagai program wajib dari sekolah atau universitas mereka. Kami akan berusaha semaksimal mungkin untuk menempatkan Anda di program atau posisi yang paling sesuai dengan keperluan Anda."
+        "answer": "Program magang kami bernama \"Waste4Change Internship Program (WIP)\" dan diadakan selama 3 kali dalam setahun dengan durasi 4 bulan. Nantinya, pembukaan lowongan magang juga akan diumumkan di halaman Karir kami. Selain program magang resmi, kami juga menerima murid atau mahasiswa yang membutuhkan magang sebagai program wajib dari sekolah atau universitas mereka. Kami akan berusaha semaksimal mungkin untuk menempatkan Anda di program atau posisi yang paling sesuai dengan keperluan Anda."
       }
     ]
   }

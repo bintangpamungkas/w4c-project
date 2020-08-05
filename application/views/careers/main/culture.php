@@ -1,8 +1,8 @@
 <!-- Our Culture -->
 <section class="g-bg-gray-light-v5 <?= $this->agent->is_mobile() ? 'g-py-40' : 'g-bg-white g-pb-50 g-pt-140' ?>">
-	<div class="container">
-		<div class="row justify-content-center my_tab_content">
-			<div class="col-md-3">
+	<div class="" style="<?= $this->agent->is_mobile() ? '' : 'margin-left:15%' ?>">
+		<div class="row justify-content-center">
+			<div class="col-md-2">
 				<h2 class="g-font-asap g-color-black text-uppercase g-font-weight-600 g-font-size-<?= $this->agent->is_mobile() ? '24  text-center' : '35 g-mb-10' ?>"><?= $copy->culture->title ?></h2>
 				<hr class="g-width-30 g-mt-20 g-mb-0 <?= $this->agent->is_mobile() ? '' : 'g-ml-0' ?> g-brd-2 w4c-brd-blue">
 				<div class="mt-2 mb-4 <?= $this->agent->is_mobile() ? 'g-px-10 text-center' : '' ?>"><?= $copy->culture->subtitle ?></div>
@@ -18,21 +18,19 @@
 								</div>
 							</div>
 							<div class="owl-dots text-left g-ml-minus-5 g-mt-30">
-								<?php for ($i = 0; $i <= (count($copy->culture->items) - 2); $i++) { ?>
-									<div class="owl-dot <?= $i == 0 ? 'active' : '' ?>"><span></span></div>
-								<?php } ?>
+							<?php foreach ($copy->culture->items as $index => $item) : ?>
+                  <div class="owl-dot <?= $index == 0 ? 'active' : '' ?>"><span></span></div>
+                <?php endforeach; ?>
 							</div>
 						</div>
 					</div>
 				<?php endif; ?>
 			</div>
-			<div class="col-md-9 col-12 align-self-end">
-				<div id="culture-carousel" class="owl-theme align-height-list" style="margin: 0 0 30px 0!important;">
+			<div class="col-md-10 col-12">
+				<div id="culture-carousel">
 					<!-- Items Iteration -->
 					<?php foreach ($copy->culture->items as $index => $item) : ?>
-						<div class="g-color-black g-bg-white--hover text-center g-rounded-10 g-transition-0_3 align-height-item">
-						<img class="img-fluid u-block-hover__main--zoom-v1 mb-3" src="<?= get_image(DIR_BG . 'about/culture/' . $item->image) ?>" alt="<?= $copy->culture->title . ' ' . $item->title ?>" style="height:100%; object-fit:cover">
-						</div>
+							<img src="<?= get_image(DIR_BG . 'about/culture/' . $item->image) ?>" alt="<?= $copy->culture->title . ' ' . $item->title ?>" style="height:<?= $this->agent->is_mobile() ? '200px' : '320px' ?>; object-fit:cover">
 					<?php endforeach; ?>
 					<!-- End Items Iteration -->
 				</div>
@@ -82,6 +80,15 @@
 				$('#custom-nav').find('.owl-prev').click(function() {
 					$(element_id).trigger('prev.owl.carousel');
 				});
+				$(element_id).on('changed.owl.carousel', function(e) {
+          let index = e.item.index-2;
+          let dots = $('#custom-nav .owl-dot');
+          if (index == dots.length){
+            index = 0;
+          }
+          dots.removeClass('active');
+          dots.eq(index).addClass('active');
+        });
 
 			});
 		</script>

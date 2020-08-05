@@ -3,15 +3,15 @@
     "title": "Your Responsible Waste Management Solution",
     "items": [
       {
-        "title": "Solusi bijak kelola sampah",
+        "title": "Solusi Bijak<br>Kelola Sampah",
         "image": "1.png"
       },
       {
-        "title": "Solusi bijak kelola sampah",
+        "title": "Solusi Bijak<br>Kelola Sampah",
         "image": "2.jpg"
       },
       {
-        "title": "Solusi bijak kelola sampah",
+        "title": "Solusi Bijak<br>Kelola Sampah",
         "image": "3.jpg"
       } 
     ]
@@ -88,7 +88,7 @@
     "image":"vision.png"
   },
   "w4c": {
-    "title": "WASTE4CHANGE CORE SERVICE",
+    "title": "WASTE4CHANGE CORE SERVICES",
     "example":"Example of service",
     "items": [
       {
@@ -207,6 +207,10 @@
       {
         "title": "culture5",
         "image": "5.jpg"
+      },
+      {
+        "title": "culture6",
+        "image": "6.jpg"
       }
     ]
   },

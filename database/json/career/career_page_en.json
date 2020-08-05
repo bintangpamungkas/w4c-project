@@ -57,6 +57,10 @@
       {
         "title": "culture5",
         "image": "5.jpg"
+      },
+      {
+        "title": "culture6",
+        "image": "6.jpg"
       }
     ]
   },
@@ -102,12 +106,12 @@
   },
   "internship_program": {
     "title": "W4C INTERNSHIP PROGRAM",
-    "subtitle": "An Exciting 3-month Internship Program for You to Discover and Explore Your Passion in Waste Management Issues",
-    "message": "Description: Becoming an intern at Waste4Change means a full-time experience that simulates the dynamic working conditions here at Waste4Change's office for a duration of 3 months. Interns can choose which division they want to be a part of, or what kind of cause they want to be involved in.",
-    "image": "internship.png"
+    "subtitle": "An Exciting 4-month Internship Program for You to Discover and Explore Your Passion in Waste Management Issues",
+    "message": "Description: Becoming an intern at Waste4Change means a full-time experience that simulates the dynamic working conditions here at Waste4Change's office for a duration of 4 months. Interns can choose which division they want to be a part of, or what kind of cause they want to be involved in.",
+    "image": "internship.jpg"
   },
   "internship_testimony": {
-    "title": "Past Intern Testimonis",
+    "title": "Testimoni Intern Program WIP",
     "subtitle": "See What Our Past Interns Have to Say About Waste4Change's Internship Program",
     "items": [
       {
@@ -159,7 +163,7 @@
       },
       {
         "question": "Does Waste4change offer internships and volunteer programs?",
-        "answer": "We do have a Waste4Change Internship Program (WIP) that is held three times a year. Internship openings will be announced on our Career Page. Outside of our WIP, students can apply for their mandatory internship for school or university credits. We will do our best to search for the right position or projects for you."
+        "answer": "We do have a Waste4Change Internship Program (WIP) that is held three times a year with 4-month duration. Internship openings will be announced on our Career Page. Outside of our WIP, students can apply for their mandatory internship for school or university credits. We will do our best to search for the right position or projects for you."
       }
     ]
   }

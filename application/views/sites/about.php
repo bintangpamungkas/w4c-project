@@ -10,44 +10,34 @@
   </div>
   <div>
     <div id="slide-carousel" class="g-mt-20">
-      <!-- Items Iteration -->
-      <?php if ($this->agent->is_mobile()) : //mobile
-      ?>
-        <?php foreach ($copy->slide->items as $item) : ?>
-          <div class="dzsparallaxer height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-ml-15 g-rounded-5" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}' style="height:220px">
-            <div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center" style="height: 220px;background: url(<?= get_image(DIR_BG . 'about/banner/' . $item->image) ?>);background-size: cover;<?= $this->agent->is_mobile() ? 'background-position-x: right;' : '' ?>"></div>
-            <div class=" pending-show animated d-zap" style="height: 573px; background-image: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0.9) 26.51%, rgba(255, 255, 255, 0.74) 47.79%, rgba(255, 255, 255, 0) 84.53%)">
-              <div class="container">
-                <div class="content-middle-fullscreen with-header middle-top justify-content-center">
-                  <h3 class="g-font-color-w4c-1 g-font-weight-700 <?= $this->agent->is_mobile() ? 'g-font-size-18' : 'g-font-size-50 g-mt-30' ?> mb-4 g-font-asap" style="line-height: 1.2"><?= $item->title ?></h3>
+      <?php if ($this->agent->is_mobile()) : //mobile ?>
+      <!-- Items Iteration -->        <?php foreach ($copy->slide->items as $item) : ?>
+          <div class="u-bg-overlay g-bg-img-hero g-color-white g-font-size-14 g-mx-10" style="background-image: url(<?= get_image(DIR_BG . 'about/banner/' . $item->image) ?>); background-position-x: right;">
+            <div style="height: 220px; background-image: linear-gradient( 100deg , rgba(255, 255, 255,0.9) 0%, rgba(255, 255, 255, 0.65) 60%, rgba(255, 255, 255,0) 90%);">
+              <div class="container u-bg-overlay__inner g-color-white g-height-100x">
+                <div class="row align-items-center g-height-100x">
+                  <div class="col w4c-color-blue g-font-weight-700 g-font-size-18 g-mt-30 mb-4 g-font-asap" style="line-height: 1.2"><?= $item->title ?></div>
                 </div>
-                <br>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="g-color-black g-bg-white--hover text-center g-rounded-10 g-transition-0_3">
-            <div class="g-mx-auto">
-              <img class="img-fluid u-block-hover__main--zoom-v1 mb-3" src="<?= get_image(DIR_BG . 'career/' . $item->image) ?>" alt="<?= $copy->value->title . ' ' . $item->title ?>" style="height:573px;object-fit:cover">
-            </div>
-          </div> -->
-        <?php endforeach; ?>
-      <?php else : //dekstop
-      ?>
-        <?php foreach ($copy->slide->items as $item) : ?>
-          <div class="dzsparallaxer height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
-            <div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center" style="height: 573px;background: url(<?= get_image(DIR_BG . 'about/banner/' . $item->image) ?>);background-size: cover;<?= $this->agent->is_mobile() ? 'background-position-x: right;' : '' ?>"></div>
-            <div class=" pending-show animated d-zap" style="height: 573px; background-image: <?= $this->agent->is_mobile() ? 'linear-gradient(180deg, rgba(255, 255, 255, 0.7) 20%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.6) 100%)' : 'linear-gradient( 100deg , rgba(255, 255, 255,0.9) 0%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255,0) 100%);' ?>">
-              <div class="container">
-                <div class="content-middle-fullscreen with-header middle-top <?= $this->agent->is_mobile() ? 'justify-content-center' : '' ?>">
-                  <h3 class="g-font-color-w4c-1 g-font-weight-700 <?= $this->agent->is_mobile() ? 'g-font-size-18' : 'g-font-size-50 g-mt-30' ?> mb-4 g-font-asap" style="line-height: 1.2"><?= $item->title ?></h3>
-                </div>
-                <br>
               </div>
             </div>
           </div>
         <?php endforeach; ?>
-      <?php endif; ?>
       <!-- End Items Iteration -->
+      <?php else : //dekstop ?>
+      <!-- Items Iteration -->
+        <?php foreach ($copy->slide->items as $item) : ?>
+          <div class="u-bg-overlay g-bg-img-hero g-color-white g-font-size-14" style="background-image: url(<?= get_image(DIR_BG . 'about/banner/' . $item->image) ?>);">
+            <div style="height: 573px; background-image: linear-gradient( 100deg , rgba(255, 255, 255,0.9) 0%, rgba(255, 255, 255, 0.65) 60%, rgba(255, 255, 255,0) 90%);">
+              <div class="container u-bg-overlay__inner g-color-white g-height-100x">
+                <div class="row align-items-center g-height-100x">
+                  <div class="col w4c-color-blue g-font-weight-700 g-font-size-50 g-mt-30 mb-4 g-font-asap" style="line-height: 1.2"><?= $item->title ?></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <?php endforeach; ?>
+        <!-- End Items Iteration -->
+      <?php endif; ?>
     </div>
   </div>
 
@@ -73,19 +63,23 @@
             items: 1
           }
         },
-        navText: [
-          '<i class="<?= $this->agent->is_mobile() ? 'd-none' : '' ?> fa fa-angle-left g-color-gray-light-v1 nav-arrow-left" aria-hidden="true" style="transform: scale(<?= $this->agent->is_mobile() ? '  2 ' : ' 2 ' ?>)"></i>', '<i class="<?= $this->agent->is_mobile() ? 'd-none' : '' ?> fa fa-angle-right g-color-gray-light-v1 nav-arrow-right" aria-hidden="true" style="transform: scale(<?= $this->agent->is_mobile() ? '  2 ' : '  2 ' ?>)"></i>'
-        ]
+        <?php if ($this->agent->is_mobile()) : ?>
+          navText: [
+            '', ''
+          ]
+        <?php else : ?>
+          navText: ['<i class="fa fa-angle-left g-color-gray-light-v1 nav-arrow-left g-opacity-0_5" aria-hidden="true" style="transform: scale(2)"></i>',
+            '<i class="fa fa-angle-right g-color-gray-light-v1 nav-arrow-right g-opacity-0_5" aria-hidden="true" style="transform: scale(2)"></i>'
+          ]
+        <?php endif; ?>
       });
-
-      //$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
-      $(element_id + ' .owl-controls').attr('style', 'margin-top: 30px;');
-      var screen_display = <?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
-      // console.log(screen_display);
-      var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '69' : '87' ?>) / 100) / 2;
-      //console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
-      $(element_id + ' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 260px;width: 83%;left: ' + margin_side + 'px;')
-      //Hide last item after carousel init because if hide first courosel not working
+      var margin_side = 30
+			var top=$(element_id + ' .owl-stage-outer').height()/2;
+			var width=$(element_id + ' .owl-stage-outer').width()-(margin_side*4);
+			$(element_id + ' .owl-nav').attr('style', 'position:absolute;left:'+margin_side+'px;margin-top:'+top+'px;width: calc(100vw - '+ (margin_side*4) +'px );')
+			$(element_id + ' .owl-prev').attr('style', 'margin-left:'+margin_side+'px;')
+			$(element_id + ' .owl-next').attr('style', 'margin-right:'+margin_side+'px;')
+			$(element_id + ' .owl-dots').attr('style', 'margin-top:50px;')
     });
   </script>
 </section>
@@ -214,7 +208,7 @@
         color: #17A2B8;
       }
     </style>
-    <div class="container g-px-100 g-my-60">
+    <div class="container g-px-100 g-mt-60">
       <div id="custom-nav-history" class="owl-carousel owl-theme owl-loaded">
         <div class="owl-controls">
           <div class="line"></div>
@@ -284,19 +278,26 @@
         });
 
         //$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
-        $(element_id + ' .owl-controls').attr('style', 'margin-top: 30px;');
-        var screen_display = <?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
+        // $(element_id + ' .owl-controls').attr('style', 'margin-top: 30px;');
+        // var screen_display = <?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
         // console.log(screen_display);
-        var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '60' : '98.5' ?>) / 100) / 2;
+        // var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '60' : '98.5' ?>) / 100) / 2;
         //console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
         // $(element_id + ' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 410px;width: 70%;right: ' + margin_side + 'px;')
         //Hide last item after carousel init because if hide first courosel not working
 
         // Custom Click DOt
-        $('#custom-nav-history').find('.owl-dot').click(function() {
+        $('#custom-nav-history .owl-dot').click(function() {
           $(this).siblings().removeClass('active');
           $(this).addClass('active');
           $(element_id).trigger('to.owl.carousel', [$(this).index(), 300, true]);
+        });
+
+        $(element_id).on('changed.owl.carousel', function(e) {
+          let index = e.item.index;
+          let dots = $('#custom-nav-history .owl-dot');
+          dots.removeClass('active');
+          dots.eq(index).addClass('active');
         });
       });
     </script>
@@ -328,12 +329,19 @@
         </div>
         <div class="col-12">
           <img src="<?= get_image(DIR_BG . 'about/' . $copy->vision->image) ?>" alt="vision" style="width: 100%; object-fit: cover;">
+          <div class="g-font-size-12 g-mt-5 g-line-height-1_2 text-right">-M. Bijaksana Junerosano,<br> Managing Director Waste4Change</div>
+
         </div>
       </div>
     </div>
   <?php else : ?>
     <div class="col-md-5 col-12 float-right g-pa-0">
-      <img src="<?= get_image(DIR_BG . 'about/' . $copy->vision->image) ?>" alt="vision" style="height: 100%; margin-bottom: -100px; object-fit: cover; float: right;">
+      <div class="">
+
+        <img src="<?= get_image(DIR_BG . 'about/' . $copy->vision->image) ?>" alt="vision" style="height: 100%; object-fit: cover; float: right;">
+        <div class="g-font-size-16" style="position: absolute; bottom: -30px;right: 10px; ">-M. Bijaksana Junerosano, Managing Director Waste4Change</div>
+      </div>
+
     </div>
     <div class="container">
       <div class="row no-gutters g-font-asap ">
@@ -666,10 +674,10 @@
 
 <!-- Our Culture -->
 <section class="g-bg-gray-light-v5 <?= $this->agent->is_mobile() ? 'g-py-40' : 'g-bg-white g-pb-50 g-pt-100' ?>">
-  <div class="container">
-    <div class="row justify-content-center my_tab_content">
-      <div class="col-md-3">
-        <h2 class="g-font-asap g-color-black text-uppercase g-font-weight-600 g-font-size-<?= $this->agent->is_mobile() ? '24  text-center' : '35 g-mb-10' ?>"><?= $copy->culture->title ?></h2>
+  <div style="<?= $this->agent->is_mobile() ? '' : 'margin-left:15%' ?>">
+    <div class="row justify-content-center">
+      <div class="col-md-2">
+        <div class="g-font-asap g-color-black text-uppercase g-font-weight-600 g-font-size-<?= $this->agent->is_mobile() ? '24  text-center' : '35 g-mb-10' ?>"><?= $copy->culture->title ?></div>
         <hr class="g-width-30 g-mt-20 g-mb-0 <?= $this->agent->is_mobile() ? '' : 'g-ml-0' ?> g-brd-2 w4c-brd-blue">
         <div class="mt-2 mb-4 <?= $this->agent->is_mobile() ? 'g-px-10 text-center' : '' ?>"><?= $copy->culture->subtitle ?></div>
         <?php if (!$this->agent->is_mobile()) : ?>
@@ -684,9 +692,9 @@
                 </div>
               </div>
               <div class="owl-dots text-left g-ml-minus-5 g-mt-30">
-                <div class="owl-dot active"><span></span></div>
-                <div class="owl-dot"><span></span></div>
-                <div class="owl-dot"><span></span></div>
+                <?php foreach ($copy->culture->items as $index => $item) : ?>
+                  <div class="owl-dot <?= $index == 0 ? 'active' : '' ?>"><span></span></div>
+                <?php endforeach; ?>
               </div>
             </div>
           </div>
@@ -695,13 +703,11 @@
 			<div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div>
 				</div> -->
       </div>
-      <div class="col-md-9 col-12 align-self-end">
-        <div id="culture-carousel" class="col-md-12 owl-theme align-height-list" style="margin: 0 0 30px 0!important;">
+      <div class="col-md-10 col-12">
+        <div id="culture-carousel">
           <!-- Items Iteration -->
           <?php foreach ($copy->culture->items as $index => $item) : ?>
-            <div class="g-color-black g-bg-white--hover text-center g-rounded-10 g-transition-0_3 align-height-item">
-              <img class="img-fluid u-block-hover__main--zoom-v1 mb-3" src="<?= get_image(DIR_BG . 'about/culture/' . $item->image) ?>" alt="<?= $copy->culture->title . ' ' . $item->title ?>" style="height:100%; object-fit:cover">
-            </div>
+            <img src="<?= get_image(DIR_BG . 'about/culture/' . $item->image) ?>" alt="<?= $copy->culture->title . ' ' . $item->title ?>" style="height:<?= $this->agent->is_mobile() ? '200px' : '320px' ?>; object-fit:cover">
           <?php endforeach; ?>
           <!-- End Items Iteration -->
         </div>
@@ -752,6 +758,15 @@
           $(element_id).trigger('prev.owl.carousel');
         });
 
+        $(element_id).on('changed.owl.carousel', function(e) {
+          let index = e.item.index - 2;
+          let dots = $('#custom-nav .owl-dot');
+          if (index == dots.length) {
+            index = 0;
+          }
+          dots.removeClass('active');
+          dots.eq(index).addClass('active');
+        });
       });
     </script>
   </div>
@@ -843,7 +858,7 @@
   </div>
   <div style="background:rgba(248,248,248,0.45); height:100%">
     <div class="container <?= $this->agent->is_mobile() ? 'text-center g-py-50' : 'g-py-70' ?>">
-     <div class="row justify-content-center">
+      <div class="row justify-content-center">
         <div class="col-md-8 col-10 g-mb-15 pt-5 align-self-center">
           <div class="g-color-black <?= $this->agent->is_mobile() ? 'g-font-size-20' : 'h2' ?>">
             <?= $copy->cta->title ?></div>

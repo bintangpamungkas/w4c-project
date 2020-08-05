@@ -69,12 +69,12 @@
 				<?php foreach ($copy->value->items as $item) : ?>
 					<div class="col-md-4">
 						<article class="g-transition-0_3">
-							<div class="g-color-black g-bg-white--hover text-center g-rounded-10 g-transition-0_3 g-px-20 g-py-10" style="padding: 30px 0 0 0!important;">
-								<img class="img-fluid u-block-hover__main--zoom-v1 mb-3 animated zoomIn" src="<?= get_image(DIR_ICON . 'value/' . $item->image) ?>" alt="<?= $copy->value->title . ' ' . $item->title ?>" style="width: 40%">
+							<div class="g-color-black g-bg-white--hover text-center g-rounded-10 g-transition-0_3 g-pa-0 g-pt-20">
+								<img class="img-fluid u-block-hover__main--zoom-v1 animated zoomIn" src="<?= get_image(DIR_ICON . 'value/' . $item->image) ?>" alt="<?= $copy->value->title . ' ' . $item->title ?>" style="width: 37%">
 								<div class="g-pa-15">
-									<h2 class="h5 g-color-black g-font-weight-600 mb-4 g-font-size-15" style="margin-bottom: 5px!important;">
+									<div class="g-color-black g-font-weight-600 mb-4 g-font-size-20" style="margin-bottom: 5px!important;">
 										<?= $item->title ?>
-									</h2>
+									</div>
 								</div>
 							</div>
 						</article>
