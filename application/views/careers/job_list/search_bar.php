@@ -2,7 +2,15 @@
 <section class="g-white g-bg-white u-shadow-v20 g-pt-80">
   <div class="container">
     <div class="">
-      <div class="text-right g-pt-<?= $this->agent->is_mobile() ? '10' : '50' ?>">
+
+      <div class="row no-gutters g-pt-<?= $this->agent->is_mobile() ? '10' : '50' ?>">
+        <?php if (!$this->agent->is_mobile()) : ?>
+          <div class="col">
+            <div class="g-font-asap g-color-black text-uppercase g-font-weight-600 g-font-size-24 g-mb-10 <?= $this->agent->is_mobile() ? 'text-center' : '' ?>"><?= $copy->JobList ?></div>
+            <hr class="g-width-30 g-mt-20 g-mb-0 g-ml-0 g-brd-2 w4c-brd-blue">
+          </div>
+        <?php endif; ?>
+      <div class="col text-right ">
         <?php foreach ($breadcrumb as $bread) : ?>
           <?php if ($bread['active'] != true) : ?>
             <a class="w4c-color-blue g-text-transform-none" href="<?= site_url($bread['url']) ?>">
@@ -14,7 +22,9 @@
           <?php endif; ?>
         <?php endforeach; ?>
       </div>
-      <div class="row justify-align-center <?= ($this->agent->is_mobile()) ? ' g-pt-50' : ' g-py-50' ?>">
+      </div>
+
+      <div class="row justify-align-center <?= ($this->agent->is_mobile()) ? ' g-pt-50' : ' g-py-30' ?>">
         <?php if ($this->agent->is_mobile()) : ?>
           <div class="col">
             <div class="form-group g-m-reset" data-toggle="modal" data-target="#modal-mobile-search">
@@ -25,7 +35,7 @@
                 <input id="inputSearch" class="form-control g-pa-12 g-brd-left-none g-brd-none--focus" type="text" placeholder="<?= $copy->Search . ' ' . $copy->Position . ', ' . $copy->Location . ', ' . $copy->Type ?>">
               </div>
             </div>
-            <style>
+            <style> 
               .ui-autocomplete {
                 position: absolute;
                 top: 0;
@@ -72,8 +82,8 @@
           <div class="col-12 <?= $this->agent->is_mobile() ? ' g-px-15 g-pt-10' : ' g-px-5' ?>">
             <div id="search-message" class="<?= $this->agent->is_mobile() ? '' : ' '; ?>alert alert-dismissible fade show g-font-weight-500 g-mb-0 g-px-20 g-py-15 d-none" role="alert">
               <div class="close g-font-size-16 g-mt-6 g-mr-20 g-pt-10 g-font-weight-900" onclick="reset()">
-                  Reset
-                </div>
+                Reset
+              </div>
               <div class="input-reset close g-font-size-16 g-mt-5 g-pt-10 g-font-weight-400" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden=" true">x</span>
               </div>

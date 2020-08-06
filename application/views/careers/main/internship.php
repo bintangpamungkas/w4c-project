@@ -19,7 +19,7 @@
 				<div class="col-md-6">
 					<div class="g-font-asap g-color-black text-uppercase g-font-weight-600 g-font-size-35 g-mb-10"><?= $copy->internship_program->title ?></div>
 					<hr class="g-width-30 g-mt-20 g-mb-40 g-ml-0 g-brd-2 w4c-brd-blue">
-					<div class="mt-2 mb-4 g-font-size-22 g-color-black g-font-weight-600"><?= $copy->internship_program->subtitle ?></div>
+					<!-- <div class="mt-2 mb-4 g-font-size-22 g-color-black g-font-weight-600"><?= $copy->internship_program->subtitle ?></div> -->
 					<div class="mt-2 mb-4 "><?= $copy->internship_program->message ?></div>
 				</div>
 				<div class="col-md-6">

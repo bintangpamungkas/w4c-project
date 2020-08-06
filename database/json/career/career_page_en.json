@@ -69,7 +69,7 @@
     "subtitle": "What Are You Most Passionate About?"
   },
   "testimony": {
-    "title": "Testimonial",
+    "title": "Employees' Testimonies",
     "subtitle": "Hear What Our Employees Have to Say throughout their Career with Waste4Change",
     "items": [
       {
@@ -116,7 +116,7 @@
     "image": "internship.jpg"
   },
   "internship_testimony": {
-    "title": "Testimoni Intern Program WIP",
+    "title": "WASTE4CHANGE INTERNSHIP PROGRAM (WIP) TESTIMONIES",
     "subtitle": "See What Our Past Interns Have to Say About Waste4Change's Internship Program",
     "items": [
       {
@@ -152,11 +152,11 @@
       },
       {
         "question": "How is the application process? ",
-        "answer": "The process will start after you apply through our online form. Your experience and skills will be assessed by our recruiters. If your qualifications match with what the recruiters and users are looking for, they will email you an invitation for an interview. <br> At the interview session, usually you will meet the Human Capital team and Users for your position. We will learn more about you regarding your soft skills and hard skills, as well as your personality. Also, you will understand more about Waste4Change. <br> If everything is synchronized and we want you in our team, we will send an offering letter straight to your email. Please note that the recruitment process may vary depending on the position and situation you are applying for. There might be a little variation between Departments and positions."
+        "answer": "The process will start after you apply through our online form. Your experience and skills will be assessed by our recruiters. If your qualifications match with what the recruiters and users are looking for, they will email you an invitation for an interview.<br><br>At the interview session, usually you will meet the Human Capital team and Users for your position. We will learn more about you regarding your soft skills and hard skills, as well as your personality. Also, you will understand more about Waste4Change. <br><br>If everything is synchronized and we want you in our team, we will send an offering letter straight to your email. Please note that the recruitment process may vary depending on the position and situation you are applying for. There might be a little variation between Departments and positions. "
       },
       {
         "question": "Would Waste4Change contact me regarding the results of my application?",
-        "answer": "If you are invited to the interview session, we will absolutely email you for any decisions. On the other hand, if you haven't heard anything from us after 2 months since you submitted your application, we're very sorry to inform you that our qualification does not yet match with you. <br>Even so, we are very thankful for your application, and we will keep your documents in our database to be checked on for future openings."
+        "answer": "If you are invited to the interview session, we will absolutely email you for any decisions. On the other hand, if you haven't heard anything from us after 2 months since you submitted your application, we're very sorry to inform you that our qualification does not yet match with you. <br><br>Even so, we are very thankful for your application, and we will keep your documents in our database to be checked on for future openings."
       },
       {
         "question": "Can I try applying even if there is no available position for me?",
@@ -164,11 +164,11 @@
       },
       {
         "question": "What can I expect from working at Waste4Change?",
-        "answer": "To start with, we welcome and consider every new employee as a part of the Waste4Change family, and we will try our best to make the most of your time working here in order to generate meaningful impacts in addressing the ongoing waste crisis in Indonesia.<br>On your first day, you will get to know Waste4Change a little deeper, take a stroll in our office and facilities, as well as meeting everybody who are working at Waste4Change, all within the same day. After that, you will be assigned to your user/manager for further explanation on your job overview. From that day, you will learn step-by-step about Waste4Change values, culture and how to keep-up in creating meaningful outputs for your work."
+        "answer": "To start with, we welcome and consider every new employee as a part of the Waste4Change family, and we will try our best to make the most of your time working here in order to generate meaningful impacts in addressing the ongoing waste crisis in Indonesia.<br><br>On your first day, you will get to know Waste4Change a little deeper, take a stroll in our office and facilities, as well as meeting everybody who are working at Waste4Change, all within the same day. After that, you will be assigned to your user/manager for further explanation on your job overview. From that day, you will learn step-by-step about Waste4Change values, culture and how to keep-up in creating meaningful outputs for your work."
       },
       {
         "question": "Does Waste4change offer internships and volunteer programs?",
-        "answer": "We do have a Waste4Change Internship Program (WIP) that is held three times a year with 4-month duration. Internship openings will be announced on our Career Page. Outside of our WIP, students can apply for their mandatory internship for school or university credits. We will do our best to search for the right position or projects for you."
+        "answer": "We do have a Waste4Change Internship Program (WIP) that is held three times a year. Internship openings will be announced on our Career Page. Outside of our WIP, students can apply for their mandatory internship for school or university credits. We will do our best to search for the right position or projects for you. "
       }
     ]
   }

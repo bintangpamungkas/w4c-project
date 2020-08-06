@@ -1,5 +1,5 @@
 <!-- Our Job Category -->
-<section class="g-bg-white <?= $this->agent->is_mobile() ? 'g-py-40' : 'g-bg-white g-pb-30 g-pt-80' ?>">
+<section class="g-bg-white <?= $this->agent->is_mobile() ? 'g-py-40' : 'g-bg-white g-pb-50 g-pt-80' ?>">
 	<h2 class="g-font-asap g-color-black text-uppercase text-center g-font-weight-600 g-font-size-<?= $this->agent->is_mobile() ? '24' : '35 g-mb-10' ?>"><?= $copy->job_category->title ?></h2>
 	<hr class="g-width-30 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
 	<div class="mt-2 mb-4 g-px-10 text-center"><?= $copy->job_category->subtitle ?></div>
@@ -18,7 +18,7 @@
 										<div class="">
 											<div class=" g-pa-25">
 												<i class="<?= $category->icon ?> g-color-blue g-font-size-30 g-pa-12 g-bg-white g-rounded-50"></i>
-												<div class="d-block g-color-white g-font-weight-600 g-font-size-24 g-mb-25 g-mt-30 g-line-height-1_2 g-bg-transparent"><?= $category->name ?></div>
+												<div class="d-block g-color-white g-font-weight-600 g-font-size-24 g-mt-20 g-line-height-1_2 g-bg-transparent"><?= $category->name ?></div>
 												<p class="g-color-white-opacity-0_7 mb-0"></p>
 											</div>
 											<div class="g-pl-25">
@@ -92,11 +92,11 @@
 						<div class="u-block-hover__additional--partially-slide-up g-z-index-1">
 							<div class="u-block-hover__visible g-px-25 g-pt-25">
 								<i class="<?= $category->icon ?> g-color-blue g-font-size-30 g-pa-15 g-bg-white g-rounded-50"></i>
-								<span class="d-block g-color-white g-font-weight-600 g-font-size-24 g-mb-25 g-mt-30 g-line-height-1_2"><?= $category->name ?></span>
+								<span class="d-block g-color-white g-font-weight-600 g-font-size-24 g-mb-25 g-mt-30 g-line-height-1_1"><?= $category->name ?></span>
 								<p class="g-color-white-opacity-0_7 mb-0"></p>
 							</div>
 							<div class="g-pl-25">
-								<div class="d-inline-block g-color-white g-font-size-18 g-mb-20">
+								<div class="d-inline-block g-color-white g-font-size-18 g-mb-20  g-line-height-1_2">
 									<?php
 									foreach ($jobs as $job) {
 										if ($job->category == $key)

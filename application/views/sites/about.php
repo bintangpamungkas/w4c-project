@@ -4,10 +4,7 @@
   }
 </style>
 <!-- Slider -->
-<section class="g-bg-white g-pt-<?= $this->agent->is_mobile() ? '80' : '150' ?> g-pb-40">
-  <div class="container g-font-asap g-font-color-w4c-1 g-font-size-<?= $this->agent->is_mobile() ? '24' : '35' ?> g-font-weight-600 text-center g-line-height-1_2">
-    <?= $copy->slide->title ?>
-  </div>
+<section class="g-bg-white g-pb-40">
   <div>
     <div id="slide-carousel" class="g-mt-20">
       <?php if ($this->agent->is_mobile()) : //mobile ?>
@@ -865,7 +862,7 @@
             <?= $copy->cta->title ?></div>
         </div>
         <div class="col-md-4 col-12 g-mb-15 pt-5 align-self-center">
-          <a class="btn btn-info g-rounded-50 g-py-10 g-px-<?= $this->agent->is_mobile() ? '60 g-font-size-14' : '80 float-right g-font-size-18 g-color-white--focus' ?> text-uppercase g-py-15" href="<?= $copy->cta->button->url ?>">
+          <a class="btn btn-block btn-info g-color-white g-font-size-13 g-rounded-50 g-py-10 g-px-<?= $this->agent->is_mobile() ? '60 g-font-size-14' : '80 float-right g-color-white--focus' ?> text-uppercase g-py-15" href="<?= $copy->cta->button->url ?>">
             <?= strtoupper($copy->cta->button->title) ?>
           </a>
         </div>

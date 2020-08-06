@@ -1,5 +1,5 @@
 <!-- Testimony -->
-<section class="g-bg-gray-light-v4 <?= $this->agent->is_mobile() ? 'g-pt-80 g-pb-50' : 'g-bg-white g-pb-50 g-pt-40' ?>">
+<section class="g-bg-gray-light-v4 <?= $this->agent->is_mobile() ? 'g-pt-80 g-pb-50' : 'g-bg-white g-pb-50 g-pt-80' ?>">
 	<div class="<?= $this->agent->is_mobile() ? '' : 'container' ?>">
 		<div class="row justify-content-center my_tab_content no-gutters">
 			<div class="col-md-12">

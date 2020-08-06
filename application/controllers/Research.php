@@ -120,7 +120,7 @@ class Research extends MY_Controller
 
     private function getDatas()
     {
-        $res = $this->client->request('GET', site_url(DIR_STATIC_DB . 'research.json'));
+        $res = $this->client->request('GET', site_url(DIR_STATIC_DB . '/research/research.json'));
         return json_decode($res->getBody(), true);
     }
 

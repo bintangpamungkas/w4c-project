@@ -9,8 +9,8 @@ if (isset($_GET['cat'])) {
 
 <section class="<?= $this->agent->is_mobile() ? 'g-pt-70' : 'g-pt-100'; ?> g-pb-40">
 
+    <!-- Heading -->
     <section class="container">
-        <!-- Heading -->
         <div class="row d-flex justify-content-between">
             <div class="<?= $this->agent->is_mobile() ? 'col-10' : 'col-6'; ?> u-heading-v2-1">
                 <h4 class="<?= $this->agent->is_mobile() ? 'g-font-size-12' : 'g-font-size-18'; ?>"><?= APP_NAME; ?></h4>
@@ -113,15 +113,13 @@ if (isset($_GET['cat'])) {
                 <?php endif; ?>
             </div>
         </div>
-        <!-- End Heading -->
     </section>
+    <!-- End Heading -->
 
     <?php if (!$get) : ?>
-        <!-- <section class="<?= $this->agent->is_mobile() ? 'fluid-container' : 'container'; ?>"> -->
-        <?php
-        // $this->load->view('research/sections/carousel');
-        ?>
-        <!-- </section> -->
+        <section class="<?= $this->agent->is_mobile() ? 'fluid-container' : 'container'; ?>">
+            <?php $this->load->view('research/sections/carousel'); ?>
+        </section>
     <?php else : ?>
         <section class="container<?= $this->agent->is_mobile() ? ' g-mt-minus-20 g-mb-minus-20 ' : ' '; ?>">
             <div class="<?= $this->agent->is_mobile() ? 'g-py-20 ' : ' '; ?>alert alert-error alert-dismissible fade show g-mt-30 g-font-weight-500" role="alert" style="background-color: rgba(230, 75, 59, 0.15); color: rgba(230, 75, 59);">
