@@ -248,7 +248,7 @@
     "talentaUrl":"https://recruitment.talenta.co/waste4change/WlJkOEg4MmRxWXZNdmQ5ZjZSWUNRQT09"
   },
   "customer-service": {
-    "status": 1,
+    "status": 0,
     "title": "Customer Service",
     "category": "wmo",
     "type": 1,
@@ -275,7 +275,7 @@
     "talentaUrl":"https://recruitment.talenta.co/waste4change/NXZrc3Qxem1Fa3d3WmlIVUpwcGw1dz09"
   },
   "enumerator": {
-    "status": 0,
+    "status": 1,
     "title": "Enumerator",
     "category": "wmce",
     "type": 2,
@@ -320,5 +320,64 @@
       "Memiliki kemampuan analisis, negosiasi, dan Manajerial yang baik"
     ],
     "talentaUrl":"https://recruitment.talenta.co/waste4change/TFZ6ZmkvNGRpdFMvNUxSK1BBVC92dz09"
+  },
+  "po-product-manager-digital": {
+    "status": 1,
+    "title": "PO Product Manager Digital",
+    "category": "wmce",
+    "type": 1,
+    "location": [
+      "Bekasi"
+    ],
+    "description": [
+      "Melakukan riset terkait user persona",
+      "Berdiskusi bersama product owner lintas produk, tim untuk menentukan arah pengembangan produk layanan digital",
+      "Memimpin dan terlibat aktif tiap sprint planning masing-masing produk",
+      "Memastikan pengerjaan setiap backlog sprint berjalan sesuai timeline",
+      "Memberikan saran, rekomendasi dan inovasi terbaik sebagai solusi terhadap masalah yang muncul pada tahap implementasi produk digital",
+      "Memantau seluruh metrik produk",
+      "Membuat dokumen teknis yang berkaitan dengan operasional produk digital",
+      "Melakukan evaluasi terkait hasil dari implementasi dan operasional dalam rangka peningkatan kualitas dan manfaat dari produk digital"
+    ],
+    "requirement": [
+      "Pendidikan min. S1 Sistem Informatika / Teknik Informatika / Business Administration",
+      "Pengalaman min. 1 tahun terlibat dalam pengembangan produk digital",
+      "Mampu membuat data driven, baik kualitatif maupun kuantitatif",
+      "Memiliki kemampuan problem solving yang sangat baik",
+      "Memiliki kemampuan komunikasi dalam team yang sangat baik",
+      "Memiliki ketertarikan untuk mengembangkan produk digital untuk solusi persampahan",
+      "Memiliki laptop pribadi"
+    ],
+    "talentaUrl":""
+  },
+   "digital-marketing-executive": {
+    "status": 1,
+    "title": "Digital Maerketing Executive",
+    "category": "wmce",
+    "type": 1,
+    "location": [
+      "Bekasi"
+    ],
+    "description": [
+      "Melakukan riset trend, kompetitor, dan kondisi pasar",
+      "Merencanakan strategi digital marketing dan campaign bulanan berdasar target bisnis (leads)",
+      "Bekerja bersama dengan tim copy dan desain untuk mengembangkan konten digital terutama",
+      "Melakukan pengelolaan CRM, seperti Newsletter",
+      "Melakukan pengelolaan iklan digital (Google Ads, Facebook Ads, dll) baik dari segi konten dan budget",
+      "Memastikan campaign berjalan dengan baik dengan beberapa A/B testing",
+      "Memberikan laporan matriks digital dan analisa untuk hasil yang lebih baik"
+    ],
+    "requirement": [
+      "Pendidikan Min. S1 diutamakan Jurusan Marketing / Komunikasi",
+      "Memiliki pengalaman minimal 1 tahun di bidang Digital Marketing, di industri B2B lebih disukai",
+      "Memiliki kemampuan analisis yang baik dengan pendekatan kreatif & inovatif",
+      "Memiliki kemampuan pengembangan copy dan desain lebih disukai",
+      "Memiliki pengetahuan terkait SEO lebih disukai",
+      "Memiliki kemampuan komunikasi dalam tim yang sangat baik",
+      "Target oriented",
+      "Memiliki ketertarikan kuat untuk memberi solusi pengelolaan sampah yang lebih baik",
+      "Memiliki laptop pribadi"
+    ],
+    "talentaUrl":""
   }
 }

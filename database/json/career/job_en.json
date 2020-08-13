@@ -91,7 +91,7 @@
     "talentaUrl":"https://recruitment.talenta.co/waste4change/NWpGRklydUdMZjgrNFRPWjg1dHFHQT09"
   },
   "surveyor": {
-    "status": 0,
+    "status": 1,
     "title": "Surveyor",
     "category": "wmce",
     "type": 2,
@@ -228,7 +228,7 @@
     "talentaUrl":"https://recruitment.talenta.co/waste4change/WlJkOEg4MmRxWXZNdmQ5ZjZSWUNRQT09"
   },
   "customer-service": {
-    "status": 1,
+    "status": 0,
     "title": "Customer Service",
     "category": "wmo",
     "type": 1,
@@ -253,7 +253,7 @@
     "talentaUrl":"https://recruitment.talenta.co/waste4change/NXZrc3Qxem1Fa3d3WmlIVUpwcGw1dz09"
   },
   "enumerator": {
-    "status": 0,
+    "status": 1,
     "title": "Enumerator",
     "category": "wmce",
     "type": 2,
@@ -262,9 +262,9 @@
     ],
     "description": [
       "Interview respondents using the questionnare that has been provided",
-      "Perform coding based on the interview results ",
+      "Perform coding based on the interview results",
       " Deliver reports regarding the results of daily coding",
-      " Perform data cleaning whenever necessary "
+      " Perform data cleaning whenever necessary"
     ],
     "requirement": [
       "At least a Final Year or Fresh Graduate from Sociology/Anthropology",
@@ -284,7 +284,7 @@
     "type": 1,
     "location": ["Bekasi"],
     "description": [
-      "Develop and manage business opportunities with both existing and new clients ",
+      "Develop and manage business opportunities with both existing and new clients",
       "Lead the sell function of the Operational Services Department",
       "Develop a sales strategy to increase market share and profitability ",
       "Organize and supervise the implementation of marketing and sales strategy ",
@@ -292,11 +292,66 @@
     ],
     "requirement": [
       "Female/Male max. 35 years old",
-      "Bachelor/Master’s Degree in Marketing/Business Management",
+      "Bachelor/Master's Degree in Marketing/Business Management",
       "Fluent in English, both oral and written",
       "Have experience as a Sales Manager with proven successes as a strong player; candidates with a specific focus in waste management services are more preferred",
-      "Good analysis, negotiation, and managerial skills "
+      "Good analysis, negotiation, and managerial skills"
     ],
     "talentaUrl":"https://recruitment.talenta.co/waste4change/TFZ6ZmkvNGRpdFMvNUxSK1BBVC92dz09"
-  }  
+  },
+  "po-product-manager-digital": {
+    "status": 1,
+    "title": "PO Product Manager Digital",
+    "category": "wmce",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Conduct research regarding user's persona",
+      "Discuss with cross-team product owner in order to determine the direction of the products for digital services",
+      "Lead and actively involved in the sprint planning of each product",
+      "Ensure that every backlog sprint are performed according to the timeline",
+      "Give advice, recommendations, and the best possible solutions for problems and issues that may arise during the digital product implementation phase",
+      "Monitor the product's metrics",
+      "Issue technical documents relating to the operational aspect of a digital product",
+      "Perform evaluation regarding the results of both the implementation and operation phase in order to increase the quality and benefits of digital products"
+    ],
+    "requirement": [
+      "At least a Bachelor's Degree from Informatics / Business Administration",
+      "A minimum of 1-year experience in developing digital products",
+      "Able to make data-driven research, both qualitative and quantitative",
+      "Good problem-solving skill",
+      "Excellent skills in communication and teamwork",
+      "Interested in developing digital products for waste solutions",
+      "Have a personal laptop"
+    ],
+    "talentaUrl":""
+  },
+  "digital-marketing-executive": {
+    "status": 1,
+    "title": "Digital Marketing Executive",
+    "category": "wmce",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Perform research on trends, competitors, and market condition",
+      "Plan monthly digital marketing strategy and campaign based on business target (leads)",
+      "Cooperate with the copy and design team to develop digital contents",
+      "Manage CRM such as Newsletter",
+      "Manage digital ads (Google Ads, Facebook Ads, etc) in terms of both the content and budget",
+      "Ensure that the digital campaigns run well with several A/B testings",
+      "Provide reports on digital metrics as well as the analysis for a better result"
+    ],
+    "requirement": [
+      "At least a Bachelor's Degree, preferably from Marketing / Communication",
+      "A minimum of 1-year experience in Digital Marketing, preferably in B2B industry",
+      "Good analytical skills with a creative and innovative approach",
+      "Preferably with copywriting and design skills",
+      "Preferably have good knowledge with SEO",
+      "Excellent communication when working in a team",
+      "Target-oriented",
+      "Strong interests to come up with solutions for better waste management",
+      "Have a personal laptop"
+    ],
+    "talentaUrl":""
+  }
 }

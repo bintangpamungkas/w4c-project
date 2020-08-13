@@ -18,7 +18,7 @@
         }
         $i = 1;
         foreach ($jobs as $itemi => $item) :
-          if ($item->category == $job->category && $job->status == 1) : 
+          if ($item->category == $job->category && $job_slug != $itemi) : 
           ?>
             <div class="col-md-4 col-12 g-line-height-1_2 <?= $this->agent->is_mobile() ? 'g-px-10 g-py-5' : 'g-pa-5' ?>">
               <div class="g-bg-white <?= $this->agent->is_mobile() ? 'g-px-25 g-py-20' : 'g-pa-30 align-height-item' ?>" style="box-shadow:1px 6px 20px 2px rgba(0, 0, 0, 0.1);position:relative;">
@@ -29,9 +29,9 @@
                     <div class="col-auto">
                       <i class="icon-location-pin mr-2"></i>
                     </div>
-                    <div class="col-auto job-location">
-                      <?php foreach ($job->location as $index => $location) : ?>
-                        <?= $location ?><br>
+                    <div class="col job-location">
+                      <?php foreach ($job->location as $loc1 => $location) : ?>
+                        <?= $loc1>0 ? ', '.$location : $location ?>
                       <?php endforeach; ?>
                     </div>
                   </div>

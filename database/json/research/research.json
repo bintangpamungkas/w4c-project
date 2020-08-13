@@ -2,7 +2,7 @@
     {   
         "id": "w4c_research_0001",
         "slug": "the-governance-of-solid-waste-institutions-in-indonesia-part-i-central-government",
-        "slider": "banner-riset-daerah.jpg",
+        "slider": "banner-riset-pusat.jpg",
         "title": {
             "id": "Tata Kelola Persampahan Indonesia - <span style='display: block;'>Bagian I Pemerintah Pusat</span>",
             "en": "The Governance of Solid Waste Institutions in Indonesia - <span style='display: block;'>Part I Central Government</span>"
@@ -71,7 +71,7 @@
                     "en": "https://drive.google.com/file/d/1eh8xu6sdLqeHACktzejiUjgXwuo0g-Oj/preview"
                 },
                 "download": {
-                    "id": "https://drive.google.com/u/0/uc?id=1gSTTtTNxeZtJY4WpOVgCNhxFZkY16AC6&export=download",
+                    "id": "https://drive.google.com/u/0/uc?id=1nKRpfIF-nonhI9wX5FBfd2WRJz6y3nvG&export=download",
                     "en": "https://drive.google.com/u/0/uc?id=10avHPgN0unFJFtXE44fRSiytPfHRcVBX&export=download"
                 }
             }
@@ -84,7 +84,7 @@
     {
         "id": "w4c_research_0002",
         "slug": "the-governance-of-solid-waste-institutions-in-indonesia-part-ii-regional-government",
-        "slider": "banner-riset-pusat.jpg",
+        "slider": "banner-riset-daerah.jpg",
         "title": {
             "id": "Tata Kelola Persampahan Indonesia - <span style='display: block;'>Bagian II Pemerintah Daerah</span>",
             "en": "The Governance of Solid Waste Institutions in Indonesia - <span style='display: block;'>Part II Regional Government</span>"

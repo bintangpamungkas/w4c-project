@@ -123,11 +123,11 @@ if (isset($_GET['cat'])) {
     <?php else : ?>
         <section class="container<?= $this->agent->is_mobile() ? ' g-mt-minus-20 g-mb-minus-20 ' : ' '; ?>">
             <div class="<?= $this->agent->is_mobile() ? 'g-py-20 ' : ' '; ?>alert alert-error alert-dismissible fade show g-mt-30 g-font-weight-500" role="alert" style="background-color: rgba(230, 75, 59, 0.15); color: rgba(230, 75, 59);">
-                <button type="button" class="input-reset close g-font-size-16 g-mt-5 g-pt-10 g-font-weight-400" data-dismiss="alert" aria-label="Close">
+                <div class="input-reset close g-font-size-16 g-mt-5 g-pt-10 g-font-weight-400" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">
                         Reset
                     </span>
-                </button>
+                </div>
                 <span id="search-total">0</span> Search result found
             </div>
         </section>
@@ -207,7 +207,7 @@ if (isset($_GET['cat'])) {
         });
 
         function getJsonData(expression) {
-            $.getJSON('<?= site_url(DIR_STATIC_DB . 'research.json') ?>', function(data) {
+            $.getJSON('<?= site_url(DIR_STATIC_DB . 'research/research.json') ?>', function(data) {
                 <?php if ($get) : ?>
                     $.each(data, function(key, value) {
                         if (value.hidden_title.<?= $lang ?>.toLowerCase().search(expression.toLowerCase().trim()) != -1 || value.keyword.<?= $lang ?>.toLowerCase().search(expression.toLowerCase().trim()) != -1) {
@@ -226,7 +226,7 @@ if (isset($_GET['cat'])) {
         function loadContent(value) {
             $('#content').append(`<div class="row g-mb-50">
         <div class="col-md-4">
-            <img class="w-100" src="` + value.banner.thumb_image.<?= $lang ?> + `" alt="Image Description">
+            <img class="w-100" src="<?=base_url(DIR_BG.'research/cover/')?>` + value.banner.thumb_image.<?= $lang ?> + `" alt="Image Description">
         </div>
 
         <div class="col-md-8">
@@ -252,7 +252,7 @@ if (isset($_GET['cat'])) {
         function appendResult(value) {
             $('#result').append(`<li class="d-flex justify-content-start g-brd-around g-brd-gray-light-v4 g-pa-20" data-href="<?= site_url('research/') ?>` + value.slug + `">
                     <div class="g-pos-rel g-mr-5">
-                        <img class="g-width-50 g-height-50 rounded" src="` + value.banner.thumb_image + `" alt="` + value.title.<?= $lang ?> + `">
+                        <img class="g-width-50 g-height-50 rounded" src="<?=base_url(DIR_BG.'research/cover/')?>` + value.banner.thumb_image + `" alt="` + value.title.<?= $lang ?> + `">
                     </div>
 
                     <div class="align-self-center g-px-10">

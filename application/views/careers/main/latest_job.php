@@ -30,8 +30,8 @@
 									<i class="icon-location-pin mr-2"></i>
 								</div>
 								<div class="col job-location">
-									<?php foreach ($item->location as $location) : ?>
-										<?= $location ?><br>
+									<?php foreach ($item->location as $loc1=>$location) : ?>
+										<?= $loc1>0 ? ', '.$location : $location ?>
 									<?php endforeach; ?>
 								</div>
 							</div>

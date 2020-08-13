@@ -9,7 +9,7 @@
               </div>
             </div>
             <div class="g-px-20 g-py-30">
-              <a class="btn btn-info btn-block g-font-size-18 g-font-weight-600 g-py-12 g-mb-35 g-rounded-50 text-uppercase" href="http://w4c.id/formofficerw4c"><?= $copy->ApplyNow ?></a>
+              <a class="btn btn-info btn-block g-font-size-18 g-font-weight-600 g-color-white--active g-py-12 g-mb-35 g-rounded-50 text-uppercase" href="http://w4c.id/formofficerw4c"><?= $copy->ApplyNow ?></a>
               <div class="g-color-black-opacity-0_7 g-font-size-18 text-uppercase g-mb-20"><?= $copy->ShareThisJob ?></div>
               <table border="0" width="100%">
                 <tr class="text-center">

@@ -16,11 +16,13 @@ class Research extends MY_Controller
 
     public function index()
     {
+        // echo '1';
+        // die();
         $sort = null;
         if (isset($_GET['sort'])) {
             $sort = $_GET['sort'];
         }
-
+ 
         $data['sort'] = $sort;
         $data['lang'] = $this->get_language();
         $data['title'] = APP_NAME;

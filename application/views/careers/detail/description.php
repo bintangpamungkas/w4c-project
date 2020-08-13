@@ -37,30 +37,6 @@
           <div id="#accordion-11" class="u-accordion u-accordion-color-primary" role="tablist" aria-multiselectable="true">
             <div class="row justify-content-center">
               <div class="col-lg-8 col-xs-12">
-                <!-- Description Card -->
-                <div class="card g-brd-none rounded g-mb-20" style="box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);">
-                  <div id="accordion-11-heading-desc" class="g-pa-0" role="tab">
-                    <h5 class="mb-0">
-                      <a class="collapsed d-flex justify-content-between g-color-black g-text-underline--none--hover rounded g-px-30 g-py-20 g-font-size-18 g-font-weight-600" href="#accordion-11-body-desc" aria-expanded="true" aria-controls="accordion-11-body-desc" data-toggle="collapse" data-parent="#accordion-11">
-                        <?= $copy->JobDescription ?>
-                        <span class="u-accordion__control-icon g-color-black ">
-                          <i class="fa fa-chevron-down g-font-size-18"></i>
-                          <i class="fa fa-chevron-up g-font-size-18"></i>
-                        </span>
-                      </a>
-                    </h5>
-                  </div>
-                  <div id="accordion-11-body-desc" class="collapse" role="tabpanel" aria-labelledby="accordion-11-heading-desc" data-parent="#accordion-11">
-                    <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
-                      <ul class="list-blue">
-                        <?php foreach ($job->description as $index => $desc) : ?>
-                          <li class="g-mb-10"><?= $desc ?></li>
-                        <?php endforeach; ?>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- End Description Card -->
                 <!-- Requirement Card -->
                 <div class="card g-brd-none rounded g-mb-20" style="box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);">
                   <div id="accordion-11-heading-req" class="g-pa-0" role="tab">
@@ -85,20 +61,36 @@
                   </div>
                 </div>
                 <!-- End Requirement Card -->
+                <!-- Description Card -->
+                <div class="card g-brd-none rounded g-mb-20" style="box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);">
+                  <div id="accordion-11-heading-desc" class="g-pa-0" role="tab">
+                    <h5 class="mb-0">
+                      <a class="collapsed d-flex justify-content-between g-color-black g-text-underline--none--hover rounded g-px-30 g-py-20 g-font-size-18 g-font-weight-600" href="#accordion-11-body-desc" aria-expanded="true" aria-controls="accordion-11-body-desc" data-toggle="collapse" data-parent="#accordion-11">
+                        <?= $copy->JobDescription ?>
+                        <span class="u-accordion__control-icon g-color-black ">
+                          <i class="fa fa-chevron-down g-font-size-18"></i>
+                          <i class="fa fa-chevron-up g-font-size-18"></i>
+                        </span>
+                      </a>
+                    </h5>
+                  </div>
+                  <div id="accordion-11-body-desc" class="collapse" role="tabpanel" aria-labelledby="accordion-11-heading-desc" data-parent="#accordion-11">
+                    <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
+                      <ul class="list-blue">
+                        <?php foreach ($job->description as $index => $desc) : ?>
+                          <li class="g-mb-10"><?= $desc ?></li>
+                        <?php endforeach; ?>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Description Card -->
+
               </div>
             </div>
           </div>
 
         <?php else : ?>
-
-          <div class="g-py-15">
-            <div class="g-font-size-22 g-font-weight-600 text-uppercase g-mb-10"><?= $copy->JobDescription ?></div>
-            <ul class="list-blue">
-              <?php foreach ($job->description as $index => $desc) : ?>
-                <li class="g-mb-10"><?= $desc ?></li>
-              <?php endforeach; ?>
-            </ul>
-          </div>
           <div class="g-py-15">
             <div class="g-font-size-22 g-font-weight-600 text-uppercase g-mb-10">
               <?= $copy->Requirement ?>
@@ -106,6 +98,14 @@
             <ul class="list-blue">
               <?php foreach ($job->requirement as $index => $rec) : ?>
                 <li class="g-mb-10"><?= $rec ?></li>
+              <?php endforeach; ?>
+            </ul>
+          </div>
+          <div class="g-py-15">
+            <div class="g-font-size-22 g-font-weight-600 text-uppercase g-mb-10"><?= $copy->JobDescription ?></div>
+            <ul class="list-blue">
+              <?php foreach ($job->description as $index => $desc) : ?>
+                <li class="g-mb-10"><?= $desc ?></li>
               <?php endforeach; ?>
             </ul>
           </div>

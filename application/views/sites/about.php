@@ -588,7 +588,7 @@
 <section class="g-bg-white <?= $this->agent->is_mobile() ? 'g-pt-60 g-pb-40' : 'g-bg-white g-pb-50 g-pt-100' ?>">
   <div class="container">
     <h2 class="g-font-asap g-color-black text-uppercase text-center g-font-weight-600 g-font-size-<?= $this->agent->is_mobile() ? '24' : '35 g-mb-10' ?>"><?= $copy->value->title ?></h2>
-    <hr class="g-width-30 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
+    <hr class="g-width-70 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
     <?php if ($this->agent->is_mobile()) : ?>
       <div class="row justify-content-center my_tab_content">
         <div class="col-md-11 col-12 align-self-end">
@@ -862,7 +862,7 @@
             <?= $copy->cta->title ?></div>
         </div>
         <div class="col-md-4 col-12 g-mb-15 pt-5 align-self-center">
-          <a class="btn btn-block btn-info g-color-white g-font-size-13 g-rounded-50 g-py-10 g-px-<?= $this->agent->is_mobile() ? '60 g-font-size-14' : '80 float-right g-color-white--focus' ?> text-uppercase g-py-15" href="<?= $copy->cta->button->url ?>">
+          <a class="btn btn-info g-color-white g-font-size-13 g-rounded-50 g-py-10 g-px-<?= $this->agent->is_mobile() ? '60 g-font-size-14' : '80 float-right g-color-white--focus' ?> text-uppercase g-py-15" href="<?= $copy->cta->button->url ?>">
             <?= strtoupper($copy->cta->button->title) ?>
           </a>
         </div>

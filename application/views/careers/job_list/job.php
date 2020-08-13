@@ -77,8 +77,8 @@
                     <i class="icon-location-pin mr-2"></i>
                   </div>
                   <div class="col job-location">
-                    <?php foreach ($job->location as $location_item) : ?>
-                      <?= $location_item ?><br>
+                    <?php foreach ($job->location as $loc1=>$location_item) : ?>
+                      <?= $loc1>0 ? ', '.$location_item : $location_item ?>
                     <?php endforeach; ?>
                   </div>
                 </div>

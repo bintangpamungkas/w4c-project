@@ -2,7 +2,7 @@
 <section class="g-bg-white <?= $this->agent->is_mobile() ? 'g-pt-100 g-pb-40' : 'g-bg-white g-pb-50 g-pt-140' ?>">
 	<div class="container">
 		<h2 class="g-font-asap g-color-black text-uppercase text-center g-font-weight-600 g-font-size-<?= $this->agent->is_mobile() ? '24' : '35 g-mb-10' ?>"><?= $copy->value->title ?></h2>
-		<hr class="g-width-30 g-my-20 g-brd-2 w4c-brd-blue">
+		<hr class="g-width-70 g-my-20 g-brd-2 w4c-brd-blue">
 		<?php if ($this->agent->is_mobile()) : ?>
 			<div class="row justify-content-center my_tab_content g-mt-10">
 				<div class="col-md-11 col-12 align-self-end">
