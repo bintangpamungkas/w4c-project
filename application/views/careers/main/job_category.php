@@ -1,7 +1,7 @@
 <!-- Our Job Category -->
 <section class="g-bg-white <?= $this->agent->is_mobile() ? 'g-py-40' : 'g-bg-white g-pb-50 g-pt-80' ?>">
 	<h2 class="g-font-asap g-color-black text-uppercase text-center g-font-weight-600 g-font-size-<?= $this->agent->is_mobile() ? '24' : '35 g-mb-10' ?>"><?= $copy->job_category->title ?></h2>
-	<hr class="g-width-30 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
+	<hr class="g-width-70 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
 	<div class="mt-2 mb-4 g-px-10 text-center"><?= $copy->job_category->subtitle ?></div>
 
 	<?php if ($this->agent->is_mobile()) : ?>
@@ -25,7 +25,7 @@
 												<div class="d-inline-block g-color-white g-font-size-16 g-line-height-1_2">
 													<?php
 													foreach ($jobs as $job) {
-														if ($job->category == $key)
+														if ($job->category == $key && $job->status == 1)
 															echo $job->title . '<br>';
 													}
 													?>
@@ -99,7 +99,7 @@
 								<div class="d-inline-block g-color-white g-font-size-18 g-mb-20  g-line-height-1_2">
 									<?php
 									foreach ($jobs as $job) {
-										if ($job->category == $key)
+										if ($job->category == $key && $job->status == 1)
 											echo $job->title . '<br>';
 									}
 									?>

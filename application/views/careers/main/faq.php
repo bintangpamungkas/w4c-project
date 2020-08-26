@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="container text-center g-mb-50">
 			<h2 class="g-color-black g-font-weight-600 text-center g-font-size-<?= $this->agent->is_mobile() ? '24' : '35' ?>"><?= $copy->faq->title ?></h2>
-			<hr class="g-width-30 g-my-20 g-brd-2 w4c-brd-blue">
+			<hr class="g-width-70 g-my-20 g-brd-2 w4c-brd-blue">
 			<div class="mt-2 mb-4 g-px-10 text-center"><?= $copy->faq->subtitle ?></div>
 		</div>
 		<div class="row justify-content-center">

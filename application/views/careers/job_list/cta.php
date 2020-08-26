@@ -15,7 +15,7 @@
           </a>
         </div>
         <div class="col-md-3 col-10 g-mb-15 align-self-center">
-          <a class="btn btn-block btn-outline-info g-brd-2 g-font-size-<?= $this->agent->is_mobile() ? '14' : '18' ?> g-font-weight-600 g-rounded-50 g-py-15 g-px-50" href="<?= site_url('contact') ?>">
+          <a class="btn btn-block btn-outline-info g-brd-2 g-font-size-<?= $this->agent->is_mobile() ? '14' : '18' ?> g-font-weight-600 g-rounded-50 g-py-15 g-px-50" href = "<?= $copy->ContactUrl?>">
             <?= strtoupper($copy->ContactUs) ?>
           </a>
         </div>

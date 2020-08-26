@@ -84,8 +84,8 @@
               <div class="close g-font-size-16 g-mt-6 g-mr-20 g-pt-10 g-font-weight-900" onclick="reset()">
                 Reset
               </div>
-              <div class="input-reset close g-font-size-16 g-mt-5 g-pt-10 g-font-weight-400" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden=" true">x</span>
+              <div class="close g-font-size-16 g-mt-5 g-pt-10 g-font-weight-400" onclick="close_alert()">
+                <span>x</span>
               </div>
               <span id="search-total">0</span> Search result found
             </div>
@@ -108,7 +108,7 @@
           </div>
           <div class="col g-px-8">
             <button id="search" onclick="search()" class="btn btn-info btn-block g-pa-12 g-rounded-50 g-brd-2"><?= strtoupper($copy->Search) ?></button>
-            <input class="d-none" id="inputCategory" class="form-control g-pa-12" type="text" value="<?= @$category ?>">
+            <input class="" id="inputCategory" class="form-control g-pa-12" type="text" value="<?= @$category ?>">
           </div>
           <!-- <div class="col g-px-8">
               <button class="btn btn-outline-info btn-block g-pa-12 g-rounded-50 g-brd-2"><?= strtoupper($copy->ViewJobList) ?></button>

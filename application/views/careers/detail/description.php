@@ -34,60 +34,55 @@
               <img class="g-opacity-0_5" src="<?= get_image(DIR_LOGO . 'logo-W4C_179_web_white.png') ?>" alt="Logo w4c">
             </div>
           </div>
-          <div id="#accordion-11" class="u-accordion u-accordion-color-primary" role="tablist" aria-multiselectable="true">
-            <div class="row justify-content-center">
-              <div class="col-lg-8 col-xs-12">
-                <!-- Requirement Card -->
-                <div class="card g-brd-none rounded g-mb-20" style="box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);">
-                  <div id="accordion-11-heading-req" class="g-pa-0" role="tab">
-                    <h5 class="mb-0">
-                      <a class="collapsed d-flex justify-content-between g-color-black g-text-underline--none--hover rounded g-px-30 g-py-20  g-font-size-18 g-font-weight-600" href="#accordion-11-body-req" aria-expanded="true" aria-controls="accordion-11-body-req" data-toggle="collapse" data-parent="#accordion-11">
-                        <?= $copy->Requirement ?>
-                        <span class="u-accordion__control-icon g-color-black">
-                          <i class="fa fa-chevron-down g-font-size-18"></i>
-                          <i class="fa fa-chevron-up g-font-size-18"></i>
-                        </span>
-                      </a>
-                    </h5>
-                  </div>
-                  <div id="accordion-11-body-req" class="collapse" role="tabpanel" aria-labelledby="accordion-11-heading-req" data-parent="#accordion-11">
-                    <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
-                      <ul class="list-blue">
-                        <?php foreach ($job->requirement as $index => $rec) : ?>
-                          <li class="g-mb-10"><?= $rec ?></li>
-                        <?php endforeach; ?>
-                      </ul>
-                    </div>
-                  </div>
+          <div id="accordion-11" class="u-accordion u-accordion-color-primary" role="tablist" aria-multiselectable="true">
+            <!-- Requirement Card -->
+            <div class="card g-brd-none rounded g-mb-20" style="box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);">
+              <div id="accordion-11-heading-req" class="g-pa-0" role="tab">
+                <h5 class="mb-0">
+                  <a class="collapsed d-flex justify-content-between g-color-black g-text-underline--none--hover rounded g-px-30 g-py-20  g-font-size-18 g-font-weight-600" href="#accordion-11-body-req" aria-expanded="true" aria-controls="accordion-11-body-req" data-toggle="collapse" data-parent="#accordion-11">
+                    <?= $copy->Requirement ?>
+                    <span class="u-accordion__control-icon g-color-black">
+                      <i class="fa fa-chevron-down g-font-size-18"></i>
+                      <i class="fa fa-chevron-up g-font-size-18"></i>
+                    </span>
+                  </a>
+                </h5>
+              </div>
+              <div id="accordion-11-body-req" class="collapse" role="tabpanel" aria-labelledby="accordion-11-heading-req" data-parent="#accordion-11">
+                <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
+                  <ul class="list-blue">
+                    <?php foreach ($job->requirement as $index => $rec) : ?>
+                      <li class="g-mb-10"><?= $rec ?></li>
+                    <?php endforeach; ?>
+                  </ul>
                 </div>
-                <!-- End Requirement Card -->
-                <!-- Description Card -->
-                <div class="card g-brd-none rounded g-mb-20" style="box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);">
-                  <div id="accordion-11-heading-desc" class="g-pa-0" role="tab">
-                    <h5 class="mb-0">
-                      <a class="collapsed d-flex justify-content-between g-color-black g-text-underline--none--hover rounded g-px-30 g-py-20 g-font-size-18 g-font-weight-600" href="#accordion-11-body-desc" aria-expanded="true" aria-controls="accordion-11-body-desc" data-toggle="collapse" data-parent="#accordion-11">
-                        <?= $copy->JobDescription ?>
-                        <span class="u-accordion__control-icon g-color-black ">
-                          <i class="fa fa-chevron-down g-font-size-18"></i>
-                          <i class="fa fa-chevron-up g-font-size-18"></i>
-                        </span>
-                      </a>
-                    </h5>
-                  </div>
-                  <div id="accordion-11-body-desc" class="collapse" role="tabpanel" aria-labelledby="accordion-11-heading-desc" data-parent="#accordion-11">
-                    <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
-                      <ul class="list-blue">
-                        <?php foreach ($job->description as $index => $desc) : ?>
-                          <li class="g-mb-10"><?= $desc ?></li>
-                        <?php endforeach; ?>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- End Description Card -->
-
               </div>
             </div>
+            <!-- End Requirement Card -->
+            <!-- Description Card -->
+            <div class="card g-brd-none rounded g-mb-20" style="box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);">
+              <div id="accordion-11-heading-desc" class="g-pa-0" role="tab">
+                <h5 class="mb-0">
+                  <a class="collapsed d-flex justify-content-between g-color-black g-text-underline--none--hover rounded g-px-30 g-py-20 g-font-size-18 g-font-weight-600" href="#accordion-11-body-desc" aria-expanded="true" aria-controls="accordion-11-body-desc" data-toggle="collapse" data-parent="#accordion-11">
+                    <?= $copy->JobDescription ?>
+                    <span class="u-accordion__control-icon g-color-black ">
+                      <i class="fa fa-chevron-down g-font-size-18"></i>
+                      <i class="fa fa-chevron-up g-font-size-18"></i>
+                    </span>
+                  </a>
+                </h5>
+              </div>
+              <div id="accordion-11-body-desc" class="collapse" role="tabpanel" aria-labelledby="accordion-11-heading-desc" data-parent="#accordion-11">
+                <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
+                  <ul class="list-blue">
+                    <?php foreach ($job->description as $index => $desc) : ?>
+                      <li class="g-mb-10"><?= $desc ?></li>
+                    <?php endforeach; ?>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- End Description Card -->
           </div>
 
         <?php else : ?>
@@ -114,7 +109,15 @@
 
       <!-- End Detail Section -->
       <?php $this->load->view('careers/detail/share') ?>
+      <?php if ($this->agent->is_mobile()) : ?>
+
+        <div class="col-12">
+          <a class="btn btn-info btn-block g-font-size-18 g-font-weight-600 g-color-white--active g-py-12 g-mt-50 g-rounded-50 text-uppercase" href="http://w4c.id/formofficerw4c"><?= $copy->ApplyNow ?></a>
+        </div>
+      <?php endif; ?>
     </div>
+
   </div>
+
 </section>
 <!-- End Descripition Section -->

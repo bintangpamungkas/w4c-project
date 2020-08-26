@@ -43,7 +43,7 @@
               <div class="close g-font-size-16 g-mt-6 g-mr-20 g-pt-10 g-font-weight-900" onclick="reset()">
                 Reset
               </div>
-              <div class="input-reset close g-font-size-16 g-mt-5 g-pt-10 g-font-weight-400" data-dismiss="alert" aria-label="Close">
+              <div class="input-reset close g-font-size-16 g-mt-5 g-pt-10 g-font-weight-400" onclick="close_alert()">
                 <span aria-hidden=" true">x</span>
               </div>
               <span id="search-total">0</span> Search result found

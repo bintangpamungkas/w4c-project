@@ -75,28 +75,28 @@
       {
         "name": "Adhitya Prayoga",
         "position": "Circular Economy Strategist",
-        "division": "Divisi Strategic Service",
+        "division": "Departemen Strategic Services",
         "message": "Saya telah menemukan Ikigai saya sejak bergabung dengan Waste4Change. Karena itu saya tidak perlu mengarang cerita jika suatu saat generasi di masa depan bertanya \"Apa yang telah Anda lakukan untuk melawan krisis iklim?\". Dengan bangga saya akan menjawab \"Saya telah melakukan bagian saya bersama-sama dengan Waste4Change\".",
         "image": "Adhitya-Prayoga.jpg"
       },
       {
         "name": "Saka Dwi Hanggara",
         "position": "Behaviour Change Engineer",
-        "division": "Divisi Strategic Service",
+        "division": "Departemen Strategic Services",
         "message": "Selama bekerja di Waste4Change saya menemukan lingkungan serta rekan kerja yang asik dan seru. Selain itu, ada rasa bangga di setiap pekerjaan yang kita lakukan karena kita tahu, we're doing something great!",
         "image": "Saka-Dwi-Hanggara.jpg"
       },
       {
         "name": "Khairunnisa Yusmalina Humaam",
         "position": "Organic SPV",
-        "division": "Divisi Operational Service",
+        "division": "Departemen Operational Services",
         "message": "Saya bergabung di Waste4Change sejak sistem pengolahan sampah organiknya masih sangat sederhana, sampai sekarang sudah ada 2 metode pengolahan efektif yaitu Open Windrow dan BSF. Dari proses tersebut saya belajar tentang kepemimpinan, berpikir strategis dan solutif. Waste4Change tempat yang cocok untuk teman-teman yg ingin belajar dan terus mengembangkan diri",
         "image": "Khairunnisa-Yusmalina-Humaam.jpg"
       },
       {
         "name": "Muhamad Andriansyah",
         "position": "Site Manager MRF",
-        "division": "Divisi Operational Service",
+        "division": "Departemen Operational Services",
         "message": "Bekerja di Waste4Change membuat saya memahami industri daur ulang serta mengetahui proses bisnisnya dari hulu ke hilir. Selain itu saya juga jadi memahami peluang bisnis dalam pengelolaan sampah, sekaligus dapat berkontribusi untuk lingkungan",
         "image": "Muhamad-Andriansyah.jpg"
       },
@@ -104,15 +104,36 @@
         "name": "Siti Annisa",
         "position": "Project Coordinator",
         "message": "Waste4Change merupakan salah satu ruang dimana saya bisa memberikan kontribusi ilmu dan aksi yang nyata untuk perubahan lingkungan yang konkrit. Sebagai lulusan Teknik Lingkungan, sangat menyenangkan untuk dapat bekerja di Waste4Change. Hal ini karena saya punya teman dan kolega  yang saling mendukung satu sama lain, sekaligus diberi kesempatan (dan kemewahan) untuk dapat mengaplikasikan ilmu yang sudah dipelajari",
-        "division": "Divisi Operational Service",
+        "division": "Departemen Operational Services",
         "image": "Siti-Annisa.jpg"
+      },
+      {
+        "name": "Safarina Lutfiyya Astuti",
+        "message": "Mendapatkan tempat untuk belajar hal-hal baru dan mengembangkan diri bersamaan dengan tumbuhnya Waste4change adalah sebuah kesempatan yang tak dapat disia-sia kan, terlebih lagi menjadi bagian dari team IT W4C. Dari situ saya dilatih untuk selalu berfikir kritis dan lebih peka terhadap situasi",
+        "position": "Quality Assurance Supervisor",
+        "division": "Departemen Tech",
+        "image": "Safarina-Lutfiyya-Astuti.jpg"
+      },
+      {
+        "name": "Hana Nur Auliana",
+        "position": "Head of Communication & Engagement",
+        "division": "Departemen Communication & Engagement",
+        "message": "Waste4Change adalah paket lengkap! Bukan hanya sebagai sebuah tempat berkembang secara karir profesional, tetapi juga tempat dimana saya mampu menyalurkan seluruh ide untuk memberikan kontribusi bagi solusi persampahan & lingkungan di Indonesia. Jika kamu adalah orang yang memiliki ambisi untuk melakukan perubahan besar di sistem persampahan Indonesia, di sini tempatnya. Lakukan eksperimen bersama dan lihat sendiri bagaimana karyamu bertumbuh semakin besar seiring dengan perkembangan Waste4Change.",
+        "image": "Hana-Nur-Auliana.jpg"
+      },
+      {
+        "name": "Hera Lismayana",
+        "position": "Accounting Supervisor",
+        "division": "Departemen Finance & General Affair",
+        "message":"Berlatar belakang pendidikan Akuntansi, saya senang bisa bekerja sesuai dengan bidang keilmuan saya. Selain itu, meski saya berkutat pada administrasi dan keuangan perusaahaan di balik layar, saya ikut terdorong dan mengerti arti penting dari  pengelolaan sampah yang bertanggung jawab. Dengan bekerja di Waste4Change, saya bangga bisa berkontribusi untuk penyelesaian persampahan di indonesia.",
+        "image": "Hera-Lismayana.jpg"
       }
     ]
   },
   "internship_program": {
     "title": "Program Magang Waste4Change",
     "subtitle": "Program Magang 4 Bulan yang Membantu Anda untuk Mengeksplor dan Mendalami Minat Anda terhadap Isu Pengelolaan Sampah",
-    "message": "Menjadi peserta magang di Waste4Change akan mengekspos Anda terhadap lingkungan kerja yang senantiasa dinamis di kantor Waste4Change selama kurang lebih 4 bulan lamanya. Nantinya para peserta magang akan bisa memilih di divisi mana mereka ingin berkontribusi dan terlibat. ",
+    "message": "Menjadi peserta magang di Waste4Change akan mengekspos Anda terhadap lingkungan kerja yang senantiasa dinamis di kantor Waste4Change selama kurang lebih 4 bulan lamanya. Nantinya para peserta magang akan bisa memilih posisi apa yang sesuai dengan latar belakang, kemampuan dan keinginan dalam berkontribusi dalam suatu topik tertentu.",
     "image": "internship.jpg"
   },
   "internship_testimony": {
@@ -120,20 +141,20 @@
     "subtitle": "Kesan dan Pesan Peserta Magang Waste4Change yang Terdahulu",
     "items": [
       {
+        "message": "Pengalaman magang ini mengajari saya banyak hal, mulai dari komunikasi interpersonal, kerjasama tim, serta pemecahan masalah. Kultur kerja perusahaannya sangat apresiatif dan saya bisa melihat bagaimana mereka selalu mendukung satu sama lain. Saya paling banyak membantu di proyek optimalisasi TPS 3R, yang notabene cukup menantang, tapi saya telah dan masih belajar banyak dari situ.",
         "name": "Amira R. Nadhifa",
-        "message": "Pengalaman magang ini mengajari saya banyak hal, mulai dari komunikasi interpersonal, kerjasama tim, serta pemecahan masalah. Kultur kerja perusahaannya sangat apresiatif dan saya bisa melihat bagaimana mereka selalu mendukung satu sama lain. Saya paling banyak membantu di proyek optimalisasi TPS 3R, yang notabene cukup menantang, tapi saya telah dan masih belajar banyak dari situ."
+        "image":"Amira-R-Nadhifa.jpg"
       },
       {
         "message": "Bekerja di perusahaan sosial yang berfokus pada pengelolaan sampah yang bertanggung jawab mengajari saya hal-hal yang benar-benar baru. Saya belajar banyak keahlian, terutama yang terkait dengan bisnis dan pengelolaan sampah, yang juga sangat mengasyikkan karena saya belum pernah belajar tentang hal ini sebelumnya. Saya bisa menyalurkan dan mengasah kemampuan saya dalam hal manajemen proyek dan acara, bekerja dalam tim, serta kemampuan berbicara di depan umum.",
-        "name": "Fanny Ramadhanti"
+        "name": "Fanny Ramadhanti",
+        "image":"Fanny-Ramadhanti.jpg"
+
       },
       {
-        "message": "Program magang ini memberikan saya pelajaran berharga dimana saya bisa mendapatkan pengalaman dan masukkan terkait kemampuan apa saja yang harus saya kembangkan di kemudian hari. Saya belajar tentang beragam fungsi dan tanggung jawab dari Human Resources mulai dari proses rekrutmen pegawai, pengembangan SDM, serta merumuskan mekanisme penilaian performa. Ini juga pertama kalinya bagi saya untuk bekerja dengan berorientasi pada hasil, dengan kata lain saya tidak terikat jam kerja pada umumnya, melainkan berfokus pada timeline serta tujuan dari proyek yang sedang dikerjakan. Untuk bisa beradaptasi, saya kemudian belajar untuk bekerja secara lebih efektif, produktif, dan juga mengatur prioritas.",
-        "name": "Ivanna Zahra"
-      },
-      {
-        "message": "Setelah 3 bulan menjalani program magang, saya mendapatkan pemahaman yang lebih mendalam mengenai bagaimana kita bisa hidup berdampingan dengan sampah Kita tidak perlu kembali ke masa lampau dimana kita tidak bisa menikmati produk-produk yang membuat hidup menjadi lebih mudah. Yang kita butuhkan hanyalah untuk bisa hidup secara harmonis dan berkelanjutan dengan alam, layaknya sebuah ekosistem hutan. Itulah hal yang Waste4Change tengah perjuangkan: sebuah ekosistem dimana pengelolaan sampah dapat dilakukan secara bertanggung jawab menggunakan pendekatan holistik yang disingkat menjadi 4C: Consult, Campaign, Collect and Create.",
-        "name": "Khusnaedi Azhar"
+        "message": "Program magang ini memberikan saya pelajaran berharga dimana saya bisa mendapatkan pengalaman dan masukkan terkait kemampuan apa saja yang harus saya kembangkan di kemudian hari. Saya belajar tentang beragam fungsi dan tanggung jawab dari Human Resources mulai dari proses rekrutmen pegawai, pengembangan SDM, serta merumuskan mekanisme penilaian performa. Ini juga pertama kalinya bagi saya untuk bekerja dengan berorientasi pada hasil, dengan kata lain saya tidak terikat jam kerja pada umumnya, melainkan berfokus pada timeline serta tujuan dari proyek yang sedang dikerjakan.",
+        "name": "Ivanna Zahra",
+        "image":"Ivanna-Zahra.jpg"
       }
     ]
   },
@@ -152,11 +173,11 @@
       },
       {
         "question": "Bagaimana dengan proses rekrutmennya? ",
-        "answer": "Proses rekrutmen akan dimulai setelah Anda melamar pekerjaan dengan cara mengisi form online yang sudah disediakan. Nantinya, pengalaman dan kemampuan Anda akan dinilai terlebih dahulu oleh tim rekrutmen kami. Apabila persyaratan dan kualifikasi Anda sesuai dengan yang dicari oleh tim rekrutmen dan User, maka Anda akan menerima surel undangan untuk sesi wawancara. <br><br>Pada sesi wawancara, Anda akan bertemu dengan tim Human Capital dan User sesuai dengan posisi yang Anda lamar. Tim kami akan menggali lebih lanjut terkait soft skills dan hard skills Anda, serta tentang sifat dan kepribadian Anda. <br><br>Jika semuanya dirasa cocok dan kami menginginkan Anda untuk bergabung ke dalam tim, kami akan mengirimkan surat penawaran (offering letter) ke alamat email Anda. Mohon diingat bahwa proses rekrutmen dapat berbeda, bergantung pada kondisi serta posisi yang Anda lamar. "
+        "answer": "Proses rekrutmen akan dimulai setelah Anda melamar pekerjaan dengan cara mengisi form online yang sudah disediakan. Nantinya, pengalaman dan kemampuan Anda akan dinilai terlebih dahulu oleh tim rekrutmen kami. Apabila persyaratan dan kualifikasi Anda sesuai dengan yang dicari oleh tim rekrutmen dan User, maka Anda akan menerima surat elektronik undangan untuk sesi wawancara. <br><br>Pada sesi wawancara, Anda akan bertemu dengan tim Human Capital dan User sesuai dengan posisi yang Anda lamar. Tim kami akan menggali lebih lanjut terkait soft skills dan hard skills Anda, serta tentang sifat dan kepribadian Anda. <br><br>Jika semuanya dirasa cocok dan kami menginginkan Anda untuk bergabung ke dalam tim, kami akan mengirimkan surat penawaran (offering letter) ke alamat surat elektronik Anda. Mohon diingat bahwa proses rekrutmen dapat berbeda, bergantung pada kondisi serta posisi yang Anda lamar. "
       },
       {
         "question": "Apakah Waste4Change akan menghubungi perihal hasil dari lamaran pekerjaan saya?",
-        "answer": "Apabila Anda lulus seleksi dokumen dan diundang ke sesi wawancara, maka kami akan menghubungi Anda lewat email terkait keputusan tersebut. Akan tetapi, apabila Anda belum mendengar kabar dari kami selama 2 bulan setelah mengirimkan lamaran pekerjaan, maka kami mohon maaf karena artinya kualifikasi Anda belum sesuai dengan yang kami butuhkan.<br><br>Meski begitu, kami mengucapkan terima kasih karena telah tertarik untuk bekerja di Waste4Change. Berkas aplikasi Anda akan kami simpan di dalam database kami untuk dipakai sebagai bahan pertimbangan jika ada lowongan yang serupa di masa depan. "
+        "answer": "Apabila Anda lulus seleksi dokumen dan diundang ke sesi wawancara, maka kami akan menghubungi Anda lewat surat elektronik terkait keputusan tersebut. Akan tetapi, apabila Anda belum mendengar kabar dari kami selama 2 bulan setelah mengirimkan lamaran pekerjaan, maka kami mohon maaf karena artinya kualifikasi Anda belum sesuai dengan yang kami butuhkan.<br><br>Meski begitu, kami mengucapkan terima kasih karena telah tertarik untuk bekerja di Waste4Change. Berkas aplikasi Anda akan kami simpan di dalam database kami untuk dipakai sebagai bahan pertimbangan jika ada lowongan yang serupa di masa depan. "
       },
       {
         "question": "Bolehkah saya mencoba melamar pekerjaan bahkan ketika tidak ada lowongan yang sesuai untuk saya?",
@@ -168,7 +189,7 @@
       },
       {
         "question": "Selain lowongan pekerjaan, apakah Waste4change memiliki program magang dan kerelawanan yang bisa saya ikuti?",
-        "answer": "Program magang kami bernama \"Waste4Change Internship Program (WIP)\" yang diadakan selama 3 kali dalam setahun dengan durasi 4 bulan. Nantinya, pembukaan lowongan magang juga akan diumumkan di halaman Karir kami. Selain program magang resmi, kami juga menerima murid atau mahasiswa yang membutuhkan magang sebagai program wajib dari sekolah atau universitas mereka. Kami akan menempatkan Anda di program atau posisi yang paling sesuai dengan keperluan dan pengalaman Anda. "
+        "answer": "Program magang kami bernama \"Waste4Change Internship Program (WIP)\" yang diadakan selama 2 kali dalam setahun dengan durasi 4 bulan. Nantinya, pembukaan lowongan magang juga akan diumumkan di halaman Karir kami. Selain program magang resmi, kami juga menerima siswa atau mahasiswa yang membutuhkan magang sebagai program wajib dari sekolah atau universitas mereka. Kami akan menempatkan Anda di program atau posisi yang paling sesuai dengan keperluan dan pengalaman Anda. "
       }
     ]
   }

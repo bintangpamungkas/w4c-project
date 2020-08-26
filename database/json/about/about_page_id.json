@@ -224,38 +224,56 @@
       {
         "name": "Adhitya Prayoga",
         "position": "Circular Economy Strategist",
-        "division": "Divisi Strategic Service",
+        "division": "Departemen Strategic Services",
         "image": "Adhitya-Prayoga.jpg"
       },
       {
         "name": "Saka Dwi Hanggara",
         "position": "Behaviour Change Engineer",
-        "division": "Divisi Strategic Service",
+        "division": "Departemen Strategic Services",
         "image": "Saka-Dwi-Hanggara.jpg"
       },
       {
         "name" : "Bilqis Rulista A. Z",
         "position": "Community Development Designer",
-        "division": "Divisi Strategic Service",
+        "division": "Departemen Strategic Services",
         "image": "Bilqis-Rulista-A.-Z.jpg"
       },
       {
         "name": "Khairunnisa Yusmalina Humaam",
         "position": "Organic SPV",
-        "division": "Divisi Operational Service",
+        "division": "Departemen Operational Services",
         "image": "Khairunnisa-Yusmalina-Humaam.jpg"
       },
       {
         "name": "Muhamad Andriansyah",
         "position": "Site Manager MRF",
-        "division": "Divisi Operational Service",
+        "division": "Departemen Operational Services",
         "image": "Muhamad-Andriansyah.jpg"
       },
       {
         "name": "Siti Annisa",
         "position": "Project Coordinator",
-        "division": "Divisi Operational Service",
+        "division": "Departemen Operational Services",
         "image": "Siti-Annisa.jpg"
+      },
+      {
+        "name": "Safarina Lutfiyya Astuti",
+        "position": "Quality Assurance Supervisor",
+        "division": "Departemen Tech",
+        "image": "Safarina-Lutfiyya-Astuti.jpg"
+      },
+      {
+        "name": "Hana Nur Auliana",
+        "position": "Head of Communication & Engagement",
+        "division": "Departemen Communication & Engagement",
+        "image": "Hana-Nur-Auliana.jpg"
+      },
+      {
+        "name": "Hera Lismayana",
+        "position": "Accounting Supervisor",
+        "division": "Departemen Finance & General Affair",
+        "image": "Hera-Lismayana.jpg"
       }
     ]
   },

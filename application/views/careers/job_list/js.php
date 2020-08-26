@@ -216,4 +216,10 @@
     $('#search-message').removeClass('d-block');
     $('#search-message').addClass('d-none');
   }
+  function close_alert() {
+    console.log('close');
+    $('#search-message').removeClass('d-block');
+    $('#search-message').addClass('d-none');
+  }
+  
 </script>

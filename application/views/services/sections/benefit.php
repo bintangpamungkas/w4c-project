@@ -8,7 +8,8 @@
     </div>
     <div class="row">
       <?php foreach ($benefits as $i=>$benefit): 
-        if($service->service_id==33 && $i<5): ?>
+        // if($service->service_id==33 && $i<5): 
+        ?>
         <div class="col-md-6 col-xs-12 g-line-height-1_3">
           <div class="row no-gutters g-my-10">
             <div class="col-auto">
@@ -19,7 +20,10 @@
             </div>
           </div>
         </div>
-        <?php endif; endforeach; ?>
+        <?php 
+      // endif; 
+      endforeach; 
+      ?>
     </div>
   </div>
 </section>

@@ -90,7 +90,7 @@
 <section class="g-bg-white <?= $this->agent->is_mobile() ? 'g-pt-60 g-pb-40' : 'g-bg-white g-pb-50 g-pt-100' ?>">
   <div class="container">
     <h2 class="g-font-asap g-color-black text-uppercase text-center g-font-weight-600 g-font-size-<?= $this->agent->is_mobile() ? '24' : '35 g-mb-10' ?>"><?= $copy->history->title ?></h2>
-    <hr class="g-width-30 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
+    <hr class="g-width-70 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
   </div>
   <?php if ($this->agent->is_mobile()) : ?>
     <div class="row justify-content-center g-mt-50 no-gutters ">
@@ -373,7 +373,7 @@
 <section class="g-bg-white <?= $this->agent->is_mobile() ? 'g-pt-60 g-pb-40' : 'g-bg-white g-pb-50 g-pt-100' ?>">
   <div class="">
     <h2 class="g-font-asap g-color-black text-uppercase text-center g-font-weight-600 g-font-size-<?= $this->agent->is_mobile() ? '24' : '35 g-mb-10' ?>"><?= $copy->w4c->title ?></h2>
-    <hr class="g-width-30 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
+    <hr class="g-width-70 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
     <div class="mt-2 mb-4 g-px-10 text-center"><?= @$copy->w4c->subtitle ?></div>
 
     <?php if ($this->agent->is_mobile()) : ?>
@@ -497,7 +497,7 @@
     <div class="row justify-content-center my_tab_content no-gutters">
       <div class="col-md-12">
         <h2 class="g-font-asap g-color-black text-uppercase g-font-weight-600 text-center g-font-size-<?= $this->agent->is_mobile() ? '24' : '35 g-mb-10' ?>"><?= $copy->accomplishment->title ?></h2>
-        <hr class="g-width-30 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
+        <hr class="g-width-70 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
       </div>
       <?php if ($this->agent->is_mobile()) : ?>
 
@@ -679,7 +679,7 @@
     <div class="row justify-content-center">
       <div class="col-md-3">
         <div class="g-font-asap g-color-black text-uppercase g-font-weight-600 g-font-size-<?= $this->agent->is_mobile() ? '24  text-center' : '35 g-mb-10' ?>"><?= $copy->culture->title ?></div>
-        <hr class="g-width-30 g-mt-20 g-mb-0 <?= $this->agent->is_mobile() ? '' : 'g-ml-0' ?> g-brd-2 w4c-brd-blue">
+        <hr class="g-width-70 g-mt-20 g-mb-0 <?= $this->agent->is_mobile() ? '' : 'g-ml-0' ?> g-brd-2 w4c-brd-blue">
         <div class="mt-2 mb-4 <?= $this->agent->is_mobile() ? 'g-px-10 text-center' : '' ?>"><?= $copy->culture->subtitle ?></div>
         <?php if (!$this->agent->is_mobile()) : ?>
           <div id="custom-nav" class="owl-carousel owl-theme owl-loaded">
@@ -780,7 +780,7 @@
     <div class="row justify-content-center my_tab_content no-gutters">
       <div class="col-md-12">
         <h2 class="g-font-asap g-color-black text-uppercase g-font-weight-600 text-center g-font-size-<?= $this->agent->is_mobile() ? '24' : '35 g-mb-10' ?>"><?= $copy->team->title ?></h2>
-        <hr class="g-width-30 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
+        <hr class="g-width-70 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
         <div class="mt-2 mb-4 g-px-10 text-center"><?= $copy->team->subtitle ?></div>
       </div>
       <div id="team-carousel" class="col-12 align-self-end align-height-list">

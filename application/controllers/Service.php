@@ -202,7 +202,6 @@
 			}
 			$data['service'] = $service;
 			$data['sections'] = $sections;
-
 			// Page Information
 			$data['meta_data'] = [
 				'site_url' => $service->service_page_url,
