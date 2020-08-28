@@ -8,7 +8,8 @@
   <div>
     <div id="slide-carousel" class="g-mt-20">
       <?php if ($this->agent->is_mobile()) : //mobile ?>
-      <!-- Items Iteration -->        <?php foreach ($copy->slide->items as $item) : ?>
+      <!-- Items Iteration -->        
+      <?php foreach ($copy->slide->items as $item) : ?>
           <div class="u-bg-overlay g-bg-img-hero g-color-white g-font-size-14 g-mx-10" style="background-image: url(<?= get_image(DIR_BG . 'about/banner/' . $item->image) ?>); background-position-x: right;">
             <div style="height: 220px; background-image: linear-gradient( 100deg , rgba(255, 255, 255,0.9) 0%, rgba(255, 255, 255, 0.65) 60%, rgba(255, 255, 255,0) 90%);">
               <div class="container u-bg-overlay__inner g-color-white g-height-100x">

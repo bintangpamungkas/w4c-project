@@ -117,7 +117,8 @@
       "Memiliki laptop pribadi",
       "Jujur dan bertanggung jawab atas data hasil sampling"
     ],
-    "talentaUrl":""
+    "talentaUrl":"",
+    "formUrl":"https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
   },
   "po-tetrapak": {
     "status": 1,
@@ -167,7 +168,7 @@
     "talentaUrl":"https://recruitment.talenta.co/waste4change/a2JNdDVackF4SFJFb2RjdWpSdm5XZz09"
   },
   "recruiter": {
-    "status": 1,
+    "status": 0,
     "title": "Recruiter",
     "category": "cf",
     "type": 1,
@@ -219,7 +220,7 @@
     "talentaUrl":"https://recruitment.talenta.co/waste4change/UlMzU0xvdzhEZ0JrNTRVdjVTbUNEQT09"
   },
   "office-administration-and-procurement-officer": {
-    "status": 1,
+    "status": 0,
     "title": "Office Administration and Procurement Officer",
     "category": "cf",
     "type": 1,
@@ -295,7 +296,8 @@
       "Bersedia ditempatkan di Kedungwaringin, Bekasi ",
       "Bersedia bekerja pada periode 3 Agustus - 7 September 2020"
     ],
-    "talentaUrl":""    
+    "talentaUrl":"",
+    "formUrl":"https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
   },
   "salesmanager": {
     "status": 1,

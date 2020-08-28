@@ -141,7 +141,9 @@
   /** Drop Down Data */
   var positions = [
     <?php foreach ($jobs as $job) {
+      if($job->status==1){
       echo '"' . $job->title  . '",';
+      }
     } ?>
   ];
 

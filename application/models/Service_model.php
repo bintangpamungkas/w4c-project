@@ -101,10 +101,10 @@
 				}
 			}
 
-
 			if ($target_id != null) {
 				$this->db->where('service_category.service_target_id', $target_id);
 			}
+			$this->db->order_by('service.created_at asc');
 			return $this->db->get()->result();
 		}
 

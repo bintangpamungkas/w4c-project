@@ -108,7 +108,7 @@
           </div>
           <div class="col g-px-8">
             <button id="search" onclick="search()" class="btn btn-info btn-block g-pa-12 g-rounded-50 g-brd-2"><?= strtoupper($copy->Search) ?></button>
-            <input class="" id="inputCategory" class="form-control g-pa-12" type="text" value="<?= @$category ?>">
+            <input class="d-none" id="inputCategory" class="form-control g-pa-12" type="text" value="<?= @$category ?>">
           </div>
           <!-- <div class="col g-px-8">
               <button class="btn btn-outline-info btn-block g-pa-12 g-rounded-50 g-brd-2"><?= strtoupper($copy->ViewJobList) ?></button>
