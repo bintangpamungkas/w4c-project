@@ -9,26 +9,28 @@
 			<div id="job-carousel" class="align-height-list">
 				<!-- Items Iteration -->
 				<?php foreach ($job_category as $key => $category) : ?>
-					<!-- Job Item -->
-					<div class="g-mx-10 g-rounded-5" onclick="location.href='<?= site_url('career/job?category=' . $category->name) ?>'">
-						<div class="u-bg-overlay g-bg-blue-opacity-0_8--after g-bg-img-hero " style="background-image: url(<?= get_image(DIR_BG . 'career/' . $category->image) ?>);object-fit:cover">
-							<div class="container u-bg-overlay__inner g-color-white align-height-item row align-items-end">
-								<div class="col-12 g-px-13 g-mb-20">
-									<div class="">
+					<?php if ($cat->status == 1) : ?>
+						<!-- Job Item -->
+						<div class="g-mx-10 g-rounded-5" onclick="location.href='<?= site_url('career/job?category=' . $category->name) ?>'">
+							<div class="u-bg-overlay g-bg-blue-opacity-0_8--after g-bg-img-hero " style="background-image: url(<?= get_image(DIR_BG . 'career/' . $category->image) ?>);object-fit:cover">
+								<div class="container u-bg-overlay__inner g-color-white align-height-item row align-items-end">
+									<div class="col-12 g-px-13 g-mb-20">
 										<div class="">
-											<div class=" g-pa-25">
-												<i class="<?= $category->icon ?> g-color-blue g-font-size-30 g-pa-12 g-bg-white g-rounded-50"></i>
-												<div class="d-block g-color-white g-font-weight-600 g-font-size-24 g-mt-20 g-line-height-1_2 g-bg-transparent"><?= $category->name ?></div>
-												<p class="g-color-white-opacity-0_7 mb-0"></p>
-											</div>
-											<div class="g-pl-25">
-												<div class="d-inline-block g-color-white g-font-size-16 g-line-height-1_2">
-													<?php
-													foreach ($jobs as $job) {
-														if ($job->category == $key && $job->status == 1)
-															echo $job->title . '<br>';
-													}
-													?>
+											<div class="">
+												<div class=" g-pa-25">
+													<i class="<?= $category->icon ?> g-color-blue g-font-size-30 g-pa-12 g-bg-white g-rounded-50"></i>
+													<div class="d-block g-color-white g-font-weight-600 g-font-size-24 g-mt-20 g-line-height-1_2 g-bg-transparent"><?= $category->name ?></div>
+													<p class="g-color-white-opacity-0_7 mb-0"></p>
+												</div>
+												<div class="g-pl-25">
+													<div class="d-inline-block g-color-white g-font-size-16 g-line-height-1_2">
+														<?php
+														foreach ($jobs as $job) {
+															if ($job->category == $key && $job->status == 1)
+																echo $job->title . '<br>';
+														}
+														?>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -36,8 +38,8 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<!-- End Job Item -->
+						<!-- End Job Item -->
+					<?php endif; ?>
 				<?php endforeach; ?>
 				<!-- End Items Iteration -->
 			</div>
@@ -84,33 +86,37 @@
 		<div class="row g-mb-0  g-mt-50">
 			<!-- Job Item Iteration -->
 			<?php foreach ($job_category as $key => $category) : ?>
-				<div class="col-md-3 g-px-13 g-mb-30" onclick="location.href='<?= site_url('career/job?category=' . $category->name) ?>'">
-					<div class="u-block-hover">
-						<div class="g-bg-cover g-bg-black-opacity-0_6--after g-bg-blue--hover-parent--after">
-							<img class="u-block-hover__main--mover-down" src="<?= get_image(DIR_BG . 'career/' . $category->image) ?>" alt="Image Description" style="height:360px;object-fit:cover">
-						</div>
-						<div class="u-block-hover__additional--partially-slide-up g-z-index-1">
-							<div class="u-block-hover__visible g-px-25 g-pt-25">
-								<i class="<?= $category->icon ?> g-color-blue g-font-size-30 g-pa-15 g-bg-white g-rounded-50"></i>
-								<span class="d-block g-color-white g-font-weight-600 g-font-size-24 g-mb-25 g-mt-30 g-line-height-1_1"><?= $category->name ?></span>
-								<p class="g-color-white-opacity-0_7 mb-0"></p>
+				<?php if ($cat->status == 1) : ?>
+
+					<div class="col-md-3 g-px-13 g-mb-30" onclick="location.href='<?= site_url('career/job?category=' . $category->name) ?>'">
+						<div class="u-block-hover">
+							<div class="g-bg-cover g-bg-black-opacity-0_6--after g-bg-blue--hover-parent--after">
+								<img class="u-block-hover__main--mover-down" src="<?= get_image(DIR_BG . 'career/' . $category->image) ?>" alt="Image Description" style="height:360px;object-fit:cover">
 							</div>
-							<div class="g-pl-25">
-								<div class="d-inline-block g-color-white g-font-size-18 g-mb-20  g-line-height-1_2">
-									<?php
-									foreach ($jobs as $job) {
-										if ($job->category == $key && $job->status == 1)
-											echo $job->title . '<br>';
-									}
-									?>
+							<div class="u-block-hover__additional--partially-slide-up g-z-index-1">
+								<div class="u-block-hover__visible g-px-25 g-pt-25">
+									<i class="<?= $category->icon ?> g-color-blue g-font-size-30 g-pa-15 g-bg-white g-rounded-50"></i>
+									<span class="d-block g-color-white g-font-weight-600 g-font-size-24 g-mb-25 g-mt-30 g-line-height-1_1"><?= $category->name ?></span>
+									<p class="g-color-white-opacity-0_7 mb-0"></p>
+								</div>
+								<div class="g-pl-25">
+									<div class="d-inline-block g-color-white g-font-size-18 g-mb-20  g-line-height-1_2">
+										<?php
+										foreach ($jobs as $job) {
+											if ($job->category == $key && $job->status == 1)
+												echo $job->title . '<br>';
+										}
+										?>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				<?php endif; ?>
 			<?php endforeach; ?>
 			<!-- End Job Item Iteration-->
 		</div>
-	<?php endif; //end desktop	?>
+	<?php endif; //end desktop	
+	?>
 </section>
 <!-- End Job Category -->

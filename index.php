@@ -49,6 +49,10 @@ define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
 define('DB_DATABASE', 'w4c_official_demo');
+if  (IS_ONLINE == 1 && MODE != 'live' && $_COOKIE['W4CALLDEVMOD'] != 'Y'){
+	header('Location:https://waste4change.com/');
+exit();
+}
 if (IS_UNDER_MAINTENANCE == 1) {
 	if (empty($_COOKIE['DEMOW4CCONSTRUCTIONSITE'])) {
 		header('Location:' . HOST . '/under-maintenance');

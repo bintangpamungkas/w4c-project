@@ -321,7 +321,9 @@
       "Memiliki pengalaman kerja selama sebagai Sales Manager dengan keberhasilan yang ditunjukkan sebagai pemain yang kuat, lebih disukai dalam bidang waste management services ",
       "Memiliki kemampuan analisis, negosiasi, dan Manajerial yang baik"
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/TFZ6ZmkvNGRpdFMvNUxSK1BBVC92dz09"
+    "talentaUrl":"https://recruitment.talenta.co/waste4change/TFZ6ZmkvNGRpdFMvNUxSK1BBVC92dz09",
+    "formUrl":"https://docs.google.com/forms/d/e/1FAIpQLSfsKEjFEBp2PwxabPRitcIGNTB-ONspRvJCpbgxCwWZWZpBRA/viewform?usp=sf_link"
+
   },
   "po-product-manager-digital": {
     "status": 1,
@@ -354,7 +356,7 @@
   },
    "digital-marketing-executive": {
     "status": 1,
-    "title": "Digital Maerketing Executive",
+    "title": "Digital Marketing Executive",
     "category": "wmce",
     "type": 1,
     "location": [

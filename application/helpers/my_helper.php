@@ -480,10 +480,11 @@ function meta_data($activation, $meta_data = false)
 		'image' => base_url(DIR_IMG . 'logo/favicon.jpg')
 	];
 	if (MODE != 'live') {
+		echo '<meta name="robots" content="noindex,nofollow">';
+		echo '<meta name="googlebot" content="noindex">';
 		echo "<!--";
 	}
 	if ($activation == true) {
-
 		?>
 			<meta name="description" content="<?= empty($meta_data['description_1']) ? $param['description_1'] : $meta_data['description_1'] ?>">
 			<meta name="keywords" content="<?= empty($meta_data['keywords']) ? $param['keywords'] : $meta_data['keywords']?>">

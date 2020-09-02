@@ -7,7 +7,7 @@
         <?php if (!$this->agent->is_mobile()) : ?>
           <div class="col">
             <div class="g-font-asap g-color-black text-uppercase g-font-weight-600 g-font-size-24 g-mb-10 <?= $this->agent->is_mobile() ? 'text-center' : '' ?>"><?= $copy->JobList ?></div>
-            <hr class="g-width-30 g-mt-20 g-mb-0 g-ml-0 g-brd-2 w4c-brd-blue">
+            <hr class="g-width-70 g-mt-20 g-mb-0 g-ml-0 g-brd-2 w4c-brd-blue">
           </div>
         <?php endif; ?>
       <div class="col text-right ">

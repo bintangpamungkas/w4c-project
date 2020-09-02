@@ -12,11 +12,11 @@
                   <div class="h-scroll-item">
                     <button onclick="filterByCategory(this)" class="btn <?= empty($category) ? 'btn-info' : 'btn-outline-info' ?> g-rounded-50 text-uppercase g-mr-15 g-px-20 <?= $this->agent->is_mobile() ? 'g-font-size-14' : 'g-font-size-18' ?>" data-filter="*"><?= $copy->AllJobs ?></button>
                   </div>
-                  <?php foreach ($job_category as $cati => $cat) : ?>
+                  <?php foreach ($job_category as $cati => $cat) : if($cat->status == 1):?>
                     <div class="h-scroll-item">
                       <button onclick="filterByCategory(this)" class="btn <?= empty($category) ? 'btn-outline-info' : ($category == $cat->name ? 'btn-info' : 'btn-outline-info') ?> g-rounded-50 text-uppercase g-mr-15 g-px-20 <?= $this->agent->is_mobile() ? 'g-font-size-14' : 'g-font-size-18' ?>" data-filter=".type--<?= $cati ?>"><?= $cat->name ?></button>
                     </div>
-                  <?php endforeach; ?>
+                  <?php endif; endforeach; ?>
                 </div>
               </div>
             </div>

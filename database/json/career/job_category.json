@@ -1,23 +1,27 @@
 {
   "cf": {
+    "status":1,
     "name": "Corporate Function",
     "image": "cf.jpg",
     "icon" : "icon-bag",
     "formUrl":"https://docs.google.com/forms/d/e/1FAIpQLSfsKEjFEBp2PwxabPRitcIGNTB-ONspRvJCpbgxCwWZWZpBRA/viewform?usp=sf_link"
   },
   "tech": {
+    "status":1,
     "name": "Tech",
     "image": "tech.jpg",
     "icon": "icon-screen-desktop",
     "formUrl":"https://docs.google.com/forms/d/e/1FAIpQLSdLYJOdNWzvQUtOHhdfuJuTKLp4mXMLOROztT75l6dneZfg4w/viewform?usp=sf_link"
   },
   "wmo": {
+    "status":1,
     "name": "Waste Management Operations",
     "image": "wm.jpg",
     "icon": "icon-trash",
     "formUrl":"https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
   },
   "wmce": {
+    "status":0,
     "name": "Waste Management Consultant & Education",
     "image": "wmce.jpg",
     "icon": "icon-notebook",
