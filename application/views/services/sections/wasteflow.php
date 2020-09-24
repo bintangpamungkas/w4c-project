@@ -9,7 +9,7 @@ $copywriting = [
 				'items' => [
 					[
 						'title' => 'Waste is collected in segregated state by Collecting Partners',
-						'icon' => '1.png'
+						'icon' => 'angkut2.png'
 					]
 				]
 			],
@@ -80,7 +80,7 @@ $copywriting = [
 				'items' => [
 					[
 						'title' => 'Sampah diangkut dalam keadaan terpilah oleh Mitra Angkut',
-						'icon' => '1.png'
+						'icon' => 'angkut2.png'
 					]
 				]
 			],

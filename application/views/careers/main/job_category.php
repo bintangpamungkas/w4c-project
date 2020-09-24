@@ -9,7 +9,7 @@
 			<div id="job-carousel" class="align-height-list">
 				<!-- Items Iteration -->
 				<?php foreach ($job_category as $key => $category) : ?>
-					<?php if ($cat->status == 1) : ?>
+					<?php if ($category->status == 1) : ?>
 						<!-- Job Item -->
 						<div class="g-mx-10 g-rounded-5" onclick="location.href='<?= site_url('career/job?category=' . $category->name) ?>'">
 							<div class="u-bg-overlay g-bg-blue-opacity-0_8--after g-bg-img-hero " style="background-image: url(<?= get_image(DIR_BG . 'career/' . $category->image) ?>);object-fit:cover">
@@ -83,12 +83,14 @@
 
 	<?php else : // DESKTOP  
 	?>
+	<div class="container ">
+	
 		<div class="row g-mb-0  g-mt-50">
 			<!-- Job Item Iteration -->
 			<?php foreach ($job_category as $key => $category) : ?>
-				<?php if ($cat->status == 1) : ?>
+				<?php if ($category->status == 1) : ?>
 
-					<div class="col-md-3 g-px-13 g-mb-30" onclick="location.href='<?= site_url('career/job?category=' . $category->name) ?>'">
+					<div class="col g-px-13 g-mb-30" onclick="location.href='<?= site_url('career/job?category=' . $category->name) ?>'">
 						<div class="u-block-hover">
 							<div class="g-bg-cover g-bg-black-opacity-0_6--after g-bg-blue--hover-parent--after">
 								<img class="u-block-hover__main--mover-down" src="<?= get_image(DIR_BG . 'career/' . $category->image) ?>" alt="Image Description" style="height:360px;object-fit:cover">
@@ -112,10 +114,13 @@
 							</div>
 						</div>
 					</div>
+					
 				<?php endif; ?>
 			<?php endforeach; ?>
 			<!-- End Job Item Iteration-->
 		</div>
+	</div>
+
 	<?php endif; //end desktop	
 	?>
 </section>

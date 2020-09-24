@@ -6,7 +6,7 @@
         <a class="btn btn-info float-right g-rounded-50 g-py-10 g-px-80 g-font-size-18 text-uppercase" href="<?= site_url('career/job') ?>"><?= $copy->SeeMore ?></a>
       <?php endif; ?>
       <div class="g-font-asap g-color-black text-uppercase g-font-weight-600 g-font-size-24 g-mb-10 <?= $this->agent->is_mobile() ? 'text-center' : '' ?>"><?= $copy->RelatedJob ?></div>
-      <hr class="g-width-700 g-mt-20 g-mb-40 <?= $this->agent->is_mobile() ? '' : 'g-ml-0' ?> g-brd-2 w4c-brd-blue">
+      <hr class="g-width-70 g-mt-20 g-mb-40 <?= $this->agent->is_mobile() ? '' : 'g-ml-0' ?> g-brd-2 w4c-brd-blue">
     </div>
     <div class="container">
       <div class="row align-height-list">
@@ -30,7 +30,7 @@
                       <i class="icon-location-pin mr-2"></i>
                     </div>
                     <div class="col job-location">
-                      <?php foreach ($job->location as $loc1 => $location) : ?>
+                      <?php foreach ($item->location as $loc1 => $location) : ?>
                         <?= $loc1>0 ? ', '.$location : $location ?>
                       <?php endforeach; ?>
                     </div>

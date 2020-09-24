@@ -191,23 +191,6 @@
 </div>
 
 <script>
-	$(window).ready(function () {
-		var list = $(".align-height-list");
-
-		jQuery.each(list, function (listIndex, listValue) {
-
-			var item = $(this).find(".align-height-item");
-			var tempHeights = 0;
-			jQuery.each(item, function (itemIndex, itemValue) {
-				console.log($(this).height());
-				if (tempHeights < $(this).height()) {
-					tempHeights = $(this).height();
-				}
-			});
-			item.height(tempHeights);
-		});
-	});
-
 	function blogShare(that) {
 		var title = $(that).data('title');
 		var content = $(that).data('content');

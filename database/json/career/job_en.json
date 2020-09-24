@@ -93,9 +93,9 @@
   "surveyor": {
     "status": 1,
     "title": "Surveyor",
-    "category": "wmce",
+    "category": "wmo",
     "type": 2,
-    "location": ["Surabaya", "Mojokerto", "Babat-Lamongan"],
+    "location": ["Jawa Barat", "Surabaya", "Mojokerto", "Babat-Lamongan"],
     "description": [
       " Conduct on-ground sampling three days a week",
       "Input data daily",
@@ -255,7 +255,7 @@
     "talentaUrl":"https://recruitment.talenta.co/waste4change/NXZrc3Qxem1Fa3d3WmlIVUpwcGw1dz09"
   },
   "enumerator": {
-    "status": 1,
+    "status": 0,
     "title": "Enumerator",
     "category": "wmce",
     "type": 2,
@@ -307,7 +307,7 @@
   "po-product-manager-digital": {
     "status": 1,
     "title": "PO Product Manager Digital",
-    "category": "wmce",
+    "category": "cf",
     "type": 1,
     "location": ["Bekasi"],
     "description": [
@@ -334,7 +334,7 @@
   "digital-marketing-executive": {
     "status": 1,
     "title": "Digital Marketing Executive",
-    "category": "wmce",
+    "category": "cf",
     "type": 1,
     "location": ["Bekasi"],
     "description": [
@@ -355,6 +355,41 @@
       "Excellent communication when working in a team",
       "Target-oriented",
       "Strong interests to come up with solutions for better waste management",
+      "Have a personal laptop"
+    ],
+    "talentaUrl":""
+  },
+  "surveyor-jawa-barat": {
+    "status": 1,
+    "title": "Surveyor Jawa Barat",
+    "category": "wmo",
+    "type": 1,
+    "location": [
+      "Kab. Sumedang",
+      "Kota Bandung",
+      "Kab. Bandung Barat",
+      "Kota Cimahi",
+      "Kab. Bandung",
+      "Kab. Cianjur",
+      "Kab. Purwakarta",
+      "Kab. Karawang",
+      "Kab. Bekasi"
+        ],
+    "description": [
+      "Conduct suverys regarding the needs of the TPS 3R on program sites",
+      "Conduct socialization for the local communities/government regarding the TPS 3R program",
+      "Assist the FGD process on-site",
+      "Process the data from survey results regarding needs analysis"
+    ],
+    "requirement": [
+      "Female/Male Max. 45 years old",
+      "Have the knowledge and experince in facilitating community devleopment programs in the field of waste and sanitation",
+      "Good communication skill",
+      "Understand the basic concepts of waste management and sanitation",
+      "Candidate is not bound as a civil servant or other full-time jobs",
+      "Willing to be placed and work full-time on sites",
+      "Have a personal vehicle",
+      "Candidates from the district/city where the programs will take place wil be preferred",
       "Have a personal laptop"
     ],
     "talentaUrl":""

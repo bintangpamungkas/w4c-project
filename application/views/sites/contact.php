@@ -5,7 +5,7 @@
             <p class="g-color-gray-dark-v3 g-font-size-16">Want to know and start responsible waste management? Just contact us by filling out the following form</p>
             <br>
             <!-- Contact Form -->
-            <iframe class="g-bg-gray-light-v4" src="https://docs.google.com/forms/d/e/1FAIpQLSe7E1iXiHkPEinplz_Jedp6WtULYop8SvGHmnOVwl4QZNa9Ew/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Memuat...</iframe>
+            <iframe class="g-bg-gray-light-v4" src="https://docs.google.com/forms/d/e/1FAIpQLScNpChqU79Jq5XBDIRrX6QShxUcBpeJCmZGqubylOAOZBVVeQ/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Memuat...</iframe>
             <!-- End Contact Form -->
         </div>
 

@@ -97,9 +97,10 @@
   "surveyor": {
     "status": 1,
     "title": "Surveyor",
-    "category": "wmce",
+    "category": "wmo",
     "type": 2,
     "location": [
+      "Jawa Barat",
       "Surabaya",
       "Mojokerto",
       "Babat-Lamongan"
@@ -276,7 +277,7 @@
     "talentaUrl":"https://recruitment.talenta.co/waste4change/NXZrc3Qxem1Fa3d3WmlIVUpwcGw1dz09"
   },
   "enumerator": {
-    "status": 1,
+    "status": 0,
     "title": "Enumerator",
     "category": "wmce",
     "type": 2,
@@ -328,7 +329,7 @@
   "po-product-manager-digital": {
     "status": 1,
     "title": "PO Product Manager Digital",
-    "category": "wmce",
+    "category": "cf",
     "type": 1,
     "location": [
       "Bekasi"
@@ -357,7 +358,7 @@
    "digital-marketing-executive": {
     "status": 1,
     "title": "Digital Marketing Executive",
-    "category": "wmce",
+    "category": "cf",
     "type": 1,
     "location": [
       "Bekasi"
@@ -380,6 +381,41 @@
       "Memiliki kemampuan komunikasi dalam tim yang sangat baik",
       "Target oriented",
       "Memiliki ketertarikan kuat untuk memberi solusi pengelolaan sampah yang lebih baik",
+      "Memiliki laptop pribadi"
+    ],
+    "talentaUrl":""
+  },
+  "surveyor-jawa-barat": {
+    "status": 1,
+    "title": "Surveyor Jawa Barat",
+    "category": "wmo",
+    "type": 1,
+    "location": [
+      "Kab. Sumedang",
+      "Kota Bandung",
+      "Kab. Bandung Barat",
+      "Kota Cimahi",
+      "Kab. Bandung",
+      "Kab. Cianjur",
+      "Kab. Purwakarta",
+      "Kab. Karawang",
+      "Kab. Bekasi"
+    ],
+    "description": [
+      "Melakukan survey analisa kebutuhan TPS 3R pada lokasi pendampingan",
+      "Melakukan sosialisasi terhadap warga / pemerintah setempat terkait program TPS 3R",
+      "Membantu proses pelaksanaan FGD pada lokasi pendampingan",
+      "Mengolah data hasil survey analisa kebutuhan"
+    ],
+    "requirement": [
+      "Wanita / Pria Maks. 45 Tahun",
+      "Memiliki kemampuan dan pengalaman dalam memfasilitasi pemberdayaan masyarakat bidang persampahan dan sanimas",
+      "Memiliki kemampuan komunikasi yang baik",
+      "Memahami konsep dasar pengelolaan sampah dan sanimas",
+      "Tidak terikat sebagai ASN (Aparatur Sipil Negara) atau pekerjaan tetap lainnya ",
+      "Bersedia ditempatkan dan bekerja penuh waktu di lokasi pendampingan",
+      "Memilik kendaraan pribadi",
+      "Diutamakan berasal dari Kabupaten / Kota pendampingan",
       "Memiliki laptop pribadi"
     ],
     "talentaUrl":""

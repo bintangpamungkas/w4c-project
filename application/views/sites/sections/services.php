@@ -81,7 +81,6 @@
 
 	function switch_service_tab(that) {
 		var tab_target = '#tab-' + $(that).data('id');
-		console.log(tab_target);
 		$('.my_tab').removeClass('tab-active');
 		$(that).addClass('tab-active');
 		$('input[name=target]').val($(that).data('tab'));

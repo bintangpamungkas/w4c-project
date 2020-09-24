@@ -105,6 +105,21 @@ $(document).on('click', '.nav-toggle', function () {
 	$('.navbar-collapse').removeClass('show');
 });
 
+// make item same height as other item
+function align_height(){
+
+	$(".align-height-list").each(function(){
+		var item = $(this).find(".align-height-item");
+		var tempHeights = 0;
+		$(item).each(function(){
+			if (tempHeights < $(this).height()) {
+				tempHeights = $(this).height();
+			}
+		});
+		item.height(tempHeights);
+	});
+}
+
 $(window).ready(function () {
 	var screen_height = window.innerHeight;
 	var header_height = $('header').height();
@@ -147,6 +162,7 @@ $(window).ready(function () {
 
 		content_middle_fullscreen.css('padding-top', set_middle);
 	}
+
 	$('.pending-show').removeClass('d-zap').addClass('fadeIn');
 	setTimeout(
 		function () {
@@ -155,18 +171,7 @@ $(window).ready(function () {
 	);
 
 	// make item same height as other item
-	$(".align-height-list").each(function(){
-		var item = $(this).find(".align-height-item");
-		var tempHeights = 0;
-		$(item).each(function(){
-			if (tempHeights < $(this).height()) {
-				tempHeights = $(this).height();
-			}
-			// console.log($(this).attr('class')+':'+$(this).height());
-		});
-		// console.log('final:'+tempHeights);
-		item.height(tempHeights);
-	});
+	align_height();
 
 	// PRE LOADING HIDE
 	$("#preloading").addClass('animated fadeOut');
@@ -176,5 +181,3 @@ $(window).ready(function () {
 	}, 1000);
 
 });
-
-
