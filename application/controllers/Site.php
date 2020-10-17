@@ -296,7 +296,6 @@ class Site extends MY_Controller
 		?>
 			<div id="service_list" class="my_tab_content animated fadeIn row">
 				<?php
-				$service_count = 0;
 				$service_id = 0;
 
 				foreach ($services as $index => $service) {
@@ -306,7 +305,6 @@ class Site extends MY_Controller
 						} elseif ($index == 3) {
 							echo '</div><div class="col-12 row align-height-list">';
 						}
-						$service_count++;
 				?>
 						<div class="col-md-4 col-sm-6">
 							<div class="g-mb-5 g-bg-white  align-height-item <?= $this->agent->is_mobile() ? 'g-mt-10' : 'g-mt-25' ?> box-shadow-down">
@@ -327,22 +325,20 @@ class Site extends MY_Controller
 						$service_id = $service->service_id;
 					}
 				} //End foreach($target->list as $service)
-				$service_all_col_md = (3 - ($service_count % 3)) * 4;
-				$service_all_col_sm = (2 - ($service_count % 2)) * 6;
 				?>
-				<div class="col-md-<?= $service_all_col_md ?> col-sm-<?= $service_all_col_sm ?>">
-					<div class="<?= ($service_all_col_md == 12) ? '' : '' ?> g-mb-5 g-bg-white align-height-item <?= $this->agent->is_mobile() ? 'g-mt-10' : 'g-mt-25' ?> box-shadow-down">
+				<div class="col-md-4 col-sm-6">
+					<div class="g-mb-5 g-bg-white align-height-item <?= $this->agent->is_mobile() ? 'g-mt-10' : 'g-mt-25' ?> box-shadow-down">
 						<div class="text-center bg-white g-mx-20 g-px-30 g-py-20">
-							<div class="<?= ($service_all_col_md == 12) ? 'g-my-20' : 'g-mt-100' ?>">
+							<div class="g-my-20">
 								<div class="g-font-weight-700 g-font-size-20 mb-5 text-center">
 									<?= get_lang('cant-found-the-solution-you-are-looking-for?') ?>
 								</div>
 								<div class="row justify-content-center">
 									<!-- 12 6 4 -->
-									<div class="<?= (3 - ($service_count % 3)) == 1 ? 'col-md-12' : ((3 - ($service_count % 3)) == 2 ? 'col-md-6' : 'col-md-3') ?>  mb-2">
+									<div class="col-md-12 mb-2">
 										<a class="btn btn-info btn-block g-color-white  g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9" href="<?= site_url('service') ?>"><?= strtoupper(get_lang('all-services')) ?> </a>
 									</div>
-									<div class="<?= (3 - ($service_count % 3)) == 1 ? 'col-md-12' : ((3 - ($service_count % 3)) == 2 ? 'col-md-6' : 'col-md-3')  ?>  mb-2">
+									<div class="col-md-12 mb-2">
 										<a class="btn btn-outline-info btn-block g-brd-2 g-font-size-13 g-rounded-50  g-px-30 g-py-9" href="<?= site_url('contact') ?>"><?= strtoupper(get_lang('talk-to-our-expert')) ?></a>
 									</div>
 								</div>

@@ -112,7 +112,7 @@
       <?php if ($this->agent->is_mobile()) : ?>
 
         <div class="col-12">
-          <a class="btn btn-info btn-block g-font-size-18 g-font-weight-600 g-color-white--active g-py-12 g-mt-50 g-rounded-50 text-uppercase" href="http://w4c.id/formofficerw4c"><?= $copy->ApplyNow ?></a>
+          <a class="btn btn-info btn-block g-font-size-18 g-font-weight-600 g-color-white--active g-py-12 g-mt-50 g-rounded-50 text-uppercase" href="<?= empty($job->formUrl) ? $job_category->{$job->category}->formUrl : $job->formUrl ?>"><?= $copy->ApplyNow ?></a>
         </div>
       <?php endif; ?>
     </div>

@@ -1,0 +1,126 @@
+[
+  {
+    "title": "Perusahaan",
+    "icon": "company-active-o.png",
+    "service_categories": [
+      {
+        "title": "Waste Collection Services",
+        "services": [
+          {
+            "url": "official/service/responsible-waste-management",
+            "title": "Responsible Waste Management"
+          },
+          {
+            "url": "official/service/zero-waste-to-landfill",
+            "title": "Zero Waste to Landfill"
+          },
+          {
+            "url": "official/service/inorganic-waste-management",
+            "title": "Inorganic Waste Management"
+          },
+          {
+            "url": "official/service/event-waste-management",
+            "title": "Event Waste Management"
+          }
+        ]
+      },
+      {
+        "title": "Extended Producer Responsibility",
+        "services": [
+          {
+            "url": "official/service/in-store-recycling",
+            "title": "In-Store Recycling"
+          },
+          {
+            "url": "official/service/digital-epr",
+            "title": "Digital EPR"
+          }
+        ]
+      },
+      {
+        "title": "Solid Waste Management Research",
+        "services": [
+          {
+            "url": "official/service/solid-waste-management-research",
+            "title": "Solid Waste Management Research"
+          }
+        ]
+      },
+      {
+        "title": "Community Development",
+        "services": [
+          {
+            "url": "official/service/community-based-implementation",
+            "title": "Community-Based Implementation"
+          },
+          {
+            "url": "official/service/3r-school-program",
+            "title": "3R School Program"
+          }
+        ]
+      },
+      {
+        "title": "Training",
+        "services": [
+          {
+            "url": "official/service/akabis-waste-management-academy",
+            "title": "AKABIS (Waste Management Academy)"
+          },
+          {
+            "url": "official/service/black-soldier-fly-learning-center",
+            "title": "Black Soldier Fly Learning Center"
+          }
+        ]
+      },
+      {
+        "title": "General",
+        "services": [
+          {
+            "url": "http://w4c.id/rumahkompos",
+            "title": "Black Soldier Fly Tools & Products"
+          }
+        ]
+      },
+      {
+        "title": "Collect Waste Management",
+        "services": [
+          {
+            "url": "official/service/custom-waste-bin",
+            "title": "Custom Waste Bin"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Individu",
+    "icon": "individu-active-o.png",
+    "service_categories": [
+      {
+        "title": "General",
+        "services": [
+          {
+            "url": "sendyourwaste",
+            "title": "Send Your Waste"
+          },
+          {
+            "url": "dropbox",
+            "title": "Dropbox"
+          },
+          {
+            "url": "program/puntungitusampah-daur-ulang-puntung-rokok/",
+            "title": "#PuntungItuSampah Daur Ulang Puntung Rokok"
+          },
+          {
+            "url": "official/service/personal-waste-management",
+            "title": "Personal Waste Management"
+          },
+          {
+            "url": "official/service/composting-tools-supplies",
+            "title": "Composting Tools & Supplies"
+          }
+        ]
+      }
+    ]
+  }
+]

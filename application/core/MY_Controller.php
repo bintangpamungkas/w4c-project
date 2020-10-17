@@ -47,8 +47,7 @@ class MY_Controller extends CI_Controller
 			$service_category = $this->crud_model->select('service_category', QUERY_RESULT, ['service_category_id', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_category_name AND language_code="' . $lang . '" limit 1) as title', 'service_category_icon icon', 'service_target_id'], ['service_category.service_target_id' => $target->service_target_id]);
 			$categories = [];
 			foreach ($service_category as $category) {
-				$services = $this->crud_model->select('service', QUERY_RESULT, ['service_id', 'service_page_url url', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_name AND language_code="' . $lang . '" limit 1) as title', 'service_category_id', 'has_page'], ['service_category_id' => $category->service_category_id, 'deleted_at' => null, 'service_parent_id' => null, 'service.has_page' => 1]);
-
+				$services = $this->crud_model->select('service', QUERY_RESULT, ['service_id', 'service_page_url url', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_name AND language_code="' . $lang . '" limit 1) as title', 'service_category_id', 'has_page'], ['service_category_id' => $category->service_category_id, 'deleted_at' => null, 'service_parent_id' => null, 'service.has_page' => 1],'',['created_at'=>'asc']);
 				$category->menu = $services;
 				$categories[] = $category;
 			}
