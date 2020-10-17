@@ -9,8 +9,8 @@
 			<div class="col-md-12 text-center g-pt-30 g-pb-70 g-px-20">
 				<img src="<?= get_image(DIR_IMG . 'service/' . $service_id . '/' . $section->section_image) ?>" alt="<?= $section_slug ?> Image" style="<?= $this->agent->is_mobile() ? 'width:100%' : 'height:100px' ?>"> 
 			</div>
-			<?php if (!empty($section->section_cta)) : ?>
-				<?php foreach ($section->section_cta as $ctaI => $cta) : ?>
+			<?php if (!empty($section->section_ctas)) : ?>
+				<?php foreach ($section->section_ctas as $ctaI => $cta) : ?>
 					<div class="col-md-auto">
 						<a class="click_scroll btn btn-outline-info g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-mb-10 <?= $this->agent->is_mobile() ? 'btn-block mb-4' : '' ?>" href="<?= $cta->cta_url ?>">
 							<?= $cta->cta_title ?>

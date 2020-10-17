@@ -7,13 +7,13 @@
 			<div class="<?= $this->agent->is_mobile() ? '' : 'g-px-150 ' ?> mt-2 mb-4"><?= $section->section_subtitle ?></div>
 		</div>
 		<div class="row justify-content-md-center">
-			<div class="col-md-12 text-center g-py-40">
+			<div class="col-md-12 text-center g-py-40 g-px-20">
 				<?php if ($this->agent->is_mobile()) {
 					$platform = 'mobile';
 				} else {
 					$platform = 'desktop';
 				}  ?>
-				<img src="<?= get_image(DIR_IMG . 'service/' . $service_id . '/'.$platform.'_'. $section->section_image) ?>" alt="<?= $section_slug ?> Image" style="">
+				<img src="<?= get_image(DIR_IMG . 'service/' . $service_id . '/'.$lang.'_'.$platform.'_'. $section->section_image) ?>" alt="<?= $section_slug ?> Image" style="width:100%">
 			</div>
 		</div>
 	</div>

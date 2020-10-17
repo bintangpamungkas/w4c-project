@@ -1,7 +1,7 @@
 {
   "service_id":41,
   "service_name":"Black Soldier Fly (BSF) Larvae",
-  "service_sort_name":"Black Soldier Fly Larvae",
+  "service_short_name":"Black Soldier Fly Larvae",
   "service_page_url":"official/service/larva-black-soldier-fly",
   "service_description":"",
   "service_portfolio_url":"",
@@ -9,20 +9,20 @@
   "service_join_url":"",
   "service_thumbnail_img":"",
   "service_meta": {
-    "site_url": "official/service/black-soldier-fly-learning-center",
-    "title_1": "Waste4Change - Black Soldier Fly Learning Center",
-    "description_1": "Edukasi penguraian sampah organik menggunakan Black Soldier Fly (BSF)",
-    "title_2": "Edukasi Penguraian Sampah Organik Menggunakan Black Soldier Fly (BSF)",
-    "description_2": "Edukasi penguraian sampah organik menggunakan Black Soldier Fly (BSF)",
-    "keywords": "Edukasi Penguraian Sampah Organik Menggunakan Black Soldier Fly (BSF)"
+    "site_url": "official/service/larva-black-soldier-fly",
+    "title_1": "Waste4Change - Black Soldier Fly (BSF) Larvae",
+    "description_1": "Black Soldier Fly (BSF) larvae are a good protein source and safe for poultry and fish consumption.",
+    "title_2": "Black Soldier Fly (BSF) larvae are a good protein source and safe for poultry and fish consumption.",
+    "description_2": "Black Soldier Fly (BSF) larvae are a good protein source and safe for poultry and fish consumption.",
+    "keywords": "Black Soldier Fly (BSF) larvae are a good protein source and safe for poultry and fish consumption."
   },
   "sections":{
     "welcome":{
       "section_template":"welcome",
       "section_menu_title":"",
-      "section_title":"Welcome",
+      "section_title":"Black Soldier Fly (BSF) Larvae",
       "section_subtitle":"",
-      "section_message":"Black Soldier Fly (BSF) larvae are a good protein source and safe for poultry and fish consumption. Our BSF product varies from: <ul><li>Fresh larvae</li><li>Dried larvae (ProPOP, ProFlakes, ProCrumb) </li>",
+      "section_message":"Black Soldier Fly (BSF) larvae are a good protein source and safe for poultry and fish consumption. Our BSF product varies from:<br> <span class='g-font-weight-900 w4c-color-blue g-mr-10'>&#8226</span>Fresh larvae <br><span  class='g-font-weight-900 w4c-color-blue g-mr-10'>&#8226</span>Dried larvae (ProPOP, ProFlakes, ProCrumb)",
       "section_image":"whole-dried-larvae-in-hands.png",
       "section_items":[
         {
@@ -33,7 +33,7 @@
       "section_ctas":[
         {
           "cta_title":"ORDER NOW",
-          "cta_url":"https://www.tokopedia.com/",
+          "cta_url":"http://w4c.id/rumahkompos",
           "cta_class":""
         }
       ]
@@ -75,7 +75,7 @@
       "section_ctas":[
         {
           "cta_title":"KUNJUNGI WEBSITE",
-          "cta_url":"https://www.tokopedia.com/",
+          "cta_url":"http://w4c.id/rumahkompos",
           "cta_class":""
         }
       ]
@@ -261,7 +261,7 @@
       "section_ctas":[
         {
           "cta_title":"ORDER NOW",
-          "cta_url":"https://www.tokopedia.com/",
+          "cta_url":"http://w4c.id/rumahkompos",
           "cta_class":""
         }
       ]

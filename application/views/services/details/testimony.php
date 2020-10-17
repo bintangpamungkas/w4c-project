@@ -87,12 +87,14 @@ if (($this->agent->is_mobile() && count($section->section_items) > 1) || count($
 					// $(element_id + ' .owl-nav').attr('style', 'position:absolute;left:-' + add_side * 2 + 'px;margin-top:' + height + 'px;width: ' + (width + add_side) + 'px;')
 					// $(element_id + ' .owl-dots').attr('style', 'margin-top:50px;')
                 //$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
+
+								//GUNAKAN UKURAN DARI OWL-stage-outer lalu kurangi dengan margin dari panah yang ingin di taroh karena kalau ikut dengan screen nggak selese2
                 $(element_id + ' .owl-controls').attr('style', 'margin-top: 30px;');
                 var screen_display = <?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
-                var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '69' : '98.5' ?>) / 100) / 2;
+                var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '65' : '98.5' ?>) / 100) / 2;
                 <?php
                 if ($this->agent->is_mobile()) {
-                  echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 170px;margin-top: 175px;width: 74%;right: '+margin_side+'px;')";
+                  echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 170px;margin-top: 175px;width: 75%;right: '+margin_side+'px;')";
                 } else {
                   echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 60px;width: 101.5%;right: '+margin_side+'px;')";
                 }

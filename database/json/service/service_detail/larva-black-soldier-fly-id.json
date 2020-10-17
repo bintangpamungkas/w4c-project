@@ -9,12 +9,12 @@
   "service_join_url":"",
   "service_thumbnail_img":"",
   "service_meta": {
-    "site_url": "official/service/black-soldier-fly-learning-center",
-    "title_1": "Waste4Change - Black Soldier Fly Learning Center",
-    "description_1": "Edukasi penguraian sampah organik menggunakan Black Soldier Fly (BSF)",
-    "title_2": "Edukasi Penguraian Sampah Organik Menggunakan Black Soldier Fly (BSF)",
-    "description_2": "Edukasi penguraian sampah organik menggunakan Black Soldier Fly (BSF)",
-    "keywords": "Edukasi Penguraian Sampah Organik Menggunakan Black Soldier Fly (BSF)"
+    "site_url": "official/service/larva-black-soldier-flyr",
+    "title_1": "Waste4Change - Larva Black Soldier Fly",
+    "description_1": "Pakan hewan tinggi protein, baik dan aman untuk konsumsi unggas, dan ikan.",
+    "title_2": "Pakan hewan tinggi protein, baik dan aman untuk konsumsi unggas, dan ikan.",
+    "description_2": "Pakan hewan tinggi protein, baik dan aman untuk konsumsi unggas, dan ikan.",
+    "keywords": "Pakan hewan tinggi protein, baik dan aman untuk konsumsi unggas, dan ikan."
   },
   "sections":{
     "welcome":{
@@ -22,7 +22,7 @@
       "section_menu_title":"",
       "section_title":"Larva Black Soldier Fly (BSF)",
       "section_subtitle":"",
-      "section_message":"Pakan hewan tinggi protein, baik dan aman untuk konsumsi unggas, dan ikan. Tersedia dalam berbagai varian: <ul><li>larva BSF segar</li><li>larva BSF kering (ProPOP, ProFlakes, ProCrumb) </li>",
+      "section_message":"Pakan hewan tinggi protein, baik dan aman untuk konsumsi unggas, dan ikan. Tersedia dalam berbagai varian: <br> <span class='g-font-weight-900 w4c-color-blue g-mr-10'>&#8226</span>larva BSF segar<br> <span class='g-font-weight-900 w4c-color-blue g-mr-10'>&#8226</span>larva BSF kering (ProPOP, ProFlakes, ProCrumb)",
       "section_image":"larva.png",
       "section_items":[
         {
