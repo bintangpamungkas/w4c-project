@@ -1,0 +1,69 @@
+{
+  "company":{
+    "title": "Perusahaan",
+    "icon": "company-active-o.png",
+    "services": [
+      {
+        "title": "Waste Collection Services"
+      },
+      {
+        "title": "Extended Producer Responsibility"
+      },
+      {
+        "title": "Solid Waste Management Research",
+        "url": "official/service/solid-waste-management-research",
+        "has_page": true
+      },
+      {
+        "title": "Community Development"
+      
+      },
+      {
+        "title": "Training"
+        
+      },
+      {
+        "title": "General"
+      },
+      {
+        "title": "Collect Waste Management"
+      }
+    ]
+  },
+  "individual":{
+    "title": "Individu",
+    "icon": "individu-active-o.png",
+    "services": [
+      {
+        "title": "General",
+        "services": [
+          {
+            "url": "sendyourwaste",
+            "title": "Send Your Waste",
+            "has_page": true
+          },
+          {
+            "url": "dropbox",
+            "title": "Dropbox",
+            "has_page": true
+          },
+          {
+            "url": "program/puntungitusampah-daur-ulang-puntung-rokok/",
+            "title": "#PuntungItuSampah Daur Ulang Puntung Rokok",
+            "has_page": true
+          },
+          {
+            "url": "official/service/personal-waste-management",
+            "title": "Personal Waste Management",
+            "has_page": true
+          },
+          {
+            "url": "official/service/composting-tools-supplies",
+            "title": "Composting Tools & Supplies",
+            "has_page": true
+          }
+        ]
+      }
+    ]
+  }
+}

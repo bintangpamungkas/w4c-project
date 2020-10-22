@@ -1,9 +1,11 @@
 <?php
-	if (empty($template)){
 		$this->load->view('templates/headers/general');
-	}else if ($template=='services' || $template=='index'){
-		$this->load->view('templates/headers/general');
-	}else{
-		$this->load->view('templates/headers/'.$template);
-	}
+
+	// if (empty($template)){
+	// 	$this->load->view('templates/headers/general');
+	// }else if ($template=='services' || $template=='index'){
+	// 	$this->load->view('templates/headers/general');
+	// }else{
+	// 	$this->load->view('templates/headers/'.$template);
+	// }
 ?>

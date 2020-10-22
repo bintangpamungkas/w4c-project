@@ -1,0 +1,50 @@
+{
+  "services": {
+    "title": "Layanan",
+    "status": true,
+    "is_new": false,
+    "url": "#mega-menu-1",
+    "icon": "",
+    "items": ""
+  },
+  "about": {
+    "status": true,
+    "title": "Tentang",
+    "is_new": false,
+    "url": "official/about",
+    "icon": "",
+    "items": ""
+  },
+  "research": {
+    "status": true,
+    "title": "Riset",
+    "is_new": false,
+    "url": "official/research",
+    "icon": "",
+    "items": ""
+  },
+  "blog": {
+    "status": true,
+    "title": "Blog",
+    "is_new": false,
+    "url": "blog",
+    "icon": "",
+    "items": ""
+  },
+  "contact": {
+    "status": true,
+    "title": "Kontak",
+    "is_new": false,
+    "url": "official/contact",
+    "icon": "",
+    "items": ""
+  },
+  "career": {
+    "status": true,
+    "title": "Karir",
+    "is_new": false,
+    "url": "official/career",
+    "icon": "",
+    "items": ""
+  }
+}

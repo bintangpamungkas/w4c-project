@@ -25,7 +25,7 @@ if (($this->agent->is_mobile() && count($section->section_items) > 1) || count($
                 <div class="rounded <?= $this->agent->is_mobile() ? 'g-mx-3 g-mb-5' : 'g-mx-10 g-mb-10' ?>">
                   <img class="img-fluid mx-auto" src="<?= get_image(DIR_SERVICE . '/' . $service_id . '/' . $item->item_image) ?>" alt="Logo <?= $item->item_title ?> Image">
                 </div>
-                <small><?= $item->item_title ?></small>
+                <div class="g-font-size-14"><?= $item->item_title ?></div>
               </div>
             <?php
             endforeach;

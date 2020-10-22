@@ -1,0 +1,10 @@
+{
+  "id":{
+    "language_flag" : "flag_indonesia.png",
+    "language_name" : "Indonesia"
+  },
+  "en":{
+    "language_flag" : "flag_england.png",
+    "language_name" : "English"
+  }
+}

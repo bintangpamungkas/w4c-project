@@ -101,7 +101,7 @@ header("Pragma: no-cache");
   $(function() {
     <?php
     if ($this->uri->segment(1) == '') : ?>
-      $('#PopUpModal').modal('show');
+      // $('#PopUpModal').modal('show');
       // $('#PopUpModalPWM').modal('show');
     <?php endif; ?>
     <?php
