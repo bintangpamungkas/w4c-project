@@ -40,11 +40,11 @@ header("Pragma: no-cache");
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <?php if (IS_ONLINE == 0) {
+  <?php if (IS_ONLINE == 1) {
     if (empty($meta_data)) {
-      meta_data(true);
+      meta_data(false);
     } else {
-      meta_data(true, @$meta_data);
+      meta_data(false, @$meta_data);
     }
   } ?>
 
@@ -101,12 +101,11 @@ header("Pragma: no-cache");
   $(function() {
     <?php
     if ($this->uri->segment(1) == '') : ?>
-      // $('#PopUpModal').modal('show');
-      // $('#PopUpModalPWM').modal('show');
+       $('#PopUpModal').modal('show');
     <?php endif; ?>
     <?php
     if ($this->uri->segment(2) == 'personal-waste-management' && $this->uri->segment(3) != 'join') : ?>
-      // $('#PopUpModalPWM').modal('show');
+    //   $('#PopUpModalPWM').modal('show');
     <?php endif; ?>
   });
   var logger = function() {
@@ -158,11 +157,11 @@ header("Pragma: no-cache");
   </div>
   <main>
     <?php 
-    if($this->agent->is_mobile()){
-      $platform = 'mobile';
-    }else{
-      $platform = 'desktop';
-    }
+        if($this->agent->is_mobile()){
+          $platform = 'mobile';
+        }else{
+          $platform = 'desktop';
+        }
     ?>
     <div class="modal fade in" id="PopUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="z-index: 9998">
       <div class="modal-dialog <?= $this->agent->is_mobile() ? 'g-ml-25 g-mr-25' : '' ?>" role="document" >
@@ -171,7 +170,7 @@ header("Pragma: no-cache");
           </button>
           <div class="modal-body welcome_list g-pa-0">
             <a class="dismiss-modal" href="<?= site_url('service/personal-waste-management') ?>">
-              <img src="<?php echo base_url(DIR_IMG . 'service/personal-waste-management/pwm-story-'.$platform.'-'.$lang.'.jpg') ?>" class="img-fluid">
+              <img src="<?php echo base_url(DIR_IMG . 'service/personal-waste-management/pwm-story-desktop-'.$lang.'.jpg') ?>" class="img-fluid">
             </a>
           </div>
         </div>
@@ -183,7 +182,7 @@ header("Pragma: no-cache");
           <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute;padding: 10px 15px;background: red;z-index: 999;opacity: 1;color: white;border-radius: 50px;right: -20px;top: -20px;"><span aria-hidden="true">&times;</span>
           </button>
           <div class="modal-body welcome_list g-pa-0" data-dismiss="modal" aria-label="Close">
-            <img src="<?php echo base_url(DIR_IMG . 'service/personal-waste-management/pwm-story-'.$platform.'-'.$lang.'.jpg') ?>" class="img-fluid">
+            <img src="<?php echo base_url(DIR_IMG . 'service/personal-waste-management/pwm-story-desktop-'.$lang.'.jpg') ?>" class="img-fluid">
           </div>
         </div>
       </div>

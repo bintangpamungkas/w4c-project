@@ -11,10 +11,10 @@
   "service_meta": {
     "site_url": "official/service/larva-black-soldier-fly",
     "title_1": "Waste4Change - Black Soldier Fly (BSF) Larvae",
-    "description_1": "Black Soldier Fly (BSF) larvae are a good protein source and safe for poultry and fish consumption.",
-    "title_2": "Black Soldier Fly (BSF) larvae are a good protein source and safe for poultry and fish consumption.",
-    "description_2": "Black Soldier Fly (BSF) larvae are a good protein source and safe for poultry and fish consumption.",
-    "keywords": "Black Soldier Fly (BSF) larvae are a good protein source and safe for poultry and fish consumption."
+    "description_1": "Black Soldier Fly is a good source of protein and safe to be consumed by both poultry and fish",
+    "title_2": "Black Soldier Fly is a Good Protein Source and Safe to be Consumed by Poultry and Fish",
+    "description_2": "Black Soldier Fly is a good source of protein and safe to be consumed by both poultry and fish",
+    "keywords": "black soldier fly, black soldier fly larvae, organic waste, animal feed, high-protein animal feed, BSF larvae."
   },
   "sections":{
     "welcome":{
@@ -22,8 +22,8 @@
       "section_menu_title":"",
       "section_title":"Black Soldier Fly (BSF) Larvae",
       "section_subtitle":"",
-      "section_message":"Black Soldier Fly (BSF) larvae are a good protein source and safe for poultry and fish consumption. Our BSF product varies from:<br> <span class='g-font-weight-900 w4c-color-blue g-mr-10'>&#8226</span>Fresh larvae <br><span  class='g-font-weight-900 w4c-color-blue g-mr-10'>&#8226</span>Dried larvae (ProPOP, ProFlakes, ProCrumb)",
-      "section_image":"whole-dried-larvae-in-hands.png",
+      "section_message":"Black Soldier Fly (BSF) larvae are a good source of protein and safe to be consumed by both poultry and fish. Our BSF product varies from:<br> <span class='g-font-weight-900 w4c-color-blue g-mr-10'>&#8226</span>Fresh larvae <br><span  class='g-font-weight-900 w4c-color-blue g-mr-10'>&#8226</span>Dried larvae (ProPOP, ProFlakes, ProCrumb)",
+      "section_image":"larva.png",
       "section_items":[
         {
           "item_title":"",

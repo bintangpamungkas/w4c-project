@@ -38,10 +38,7 @@ class MY_Controller extends CI_Controller
 			}
 		}
 		$lang = $this->get_language();
-		$data['lang'] = $lang;
 
-		
-		
 		// GET service as menu
 		$service_target = $this->crud_model->select('service_target', QUERY_RESULT, ['service_target_id', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_target_name AND language_code="' . $lang . '" limit 1) as title', 'service_target_icon icon'], ['deleted_at' => null]);
 
@@ -51,6 +48,7 @@ class MY_Controller extends CI_Controller
 			$categories = [];
 			foreach ($service_category as $category) {
 				$services = $this->crud_model->select('service', QUERY_RESULT, ['service_id', 'service_page_url url', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_name AND language_code="' . $lang . '" limit 1) as title', 'service_category_id', 'has_page'], ['service_category_id' => $category->service_category_id, 'deleted_at' => null, 'service_parent_id' => null, 'service.has_page' => 1],'',['created_at'=>'asc']);
+
 				$category->menu = $services;
 				$categories[] = $category;
 			}
@@ -58,18 +56,96 @@ class MY_Controller extends CI_Controller
 			$target->menu = $categories;
 			$targets[] = $target;
 		}
+		//END GET service
+		//			 print_r($targets);
+		//			 die();
+		$data['template'] = empty($template) ? 'general' : $template;
+		$data['lang'] = $lang;
 
-		// END GET service
 		$data['navigation_array_individu'] = $this->navigation_menu_array_segment('individual');
 		$data['navigation_array_corporate'] = $this->navigation_menu_array_segment('corporate');
-		$data['service_targets'] = $targets;
+		//		 $data['service_targets']=$targets;
+		$data['navigation_array'] = [
+			[
+				'title' => strtoupper(lang('services')),
+				'for' => 'menu',
+				'visible' => $this->agent->is_mobile() ? false : true,
+				'number' => '1',
+				'url' => '#mega-menu-1',
+				'type' => 'mega-menu',
+				'submenu_type' => 'column',
+				'icon' => '',
+				'is_new' => false,
+				'menu' => $targets
+			],
+			[
+				'title' => lang('about_only'),
+				'for' => 'menu',
+				'visible' => true,
+				'number' => '5',
+				'url' => W4C_URL . 'about',
+				'type' => '',
+				'submenu_type' => 'list',
+				'icon' => '',
+				'is_new' => false,
+				'menu' => '',
+			],
+			[
+				'title' => lang('research'),
+				'for' => 'menu',
+				'visible' => true,
+				'number' => '7',
+				'url' => site_url('research'),
+				'type' => '',
+				'submenu_type' => 'list',
+				'icon' => '',
+				'is_new' => false,
+				'menu' => '',
+			],
+			[
+				'title' => 'BLOG',
+				'for' => 'menu',
+				'visible' => true,
+				'number' => '6',
+				'url' => 'https://waste4change.com/blog',
+				'type' => '',
+				'submenu_type' => 'list',
+				'icon' => '',
+				'is_new' => false,
+				'menu' => '',
+			],
+			[
+				'title' => lang('contact'),
+				'for' => 'menu',
+				'visible' => true,
+				'number' => '7',
+				'url' => site_url('contact'),
+				'type' => '',
+				'submenu_type' => 'list',
+				'icon' => '',
+				'is_new' => false,
+				'menu' => '',
+			],
+			[
+				'title' => lang('career'),
+				'for' => 'menu',
+				'visible' => true,
+				'number' => '7',
+				'url' => site_url('career'),
+				'type' => '',
+				'submenu_type' => 'list',
+				'icon' => '',
+				'is_new' => false,
+				'menu' => '',
+			],
+		];
+		if ($this->session->userdata('login_email')) {
+			//$login_value = $this->session->userdata('login_email');
+			//$this->load->model('account_model');
+			//$data['login_user'] = $this->account_model->user_login_session('user', 'email', $login_value);
+		}
 
-		$navigations= json_decode(file_get_contents(base_url('database/json/navigation_' . $lang . '.json')));
-		$navigations->{'services'}->items=json_decode(file_get_contents(base_url('database/json/service/service_' . $lang . '.json')));
-		// die(print_r($navigations));
-		$data['navigations'] = $navigations;
-		
-		$data['languages'] = json_decode(file_get_contents(base_url('database/json/language.json')));
+		$data['languages'] = $this->crud_model->select('language', QUERY_RESULT, ['language_code', 'language_flag', 'language_name'], '');
 
 		if ($this->agent->is_mobile()) {
 			if ($this->uri->segment(1) == 'email') {
@@ -82,15 +158,16 @@ class MY_Controller extends CI_Controller
 			$render = '';
 		}
 
-		$data['template'] = empty($template) ? 'general' : $template;
-
 		//PAGE
-		$data['is_bilingual']=true;
+		//$data['is_bilingual']=false;
 		$data['asset_head'] = $this->load->view('templates/asset_head', $data, TRUE);
 		$data['header'] = $this->load->view('templates/header', $data, TRUE);
-		$data['content'] = $this->load->view($content, $data, TRUE);
-		$data['footer'] = $this->load->view('templates/footer', $data, TRUE);
+
+		// $data['breadcrumb'] = $this->load->view('templates/breadcrumb', $data, TRUE);
+		$data['content'] = $this->load->view($render . $content, $data, TRUE);
+
 		$data['asset_footer'] = $this->load->view('templates/asset_footer', $data, TRUE);
+		$data['footer'] = $this->load->view($render . 'templates/footer', $data, TRUE);
 
 		$this->load->view('templates/index', $data);
 	}

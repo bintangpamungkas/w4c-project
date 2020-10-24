@@ -1,6 +1,6 @@
 {
   "ux-researcher": {
-    "status": 1,
+    "status": 0,
     "title": "UX Researcher",
     "category": "tech",
     "type": 1,
@@ -114,7 +114,7 @@
 
   },
   "po-tetrapak": {
-    "status": 1,
+    "status": 0,
     "title": "PO Tetrapak",
     "category": "wmo",
     "type": 1,
@@ -255,7 +255,7 @@
     "talentaUrl":"https://recruitment.talenta.co/waste4change/NXZrc3Qxem1Fa3d3WmlIVUpwcGw1dz09"
   },
   "enumerator": {
-    "status": 0,
+    "status": 1,
     "title": "Enumerator",
     "category": "wmce",
     "type": 2,
@@ -332,7 +332,7 @@
     "talentaUrl":""
   },
   "digital-marketing-executive": {
-    "status": 1,
+    "status": 0,
     "title": "Digital Marketing Executive",
     "category": "cf",
     "type": 1,
@@ -360,10 +360,10 @@
     "talentaUrl":""
   },
   "surveyor-jawa-barat": {
-    "status": 1,
+    "status": 0,
     "title": "Surveyor Jawa Barat",
     "category": "wmo",
-    "type": 1,
+    "type": 2,
     "location": [
       "Kab. Sumedang",
       "Kota Bandung",
@@ -393,5 +393,206 @@
       "Have a personal laptop"
     ],
     "talentaUrl":""
+  },
+   "organizational-development-specialist": {
+    "status": 1,
+    "title": "Organizational Development Specialist",
+    "category": "cf",
+    "type": 1,
+    "location": [
+      "Bekasi"
+    ],
+    "description": [
+      "Conduct review regarding the organization's current structure and provide recommendation for adjustment in regards with the company's condition and necessity",
+      "Perform evaluation and provide recommendation for the current business process",
+      "Review job description and its process systematically",
+      "Recommend Job Evaluation for current and new positions",
+      "Conduct manpower planning regularly (movement, rotation, promotion, termination, dll)",
+      "Conduct assesment and performance management",
+      "Be involved in the Talent Mapping process in Succession Planning"
+    ],
+    "requirement": [
+      "Male/Female maximum 35 years old",
+      "A minimum of 3-years experience in HR",
+      "Preferred candidates with experiences in OD",
+      "Have concerns in environment and waste issues",
+      "Excellent communication, interpersonal, problem-solving, and analytical skills as well as highly detailed",
+      "Capable of demonstrating current knowledge regarding the best theories and practices in OD",
+      "Willing to be placed in Bekasi"
+    ],
+    "talentaUrl":""
+  },
+  "po-project-based": {
+    "status": 1,
+    "title": "PO Project Based",
+    "category": "wmo",
+    "type": 2,
+    "location": [
+      "Bekasi"
+    ],
+    "description": [
+      "Conduct planning for research project or other programs according to the direction from the company",
+      " Develop research project or programs related with waste management",
+      "Be involved with the coordincation process, both with the internal and external team"
+    ],
+    "requirement": [
+      "Minimum Bachelor's Degree in Environmental Engineering with 8-years experience or Master's Degree in Environmental Engineering with 3-years experience",
+      "Have experience in research and/or waste program",
+      "Good understanding of research methods",
+      "Have knowledge and understanding regarding Solid Waste Management, Circular Economy, Marine Debris and other issues regarding waste management",
+      "Preferred candidates with knowledge, understanding, or at least have been involved with sosial research acitivities and Dynamic model",
+      "Preferred candidates who are familiar with Autocad,Vensim,Photosop/adobe,Power point, Excel",
+      "Strong analytical skill",
+      "Good communication skill",
+      "Proficient in English",
+      "Willing to be placed anywhere"
+    ],
+    "talentaUrl":""
+  },
+  "secretary-to-managing-director": {
+    "status": 0,
+    "title": "Secretary to Managing Director",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Manage meeting agendas and appointment as well as the necessary documents",
+      "provide minuts of meeting during the director's meeting activity",
+      "Support administrative affairs such as managing and archiving mails, data, and documents",
+      "Keep up with the director's activities",
+      "Become an intermediary for any parties who want to get in touch with the director",
+      "Secure data and information by managing the database"
+    ],
+    "requirement": [
+      "Preferred candidates from office administration or secretarial vocational school",
+      "Have 1-2 years work experience in administration",
+      "Able to operate Ms. Office or other supporting programs",
+      "Agile and able to work under pressure",
+      "Have personal laptop"
+    ],
+    "talentaUrl":""
+  },
+  "surveyor-food-loss": {
+    "status": 1,
+    "title": "Surveyor Food Loss",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Remote"],
+    "description": [
+      "Gathering information regarding food loss from various stakeholders in the food supply chain through interview and field observation",
+      "Processing the data that has been gathered and summarize it in a form that is ready to be analyzed",
+      "Recap the volume of food loss based on the food balance sheet",
+      "Helping the Assistant Team Leader Study of Food Loss and Waste in Indonesia in works regarding food loss"
+    ],
+    "requirement": [
+      "Female/Male",
+      "Maximum 28 years old",
+      "At least a Bachelor's Degree from Agriculture (Agribusiness/Agrotech,etc)",
+      "Preferred candidates who understand food supply chain",
+      "Preferred with experience as a surveyor",
+      "Proficient in using Ms.Office",
+      "Proficient in English",
+      "Familiar with the concept of remote working",
+      "Maximum duration of work is 2 months"
+    ],
+    "talentaUrl":""
+  },
+  "surveyor-food-waste": {
+    "status": 1,
+    "title": "Surveyor Food Waste",
+    "category": "wmo",
+    "type": 4,
+    "location": ["Bandung",
+                 "Pekanbaru",
+                 "Bali"
+                 ],
+    "description": [
+      "Perform waste sampling on the predetermined locations",
+      "Interview stakeholders on the waste-sampling sites regarding the food waste that were generated on that location",
+      "Processed the data resulted from both the sampling and the interview and summarize it in a form that is ready to be analyzed"
+    ],
+    "requirement": [
+      "Female/Male",
+      "Maximum.28 years old",
+      "Undergraduate or bachelor's degree in Environmental Engineering",
+      "Preferred candidates with experience in waste sampling",
+      "Proficient in using Ms. Office",
+      "Preferred candidates with driving license (SIM) A or C",
+      "Located in Bandung/Pekanbaru/Bali",
+      "The duration of work is 8-10 days"
+    ],
+    "talentaUrl":""
+  },
+  "foreman-pemilahan": {
+    "status": 1,
+    "title": "Foreman Pemilahan",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Supervise the segregation officers in doing their work",
+      "Analyze the data regarding waste segregation",
+      "Validate the data",
+      "Make periodic report",
+      "Ensure the implementation of Occupational Health and Safety on the field"
+    ],
+    "requirement": [
+      "Male",
+      "Maximum 30 years old",
+      "Major in Occupational Health and Safety/Environmental Engineering/Engineering",
+      "Having Occupational Health and Safety Certificate is an added value",
+      "Have a personal laptop"
+    ],
+    "talentaUrl":""
+  },
+  "business-development-specialist": {
+    "status": 1,
+    "title": "Business Development Specialist",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Analyze and perform market research",
+      "Identify and develop the market",
+      "Arrange and present the company's business plan",
+      "Cooperate with other division in order to align the business strategy",
+      "Perform research periodically regarding the development of the company's business",
+      "Understand the company's and competitor's product as well as the business' position within the market",
+      "Perform research on the competitor in order to increase Waste4Change's business position on the market",
+      "Build and maintain relationship with clients and enhance Waste4Change's relationship with other business actors"
+    ],
+    "requirement": [
+      "At least a Bachelor's Degree from Finance, Business Administration, Marketing, or Business Management",
+      "A minimum of 2-year experience in Business Development",
+      "Strong analytical and problem-solving skills, especially market analysis",
+      "Familiar with business planning",
+      "Good communication and presentation skills, able to work in a team, proven skills in influencing team from various divisions",
+      "Experienced in dealing with management, negotating with and give opinions to future clients regarding the management's needs or strategic transaction"
+    ],
+    "talentaUrl":""
+  },
+  "waste-sampling-field-officer": {
+    "status": 1,
+    "title": "Waste Sampling Field Officer",
+    "category": "wmo",
+    "type": 4,
+    "location": ["Mojokerto"],
+    "description": [
+      "Gathering information regarding waste generation from Mojokerto City through sampling, interview, and field observation",
+      "Processing the data that has been gathered and summarize it in a form that is ready to be analyzed",
+      "Helping the Assistant Team Leader Study of Waste Mapping Study in Mojokerto City in works regarding waste mapping"
+    ],
+    "requirement": [
+      "Female/Male",
+      "Maximum 28 years old",
+      "At least Bachelor`s Degree from Environmental Engineering",
+      "Preferred candidates who understand waste generation survey",
+      "Preferred with experience as a surveyor",
+      "Preferred someone who is local people in Mojokerto City",
+      "Proficient in using Ms. Office",
+      "Proficient in English",
+      "Maximum Duration of works is 3 weeks"
+    ],
+    "talentaUrl":"https://recruitment.talenta.co/waste4change/NC9xUENJZTNyV29lUllGczEzdlJWUT09"
   }
 }

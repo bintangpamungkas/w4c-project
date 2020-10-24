@@ -1,5 +1,5 @@
 <section class="g-bg-white">
-	<div id="<?= $section_slug ?>" style="height: 200px;position: absolute;width: 80%;margin-top: -80px"></div>
+	<div id="<?= $section_slug ?>" style="height: 0px;position: absolute;width: 80%;margin-top: -80px"></div>
 	<div class="container <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-10' : 'g-py-70' ?>">
 		<div class="text-center g-mb-50">
 			<h2 class="g-font-asap g-color-black-dark-v2 g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-20' : '' ?>"><?= $section->section_title ?></h2>

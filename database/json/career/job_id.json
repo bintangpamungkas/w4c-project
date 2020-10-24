@@ -1,6 +1,6 @@
 {
   "ux-researcher": {
-    "status": 1,
+    "status": 0,
     "title": "UX Researcher",
     "category": "tech",
     "type": 1,
@@ -122,7 +122,7 @@
     "formUrl":"https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
   },
   "po-tetrapak": {
-    "status": 1,
+    "status": 0,
     "title": "PO Tetrapak",
     "category": "wmo",
     "type": 1,
@@ -277,7 +277,7 @@
     "talentaUrl":"https://recruitment.talenta.co/waste4change/NXZrc3Qxem1Fa3d3WmlIVUpwcGw1dz09"
   },
   "enumerator": {
-    "status": 0,
+    "status": 1,
     "title": "Enumerator",
     "category": "wmce",
     "type": 2,
@@ -356,7 +356,7 @@
     "talentaUrl":""
   },
    "digital-marketing-executive": {
-    "status": 1,
+    "status": 0,
     "title": "Digital Marketing Executive",
     "category": "cf",
     "type": 1,
@@ -366,7 +366,7 @@
     "description": [
       "Melakukan riset trend, kompetitor, dan kondisi pasar",
       "Merencanakan strategi digital marketing dan campaign bulanan berdasar target bisnis (leads)",
-      "Bekerja bersama dengan tim copy dan desain untuk mengembangkan konten digital terutama",
+      "Bekerja bersama dengan tim copy dan desain untuk mengembangkan konten digital",
       "Melakukan pengelolaan CRM, seperti Newsletter",
       "Melakukan pengelolaan iklan digital (Google Ads, Facebook Ads, dll) baik dari segi konten dan budget",
       "Memastikan campaign berjalan dengan baik dengan beberapa A/B testing",
@@ -386,10 +386,10 @@
     "talentaUrl":""
   },
   "surveyor-jawa-barat": {
-    "status": 1,
+    "status": 0,
     "title": "Surveyor Jawa Barat",
     "category": "wmo",
-    "type": 1,
+    "type": 2,
     "location": [
       "Kab. Sumedang",
       "Kota Bandung",
@@ -417,6 +417,218 @@
       "Memilik kendaraan pribadi",
       "Diutamakan berasal dari Kabupaten / Kota pendampingan",
       "Memiliki laptop pribadi"
+    ],
+    "talentaUrl":""
+  },
+   "organizational-development-specialist": {
+    "status": 1,
+    "title": "Organizational Development Specialist",
+    "category": "cf",
+    "type": 1,
+    "location": [
+      "Bekasi"
+    ],
+    "description": [
+      "Melakukan review struktur organisasi dan rekomendasi penyesuaian dengan kondisi dan kebutuhan perusahaan",
+      "Melakukan evaluasi dan rekomendasi bisnis proses saat ini",
+      "Melakukan review job description dan prosesnya secara teratur",
+      "Merekomendasikan Job Evaluation untuk posisi saat ini dan posisi baru",
+      "Melakukan Manpower planning karyawan secara berkala (movement, rotasi, promosi, terminasi, dll)",
+      "Melakukan assesment dan performance management",
+      "Terlibat dalam proses Talent Mapping dalam Succession Planning"
+    ],
+    "requirement": [
+      "Pria/Wanita maksimal usia 35 tahun",
+      "Pengalaman min. 3 tahun pada bidang HR",
+      "Diutamakan memiliki pengalaman sebagai OD",
+      "Memiliki perhatian atas isu lingkungan dan persampahan",
+      "Memiliki keterampilan komunikasi, interpersonal, pemecahan masalah dan analitis yang sangat baik dan detail",
+      "Mampu dalam mendemonstrasikan pengetahuan terkini tentang teori dan praktik yang baik dalam OD",
+      "Bersedia ditempatkan di Bekasi"
+    ],
+    "talentaUrl":""
+  },
+  "po-project-based": {
+    "status": 1,
+    "title": "PO Project Based",
+    "category": "wmo",
+    "type": 2,
+    "location": [
+      "Bekasi"
+    ],
+    "description": [
+      "Melakukan perencanaan project riset atau program sesuai dengan yang arahan perusahaan",
+      "Melakukan pengembangan project riset atau program yang berkaitan dengan waste management",
+      "Terlibat dalam koordinasi baik kepada tim internal ataupun eksternal"
+    ],
+    "requirement": [
+      "Min. S1 Teknik lingkungan dengan pengalaman 8 tahun atau S2 Teknik Lingkungan dengan pengalaman 3 Tahun",
+      "Memiliki pengalaman di bidang riset dan/ program Persampahan",
+      "Memahami Metode penelitian",
+      "Memiliki wawasan dan pemahaman terkait Solid Waste Management, Circular Economy, Marine Debris dan isu terkait pengelolaan sampah",
+      "Diutamakan yang memiliki wawasan,pemahaman dan atau pernah berpengalaman terlibat dalam aktifitas Social riset, Dynamic model",
+      "Diutamakan yang menguasai Autocad,Vensim,Photosop/adobe,Power point, Excel",
+      "Memiliki kemampuan analisis yang kuat",
+      "Memiliki kemampuan komunikasi yang baik",
+      "Fasih dalam Bahasa inggris",
+      "Bersedia ditempatkan dimana saja"
+    ],
+    "talentaUrl":""
+  },
+  "secretary-to-managing-director": {
+    "status": 0,
+    "title": "Secretary to Managing Director",
+    "category": "cf",
+    "type": 1,
+    "location": [
+      "Bekasi"
+    ],
+    "description": [
+      "Mengurus jadwal agenda rapat dan janji pertemuan serta dokumen - dokumen yang diperlukan",
+      "Melakukan notulensi dalam kegiatan rapat direktur",
+      "Menunjang kegiatan administratif seperti pengelolaan dan pengarsipan surat, data serta dokumen",
+      "Mengikuti kegiatan direktur",
+      " Menjadi perantara pihak - pihak yang ingin berhubungan dengan direktur",
+      "Mengamankan data dan informasi dengan pengelolaan database"
+    ],
+    "requirement": [
+      "Diutamakan lulusan SMK administrasi perkantoran atau kesekretariatan",
+      "Memiliki pengalaman kerja bidang administrasi  1-2 tahun",
+      "Mampu mengoperasikan Ms. Office atau program lain yang menunjang pekerjaan",
+      "Mampu bekerja dibawah tekanan dan cekatan",
+      "Memiliki laptop pribadi"
+    ],
+    "talentaUrl":""
+  },
+   "surveyor-food-loss": {
+    "status": 1,
+    "title": "Surveyor Food Loss",
+    "category": "wmo",
+    "type": 1,
+    "location": [
+      "Remote"
+    ],
+    "description": [
+      "Mengumpulkan informasi mengenai food loss dari berbagai pemangku kepentingan dalam rantai pasok makanan melalui proses wawancara dan observasi lapangan",
+      "Mengolah data yang dikumpulkan dan merangkumnya dalam penyajian yang siap digunakan untuk analisis",
+      "Merekap data timbulan food loss berdasarkan Neraca Bahan Makanan",
+      " Membantu Assistant Team Leader Study of Food Loss and Waste in Indonesia dalam pekerjaan yang berkaitan dengan isu food loss"
+    ],
+    "requirement": [
+      "Wanita/Pria",
+      "Maks. 28 tahun",
+      "Pendidikan min.S1 Pertanian (Agribisnis/Agroteknologi/dll)",
+      "Memahami rantai pasok makanan diutamakan",
+      "Memiliki pengalaman sbg surveyor diutamakan",
+      "Mahir menggunakan Ms.Office",
+      "Mahir berbahasa Inggris",
+      "Familiar dengan konsep remote working",
+      "Durasi pekerjaan maksimal 2 bulan"
+    ],
+    "talentaUrl":""
+  },
+  "surveyor-food-waste": {
+    "status": 1,
+    "title": "Surveyor Food Waste",
+    "category": "wmo",
+    "type": 4,
+    "location": [
+      "Bandung",
+      "Pekanbaru",
+      "Bali"
+    ],
+    "description": [
+      "Melakukan sampling sampah di lokasi yang ditentukan",
+      "Mewawancara pemangku kepentingan di lokasi sampling terkait timbulan food waste yang dihasilkan lokasi tersebut",
+      "Mengolah data hasil sampling dan wawancara dan merangkumnya dalam penyajian yang siap digunakan untuk analisis"
+    ],
+    "requirement": [
+      "Wanita/Pria",
+      "Maks.28 tahun",
+      "Mahasiswa/lulusan S1 Teknik Lingkungan",
+      "Memiliki pengalaman sampling sampah diutamakan",
+      "Mahir menggunakan Ms. Office",
+      "Memiliki SIM A atau SIM C diutamakan",
+      "Domisili di Bandung/Pekanbaru/Bali",
+      "Durasi pekerjaan 8-10 hari"
+    ],
+    "talentaUrl":""
+  },
+  "foreman-pemilahan": {
+    "status": 1,
+    "title": "Foreman Pemilahan",
+    "category": "wmo",
+    "type": 1,
+    "location": [
+      "Bekasi"
+    ],
+    "description": [
+      "Mengawasi operator pilah berkerja",
+      "Menganalisa data pilah",
+      "Melakukan validasi data",
+      "Membuat laporan secara berkala",
+      "Memastikan penerapan K3 di lapangan"
+    ],
+    "requirement": [
+      "Pria",
+      "Usia maks. 30 tahun",
+      "Jurusan K3/TL/Teknik",
+      "Memiliki sertifikasi K3 adalah nilai tambah",
+      "Memiliki laptop pribadi"
+    ],
+    "talentaUrl":""
+  },
+  "business-development-specialist": {
+    "status": 1,
+    "title": "Business Development Specialist",
+    "category": "cf",
+    "type": 1,
+    "location": [
+      "Bekasi"
+    ],
+    "description": [
+      "Menganalisa dan melakukan riset pasar",
+      "Mengidentifikasi dan mengembangkan pasar",
+      "Menyusun dan mempresentasikan rencana pengembangan bisnis perusahaan",
+      "Bekerja sama dengan divisi lain untuk menyesuaikan strategi bisnis",
+      "Melakukan riset perkembangan bisnis perusahaan secara berkala",
+      "Memahami produk dari perusahaan, kompetitor, dan posisi bisnis di dalam pasar",
+      "Melakukan riset terhadap kompetitor untuk meningkatkan posisi bisnis Waste4Change di dalam pasar",
+      " Membangun dan menjaga hubungan dengan klien dan meningkatkan hubungan Waste4Change dengan pelaku industri lainnya"
+    ],
+    "requirement": [
+      "S1 dari jurusan keuangan, administrasi bisnis, marketing atau manajemen bisnis",
+      "Memiliki minimal pengalaman 2 tahun dalam business development",
+      "Kuat dalam analisa dan problem-solving terutama analisa pasar",
+      "Terbiasa untuk melakukan perencanaan bisnis",
+      "Terbiasa untuk melakukan perencanaan bisnis",
+      "Berpengalaman untuk berhadapan dengan manajemen, bernegosiasi dan memberi pendapat kepada calon klien sehubungan dengan kebutuhan manajemen ataupun transaksi strategis"
+    ],
+    "talentaUrl":""
+  },
+  "waste-sampling-field-officer": {
+    "status": 1,
+    "title": "Waste Sampling Field Officer",
+    "category": "wmo",
+    "type": 4,
+    "location": [
+      "Mojokerto"
+    ],
+    "description": [
+      "Mengumpulkan informasi mengenai produksi sampah kota Mojokerto melalui metode sampling, wawancara, dan observasi lapangan",
+      "Mengolah data yang telah dikumpulkan dan merangkumnya menjadi bentuk yang siap dianalisa",
+      "Membantu asisten Ketua Tim dalam StudI Pemetaan Sampah di kota Mojokerto terkait pemetaan sampah"
+    ],
+    "requirement": [
+      "Perempuan/Laki laki",
+      "Maksimal usia 28 tahun",
+      "Lulusan S1 dari jurusan Teknik Lingkungan",
+      "Kandidat yang memahami survei produksi sampah lebih diutamakan",
+      "Kandidat dengan pengalaman sebagai surveyor lebih diutamakan",
+      "Kandidat yang merupakan warga asli kota Mojokerto lebih diutamakan",
+      "Mahir menggunakan Ms. Office",
+      "Mahir berbahasa Inggris",
+      "Durasi pekerjaan maksimal adalah 3 minggu"
     ],
     "talentaUrl":""
   }

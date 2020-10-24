@@ -1,4 +1,3 @@
-<!-- // TODO Update to new json navigations -->
 <div class="shortcode-html" id="footer">
   <!-- Footer -->
   <footer class="g-color-white-opacity-0_8 g-bg-img-hero g-pt-60" style="background: radial-gradient(circle farthest-side at 70% -10%, rgba(21, 189, 119, 1), rgba(11, 141, 192, 1));">
@@ -36,8 +35,7 @@
 
         <?php
         $i = 1;
-
-        if ($this->agent->is_mobile()) : //Mobile View
+        if ($this->agent->is_mobile()) : //Mobile
           foreach ($navigation_array as $nav) :
             if (!empty($nav['menu'])) :
               foreach ($nav['menu'] as $menu) : ?>

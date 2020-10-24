@@ -7,7 +7,7 @@ if (($this->agent->is_mobile() && count($section->section_items) > 1) || count($
   $carousel = false;
 } ?>
 <section class="g-bg-white">
-  <div id="<?= $section_slug ?>" style="height: 10px;position: absolute;width: 80%;margin-top: -100px"></div>
+  <div id="<?= $section_slug ?>" style="height: 0px;position: absolute;width: 80%;margin-top: -100px"></div>
   <div style="g-bg-white">
     <div class="container <?= $this->agent->is_mobile() ? 'g-pt-80 g-pb-50' : 'g-py-70' ?>">
       <div class="text-center">

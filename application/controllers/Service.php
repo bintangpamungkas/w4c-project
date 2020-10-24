@@ -55,9 +55,11 @@ class Service extends MY_Controller
 			}
 			$service_list = [];
 			foreach ($services as $service) {
-				$recommendations = $this->service_model->service_recomendation($lang, $service->service_id);
-				$service->recomendation = $recommendations;
-				$service_list[] = $service;
+    			if ($service->service_id != 40) {
+	    			$recommendations = $this->service_model->service_recomendation($lang, $service->service_id);
+		    		$service->recomendation = $recommendations;
+			    	$service_list[] = $service;
+    			}
 			}
 			$data['services'] = $service_list;
 
@@ -272,7 +274,8 @@ class Service extends MY_Controller
 				];
 			$data['subnav'] = $sections;
 
-
+            $getQueryFromUrl = $_SERVER['QUERY_STRING'];
+            
 			$data['title'] = $service->service_name;
 			$data['id'] = 'service';
 			$data['subtitle'] = 'information';
@@ -281,6 +284,7 @@ class Service extends MY_Controller
 			$data['service_name'] = $service->service_name;
 			$data['page_heading'] = $data['service_name'];
 			$data['is_bilingual'] = true;
+			$data['query_from_url'] = $getQueryFromUrl;
 
 			$this->render_page('services/detail', $data, 'services');
 		}

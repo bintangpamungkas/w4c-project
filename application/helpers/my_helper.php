@@ -480,11 +480,12 @@ function meta_data($activation, $meta_data = false)
 		'image' => base_url(DIR_IMG . 'logo/favicon.jpg')
 	];
 	if (MODE != 'live') {
-		echo '<meta name="robots" content="noindex,nofollow">';
+	    echo '<meta name="robots" content="noindex,nofollow">';
 		echo '<meta name="googlebot" content="noindex">';
 		echo "<!--";
 	}
 	if ($activation == true) {
+	
 		?>
 			<meta name="description" content="<?= empty($meta_data['description_1']) ? $param['description_1'] : $meta_data['description_1'] ?>">
 			<meta name="keywords" content="<?= empty($meta_data['keywords']) ? $param['keywords'] : $meta_data['keywords']?>">
@@ -663,7 +664,7 @@ function hotjar_tracking($activation)
 		],
 		[
 			'site_url' => '/official/about',
-			'site_name' => '<!-- Hotjar Tracking Code for htttps://waste4change.com/official/about -->',
+			'site_name' => '<!-- Hotjar Tracking Code for htttps://waste4change.com/official/contact/about -->',
 			'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 			'tracking_code' => '1796810',
 			'status' => true,
@@ -673,13 +674,6 @@ function hotjar_tracking($activation)
 			'site_name' => '<!-- Hotjar Tracking Code for htttps://waste4change.com/official/career -->',
 			'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 			'tracking_code' => '1964994',
-			'status' => true,
-		],
-		[
-			'site_url' => '/official/research',
-			'site_name' => '<!-- Hotjar Tracking Code for htttps://waste4change.com/official/contact/research -->',
-			'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
-			'tracking_code' => '1919444',
 			'status' => true,
 		],
 		[

@@ -1,4 +1,4 @@
-<div id="<?= $section_slug ?>" style="height: 10px;position: absolute;width: 80%;margin-top: -200px"></div>
+<div id="<?= $section_slug ?>" style="height: 0px;position: absolute;width: 80%;margin-top: -200px"></div>
 <section class="g-bg-secondary <?= $this->agent->is_mobile() ? 'g-pt-50 g-pb-0' : 'g-py-70' ?>">
 	<div class="container">
 		<div class="text-center mb-2">
