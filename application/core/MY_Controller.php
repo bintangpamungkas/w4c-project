@@ -56,9 +56,15 @@ class MY_Controller extends CI_Controller
 			$target->menu = $categories;
 			$targets[] = $target;
 		}
-		//END GET service
-		//			 print_r($targets);
-		//			 die();
+
+		$circular = new stdClass();
+		$circular->service_target_id = 3;
+		$circular->title = 'Sirkular';
+		$circular->icon = 'circular-active-o.png';
+		$circular->url='program/sirkular/';
+		$targets[2]=$circular;
+		
+
 		$data['template'] = empty($template) ? 'general' : $template;
 		$data['lang'] = $lang;
 

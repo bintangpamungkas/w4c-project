@@ -1,0 +1,30 @@
+diff a/application/controllers/Site.php b/application/controllers/Site.php	(rejected hunks)
+@@ -11,25 +11,15 @@
+ 		$this->load->model('crud_model');
+ 	}
+ 
+-	public function trial_form($value)
+-	{
+-		$data['title'] = 'Trial Form ' . $value;
+-		$data['id'] = 'site';
+-		$data['subtitle'] = 'information';
+-		$data['data_mode'] = 'general';
+-		$data['page_heading'] = APP_NAME;
+-		$data['is_bilingual'] = true;
+-		$data['value'] = $value;
+-		$this->render_page('sites/join_test', $data);
+-	}
+ 	public function index()
+ 	{
+ 		$this->load->model('blog_model');
+-
+ 		$this->load->model('service_model');
++		$lang = $this->get_language();
++
++		$data['copy'] = json_decode(file_get_contents(base_url('database/json/home/home_page_'.$lang.'.json')));
+ 		$input_city = $this->input->get('city');
+ 
+-		$lang = $this->get_language();
+ 		if (!$this->agent->is_mobile()) {
+ 			$targets = $this->crud_model->select('service_target', QUERY_RESULT, ['service_target_id', 'service_target_name service_target_slug', 'dictionary.dictionary_content service_target_name', 'service_target_icon'], ['language_code' => $lang, 'deleted_at' => null], ['service_target' => ['dictionary' => 'dictionary_slug=service_target_name']]);
+ 			$service_target = [];

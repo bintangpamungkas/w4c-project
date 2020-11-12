@@ -39,6 +39,8 @@
           foreach ($navigation_array as $nav) :
             if (!empty($nav['menu'])) :
               foreach ($nav['menu'] as $menu) : ?>
+                <?php if(!empty($menu->menu)): ?>
+
                 <div class="col-lg-auto col-md-6 g-mb-40 g-mb-0--lg <?= $this->agent->is_mobile() ? 'text-center' : '' ?>">
                   <div id="accordion-<?= $i ?>" class="u-accordion u-accordion-bg-primary u-accordion-color-white" role="tablist" aria-multiselectable="true">
                     <!-- Card -->
@@ -76,6 +78,7 @@
                 </div>
               <?php
                 $i++;
+                  endif;
               endforeach; //  foreach ($nav['menu'] as $menu)
             endif; //	if (!empty($nav['menu'])):
           endforeach; //foreach ($navigation_array as $nav):
@@ -84,6 +87,8 @@
             if (!empty($nav['menu'])) :
               ?>
               <?php foreach ($nav['menu'] as $menu) : ?>
+                <?php if(!empty($menu->menu)): ?>
+
                 <div class="col-lg-auto col-md-6 g-mb-40 g-mb-0--lg <?= $this->agent->is_mobile() ? 'text-center' : '' ?>">
                   <div class="u-heading-v2-3 g-mb-20">
                     <h2 class="u-heading-v2__title h6 text-uppercase mb-0 font-weight-bold"><?= $menu->title ?></h2>
@@ -96,6 +101,7 @@
                         </li>
                       <?php endforeach; ?>
                     <?php endforeach; ?>
+
                     <?php if ($menu->service_target_id == 2) : ?>
                       <li class="g-mb-5">
                         <a class="g-color-white-opacity-0_8" href="http://w4c.id/rumahkompos">Home Composting</a>
@@ -103,6 +109,8 @@
                     <?php endif; ?>
                   </ul>
                 </div>
+                <?php endif; ?>
+
               <?php endforeach; //  foreach ($nav['menu'] as $menu)
               ?>
         <?php

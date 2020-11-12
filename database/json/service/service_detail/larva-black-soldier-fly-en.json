@@ -20,9 +20,9 @@
     "welcome":{
       "section_template":"welcome",
       "section_menu_title":"",
-      "section_title":"Black Soldier Fly (BSF) Larvae",
+      "section_title":"Black Soldier Fly (BSF) Product",
       "section_subtitle":"",
-      "section_message":"Black Soldier Fly (BSF) larvae are a good source of protein and safe to be consumed by both poultry and fish. Our BSF product varies from:<br> <span class='g-font-weight-900 w4c-color-blue g-mr-10'>&#8226</span>Fresh larvae <br><span  class='g-font-weight-900 w4c-color-blue g-mr-10'>&#8226</span>Dried larvae (ProPOP, ProFlakes, ProCrumb)",
+      "section_message":"Alternative organic feed contained with high protein which good and safe for your pets and animal farm. Available in various variants :<br> <span class='g-font-weight-900 w4c-color-blue g-mr-10'>&#8226</span>BSF cycle product (fresh larvae, pupae, prepupae, eggies, etc) <br><span  class='g-font-weight-900 w4c-color-blue g-mr-10'>&#8226</span>BSF post-processing product (PRO-POP, PRO-FLAKES, PRO-CRUMB, etc)",
       "section_image":"larva.png",
       "section_items":[
         {
@@ -43,7 +43,7 @@
       "section_menu_title":"ABOUT",
       "section_title":"ABOUT",
       "section_subtitle":"Black Soldier Fly (BSF) ",
-      "section_message":"Black Soldier Fly (BSF) is a type of fly that is three times the size of an ordinary fly. BSF could help reduce the negative impact caused by the accumulation of organic material in nature and also a very great protein-source feed alternative for livestock and fish. The BSF larvae product is directly cultivated and processed by ProBSF as one of Waste4Change collaboration program with guarantee to its safety and cleanliness.",
+      "section_message":"Black Soldier Fly (BSF) is a type of fly that is three times the size of an ordinary fly. BSF could help reduce the negative impact caused by the accumulation of organic material in nature and also a very great protein-source feed alternative for livestock and fish. The BSF larvae product is directly cultivated and processed with PROBSF as part of collaboration with Waste4change.",
       "section_image":"1566800800834_7429.png",
       "section_items":[
         {
@@ -84,7 +84,7 @@
       "section_template":"bsf_cycle",
       "section_menu_title":"BSF LIFE CLYCLE",
       "section_title":"BLACK SOLDIER FLY (BSF) LIFE CYCLE",
-      "section_subtitle":"We process 15-day old BSF larvae into dried and fresh feed that can be consumed by poultry, and fish.",
+      "section_subtitle":"BSF Larvae harvested on 15-17 days old to be processed into alternative feed for your pet or animal farm. It can be processed to be directly and fresh or processed further for dried & post processing product.",
       "section_message":"",
       "section_image":"cycle.png",
       "section_items":[

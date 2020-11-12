@@ -1,7 +1,7 @@
 <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-overflow-hidden"
          data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
 	<div class="divimage dzsparallaxer--target w-100"
-	     style="height: 130%; background-image: url(<?= base_url(DIR_IMG.'bg/2-conversion-homepage.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
+	     style="height: 130%; background-image: url(<?= base_url(DIR_IMG.'bg/conversion-homepage.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
 	<div style="background:linear-gradient(rgba(248,248,248,0.98), rgba(243,243,243,0.8))">
 		<div class="container <?= $this->agent->is_mobile() ? 'g-py-50' : 'g-py-70' ?>">
 			<div class="text-center g-mb-50">

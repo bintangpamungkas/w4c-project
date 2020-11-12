@@ -20,9 +20,9 @@
     "welcome":{
       "section_template":"welcome",
       "section_menu_title":"",
-      "section_title":"Larva Black Soldier Fly (BSF)",
+      "section_title":"Produk Black Soldier Fly (BSF)",
       "section_subtitle":"",
-      "section_message":"Pakan hewan tinggi protein, baik dan aman untuk konsumsi unggas, dan ikan. Tersedia dalam berbagai varian: <br> <span class='g-font-weight-900 w4c-color-blue g-mr-10'>&#8226</span>larva BSF segar<br> <span class='g-font-weight-900 w4c-color-blue g-mr-10'>&#8226</span>larva BSF kering (ProPOP, ProFlakes, ProCrumb)",
+      "section_message":"Pakan alternatif organik yang tinggi protein, baik dan aman untuk konsumsi hewan ternak & hewan kesayangan Anda. Tersedia dalam berbagai varian: <br> <span class='g-font-weight-900 w4c-color-blue g-mr-10'>&#8226</span>Produk siklus BSF (larva segar, pupae, prepupae, telur, dll)<br> <span class='g-font-weight-900 w4c-color-blue g-mr-10'>&#8226</span>Produk olahan lanjut larva BSF (PRO-POP, PRO-FLAKES, PRO-CRUMB, dll)",
       "section_image":"larva.png",
       "section_items":[
         {
@@ -43,7 +43,7 @@
       "section_menu_title":"TENTANG",
       "section_title":"TENTANG",
       "section_subtitle":"Black Soldier Fly (BSF) ",
-      "section_message":"Black Soldier Fly (BSF) merupakan jenis lalat yang berukuran 3 kali lalat biasa. Selain berguna untuk mengurangi dampak negatif dari penumpukan material organik di alam, larva BSF juga sangat baik dan ekonomis untuk dimanfaatkan sebagai pakan hewan hias dan ternak. Larva BSF dibudidayakan & diproses langsung oleh ProBSF sebagai bentuk kemitraan Waste4Change dengan menjamin kesehatan serta kebersihannya.",
+      "section_message":"Black Soldier Fly (BSF) merupakan jenis lalat yang berukuran 3 kali lalat biasa. Selain berguna untuk mengurangi dampak negatif dari penumpukan material organik di alam, larva BSF juga sangat baik dan ekonomis untuk dimanfaatkan sebagai pakan hewan hias dan ternak. Larva BSF dibudidayakan & diproses langsung oleh ProBSF sebagai bentuk kolaborasi dengan Waste4Change. ",
       "section_image":"1566800800834_7429.png",
       "section_items":[
         {
@@ -84,7 +84,7 @@
       "section_template":"bsf_cycle",
       "section_menu_title":"SIKLUS BSF",
       "section_title":"SIKLUS HIDUP BLACK SOLDIER FLY (BSF)",
-      "section_subtitle":"Larva BSF yang sudah berusia 15 hari sejak menetas adalah yang diproses menjadi pakan basah (fresh) atau kering yang aman dikonsumsi hewan hias dan ternak seperti unggas dan ikan.",
+      "section_subtitle":"Larva BSF dipanen dalam usia 15-17 hari setelah menetas yang kemudian dapat dimanfaatkan sebagai pakan alternatif untuk hewan ternak maupun hewan kesayangan Anda dalam bentuk pakan basah (fresh) atau pakan kering (olahan lanjut larva).",
       "section_message":"",
       "section_image":"cycle.png",
       "section_items":[

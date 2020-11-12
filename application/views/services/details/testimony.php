@@ -103,6 +103,18 @@ if (($this->agent->is_mobile() && count($section->section_items) > 1) || count($
 				});
 			</script>
 		<?php endif; ?>
+		<?php if (!empty($section->section_message) && !empty($section->section_ctas)) : ?>
+			<div class="g-mt-50 mb-4 g-px-10 text-center">
+				<?= $section->section_message	 ?>
+				<?php foreach ($section->section_ctas as $ctaI => $cta) : ?>
+					<a class="g-font-weight-600" href="<?= get_url($cta->cta_url) ?>" style="color:#17A2B8 !important">
+						<img class="g-ml-10" src="<?= get_image(DIR_ICON . $cta->cta_image) ?>" alt="">
+						<?= $cta->cta_title ?>
+					</a>
+
+				<?php endforeach; ?>
+			</div>
+		<?php endif; ?>
 	</div>
 </section>
 <!-- End Testimony -->
