@@ -1,20 +1,19 @@
 {
   "service_id":41,
+  "service_parent_id": null,
   "service_name":"Larva Black Soldier Fly (BSF)",
   "service_short_name":"Larva Black Soldier Fly",
   "service_page_url":"official/service/larva-black-soldier-fly",
-  "service_description":"",
+  "service_thumbnail":"larva.png",
   "service_portfolio_url":"",
   "service_proposal_url":"",
   "service_join_url":"",
-  "service_thumbnail_img":"",
   "service_meta": {
-    "site_url": "official/service/larva-black-soldier-flyr",
-    "title_1": "Waste4Change - Larva Black Soldier Fly",
+    "title": "Larva Black Soldier Fly sebagai Pakan Hewan Tinggi Protein, Baik dan Aman untuk Konsumsi Unggas dan Ikan",
     "description_1": "Larva Black Soldier Fly sebagai pakan hewan tinggi protein, baik dan aman untuk konsumsi unggas, dan ikan",
-    "title_2": "Larva Black Soldier Fly sebagai Pakan Hewan Tinggi Protein, Baik dan Aman untuk Konsumsi Unggas dan Ikan",
     "description_2": "Larva Black Soldier Fly sebagai pakan hewan tinggi protein, baik dan aman untuk konsumsi unggas, dan ikan",
-    "keywords": "black soldier fly, larva black soldier fly, sampah organik, pakan ternak, pakan tinggi protein, larva BSF"
+    "keywords": "black soldier fly, larva black soldier fly, sampah organik, pakan ternak, pakan tinggi protein, larva BSF",
+    "site_url": "official/service/larva-black-soldier-flyr"
   },
   "sections":{
     "welcome":{
@@ -23,20 +22,7 @@
       "section_title":"Produk Black Soldier Fly (BSF)",
       "section_subtitle":"",
       "section_message":"Pakan alternatif organik yang tinggi protein, baik dan aman untuk konsumsi hewan ternak & hewan kesayangan Anda. Tersedia dalam berbagai varian: <br> <span class='g-font-weight-900 w4c-color-blue g-mr-10'>&#8226</span>Produk siklus BSF (larva segar, pupae, prepupae, telur, dll)<br> <span class='g-font-weight-900 w4c-color-blue g-mr-10'>&#8226</span>Produk olahan lanjut larva BSF (PRO-POP, PRO-FLAKES, PRO-CRUMB, dll)",
-      "section_image":"larva.png",
-      "section_items":[
-        {
-          "item_title":"",
-          "item_image":""
-        }
-      ],
-      "section_ctas":[
-        {
-          "cta_title":"PESAN SEKARANG",
-          "cta_url":"https://www.tokopedia.com/",
-          "cta_class":""
-        }
-      ]
+      "section_image":"larva.png"
     },
     "about":{
       "section_template":"about",
@@ -44,17 +30,19 @@
       "section_title":"TENTANG",
       "section_subtitle":"Black Soldier Fly (BSF) ",
       "section_message":"Black Soldier Fly (BSF) merupakan jenis lalat yang berukuran 3 kali lalat biasa. Selain berguna untuk mengurangi dampak negatif dari penumpukan material organik di alam, larva BSF juga sangat baik dan ekonomis untuk dimanfaatkan sebagai pakan hewan hias dan ternak. Larva BSF dibudidayakan & diproses langsung oleh ProBSF sebagai bentuk kolaborasi dengan Waste4Change. ",
-      "section_image":"1566800800834_7429.png",
-      "section_items":[
-        {
-          "item_title":"",
-          "item_image":""
-        }
-      ],
+      "section_image":"1566800800834_7429.png"
+    },
+    "interest":{
+      "section_template":"hero",
+      "section_menu_title":"",
+      "section_title":"Tertarik Belajar Black Soldier Fly?",
+      "section_subtitle":"Dapatkan informasi mendalam mengenai pengelolaan sampah organik dengan menggunakan Black Soldier Fly (BSF), serta metode budidaya dan pengembangbiakan BSF.",
+      "section_message":"",
+      "section_image":"bsf2.png",
       "section_ctas":[
         {
-          "cta_title":"",
-          "cta_url":"",
+          "cta_title":"BSF LEARNING CENTER",
+          "cta_url":"official/service/black-soldier-fly-learning-center",
           "cta_class":""
         }
       ]
@@ -146,7 +134,7 @@
       "section_menu_title":"TESTIMONI",
       "section_title":"TESTIMONI",
       "section_subtitle":"",
-      "section_message":"",
+      "section_message":"Testimoni dan Info Lainnya",
       "section_image":"",
       "section_items":[
         {
@@ -160,14 +148,15 @@
           "item_subtitle":"Owner of Plat L Petshop",
           "item_message":"Larvanya fresh, datangnya cepat, ikan saya makannya jadi lebih lahap, jarang sakit.",
           "item_image":"testi2.jpg"
+        },
+        {
+          "item_title": "<a class='w4c-color-blue' href='https://www.instagram.com/probsfid/'><i class='fa fa-instagram g-mr-10'></i>@probsfid</a>",
+          "item_subtitle":"",
+          "item_message":"We are an initiative company specifically sell any post processing products of Black Soldier Fly Larvae-in collaboration with EAWAG",
+          "item_image":"probsf.png"
         }
       ],
       "section_ctas":[
-        {
-          "cta_title":"",
-          "cta_url":"",
-          "cta_class":""
-        }
       ]
     },
     "benefit":{
@@ -206,7 +195,7 @@
       ]
     },
     "recommendation":{
-      "section_template":"recommendation",
+      "section_template":"recommended_for",
       "section_menu_title":"REKOMENDASI",
       "section_title":"DIREKOMENDASIKAN UNTUK",
       "section_subtitle":"",
@@ -261,7 +250,7 @@
       "section_ctas":[
         {
           "cta_title":"PESAN SEKARANG",
-          "cta_url":"https://www.tokopedia.com/",
+          "cta_url":"https://www.tokopedia.com/w4c-sda",
           "cta_class":""
         }
       ]

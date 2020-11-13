@@ -40,9 +40,8 @@
 			$data['job_type'] = json_decode(file_get_contents(base_url('database/json/career/job_type.json')));
 			$data['meta_data'] = [
 				'site_url' => 'career',
-				'title_1' => 'Waste4Change - ' . ucwords(lang('career')),
+				'title' => 'Waste4Change - ' . ucwords(lang('career')),
 				'description_1' => $data['copy']->banner->title,
-				'title_2' => 'Waste4Change - ' . ucwords(lang('career')),
 				'description_2' => $data['copy']->banner->title,
 			];
       $this->render_page('careers/main/index', $data, 'services');
@@ -88,9 +87,8 @@
 			$data['job_type'] = json_decode(file_get_contents(base_url('database/json/career/job_type.json')));
 			$data['meta_data'] = [
 				'site_url' => 'career/job',
-				'title_1' => 'Waste4Change - Job List',
+				'title' => 'Waste4Change - Job List',
 				'description_1' => json_decode(file_get_contents(base_url('database/json/career/career_page_'.$lang.'.json')))->banner->title,
-				'title_2' => 'Waste4Change - Job List',
 				'description_2' => json_decode(file_get_contents(base_url('database/json/career/career_page_'.$lang.'.json')))->banner->title,
 			];
       $this->render_page('careers/job_list/index', $data, 'services');
@@ -146,9 +144,8 @@
 
 			$data['meta_data'] = [
 				'site_url' => 'career/job/'.$slug,
-				'title_1' => 'Waste4Change - ' . $data['job']->title,
+				'title' => 'Waste4Change - ' . $data['job']->title,
 				'description_1' => $data['job']->title.' - '. json_decode(file_get_contents(base_url('database/json/career/career_page_'.$lang.'.json')))->banner->title,
-				'title_2' => 'Waste4Change - ' . $data['job']->title,
 				'description_2' => $data['job']->title.' - '. json_decode(file_get_contents(base_url('database/json/career/career_page_'.$lang.'.json')))->banner->title,
 				'image' => SITE_URL . DIR_BG . 'career/' . $data['job_category']->{$data['job']->category}->image,
 			];

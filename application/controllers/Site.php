@@ -56,9 +56,8 @@ class Site extends MY_Controller
 		$data['is_bilingual'] = true;
 		$data['meta_data'] = [
 			'site_url' => '/official/',
-			'title_1' => 'Waste4Change',
+			'title' => $this->get_lang('title-a-social-entrepreneur-that-provides-responsible-waste-management-services-'),
 			'description_1' => $this->get_lang('title-a-social-entrepreneur-that-provides-responsible-waste-management-services-'),
-			'title_2' => $this->get_lang('title-a-social-entrepreneur-that-provides-responsible-waste-management-services-'),
 			'description_2' => $this->get_lang('desc-a-social-entrepreneur-that-provides-segregated-and-responsible-waste-management-services-by-reducing-the-amount-of-waste-that-end-up-in-landfills'),
 			'keywords' => $this->get_lang('key-waste-management-waste-management-jakarta-waste-management-service-waste-management-using-modern-technology-recycling-service-waste-processing-service-'),
 		];
@@ -76,9 +75,8 @@ class Site extends MY_Controller
 		$data['is_bilingual'] = true;
 		$data['meta_data'] = [
 			'site_url' => '/official/about',
-			'title_1' => 'Waste4Change - About',
+			'title' => $this->get_lang('title-a-social-entrepreneur-that-provides-responsible-waste-management-services-'),
 			'description_1' => $this->get_lang('title-a-social-entrepreneur-that-provides-responsible-waste-management-services-'),
-			'title_2' => $this->get_lang('title-a-social-entrepreneur-that-provides-responsible-waste-management-services-'),
 			'description_2' => $this->get_lang('desc-a-social-entrepreneur-that-provides-segregated-and-responsible-waste-management-services-by-reducing-the-amount-of-waste-that-end-up-in-landfills'),
 			'keywords' => $this->get_lang('key-waste-management-waste-management-jakarta-waste-management-service-waste-management-using-modern-technology-recycling-service-waste-processing-service-'),
 		];
@@ -115,9 +113,8 @@ class Site extends MY_Controller
 			];
 		$data['meta_data'] = [
 			'site_url' => '/official/contact',
-			'title_1' => 'Waste4Change - Contact',
+			'title' => $this->get_lang('title-a-social-entrepreneur-that-provides-responsible-waste-management-services-'),
 			'description_1' => $this->get_lang('title-a-social-entrepreneur-that-provides-responsible-waste-management-services-'),
-			'title_2' => $this->get_lang('title-a-social-entrepreneur-that-provides-responsible-waste-management-services-'),
 			'description_2' => $this->get_lang('desc-a-social-entrepreneur-that-provides-segregated-and-responsible-waste-management-services-by-reducing-the-amount-of-waste-that-end-up-in-landfills'),
 			'keywords' => $this->get_lang('key-waste-management-waste-management-jakarta-waste-management-service-waste-management-using-modern-technology-recycling-service-waste-processing-service-'),
 		];

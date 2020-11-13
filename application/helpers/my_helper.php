@@ -472,9 +472,8 @@ function services_list_helper()
 function meta_data($activation, $meta_data = false)
 {
 	$param = [
-		'title_1' => 'Waste4Change - Responsible Waste Management',
+		'title' => get_lang('title-a-social-entrepreneur-that-provides-responsible-waste-management-services-'),
 		'description_1' => get_lang('title-a-social-entrepreneur-that-provides-responsible-waste-management-services-'),
-		'title_2' => get_lang('title-a-social-entrepreneur-that-provides-responsible-waste-management-services-'),
 		'description_2' => get_lang('desc-a-social-entrepreneur-that-provides-segregated-and-responsible-waste-management-services-by-reducing-the-amount-of-waste-that-end-up-in-landfills'),
 		'keywords' => get_lang('key-waste-management-waste-management-jakarta-waste-management-service-waste-management-using-modern-technology-recycling-service-waste-processing-service-'),
 		'image' => base_url(DIR_IMG . 'logo/favicon.jpg')
@@ -491,7 +490,7 @@ function meta_data($activation, $meta_data = false)
 			<meta name="keywords" content="<?= empty($meta_data['keywords']) ? $param['keywords'] : $meta_data['keywords']?>">
 			<meta property="og:url" content="<?= empty($meta_data['site_url']) ? SITE_URL : SITE_URL . $meta_data['site_url'] ?>" />
 			<meta property="og:site_name" content="<?= APP_NAME ?>" />
-			<meta property="og:title" content="<?= empty($meta_data['title_2']) ? $param['title_2'] : $meta_data['title_2'] ?>">
+			<meta property="og:title" content="<?= empty($meta_data['title']) ? $param['title'] : $meta_data['title'] ?>">
 			<meta property="og:description" content="<?= empty($meta_data['description_2']) ? $param['description_2'] : $meta_data['description_2'] ?>" />
 			<meta property="og:image" content="<?= empty($meta_data['image']) ? $param['image'] : $meta_data['image'] ?>">
 			<meta property="og:image:type" content="image/jpg">
@@ -499,7 +498,7 @@ function meta_data($activation, $meta_data = false)
 			<meta property="og:image:height" content="439" />
 			<meta name="twitter:card" content="summary_large_image" />
 			<meta name="twitter:description" content="<?= empty($meta_data['description_2']) ? $param['description_2'] : $meta_data['description_2'] ?>" />
-			<meta name="twitter:title" content="<?= empty($meta_data['title_2']) ? $param['title_2'] : $meta_data['title_2'] ?>" />
+			<meta name="twitter:title" content="<?= empty($meta_data['title']) ? $param['title'] : $meta_data['title'] ?>" />
 			<meta name="twitter:site" content="@Waste4Change" />
 			<meta name="twitter:image" content="<?= empty($meta_data['image']) ? $param['image'] : $meta_data['image'] ?>" />
 			<meta name="twitter:creator" content="@Waste4Change" />

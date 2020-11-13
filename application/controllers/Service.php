@@ -87,27 +87,24 @@ class Service extends MY_Controller
 		if (empty($target) || $target = "all") {
 			$data['meta_data'] = [
 				'site_url' => '/service/',
-				'title_1' => 'Waste4Change - ' . $this->get_lang('all-service'),
 				'description_1' => $this->get_lang('desc-a-list-of-waste4changes-waste-management-services-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
-				'title_2' => $this->get_lang('title-a-list-of-waste4changes-waste-management-services-'),
+				'title' => $this->get_lang('title-a-list-of-waste4changes-waste-management-services-'),
 				'description_2' => $this->get_lang('desc-a-list-of-waste4changes-waste-management-services-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
 				'keywords' => $this->get_lang('key-waste4change-service-waste-service-waste-management-waste-processing-waste-education-waste-research-waste-study-waste-recycling-waste-collection-waste-recycling-waste-bin-trash-bag-trash-can'),
 			];
 		} else if ($target = "for-company") {
 			$data['meta_data'] = [
 				'site_url' => '/service/',
-				'title_1' => 'Waste4Change - ' . $this->get_lang('for-company'),
 				'description_1' => $this->get_lang('desc-a-list-of-waste4changes-waste-management-services-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
-				'title_2' => $this->get_lang('title-a-list-of-waste4changes-waste-management-services-'),
+				'title' => $this->get_lang('title-a-list-of-waste4changes-waste-management-services-'),
 				'description_2' => $this->get_lang('desc-a-list-of-waste4changes-waste-management-services-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
 				'keywords' => $this->get_lang('key-waste4change-service-waste-service-waste-management-waste-processing-waste-education-waste-research-waste-study-waste-recycling-waste-collection-waste-recycling-waste-bin-trash-bag-trash-can'),
 			];
 		} else if ($target = "for-individuals") {
 			$data['meta_data'] = [
 				'site_url' => '/service/',
-				'title_1' => 'Waste4Change - ' . $this->get_lang('for-individuals'),
 				'description_1' => $this->get_lang('desc-a-list-of-waste4changes-waste-management-services-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
-				'title_2' => $this->get_lang('title-a-list-of-waste4changes-waste-management-services-'),
+				'title' => $this->get_lang('title-a-list-of-waste4changes-waste-management-services-'),
 				'description_2' => $this->get_lang('desc-a-list-of-waste4changes-waste-management-services-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
 				'keywords' => $this->get_lang('key-waste4change-service-waste-service-waste-management-waste-processing-waste-education-waste-research-waste-study-waste-recycling-waste-collection-waste-recycling-waste-bin-trash-bag-trash-can'),
 			];
@@ -139,9 +136,8 @@ class Service extends MY_Controller
 			// Page Information
 			$data['meta_data'] = [
 				'site_url' => $service->service_meta->site_url,
-				'title_1' => 'Waste4Change - ' . $service->service_meta->title_1,
 				'description_1' => $service->service_meta->description_1,
-				'title_2' => $service->service_meta->title_2,
+				'title' => $service->service_meta->title,
 				'description_2' => $service->service_meta->description_2,
 				'keywords' => $service->service_meta->keywords,
 			];
@@ -237,9 +233,8 @@ class Service extends MY_Controller
 			// Page Information
 			$data['meta_data'] = [
 				'site_url' => $service->service_page_url,
-				'title_1' => 'Waste4Change - ' . $service->service_name,
 				'description_1' => $service->service_meta_description,
-				'title_2' => $service->service_meta_title,
+				'title' => $service->service_meta_title,
 				'description_2' => $service->service_meta_description,
 				'keywords' => $service->service_meta_title,
 			];
@@ -313,9 +308,8 @@ class Service extends MY_Controller
 
 		$data['meta_data'] = [
 			'site_url' => $service->service_page_url . '/join',
-			'title_1' => 'Waste4Change - Join ' . $service->service_name,
 			'description_1' => $service->service_meta_description,
-			'title_2' => $service->service_meta_title,
+			'title' => $service->service_meta_title,
 			'description_2' => $service->service_meta_description,
 			'keywords' => $service->service_meta_title,
 		];

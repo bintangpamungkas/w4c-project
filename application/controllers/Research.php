@@ -33,9 +33,8 @@ class Research extends MY_Controller
         $data['is_bilingual'] = true;
         $data['meta_data'] = [
             'site_url' => 'research',
-            'title_1' => 'Waste4Change - ' . lang('research'),
+            'title' => 'Waste4Change - ' . lang('research'),
             'description_1' => $this->get_lang('desc-a-list-of-waste4changes-waste-management-services-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
-            'title_2' => 'Waste4Change - ' . lang('research'),
             'description_2' => $this->get_lang('desc-a-list-of-waste4changes-waste-management-services-from-waste-education-waste-research-waste-collection-and-waste-recycling'),
             'keywords' => $this->get_lang('key-waste4change-service-waste-service-waste-management-waste-processing-waste-education-waste-research-waste-study-waste-recycling-waste-collection-waste-recycling-waste-bin-trash-bag-trash-can'),
             'image' => SITE_URL . DIR_IMG . 'banner/thumbnail-pusat-' . $data['lang'] . '.jpg',
@@ -72,9 +71,8 @@ class Research extends MY_Controller
             if ($research['slug'] == $slug) {
                 $data['meta_data'] = [
                     'site_url' => 'research/' . $slug,
-                    'title_1' => 'Waste4Change - ' . $research['hidden_title'][$data['lang']],
+                    'title' => 'Waste4Change - ' . $research['hidden_title'][$data['lang']],
                     'description_1' => $research['content'][$data['lang']]['detail'],
-                    'title_2' => 'Waste4Change - ' . $research['hidden_title'][$data['lang']],
                     'description_2' => $research['content'][$data['lang']]['detail'],
                     'keywords' => $research['keyword'][$data['lang']],
                     'image' => $research['banner']['thumb_image'][$data['lang']],

@@ -11,13 +11,13 @@
 						<span class="g-font-asap g-color-black-dark-v2 g-font-weight-600 text-uppercase <?= $this->agent->is_mobile() ? 'g-font-size-20' : '' ?>"><?= $section->section_title ?></span>
 						<hr class="g-width-50 g-mt-5 g-mb-15 g-brd-2 g-brd-blue">
 					</div>
-					<div style="background: url('<?= get_image(DIR_IMG.'service/' . $service_id . '/' . $section->section_image) ?>');height: 200px;background-size: cover"></div>
+					<div style="background: url('<?= get_image(DIR_IMG.'service/' . $service_id . '/bg/' . $section->section_image) ?>');height: 200px;background-size: cover"></div>
 				</div>
 				<?php
 			}
 			?>
 			<div class="col-lg-6 g-mb-30 <?= $this->agent->is_mobile() ? 'd-none' : '' ?>">
-				<div style="background: url('<?= get_image(DIR_IMG.'service/' . $service_id . '/' . $section->section_image) ?>');height: 400px;background-size: cover"></div>
+				<div style="background: url('<?= get_image(DIR_IMG.'service/' . $service_id . '/bg/' . $section->section_image) ?>');height: 400px;background-size: cover"></div>
 			</div>
 
 			<div class="col-md-6 g-mb-30">

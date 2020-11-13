@@ -9,7 +9,7 @@
 </style><!-- Promo Block -->
 <section>
 	<div id="<?= $section_slug ?>" class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
-		<div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center" style="height: 100%;background: url(<?= base_url(DIR_IMG . 'service/' . $service_id . '/' . $section->section_image) ?>);background-size: cover;<?= $this->agent->is_mobile() ? 'background-position-x: right;' : '' ?>"></div>
+		<div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center" style="height: 100%;background: url(<?= base_url(DIR_IMG . 'service/' . $service_id . '/bg/' . $section->section_image) ?>);background-size: cover;<?= $this->agent->is_mobile() ? 'background-position-x: right;' : '' ?>"></div>
 		<div class="full-height-block pending-show animated d-zap" style="background-image: <?= $this->agent->is_mobile() ? 'linear-gradient(180deg, rgba(255, 255, 255, 0.7) 20%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.6) 100%)' : 'linear-gradient( 100deg , rgba(255, 255, 255,0.9) 0%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255,0) 100%);' ?>">
 			<div class="container">
 				<div class="row content-middle-fullscreen with-header middle-top <?= $this->agent->is_mobile() ? 'justify-content-center' : '' ?>">
@@ -37,13 +37,19 @@
 							</div>
 						</div>
 						<div class="row <?= $this->agent->is_mobile() ? 'justify-content-center pt-3 g-pb-40' : 'pt-5 g-pb-60' ?>">
-						<?php foreach ($section->section_ctas as $ctaI=>$cta): ?>
-							<div class="col-md-6 col-xs-12 text-center">
-								<a class="click_scroll btn btn-info btn-block g-color-white g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-mb-10" href="<?= empty($cta->cta_url) ? site_url('service/' . $service_id . '/join') : $cta->cta_url ?>">
-									<?= $cta->cta_title ?>
-								</a>
-							</div>
-						<?php endforeach; ?>
+							<?php if (empty($parent_service)) {
+								$CTAS = $service->sections->{'cta'}->section_ctas;
+							} else {
+								$CTAS = $parent_service->sections->{'cta'}->section_ctas;
+							} ?>
+							<?php foreach ($CTAS as $ctaI => $cta) : ?>
+								<div class="col-md-6 col-xs-12 text-center">
+									<a class="btn btn-block <?= empty($cta->cta_class) ? 'btn-info g-color-white' : $cta->cta_class ?>  g-font-size-13 text-uppercase  g-rounded-50 g-px-30 g-py-9 g-mb-10 " href="<?= empty($cta->cta_url) ? get_url('official/service/' . $service_slug . '/join') : get_url($cta->cta_url) ?>">
+										<?= $cta->cta_title ?>
+									</a>
+								</div>
+							<?php endforeach; ?>
+
 						</div>
 					</div>
 				</div>
