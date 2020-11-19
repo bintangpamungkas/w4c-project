@@ -127,7 +127,7 @@ class Service extends MY_Controller
 			redirect(site_url('service/akabis-waste-management-academy'));
 		} elseif ($service_slug == 'extended-producer-responsibility') {
 			redirect(site_url('service/in-store-recycling'));
-		} elseif ($service_slug == 'larva-black-soldier-fly') {
+		} elseif ($service_slug == 'produk-black-soldier-fly') {
 
 			$service = json_decode(file_get_contents(base_url('database/json/service/service_detail/' . $service_slug . '-' . $lang . '.json')));
 			$sections=$service->sections;
