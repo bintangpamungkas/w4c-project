@@ -219,6 +219,76 @@
 						</div>
 					</div>
 				</div>
+			<?php elseif ($service_id == 'in-store-recycling') : ?>
+				<div class="row justify-content-<?= $this->agent->is_mobile() ? 'center' : 'center' ?>">
+					<div class="col-auto g-mb-10">
+						<img src="<?= base_url() . DIR_ICON ?>pin/Tangerang2.png" alt="home blue pin" style="height:<?= $this->agent->is_mobile() ? '25px' : '30px' ?>; margin-right:10px; margin-bottom:0">
+						Tangerang
+					</div>
+					<div class="col-auto g-mb-10">
+						<img src="<?= base_url() . DIR_ICON ?>pin/Jakarta2.png" alt="home blue pin" style="height:<?= $this->agent->is_mobile() ? '25px' : '30px' ?>; margin-right:10px; margin-bottom:0">
+						Jakarta
+					</div>
+					<div class="col-auto g-mb-10">
+						<img src="<?= base_url() . DIR_ICON ?>pin/Bekasi2.png" alt="home blue pin" style="height:<?= $this->agent->is_mobile() ? '25px' : '30px' ?>; margin-right:10px; margin-bottom:0">
+						Bekasi
+					</div>
+					<div class="col-auto g-mb-10">
+						<img src="<?= base_url() . DIR_ICON ?>pin/Depok2.png" alt="home blue pin" style="height:<?= $this->agent->is_mobile() ? '25px' : '30px' ?>; margin-right:10px; margin-bottom:0">
+						Depok
+					</div>
+					<div class="col-auto g-mb-10">
+						<img src="<?= base_url() . DIR_ICON ?>pin/Bogor2.png" alt="home blue pin" style="height:<?= $this->agent->is_mobile() ? '25px' : '30px' ?>; margin-right:10px; margin-bottom:0">
+						Bogor
+					</div>
+					<div class="col-auto g-mb-10">
+						<img src="<?= base_url() . DIR_ICON ?>pin/Sidoarjo2.png" alt="home blue pin" style="height:<?= $this->agent->is_mobile() ? '25px' : '30px' ?>; margin-right:10px; margin-bottom:0">
+						Sidoharjo
+					</div>
+				</div>
+				<?php elseif ($service_id == 'responsible-waste-management') : ?>
+				<div class="row justify-content-<?= $this->agent->is_mobile() ? 'center' : 'center' ?>">
+				<div class="col-auto g-mb-10">
+						<img src="<?= base_url() . DIR_ICON ?>pin/Medan.png" alt="home blue pin" style="height:<?= $this->agent->is_mobile() ? '25px' : '30px' ?>; margin-right:10px; margin-bottom:0">
+						Medan
+					</div>
+				<div class="col-auto g-mb-10">
+						<img src="<?= base_url() . DIR_ICON ?>pin/Tangerang.png" alt="home blue pin" style="height:<?= $this->agent->is_mobile() ? '25px' : '30px' ?>; margin-right:10px; margin-bottom:0">
+						Tangerang
+					</div>
+					<div class="col-auto g-mb-10">
+						<img src="<?= base_url() . DIR_ICON ?>pin/Jakarta.png" alt="home blue pin" style="height:<?= $this->agent->is_mobile() ? '25px' : '30px' ?>; margin-right:10px; margin-bottom:0">
+						Jakarta
+					</div>
+					<div class="col-auto g-mb-10">
+						<img src="<?= base_url() . DIR_ICON ?>pin/Bekasi.png" alt="home blue pin" style="height:<?= $this->agent->is_mobile() ? '25px' : '30px' ?>; margin-right:10px; margin-bottom:0">
+						Bekasi
+					</div>
+					<div class="col-auto g-mb-10">
+						<img src="<?= base_url() . DIR_ICON ?>pin/Depok.png" alt="home blue pin" style="height:<?= $this->agent->is_mobile() ? '25px' : '30px' ?>; margin-right:10px; margin-bottom:0">
+						Depok
+					</div>
+					<div class="col-auto g-mb-10">
+						<img src="<?= base_url() . DIR_ICON ?>pin/Bogor.png" alt="home blue pin" style="height:<?= $this->agent->is_mobile() ? '25px' : '30px' ?>; margin-right:10px; margin-bottom:0">
+						Bogor
+					</div>
+					<div class="col-auto g-mb-10">
+						<img src="<?= base_url() . DIR_ICON ?>pin/Bandung.png" alt="home blue pin" style="height:<?= $this->agent->is_mobile() ? '25px' : '30px' ?>; margin-right:10px; margin-bottom:0">
+						Bandung
+					</div>
+					<div class="col-auto g-mb-10">
+						<img src="<?= base_url() . DIR_ICON ?>pin/Semarang.png" alt="home blue pin" style="height:<?= $this->agent->is_mobile() ? '25px' : '30px' ?>; margin-right:10px; margin-bottom:0">
+						Semarang
+					</div>
+					<div class="col-auto g-mb-10">
+						<img src="<?= base_url() . DIR_ICON ?>pin/Surabaya.png" alt="home blue pin" style="height:<?= $this->agent->is_mobile() ? '25px' : '30px' ?>; margin-right:10px; margin-bottom:0">
+						Surabaya
+					</div>
+					<div class="col-auto g-mb-10">
+						<img src="<?= base_url() . DIR_ICON ?>pin/Sidoarjo.png" alt="home blue pin" style="height:<?= $this->agent->is_mobile() ? '25px' : '30px' ?>; margin-right:10px; margin-bottom:0">
+						Sidoharjo
+					</div>
+				</div>
 			<?php else : ?>
 				<div class="row justify-content-center">
 					<div class="col-md-auto g-mb-10 text-center">

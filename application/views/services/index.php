@@ -78,11 +78,19 @@
 				$i = 0;
 				$service_id = 0;
 				foreach ($services as $service) {
+					if($service->service_slug == 'produk-black-soldier-fly'){
+						$service2 = json_decode(file_get_contents(base_url('database/json/service/service_detail/' . $service->service_slug . '-' . $lang . '.json')));
+						$service->service_description = $service2->sections->{'welcome'}->section_message;
+						$service->recomendation = $service2->sections->{'recommendation'}->section_items;
+					}
+
 					if ($service->service_id != $service_id) {
 						if ($this->agent->is_mobile()) { //mobile view
 			?>
 							<div class="bg-white g-my-20 box-shadow-down">
-								<div style="height: 200px;background: url(<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/thumbnail.jpg', base_url(DIR_IMG . 'error/1x2.png')) ?>);background-size: cover;"></div>
+							<!-- <img class="img-fluid w-100 h-100" src="<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/' . $service->service_thumbnail_image, base_url(DIR_IMG . 'error/1x2.png')) ?>" alt="<?= $service->service_name . ' image' ?>" style="-webkit-mask-image: -webkit-gradient(linear, <?= $i % 2 == 1 ? 'right top, left top,' : 'left top, right top,' ?> from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));"> -->
+
+								<div style="height: 200px;background: url(<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/' . $service->service_thumbnail_image, base_url(DIR_IMG . 'error/1x2.png')) ?>);background-size: cover;"></div>
 								<!-- <img class="img-fluid w-100" src="<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/thumbnail.jpg', base_url(DIR_IMG . 'error/1x2.png')) ?>" alt="<?= $service->service_name . ' image' ?>"> -->
 								<div class="bg-white g-mx-20 g-pa-20" style=" margin-top: -40px;">
 									<span class="g-color-black-opacity-0_8 g-font-weight-600 g-font-size-12 text-uppercase"><?= strtolower($service->service_category_name) == strtolower($service->service_name) ? 'GENERAL' : $service->service_category_name ?></span>
@@ -97,7 +105,8 @@
 										<?php
 										foreach ($service->recomendation as $recomendation) :
 										?>
-											<span class="u-label u-label--sm g-rounded-20 g-font-size-10 g-px-20 g-py-7 g-mb-5 g-mr-10 g-my-5 g-brd-0" style="color:<?= $recomendation->color ?>; background-color:<?= $recomendation->color, '20' ?>;border:1px solid <?= $recomendation->color ?>"><?= $recomendation->name ?></span>
+														<span class="u-label u-label--sm g-rounded-20 g-font-size-10 g-px-20 g-py-7 g-mb-5 g-mr-10 g-my-5 g-brd-0" style="color:<?= empty($recomendation->color) ? '#4489a2' :$recomendation->color ?>; background-color:<?= empty($recomendation->color) ? '#4489a2' :$recomendation->color ?>20"><?= empty($recomendation->name) ? $recomendation->item_title : $recomendation->name ?></span>
+
 										<?php
 										endforeach;
 										?>
@@ -129,7 +138,7 @@
 													<?php
 													foreach ($service->recomendation as $recomendation) :
 													?>
-														<span class="u-label u-label--sm g-rounded-20 g-font-size-12 g-px-20 g-py-7 g-mb-5 g-mr-10 g-my-5" style="color:<?= $recomendation->color ?>; background-color:<?= $recomendation->color, '20' ?>"><?= $recomendation->name ?></span>
+														<span class="u-label u-label--sm g-rounded-20 g-font-size-12 g-px-20 g-py-7 g-mb-5 g-mr-10 g-my-5" style="color:<?= empty($recomendation->color) ? '#4489a2' :$recomendation->color ?>; background-color:<?= empty($recomendation->color) ? '#4489a2' :$recomendation->color ?>20"><?= empty($recomendation->name) ? $recomendation->item_title : $recomendation->name ?></span>
 													<?php
 													endforeach;
 													?>
