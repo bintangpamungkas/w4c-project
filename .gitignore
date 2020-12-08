@@ -2,5 +2,4 @@
 .vscode
 vendor/
 application/controllers/Test.php
-index.php
 application/config/database.php
