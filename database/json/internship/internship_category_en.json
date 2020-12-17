@@ -1,0 +1,58 @@
+{
+  "os": {
+    "status": 1,
+    "name": "Operational Services",
+    "description": "Interested to learn more about the operational aspect of waste collection and recycling? Here is the place!",
+    "image": "operationalserveice.jpg",
+    "icon": "os.png",
+    "formUrl": ""
+  },
+  "ss": {
+    "status": 1,
+    "name": "Strategic Services",
+    "description": "For those of you who are curious about the educational, research, and consultation aspect of waste management, this department is the expert!",
+    "image": "strategicservice.jpg",
+    "icon": "ss.png",
+    "formUrl": ""
+  },
+  "ce": {
+    "status": 1,
+    "name": "Communication & Engagement",
+    "image": "communication-and-engagement.jpg",
+    "description": "Have you followed Waste4Change's social media & blog? Want to be a part of the creative team? let's have fun together!",
+    "icon": "ce.png",
+    "formUrl": ""
+  },
+  "tech": {
+    "status": 1,
+    "name": "Information & Technology",
+    "image": "tech.jpg",
+    "description": "Be involved in the department that integrates Waste4Change's waste management process with technology",
+    "icon": "it.png",
+    "formUrl": ""
+  },
+  "finance": {
+    "status": 1,
+    "name": "Finance & General Affairs",
+    "image": "finance.jpg",
+    "description": "Have a background in finance-accounting and/or business administration and is keen on building the support system in Waste4Change? Then you're at the right place! You can explore Waste4Change's works from legal, financial, as well as its building management aspect",
+    "icon": "fa-ga.png",
+    "formUrl": ""
+  },
+  "hc": {
+    "status": 1,
+    "name": "Human Capital",
+    "image": "hc.jpg",
+    "description": "An intern that is involved in the various phase of people's journey at Waste4Change? Let's help make the company's human resources work optimally!",
+    "icon": "hc.png",
+    "formUrl": ""
+  },
+  "business": {
+    "status": 1,
+    "name": "Business Development",
+    "image": "business.jpg",
+    "description": "For matters such as expanding cooperation and further developing both the company's services and products, leave it to Business and Development!",
+    "icon": "business.png",
+    "formUrl": ""
+  }
+}

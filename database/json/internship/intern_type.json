@@ -1,0 +1,18 @@
+{
+  "1": {
+    "name": "INTERN",
+    "color": "#F6A609"
+  },
+  "2": {
+    "name": "Project Based",
+    "color": "#2AC769"
+  },
+  "3": {
+    "name": "Intern",
+    "color": "#F6A609"
+  },
+  "4": {
+    "name": "Part-time",
+    "color": "#FF0000"
+  }
+}

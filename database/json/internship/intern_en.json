@@ -1,0 +1,598 @@
+{
+  "ux-researcher": {
+    "status": 0,
+    "title": "UX Researcher",
+    "category": "tech",
+    "type": 1,
+    "location": ["Semarang"],
+    "description": [
+      "Manage and conduct user research and concept development",
+      "Research and investigate user persona & their behavior",
+      "Collaborate with other teams to define and implement solutions for the software direction, visuals, and experience",
+      "Review & iterate product functions by collaborating with product engineers",
+      "Create product design (flow, mockup, prototyping, etc) and product development plan"
+    ],
+    "requirement": [
+      "Vocational / Bachelor Degree in Computer Science or related major",
+      "Experienced in handling at least 2 projects with a similar role",
+      "Strong knowledge on Design Sprint, Scrum & PDLC",
+      "Experience with conducting user research",
+      "Have the ability to design UI websites & apps using prototype tools (Figma, Adobe XD, Sketch, Marvel, etc)",
+      "Able to communicate clearly, both oral and written",
+      "Able to work in a team",
+      "Have a personal laptop",
+      "Willing to be placed in the Waste4Change Semarang Office",
+      "Have experiences regarding user research, prototyping, design sprint & communication"
+    ],
+    "talentaUrl":"https://recruitment.talenta.co/waste4change/NC9xUENJZTNyV29lUllGczEzdlJWUT09"
+  },
+  "product-ui-ux-designer": {
+    "status": 1,
+    "title": "Product UI/UX Designer",
+    "category": "tech",
+    "type": 1,
+    "location": ["Semarang"],
+    "description": [
+      "Create product design UI & Flow",
+      "Collaborate with other teams to define and implement solutions for the software direction, visuals, and experience",
+      "Execute design stages from concept to final hand-off to the engineering team",
+      "Review, test, & iterate product functions by collaborating with product engineers"
+    ],
+    "requirement": [
+      "A minimum of 1-year experience",
+      "Max 30 years old",
+      "Good understanding of product design process (Design Thinking, User Story, Product Requirement, etc)",
+      "Have knowledge regarding UI UX Design, excellent visual design skills with sensitivity to user-system interaction"
+    ],
+    "talentaUrl":"https://recruitment.talenta.co/waste4change/bHVxajdxVUZ2T0RJeWZzZVdaeE1wZz09"
+  },
+  "fullstack-wordpress-web-engineer": {
+    "status": 1,
+    "title": "Fullstack & Wordpress Web Engineer",
+    "category": "tech",
+    "type": 1,
+    "location": ["Semarang"],
+    "description": [
+      "Create system design and product development plan",
+      "Build a reliable product from scratch & WordPress environment",
+      "Manage system infrastructure"
+    ],
+    "requirement": [
+      "A minimum of 1-year experience",
+      "Understand web development using JS, CSS, HTML, Ajax, PHP using framework (Laravel, CI, WordPress)",
+      "Possess good knowledge about Event-Driven Protocols (REST API, Webhook, Websocket, etc)",
+      "Proficiency with Git & Composer",
+      "Able to work with the product development team",
+      "Have good leadership and work attitude",
+      "Stay up to date with the industry development and have a good learning spirit"
+    ],
+    "talentaUrl":"https://recruitment.talenta.co/waste4change/eG9tWWdVc0ZNUzA2MnM1RklDMFgzdz09"
+  },
+  "hse-officer": {
+    "status": 1,
+    "title": "HSE Officer",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Formulate and analyze the improvement of Occupational Health and Safety (OHS) management standard ",
+      "Give internal training and education to employees regarding Occupational Health and Safety (OHS) management standard",
+      "Formulate programs related to Occupational Health and Safety (OHS) management standard ",
+      "Conduct an audit regarding Occupational Health and Safety (OHS) aspects in work areas ",
+      "Make reports regarding the results of data analysis towards Occupation Health and Safety (OHS)"
+    ],
+    "requirement": [
+      "Min. Vocational/Bachelor Degree in Public Health/Environmental Engineering/ Hiperkes (K3)",
+      "Have a certificate in general Occupational Health and Safety (OHS)",
+      "Male / Female max 30 years old",
+      "Candidates who are based in either Bekasi/Jakarta will be prioritized ",
+      "Have a personal laptop"
+    ],
+    "talentaUrl":"https://recruitment.talenta.co/waste4change/NWpGRklydUdMZjgrNFRPWjg1dHFHQT09"
+  },
+  "surveyor": {
+    "status": 1,
+    "title": "Surveyor",
+    "category": "wmo",
+    "type": 2,
+    "location": ["Jawa Barat", "Surabaya", "Mojokerto", "Babat-Lamongan"],
+    "description": [
+      " Conduct on-ground sampling three days a week",
+      "Input data daily",
+      "Conduct composition sampling",
+      "Coordinate with the surveyor manager regarding technical matters and also for reporting "
+    ],
+    "requirement": [
+      "Final Year Student from Environmental/Marine Engineering",
+      "Proficient in operating Ms. Excel and Ms. Powerpoint",
+      "Have a private vehicle, since the job will require you to move from one location to another",
+      "Have a personal laptop",
+      "Honest and responsible for the sampling data "
+    ],
+    "talentaUrl":"",
+    "formUrl":"https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
+
+  },
+  "po-tetrapak": {
+    "status": 0,
+    "title": "PO Tetrapak",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Be in charge of Tetrapak's project pertaining to Collection",
+      "Coordinate with existing partners ",
+      "Formulate work plan with the Strategic Services division",
+      "Capable of fulfilling the designated target",
+      "Make sure and oversee that the shipment and transportation of the Used Beverage Cartons (UBC) went well",
+      "Make monthly report"
+    ],
+    "requirement": [
+      "At least a Bachelor's Degree, preferred from Social Sciences",
+      "Experienced in leading a team",
+      "Have a personal laptop and is proficient with Microsoft Office (Word, Excel, dan PowerPoint)",
+      "Preferred candidates with extensive knowledge in recycling",
+      "Good negotiation and communication skill"
+    ],
+    "talentaUrl":"https://recruitment.talenta.co/waste4change/Y2lLZFVhMWcxR0tvTEx4dk1RZ3gwdz09"
+  },
+  "collect-supervisor": {
+    "status": 1,
+    "title": "Collect Supervisor",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Plan and execute the flow of the transport system management services",
+      "Increase both the efficiency and effectivity relating to transport services flow",
+      "Control and supervise the performance of each personnel relating to the activities "
+    ],
+    "requirement": [
+      "Male, max. 35 years old",
+      "At least a Bachelor's Degree, preferred from Logistic Management",
+      "Preferred candidates with work experience in the logistic division",
+      "Experienced in leading a team",
+      "Good communication skill"
+    ],
+    "talentaUrl":"https://recruitment.talenta.co/waste4change/a2JNdDVackF4SFJFb2RjdWpSdm5XZz09"
+  },
+  "recruiter": {
+    "status": 0,
+    "title": "Recruiter",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Manage and develop human resources, including to plan, execute, and supervise the company's human resources as well as to develop and improve the quality of the human resources",
+      "Be in charge of the company's needs for new employees",
+      "Conduct and supervise recruitment process, starting from the selection process up to the contract signing",
+      "Formulate recruitment strategy as well as evaluate the existing recruitment process",
+      "Conduct networking with relevant stakeholders who will be able to provide references in recruiting new employees such as the Labor Agency, educational institution, as well as public figures"
+    ],
+    "requirement": [
+      "Male / Female max. 30 years old",
+      "Bachelor Degree from Psychology/ HR Management",
+      "Have experience as a Recruiter for at least 2 years",
+      "Capable of using measuring instrument in the selection process of a potential employee",
+      "Good communication and negotiation skill",
+      "Candidates with at least 1 HR Certification (Recruitment and Selection) are more preferred",
+      "English proficiency, especially in reading and writing",
+      "Have a personal laptop",
+      "Will be placed in Bekasi"
+    ],
+    "talentaUrl":"https://recruitment.talenta.co/waste4change/WVIwN3ZVRnYrZ0R4QmllL05HOFBMQT09"
+  },
+  "innovation-officer": {
+    "status": 1,
+    "title": "Innovation Officer",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Coordinate with external parties who are intending to cooperate with the company in regards to the procurement of services and goods for research and development purposes",
+      "Perform analysis and develop the company's service line ",
+      "Develop the quality of the product/services that the company provide "
+    ],
+    "requirement": [
+      "Female/Male max.35 years old",
+      "At least a Bachelor's Degree from Environmental Engineering",
+      "Proficient in English",
+      "Good analytic and problem-solving skills",
+      "Have a personal laptop and is able to operate it well "
+    ],
+    "talentaUrl":"https://recruitment.talenta.co/waste4change/UlMzU0xvdzhEZ0JrNTRVdjVTbUNEQT09"
+  },
+  "office-administration-and-procurement-officer": {
+    "status": 0,
+    "title": "Office Administration and Procurement Officer",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Create a procurement system and procedure ",
+      "Execute goods purchasing procedure",
+      "Actively looking for and updating the supplier contact data ",
+      "Negotiate and evaluate suppliers",
+      "Perform daily administration tasks",
+      "Manage purchase request from all departments",
+      "Perform asset recording system "
+    ],
+    "requirement": [
+      "Male/Female Max. 30 years old",
+      "Have at least 2 years of experience in the same field or in administration/purchasing / GA",
+      "Proficient in English, both written and spoken",
+      "Discipline, thorough, and is responsible",
+      "Highly initiative",
+      "Good communication, negotiation, presentation, and interpersonal skills",
+      "Have leadership skills and able to work in a team",
+      "Have a personal laptop "
+    ],
+    "talentaUrl":"https://recruitment.talenta.co/waste4change/WlJkOEg4MmRxWXZNdmQ5ZjZSWUNRQT09"
+  },
+  "customer-service": {
+    "status": 0,
+    "title": "Customer Service",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "At least a High School/Vocational School graduate (Social or Tourism major preferred)",
+      "Candidates with previous exprience in a similar field are more preferred",
+      "Good communication and interpersonal skills",
+      "Candidates with English proficiency (at least written) are preffered",
+      "Honest, tenacious, and is responsible",
+      "Able to operate Windows Microsoft Office",
+      "Able to work under pressure",
+      "Have a personal laptop "
+    ],
+    "requirement": [
+      "Respond to every customer's inquiry",
+      "Help address the issues that are experienced by the customers",
+      "Record and archive every interaction. transcation, comment, and complaint with and from customers",
+      "Good communication, negotiation, presentation, and interpersonal skills,Give feedback regarding the customer service process and eficiency",
+      "Ensure customers' satisfaction and provide professional customer support "
+    ],
+    "talentaUrl":"https://recruitment.talenta.co/waste4change/NXZrc3Qxem1Fa3d3WmlIVUpwcGw1dz09"
+  },
+  "enumerator": {
+    "status": 1,
+    "title": "Enumerator",
+    "category": "wmce",
+    "type": 2,
+    "location": [
+        "Bekasi"
+    ],
+    "description": [
+      "Interview respondents using the questionnare that has been provided",
+      "Perform coding based on the interview results",
+      " Deliver reports regarding the results of daily coding",
+      " Perform data cleaning whenever necessary"
+    ],
+    "requirement": [
+      "At least a Final Year or Fresh Graduate from Sociology/Anthropology",
+      "Candidates with previous experience as enumerator are preferred",
+      "Good communication skill",
+      "Have a private vehicle and a driving license (SIM C)",
+      "Have a personal laptop",
+      "Willing to be placed in Kedungwaringin, Bekasi",
+      "Willing to work between the period from 3rd August until 7th September 2020"
+    ],
+    "talentaUrl":"",
+    "formUrl":"https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
+
+  },
+  "salesmanager": {
+    "status": 1,
+    "title": "Sales Manager",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Develop and manage business opportunities with both existing and new clients",
+      "Lead the sell function of the Operational Services Department",
+      "Develop a sales strategy to increase market share and profitability ",
+      "Organize and supervise the implementation of marketing and sales strategy ",
+      "Perform analysis of market needs and sales programs"
+    ],
+    "requirement": [
+      "Female/Male max. 35 years old",
+      "Bachelor/Master's Degree in Marketing/Business Management",
+      "Fluent in English, both oral and written",
+      "Have experience as a Sales Manager with proven successes as a strong player; candidates with a specific focus in waste management services are more preferred",
+      "Good analysis, negotiation, and managerial skills"
+    ],
+    "talentaUrl":"https://recruitment.talenta.co/waste4change/TFZ6ZmkvNGRpdFMvNUxSK1BBVC92dz09",
+    "formUrl":"https://docs.google.com/forms/d/e/1FAIpQLSfsKEjFEBp2PwxabPRitcIGNTB-ONspRvJCpbgxCwWZWZpBRA/viewform?usp=sf_link"
+  },
+  "po-product-manager-digital": {
+    "status": 1,
+    "title": "PO Product Manager Digital",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Conduct research regarding user's persona",
+      "Discuss with cross-team product owner in order to determine the direction of the products for digital services",
+      "Lead and actively involved in the sprint planning of each product",
+      "Ensure that every backlog sprint are performed according to the timeline",
+      "Give advice, recommendations, and the best possible solutions for problems and issues that may arise during the digital product implementation phase",
+      "Monitor the product's metrics",
+      "Issue technical documents relating to the operational aspect of a digital product",
+      "Perform evaluation regarding the results of both the implementation and operation phase in order to increase the quality and benefits of digital products"
+    ],
+    "requirement": [
+      "At least a Bachelor's Degree from Informatics / Business Administration",
+      "A minimum of 1-year experience in developing digital products",
+      "Able to make data-driven research, both qualitative and quantitative",
+      "Good problem-solving skill",
+      "Excellent skills in communication and teamwork",
+      "Interested in developing digital products for waste solutions",
+      "Have a personal laptop"
+    ],
+    "talentaUrl":""
+  },
+  "digital-marketing-executive": {
+    "status": 0,
+    "title": "Digital Marketing Executive",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Perform research on trends, competitors, and market condition",
+      "Plan monthly digital marketing strategy and campaign based on business target (leads)",
+      "Cooperate with the copy and design team to develop digital contents",
+      "Manage CRM such as Newsletter",
+      "Manage digital ads (Google Ads, Facebook Ads, etc) in terms of both the content and budget",
+      "Ensure that the digital campaigns run well with several A/B testings",
+      "Provide reports on digital metrics as well as the analysis for a better result"
+    ],
+    "requirement": [
+      "At least a Bachelor's Degree, preferably from Marketing / Communication",
+      "A minimum of 1-year experience in Digital Marketing, preferably in B2B industry",
+      "Good analytical skills with a creative and innovative approach",
+      "Preferably with copywriting and design skills",
+      "Preferably have good knowledge with SEO",
+      "Excellent communication when working in a team",
+      "Target-oriented",
+      "Strong interests to come up with solutions for better waste management",
+      "Have a personal laptop"
+    ],
+    "talentaUrl":""
+  },
+  "surveyor-jawa-barat": {
+    "status": 0,
+    "title": "Surveyor Jawa Barat",
+    "category": "wmo",
+    "type": 2,
+    "location": [
+      "Kab. Sumedang",
+      "Kota Bandung",
+      "Kab. Bandung Barat",
+      "Kota Cimahi",
+      "Kab. Bandung",
+      "Kab. Cianjur",
+      "Kab. Purwakarta",
+      "Kab. Karawang",
+      "Kab. Bekasi"
+        ],
+    "description": [
+      "Conduct suverys regarding the needs of the TPS 3R on program sites",
+      "Conduct socialization for the local communities/government regarding the TPS 3R program",
+      "Assist the FGD process on-site",
+      "Process the data from survey results regarding needs analysis"
+    ],
+    "requirement": [
+      "Female/Male Max. 45 years old",
+      "Have the knowledge and experince in facilitating community devleopment programs in the field of waste and sanitation",
+      "Good communication skill",
+      "Understand the basic concepts of waste management and sanitation",
+      "Candidate is not bound as a civil servant or other full-time jobs",
+      "Willing to be placed and work full-time on sites",
+      "Have a personal vehicle",
+      "Candidates from the district/city where the programs will take place wil be preferred",
+      "Have a personal laptop"
+    ],
+    "talentaUrl":""
+  },
+   "organizational-development-specialist": {
+    "status": 1,
+    "title": "Organizational Development Specialist",
+    "category": "cf",
+    "type": 1,
+    "location": [
+      "Bekasi"
+    ],
+    "description": [
+      "Conduct review regarding the organization's current structure and provide recommendation for adjustment in regards with the company's condition and necessity",
+      "Perform evaluation and provide recommendation for the current business process",
+      "Review job description and its process systematically",
+      "Recommend Job Evaluation for current and new positions",
+      "Conduct manpower planning regularly (movement, rotation, promotion, termination, dll)",
+      "Conduct assesment and performance management",
+      "Be involved in the Talent Mapping process in Succession Planning"
+    ],
+    "requirement": [
+      "Male/Female maximum 35 years old",
+      "A minimum of 3-years experience in HR",
+      "Preferred candidates with experiences in OD",
+      "Have concerns in environment and waste issues",
+      "Excellent communication, interpersonal, problem-solving, and analytical skills as well as highly detailed",
+      "Capable of demonstrating current knowledge regarding the best theories and practices in OD",
+      "Willing to be placed in Bekasi"
+    ],
+    "talentaUrl":""
+  },
+  "po-project-based": {
+    "status": 1,
+    "title": "PO Project Based",
+    "category": "wmo",
+    "type": 2,
+    "location": [
+      "Bekasi"
+    ],
+    "description": [
+      "Conduct planning for research project or other programs according to the direction from the company",
+      " Develop research project or programs related with waste management",
+      "Be involved with the coordincation process, both with the internal and external team"
+    ],
+    "requirement": [
+      "Minimum Bachelor's Degree in Environmental Engineering with 8-years experience or Master's Degree in Environmental Engineering with 3-years experience",
+      "Have experience in research and/or waste program",
+      "Good understanding of research methods",
+      "Have knowledge and understanding regarding Solid Waste Management, Circular Economy, Marine Debris and other issues regarding waste management",
+      "Preferred candidates with knowledge, understanding, or at least have been involved with sosial research acitivities and Dynamic model",
+      "Preferred candidates who are familiar with Autocad,Vensim,Photosop/adobe,Power point, Excel",
+      "Strong analytical skill",
+      "Good communication skill",
+      "Proficient in English",
+      "Willing to be placed anywhere"
+    ],
+    "talentaUrl":""
+  },
+  "secretary-to-managing-director": {
+    "status": 0,
+    "title": "Secretary to Managing Director",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Manage meeting agendas and appointment as well as the necessary documents",
+      "provide minuts of meeting during the director's meeting activity",
+      "Support administrative affairs such as managing and archiving mails, data, and documents",
+      "Keep up with the director's activities",
+      "Become an intermediary for any parties who want to get in touch with the director",
+      "Secure data and information by managing the database"
+    ],
+    "requirement": [
+      "Preferred candidates from office administration or secretarial vocational school",
+      "Have 1-2 years work experience in administration",
+      "Able to operate Ms. Office or other supporting programs",
+      "Agile and able to work under pressure",
+      "Have personal laptop"
+    ],
+    "talentaUrl":""
+  },
+  "surveyor-food-loss": {
+    "status": 1,
+    "title": "Surveyor Food Loss",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Remote"],
+    "description": [
+      "Gathering information regarding food loss from various stakeholders in the food supply chain through interview and field observation",
+      "Processing the data that has been gathered and summarize it in a form that is ready to be analyzed",
+      "Recap the volume of food loss based on the food balance sheet",
+      "Helping the Assistant Team Leader Study of Food Loss and Waste in Indonesia in works regarding food loss"
+    ],
+    "requirement": [
+      "Female/Male",
+      "Maximum 28 years old",
+      "At least a Bachelor's Degree from Agriculture (Agribusiness/Agrotech,etc)",
+      "Preferred candidates who understand food supply chain",
+      "Preferred with experience as a surveyor",
+      "Proficient in using Ms.Office",
+      "Proficient in English",
+      "Familiar with the concept of remote working",
+      "Maximum duration of work is 2 months"
+    ],
+    "talentaUrl":""
+  },
+  "surveyor-food-waste": {
+    "status": 1,
+    "title": "Surveyor Food Waste",
+    "category": "wmo",
+    "type": 4,
+    "location": ["Bandung",
+                 "Pekanbaru",
+                 "Bali"
+                 ],
+    "description": [
+      "Perform waste sampling on the predetermined locations",
+      "Interview stakeholders on the waste-sampling sites regarding the food waste that were generated on that location",
+      "Processed the data resulted from both the sampling and the interview and summarize it in a form that is ready to be analyzed"
+    ],
+    "requirement": [
+      "Female/Male",
+      "Maximum.28 years old",
+      "Undergraduate or bachelor's degree in Environmental Engineering",
+      "Preferred candidates with experience in waste sampling",
+      "Proficient in using Ms. Office",
+      "Preferred candidates with driving license (SIM) A or C",
+      "Located in Bandung/Pekanbaru/Bali",
+      "The duration of work is 8-10 days"
+    ],
+    "talentaUrl":""
+  },
+  "foreman-pemilahan": {
+    "status": 1,
+    "title": "Foreman Pemilahan",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Supervise the segregation officers in doing their work",
+      "Analyze the data regarding waste segregation",
+      "Validate the data",
+      "Make periodic report",
+      "Ensure the implementation of Occupational Health and Safety on the field"
+    ],
+    "requirement": [
+      "Male",
+      "Maximum 30 years old",
+      "Major in Occupational Health and Safety/Environmental Engineering/Engineering",
+      "Having Occupational Health and Safety Certificate is an added value",
+      "Have a personal laptop"
+    ],
+    "talentaUrl":""
+  },
+  "business-development-specialist": {
+    "status": 1,
+    "title": "Business Development Specialist",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Analyze and perform market research",
+      "Identify and develop the market",
+      "Arrange and present the company's business plan",
+      "Cooperate with other division in order to align the business strategy",
+      "Perform research periodically regarding the development of the company's business",
+      "Understand the company's and competitor's product as well as the business' position within the market",
+      "Perform research on the competitor in order to increase Waste4Change's business position on the market",
+      "Build and maintain relationship with clients and enhance Waste4Change's relationship with other business actors"
+    ],
+    "requirement": [
+      "At least a Bachelor's Degree from Finance, Business Administration, Marketing, or Business Management",
+      "A minimum of 2-year experience in Business Development",
+      "Strong analytical and problem-solving skills, especially market analysis",
+      "Familiar with business planning",
+      "Good communication and presentation skills, able to work in a team, proven skills in influencing team from various divisions",
+      "Experienced in dealing with management, negotating with and give opinions to future clients regarding the management's needs or strategic transaction"
+    ],
+    "talentaUrl":""
+  },
+  "waste-sampling-field-officer": {
+    "status": 1,
+    "title": "Waste Sampling Field Officer",
+    "category": "wmo",
+    "type": 4,
+    "location": ["Mojokerto"],
+    "description": [
+      "Gathering information regarding waste generation from Mojokerto City through sampling, interview, and field observation",
+      "Processing the data that has been gathered and summarize it in a form that is ready to be analyzed",
+      "Helping the Assistant Team Leader Study of Waste Mapping Study in Mojokerto City in works regarding waste mapping"
+    ],
+    "requirement": [
+      "Female/Male",
+      "Maximum 28 years old",
+      "At least Bachelor`s Degree from Environmental Engineering",
+      "Preferred candidates who understand waste generation survey",
+      "Preferred with experience as a surveyor",
+      "Preferred someone who is local people in Mojokerto City",
+      "Proficient in using Ms. Office",
+      "Proficient in English",
+      "Maximum Duration of works is 3 weeks"
+    ],
+    "talentaUrl":"https://recruitment.talenta.co/waste4change/NC9xUENJZTNyV29lUllGczEzdlJWUT09"
+  }
+}

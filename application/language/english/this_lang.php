@@ -370,6 +370,7 @@ $lang['brand_accepted_waste_other'] = "Other Type<br>of Waste?";
 //footer
 $lang['career'] = "career";
 $lang['internship'] = "Internship";
+$lang['intern_list'] = "Intern List";
 //Pricing
 $lang['pricing'] = "Pricing";
 $lang['order_now'] = "Order Now";

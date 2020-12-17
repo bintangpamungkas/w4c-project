@@ -369,6 +369,7 @@ $lang['brand_accepted_waste_other'] = "Kemasan Bekas<br>Jenis Lain?";
 //footer
 $lang['career'] = "karir";
 $lang['internship'] = "Magang";
+$lang['intern_list'] = "Intern List";
 
 //pricing
 $lang['pricing'] = "Harga";

@@ -1,0 +1,249 @@
+{
+  "banner": {
+    "title": "A Place to Learn and Grow",
+    "description": "Together, let's change waste management from difficult to easy! <br> At Waste4Change, we always provide opportunities for those of you <br> who are looking for internship experience and contribute in the field of waste management"
+  },
+  "internship_program": {
+    "title": "W4C INTERNSHIP PROGRAM (WIP)",
+    "subtitle": "Waste4Change's Biannual Internsip Program",
+    "message": "Participate in a special internship program from Waste4Change along with other participants from various field of expertise <br><br>Internships can be done either remotely or through direct contact according to your needs. Internship opportunities are open in all of Waste4Change's branches, be it in Bekasi, Semarang, and Sidoarjo <br><br>From researching about the hottest topics on environmental and waste issues to practicing public speaking, Waste4Change ensures that your internship will be rich with various experiences ",
+    "image": "biannual.jpg"
+  },
+  "requirements": {
+    "title": "INTERNS REQUIREMENTS",
+    "items": [
+      {
+        "title": "At least a Final Year college/vocational student when the internship period started",
+        "image": "student.png",
+        "height": "70px"
+      },
+      {
+        "title": "Submit necessary documents such as CV, Motivation letter, and portfolios if the candidate is applying for positions relating to design",
+        "image": "document.png",
+        "height": "70px"
+      },
+      {
+        "title": "Work/research/organizational experience and/or proof of participation in seminar/workshops relating to the field the candidates are applying for will become an added value",
+        "image": "achievement.png",
+        "height": "70px"
+      },
+      {
+        "title": "Willing to work according to the required internship period",
+        "image": "calendar.png",
+        "height": "60px"
+      },
+      {
+        "title": "Have a personal laptop for working",
+        "image": "LAPTOP.png",
+        "height": "70px"
+      }
+    ]
+  },
+  "card_batch2": {
+    "title": "WIP Batch #2 2020",
+    "subtitle": "Safe Internship in the Middle of the Pandemic",
+    "time": "September - December 2020",
+    "person": "32 Participants",
+    "button": "Registration Closed",
+    "image": "batch2_2020.jpg"
+  },
+
+  "card_batch1": {
+    "title": "WIP Batch #1 2021",
+    "subtitle": "Registration & Documents Submission: <br>December 2020 - January 2021",
+    "time": "February - May 2021",
+    "image": "batch1_2021.jpg",
+    "button": "REMIND ME"
+  },
+  "highlights": {
+    "title": "INTERNSHIP HIGHLIGHTS",
+    "subtitle": "Below are some of the exciting activities that you get to experience when interning at Waste4Change!",
+    "items": [
+      {
+        "title": "Capacity Building",
+        "description": "Knowledge and skills improvement for interns through several sessions of internal training",
+        "image": "capacity-building.jpg"
+      },
+      {
+        "title": "Collaboration Project",
+        "description": "What's interesting about this activity is that you get to pour your ideas and creativity while practicing team work between divisions and enhance your project management and problem-solving skills!",
+        "image": "collaboration-project.jpg"
+      },
+      {
+        "title": "Sharing Session",
+        "description": "Monthly exchange of stories and experiences between interns to encourage evaluation and reflective processes for each participant",
+        "image": "sharing-session.jpg"
+      },
+      {
+        "title": "Trying Out New Roles",
+        "description": "Only at Waste4Change! Every intern will have a chance to try new roles in order to enrich their experience and internship journey",
+        "image": "trying-out-new-roles.jpg"
+      }
+    ]
+  },
+  "flow": {
+    "title": "RECRUITMENT FLOW",
+    "subtitle": "What kind of process that applicants need to go through when<br> applying internship at Waste4Change?  ",
+    "image": "alur_rekrutment.png",
+    "endtitle": "<span style='color:red'>*</span>If it pass the deadline and you haven't received any calls, please don't be disheartened. We will get back to you when there is an available position that suits the applicant",
+    "items": [
+      {
+        "title": "Documents Submission",
+        "description": "Include the required documents: CV, motivation letter, and portfolio for design-related areas of expertise",
+        "image": "kirim_berkas.png",
+        "top": "",
+        "top_mobile": "",
+        "width": "100px",
+        "size": "45px"
+      },
+      {
+        "image": "arrow-bold-right.png",
+        "description": "",
+        "title": "",
+        "top": "110px",
+        "top_mobile": "50px",
+        "width": "30px",
+        "size": "20px"
+      },
+      {
+        "title": "Documents Selection",
+        "description": "Candidates who passed this phase will be notified maximum 1 month after the internship opening<span style='color:red'>*</span>",
+        "image": "seleksi_i.png",
+        "top": "",
+        "top_mobile": "",
+        "width": "100px",
+        "size": "45px"
+      },
+      {
+        "title": "",
+        "description": "",
+        "image": "arrow-bold-right.png",
+        "top": "110px",
+        "top_mobile": "50px",
+        "width": "30px",
+        "size": "20px"
+      },
+      {
+        "title": "Online/offline Interview",
+        "image": "interview.png",
+        "description": "Candidates who pass the documents selection process are then required to conduct an interview with the user",
+        "top": "",
+        "top_mobile": "",
+        "width": "100px",
+        "size": "45px"
+      }
+    ],
+    "items2": [
+      {
+        "title": "Announcement",
+        "image": "seleksi_ii.png",
+        "description": "Candidates who passed this phase will be notified maximum 1 month after they received the interview invitation<span style='color:red'>*</span>",
+        "top": "",
+        "top_mobile": "",
+        "width": "100px",
+        "size": "45px"
+      },
+      {
+        "title": "",
+        "description": "",
+        "image": "arrow-bold-right.png",
+        "top": "110px",
+        "top_mobile": "50px",
+        "width": "30px",
+        "size": "20px"
+      },
+      {
+        "title": "Start of the internship!",
+        "image": "mulai_magang.png",
+        "description": "Yay! After successfully passing all stages, apprentices are expected to work during the required internship period",
+        "top": "",
+        "top_mobile": "",
+        "width": "100px",
+        "size": "45px"
+      }
+    ]
+  },
+  "internship_category": {
+    "title": "Where Should I apply?",
+    "subtitle": "What are the available departments in Waste4change?"
+  },
+
+  "testimony": {
+    "title": "TESTIMONIAL",
+    "subtitle": "See What Our Past Interns Have to Say About Waste4Change's Internship Program",
+    "items": [
+      {
+        "message": "This internship experience taught me a lot of things, from interpersonal communication, teamwork, and problem-solving skills. The work culture is very appreciative and I can see how they (Waste4Change employees) always support one another. I helped the most at the TPS3R optimization project, which was pretty challenging, but I  have learned, and am still learning from that project",
+        "name": "Amira R. Nadhifa",
+        "image": "Amira-R-Nadhifa.jpg"
+      },
+      {
+        "message": "Working at a social company that focuses on responsible waste management has taught me completely new things. I learned a lot of skills, especially one relating to business and waste management, which was exciting since I have not learned about it before. I can channel my skills in project management, teamwork, as well as public speaking.",
+        "name": "Fanny Ramadhanti",
+        "image": "Fanny-Ramadhanti.jpg"
+      },
+      {
+        "message": "This internship experience gave me valuable lessons in which I gained insights regarding what kind of skills that I need to develop in the future. I learned about the various functions and responsibilities of Human Resources, from employee recruitment, human resources development, as well as formulating performance review mechanisms. This is also the first output-based work for me. In other words, I was not attached to the usual office hours. Instead, I focused on the timeline and the objectives of the ongoing project.",
+        "name": "Ivanna Zahra",
+        "image": "Ivanna-Zahra.jpg"
+      }
+    ]
+  },
+  "quote": {
+    "text": "<span style='color:#17A2B8;font-size:30px'>&quot;</span>The very first thing I tell every intern on the first day is that their internship exists solely on their resume. As far as I am concerned, they are a full-time member of my team.<span style='color:#17A2B8;font-size:30px'>&quot;</span>",
+    "author": "Jay Samit, Serial Entrepreneur",
+    "image": "quote.jpg"
+  },
+  "cta": {
+    "title": "Looking for other internship opportunities?",
+    "cta_title": "DROP CV",
+    "contact_title": "CONTACT US",
+    "image": "cta.jpg"
+  },
+  "faq": {
+    "title": "Frequently-Asked Questions (FAQ)",
+    "subtitle": "Have some questions regarding the recruitment process? Check out our F.A.Q",
+    "items": [
+      {
+        "question": "How long is the internship period at Waste4Change?",
+        "answer": "For Waste4Change Internship Program (WIP), the required internship period is 4 months, and both the start and end date has been set"
+      },
+      {
+        "question": "How many interns does Waste4Change accommodate each year?",
+        "answer": "It varies according to the needs. To give an example, Waste4Change accepts almost 35 interns for each batch in 2020."
+      },
+      {
+        "question": "I have submit my intern application documents, but I have not received any update/reply. Does that mean my application was not successful?",
+        "answer": "Applicants who passed the first selection phase will be contacted to do an online/offline interview. If the candidates have not been contacted 1 month after the documents submission or after the internship has been closed, then your resume and portfolios will be considered for other vacancies in the future that might suit your qualifications."
+      },
+      {
+        "question": "I have passed the documents selection and have done the interview, but I have not been contacted. Does that mean I was not selected?",
+        "answer": "Applicants who passed the second selection phase (interview) will be contacted to do further discussion regarding the preparation to start the internship. If the candidates have not been contacted 1 month after the interview date, then your resume and portfolios will be considered for other vacancies that might suit your qualifications. "
+      },
+      {
+        "question": "Can I apply to other companies when I am undergoing the internship selection phase at Waste4Change?",
+        "answer": "Yes, certainly you can. Waste4Change believes that the internship selection phase should be a two-way process, meaning that Waste4Change will be selecting your documents and qualifications, and you can also select Waste4Change credibility as your internship destination. <br> To ease the process, please do not forget to inform your needs and expectations for the internship program that you will undergo at Waste4Change via the Motivation Letter or during the interview process."
+      },
+      {
+        "question": "What should I include in the Motivation Letter?",
+        "answer": "Below are some of the things that you can write down in the motivation letter: <ol> <li>Why are you interested in joining the internship program at Waste4Change?</li><li>Your workshop/seminars/organizational/work experience that are in line with the field that you are applying for</li><li>Some special notes that the interviewees need to know, for instance:<ol style='list-style-type:lower-alpha'><li>Applying internship as a compulsory course from the university</li><li>Applying internship for research purposes</li><li>rying to explore new field that is different with the existing educational background/college major</li></ol></li></ol>Write at least 2 paragraphs using a professional language, the point is that the letter should give an overview of what makes you different from the other candidates."
+      },
+      {
+        "question": "Can I send my application in hardcopy using postal service?",
+        "answer": "Yes you can, but we strongly suggest to use the digital method instead to avoid using excessive papers and eliminate the risk of losing your application documents in the delivery process.<br>If you want to apply for other internship vacancies outside the Waste4Change Internship Program (WIP), please send your Motivation Letter, CV, and portfolios (if any) to recruitment@waste4change.com with the subject: Name_Position You're Applying For.<br>For the hard copy documents, you can send it to the following address:<ol style='list-style-type:none'><li class='g-font-weight-700'>Human Capital Division</li><li class='g-font-weight-700'>Waste4Change (PT Wasteforchange Alam Indonesia)<li>Kantor SUB, Vida Bumi Alam Hijau, Jl. Alun Alun Utara, RT.002/RW.001, Padurenan, Mustika Jaya, Bekasi City, West Java 17156</li><li>Telp: 021-29372308</li></li></ol>"
+      },
+      {
+        "question": "Is there a minimum age for the internship program at Waste4Change?",
+        "answer": "Kindly check the internship requirements that we have included at the website"
+      },
+      {
+        "question": "Does Waste4Change offer transport and accommodation fees for interns?",
+        "answer": "Waste4Change provides allowance and transportation fees for interns. The detail of the nominal can be further discussed during the interview, after the candidates passed the first selection phase. "
+      },
+      {
+        "question": "Will I get a certificate as a token of internship from Waste4Change?",
+        "answer": "Waste4Change will issue a certificate of participation for the participants of the WIP. If there are other needs regarding the certificate, please discuss the matter during the interview process, after the candidate have passed the first selection phase "
+      }
+    ]
+  }
+}

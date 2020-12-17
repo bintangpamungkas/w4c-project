@@ -1,0 +1,265 @@
+{
+  "banner": {
+    "title": "Tempat untuk Belajar dan Mengembangkan Diri",
+    "description": "Bersama ubah manajemen sampah dari susah jadi mudah! Waste4Change <br> selalu membuka kesempatan bagi kamu yang ingin mencari pengalaman <br> magang dan turut berkontribusi di bidang manajemen sampah."
+  },
+  "search_bar": {
+    "Position": "Posisi",
+    "Location": "Lokasi",
+    "Type": "Tipe",
+    "Search": "Pencarian",
+    "ViewJobList": "Lihat List Magang"
+  },
+  "internship_program": {
+    "title": "W4C INTERNSHIP PROGRAM (WIP)",
+    "subtitle": "Program Magang Biannual Waste4Change",
+    "message": "Ikuti program magang khusus dari Waste4Change bersama banyak peserta magang dari berbagai bidang keahlian.<br> <br> Magang dapat dilakukan secara jarak jauh atau temu muka sesuai kebutuhan. Lowongan magang dibuka di semua cabang Waste4Change, mulai dari Bekasi, Semarang, dan Sidoarjo. <br><br> Mulai dari riset topik terkini manajemen sampah hingga pelatihan public speaking, Waste4Change pastikan magang kamu kaya akan pengalaman!",
+    "image": "biannual.jpg"
+  },
+  "latest_job": {
+    "title": "Internship Opening",
+    "subtitle": "Bagi kamu yang belum bisa mengikuti Waste4Change Internship Program (WIP), boleh cek informasi magang di bawah ini, ya!",
+    "SeeDetail": "See Detail",
+    "CTA": "See More"
+  },
+  "requirements": {
+    "title": "SYARAT PESERTA WIP",
+    "items": [
+      {
+        "title": "Minimal berstatus pelajar tingkat akhir D3/S1 pada saat masa magang dimulai",
+        "image": "student.png",
+        "height": "70px"
+      },
+      {
+        "title": "Menyertakan dokumen yang disyaratkan: CV, motivation letter, dan portofolio untuk bidang keahlian terkait desain",
+        "image": "document.png",
+        "height": "70px"
+      },
+      {
+        "title": "Pengalaman kerja, riset, organisasi, atau catatan keikutsertaan seminar/workshop terkait bidang kerja yang dilamar nantinya akan menjadi nilai tambah",
+        "image": "achievement.png",
+        "height": "70px"
+      },
+      {
+        "title": "Bersedia untuk bekerja selama masa magang yang disyaratkan",
+        "image": "calendar.png",
+        "height": "60px"
+      },
+      {
+        "title": "Memiliki laptop untuk bekerja",
+        "image": "LAPTOP.png",
+        "height": "70px"
+      }
+    ]
+  },
+  "card_batch2": {
+    "title": "WIP Batch #2 2020",
+    "subtitle": "Magang Aman di Tengah Pandemi",
+    "time": "September - Desember 2020",
+    "person": "32 Peserta",
+    "button": "Registration Closed",
+    "image": "batch2_2020.jpg"
+  },
+
+  "card_batch1": {
+    "title": "WIP Batch #1 2021",
+    "subtitle": "Registrasi & Pengiriman Berkas: <br>Desember 2020 - Januari 2021",
+    "time": "Februari - Mei 2021",
+    "image": "batch1_2021.jpg",
+    "info": "Registration Open",
+    "button": "DAFTAR DISINI"
+  },
+
+  "highlights": {
+    "title": "INTERNSHIP HIGHLIGHTS",
+    "subtitle": "Berikut pengalaman tak terlupakan yang akan <br> kamu dapatkan saat magang di Waste4Change!",
+    "items": [
+      {
+        "title": "Capacity Building",
+        "description": "Peningkatan keahlian & wawasan peserta magang melalui beberapa sesi pelatihan internal",
+        "image": "capacity-building.jpg"
+      },
+      {
+        "title": "Collaboration Project",
+        "description": "Hal menarik adalah, kamu dapat menuangkan ide & kreativitas sambil melatih kerja sama lintas divisi sekaligus mempraktikkan teknik manajemen project dan problem-solving dari kegiatan ini!",
+        "image": "collaboration-project.jpg"
+      },
+      {
+        "title": "Sharing Session",
+        "description": "Sesi tukar pengalaman bulanan untuk mendorong proses evaluasi dan refleksi dari setiap peserta magang",
+        "image": "sharing-session.jpg"
+      },
+      {
+        "title": "Trying Out New Roles",
+        "description": "Hanya ada di Waste4Change! Setiap peserta magang berkesempatan mencoba peran baru untuk menambah pengalaman seru mereka",
+        "image": "trying-out-new-roles.jpg"
+      }
+    ]
+  },
+
+  "flow": {
+    "title": "ALUR REKRUTMEN",
+    "subtitle": "Proses apa saja yang harus dilewati saat <br> melamar magang di Waste4Change?",
+    "endtitle": "<span style='color:red'>*</span>Jika setelah lewat batas waktu belum dihubungi, jangan berkecil hati. Kami akan kontak kembali saat ada lowongan yang sesuai dengan kualifikasi pelamar.",
+    "image": "alur_rekrutment.png",
+    "items": [
+      {
+        "title": "Pengiriman Berkas & Lamaran",
+        "description": "Menyertakan dokumen yang disyaratkan: CV, motivation letter, dan portofolio untuk bidang keahlian terkait desain",
+        "image": "kirim_berkas.png",
+        "top": "",
+        "width": "100px",
+        "top_mobile": "",
+        "size": "45px"
+      },
+      {
+        "image": "arrow-bold-right.png",
+        "description": "",
+        "title": "",
+        "top": "110px",
+        "top_mobile": "50px",
+        "width": "30px",
+        "size": "20px"
+      },
+      {
+        "title": "Seleksi Berkas",
+        "description": "Kandidat yang lolos akan dikabari dalam waktu maksimal 1 bulan sejak lowongan diumumkan<span style='color:red'>*</span>",
+        "image": "seleksi_i.png",
+        "top": "",
+        "top_mobile": "",
+        "width": "100px",
+        "size": "45px"
+      },
+      {
+        "title": "",
+        "description": "",
+        "image": "arrow-bold-right.png",
+        "top": "110px",
+        "top_mobile": "50px",
+        "width": "30px",
+        "size": "20px"
+      },
+      {
+        "title": "Interview online/offline",
+        "image": "interview.png",
+        "description": "Kandidat yang lolos proses seleksi berkas kemudian diharuskan untuk melakukan interview dengan user",
+        "top": "",
+        "top_mobile": "",
+        "width": "100px",
+        "size": "45px"
+      }
+    ],
+    "items2": [
+      {
+        "title": "Pengumuman",
+        "image": "seleksi_ii.png",
+        "description": "Kandidat yang lolos akan dikabari dalam waktu maksimal 1 bulan sejak undangan interview<span style='color:red'>*</span>",
+        "top": "",
+        "top_mobile": "",
+        "width": "100px",
+        "size": "45px"
+      },
+      {
+        "title": "",
+        "description": "",
+        "image": "arrow-bold-right.png",
+        "top": "110px",
+        "top_mobile": "50px",
+        "width": "30px",
+        "size": "20px"
+      },
+      {
+        "title": "Mulai Magang!",
+        "image": "mulai_magang.png",
+        "description": "Yay! setelah berhasil melalui seluruh tahapan, peserta magang diharapkan untuk bekerja selama masa magang yang telah disyaratkan",
+        "top": "",
+        "top_mobile": "",
+        "width": "100px",
+        "size": "45px"
+      }
+    ]
+  },
+  "internship_category": {
+    "title": "Where Should I apply?",
+    "subtitle": "Ada departemen apa saja di Waste4Change?"
+  },
+
+  "testimony": {
+    "title": "Testimoni",
+    "subtitle": "Kesan dan Pesan Peserta Magang Waste4Change yang Terdahulu",
+    "items": [
+      {
+        "message": "Pengalaman magang ini mengajari saya banyak hal, mulai dari komunikasi interpersonal, kerjasama tim, serta pemecahan masalah. Kultur kerja perusahaannya sangat apresiatif dan saya bisa melihat bagaimana mereka selalu mendukung satu sama lain. Saya paling banyak membantu di proyek optimalisasi TPS 3R, yang notabene cukup menantang, tapi saya telah dan masih belajar banyak dari situ.",
+        "name": "Amira R. Nadhifa",
+        "image": "Amira-R-Nadhifa.jpg"
+      },
+      {
+        "message": "Bekerja di perusahaan sosial yang berfokus pada pengelolaan sampah yang bertanggung jawab mengajari saya hal-hal yang benar-benar baru. Saya belajar banyak keahlian, terutama yang terkait dengan bisnis dan pengelolaan sampah, yang juga sangat mengasyikkan karena saya belum pernah belajar tentang hal ini sebelumnya. Saya bisa menyalurkan dan mengasah kemampuan saya dalam hal  manajemen proyek dan acara, bekerja dalam tim, serta kemampuan berbicara di depan umum.",
+        "name": "Fanny Ramadhanti",
+        "image": "Fanny-Ramadhanti.jpg"
+      },
+      {
+        "message": "Program magang ini memberikan saya pelajaran berharga dimana saya bisa mendapatkan pengalaman dan masukan terkait kemampuan apa saja yang harus saya kembangkan di kemudian hari. Saya belajar tentang beragam fungsi dan tanggung jawab dari Human Resources mulai dari proses rekrutmen pegawai, pengembangan SDM, serta merumuskan mekanisme penilaian performa. Ini juga pertama kalinya bagi saya untuk bekerja dengan berorientasi pada hasil, dengan kata lain saya tidak terikat jam kerja pada umumnya, melainkan berfokus pada timeline serta tujuan dari proyek yang sedang dikerjakan.",
+        "name": "Ivanna Zahra",
+        "image": "Ivanna-Zahra.jpg"
+      }
+    ]
+  },
+  "quote": {
+    "text": "<span style='color:#17A2B8;font-size:30px'>&quot;</span>The very first thing I tell every intern on the first day is that their internship exists solely on their resume. As far as I am concerned, they are a full-time member of my team.<span style='color:#17A2B8;font-size:30px'>&quot;</span>",
+    "author": "Jay Samit, Serial Entrepreneur",
+    "image": "quote.jpg"
+  },
+  "cta": {
+    "title": "Mencari kesempatan magang lainnya?",
+    "cta_title": "KIRIM CV",
+    "contact_title": "HUBUNGI KAMI",
+    "image": "cta.jpg"
+  },
+  "faq": {
+    "title": "Frequently-Asked Questions (FAQ)",
+    "subtitle": "Punya pertanyaan terkait proses rekrutmen di Waste4Change? Silahkan membaca F.A.Q kami terlebih dahulu",
+    "items": [
+      {
+        "question": "Berapa lama masa magang di Waste4Change?",
+        "answer": "Untuk Waste4Change Internship Program (WIP) masa magang yang disyaratkan adalah 4 bulan, tanggal mulai dan selesai magangnya pun sudah ditentukan. "
+      },
+      {
+        "question": "Berapa banyak peserta magang yang diterima Waste4Change setiap tahunnya?",
+        "answer": "Bervariasi, sesuai kebutuhan. Sebagai bayangan, Waste4Change menerima hampir 35 peserta magang di setiap angkatan (batch) di tahun 2020."
+      },
+      {
+        "question": "Saya sudah mengirimkan berkas lamaran magang, tapi belum juga dikabari. Apa itu berarti lamaran saya belum diterima?",
+        "answer": "Pelamar yang lolos seleksi tahap I akan dihubungi untuk melakukan wawancara via online/offline. Jika belum dihubungi hingga 1 bulan sejak berkas lamaran dikirimkan atau setelah lowongan magang ditutup, berarti resume dan portofolio kalian akan dipertimbangkan untuk lowongan lainnya jika ada yang cocok dengan kualifikasi kalian."
+      },
+      {
+        "question": "Saya lolos seleksi berkas dan sudah melakukan wawancara, tapi belum juga dikabari. Apa itu berarti saya belum terpilih menjadi pekerja magang?",
+        "answer": "Pelamar yang lolos seleksi tahap II (wawancara) akan dihubungi untuk melakukan diskusi lanjutan untuk persiapan mulai magang. Jika belum dihubungi hingga 1 bulan sejak tanggal wawancara, berarti resume dan portofolio kalian akan dipertimbangkan untuk lowongan lainnya jika ada yang cocok dengan kualifikasi kalian."
+      },
+      {
+        "question": "Apakah saya boleh melamar ke perusahaan lain saat saya sedang menjalani proses seleksi magang di Waste4Change?",
+        "answer": "Tentu saja boleh. Waste4Change percaya bahwa proses seleksi magang berlangsung dua arah: Waste4Change akan menyeleksi berkas dan kualifikasi yang kalian ajukan, dan kalian juga bisa menyeleksi kredibilitas Waste4Change sebagai perusahaan tujuan magang. <br> Untuk mempermudah proses, jangan lupa infokan kebutuhan dan harapan kalian untuk proses magang yang kalian jalani di Waste4Change via Motivation Letter atau saat proses wawancara."
+      },
+      {
+        "question": "Apa yang harus saya jelaskan di Motivation Letter?",
+        "answer": "Berikut adalah beberapa hal yang bisa kalian tuliskan pada motivation letter: <ol> <li>Kenapa kalian tertarik magang di Waste4Change</li><li>Pengalaman workshop, seminar, organisasi, atau kerja (magang atau tetap) yang sekiranya relevan dengan bidang yang kalian lamar</li><li>Catatan yang perlu diketahui pewawancara, semisal:<ol style='list-style-type:lower-alpha'><li>Melamar magang sebagai bagian dari mata kuliah wajib universitas</li><li>Melamar magang untuk kebutuhan riset</li><li>Sedang mencoba bidang baru yang tidak sesuai dengan jurusan kuliah sarjana</li></ol></li></ol> Buat minimal 2 paragraf dalam bahasa profesional, intinya adalah memberikan gambaran awal tentang apa yang membuat kalian berbeda dari pelamar lainnya."
+      },
+      {
+        "question": "Apakah boleh jika saya mengirimkan berkas lamaran cetak via pos?",
+        "answer": "Boleh saja, tapi kami sarankan untuk menggunakan metode digital untuk menghemat penggunaan kertas dan memperkecil risiko lamaran kalian tidak sampai.<br>Jika kalian ingin mengirimkan lamaran magang di luar lowongan yang kami cantumkan di web, silahkan kirimkan Motivation Letter, CV, dan portofolio kalian (jika ada) ke recruitment@waste4change.com dengan subject mengandung nama dan posisi yang kalian lamar.<br>Jika kalian ingin mengirimkan lamaran cetak via pos, silakan kirim ke:<ol style='list-style-type:none'><li class='g-font-weight-700'>Divisi Human Capital</li><li class='g-font-weight-700'>Waste4Change (PT Wasteforchange Alam Indonesia)<li>Kantor SUB, Vida Bumi Alam Hijau, Jl. Alun Alun Utara, RT.002/RW.001, Padurenan, Mustika Jaya, Bekasi City, West Java 17156</li><li>Telp: 021-29372308</li></li></ol>"
+      },
+      {
+        "question": "Apakah ada syarat batasan umur untuk pekerja magang di Waste4Change?",
+        "answer": "Silakan cek pada requirement/syarat dari lowongan magang yang kami cantumkan."
+      },
+      {
+        "question": "Apakah Waste4Change menawarkan biaya akomodasi dan jasa magang?",
+        "answer": "Saat ini Waste4Change menyediakan uang saku dan penggantian transportasi untuk anak magang. Untuk detail nominalnya bisa didiskusikan setelah lolos Seleksi I (Seleksi Berkas) saat interview magang."
+      },
+      {
+        "question": "Apakah saya akan mendapatkan sertifikat tanda magang dari Waste4Change?",
+        "answer": "Waste4Change mengeluarkan sertifikat keikutsertaan untuk peserta magang WIP. Jika ada kebutuhan lainnya terkait sertifikat, silahkan didiskusikan setelah lolos Seleksi I (Seleksi Berkas) saat interview magang."
+      }
+    ]
+  }
+}
