@@ -80,7 +80,7 @@
 									</div>
 									<div class="col-md-10 d-inline">
 									<!-- <div class="g-pa-15 "> -->
-										<div class="g-color-black pt-2 g-font-weight-300 mb-4 g-font-size-14" style="margin-bottom: 5px!important;">
+										<div class="g-color-black mt-2 g-font-weight-300 mb-4 g-font-size-14" style="margin-bottom: 5px!important;">
 											<?= $item->title ?>
 										</div>
 									<!-- </div> -->

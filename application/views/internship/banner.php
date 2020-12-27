@@ -17,7 +17,7 @@
 						<?php endforeach; ?>
 					</div>
 				<div class="row align-items-center mt-5" style="height:100%;">
-					<div class="col-12">
+					<div class="col-12" style="margin-bottom: <?= $this->agent->is_mobile() ? '0px' : '70px' ?>">
 						<div class="text-center g-color-white g-font-asap g-font-weight-700 g-line-height-1_3 g-font-size-<?= $this->agent->is_mobile() ? '24 g-px-12' : '35' ?>">
 							<?= $copy->banner->title ?>
 						</div>

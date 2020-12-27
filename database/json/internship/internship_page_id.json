@@ -7,8 +7,8 @@
     "Position": "Posisi",
     "Location": "Lokasi",
     "Type": "Tipe",
-    "Search": "Pencarian",
-    "ViewJobList": "Lihat List Magang"
+    "Search": "Cari",
+    "ViewJobList": "Lihat Daftar Magang"
   },
   "internship_program": {
     "title": "W4C INTERNSHIP PROGRAM (WIP)",
@@ -19,8 +19,8 @@
   "latest_job": {
     "title": "Internship Opening",
     "subtitle": "Bagi kamu yang belum bisa mengikuti Waste4Change Internship Program (WIP), boleh cek informasi magang di bawah ini, ya!",
-    "SeeDetail": "See Detail",
-    "CTA": "See More"
+    "SeeDetail": "Selengkapnya",
+    "CTA": "Lihat Lainnya"
   },
   "requirements": {
     "title": "SYARAT PESERTA WIP",
@@ -57,7 +57,7 @@
     "subtitle": "Magang Aman di Tengah Pandemi",
     "time": "September - Desember 2020",
     "person": "32 Peserta",
-    "button": "Registration Closed",
+    "info": "Registration Closed",
     "image": "batch2_2020.jpg"
   },
 

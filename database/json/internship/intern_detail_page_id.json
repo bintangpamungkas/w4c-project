@@ -3,7 +3,7 @@
   "Location": "Lokasi",
   "Type": "Tipe",
   "Search": "Cari",
-  "ViewJobList": "Lihat Daftar Pekerjaan",
+  "ViewInternList": "Lihat Daftar Magang",
   "ApplyNow": "Daftar Sekarang",
   "ShareThisJob": "Bagikan pekerjaan ini",
   "SeeMore": "Lihat lainnya",
@@ -11,10 +11,10 @@
   "RelatedJob": "Pekerjaan Serupa",
   "JobDescription": "Deskripsi Pekerjaan",
   "Requirement": "Kualifikasi",
-  "WhatsApp"  : "Whatsapp",
-  "Facebook":"Facebook",
-  "Twitter":"Twitter",
+  "WhatsApp": "Whatsapp",
+  "Facebook": "Facebook",
+  "Twitter": "Twitter",
   "LinkedIn": "LinkedIn",
-  "CopyUrl":"Salin Url",
-  "Cancel":"Batal"
+  "CopyUrl": "Salin Url",
+  "Cancel": "Batal"
 }

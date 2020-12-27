@@ -3,7 +3,7 @@
   "Location": "Location",
   "Type": "Type",
   "Search": "Search",
-  "ViewJobList": "View Job List",
+  "ViewInternList": "View Internship List",
   "ApplyNow": "Apply Now",
   "ShareThisJob": "Share This Job",
   "SeeMore": "See More",
@@ -11,10 +11,10 @@
   "RelatedJob": "Related Job",
   "JobDescription": "Job Description",
   "Requirement": "Qualifications",
-  "WhatsApp"  : "Whatsapp",
-  "Facebook":"Facebook",
-  "Twitter":"Twitter",
+  "WhatsApp": "Whatsapp",
+  "Facebook": "Facebook",
+  "Twitter": "Twitter",
   "LinkedIn": "LinkedIn",
-  "CopyUrl":"Copy Url",
-  "Cancel":"Cancel"
+  "CopyUrl": "Copy Url",
+  "Cancel": "Cancel"
 }

@@ -86,8 +86,8 @@
 					},
 					<?php if (!$this->agent->is_mobile()) : ?>
 						navText: [
-							'<i class="fa fa-angle-left g-color-gray-light-v1 nav-arrow-left" aria-hidden="true" style="transform: scale(2)"></i>',
-							'<i class="fa fa-angle-right g-color-gray-light-v1 nav-arrow-right" aria-hidden="true" style="transform: scale(2)"></i>'
+							'<i class="fa fa-angle-left g-color-gray-light-v1 nav-arrow-left" aria-hidden="true" style="transform: scale(2);margin-right:-20px"></i>',
+							'<i class="fa fa-angle-right g-color-gray-light-v1 nav-arrow-right" aria-hidden="true" style="transform: scale(2);margin-left:-20px"></i>'
 						]
 					<?php else : ?>
 						navText: ['',''
@@ -102,7 +102,7 @@
 				// console.log(screen_display);
 				// var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '69' : '70' ?>) / 100) / 2;
 				//console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
-				var add_side = 20
+				var add_side = 10
 				var height=$(element_id + ' .owl-stage-outer').height()/2;
 				var width=$(element_id + ' .owl-stage-outer').width()+add_side;
 				$(element_id + ' .owl-nav').attr('style', 'position:absolute;left:-'+add_side*2+'px;margin-top:'+height+'px;width: '+ (width+add_side) +'px;margin:left:300px')

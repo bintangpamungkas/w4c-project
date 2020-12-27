@@ -1,18 +1,18 @@
 {
-  "JobList": "Job List",
+  "InternList": "Internship List",
   "Position": "Position",
   "Location": "Location",
   "Type": "Type",
   "Search": "Search",
-  "AllJobs": "All Jobs",
+  "AllJobs": "All Internship",
   "SeeDetail": "See Detail",
   "CTA": "See More",
-  "ViewJobList": "View Job List",
+  "ViewInternList": "View Internship List",
   "SortBy": "Sort By",
   "CantFindWhatYouAreLookingFor": "Can't find what you are looking for?",
   "DropCV": "Drop CV",
   "ContactUs": "Contact Us",
-  "SearchResultFound":"search result found",
-  "DropCVUrl" : "https://docs.google.com/forms/d/e/1FAIpQLSfoOadBGOJhl7tDupAYspuoD_XGldH5kQQtrGW1oK2Z61wJnQ/viewform",
-  "ContactUrl":"mailto: recruitment@waste4change.com"
+  "SearchResultFound": "search result found",
+  "DropCVUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfoOadBGOJhl7tDupAYspuoD_XGldH5kQQtrGW1oK2Z61wJnQ/viewform",
+  "ContactUrl": "mailto: recruitment@waste4change.com"
 }

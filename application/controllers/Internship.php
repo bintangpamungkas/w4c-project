@@ -71,14 +71,14 @@
 					'active' => false
 				],
 				[
-					'title' => $this->get_lang('Intern List'),
+					'title' => $this->get_lang('intern_list'),
 					'url' => 'internship/intern-list',
 					'active' => true
 				]
       ];
 			$data['position'] = $this->input->get('position');
 			$data['location'] = $this->input->get('location');
-			// $data['type'] = $this->input->get('type');
+			$data['type'] = $this->input->get('type');
 			$data['category'] = $this->input->get('category');
       //language, section, general info (title, subtitle, order), item (specific content)
       $data['copy'] = json_decode(file_get_contents(base_url('database/json/internship/intern_list_page_'.$lang.'.json')));
@@ -121,17 +121,17 @@
 					'active' => false
 				],
 				[
-					'title' => $this->get_lang('Internsip'),
-					'url' => 'career',
+					'title' => $this->get_lang('Internship'),
+					'url' => 'internship',
 					'active' => false
 				],
 				[
-					'title' => $this->get_lang('Job List'),
+					'title' => $this->get_lang('intern_list'),
 					'url' => 'internship/intern-list',
 					'active' => false
 				],
 				[
-					'title' => $this->get_lang('Job Detail'),
+					'title' => $this->get_lang('internship_detail'),
 					'url' => 'internship/intern-list',
 					'active' => true
 				]

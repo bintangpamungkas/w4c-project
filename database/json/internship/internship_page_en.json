@@ -3,6 +3,13 @@
     "title": "A Place to Learn and Grow",
     "description": "Together, let's change waste management from difficult to easy! <br> At Waste4Change, we always provide opportunities for those of you <br> who are looking for internship experience and contribute in the field of waste management"
   },
+  "search_bar": {
+    "Position": "Position",
+    "Location": "Location",
+    "Type": "Type",
+    "Search": "Search",
+    "ViewJobList": "View Internship List"
+  },
   "internship_program": {
     "title": "W4C INTERNSHIP PROGRAM (WIP)",
     "subtitle": "Waste4Change's Biannual Internsip Program",
@@ -44,7 +51,7 @@
     "subtitle": "Safe Internship in the Middle of the Pandemic",
     "time": "September - December 2020",
     "person": "32 Participants",
-    "button": "Registration Closed",
+    "info": "Registration Closed",
     "image": "batch2_2020.jpg"
   },
 
@@ -53,7 +60,8 @@
     "subtitle": "Registration & Documents Submission: <br>December 2020 - January 2021",
     "time": "February - May 2021",
     "image": "batch1_2021.jpg",
-    "button": "REMIND ME"
+    "info": "Registration Open",
+    "button": "APPLY HERE"
   },
   "highlights": {
     "title": "INTERNSHIP HIGHLIGHTS",
@@ -162,6 +170,11 @@
         "size": "45px"
       }
     ]
+  },
+  "latest_job": {
+    "title": "Internship Opening",
+    "SeeDetail": "See Detail",
+    "CTA": "See More"
   },
   "internship_category": {
     "title": "Where Should I apply?",

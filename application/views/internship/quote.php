@@ -26,11 +26,6 @@
 </section>
 <!-- end quote -->
 
-<style>
-.btn-outline-info:hover {
-    background-color: transparent!important;
-}
-</style>
 <!-- CTA -->
 <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-overflow-hidden" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}' style="background-color:white;height:400px">
   <div class="divimage dzsparallaxer--target w-100" style="height: 130%; background-image: url(<?= get_image(DIR_IMG . 'bg/internship/cta.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);">
