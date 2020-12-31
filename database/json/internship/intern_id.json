@@ -1,0 +1,565 @@
+{
+  "product-designer": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Product Designer",
+    "category": "tech",
+    "type": 1,
+    "location": ["Semarang"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Melakukan improvement terhadap Design Product",
+      "Membantu dalam perancangan produk hingga menjadi bentuk prototype",
+      "Melakukan pengujian dan memastikan kesesuaian produk digital dengan perancangan desain"
+    ],
+    "requirement": [
+      "D3/S1 Sistem Informasi/Teknik Informatika",
+      "Paham mengenai UI, UX, Communication, Analysist, Design Sprint"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/bHVxajdxVUZ2T0RJeWZzZVdaeE1wZz09"
+  },
+  "product-researcher": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Product Researcher",
+    "category": "tech",
+    "type": 1,
+    "location": ["Semarang"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Melakukan riset untuk improvement terhadap Product",
+      "Melakukan serangkaian riset kepada (calon) audiens melalui berbagai metode riset",
+      "Membuat analisis dan laporan berdasarkan hasil riset audiens"
+    ],
+    "requirement": [
+      "D3/S1 Sistem Informasi/ Teknik Informatika",
+      "Paham mengenai Product Research, Sketching, UX, Communication, Analysist, Design Sprint"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/eG9tWWdVc0ZNUzA2MnM1RklDMFgzdz09"
+  },
+  "product-engineer": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Product Engineer",
+    "category": "tech",
+    "type": 1,
+    "location": ["Semarang"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Membantu tim Engineer dalam membangun dan mengembangkan Product",
+      "Melakukan Pemeliharaan Produk",
+      "Mengelola Infrastruktur Sistem"
+    ],
+    "requirement": [
+      "D3/S1 Sistem Informasi/ Teknik Informatika",
+      "Paham mengenai DBMS, Server Management, Laravel/CI3, JS, PHP, CSS, HTML, Rest API, Design Sprint"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/NWpGRklydUdMZjgrNFRPWjg1dHFHQT09"
+  },
+  "quality-control": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Quality Control",
+    "category": "tech",
+    "type": 1,
+    "location": ["Semarang"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Menjaga dan memelihara kualitas Product",
+      "Melakukan pengujian produk secara detail dan sistematis berdasarkan skenario pengujian dan intuisi",
+      "Memberikan rekomendasi peningkatan kualitas sistem",
+      "Mengelola dokumentasi product requirement"
+    ],
+    "requirement": [
+      "D3/S1 Sistem Informasi/Teknik Informatika",
+      "Paham mengenai Project Management, Software Testing, Scrum, Communication, Analysist, Design Sprint"
+    ],
+    "talentaUrl": "",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
+  },
+  "brand-development": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Brand Development",
+    "category": "business development",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Melakukan ideasi dan inovasi terhadap brand mulai dari tahap produksi hingga pemasaran"
+    ],
+    "requirement": [
+      "S1 Manajemen Bisnis",
+      "Memiliki kemampuan analisis",
+      "Mampu berkomunikasi yang baik",
+      "Paham dalam melakukan proses riset"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/Y2lLZFVhMWcxR0tvTEx4dk1RZ3gwdz09"
+  },
+  "photographer-videographer": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Photographer / Videographer",
+    "category": "ce",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "Februari - Mei 2021",
+    "description": ["Melakukan editing dan shooting foto dan video"],
+    "requirement": [
+      "D3/S1 All Major",
+      "Mampu dalam melakukan editing foto/video",
+      "Memiliki kamera lebih baik"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/a2JNdDVackF4SFJFb2RjdWpSdm5XZz09"
+  },
+  "graphic-designer": {
+    "is_new": 0,
+    "status": 1,
+    "title": "graphic-designer",
+    "category": "ce",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Mengembangkan desain grafis seperti feed media sosial, poster, dan materi konten visual lainnya"
+    ],
+    "requirement": [
+      "D3/S1 All Major",
+      "Memiliki kemampuan desain menggunakan Photoshop atau Ai"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/WVIwN3ZVRnYrZ0R4QmllL05HOFBMQT09"
+  },
+  "social-media": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Social Media",
+    "category": "ce",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "mengelola media sosial dan mengembangkan follower sesuai target"
+    ],
+    "requirement": [
+      "D3/S1 All Major",
+      "Memiliki kemampuan menulis yang baik",
+      "Memiliki kemampuan bahasa inggris (writting) yang baik"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/UlMzU0xvdzhEZ0JrNTRVdjVTbUNEQT09"
+  },
+  "content-writer": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Content Writer",
+    "category": "ce",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Mengembangkan konten blog, website, script video atau press release"
+    ],
+    "requirement": [
+      "D3/S1 Semua jurusan",
+      "Memiliki kemampuan menulis yang baik dan dapat mendesain sederhana",
+      "Memiliki kemampuan bahasa inggris (writting) yang baik"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/WlJkOEg4MmRxWXZNdmQ5ZjZSWUNRQT09"
+  },
+  "event-partnership": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Event & Partnership",
+    "category": "ce",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "Maret - Juni 2021",
+    "description": [
+      "Mengelola event online, memperluas partnership stakeholder"
+    ],
+    "requirement": [
+      "D3/S1 Semua jurusan",
+      "Memiliki kemampuan public speaking yang baik"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/NXZrc3Qxem1Fa3d3WmlIVUpwcGw1dz09"
+  },
+  "sales": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Sales Admin",
+    "category": "os",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Membantu administrasi renewal client",
+      "Merekap leads baru dari CRM ke Dashboard Sales"
+    ],
+    "requirement": [
+      "D3 / S1 Marketing, Manajemen, Bisnis",
+      "Memiliki kemampuan analisis",
+      "Mampu berkomunikasi yang baik",
+      "Teliti dan terbisa dalam proses monitoring"
+    ],
+    "talentaUrl": "",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
+  },
+  "organic-trearment": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Organic Treatment",
+    "category": "os",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Membuat Bank Data Organik",
+      "Membantu evaluasi dan mengembangkan sistem budidaya BSF"
+    ],
+    "requirement": [
+      "S1-Peternakan/Perikanan/Teknik Lingkungan",
+      "Memiliki kemampuan analisis",
+      "Mampu berkomunikasi yang baik",
+      "Paham dalam melakukan proses riset"
+    ],
+    "talentaUrl": "",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
+  },
+  "product-operation": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Product Operation",
+    "category": "tech",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Membantu proses development system IT",
+      "Melakukan pendampingan pada proses pengelolaan data",
+      "Mengelola data dalam rangka pelaporan dan analisis operasional"
+    ],
+    "requirement": [
+      "D3/S1 Sistem Informasi/Teknik Informatika",
+      "Mampu menggunakan Ms. Excel & GSheet",
+      "Mampu berkomunikasi yang baik",
+      "Mampu melakukan Data Analisis"
+    ],
+    "talentaUrl": "",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
+  },
+  "warehouse-operation": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Warehouse Operation",
+    "category": "os",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Implementasikan dan memperbaiki sistem operasional di RPM",
+      "Melakukan pendampingan pada proses pengelolaan data",
+      "Melaksanakan dan mengawal operasional teknis di lapangan"
+    ],
+    "requirement": [
+      "S1-Management Logistik/Teknik Industri",
+      "Memiliki kemampuan Public speaking",
+      "Mampu melakukan analisis",
+      "Paham mengenai Warehouse Management"
+    ],
+    "talentaUrl": "",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
+  },
+  "industrial-relation": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Industrial Relation",
+    "category": "hc",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Persiapan wajib lapor",
+      "Membantu hubungan industrial",
+      "membantu pekerjaan people operation"
+    ],
+    "requirement": [
+      "S1 Manajemen SDM/Hukum",
+      "Memahami hubungan industrial pada perusahaan",
+      "Memiliki pengetahuan tentang sumber daya manusia",
+      "Memahami peraturan ketenagakerjaan terkini yang berlaku"
+    ],
+    "talentaUrl": "",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
+  },
+  "investment": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Investment ",
+    "category": "finance",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Membantu secara operasional aktivitas Series A",
+      "Membantu mencari dan berhubungan dengan investor potensial",
+      "Membantu dalam menganalisis investor potensial",
+      "Aktif mencari perkembangan Venture Capital",
+      "Membantu review financial plan"
+    ],
+    "requirement": [
+      "S1 Komunikasi/Ekonomi/Manajemen Bisnis",
+      "Memiliki kemampuan Public speaking",
+      "Paham mengenai Basic Financial",
+      "Mampu berkomunikasi yang baik"
+    ],
+    "talentaUrl": "",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
+  },
+  "legal": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Legal",
+    "category": "finance",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Membantu dalam review dokumen Project Perjanjian dan Kontrak",
+      "Melakukan Riset hukum di bidang persampahan dan perkembangan issu lingkungan",
+      "Membantu HR untuk kebutuhan peraturan perusahaan",
+      "Terlibat dalam restrukturisasi dan RUPS"
+    ],
+    "requirement": [
+      "S1 Hukum",
+      "Paham mengenai pembuatan dan analisa dokumen legal",
+      "Paham mengenai Undang-Undang Ketengarkerjaan dan yang terkait"
+    ],
+    "talentaUrl": "",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
+  },
+  "interior-designer": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Interior Designer",
+    "category": "finance",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Membantu dalam pembuatan design kantor yang lebih baik",
+      "Memberi masukan mengenai penataan kantor",
+      "Memberi masukan mengenai perbaikan design/penataan kantor apabila ada yang harus diperbaiki"
+    ],
+    "requirement": [
+      "S1 design interior/arsitektur",
+      "Memiliki passion dalam bidang Interior Design",
+      "Mampu membuat desain interior"
+    ],
+    "talentaUrl": "",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
+  },
+  "project-development": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Project Development",
+    "category": "ss",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Monitoring Marketing Metrics",
+      "Assist proposal making",
+      "Assist administrative compliance"
+    ],
+    "requirement": [
+      "S1 Administrasi Bisnis/Manajemen Bisnis",
+      "Mampu menggunakan Microsoft Office",
+      "Paham mengenai Project Management Modelling",
+      "Mampu melakukan Analisa data marketing dan sales",
+      "Memiliki kemampuan bahasa inggris (Writting) yang baik",
+      "Memiliki kemampuan dalam membuat presentasi dalam ppt dan memiliki sense design yang baik",
+      "Teliti dan detil"
+    ],
+    "talentaUrl": "",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
+  },
+  "training-education-organizer": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Training & Education Organizer",
+    "category": "ss",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Mempersiapkan kebutuhan pra event training ",
+      "Menyelenggarakan event training",
+      "Membuat report pasca event training"
+    ],
+    "requirement": [
+      "S1 Broadcasting/Ilmu Komunikasi/Public Relation",
+      "Paham mengenai Public Speaking",
+      "Familiar dengan Teknik Broadcasting",
+      "Pengalaman menjalankan Event Management",
+      "Diutamakan memiliki kemampuan desain yang baik"
+    ],
+    "talentaUrl": "",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
+  },
+  "business-development": {
+    "is_new": 1,
+    "status": 1,
+    "title": "business-development",
+    "category": "business development",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Terlibat dalam aktivitas Bussines Development",
+      "Turut mengidentifikasi mitra potensial",
+      "Terlibat dalam pengembangan sistem jasa perusahaan"
+    ],
+    "requirement": [
+      "S1 Manajemen/ Administrasi Bisnis/ Teknik Lingkungan",
+      "Memiliki kemampuan analisis yang baik"
+    ],
+    "talentaUrl": "",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
+  },
+  "accounting": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Accounting",
+    "category": "finance",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Membuat, memperbaiki dan mendistribusikan dokumen SOP keuangan yang berkaitan dengan Unit terkait",
+      "Melakukan pengujian terhadap SOP sehingga menciptakan pengendalian internal yang efektif dan efisien",
+      "Membuat atau menyusun biaya",
+      "Menganalisa FC, VC, OC, COGS serta efisiensi",
+      "Melakukan stock opname"
+    ],
+    "requirement": [
+      "S1 Accounting/Ilmu Ekonomi",
+      "Mampu mengoperasikan Microsoft Word dan Microsoft Excel",
+      "Familiar dalam penggunaan Ms. Visio",
+      "Mampu melakukan Accounting Journal"
+    ],
+    "talentaUrl": "",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
+  },
+  "recruiter": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Recruiter",
+    "category": "hc",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Membantu Recruiter dalam melaksanakan proses rekrutmen",
+      "Mengatur jadwal wawancara dan berkoordinasi dengan hiring manager",
+      "Memperbarui dan memelihara database kandidat, formulir permintaan karyawan baru, dan hasil wawancara",
+      "Membantu mengembangkan proses rekrutmen di Waste4Change"
+    ],
+    "requirement": [
+      "S1 Psikologi/Manajemen Sumber Daya Manusia",
+      "Familiar dengan proses/alur rekrutmen",
+      "Familiar dengan Behavioural Based Interview"
+    ],
+    "talentaUrl": "",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
+  },
+  "administration": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Administration",
+    "category": "ss",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Membantu mengerjakan administrasi project dan departemen",
+      "Membantu mempersiapkan dokumen meeting apabila dibutuhkan",
+      "Membantu mereview dokumen project",
+      "Mengelola basis data dan sistem pengarsipan project departemen",
+      "Membangun dan mengimplementasikan prosedur administrasi",
+      "Membantu dalam pembuatan notulensi rapat"
+    ],
+    "requirement": [
+      "S1 Managemen atau administrasi bisnis",
+      "Memiliki jiwa kreatif",
+      "Teliti dan Detail"
+    ],
+    "talentaUrl": "",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
+  },
+  "product-owner": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Product Owner",
+    "category": "business development",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Membantu Product owner untuk menyusun product backlog dan menyelenggarakan proses sprint yang sehat",
+      "Berkoordinasi dengan data analyst untuk mengumpulkan dan mengolah data",
+      "Melakukan riset terkait isu-isu dari masalah yang ada",
+      "Menyiapkan kebutuhan dalam sprint planning, sprint review dan rectrospective",
+      "Menyusun panduan tools dokumen dan membantu membangun sistem scrum yang sehat di tim"
+    ],
+    "requirement": [
+      "S1 Bisnis manajemen/Sistem informatika/Teknologi Informatika",
+      "Memiliki pemahaman dengan framework scrum",
+      "Memiliki kemampuan analisis dan critical thinking"
+    ],
+    "talentaUrl": "",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
+  },
+  "operation-services": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Operation Services ",
+    "category": "os",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Menganalisa dan mengevaluasi SOP operasional, kemudian membuat rekomendasi SOP yang sesuai",
+      "Melakukan riset mengenai operasional pengangkutan sampah untuk optimasi ritasi dan kebutuhan kendaraan",
+      "Optimasi sistem pengangkutan sampah berdasarkan jadwal pengangkutan dan kapasitas kontainer kendaraan pengangkut sampah",
+      "Melakukan evaluasi terhadap aspek teknis dan non teknis untuk pengangkutan sampah perumahan",
+      "Membuat standarisasi berdasarkan data yang sudah dikumpulkan"
+    ],
+    "requirement": [
+      "S1-Teknik Industri/teknik lingkungan",
+      "Memiliki kemampuan analisis",
+      "Mampu melakukan sampling",
+      "Teliti dan Detail",
+      "Mampu dalam membuat laporan"
+    ],
+    "talentaUrl": "",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
+  },
+  "innovation-process-improvement": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Innovation & Process Improvement",
+    "category": "os",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "Februari - Mei 2021",
+    "description": [
+      "Melakukan fish bone analysis untuk menentukan akar permasalahan tiap business proses jasa OS",
+      "Analisis 7 types of waste six sigma dalam kegiatan operasional RPM",
+      "Memberikan solusi dan saran agar kegiatan operasional RPM berjalan lebih efektif dan efisien"
+    ],
+    "requirement": [
+      "S1 Teknik Lingkungan/ Teknik Industri Min. Fresh Graduate",
+      "Memiliki kemampuan analisis yang baik"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/bHVxajdxVUZ2T0RJeWZzZVdaeE1wZz09"
+  }
+}

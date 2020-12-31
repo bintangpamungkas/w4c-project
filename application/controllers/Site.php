@@ -147,6 +147,31 @@ class Site extends MY_Controller
 		$this->render_page('sites/career', $data);
 	}
 
+	public function internship()
+	{
+		$data['title'] = APP_NAME;
+		$data['id'] = 'brand';
+		$data['subtitle'] = 'information';
+		$data['data_mode'] = 'general';
+		$data['page_heading'] = 'career';
+		$data['is_bilingual'] = true;
+		$data['breadcrumb'] =
+			[
+				[
+					'title' => 'Home',
+					'is_active' => false,
+					'url' => W4C_URL
+				],
+				[
+					'title' => lang('internship'),
+					'is_active' => true,
+					'url' => site_url('internship')
+				],
+			];
+
+		$this->render_page('sites/internship', $data);
+	}
+
 	public function id()
 	{
 		$this->session->set_userdata(['language' => 'id']);

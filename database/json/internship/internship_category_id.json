@@ -1,0 +1,58 @@
+{
+  "os": {
+    "status": 1,
+    "name": "Operational Services",
+    "description": "Tertarik untuk belajar lebih dalam mengenai operasional pengangkutan dan daur ulang sampah? Di sini tempatnya!",
+    "image": "operationalserveice.jpg",
+    "icon": "os.png",
+    "formUrl": ""
+  },
+  "ss": {
+    "status": 1,
+    "name": "Strategic Services",
+    "description": "Untuk kamu yang tertarik mempelajari teknik edukasi, riset, dan konsultasi manajemen sampah, divisi ini ahlinya!",
+    "image": "strategicservice.jpg",
+    "icon": "ss.png",
+    "formUrl": ""
+  },
+  "ce": {
+    "status": 1,
+    "name": "Communication & Engagement",
+    "image": "communication-and-engagement.jpg",
+    "description": "Sudah follow media sosial & blog Waste4Change dan tertarik menjadi bagian dari tim kreatif? Bersenang-senang bersama, yuk!",
+    "icon": "ce.png",
+    "formUrl": ""
+  },
+  "tech": {
+    "status": 1,
+    "name": "Information & Technology",
+    "image": "tech.jpg",
+    "description": "Ikut terlibat dalam departemen yang mengintegrasikan proses manajemen sampah Waste4Change dengan teknologi, yuk!",
+    "icon": "it.png",
+    "formUrl": ""
+  },
+  "finance": {
+    "status": 1,
+    "name": "Finance & General Affairs",
+    "image": "finance.jpg",
+    "description": "Kamu anak hukum, finance-accounting dan atau administrasi bisnis yang tertarik untuk membangun support system di Waste4Change? Disini tempatnya, kamu bisa mengeksplorasi pekerjaan Waste4Change dari sisi legal, keuangan dan juga pengelolaan gedung.",
+    "icon": "fa-ga.png",
+    "formUrl": ""
+  },
+  "hc": {
+    "status": 1,
+    "name": "Human Capital",
+    "image": "hc.jpg",
+    "description": "Jadi anak magang yang terlibat pada ragam fase people's journey di Waste4Change/Perusahaan? Kita bantu supaya sumber daya manusia perusahaan bekerja optimal, yuk!",
+    "icon": "hc.png",
+    "formUrl": ""
+  },
+  "business development": {
+    "status": 1,
+    "name": "Business Development",
+    "image": "business.jpg",
+    "description": "Urusan memperluas hubungan kerjasama dan melihat potensi pengembangan produk dan jasa, departemen Business & Development tempatnya!",
+    "icon": "business.png",
+    "formUrl": ""
+  }
+}

@@ -630,6 +630,13 @@ function hotjar_tracking($activation)
 			'status' => true,
 		],
 		[
+			'site_url' => '/official/internship',
+			'site_name' => '<!-- Hotjar Tracking Code for https://waste4change.com/official/internship -->',
+			'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
+			'tracking_code' => '2162504',
+			'status' => true,
+		],
+		[
 			'site_url' => '/official/career',
 			'tracking_code' => '1964994',
 			'status' => true,

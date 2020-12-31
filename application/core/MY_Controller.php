@@ -57,12 +57,12 @@ class MY_Controller extends CI_Controller
 			$targets[] = $target;
 		}
 
-		$circular = new stdClass();
-		$circular->service_target_id = 3;
-		$circular->title = 'Sirkular';
-		$circular->icon = 'circular-active-o.png';
-		$circular->url='program/sirkular/';
-		$targets[2]=$circular;
+		// $circular = new stdClass();
+		// $circular->service_target_id = 3;
+		// $circular->title = 'Sirkular';
+		// $circular->icon = 'circular-active-o.png';
+		// $circular->url='program/sirkular/';
+		// $targets[2]=$circular;
 		
 
 		$data['template'] = empty($template) ? 'general' : $template;
@@ -138,6 +138,18 @@ class MY_Controller extends CI_Controller
 				'visible' => true,
 				'number' => '7',
 				'url' => site_url('career'),
+				'type' => '',
+				'submenu_type' => 'list',
+				'icon' => '',
+				'is_new' => false,
+				'menu' => '',
+			],
+			[
+				'title' => lang('internship'),
+				'for' => 'menu',
+				'visible' => true,
+				'number' => '7',
+				'url' => site_url('internship'),
 				'type' => '',
 				'submenu_type' => 'list',
 				'icon' => '',

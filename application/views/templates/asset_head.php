@@ -42,9 +42,9 @@ header("Pragma: no-cache");
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <?php if (IS_ONLINE == 1) {
     if (empty($meta_data)) {
-      meta_data(false);
+      meta_data(true);
     } else {
-      meta_data(false, @$meta_data);
+      meta_data(true, @$meta_data);
     }
   } ?>
 
@@ -85,7 +85,7 @@ header("Pragma: no-cache");
   <link rel="stylesheet" href="<?= base_url(DIR_CSS . 'custom.css') ?>">
   <script src="<?= base_url(DIR_VENDOR . 'jquery/jquery.min.js') ?>"></script>
 
-  <?php if (IS_ONLINE == 0) {
+  <?php if (IS_ONLINE == 1) {
     // Hotjar Tracking
     hotjar_tracking(true);
     // Google Analytic Tracking

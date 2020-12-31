@@ -28,7 +28,7 @@
               <a class="g-color-white-opacity-0_8" href="<?= get_url('official/career') ?>"><?= get_lang('career') ?></a>
             </li>
             <li class="g-mb-5">
-              <a class="g-color-white-opacity-0_8" href="http://w4c.id/internship"><?= get_lang('internship') ?></a>
+              <a class="g-color-white-opacity-0_8" href="<?= get_url('official/internship') ?>"><?= get_lang('internship') ?></a>
             </li>
           </ul>
         </div>

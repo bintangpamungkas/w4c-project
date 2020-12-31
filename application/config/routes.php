@@ -55,6 +55,9 @@ $route['project/(:any)'] = "Service/detail/$1";
 $route['career'] = "Career/index";
 $route['career/job'] = "Career/job_list";
 $route['career/job/(:any)'] = "Career/job_detail/$1";
+$route['internship'] = "Internship/index";
+$route['internship/intern-list'] = "Internship/intern_list";
+$route['internship/intern-list/(:any)'] = "Internship/intern_detail/$1";
 
 $route['trial_form/(:any)'] = "Site/trial_form/$1";
 $route['(:any)'] = "Brand/index/$1";

@@ -47,7 +47,7 @@ define('HOST', 'http://localhost/w4c/');
 define('PREFIX_TABLE', '');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'root');
 define('DB_DATABASE', 'w4c_official_demo');
 if  (IS_ONLINE == 1 && MODE != 'live' && $_COOKIE['W4CALLDEVMOD'] != 'Y'){
 	header('Location:https://waste4change.com/');

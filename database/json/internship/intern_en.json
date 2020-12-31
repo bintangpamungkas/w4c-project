@@ -1,0 +1,560 @@
+{
+  "product-designer": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Product Designer",
+    "category": "tech",
+    "type": 1,
+    "location": ["Semarang"],
+    "time": "February - May 2021",
+    "description": [
+      "Make improvements on product design",
+      "Assisting in designing product until its prototype form",
+      "Do tests and ensure the compatibility of the product with Product design"
+    ],
+    "requirement": [
+      "At least a Bachelor's/Vocational Degree (D3/S1) from Information System/Computer Science",
+      "Good understanding about UI/UX and Design Sprint",
+      "Good Communication skill",
+      "Good analytical skill"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/NC9xUENJZTNyV29lUllGczEzdlJWUT09"
+  },
+  "product-researcher": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Product Researcher",
+    "category": "tech",
+    "type": 1,
+    "location": ["Semarang"],
+    "time": "February - May 2021",
+    "description": [
+      "Do research for product improvement",
+      "Perform series of reseach on audiences through various research methods",
+      "Create analysis and report based on the research result"
+    ],
+    "requirement": [
+      "At least a Bachelor's/Vocational Degree (D3/S1) from Information System/Computer Science",
+      "Good understanding about Product Research, Sketching and UX",
+      "Good Communication skill",
+      "Good analytical skill"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/bHVxajdxVUZ2T0RJeWZzZVdaeE1wZz09"
+  },
+  "product-engineer": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Product Engineer",
+    "category": "tech",
+    "type": 1,
+    "location": ["Semarang"],
+    "time": "February - May 2021",
+    "description": [
+      "Assisting Engineering Team in building and developing product",
+      "Maintaining product",
+      "Managing system infrastructure"
+    ],
+    "requirement": [
+      "At least a Bachelor's/Vocational Degree (D3/S1) from Information System/Computer Science",
+      "Understand about DBMS, Server Management, Laravel/CI3, JS, PHP, CSS, HTML, Rest API, Design Sprint",
+      "Good Communication skills",
+      " Good analytical skill"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/eG9tWWdVc0ZNUzA2MnM1RklDMFgzdz09"
+  },
+  "quality-qontrol": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Quality Control",
+    "category": "tech",
+    "type": 1,
+    "location": ["Semarang"],
+    "time": "February - May 2021",
+    "description": [
+      "Maintain the quality of the product",
+      "Do product test in details and systematically based on test scenario and intuition",
+      "Make recommendation on system quality improvement",
+      "Manage product requirement documentation"
+    ],
+    "requirement": [
+      "Fresh graduate or final year student in Information System/Computer Science",
+      "Good understanding about Project Management, Software Testing, Scrum, and Design Sprint",
+      "Good Communication skill",
+      "Good analytical skill"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/NWpGRklydUdMZjgrNFRPWjg1dHFHQT09"
+  },
+  "brand-development": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Brand Development",
+    "category": "business development",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "February - May 2021",
+    "description": [
+      "Conduct ideation and innovation on brands from the production to marketing stages"
+    ],
+    "requirement": [
+      "Fresh graduate or final year student from Business Management major",
+      "Good analytical skill",
+      "Good Communication skills",
+      "Understand about research process"
+    ],
+    "talentaUrl": ""
+  },
+  "photographer-videographer": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Photographer / Videographer",
+    "category": "ce",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "February - May 2021",
+    "description": ["Do photo and video shooting and editing"],
+    "requirement": [
+      "Fresh graduate or final year student from all major",
+      "Capable in photo and video editing",
+      "Preferably owns a personal camera"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/Y2lLZFVhMWcxR0tvTEx4dk1RZ3gwdz09"
+  },
+  "graphic-designer": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Graphic Designer",
+    "category": "ce",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "February - May 2021",
+    "description": [
+      "Create graphic design for social media, poster, and various visual content material"
+    ],
+    "requirement": [
+      "Fresh graduate or final year student from all major",
+      "Capable of making design using Adobe Photoshop or Adobe Ilustrator"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/a2JNdDVackF4SFJFb2RjdWpSdm5XZz09"
+  },
+  "social-media": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Social Media",
+    "category": "ce",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "February - May 2021",
+    "description": [
+      "Manage company's social media",
+      "Develop and increase follower through several strategies to meet target"
+    ],
+    "requirement": [
+      "Fresh graduate or final year student from all major",
+      "Possess a good writing skill",
+      "Good command of English"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/WVIwN3ZVRnYrZ0R4QmllL05HOFBMQT09"
+  },
+  "content-writer": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Content Writer",
+    "category": "ce",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "February - May 2021",
+    "description": [
+      "Develop blog content, website, video script and press release"
+    ],
+    "requirement": [
+      "Fresh graduate or final year student from all major",
+      "Possess a good writing skill",
+      "Good command of English"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/UlMzU0xvdzhEZ0JrNTRVdjVTbUNEQT09"
+  },
+  "event-&-partnership": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Event & Partnership",
+    "category": "ce",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "February - May 2021",
+    "description": ["Manage online event", "Expand stakeholder partnership"],
+    "requirement": [
+      "Fresh graduate or final year student from all major",
+      "Good public speaking skill"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/WlJkOEg4MmRxWXZNdmQ5ZjZSWUNRQT09"
+  },
+  "sales-admin": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Sales Admin",
+    "category": "os",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "February - May 2021",
+    "description": [
+      "Assisting in client renewal administration",
+      "Summarize new leads from CRM to Sales Dashboard"
+    ],
+    "requirement": [
+      "Fresh graduate or final year student from Business Management/Marketing Management/Business Administration",
+      "Good analytical skills",
+      "Good communication skills",
+      "Attentive and reliable in monitoring process"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/NXZrc3Qxem1Fa3d3WmlIVUpwcGw1dz09"
+  },
+  "organic-treatment": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Organic Treatment",
+    "category": "os",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "February - May 2021",
+    "description": [
+      "Creat Organic Data Bank",
+      "Assisting in evalution and development of BSF cultivation system"
+    ],
+    "requirement": [
+      "Fresh graduate or final year student from Animal Husbandry/Fishery/Environmental Engineering major",
+      "Good analytical skill",
+      "Good communication skills",
+      "Understand the process of conducting research"
+    ],
+    "talentaUrl": "",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
+  },
+  "product-operation": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Product Operation",
+    "category": "tech",
+    "type": 1,
+    "location": ["Semarang"],
+    "time": "February - May 2021",
+    "description": [
+      "Assisting in IT System development process",
+      "Conducting assistance in data management process",
+      "Manage data for reporting and operational analysis"
+    ],
+    "requirement": [
+      "Fresh graduate or final year student from Information System/Computer Science/Business Management major",
+      "Proficient in using Ms. Excel & GSheet",
+      "Good communication skills",
+      "Good knowledge in conducting Data Analysis"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/TFZ6ZmkvNGRpdFMvNUxSK1BBVC92dz09",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfsKEjFEBp2PwxabPRitcIGNTB-ONspRvJCpbgxCwWZWZpBRA/viewform?usp=sf_link"
+  },
+  "warehouse-operation": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Warehouse Operation",
+    "category": "os",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "February - May 2021",
+    "description": [
+      "Implementing and improving opreational system in Waste4Change's Material Recovery Facility",
+      "Conducting operational duty and overseeing the process"
+    ],
+    "requirement": [
+      "Fresh graduate or final year student fromLogistics Management/Industrial Engineering major",
+      "Good public speaking skill",
+      "Capable of performing analysis",
+      "Good understanding about Warehouse Management"
+    ],
+    "talentaUrl": ""
+  },
+  "industrial-relation": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Industrial Relation",
+    "category": "hc",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "February - May 2021",
+    "description": [
+      "Preparing for company's compulsory report",
+      "Assisting in Industrial Relations matters",
+      "Assisting in People Operation duties"
+    ],
+    "requirement": [
+      "Fresh graduate or final year student from HR Management/Law major",
+      "Understand the concept of Industrial Relations in company",
+      "Knowledgable in Human Resources",
+      "Good understanding about Labour Law"
+    ],
+    "talentaUrl": ""
+  },
+  "investment": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Investment",
+    "category": "finance",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "February - May 2021",
+    "description": [
+      "Assisting in Series A activities operational",
+      "Assisting in finding and anlysing new potential investor",
+      "Bridging and establish communication with potential investor",
+      "Assist in conducting Financial Plan review",
+      "Proactively researching the development of Venture Capital"
+    ],
+    "requirement": [
+      "Fresh graduate or final year student from Communication studies/Economics/Business Management",
+      "Good public speaking skill",
+      "Understand Basic Financing",
+      "Good communication skills"
+    ],
+    "talentaUrl": ""
+  },
+  "legal": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Organizational Development Specialist",
+    "category": "finance",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "February - May 2021",
+    "description": [
+      "Assist in reviewing the Project Agreement and Contract documents",
+      "Conducting legal research in the field of solid waste and the development of environmental issues",
+      "Assist HR for company regulatory needs",
+      "Involved in restructuring and RUPS"
+    ],
+    "requirement": [
+      "Fresh graduate or final year student from Law major",
+      "Understand the process of making and analyzing legal document",
+      "Understand the Indonesian Labour Law and other related aspects"
+    ],
+    "talentaUrl": ""
+  },
+  "interior-designer": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Interior Designer",
+    "category": "finance",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "February - May 2021",
+    "description": [
+      "Assist in the creating office interior design",
+      "Provide input regarding office arrangement",
+      "Provide input regarding improvements to the design/arrangement of the office"
+    ],
+    "requirement": [
+      "Fresh graduate or final year student from Interior Design/Architecture major",
+      "Passionate in the field of Interior Design",
+      "Able to make interior design"
+    ],
+    "talentaUrl": ""
+  },
+  "project-development": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Project Development",
+    "category": "ss",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "February - May 2021",
+    "description": [
+      "Monitoring Marketing Metrics",
+      "Assist in conducting proposal making",
+      "Assistance in monitoring the administrative compliance"
+    ],
+    "requirement": [
+      "Fresh graduate or final year student from Business Administration/Business Management major",
+      "Proficient in using Microsoft Office",
+      "Good understanding about Project Management Modeling",
+      "Able to perform marketing and sales data analysis",
+      "Have good command of English",
+      "Have the ability to make presentations",
+      "Thorough and detailed"
+    ],
+    "talentaUrl": ""
+  },
+  "training-&-education-organizer": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Training & Education Organizer",
+    "category": "ss",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "February - May 2021",
+    "description": [
+      "Preparing pre-event training needs",
+      "Organizing training events",
+      "Creating a post training event report"
+    ],
+    "requirement": [
+      "Fresh graduate or final year student of from Broadcasting / Communication Science / Public Relations major",
+      "Good public speaking skill",
+      "At least a Bachelor's Degree from Agriculture (Agribusiness/Agrotech,etc)",
+      "Experienced in Event Management",
+      "Preferably have good graphic design skills"
+    ],
+    "talentaUrl": ""
+  },
+  "business-development": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Business Development",
+    "category": "business development",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "February - May 2021",
+    "description": [
+      "Involved in Bussines Development activities",
+      "Identify new potential partners",
+      "Involved in the development of the company's service system"
+    ],
+    "requirement": [
+      "Fresh graduate or final year student from Management/ Business Administration/Environmental Engineering major",
+      "Have good analytical skills"
+    ],
+    "talentaUrl": ""
+  },
+  "Accounting": {
+    "is_new": 0,
+    "status": 1,
+    "title": "accounting",
+    "category": "finance",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "February - May 2021",
+    "description": [
+      "Creating, repairing and distributing financial SOP documents related to related Units",
+      "To test SOPs so as to create effective and efficient internal controls",
+      "Create or arrange expenses",
+      "Analyzing FC, VC, OC, COGS and efficiency",
+      "Doing stock opname"
+    ],
+    "requirement": [
+      "Fresh graduate or final year student from Accounting / Economics major",
+      "Able to operate Microsoft Word and Microsoft Excel",
+      "Familiar in using Ms. Visio",
+      "Able to perform Accounting Journal"
+    ],
+    "talentaUrl": ""
+  },
+  "recruiter": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Recruiter",
+    "category": "hc",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "February - May 2021",
+    "description": [
+      "Assist Recruiter in carrying out the recruitment process",
+      "Schedule interviews and coordinate with the hiring manager",
+      "Updating and maintaining the candidate database, new employee request forms, and interview results",
+      "Help develop the recruitment process in Waste4Change"
+    ],
+    "requirement": [
+      "Fresh graduate or final year student offrom Psychology / Human Resource Management major",
+      "Familiar with the recruitment process",
+      "Familiar with Behavioral-Based Interview"
+    ],
+    "talentaUrl": ""
+  },
+  "administration": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Administration",
+    "category": "ss",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "February - May 2021",
+    "description": [
+      "Help with project and department administration",
+      "Help prepare meeting documents if needed",
+      "Help review project documents",
+      "Manage databases and departmental project filing systems",
+      "Establish and implement administrative procedures",
+      "Assist in making meeting minutes"
+    ],
+    "requirement": [
+      "Fresh graduate or final year student from Management or Business Administration major",
+      "Has a creative side",
+      "Thorough and detailed"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/NC9xUENJZTNyV29lUllGczEzdlJWUT09"
+  },
+  "product-owner": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Product Owner",
+    "category": "business development",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "February - May 2021",
+    "description": [
+      "Helping the Product owner to develop a product backlog and maintain a healthy sprint process",
+      "Coordinate with data analysts to collect and process data",
+      "Conduct research related to the issues of the existing problem",
+      "Manage databases and departmental project filing systems",
+      "Prepare needs in sprint planning, sprint review and rectrospective",
+      "Develop a document tools guide and help build a healthy Scrum system in the team"
+    ],
+    "requirement": [
+      "Fresh graduate or final year student from Management or Business Administration major",
+      "Good understanding of the Scrum framework",
+      "Good analytical and critical thinking skills"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/NC9xUENJZTNyV29lUllGczEzdlJWUT09"
+  },
+  "operation-services": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Operation Services",
+    "category": "os",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "February - May 2021",
+    "description": [
+      "Analyze and evaluate operational SOPs, then make recommendations for appropriate SOPs",
+      "Conduct research on waste collection operations for optimization of collection route and vehicle needs",
+      "Optimization of the waste collection system based on the transportation schedule and the capacity of the waste transport vehicle container",
+      "Evaluating technical and non-technical aspects for residential waste transportation",
+      "Make standardization based on data that has been collected"
+    ],
+    "requirement": [
+      "Fresh graduate or final year student from Industrial Engineering / environmental engineering",
+      "Good analytical skills",
+      "Able to perform sampling",
+      "Thorough and detailed",
+      "Familiar with making reports"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/NC9xUENJZTNyV29lUllGczEzdlJWUT09"
+  },
+  "innovation-&-process-improvement": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Innovation & Process Improvement",
+    "category": "os",
+    "type": 1,
+    "location": ["Bekasi"],
+    "time": "February - May 2021",
+    "description": [
+      "Perform fish bone analysis to determine the root cause of each Operational Services business process",
+      "Analysis of 7 types of waste six sigma in Material Recovery Facility operational activities",
+      "Provide solutions and suggestions so that Material Recovery Facility operational activities run more effectively and efficiently",
+      "Assisting the pre-study for the implementation of ISO 14001 and 9001",
+      "Preparing for Operation Service ISO 14001 and 9001 certified"
+    ],
+    "requirement": [
+      "Fresh graduate or final year student from Environmental Engineering / Industrial Engineering major",
+      "Have good analytical skills",
+      "Knowledgeable of ISO 14001 and 9001 Certification"
+    ],
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/NC9xUENJZTNyV29lUllGczEzdlJWUT09"
+  }
+}
