@@ -57,6 +57,7 @@ $lang["file-type"] = "Tipe File";
 $lang["total-pages"] = "Jumlah Halaman";
 $lang["file-size"] = "Ukuran File";
 $lang["detail"] = "Detail";
+$lang["languange"] = "id";
 
 //Welcome W4C
 $lang["welcome_title_1"] = "Saatnya Mengelola Sampah";
@@ -384,3 +385,7 @@ $lang['back_to_previous_page'] = "Kembali ke Halaman Sebelumnya";
 
 $lang['loading'] = "Memproses";
 $lang['home'] = "Beranda";
+$lang['working_hour']   = "Senin s/d Jumat 09:00 - 17:00 WIB (Kecuali Hari Libur)";
+
+//products
+$lang['products'] = 'Produk';

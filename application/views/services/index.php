@@ -1,3 +1,4 @@
+
 <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-overflow-hidden" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
 	<div class="divimage dzsparallaxer--target w-100" style="height: 130%; background-image: url(<?= base_url(DIR_BG . 'bg_header.jpg') ?>); transform: translate3d(0px, -48.5814px, 0px);"></div>
 	<div style="background:radial-gradient(circle farthest-side at 80% 60%, rgba(66,195,120,0.67), rgba(14,105,148,0.92))">
@@ -84,7 +85,7 @@
 						$service->recomendation = $service2->sections->{'recommendation'}->section_items;
 					}
 
-					if ($service->service_id != $service_id) {
+					if ($service->service_id != $service_id && $service->service_slug != "inorganic-waste-management" && $service->service_slug != "composting-tools-supplies" &&  $service->service_slug != "custom-waste-bin" && $service->service_slug != "produk-black-soldier-fly") {
 						if ($this->agent->is_mobile()) { //mobile view
 			?>
 							<div class="bg-white g-my-20 box-shadow-down">
@@ -121,7 +122,7 @@
 								<div class="g-pa-40">
 									<div class="row">
 										<div class="col-6 <?= $i % 2 == 1 ? 'order-3' : 'order-1' ?>">
-											<img class="img-fluid w-100 h-100" src="<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/' . $service->service_thumbnail_image, base_url(DIR_IMG . 'error/1x2.png')) ?>" alt="<?= $service->service_name . ' image' ?>" style="-webkit-mask-image: -webkit-gradient(linear, <?= $i % 2 == 1 ? 'right top, left top,' : 'left top, right top,' ?> from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));">
+											<img class="img-fluid w-100 h-100" src="<?= get_image(DIR_SERVICE . $service->service_slug . '/bg/' . $service->service_thumbnail_image, base_url(DIR_IMG . 'error/1x2.png')) ?>" alt="<?= $service->service_name . ' image' ?>" style="-webkit-mask-image: -webkit-gradient(linear, <?= $i % 2 == 1 ? 'right top, left top,' : 'left top, right top,' ?> from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));object-fit: cover">
 										</div>
 										<div class="col-6 order-2">
 											<span class="g-font-weight-600 g-font-size-12 text-uppercase"><?= strtolower($service->service_category_name) == strtolower($service->service_name) ? 'GENERAL' : $service->service_category_name ?></span>
@@ -175,7 +176,10 @@
 </section>
 <!-- END List Product -->
 <script>
+var elem = document.getElementByClass('welcome_list');
+elem.remove();
 	$(document).on('click', '.my_tab_2', function() {
+		
 		var tab_target = $(this).data('tab');
 		$('.my_tab_2').removeClass('tab-active');
 		$(this).addClass('tab-active');

@@ -1,4 +1,10 @@
-<section class="g-bg-white">
+<section class="<?php 
+			if ($service_id == 41) : ?>
+			g-bg-white 
+			<?php else : ?>
+			g-bg-gray-light-v5 
+			">
+			<?php endif;?>
 	<div id="<?= $section_slug ?>" style="height: 200px;position: absolute;width: 80%;margin-top: -80px"></div>
 
 	<div class="container <?= $this->agent->is_mobile() ? 'g-pt-40 g-pb-10' : 'g-pt-70 g-pb-10' ?>">

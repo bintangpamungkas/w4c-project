@@ -56,6 +56,7 @@ $lang["file-type"] = "File Type";
 $lang["total-pages"] = "Total Pages";
 $lang["file-size"] = "File Size";
 $lang["detail"] = "Detail";
+$lang["languange"] = "en";
 
 //Welcome W4C
 $lang["welcome_title_1"] = "It's time to";
@@ -387,3 +388,7 @@ $lang['back_to_previous_page'] = "Back to Previous Page";
 
 $lang['loading'] = "Loading";
 $lang['home'] = "Home";
+$lang['working_hour']   = "Monday to Friday 09:00 - 17:00 WIB (Except holidays)";
+
+//products
+$lang['products'] = 'Products';
