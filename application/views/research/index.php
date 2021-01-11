@@ -236,10 +236,10 @@ if (isset($_GET['cat'])) {
                 </h2>
             </a>
             <p class="g-font-size-14">
-                <span class="g-mr-40"><?= lang('category') ?> : <i class="g-color-blue">` + value.category.<?= $lang ?> + `</i></span>
+                <span class="g-mr-40"><?= lang('category') ?> : <i>` + value.category.<?= $lang ?> + `</i></span>
             </p>
             <p class="g-font-size-14">
-                <span class="g-mr-40"><?= lang('release-date') ?> : <i class="g-color-blue">` + value.file.release.<?= $lang ?> + `</i></span>
+                <span class="g-mr-40"><?= lang('release-date') ?> : <i>` + value.file.release.<?= $lang ?> + `</i></span>
             </p>
             <p class="g-font-size-16 g-mb-20 g-mt-20">
                 ` + value.content.<?= $lang ?>.overview + `

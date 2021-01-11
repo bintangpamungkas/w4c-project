@@ -1,0 +1,166 @@
+[
+    {   
+        "id": "w4c_research_0001",
+        "slug": "the-governance-of-solid-waste-institutions-in-indonesia-part-i-central-government",
+        "slider": "banner-riset-pusat.jpg",
+        "title": {
+            "id": "Tata Kelola Persampahan Indonesia - <span style='display: block;'>Bagian I Pemerintah Pusat</span>",
+            "en": "The Governance of Solid Waste Institutions in Indonesia - <span style='display: block;'>Part I Central Government</span>"
+        },
+        "hidden_title": {
+            "id": "Tata Kelola Persampahan Indonesia - Bagian I Pemerintah Pusat",
+            "en": "The Governance of Solid Waste Institutions in Indonesia - Part I Central Government"
+        },
+        "category": {
+            "id": "Tata Kelola & Kebijakan",
+            "en": "Governance & Policy"
+        },
+        "content": {
+            "id": {
+                "overview": "Indonesia masih memiliki banyak tantangan untuk menciptakan ekosistem yang kondusif bagi tata kelola sampah yang bertanggung jawab. Berikut adalah gambaran lintas kelembagaan persampahan di Indonesia ini khusus membahas tentang peran dan tanggung jawab Pemerintah Pusat dalam melaksanakan tata kelola persampahan di Indonesia.",
+                "detail": "Indonesia masih memiliki banyak tantangan dalam rangka mewujudkan ekosistem yang kondusif bagi sistem tata kelola sampah yang bertanggung jawab. Di Indonesia sendiri, isu persampahan merupakan isu yang ditangani oleh berbagai lembaga, mulai dari para kementerian di level nasional hingga lembaga dan institusi di level provinsi dan kabupaten/kota. Maka dari itu, kajian ini bertujuan untuk memberikan gambaran dan inovasi terkait peran dan tanggung jawab lembaga di tingkat Pusat dalam mengelola aspek persampahan di Indonesia, mengingat tata kelola kelembagaan menjadi aspek yang krusial dalam mewujudkan sistem pengelolaan sampah yang terintegrasi dan berkelanjutan. "
+            },
+            "en": {
+                "overview": "Indonesia still has many challenges in terms of creating an ideal ecosystem for implementing responsible waste management. This overview of solid waste institutions in Indonesia specifically discusses about the role and responsibilities of the Central Government within the context of solid waste governance in Indonesia.",
+                "detail": "Indonesia still have many challenges in terms of creating an ideal ecosystem for a responsible waste management. In Indonesia itself, waste management policies are formulated by various institutions, from national to regional levels. Therefore, this study aims to provide an overview of the roles and responsibilities of Central Government institutions in executing waste management implementation in Indonesia while taking into account the importance of waste governance in realizing an integrated and sustainable waste management system"
+            }
+        },
+        "banner": {
+            "thumb_image": {
+                "id": "thumbnail-pusat-in.jpg",
+                "en": "thumbnail-pusat-en.jpg"
+            },
+            "thumb_detail_image": "banner-detail-overview.svg",
+            "large_image": "research-banner-large.svg",
+            "title": {
+                "id": {
+                    "desktop": "Banner Title 1 Indonesia",
+                    "mobile": "Banner Title 1 ID"
+                },
+                "en": {
+                    "desktop": "Banner Title 1 English",
+                    "mobile": "Banner Title 1 EN"
+                }
+            },
+            "content": {
+                "id": {
+                    "desktop": "Kondisi kelembagaan persampahan Indonesia bersifat multipihak dan saling terkait antar satu sama lain, sehingga butuh penyelarasan dalam penyelenggaraan sistem pengelolaan sampah yang terintegrasi dan berkelanjutan.",
+                    "mobile": "Kondisi kelembagaan persampahan Indonesia bersifat multipihak dan saling terkait antar satu sama lain"
+                },
+                "en": {
+                    "desktop": "The condition of Indonesia's waste management institutions is that of multiple interconnected parties that need to be synchronized in order to implement a sustainable and integrated waste management system.",
+                    "mobile": "The condition of Indonesia's waste management institutions is that of multiple"
+                }
+            }
+        },
+        "prefilled_form": "The+Governance+of+Solid+Waste+Institutions+Indonesia+Part+I+-+Central+Government",
+        "file": {
+            "type": "PDF",
+            "release": {
+                "id": "16 Juli 2020",
+                "en": "July 16th, 2020"
+            },
+            "size": "1 MB",
+            "pages": {
+                "id": "28",
+                "en": "27"
+            },
+            "links": {
+                "preview": {
+                    "id": "https://drive.google.com/file/d/1lHdPSsf4K4fOrQDpSMqG7K4RlLWuQWct/preview",
+                    "en": "https://drive.google.com/file/d/1eh8xu6sdLqeHACktzejiUjgXwuo0g-Oj/preview"
+                },
+                "download": {
+                    "id": "https://drive.google.com/u/0/uc?id=1nKRpfIF-nonhI9wX5FBfd2WRJz6y3nvG&export=download",
+                    "en": "https://drive.google.com/u/0/uc?id=10avHPgN0unFJFtXE44fRSiytPfHRcVBX&export=download"
+                }
+            }
+        },
+        "keyword": {
+            "id": "Tata Kelola, Kebijakan, Pemangku Kepentingan, Stakeholder, Kelembagaan, Pemerintah Pusat, KLHK, PUPR, Bappenas",
+            "en": "Governance, Policy, Stakeholders, Institutions, Central Government, KLHK, PUPR, Bappenas"
+        }
+    },
+    {
+        "id": "w4c_research_0002",
+        "slug": "the-governance-of-solid-waste-institutions-in-indonesia-part-ii-regional-government",
+        "slider": "banner-riset-daerah.jpg",
+        "title": {
+            "id": "Tata Kelola Persampahan Indonesia - <span style='display: block;'>Bagian II Pemerintah Daerah</span>",
+            "en": "The Governance of Solid Waste Institutions in Indonesia - <span style='display: block;'>Part II Regional Government</span>"
+        },
+        "hidden_title": {
+            "id": "Tata Kelola Persampahan Indonesia - Bagian II Pemerintah Daerah",
+            "en": "The Governance of Solid Waste Institutions in Indonesia - Part II Regional Government"
+        },
+        "category": {
+            "id": "Tata Kelola & Kebijakan",
+            "en": "Governance & Policy"
+        },
+        "content": {
+            "id": {
+                "overview": "Pemerintah Daerah memiliki peran dan kewenangan yang lebih besar dalam eksekusi sistem pengelolaan sampah di tingkat daerah dibandingkan dengan Pemerintah Pusat. Pelajari lebih lanjut perihal pelaksanaan pengelolaan sampah di Indonesia yang hampir sepenuhnya berada di Pemerintah Daerah.",
+                "detail": "Guna mewujudkan pengelolaan sampah yang berkelanjutan diperlukan lima aspek yang berjalan selaras, yakni aspek hukum, kelembagaan, finansial, teknis operasional, dan partisipasi masyarakat. Di Indonesia sendiri, isu persampahan merupakan isu yang ditangani oleh berbagai lembaga, mulai dari para kementerian di level nasional hingga lembaga dan institusi di level provinsi dan kabupaten/kota. Maka dari itu, kajian ini bertujuan untuk memberikan gambaran dan inovasi terkait peran dan tanggung jawab lembaga di tingkat Daerah dalam mengelola aspek persampahan di Indonesia, mengingat bahwa Pemerintah Daerah memiliki peran dan kewenangan yang lebih besar dalam implementasi sistem pengelolaan sampah"
+            },
+            "en": {
+                "overview": "Regional Government has greater roles and authorities in the implementation of waste management system at the regional level. Learn more about the implementation aspects of Indonesia's waste management that is almost entirely fall within the authority of its regional government.",
+                "detail": "In order to realize a sustainable waste management system, collaboration between five aspects is needed, namely legal, institutional, financial, technical, and community participation. Moreover, a good waste management governance is also crucial in synchronizing all of the interrelated aspects. Therefore, there is an urgent need to Improve the aspect of Waste Management Institutions and Partnership. To start with, waste management policies in Indonesia are formulated by various institutions, from national to regional levels. Consequently, one of the keys in implementing these policies lies in the hand of the provincial and local government. Therefore, this study aims to provide an overview of how and in what manners regional government institutions in Indonesia implement its solid waste management system, especially when taking into consideration that Regional Goverment has greater roles and authorities in the implementation of waste management system."
+            }
+        },
+        "banner": {
+            "thumb_image": {
+                "id": "thumbnail-daerah-in.jpg",
+                "en": "thumbnail-daerah-en.jpg"
+            },
+            "thumb_detail_image": "banner-detail-overview.svg",
+            "large_image": "research-banner-large.svg",
+            "title": {
+                "id": {
+                    "desktop": "Banner Title 2 Indonesia",
+                    "mobile": "Banner Title 2 ID"
+                },
+                "en": {
+                    "desktop": "Banner Title 2 English",
+                    "mobile": "Banner Title 2 EN"
+                }
+            },
+            "content": {
+                "id": {
+                    "desktop": "Sejak berlakunya Peraturan Pemerintah Nomor 18 tahun 2016, kelembagaan pengelolaan sampah tingkat kabupaten/kota mengalami beberapa perubahan yang patut dipertimbangkan dan disesuaikan sedemikian rupa dalam rangka menerapkan sistem pengelolaan sampah yang terintegrasi di tingkat daerah.",
+                    "mobile": "Sejak berlakunya Peraturan Pemerintah Nomor 18 tahun 2016, kelembagaan pengelolaan sampah tingkat kabupaten/kota mengalami beberapa perubahan"
+                },
+                "en": {
+                    "desktop": "Since the enactment of the Government Regulation No.18/2016 regarding Regional Apparatuses, waste management institutions at the city/regency level undergo several changes that need to be taken into account and adjusted accordingly to implement an integrated waste management system at the regional level",
+                    "mobile": "Since the enactment of the Government Regulation No.18/2016 regarding Regional Apparatuses, waste management institutions at the city/regency level undergo several changes"
+                }
+            }
+        },
+        "prefilled_form": "The+Governance+of+Solid+Waste+Institutions+in+Indonesia+Part+II+-+Regional+Government",
+        "file": {
+            "type": "PDF",
+            "release": {
+                "id": "16 Juli 2020",
+                "en": "July 16th, 2020"
+            },
+            "size": "1 MB",
+            "pages": {
+                "id": "23",
+                "en": "23"
+            },
+            "links": {
+                "preview": {
+                    "id": "https://drive.google.com/file/d/1JAKKOxrGCKndnzVvM4Z49u4S3k5BLSFR/preview",
+                    "en": "https://drive.google.com/file/d/1dsO3XXRNnDYzZHHsaYX-O0LWPWpuvws4/preview"
+                },
+                "download": {
+                    "id": "https://drive.google.com/u/0/uc?id=1JAKKOxrGCKndnzVvM4Z49u4S3k5BLSFR&export=download",
+                    "en": "https://drive.google.com/u/0/uc?id=1A5M35uQR16Hk0ALgFKsn0ZEMPDYgwdaC&export=download"
+                }
+            }
+        },
+        "keyword": {
+            "id": "Tata Kelola, Pemangku Kepentingan, Stakeholder, Kelembagaan, Pemerintah Daerah, Provinsi, Kota, Kabupaten, DLH",
+            "en": "Governance, Stakeholders, Institutions, Regional Government, Province, City, Regency, Environmental Agency"
+        }
+    }
+]
