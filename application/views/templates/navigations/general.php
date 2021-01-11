@@ -11,7 +11,14 @@
 					<li class="lvl-0 hs-has-sub-menu nav-item g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
 						<a class="nav-link g-py-7 g-px-0  g-color-black--active g-color-black--focus" href="" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-pages"><?= $nav['title'] ?></a>
 						<ul class="mega-menu hs-sub-menu list-unstyled g-brd-0  g-min-width-220 g-mt-2 g-mt-8--lg--scrolling" aria-labelledby="nav-link-pages">
-							<?php foreach ($service_targets as $menu) : ?>
+							<?php if ($nav['menu'] == $products) : ?>
+								<?php foreach ($products as $menu_product) :  ?>
+									<li class="lvl-1 dropdown-item g-bg-blue-opacity-0_1--hover g-color-black--focus g-color-black--active ">
+										<a class="nav-link g-color-black" href="<?= get_url($menu_product->url) ?>" ><?= $menu_product->title ?></a>
+									</li>
+								<?php endforeach; ?>
+							<?php else : ?>
+								<?php foreach ($service_targets as $menu) : ?>
 					
 								<?php if (empty($menu)) : //don't have menu
 								?>
@@ -62,6 +69,7 @@
 								?>
 							<?php endforeach; // menu
 							?>
+							<?php endif; ?>
 						</ul>
 					</li> <!-- End Menu lvl 1 -->
 				<?php endif; //has menu
