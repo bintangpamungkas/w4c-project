@@ -1,0 +1,17 @@
+{
+  "peralatan-perlengkapan-mengompos": {
+    "service_target_slug": "peralatan-perlengkapan-mengompos",
+    "title": "Peralatan & Perlengkapan Mengompos",
+    "url": "official/product/composting-tools-supplies"
+  },
+  "black-soldier-fly-products": {
+    "title": "Produk Black Soldier Fly (BSF)",
+    "service_target_slug": "black-soldier-fly-products",
+    "url": "official/product/produk-black-soldier-fly"
+  },
+  "custom-waste-bin": {
+    "title": "Custom Waste Bin",
+    "service_target_slug": "custom-waste-bin",
+    "url": "official/product/custom-waste-bin"
+  }
+}

@@ -1,0 +1,382 @@
+{
+  "service_id": "1",
+  "service_parent_id": null,
+  "service_name": "Responsible Waste Management",
+  "service_short_name": "RWM",
+  "service_page_url": "official/service/responsible-waste-management",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_join_url": "",
+  "service_map_url": "https://www.google.com/maps/d/u/4/embed?mid=1EzzP9MqDQdgs4AvnMD8ybre3DRfMeWpG",
+  "service_meta": {
+    "title": "Program Pengelolaan Sampah secara Optimal beserta Pelaporan Alur Sampah",
+    "description_1": "Program pengelolaan sampah secara optimal beserta pelaporan alur sampah",
+    "description_2": "Program pengelolaan sampah secara optimal beserta pelaporan alur sampah",
+    "keywords": "program pengelolaan sampah, pengelolaan sampah, pengelolaan sampah dari sumber, pelaporan alur sampah, pengelolaan sampah secara optimal, pengelolaan sampah bertanggung jawab",
+    "site_url": "official/service/responsible-waste-management"
+  },
+  "sections": {
+    "welcome": {
+      "section_template": "welcome",
+      "section_menu_title": "",
+      "section_title": "Responsible Waste Management",
+      "section_subtitle": "",
+      "section_message": "Sistem manajemen sampah yang 100% menyeluruh untuk perusahaan, gedung, dan pelaku bisnis dalam rangka mengurangi jumlah timbunan sampah yang berakhir di TPA.",
+      "section_image": "header.jpg"
+    },
+    "achievement": {
+      "section_template": "our-achievement",
+      "section_menu_title": "",
+      "section_title": "Pencapaian Kami",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Klien",
+          "item_subtitle": "",
+          "item_message": "6",
+          "item_image": ""
+        },
+        {
+          "item_title": "Sampah Terdaur Ulang (Kg)",
+          "item_subtitle": "",
+          "item_message": "133823",
+          "item_image": ""
+        },
+        {
+          "item_title": "Kota Tersedia",
+          "item_subtitle": "",
+          "item_message": "7",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "about": {
+      "section_template": "about",
+      "section_menu_title": "Tentang",
+      "section_subtitle": "Tidak Ada Lagi Sampah Yang Tercampur",
+      "section_message": "Produksi sampah merupakan sesuatu yang tidak bisa dihindari. Mengurangi sampah sendiri bukanlah perkara yang mudah. Hal yang paling sederhana, mudah, dan penting yang dapat kita lakukan setelah menghasilkan sampah adalah memisahkan sampah organik dan sampah anorganik.<br><br>Dengan layanan kami yang bernama Responsible Waste Management (RWM), Waste4Change menyediakan manajemen sampah untuk mengurangi jumlah timbulan sampah yang menumpuk di TPA.",
+      "section_title": "Tentang",
+      "section_image": "about.jpg"
+    },
+
+    "benefit": {
+      "section_template": "benefit",
+      "section_menu_title": "KEUNTUNGAN",
+      "section_title": "KEUNTUNGAN",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Pendekatan manajemen sampah yang 100% terpilah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Meningkatkan citra perusahaan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Meningkatkan kepedulian pegawai tentang isu sampah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Menaati Peraturan Pemerintah (PP) No. 81 Tahun 2012 tentang Pengelolaan Sampah Rumah Tangga dan Sampah Sejenis Rumah Tangga, serta mendukung Peraturan Presiden Nomor 97 Tahun 2017 (JAKSTRANAS)",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Mengurangi timbulan sampah yang dibuang ke TPA",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "what-you-get": {
+      "section_template": "what-you-get",
+      "section_menu_title": "YANG ANDA DAPAT",
+      "section_title": "YANG ANDA DAPAT",
+      "section_subtitle": "Untuk jenis layanan ini, Waste4Change menyediakan fasilitas sebagai berikut:",
+      "section_messange": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Kantong sampah yang akan mendukung pemilahan sampah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "wastebin-m.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Pengangkutan sampah dalam kondisi terpilah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "mark-location-m.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Pelatihan induksi teknis sebanyak satu kali",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "loadspeaker-m.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Laporan tentang alur sampah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "report-m.png",
+          "item_color": ""
+        }
+      ]
+    },
+    "waste-flow": {
+      "section_template": "waste-flow",
+      "section_menu_title": "ALUR SAMPAH",
+      "section_title": "ALUR SAMPAH",
+      "section_subtitle": "Pengelolaan Sampah Residu di TPA",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Pemilahan sampah oleh klien",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "drop.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Penyimpanan sampah di titik transfer/ TPST",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "storage.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Pengumpulan sampah terpilah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "transfer.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Pengolahan sampah di Rumah Pemulihan Material W4C",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "process.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Residu dikirim ke TPA",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "landfill.png",
+          "item_color": ""
+        }
+      ]
+    },
+    "portofolio": {
+      "section_template": "portfolio-highlight",
+      "section_menu_title": "",
+      "section_title": "SOROTAN PORTOFOLIO",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_icon": "vida.jpg",
+          "item_title": "Vida Bekasi",
+          "item_subtitle": "Jl. Tirta Utama No. 1, Bumiwedari, Bantar Gebang, Kota Bekasi",
+          "item_message": "",
+          "item_image": "vida.jpg",
+          "item_color": "",
+          "item_mou": "2014-01-01",
+          "item_collection_schedule": "3 Hari per Minggu",
+          "item_duration": "",
+          "item_waste_collected": "112.000 kg/bulan"
+        },
+        {
+          "item_icon": "barito.jpg",
+          "item_title": "Wisma Barito",
+          "item_subtitle": "Jl. Letjen. S. Parman Kav. 62-63, Slipi, Jakarta Barat",
+          "item_message": "",
+          "item_image": "barito.jpg",
+          "item_color": "",
+          "item_mou": "2019-02-01",
+          "item_collection_schedule": "3 Hari per Minggu",
+          "item_duration": "1 Tahun",
+          "item_waste_collected": "6.922 kg/bulan"
+        }
+      ]
+    },
+    "client": {
+      "section_template": "our-client",
+      "section_menu_title": "Klien",
+      "section_title": "KLIEN KAMI",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Sekolah Seniman Pangan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Seniman-pangan.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Wisma Barito",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Wisma-barito.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Institute Francais Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Institute-Francais-Indonesia.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Binus School Bekasi",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Binus-School.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Javara",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Javara.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Mang Kabayan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Mang-Kabayan.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Vida Bekasi",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Vida-Bekasi.jpg",
+          "item_color": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "recommendation": {
+      "section_template": "recommended_for",
+      "section_menu_title": "",
+      "section_title": "DIREKOMENDASIKAN UNTUK",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Komplek Perkantoran",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-172 u-line-icon-pro",
+          "item_color": "#68a244"
+        },
+        {
+          "item_title": "Restoran",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-020 u-line-icon-pro",
+          "item_color": "#a24444"
+        },
+        {
+          "item_title": "Hotel",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-travel-079 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Bangunan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-172 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Pengelola Perumahan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-070 u-line-icon-pro",
+          "item_color": "#4489a2"
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "map": {
+      "section_template": "our-coverage",
+      "section_title": "Area Cakupan",
+      "section_menu_title": "Area Cakupan"
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Mulai <span style='font-weight:bold'>Responsible Waste Management</span> Anda sekarang juga!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "DAPATKAN PROPOSAL",
+          "cta_url": "official/service/responsible-waste-management/join",
+          "cta_class": ""
+        }
+      ]
+    }
+  }
+}

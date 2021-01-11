@@ -127,62 +127,9 @@ class Service extends MY_Controller
 			redirect(site_url('service/akabis-waste-management-academy'));
 		} elseif ($service_slug == 'extended-producer-responsibility') {
 			redirect(site_url('service/in-store-recycling'));
-		} elseif ($service_slug == 'produk-black-soldier-fly') {
-
-			$service = json_decode(file_get_contents(base_url('database/json/service/service_detail/' . $service_slug . '-' . $lang . '.json')));
-			$sections=$service->sections;
-			$data['service'] = $service;
-			$data['sections'] = $sections;
-			// Page Information
-			$data['meta_data'] = [
-				'site_url' => $service->service_meta->site_url,
-				'description_1' => $service->service_meta->description_1,
-				'title' => $service->service_meta->title,
-				'description_2' => $service->service_meta->description_2,
-				'keywords' => $service->service_meta->keywords,
-			];
-			$data['breadcrumb'] = [
-				[
-					'title' => $this->get_lang('home'),
-					'url' => '',
-					'active' => false
-				],
-				[
-					'title' => $this->get_lang('all-services'),
-					'url' => 'service',
-					'active' => false
-				],
-				[
-					'title' => $service->service_name,
-					'url' => '#welcome',
-					'active' => true
-				]
-			];
-
-			$data['subnav'] = [];
-			foreach ($sections as $section_slug => $sec) {
-				$data['subnav'][] = (object)[
-					'deleted_at' => '',
-					'service_id' => $service->service_id,
-					'section_id' => $section_slug,
-					'section_slug' => $section_slug,
-					'section_menu_name' => $sec->section_menu_title,
-					'section_name' => $sec->section_title,
-				];
-			}
-				
-				$data['title'] = $service->service_name;
-				$data['id'] = 'service';
-				$data['subtitle'] = 'information';
-				$data['data_mode'] = 'service';
-				$data['service_id'] = $service_slug;
-				$data['service_name'] = $service->service_name;
-				$data['page_heading'] = $service->service_name;
-				$data['is_bilingual'] = true;
-
-			$this->render_page('services/details/index', $data, 'services');
-		
-		}else{
+		} elseif ($service_slug == 'inorganic-waste-management') {
+			redirect (site_url('service/responsible-waste-management'));
+		}  else{
 			$service = $this->service_model->get_service($lang, $service_slug);
 			if (empty($service)) {
 				show_404();

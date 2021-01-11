@@ -1,69 +1,32 @@
 {
-  "company":{
-    "title": "Perusahaan",
-    "icon": "company-active-o.png",
-    "services": [
+  "individu": {
+    "service_target_id": 1,
+    "url": "",
+    "menu": [
       {
-        "title": "Waste Collection Services"
+        "service_category_id": "1",
+        "url": "",
+        "title": "Waste Collection Service"
       },
       {
-        "title": "Extended Producer Responsibility"
+        "service_category_id": "2",
+        "url": "",
+        "title": "Extended Procuder Responsibility"
       },
       {
-        "title": "Solid Waste Management Research",
-        "url": "official/service/solid-waste-management-research",
-        "has_page": true
+        "service_category_id": "3",
+        "url": "",
+        "title": "Solid Waste Management Research"
       },
       {
+        "service_category_id": "4",
+        "url": "",
         "title": "Community Development"
-      
-      },
-      {
-        "title": "Training"
-        
-      },
-      {
-        "title": "General"
-      },
-      {
-        "title": "Collect Waste Management"
       }
     ]
   },
-  "individual":{
-    "title": "Individu",
-    "icon": "individu-active-o.png",
-    "services": [
-      {
-        "title": "General",
-        "services": [
-          {
-            "url": "sendyourwaste",
-            "title": "Send Your Waste",
-            "has_page": true
-          },
-          {
-            "url": "dropbox",
-            "title": "Dropbox",
-            "has_page": true
-          },
-          {
-            "url": "program/puntungitusampah-daur-ulang-puntung-rokok/",
-            "title": "#PuntungItuSampah Daur Ulang Puntung Rokok",
-            "has_page": true
-          },
-          {
-            "url": "official/service/personal-waste-management",
-            "title": "Personal Waste Management",
-            "has_page": true
-          },
-          {
-            "url": "official/service/composting-tools-supplies",
-            "title": "Composting Tools & Supplies",
-            "has_page": true
-          }
-        ]
-      }
-    ]
+  "company": {
+    "service_target_id": 2,
+    "url": ""
   }
 }
