@@ -297,6 +297,8 @@ class Service extends MY_Controller
 			redirect(site_url('service/akabis-waste-management-academy/join'));
 		} elseif ($service_slug == 'extended-producer-responsibility') {
 			redirect(site_url('service/in-store-recycling/join'));
+		} elseif ($service_slug == 'personal-waste-management') {
+			redirect("http://personal.waste4change.com/");
 		}
 		$lang = $this->get_language();
 

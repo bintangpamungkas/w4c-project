@@ -54,11 +54,19 @@
 						<i class="icon-arrow-down"></i>
 					</button>
 					<?php if (!empty($service->service_proposal_url)) : ?>
-						<div class="d-none g-bg-transparent g-font-size-22 btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-30" <?= $this->agent->is_mobile() ? ' data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block"' : '' ?>>
-							<a class="btn btn-info btn-xs g-color-white g-brd-white-opacity-0_2 g-rounded-50 g-py-5 g-px-30 g-mt-3" href="<?= site_url('service/' . $service_id . '/join') ?>">
-								<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe')) : strtoupper(get_lang('get-proposal')))) ?>
-							</a>
-						</div>
+						<?php if ($service_id == 'personal-waste-management') : ?>
+						    <div class="d-none g-bg-transparent g-font-size-22 btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-30" <?= $this->agent->is_mobile() ? ' data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block"' : '' ?>>
+    							<a class="btn btn-info btn-xs g-color-white g-brd-white-opacity-0_2 g-rounded-50 g-py-5 g-px-30 g-mt-3" href="https://personal.waste4change.com/?redirect=location&<?= $query_from_url ?>">
+    								<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe')) : strtoupper(get_lang('get-proposal')))) ?>
+    							</a>
+    						</div>
+						<?php else: ?>
+							<div class="d-none g-bg-transparent g-font-size-22 btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-30" <?= $this->agent->is_mobile() ? ' data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block"' : '' ?>>
+								<a class="btn btn-info btn-xs g-color-white g-brd-white-opacity-0_2 g-rounded-50 g-py-5 g-px-30 g-mt-3" href="<?= site_url('service/' . $service_id . '/join') ?>">
+									<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe')) : strtoupper(get_lang('get-proposal')))) ?>
+								</a>
+							</div>
+						<?php endif; ?>
 					<?php elseif($service->service_id==41): ?>
 						<div class="d-none g-bg-transparent g-font-size-22 btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-30" <?= $this->agent->is_mobile() ? ' data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block"' : '' ?>>
 							<a class="btn btn-info btn-xs g-color-white g-brd-white-opacity-0_2 g-rounded-50 g-py-5 g-px-30 g-mt-3" href="<?= $service->sections->{'cta'}->section_ctas[0]->cta_url ?>">
@@ -109,11 +117,19 @@
 								<div <?= empty($parent_service->service_portfolio_url) && $service->service_portfolio_url != 1 ? 'class="col-3' : 'class="col-5' ?>">
 									<div class="<?= empty($service->service_parent_id) ? 'd-none' : 'd-block' ?>" data-header-fix-moment-exclude="<?= empty($service->service_parent_id) ? 'd-none' : 'd-block' ?>" data-header-fix-moment-classes="d-block">
 										<div class="row no-gutters justify-content-end">
-											<div class="col<?= $service->service_id == 33 ? '-auto' : '' ?>">
-												<a class="click_scroll btn btn-info btn-block g-color-white g-brd-white-opacity-0_2 g-font-size-13 g-rounded-50 g-px-30 g-py-9" href="<?= $service->service_id == 41 ? $service->sections->{"cta"}->section_ctas{0}->cta_url : site_url('service/' . $service_id . '/join') ?>"> <?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe')) : ($service->service_id == 41 ? $service->sections->{"cta"}->section_ctas{0}->cta_title	 : strtoupper(get_lang('get-proposal'))) )) ?>
-													<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3"> <i class="fa fa-info"></i> </span>
-												</a>
-											</div>
+											<?php if ($service_id == 'personal-waste-management') : ?>
+												<div class="col<?= $service->service_id == 33 ? '-auto' : '' ?>">
+													<a class="click_scroll btn btn-info btn-block g-color-white g-brd-white-opacity-0_2 g-font-size-13 g-rounded-50 g-px-30 g-py-9" href="https://personal.waste4change.com/?redirect=location&<?= $query_from_url ?>"> <?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe')) : strtoupper(get_lang('get-proposal')))) ?>
+														<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3"> <i class="fa fa-info"></i> </span>
+													</a>
+												</div>
+                    						<?php else: ?>
+												<div class="col<?= $service->service_id == 33 ? '-auto' : '' ?>">
+													<a class="click_scroll btn btn-info btn-block g-color-white g-brd-white-opacity-0_2 g-font-size-13 g-rounded-50 g-px-30 g-py-9" href="<?= $service->service_id == 41 ? $service->sections->{"cta"}->section_ctas{0}->cta_url : site_url('service/' . $service_id . '/join') ?>"> <?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe')) : ($service->service_id == 41 ? $service->sections->{"cta"}->section_ctas{0}->cta_title	 : strtoupper(get_lang('get-proposal'))) )) ?>
+														<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3"> <i class="fa fa-info"></i> </span>
+													</a>
+												</div>
+                    						<?php endif; ?>
 											<?php if (empty($parent_service->service_portfolio_url)) { ?>
 												<?php if ($service->service_portfolio_url == 1) { ?>
 													<div class="col">

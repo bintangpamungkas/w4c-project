@@ -13,9 +13,15 @@
 					<div class="col-md-3 col-10">
 						<div class="row justify-content-center">
 							<div class="col-12">
-								<a class="btn btn-block btn-info g-color-white g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-mb-10" href="<?= site_url('service/' . $service_id . '/join') ?>">
-									<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe-now')) : strtoupper(lang('get_proposal')))) ?>
-								</a>
+								<?php if ($service_id == 'personal-waste-management') : ?>
+									<a class="btn btn-block btn-info g-color-white g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-mb-10" href="https://personal.waste4change.com/?redirect=location&<?= $query_from_url ?>">
+										<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe-now')) : strtoupper(lang('get_proposal')))) ?>
+									</a>
+							    <?php else: ?>
+									<a class="btn btn-block btn-info g-color-white g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-mb-10" href="<?= site_url('service/' . $service_id . '/join') ?>">
+										<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe-now')) : strtoupper(lang('get_proposal')))) ?>
+									</a>
+							    <?php endif; ?>
 							</div>
 							<?php
 								if (empty($parent_service)) {

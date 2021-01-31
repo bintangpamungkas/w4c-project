@@ -2,7 +2,7 @@
 	'id' => [
 		[
 			'question' => 'Lokasi mana saja yang termasuk dalam cakupan area layanan Personal Waste Management? ',
-			'answer' => 'Untuk saat ini, lokasi yang dilayani oleh Personal Waste Management (PWM) adalah Jakarta, Tangerang Selatan, serta Kota Bekasi. <br>Untuk daftar kecamatan yang termasuk di dalam cakupan area, bisa dilihat di link <a class="g-color-blue" href="http://w4c.id/formpwm">w4c.id/formpwm</a>',
+			'answer' => 'Untuk saat ini, lokasi yang dilayani oleh Personal Waste Management (PWM) adalah Jakarta, Tangerang Selatan, serta Kota Bekasi.',
 			'number' => 1,
 		],
 		[
@@ -67,11 +67,44 @@
 			'answer' => 'Apabila klien merasa membutuhkan kantong sampah tambahan, silahkan mengisi link berikut terlebih dahulu <a class="g-color-blue" href=" https://bit.ly/TrashbagtambahanPWM">bit.ly/TrashbagtambahanPWM</a>',
 			'number' => 11,
 		],
+		[
+			'question' => 'Mengapa servis Personal Waste Management hanya diperuntukkan bagi klien perseorangan di perumahan dan tidak untuk perkantoran?',
+			'answer' => '
+<ul>
+    <li>Pengangkutan sampah oleh servis Personal Waste Management memiliki batasan volume dan jenis sampah yang bisa diangkut dan sistemnya sudah dikhususkan untuk pengelolaan sampah untuk satu rumah domestik.</li> 
+    <li>Pengelolaan sampah kawasan atau perkantoran memiliki standar pengangkutan dan pengelolaan sendiri yang harus sejalan dengan peraturan yang sudah ditentukan pemerintah, volume dan jenis sampahnya pun jelas berbeda.</li> 
+    <li>Demi menjaga keselamatan mitra angkut dan mitra daur ulang Personal Waste Management dan untuk memastikan sampah tetap dikelola secara optimal, kami menyediakan layanan Responsible Waste Management (w4c.id/RWM) untuk pengangkutan dan daur ulang sampah perkantoran dan area komersial (restoran, kafe, hotel, dll).</li> 
+</ul>',
+			'number' => 12,
+		],
+		[
+			'question' => 'Area perumahan saya tidak termasuk dalam titik angkut yang terdaftar, apakah bisa jika sampah domestik saya diangkut di kantor yang termasuk dalam titik angkut Personal Waste Management?',
+			'answer' => '
+<ul>
+    <li>Demi menjaga agar pengangkutan sampah oleh mitra angkut Personal Waste Management bisa dilakukan secara optimal, pengangkutan sampah hanya bisa dilakukan di rumah klien dan bukan kantor klien.</li> 
+    <li>Waste4Change mendata permintaan penambahan area layanan Personal Waste Management secara berkala, silahkan tunggu informasi perluasan layanan Personal Waste Management di website resmi Personal Waste Management Waste4Change  dan social media Waste4Change</li> 
+</ul>',
+			'number' => 13,
+		],
+		[
+			'question' => 'Tempat tinggal saya menjadi satu dengan kawasan gedung perkantoran dan kawasan komersial, apakah sampah saya masih bisa diangkut oleh layanan Personal Waste Management Waste4Change?',
+			'answer' => 'Selama klien bisa memberikan bukti bahwa penjemputan memang dilakukan di alamat rumah klien dan bukan kantor klien, maka penjemputan sampah bisa dilakukan oleh mitra angkut Personal Waste Management kami.',
+			'number' => 14,
+		],
+		[
+			'question' => 'Apa yang akan terjadi jika pelanggan ketahuan memberikan alamat kantor dan menyertakan sampah kantor melalui layanan Personal Waste Management Waste4Change?',
+			'answer' => '
+<ul>
+    <li>Waste4Change akan meminta klien untuk melakukan perubahan alamat penjemputan sampah Personal Waste Management atau Anda dapat beralih kepada layanan Responsible Waste Management kami yang akan lebih optimal ditujukan kepada area perkantoran/area komersial lain</li> 
+    <li>Jika alamat penjemputan rumah klien berada di luar area layanan Personal Waste Management, Waste4Change berhak menghentikan penjemputan sampah dan biaya berlangganan yang sudah dibayarkan hangus dan tidak bisa dikembalikan.</li> 
+</ul>',
+			'number' => 15,
+		],
 	],
 	'en' => [
 		[
 			'question' => 'Which locations are included in the Personal Waste Management service area coverage?',
-			'answer' => 'Currently, the locations that are covered by the Personal Waste Management (PWM) service are Jakarta, South Tangerang, and Bekasi City. <br>A list of sub-districts included in the coverage area can be seen in the following link <a class="g-color-blue" href="http://w4c.id/formpwm">w4c.id/formpwm</a>',
+			'answer' => 'Currently, the locations that are covered by the Personal Waste Management (PWM) service are Jakarta, South Tangerang, and Bekasi City.',
 			'number' => 1,
 		],
 		[
@@ -135,6 +168,39 @@ Waste that is not received includes organic waste, electronic waste, medical was
 			'question' => 'What if the waste that needs to be picked up exceeds the 2 trash bags that were given per week?',
 			'answer' => 'If the client feels the need for additional recycled trash bags, please go to this link <a class="g-color-blue" href=" https://bit.ly/TrashbagtambahanPWM">bit.ly/TrashbagtambahanPWM</a>',
 			'number' => 11,
+		],
+		[
+			'question' => 'Why is the Personal Waste Management service only for individual clients in housing and not for offices?',
+			'answer' => '
+<ul>
+    <li>The transportation of waste by the Personal Waste Management service has a limit on the volume and type of waste that can be transported and the system is specifically for waste management for one domestic house.</li> 
+    <li>Regional or office waste management has its own standard of transportation and management which must be in line with regulations set by the government, and the volume and type of waste are clearly different.</li> 
+    <li>In order to maintain the safety of transportation partners and recycling partners of Personal Waste Management and to ensure that waste remains optimally managed, we provide Responsible Waste Management (w4c.id/RWM) services for transporting and recycling waste in offices and commercial areas (restaurants, cafes, hotels , etc).</li> 
+</ul>',
+			'number' => 12,
+		],
+		[
+			'question' => 'My residential area is not included in the registered transport point, can it be if my domestic waste is transported at the office that is included in the personal waste management transport point?',
+			'answer' => '
+<ul>
+    <li>In order to ensure that the transportation of waste by transportation partners of Personal Waste Management can be carried out optimally, garbage transportation can only be done at the client\'s house and not the client\'s office.</li> 
+    <li>Waste4Change records requests for additional Personal Waste Management service areas on a regular basis, please wait for information on the expansion of the Personal Waste Management service on the official website of Waste4Change\'s Personal Waste Management and Waste4Change\'s social media.</li> 
+</ul>',
+			'number' => 13,
+		],
+		[
+			'question' => 'My residence is one with office buildings and commercial areas, can my waste still be transported by Waste4Change\'s Personal Waste Management service?',
+			'answer' => 'As long as the client can provide proof that the pickup is indeed carried out at the client\'s home address and not the client\'s office, then garbage collection can be done by our Personal Waste Management transportation partner.',
+			'number' => 14,
+		],
+		[
+			'question' => 'What will happen if a customer is caught providing the office address and including office waste through Waste4Change\'s Personal Waste Management service?',
+			'answer' => '
+<ul>
+    <li>Waste4Change will ask clients to change their Personal Waste Management waste pick-up address or you can switch to our Responsible Waste Management service which will be more optimally addressed to other office / commercial areas</li> 
+    <li>If the client\'s home pick-up address is outside the Personal Waste Management service area, Waste4Change has the right to stop collecting waste and the subscription fee that has been paid is forfeited and cannot be returned.</li> 
+</ul>',
+			'number' => 15,
 		],
 	]
 ];

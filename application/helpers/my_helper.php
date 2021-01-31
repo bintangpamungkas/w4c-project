@@ -469,7 +469,7 @@ function services_list_helper()
 	return $services;
 }
 
-function meta_data($activation, $meta_data = false)
+function meta_data($activation, $meta_data = true)
 {
 	$param = [
 		'title' => get_lang('title-a-social-entrepreneur-that-provides-responsible-waste-management-services-'),
@@ -486,15 +486,17 @@ function meta_data($activation, $meta_data = false)
 	if ($activation == true) {
 	
 		?>
+			<meta http-equiv="content-language" content="id">
 			<meta name="description" content="<?= empty($meta_data['description_1']) ? $param['description_1'] : $meta_data['description_1'] ?>">
 			<meta name="keywords" content="<?= empty($meta_data['keywords']) ? $param['keywords'] : $meta_data['keywords']?>">
-			<meta property="og:url" content="<?= empty($meta_data['site_url']) ? SITE_URL : SITE_URL . $meta_data['site_url'] ?>" />
 			<meta property="og:site_name" content="<?= APP_NAME ?>" />
+			<meta property="og:url" content="<?= $meta_data['site_url'] ?>" />
 			<meta property="og:title" content="<?= empty($meta_data['title']) ? $param['title'] : $meta_data['title'] ?>">
 			<meta property="og:description" content="<?= empty($meta_data['description_2']) ? $param['description_2'] : $meta_data['description_2'] ?>" />
 			<meta property="og:image" content="<?= empty($meta_data['image']) ? $param['image'] : $meta_data['image'] ?>">
 			<meta property="og:image:type" content="image/jpg">
 			<meta property="og:image:width" content="780" />
+			<meta property="og:locale" content="<?= get_lang("languange") ?>" />
 			<meta property="og:image:height" content="439" />
 			<meta name="twitter:card" content="summary_large_image" />
 			<meta name="twitter:description" content="<?= empty($meta_data['description_2']) ? $param['description_2'] : $meta_data['description_2'] ?>" />
@@ -515,21 +517,21 @@ function hotjar_tracking($activation)
 {
 	$param = [
 		[
-			'site_url' => '/official/service/zero-waste-to-landfill',
+			'site_url' => '/service/zero-waste-to-landfill',
 			'site_name' => '<!-- Hotjar Tracking Code for https://waste4change.com/official/service/zero-waste-to-landfill -->',
 			'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 			'tracking_code' => '1380850',
 			'status' => true,
 		],
 		[
-			'site_url' => '/official/service/responsible-waste-management',
+			'site_url' => '/service/responsible-waste-management',
 			'site_name' => '<!-- Hotjar Tracking Code for https://waste4change.com/official/service/responsible-waste-management -->',
 			'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 			'tracking_code' => '1380868',
 			'status' => true,
 		],
 		[
-			'site_url' => '/official/service/solid-waste-management-research',
+			'site_url' => '/service/solid-waste-management-research',
 			'site_name' => '<!-- Hotjar Tracking Code for https://waste4change.com/official/service/solid-waste-management-research -->',
 			'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 			'tracking_code' => '1780943',
@@ -606,7 +608,7 @@ function hotjar_tracking($activation)
 			'status' => true,
 		],
 		[
-			'site_url' => '/official/service/personal-waste-management',
+			'site_url' => '/service/personal-waste-management',
 			'site_name' => '<!-- Hotjar Tracking Code for https://waste4change.com/official/service/personal-waste-management -->',
 			'site_source' => '<!-- Waste4Change @Beta SM from kertasmuda@gmail.com -->',
 			'tracking_code' => '1780959',
@@ -733,12 +735,28 @@ function google_analytic($activation)
 			'site_source' => '<!-- Waste4Change @Beta from kertasmuda@gmail.com -->',
 			'tracking_code' => 'UA-134685047-1',
 			'status' => true,
+			'default' => true,
+		],
+		[
+		    'site_url' => '/service/personal-waste-management',
+			'site_name' => '<!-- Google Analytic Waste4Change for Personal Waste Management Site -->',
+			'site_source' => '<!-- Waste4Change @Beta from kertasmuda@gmail.com -->',
+			'tracking_code' => 'G-69J5W6607R',
+			'status' => true,
+			'default' => false,
 		],
 	];
 	if ($activation == true) {
+	    $countUrl = 0;
+	    $defaultParam = [];
 		foreach ($param as $param) {
-			if ($param['status'] == true) {
-				echo '<!-- Global site tag (gtag.js) - Google Analytics -->
+		    if($param['default']) {
+		        $defaultParam = $param;
+		        continue;
+		    }
+			if ($param['status'] == true && strstr($_SERVER['REQUEST_URI'], $param['site_url']) == true) {
+			    $countUrl += 1;
+				echo '<!-- Global site tag (gtag.js) - Google Analytics for ' . HOST . $param['site_url'] . ' -->
 					';
 				echo $param['site_name'];
 				if (MODE != 'live') {
@@ -757,6 +775,36 @@ function google_analytic($activation)
 					gtag('js', new Date());
 
 					gtag('config', '<?= $param['tracking_code'] ?>');
+				</script>
+
+		<?php
+				if (MODE != 'live') {
+					echo " -->";
+				}
+			}
+		}
+		
+		if($countUrl == 0) {
+		    if ($defaultParam['status'] == true) {
+				echo '<!-- Global site tag (gtag.js) - Google Analytics -->
+					';
+				echo $defaultParam['site_name'];
+				if (MODE != 'live') {
+					echo " <!--";
+				}
+				?>
+
+				<script async src="https://www.googletagmanager.com/gtag/js?id=<?= $defaultParam['tracking_code'] ?>"></script>
+				<script>
+					window.dataLayer = window.dataLayer || [];
+
+					function gtag() {
+						dataLayer.push(arguments);
+					}
+
+					gtag('js', new Date());
+
+					gtag('config', '<?= $defaultParam['tracking_code'] ?>');
 				</script>
 
 		<?php
@@ -849,7 +897,7 @@ function share_social_media()
 		[
 			'social_name' => 'Facebook',
 			'social_url' => 'https://facebook.com/waste4change',
-			'share_url' => 'https://facebook.com/sharer/sharer.php?display=page&u=' . site_url(''),
+			'share_url' => 'https://facebook.com/sharer/sharer.php?display=page&u=https://waste4change.com/official' ,
 			'social_icon' => 'fa fa-facebook',
 			'social_color' => 'g-brd-2 g-color-info g-color-white--hover g-bg-facebook--hover',
 			'number' => '2',
