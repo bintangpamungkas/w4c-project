@@ -265,7 +265,7 @@
 									<li class="g-font-size-25 g-font-weight-900" style="color:<?= $pricing['is_highlight'] == 1 ? '#208DCD' : '#6DCAD9' ?>"><?= $pricing['price_new'] ?></li>
 									<li class="g-mb-20 text-muted"><?= $pricing['price_tax'] ?></li>
 								</ul>
-								<a class="btn text-uppercase <?= $pricing['is_highlight'] == 1 ? 'btn-info' : 'btn-outline-info' ?> g-color-white--focus  g-rounded-50 g-font-size-12 g-font-weight-700 g-py-15 g-px-60 g-mb-10" href="https://personal-dev.waste4change.tech/?redirect=location" style="<?= $pricing['is_highlight'] == 1 ? 'background-color:#208DCD' : '' ?>"><?= $this->session->userdata('language') == 'en' ? 'SUBSCRIBE' : 'BERLANGGANAN' ?></a>
+								<a class="btn text-uppercase <?= $pricing['is_highlight'] == 1 ? 'btn-info' : 'btn-outline-info' ?> g-color-white--focus  g-rounded-50 g-font-size-12 g-font-weight-700 g-py-15 g-px-60 g-mb-10" href="https://personal.waste4change.com/?redirect=location" style="<?= $pricing['is_highlight'] == 1 ? 'background-color:#208DCD' : '' ?>"><?= $this->session->userdata('language') == 'en' ? 'SUBSCRIBE' : 'BERLANGGANAN' ?></a>
 							</div>
 							<!-- End Article Content -->
 						</article>
@@ -311,7 +311,7 @@
 									<li class="g-font-size-25 g-font-weight-900" style="color:<?= $pricing['is_highlight'] == 1 ? '#208DCD' : '#6DCAD9' ?>"><?= $pricing['price_new'] ?></li>
 									<li class="g-mb-20 text-muted"><?= $pricing['price_tax'] ?></li>
 								</ul>
-								<a class="btn text-uppercase <?= $pricing['is_highlight'] == 1 ? 'btn-info' : 'btn-outline-info' ?> g-color-white--focus  g-rounded-50 g-font-size-12 g-font-weight-700 g-py-15 g-px-60 g-mb-10" href="https://personal-dev.waste4change.tech/?redirect=location" style="<?= $pricing['is_highlight'] == 1 ? 'background-color:#208DCD' : '' ?>"><?= $this->session->userdata('language') == 'en' ? 'SUBSCRIBE' : 'BERLANGGANAN' ?></a>
+								<a class="btn text-uppercase <?= $pricing['is_highlight'] == 1 ? 'btn-info' : 'btn-outline-info' ?> g-color-white--focus  g-rounded-50 g-font-size-12 g-font-weight-700 g-py-15 g-px-60 g-mb-10" href="https://personal.waste4change.com/?redirect=location" style="<?= $pricing['is_highlight'] == 1 ? 'background-color:#208DCD' : '' ?>"><?= $this->session->userdata('language') == 'en' ? 'SUBSCRIBE' : 'BERLANGGANAN' ?></a>
 							</div>
 							<!-- End Article Content -->
 						</article>
@@ -555,7 +555,7 @@
 									<li class="g-font-size-30 g-font-weight-900" style="color:<?= $pricing['is_highlight'] == 1 ? '#208DCD' : '#6DCAD9' ?>"><?= $pricing['price_new'] ?></li>
 									<li class="g-mb-0 g-font-size-10 text-muted"><small><?= $pricing['price_tax'] ?></small></li>
 								</ul>
-								<a class="btn text-uppercase <?= $pricing['is_highlight'] == 1 ? 'btn-info' : 'btn-outline-info' ?> g-color-white--focus  g-rounded-50 g-font-size-12 g-font-weight-700 g-py-15 g-px-60 g-mb-10" href="https://personal-dev.waste4change.tech/?redirect=location" style="<?= $pricing['is_highlight'] == 1 ? 'background-color:#208DCD' : '' ?>"><?= $this->session->userdata('language') == 'en' ? 'SUBSCRIBE' : 'BERLANGGANAN' ?></a>
+								<a class="btn text-uppercase <?= $pricing['is_highlight'] == 1 ? 'btn-info' : 'btn-outline-info' ?> g-color-white--focus  g-rounded-50 g-font-size-12 g-font-weight-700 g-py-15 g-px-60 g-mb-10" href="https://personal.waste4change.com/?redirect=location" style="<?= $pricing['is_highlight'] == 1 ? 'background-color:#208DCD' : '' ?>"><?= $this->session->userdata('language') == 'en' ? 'SUBSCRIBE' : 'BERLANGGANAN' ?></a>
 							</div>
 							<!-- End Article Content -->
 						</article>

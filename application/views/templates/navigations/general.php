@@ -11,47 +11,46 @@
 					<li class="lvl-0 hs-has-sub-menu nav-item g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
 						<a class="nav-link g-py-7 g-px-0  g-color-black--active g-color-black--focus" href="" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-pages"><?= $nav['title'] ?></a>
 						<ul class="mega-menu hs-sub-menu list-unstyled g-brd-0  g-min-width-220 g-mt-2 g-mt-8--lg--scrolling" aria-labelledby="nav-link-pages">
-							<?php foreach ($nav['menu'] as $menu) : ?>
+							<?php if ($nav['menu'] == $products) : ?>
+								<?php foreach ($products as $menu_product) :  ?>
+									<li class="lvl-1 dropdown-item g-bg-blue-opacity-0_1--hover g-color-black--focus g-color-black--active ">
+										<a class="nav-link g-color-black" href="<?= get_url($menu_product->url) ?>" ><?= $menu_product->title ?></a>
+									</li>
+								<?php endforeach; ?>
+							<?php else : ?>
+								<?php foreach ($service_targets as $menu) : ?>
 					
-								<?php if (empty($menu->menu)) : //don't have menu
+								<?php if (empty($menu)) : //don't have menu
 								?>
 									<li class="lvl-1 dropdown-item g-bg-blue-opacity-0_1--hover g-color-black--focus g-color-black--active ">
 									<a class="nav-link g-color-black" href="<?= get_url($menu->url) ?>" ><i class="<?= $menu->icon ?> g-mr-10"></i><?= $menu->title ?></a>
 									</li>
 								<?php else : //has menu
 								?>
-											<?php
-								if ($menu->title == get_lang('for-individuals')) { //if target is individual category not show/ skip to list service
-									$submenus = $menu->menu[0]->menu;
-								} else {
-									$submenus = $menu->menu;
-								}
-								?>
 									<li class="lvl-1 dropdown-item hs-has-sub-menu g-bg-white g-color-black--focus g-color-black--active ">
 										<a class="nav-link g-color-black" href="" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--others"><i class="<?= $menu->icon ?> g-mr-10"></i><?= $menu->title ?></a>
 										<ul class="hs-sub-menu list-unstyled g-brd-0 g-min-width-220 g-mt-minus-2" aria-labelledby="nav-link--pages--others">
-											<?php foreach ($submenus as $submenu) : ?>
-												<?php if (empty($submenu->menu)) : ?>
+											<?php foreach ($menu->services as $submenumenu) : ?>
+												<?php if (empty($submenumenu)) : ?>
 													<li class="dropdown-item g-bg-blue-opacity-0_1--hover">
-														<a class="nav-link g-color-black g-color-blue-dark-v2--active g-color-blue-dark-v2--hover" href="<?= get_url($submenu->url) ?>"><?= $submenu->title ?></a>
+														<a class="nav-link g-color-black g-color-blue-dark-v2--active g-color-blue-dark-v2--hover" href="<?= get_url($submenumenu->url) ?>"><?= $submenumenu->title ?></a>
 													</li>
-												<?php elseif ($submenu->service_category_id != 7) : ?>
-													<?php if (count($submenu->menu) == 1 && $submenu->menu[0]->title == $submenu->title) : ?>
+												<?php elseif ($submenumenu->url != "") : ?>
 														<li class="lvl-2 dropdown-item g-bg-blue-opacity-0_1--hover <?= $this->agent->is_mobile() ? 'g-pl-30' : '' ?>">
-															<a class="nav-link g-color-black g-color-black--active g-color-blue-dark-v2--active g-color-blue-dark-v2--hover" href="<?= get_url($submenu->menu[0]->url) ?>"><?= $submenu->menu[0]->title ?></a>
+															<a class="nav-link g-color-black g-color-black--active g-color-blue-dark-v2--active g-color-blue-dark-v2--hover" href="<?= get_url($submenumenu->url) ?>"><?= $submenumenu->title ?></a>
 														</li>
 													<?php else : ?>
 														<li class="lvl-2 dropdown-item hs-has-sub-menu g-bg-white g-pr-0 <?= $this->agent->is_mobile() ? 'g-pl-30' : '' ?>">
 															<a class="nav-link g-color-black  g-color-black--active g-color-black--focus" href="" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--404">
-																<?= $submenu->title ?>
+																<?= $submenumenu->title ?>
 															</a>
 															<ul class="hs-sub-menu list-unstyled g-brd-0 g-min-width-220 g-mt-minus-2 " id="nav-submenu--pages--404" aria-labelledby="nav-link--pages--404">
-																<?php foreach ($submenu->menu as $subsubmenu) :
-																	if (!empty($subsubmenu->has_page)) :
+																<?php foreach ($submenumenu->services as $subsubmenu) :
+																	if ($subsubmenu->has_page == 1) :
 																?>
 																		<li class="lvl-3 dropdown-item g-bg-blue-opacity-0_1--hover  g-pr-0">
 																			<a class="nav-link g-color-black g-color-blue-dark-v2--active g-color-blue-dark-v2--hover" href="<?= $subsubmenu->has_page == 1 ? get_url($subsubmenu->url) : '#' ?>">
-																				<?= str_replace($submenu->title . " - ", "", $subsubmenu->title) ?>
+																				<?= $subsubmenu->title ?>
 																			</a>
 																		</li>
 																<?php
@@ -62,8 +61,6 @@
 														</li> <!-- End Menu lvl 3 -->
 													<?php endif; //end just 1 sub menu
 													?>
-												<?php endif; //has subsubmenu
-												?>
 											<?php endforeach; // submenu
 											?>
 										</ul>
@@ -72,6 +69,7 @@
 								?>
 							<?php endforeach; // menu
 							?>
+							<?php endif; ?>
 						</ul>
 					</li> <!-- End Menu lvl 1 -->
 				<?php endif; //has menu
@@ -87,11 +85,20 @@
 					<li class="lvl-0 hs-has-sub-menu nav-item g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
 						<a class="nav-link g-py-7 g-px-0 text-uppercase" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-pages"><?= $nav['title'] ?></a>
 						<ul class="mega-menu hs-sub-menu list-unstyled u-shadow-v11 g-brd-0 g-min-width-220 g-py-20 g-mt-18 g-mt-8--lg--scrolling arrow-box" aria-labelledby="nav-link-pages">
-							<?php foreach ($nav['menu'] as $menu) : ?>
+							<?php if($nav['menu'] == $products) : ?>
+								<?php foreach($products as $menu_product): ?>
+									<li class="lvl-1 dropdown-item g-bg-blue-opacity-0_1--hover g-color-blue-dark-v2--focus g-color-blue-dark-v2--active">								
+											<a class="nav-link g-color-black g-color-blue-dark-v2--hover" href="<?= get_url($menu_product->url) ?>" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--others">
+												<?= $menu_product->title ?>
+											</a>
+										</li>
+								<?php endforeach; ?>
+							<?php else : ?>
+								<?php foreach ($service_targets as $menu) : ?>
 
-								<?php if (empty($menu->menu)) : //don't have menu
+								<?php if (empty($menu)) : //don't have menu
 								?>
-									<li class="lvl-1 dropdown-item g-bg-blue-opacity-0_1--hover g-color-blue-dark-v2--focus g-color-blue-dark-v2--active">
+									<li class="lvl-1 dropdown-item g-bg-blue-opacity-0_1--hover g-color-blue-dark-v2--focus g-color-blue-dark-v2--active">								
 										<a class="nav-link g-color-black g-color-blue-dark-v2--hover  text-uppercase" href="<?= get_url($menu->url) ?>#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--others">
 											<i class="<?= $menu->icon ?> g-mr-10"></i>
 											<img class="g-mr-10 g-grayscale-100x g-grayscale-0--parent-hover" src="<?= get_image(DIR_ICON . $menu->icon) ?>" alt="<?= $menu->title ?> icon" style="max-width: 30px; max-height: 30px;">
@@ -100,13 +107,7 @@
 									</li>
 								<?php else : //has menu
 								?>
-									<?php
-									if ($menu->title == get_lang('for-individuals')) { //if target is individual category not show/ skip to list service
-										$submenus = $menu->menu[0]->menu;
-									} else {
-										$submenus = $menu->menu;
-									}
-									?>
+									
 									<li class="lvl-1 dropdown-item hs-has-sub-menu g-bg-blue-opacity-0_1--hover g-color-blue-dark-v2--focus g-color-blue-dark-v2--active g-parent">
 										<a class="nav-link g-color-black g-color-blue-dark-v2--hover  text-uppercase" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--others">
 											<i class="<?= $menu->icon ?> g-mr-10"></i>
@@ -114,28 +115,27 @@
 											<?= $menu->title ?>
 										</a>
 										<ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-0 g-min-width-300 g-py-20 g-mt-minus-20" aria-labelledby="nav-link--pages--others">
-											<?php foreach ($submenus as $submenu) : ?>
-												<?php if (empty($submenu->menu) && $submenu->service_category_id != 7) : ?>
+											<?php foreach ($menu->services as $submenumenu) : ?>
+												<?php if (empty($submenumenu)): ?>
 													<li class="lvl-2 dropdown-item g-bg-blue-opacity-0_1--hover">
-														<a style="padding: 12px 0px;" class="nav-link g-color-black g-color-blue-dark-v2--hover" href="<?= get_url($submenu->url) ?>"><?= $submenu->title ?></a>
+														<a style="padding: 12px 0px;" class="nav-link g-color-black g-color-blue-dark-v2--hover" href="<?= get_url($submenumenu->url) ?>"><?= $submenumenu->title ?></a>
 													</li>
-												<?php elseif ($submenu->service_category_id != 7) : ?>
-													<?php if (count($submenu->menu) == 1 && $submenu->menu[0]->title == $submenu->title) : ?>
+													<?php elseif ($submenumenu->url != "") : ?>
 														<li class="lvl-2 dropdown-item g-bg-blue-opacity-0_1--hover">
-															<a style="padding: 12px 0px;" class="nav-link g-color-black g-color-blue-dark-v2--hover" href="<?= get_url($submenu->menu[0]->url) ?>"><?= $submenu->menu[0]->title ?></a>
+															<a style="padding: 12px 0px;" class="nav-link g-color-black g-color-blue-dark-v2--hover" href="<?= get_url($submenumenu->url) ?>"><?= $submenumenu->title ?></a>
 														</li>
 													<?php else : ?>
 														<li class="lvl-2 dropdown-item hs-has-sub-menu g-bg-blue-opacity-0_1--hover ">
 															<a style="padding: 12px 0px;" class="nav-link g-color-black g-color-blue-dark-v2--hover" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--404">
-																<?= $submenu->title ?>
+																<?= $submenumenu->title ?>
 															</a>
 															<ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-0 g-min-width-220 g-py-20 g-mt-minus-20 " id="nav-submenu--pages--404" aria-labelledby="nav-link--pages--404">
-																<?php foreach ($submenu->menu as $subsubmenu) :
+																<?php foreach ($submenumenu->services as $subsubmenu) :
 																	if (!empty($subsubmenu->has_page)) :
 																?>
 																		<li class="lvl-3 dropdown-item g-bg-blue-opacity-0_1--hover">
 																			<a style="padding: 12px 0px;" class="nav-link g-color-black g-color-blue-dark-v2--hover" href="<?= $subsubmenu->has_page == 1 ? get_url($subsubmenu->url) : '#' ?>">
-																				<?= str_replace($submenu->title . " - ", "", $subsubmenu->title) ?>
+																				<?= $subsubmenu->title ?>
 																			</a>
 																		</li>
 																<?php
@@ -146,8 +146,6 @@
 														</li> <!-- End Menu lvl 3 -->
 													<?php endif; // end if subsubmenu just 1
 													?>
-												<?php endif; //has subsubmenu
-												?>
 											<?php endforeach; // submenu
 											?>
 										</ul>
@@ -156,6 +154,7 @@
 								?>
 							<?php endforeach; // menu
 							?>
+							<?php endif; ?>
 						</ul>
 					</li> <!-- End Menu lvl 1 -->
 				<?php endif; //has menu

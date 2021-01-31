@@ -1,152 +1,120 @@
 {
   "company": {
-    "status": true,
+    "service_target_id": 1,
+    "service_target_slug": "for-company",
     "title": "For Company",
     "icon": "company-active-o.png",
-    "items": [{
-        "status": true,
+    "url": "",
+    "services": [
+      {
         "title": "Waste Collection Services",
-        "items": {
+        "url": "",
+        "services": {
           "responsible-waste-management": {
-            "status": true,
+            "has_page": 1,
             "url": "official/service/responsible-waste-management",
-            "title": "Responsible Waste Management",
-            "has_page": true
-          },
-          "zero-waste-to-landfill": {
-            "status": true,
-            "url": "official/service/zero-waste-to-landfill",
-            "title": "Zero Waste to Landfill",
-            "has_page": true
-          },
-          "inorganic-waste-management": {
-            "status": true,
-            "url": "official/service/inorganic-waste-management",
-            "title": "Inorganic Waste Management",
-            "has_page": true
+            "title": "Responsible Waste Management"
           },
           "event-waste-management": {
-            "status": true,
             "url": "official/service/event-waste-management",
             "title": "Event Waste Management",
-            "has_page": true
+            "has_page": 1
+          },
+          "zero-waste-to-landfill": {
+            "url": "official/service/zero-waste-to-landfill",
+            "title": "Zero Waste to Landfill",
+            "has_page": 1
+          },
+          "inorganic-waste-management": {
+            "url": "official/service/inorganic-waste-management",
+            "title": "Inorganic Waste Management",
+            "has_page": 0
           }
         }
       },
       {
-        "status": true,
         "title": "Extended Producer Responsibility",
-        "items": [{
-            "status": true,
+        "url": "",
+        "services": [
+          {
             "url": "official/service/in-store-recycling",
             "title": "In-Store Recycling",
-            "has_page": true
+            "has_page": 1
           },
           {
-            "status": true,
-
             "url": "official/service/digital-epr",
             "title": "Digital EPR",
-            "has_page": true
+            "has_page": 1
           }
         ]
       },
       {
-        "status": true,
         "title": "Solid Waste Management Research",
         "url": "official/service/solid-waste-management-research",
-        "has_page": true
+        "has_page": 1,
+        "service_category_id": ""
       },
       {
-        "status": true,
         "title": "Community Development",
-        "items": [{
-            "status": true,
+        "url": "",
+        "services": [
+          {
             "url": "official/service/community-based-implementation",
             "title": "Community-Based Implementation",
-            "has_page": true
+            "has_page": 1
           },
           {
-            "status": true,
             "url": "official/service/3r-school-program",
             "title": "3R School Program",
-            "has_page": true
+            "has_page": 1
           }
         ]
       },
       {
-        "status": true,
         "title": "Training",
-        "items": [{
-            "status": true,
+        "url": "",
+        "services": [
+          {
             "url": "official/service/akabis-waste-management-academy",
             "title": "AKABIS (Waste Management Academy)",
-            "has_page": true
+            "has_page": 1
           },
           {
-            "status": true,
             "url": "official/service/black-soldier-fly-learning-center",
             "title": "Black Soldier Fly Learning Center",
-            "has_page": true
+            "has_page": 1
           }
         ]
-      },
-      {
-        "status": false,
-        "title": "General",
-        "items": [{
-          "status": true,
-          "url": "http://w4c.id/rumahkompos",
-          "title": "Black Soldier Fly Tools & Products",
-          "has_page": false
-        }]
-      },
-      {
-        "status": true,
-        "title": "Collect Waste Management",
-        "items": [{
-          "status": true,
-          "url": "official/service/custom-waste-bin",
-          "title": "Custom Waste Bin",
-          "has_page": true
-        }]
       }
     ]
   },
   "individual": {
-    "status": true,
+    "service_target_id": 2,
+    "service_target_slug": "for-individuals",
     "title": "For Individual",
     "icon": "individu-active-o.png",
-    "items": [{
-          "status": true,
-          "url": "sendyourwaste",
-          "title": "Send Your Waste",
-          "has_page": true
-        },
-        {
-          "status": true,
-          "url": "dropbox",
-          "title": "Dropbox",
-          "has_page": true
-        },
-        {
-          "status": true,
-          "url": "program/puntungitusampah-daur-ulang-puntung-rokok/",
-          "title": "#PuntungItuSampah Daur Ulang Puntung Rokok",
-          "has_page": true
-        },
-        {
-          "status": true,
-          "url": "official/service/personal-waste-management",
-          "title": "Personal Waste Management",
-          "has_page": true
-        },
-        {
-          "status": true,
-          "url": "official/service/composting-tools-supplies",
-          "title": "Composting Tools & Supplies",
-          "has_page": true
-        }
-      ]
+    "url": "",
+    "services": [
+      {
+        "url": "sendyourwaste",
+        "title": "Send Your Waste",
+        "has_page": 1
+      },
+      {
+        "url": "dropbox",
+        "title": "Dropbox",
+        "has_page": 1
+      },
+      {
+        "url": "program/puntungitusampah-daur-ulang-puntung-rokok/",
+        "title": "#PuntungItuSampah Daur Ulang Puntung Rokok",
+        "has_page": 1
+      },
+      {
+        "url": "official/service/personal-waste-management",
+        "title": "Personal Waste Management",
+        "has_page": 1
+      }
+    ]
   }
 }

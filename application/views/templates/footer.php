@@ -84,22 +84,30 @@
           endforeach; //foreach ($navigation_array as $nav):
         else : // DEKTOP VIEW
           foreach ($navigation_array as $nav) :
-            if (!empty($nav['menu'])) :
+            if (!empty($nav['menu'] && $nav['menu'] != $products)) :
               ?>
               <?php foreach ($nav['menu'] as $menu) : ?>
-                <?php if(!empty($menu->menu)): ?>
+                <?php if(!empty($menu)): ?>
 
                 <div class="col-lg-auto col-md-6 g-mb-40 g-mb-0--lg <?= $this->agent->is_mobile() ? 'text-center' : '' ?>">
                   <div class="u-heading-v2-3 g-mb-20">
                     <h2 class="u-heading-v2__title h6 text-uppercase mb-0 font-weight-bold"><?= $menu->title ?></h2>
                   </div>
                   <ul class="list-unstyled g-ma-0">
-                    <?php foreach ($menu->menu as $submenu) : ?>
-                      <?php foreach ($submenu->menu as $subsubmenu) : ?>
-                        <li class="g-mb-5">
-                          <a class="g-color-white-opacity-0_8" href="<?= get_url($subsubmenu->url) ?>"><?= $subsubmenu->title ?></a>
-                        </li>
-                      <?php endforeach; ?>
+                    <?php foreach ($menu->services as $submenu) : ?>
+                      <?php if (empty($submenu->services)) : ?> 
+                          <li class="g-mb-5">
+                            <a class="g-color-white-opacity-0_8" href="<?= get_url($submenu->url) ?>"><?= $submenu->title ?></a>
+                          </li>
+                      <?php else : ?>
+                        <?php foreach ($submenu->services as $subsubmenu) : ?>
+                          <?php if ($subsubmenu->has_page != 0) :  ?>
+                          <li class="g-mb-5">
+                            <a class="g-color-white-opacity-0_8" href="<?= get_url($subsubmenu->url) ?>"><?= $subsubmenu->title ?></a>
+                          </li>
+                          <?php endif; ?>
+                        <?php endforeach; ?>
+                      <?php endif; ?> 
                     <?php endforeach; ?>
 
                     <?php if ($menu->service_target_id == 2) : ?>

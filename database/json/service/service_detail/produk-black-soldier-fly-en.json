@@ -3,15 +3,15 @@
   "service_parent_id": null,
   "service_name": "Black Soldier Fly (BSF) Products",
   "service_short_name": "BSF Products",
-  "service_page_url": "official/service/larva-black-soldier-fly",
+  "service_page_url": "official/service/produk-black-soldier-fly",
   "service_portfolio_url":"",
   "service_proposal_url":"",
   "service_join_url":"",
   "service_meta": {
     "title": "Black Soldier Fly is a Good Protein Source and Safe to be Consumed by Poultry and Fish",
-    "description_1": "Black Soldier Fly is a good source of protein and safe to be consumed by both poultry and fish",
-    "description_2": "Black Soldier Fly is a good source of protein and safe to be consumed by both poultry and fish",
-    "keywords": "black soldier fly, black soldier fly larvae, organic waste, animal feed, high-protein animal feed, BSF larvae.",
+    "description_1": "Black Soldier Fly is a good souce of protein and safe to be consumed by both bpoultry and fish",
+    "description_2": "Black Soldier Fly is a good souce of protein and safe to be consumed by both bpoultry and fish",
+    "keywords": "Black soldier fly, black soldier fly product organic waste, animal feed high-protein animal fed, BSF product",
     "site_url": "official/service/larva-black-soldier-fly"
   },
   "sections": {
@@ -28,13 +28,13 @@
       "section_menu_title": "ABOUT",
       "section_title": "ABOUT",
       "section_subtitle": "Black Soldier Fly (BSF) ",
-      "section_message": "Black Soldier Fly (BSF) is a type of fly that is three times the size of an ordinary fly. BSF could help reduce the negative impact caused by the accumulation of organic material in nature and also a very great protein-source feed alternative for livestock and fish. The BSF larvae product is directly cultivated and processed by PRO-BSF as part of collaboration with Waste4change.",
+      "section_message": "Black Soldier Fly (BSF) is a type of fly that is three times the size of an ordinary fly. BSF could help reduce the negative impact caused by the accumulation of organic material in nature and also a very great protein-source feed alternative for livestock and fish. The BSF larvae product is directly cultivated and processed with PRO-BSF as part of collaboration with Waste4change.",
       "section_image": "1566800800834_7429.png"
     },
     "interest": {
       "section_template": "hero",
       "section_menu_title": "",
-      "section_title": "Get BSF Training on Our Learning Center ",
+      "section_title": "Interested to learn more about Black Soldier Fly?",
       "section_subtitle": "Obtain further knowledge regarding organic waste management using Black Soldier Fly (BSF) as well as its breeding methods.",
       "section_message": "",
       "section_image": "bsf2.png",
@@ -141,7 +141,7 @@
           "item_image": "testi2.jpg"
         },
         {
-          "item_title": "<a class=w4c-color-blue' href='https://www.instagram.com/probsfid/'><i class='fa fa-instagram g-mr-10'></i>@probsfid</a>",
+          "item_title": "<div class='g-font-size-12 g-color-black-opacity-0_6 g-line-height-1'>For testimonies and further information, kindly visit our instagram : </div><a class='w4c-color-blue' href='https://www.instagram.com/probsfid/'><i class='fa fa-instagram g-mr-10'></i>@probsfid</a>",
           "item_subtitle": "",
           "item_message": "We are an initiative company specifically sell any post processing products of Black Soldier Fly Larvae-in collaboration with EAWAG",
           "item_image": "probsf.png"

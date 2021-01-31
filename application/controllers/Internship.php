@@ -92,7 +92,10 @@
 				'description_1' => json_decode(file_get_contents(base_url('database/json/internship/internship_page_'.$lang.'.json')))->banner->title,
 				'description_2' => json_decode(file_get_contents(base_url('database/json/internship/internship_page_'.$lang.'.json')))->banner->title,
 			];
-      $this->render_page('internship/intern_list/index', $data, 'services');
+	  $this->render_page('internship/intern_list/index', $data, 'services');
+	  
+	 //if wip close redirect to internship
+	  redirect('internship');
 		}
 
 		public function intern_detail($slug)
@@ -104,7 +107,7 @@
 			$data['job_slug'] = $slug;
 			
 			if (empty($data['job'])){
-				redirect('career/job_list');
+				redirect('internship/intern-list');
 			}
 
 			$data['title'] = $data['job']->title;
@@ -150,7 +153,9 @@
 				'description_2' => $data['job']->title.' - '. json_decode(file_get_contents(base_url('database/json/internship/internship_page_'.$lang.'.json')))->banner->title,
 				'image' => SITE_URL . DIR_BG . 'internship/' . $data['job_category']->{$data['job']->category}->image,
 			];
-      $this->render_page('internship/detail/index', $data, 'services');
+	  $this->render_page('internship/detail/index', $data, 'services');
+	//if wip close redirect to internship
+	  redirect('internship');
 		}
 
 	}		

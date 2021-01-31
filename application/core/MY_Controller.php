@@ -40,38 +40,44 @@ class MY_Controller extends CI_Controller
 		$lang = $this->get_language();
 
 		// GET service as menu
-		$service_target = $this->crud_model->select('service_target', QUERY_RESULT, ['service_target_id', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_target_name AND language_code="' . $lang . '" limit 1) as title', 'service_target_icon icon'], ['deleted_at' => null]);
+		$targets = json_decode(file_get_contents(base_url('database/json/service/service_'.$lang.'.json')));
+		$data['products'] = json_decode(file_get_contents(base_url('database/json/products/products_'.$lang.'.json')));
 
-		$targets = [];
-		foreach ($service_target as $target) {
-			$service_category = $this->crud_model->select('service_category', QUERY_RESULT, ['service_category_id', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_category_name AND language_code="' . $lang . '" limit 1) as title', 'service_category_icon icon', 'service_target_id'], ['service_category.service_target_id' => $target->service_target_id]);
-			$categories = [];
-			foreach ($service_category as $category) {
-				$services = $this->crud_model->select('service', QUERY_RESULT, ['service_id', 'service_page_url url', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_name AND language_code="' . $lang . '" limit 1) as title', 'service_category_id', 'has_page'], ['service_category_id' => $category->service_category_id, 'deleted_at' => null, 'service_parent_id' => null, 'service.has_page' => 1],'',['created_at'=>'asc']);
+		// $targets = [];
+		// foreach ($service_target as $target) {
+		// 	$service_category = $this->crud_model->select('service_category', QUERY_RESULT, ['service_category_id', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_category_name AND language_code="' . $lang . '" limit 1) as title', 'service_category_icon icon', 'service_target_id'], ['service_category.service_target_id' => $target->service_target_id]);
+		// 	$categories = [];
+		// 	foreach ($service_category as $category) {
+		// 		$services = $this->crud_model->select('service', QUERY_RESULT, ['service_id', 'service_page_url url', '(SELECT dictionary_content FROM dictionary WHERE dictionary_slug=service_name AND language_code="' . $lang . '" limit 1) as title', 'service_category_id', 'has_page'], ['service_category_id' => $category->service_category_id, 'deleted_at' => null, 'service_parent_id' => null, 'service.has_page' => 1],'',['created_at'=>'asc']);
 
-				$category->menu = $services;
-				$categories[] = $category;
-			}
+		// 		$category->menu = $services;
+		// 		$categories[] = $category;
+		// 	}
 
-			$target->menu = $categories;
-			$targets[] = $target;
-		}
-
-		// $circular = new stdClass();
-		// $circular->service_target_id = 3;
-		// $circular->title = 'Sirkular';
-		// $circular->icon = 'circular-active-o.png';
-		// $circular->url='program/sirkular/';
-		// $targets[2]=$circular;
-		
+		// 	$target->menu = $categories;
+		// 	$targets[] = $target;
+		// }
 
 		$data['template'] = empty($template) ? 'general' : $template;
 		$data['lang'] = $lang;
+		
 
 		$data['navigation_array_individu'] = $this->navigation_menu_array_segment('individual');
 		$data['navigation_array_corporate'] = $this->navigation_menu_array_segment('corporate');
-		//		 $data['service_targets']=$targets;
+		$data['service_targets']=$targets;
 		$data['navigation_array'] = [
+			[
+				'title' => strtoupper(lang('products')),
+				'for' => 'menu',
+				'visible' => $this->agent->is_mobile() ? false : true,
+				'number' => '10',
+				'url' => '',
+				'type' => '',
+				'submenu_type' => 'menu',
+				'icon' => '',
+				'is_new' => false,
+				'menu' => $data['products']
+			],
 			[
 				'title' => strtoupper(lang('services')),
 				'for' => 'menu',
@@ -82,7 +88,7 @@ class MY_Controller extends CI_Controller
 				'submenu_type' => 'column',
 				'icon' => '',
 				'is_new' => false,
-				'menu' => $targets
+				'menu' => $data['service_targets']
 			],
 			[
 				'title' => lang('about_only'),

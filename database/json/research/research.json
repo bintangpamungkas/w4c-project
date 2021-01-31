@@ -1,15 +1,15 @@
 [
-    {   
-        "id": "w4c_research_0001",
-        "slug": "the-governance-of-solid-waste-institutions-in-indonesia-part-i-central-government",
-        "slider": "banner-riset-pusat.jpg",
+     {   
+        "id": "w4c_research_0004",
+        "slug": "the-implementation-of-plastic-bag-reduction-policy-in-indonesia",
+        "slider": "banner-riset-plastik.jpg",
         "title": {
-            "id": "Tata Kelola Persampahan Indonesia - <span style='display: block;'>Bagian I Pemerintah Pusat</span>",
-            "en": "The Governance of Solid Waste Institutions in Indonesia - <span style='display: block;'>Part I Central Government</span>"
+            "id": "Penerapan Kebijakan Pengurangan Kantong Plastik <br>di Indonesia",
+            "en": "The Implementation of Plastic Bag Reduction Policy <br> in Indonesia"
         },
         "hidden_title": {
-            "id": "Tata Kelola Persampahan Indonesia - Bagian I Pemerintah Pusat",
-            "en": "The Governance of Solid Waste Institutions in Indonesia - Part I Central Government"
+            "id": "Penerapan Kebijakan Pengurangan Kantong Plastik di Indonesia",
+            "en": "The Implementation of Plastic Bag Reduction Policy in Indonesia "
         },
         "category": {
             "id": "Tata Kelola & Kebijakan",
@@ -17,29 +17,29 @@
         },
         "content": {
             "id": {
-                "overview": "Indonesia masih memiliki banyak tantangan untuk menciptakan ekosistem yang kondusif bagi tata kelola sampah yang bertanggung jawab. Berikut adalah gambaran lintas kelembagaan persampahan di Indonesia ini khusus membahas tentang peran dan tanggung jawab Pemerintah Pusat dalam melaksanakan tata kelola persampahan di Indonesia.",
-                "detail": "Indonesia masih memiliki banyak tantangan dalam rangka mewujudkan ekosistem yang kondusif bagi sistem tata kelola sampah yang bertanggung jawab. Di Indonesia sendiri, isu persampahan merupakan isu yang ditangani oleh berbagai lembaga, mulai dari para kementerian di level nasional hingga lembaga dan institusi di level provinsi dan kabupaten/kota. Maka dari itu, kajian ini bertujuan untuk memberikan gambaran dan inovasi terkait peran dan tanggung jawab lembaga di tingkat Pusat dalam mengelola aspek persampahan di Indonesia, mengingat tata kelola kelembagaan menjadi aspek yang krusial dalam mewujudkan sistem pengelolaan sampah yang terintegrasi dan berkelanjutan. "
+                "overview": "Kebijakan pengurangan kantong plastik di berbagai daerah memberikan kekuatan regulasi dalam menangani tantangan pengurangan sampah di daerah. Pelajari lebih lanjut perihal penerapan kebijakan pengurangan kantong plastik di Indonesia.",
+                "detail": "Sebagai material yang biasa digunakan sehari-hari, kantong plastik telah menimbulkan ketergantungan yang tinggi bagi manusia, bahkan sampai pada tahap yang merugikan. Hingga saat riset ini dilakukan, telah tercatat ada 29 kota/kabupaten dan 2 provinsi di Indonesia yang memiliki kebijakan pengurangan kantong plastik. Seiring dengan berkembangnya kebijakan ini, beberapa pihak telah mengkaji dampak dari kebijakan ini terhadap pola perilaku konsumen misalnya, tapi sejauh ini belum ditemukan penelitian terintegrasi yang mengkaji penerapan kebijakan pengurangan kantong plastik se-Indonesia dengan melibatkan evaluasi dari berbagai sektor terlibat. Menimbang hal tersebut, diinisiasi lah penelitian ini dengan tujuan untuk memahami sistem pengurangan kantong plastik di Indonesia, mengevaluasi tantangan yang ada, serta mengidentifikasi pembelajaran untuk kedepannya."
             },
             "en": {
-                "overview": "Indonesia still has many challenges in terms of creating an ideal ecosystem for implementing responsible waste management. This overview of solid waste institutions in Indonesia specifically discusses about the role and responsibilities of the Central Government within the context of solid waste governance in Indonesia.",
-                "detail": "Indonesia still have many challenges in terms of creating an ideal ecosystem for a responsible waste management. In Indonesia itself, waste management policies are formulated by various institutions, from national to regional levels. Therefore, this study aims to provide an overview of the roles and responsibilities of Central Government institutions in executing waste management implementation in Indonesia while taking into account the importance of waste governance in realizing an integrated and sustainable waste management system"
+                "overview": "Plastic bag reduction policies in various regions provide regulatory strength in addressing the challenges of reducing waste regions. Learn more about the implementation of plastic bag reduction policies in Indonesia.",
+                "detail": "As a material that is commonly used in daily life, humans have been so dependent on plastic to the point that it causes negative effects. Up until this research is conducted, there are 29 cities/regencies and 2 provinces in Indonesia that already established policy to reduce plastic bags. Along with the development of this policy, several parties have conducted studies: some of them studied the impact of the policy to the consumer`s behavior, but so far there is no integrated research that studies the implementation of plastic bag policies at the national scale that involves multi-sector evaluation. Hence, this research was initiated to understand the various implementations of plastic bag reduction policy in Indonesia, to address the challenges of the policy from various sectors, and to identify lessons learned for future implementation."
             }
         },
         "banner": {
             "thumb_image": {
-                "id": "thumbnail-pusat-in.jpg",
-                "en": "thumbnail-pusat-en.jpg"
+                "id": "thumbnail-plastik-in.jpg",
+                "en": "thumbnail-plastik-en.jpg"
             },
             "thumb_detail_image": "banner-detail-overview.svg",
             "large_image": "research-banner-large.svg",
             "title": {
                 "id": {
-                    "desktop": "Banner Title 1 Indonesia",
-                    "mobile": "Banner Title 1 ID"
+                    "desktop": "Banner Title 4 Indonesia",
+                    "mobile": "Banner Title 4 ID"
                 },
                 "en": {
-                    "desktop": "Banner Title 1 English",
-                    "mobile": "Banner Title 1 EN"
+                    "desktop": "Banner Title 4 English",
+                    "mobile": "Banner Title 4 EN"
                 }
             },
             "content": {
@@ -53,35 +53,167 @@
                 }
             }
         },
-        "prefilled_form": "The+Governance+of+Solid+Waste+Institutions+Indonesia+Part+I+-+Central+Government",
+        "prefilled_form": "The+Implementation+of+Plastic+Bag+Reduction+Policy+in+Indonesia",
         "file": {
             "type": "PDF",
             "release": {
-                "id": "16 Juli 2020",
-                "en": "July 16th, 2020"
+                "id": "2 November 2020",
+                "en": "November 2nd, 2020"
             },
-            "size": "1 MB",
+            "size": "3 MB",
             "pages": {
-                "id": "28",
-                "en": "27"
+                "id": "41",
+                "en": "40"
             },
             "links": {
                 "preview": {
-                    "id": "https://drive.google.com/file/d/1lHdPSsf4K4fOrQDpSMqG7K4RlLWuQWct/preview",
-                    "en": "https://drive.google.com/file/d/1eh8xu6sdLqeHACktzejiUjgXwuo0g-Oj/preview"
+                    "id": "https://drive.google.com/file/d/15-vOqBnf5DhKBkb46c9fH8QGqWz6PyHF/preview",
+                    "en": "https://drive.google.com/file/d/1cey6HrXGaY8JteTKosTKZVGtcYLU1FCT/preview"
                 },
                 "download": {
-                    "id": "https://drive.google.com/u/0/uc?id=1nKRpfIF-nonhI9wX5FBfd2WRJz6y3nvG&export=download",
-                    "en": "https://drive.google.com/u/0/uc?id=10avHPgN0unFJFtXE44fRSiytPfHRcVBX&export=download"
+                    "id": "https://drive.google.com/u/0/uc?id=1sTcGSMk7V6RwYEzOUpRmtsrOgsoab7Je&export=download",
+                    "en": "https://drive.google.com/u/0/uc?id=13fbW50yCPAGZNXRa-qTY7n8PVYRmLClA&export=download"
                 }
             }
         },
         "keyword": {
-            "id": "Tata Kelola, Kebijakan, Pemangku Kepentingan, Stakeholder, Kelembagaan, Pemerintah Pusat, KLHK, PUPR, Bappenas",
-            "en": "Governance, Policy, Stakeholders, Institutions, Central Government, KLHK, PUPR, Bappenas"
+            "id": "Pengelolaan Sampah, Pemerintah Daerah, Kebijakan, Pengurangan Kantong Plastik",
+            "en": "Waste Management, Regional Government, Policy, Plastic Bag Reduction"
+        },
+        "infographic":{
+            "status":true,
+            "file":{
+                "mobile":{
+                    "preview": {
+                        "id": "https://drive.google.com/file/d/1fi65QnND4pe-d3Becv8lFYc5cchw_Je-/preview",
+                        "en": "https://drive.google.com/file/d/1PGmWX4nirmIIqP_croxveUuubIMispfD/preview"
+                    },
+                    "download": {
+                        "id": "https://drive.google.com/u/0/uc?id=1fi65QnND4pe-d3Becv8lFYc5cchw_Je-&export=download",
+                        "en": "https://drive.google.com/u/0/uc?id=1PGmWX4nirmIIqP_croxveUuubIMispfD&export=download"
+                    }
+                },
+                "desktop":{
+                    "preview": {
+                        "id": "https://drive.google.com/file/d/1i_Xoh1k8K5Rp_xLt6NGCEul8ksYMaBpf/preview",
+                        "en": "https://drive.google.com/file/d/1qlTMrptfTkQBiKV6dNAxV_R9GGwZHg5b/preview"
+                    },
+                    "download": {
+                        "id": "https://drive.google.com/u/0/uc?id=1i_Xoh1k8K5Rp_xLt6NGCEul8ksYMaBpf&export=download",
+                        "en": "https://drive.google.com/u/0/uc?id=1qlTMrptfTkQBiKV6dNAxV_R9GGwZHg5b&export=download"
+                    }
+                }
+            }
         }
     },
-    {
+     {   
+        "id": "w4c_research_0003",
+        "slug": "the-covid-19-pandemic-waste-in-dki-jakarta",
+        "slider": "banner-riset-covid.jpg",
+        "title": {
+            "id": "Kondisi Sampah Pandemi COVID-19 DKI Jakarta",
+            "en": "The COVID-19 Pandemic Waste in DKI Jakarta"
+        },
+        "hidden_title": {
+            "id": "Kondisi Sampah Pandemi COVID-19 DKI Jakarta",
+            "en": "The COVID-19 Pandemic Waste in DKI Jakarta"
+        },
+        "category": {
+            "id": "Pengelolaan Sampah",
+            "en": "Waste Management"
+        },
+        "content": {
+            "id": {
+                "overview": "Pandemi COVID-19 di Indonesia berdampak terhadap kondisi persampahan, khususnya perihal produksi sampah rumah tangga infeksius. Pelajari lebih lanjut perihal kondisi sampah pandemi COVID-19 di DKI Jakarta.",
+                "detail": "Sejak ditetapkannya COVID-19 sebagai pandemi global oleh WHO pada Maret 2020, DKI Jakarta melakukan penyesuaian dengan memberlakukan Kebijakan WFH (Work From Home) dan PSBB (Pembatasan Sosial Berskala Besar). Perubahan pola beraktivitas/bekerja, pola konsumsi, dan penggunaan masker oleh masyarakat DKI Jakarta membawa pengaruh terhadap kondisi persampahan di DKI Jakarta. Maka dari itu, kajian ini bertujuan untuk memberikan gambaran kondisi persampahan saat pandemi COVID-19 di DKI Jakarta. "
+            },
+            "en": {
+                "overview": "The COVID-19 pandemic in Indonesia has brought a significant impact on the solid waste conditions, especially infectious household waste. Learn more about the condition of the COVID-19 pandemic waste in DKI Jakarta.",
+                "detail": "Since the establishment of COVID-19 as a global pandemic by WHO in March 2020, DKI Jakarta has made adjustments by implementing WFH (Work From Home) and PSBB (Large-Scale Social Restrictions) Policies. Changes in activity / work patterns, consumption patterns, and the use of masks by the people of DKI Jakarta have brought signifcant impacts on the condition of solid waste in DKI Jakarta. Therefore, this study aims to provide an overview of the condition of solid waste during the COVID-19 pandemic in DKI Jakarta."
+            }
+        },
+        "banner": {
+            "thumb_image": {
+                "id": "thumbnail-covid-in.jpg",
+                "en": "thumbnail-covid-en.jpg"
+            },
+            "thumb_detail_image": "banner-detail-overview.svg",
+            "large_image": "research-banner-large.svg",
+            "title": {
+                "id": {
+                    "desktop": "Banner Title 3 Indonesia",
+                    "mobile": "Banner Title 3 ID"
+                },
+                "en": {
+                    "desktop": "Banner Title 3 English",
+                    "mobile": "Banner Title 3 EN"
+                }
+            },
+            "content": {
+                "id": {
+                    "desktop": "Kondisi kelembagaan persampahan Indonesia bersifat multipihak dan saling terkait antar satu sama lain, sehingga butuh penyelarasan dalam penyelenggaraan sistem pengelolaan sampah yang terintegrasi dan berkelanjutan.",
+                    "mobile": "Kondisi kelembagaan persampahan Indonesia bersifat multipihak dan saling terkait antar satu sama lain"
+                },
+                "en": {
+                    "desktop": "The condition of Indonesia's waste management institutions is that of multiple interconnected parties that need to be synchronized in order to implement a sustainable and integrated waste management system.",
+                    "mobile": "The condition of Indonesia's waste management institutions is that of multiple"
+                }
+            }
+        },
+        "prefilled_form": "The+COVID-19+Pandemic+Waste+in+DKI+Jakarta",
+        "file": {
+            "type": "PDF",
+            "release": {
+                "id": "26 October 2020",
+                "en": "October 26th, 2020"
+            },
+            "size": "2 MB",
+            "pages": {
+                "id": "24",
+                "en": "24"
+            },
+            "links": {
+                "preview": {
+                    "id": "https://drive.google.com/file/d/1J-7RelULM1-6-6yOyhKuNgoSXdRVwHYa/preview",
+                    "en": "https://drive.google.com/file/d/1V107Gt8xBd49ahlgWiujLYh7_g8Al9aZ/preview"
+                },
+                "download": {
+                    "id": "https://drive.google.com/u/0/uc?id=1PUznTVMTC3dS7fmKnoHNxyo7taasorBY&export=download",
+                    "en": "https://drive.google.com/u/0/uc?id=1XFVsJT0A7tTezdK1bcIOowLfR9lxbF11&export=download"
+                }
+            }
+        },
+        "keyword": {
+            "id": "Pengelolaan Sampah, Sampah Rumah Tangga, Sampah Infeksius, Pandemi COVID-19",
+            "en": "Waste Management, Municipal Waste, Infectious Waste, COVID-19 Pandemic"
+        },
+        "infographic":{
+            "status":true,
+            "file":{
+                "mobile":{
+                    "preview": {
+                        "id": "https://drive.google.com/file/d/1zFU286ylWKq3BVtGZUrvuXzXDNbrM3g3/preview",
+                        "en": "https://drive.google.com/file/d/11GmfB77avMWYPkjKAFN-8BGGwmRcIgnC/preview"
+                    },
+                    "download": {
+                        "id": "https://drive.google.com/u/0/uc?id=1zFU286ylWKq3BVtGZUrvuXzXDNbrM3g3&export=download",
+                        "en": "https://drive.google.com/u/0/uc?id=11GmfB77avMWYPkjKAFN-8BGGwmRcIgnC&export=download"
+                    }
+                },
+                "desktop":{
+                    "preview": {
+                        "id": "https://drive.google.com/file/d/162lmfulv2XIl44eStnvpD8xfeiaXaUNw/preview",
+                        "en": "https://drive.google.com/file/d/1SIhE8em7152BDFHnQEE9112DUu6uuiKM/preview"
+                    },
+                    "download": {
+                        "id": "https://drive.google.com/u/0/uc?id=162lmfulv2XIl44eStnvpD8xfeiaXaUNw&export=download",
+                        "en": "https://drive.google.com/u/0/uc?id=1SIhE8em7152BDFHnQEE9112DUu6uuiKM&export=download"
+                    }
+                }
+            }
+        }
+    },
+     {
         "id": "w4c_research_0002",
         "slug": "the-governance-of-solid-waste-institutions-in-indonesia-part-ii-regional-government",
         "slider": "banner-riset-daerah.jpg",
@@ -161,6 +293,88 @@
         "keyword": {
             "id": "Tata Kelola, Pemangku Kepentingan, Stakeholder, Kelembagaan, Pemerintah Daerah, Provinsi, Kota, Kabupaten, DLH",
             "en": "Governance, Stakeholders, Institutions, Regional Government, Province, City, Regency, Environmental Agency"
+        }
+    },
+     {   
+        "id": "w4c_research_0001",
+        "slug": "the-governance-of-solid-waste-institutions-in-indonesia-part-i-central-government",
+        "slider": "banner-riset-pusat.jpg",
+        "title": {
+            "id": "Tata Kelola Persampahan Indonesia - <span style='display: block;'>Bagian I Pemerintah Pusat</span>",
+            "en": "The Governance of Solid Waste Institutions in Indonesia - <span style='display: block;'>Part I Central Government</span>"
+        },
+        "hidden_title": {
+            "id": "Tata Kelola Persampahan Indonesia - Bagian I Pemerintah Pusat",
+            "en": "The Governance of Solid Waste Institutions in Indonesia - Part I Central Government"
+        },
+        "category": {
+            "id": "Tata Kelola & Kebijakan",
+            "en": "Governance & Policy"
+        },
+        "content": {
+            "id": {
+                "overview": "Indonesia masih memiliki banyak tantangan untuk menciptakan ekosistem yang kondusif bagi tata kelola sampah yang bertanggung jawab. Berikut adalah gambaran lintas kelembagaan persampahan di Indonesia ini khusus membahas tentang peran dan tanggung jawab Pemerintah Pusat dalam melaksanakan tata kelola persampahan di Indonesia.",
+                "detail": "Indonesia masih memiliki banyak tantangan dalam rangka mewujudkan ekosistem yang kondusif bagi sistem tata kelola sampah yang bertanggung jawab. Di Indonesia sendiri, isu persampahan merupakan isu yang ditangani oleh berbagai lembaga, mulai dari para kementerian di level nasional hingga lembaga dan institusi di level provinsi dan kabupaten/kota. Maka dari itu, kajian ini bertujuan untuk memberikan gambaran dan inovasi terkait peran dan tanggung jawab lembaga di tingkat Pusat dalam mengelola aspek persampahan di Indonesia, mengingat tata kelola kelembagaan menjadi aspek yang krusial dalam mewujudkan sistem pengelolaan sampah yang terintegrasi dan berkelanjutan. "
+            },
+            "en": {
+                "overview": "Indonesia still has many challenges in terms of creating an ideal ecosystem for implementing responsible waste management. This overview of solid waste institutions in Indonesia specifically discusses about the role and responsibilities of the Central Government within the context of solid waste governance in Indonesia.",
+                "detail": "Indonesia still have many challenges in terms of creating an ideal ecosystem for a responsible waste management. In Indonesia itself, waste management policies are formulated by various institutions, from national to regional levels. Therefore, this study aims to provide an overview of the roles and responsibilities of Central Government institutions in executing waste management implementation in Indonesia while taking into account the importance of waste governance in realizing an integrated and sustainable waste management system"
+            }
+        },
+        "banner": {
+            "thumb_image": {
+                "id": "thumbnail-pusat-in.jpg",
+                "en": "thumbnail-pusat-en.jpg"
+            },
+            "thumb_detail_image": "banner-detail-overview.svg",
+            "large_image": "research-banner-large.svg",
+            "title": {
+                "id": {
+                    "desktop": "Banner Title 1 Indonesia",
+                    "mobile": "Banner Title 1 ID"
+                },
+                "en": {
+                    "desktop": "Banner Title 1 English",
+                    "mobile": "Banner Title 1 EN"
+                }
+            },
+            "content": {
+                "id": {
+                    "desktop": "Kondisi kelembagaan persampahan Indonesia bersifat multipihak dan saling terkait antar satu sama lain, sehingga butuh penyelarasan dalam penyelenggaraan sistem pengelolaan sampah yang terintegrasi dan berkelanjutan.",
+                    "mobile": "Kondisi kelembagaan persampahan Indonesia bersifat multipihak dan saling terkait antar satu sama lain"
+                },
+                "en": {
+                    "desktop": "The condition of Indonesia's waste management institutions is that of multiple interconnected parties that need to be synchronized in order to implement a sustainable and integrated waste management system.",
+                    "mobile": "The condition of Indonesia's waste management institutions is that of multiple"
+                }
+            }
+        },
+        "prefilled_form": "The+Governance+of+Solid+Waste+Institutions+Indonesia+Part+I+-+Central+Government",
+        "file": {
+            "type": "PDF",
+            "release": {
+                "id": "16 Juli 2020",
+                "en": "July 16th, 2020"
+            },
+            "size": "1 MB",
+            "pages": {
+                "id": "28",
+                "en": "27"
+            },
+            "links": {
+                "preview": {
+                    "id": "https://drive.google.com/file/d/1lHdPSsf4K4fOrQDpSMqG7K4RlLWuQWct/preview",
+                    "en": "https://drive.google.com/file/d/1eh8xu6sdLqeHACktzejiUjgXwuo0g-Oj/preview"
+                },
+                "download": {
+                    "id": "https://drive.google.com/u/0/uc?id=1nKRpfIF-nonhI9wX5FBfd2WRJz6y3nvG&export=download",
+                    "en": "https://drive.google.com/u/0/uc?id=10avHPgN0unFJFtXE44fRSiytPfHRcVBX&export=download"
+                }
+            }
+        },
+        "keyword": {
+            "id": "Tata Kelola, Kebijakan, Pemangku Kepentingan, Stakeholder, Kelembagaan, Pemerintah Pusat, KLHK, PUPR, Bappenas",
+            "en": "Governance, Policy, Stakeholders, Institutions, Central Government, KLHK, PUPR, Bappenas"
         }
     }
 ]

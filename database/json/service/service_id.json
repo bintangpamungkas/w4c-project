@@ -1,140 +1,119 @@
 {
-  "company":{
+  "company": {
+    "service_target_id": 1,
+    "service_target_slug": "for-company",
     "title": "Perusahaan",
     "icon": "company-active-o.png",
+    "url": "",
     "services": [
       {
         "title": "Waste Collection Services",
+        "url": "",
         "services": {
-          "responsible-waste-management":{
-            "has_page": true,
+          "responsible-waste-management": {
+            "has_page": 1,
             "url": "official/service/responsible-waste-management",
-            "title": "Responsible Waste Management",
-            "description":"",
-            "thumbnail": ""
+            "title": "Responsible Waste Management"
           },
-          "zero-waste-to-landfill":{
-            "url": "official/service/zero-waste-to-landfill",
-            "title": "Zero Waste to Landfill",
-            "has_page": true
-          },
-          "inorganic-waste-management":{
-            "url": "official/service/inorganic-waste-management",
-            "title": "Inorganic Waste Management",
-            "has_page": true
-          },
-          "event-waste-management"{
+          "event-waste-management": {
             "url": "official/service/event-waste-management",
             "title": "Event Waste Management",
-            "has_page": true
+            "has_page": 1
+          },
+          "zero-waste-to-landfill": {
+            "url": "official/service/zero-waste-to-landfill",
+            "title": "Zero Waste to Landfill",
+            "has_page": 1
+          },
+          "inorganic-waste-management": {
+            "url": "official/service/inorganic-waste-management",
+            "title": "Inorganic Waste Management",
+            "has_page": 0
           }
         }
       },
       {
         "title": "Extended Producer Responsibility",
+        "url": "",
         "services": [
           {
             "url": "official/service/in-store-recycling",
             "title": "In-Store Recycling",
-            "has_page": true
+            "has_page": 1
           },
           {
             "url": "official/service/digital-epr",
             "title": "Digital EPR",
-            "has_page": true
+            "has_page": 1
           }
         ]
       },
       {
         "title": "Solid Waste Management Research",
         "url": "official/service/solid-waste-management-research",
-        "has_page": true
+        "has_page": 1,
+        "service_category_id": ""
       },
       {
         "title": "Community Development",
+        "url": "",
         "services": [
           {
             "url": "official/service/community-based-implementation",
             "title": "Community-Based Implementation",
-            "has_page": true
+            "has_page": 1
           },
           {
             "url": "official/service/3r-school-program",
             "title": "3R School Program",
-            "has_page": true
+            "has_page": 1
           }
         ]
       },
       {
         "title": "Training",
+        "url": "",
         "services": [
           {
             "url": "official/service/akabis-waste-management-academy",
             "title": "AKABIS (Waste Management Academy)",
-            "has_page": true
+            "has_page": 1
           },
           {
             "url": "official/service/black-soldier-fly-learning-center",
             "title": "Black Soldier Fly Learning Center",
-            "has_page": true
-          }
-        ]
-      },
-      {
-        "title": "General",
-        "services": [
-          {
-            "url": "http://w4c.id/rumahkompos",
-            "title": "Black Soldier Fly Tools & Products",
-            "has_page": true
-          }
-        ]
-      },
-      {
-        "title": "Collect Waste Management",
-        "services": [
-          {
-            "url": "official/service/custom-waste-bin",
-            "title": "Custom Waste Bin",
-            "has_page": true
+            "has_page": 1
           }
         ]
       }
     ]
   },
-  "individual":{
+  "individual": {
+    "service_target_id": 2,
     "title": "Individu",
+    "service_target_slug": "for-individuals",
     "icon": "individu-active-o.png",
+    "url": "",
     "services": [
       {
-        "title": "General",
-        "services": [
-          {
-            "url": "sendyourwaste",
-            "title": "Send Your Waste",
-            "has_page": true
-          },
-          {
-            "url": "dropbox",
-            "title": "Dropbox",
-            "has_page": true
-          },
-          {
-            "url": "program/puntungitusampah-daur-ulang-puntung-rokok/",
-            "title": "#PuntungItuSampah Daur Ulang Puntung Rokok",
-            "has_page": true
-          },
-          {
-            "url": "official/service/personal-waste-management",
-            "title": "Personal Waste Management",
-            "has_page": true
-          },
-          {
-            "url": "official/service/composting-tools-supplies",
-            "title": "Composting Tools & Supplies",
-            "has_page": true
-          }
-        ]
+        "url": "sendyourwaste",
+        "title": "Send Your Waste",
+        "has_page": 1
+      },
+      {
+        "url": "dropbox",
+        "title": "Dropbox",
+        "has_page": 1
+      },
+      {
+        "url": "program/puntungitusampah-daur-ulang-puntung-rokok/",
+        "title": "#PuntungItuSampah Daur Ulang Puntung Rokok",
+        "has_page": 1
+      },
+      {
+        "url": "official/service/personal-waste-management",
+        "title": "Personal Waste Management",
+        "has_page": 1
       }
     ]
   }
