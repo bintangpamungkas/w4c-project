@@ -1,0 +1,26 @@
+image: php:5.6
+
+stages:
+    - deploy
+
+before_script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    # - ssh-add <(echo "$SPK_NH")
+    # - ssh-add <(echo "$SPK_NH_CP")
+    # - mkdir -p ~/.ssh
+    # - '[[ -f /.dockerenv ]] && ssh-keyscan -H "193.168.195.136" >> ~/.ssh/known_hosts'
+    # - '[[ -f /.dockerenv ]] && ssh-keyscan -H "156.67.211.184" >> ~/.ssh/known_hosts'
+    - echo "$NH_HOSTING_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - ssh-keyscan -t rsa gitlab.com >> ~/.ssh/known_hosts
+    - rm -rf .git
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+deploy:
+    stage: deploy
+    only:
+        - master
+    script:
+        - ssh u4631431@156.67.211.184 -p 65002 "cd public_html/test/w4c-official-static && git checkout master && git pull origin master && exit"
