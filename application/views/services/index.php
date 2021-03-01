@@ -38,7 +38,7 @@
 					?>
 				</div>
 			</div>
-			<!-- END Services target navivation -->
+			<!-- END Services target navivations -->
 
 			<!-- Search location -->
 			<div class="col-md-5 col-xs-12">

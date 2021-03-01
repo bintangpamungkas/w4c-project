@@ -168,7 +168,7 @@
 				if ($service_id == 'personal-waste-management') :
 		?>
 					<li class="lvl-0 nav-item g-mx-10--lg g-mx-15--xl">
-						<a class="nav-link g-py-7 g-px-0 text-uppercase" href="http://personal-demo.waste4change.tech/?<?= $query_from_url ?>"> <?= empty($this->session->userdata('language')) ? 'AKUN SAYA' : 'MY ACCOUNT' ?></a>
+						<a class="nav-link g-py-7 g-px-0 text-uppercase" href="http://personal.waste4change.com/?<?= $query_from_url ?>"> <?= empty($this->session->userdata('language')) ? 'AKUN SAYA' : 'MY ACCOUNT' ?></a>
 					</li>
 		<?php
 				endif;
@@ -183,7 +183,7 @@
 			if ($service_id == 'personal-waste-management') :
 	?>
 				<div class="g-ml-20--lg" data-animation-in="fadeIn" data-animation-out="fadeOut" data-position="right">
-					<a href="http://personal-demo.waste4change.tech/?<?= $query_from_url ?>" class="g-font-size-12  px-0 nav-link" style="line-height: 1;color:black">
+					<a href="http://personal.waste4change.com/?<?= $query_from_url ?>" class="g-font-size-12  px-0 nav-link" style="line-height: 1;color:black">
 						<img src="<?= get_image(DIR_ICON . 'user_icon.png') ?>" alt="<?= empty($this->session->userdata('language')) ? 'ID' : strtoupper($this->session->userdata('language')) ?>" style="height: 15px;margin-bottom: 4px;margin-right: 4px;">
 						<?= empty($this->session->userdata('language')) ? 'AKUN SAYA' : 'MY ACCOUNT' ?>
 					</a>

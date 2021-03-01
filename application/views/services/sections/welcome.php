@@ -139,15 +139,34 @@
 						<?php endif; ?>
 						<div class="row">
 							<div class="col-md-12"	>
-								<h3
+							    <?php 
+							        if ($service_id == 'personal-waste-management') : 
+							            $pwm_description_welcome = [
+                                        	'id' => 'Memastikan bahwa sampah anorganik Anda didaur ulang kini menjadi lebih mudah dengan layanan Personal Waste Management dari Waste4Change. Cukup pilah sampah anorganik sesuai kategori, dan Waste4Change akan menjemput secara rutin sampah yang terpilah langsung ke rumah Anda!',
+                                        	'en' => 'Making sure that your inorganic waste is recycled has never been easier now with the Personal Waste Management service from Waste4Change. Simply segregate your inorganic waste, and Waste4Change will regularly collect your segregated waste directly from your home!'
+                                    	];
+                                    	$pwm_description_welcome_lang = $this->session->userdata('language') == 'en' ? $pwm_description_welcome['en'] : $pwm_description_welcome['id'];
+							     ?>
+							    
+							    <h3
+									class="g-color-black-opacity-0_7 <?= $this->agent->is_mobile() ? 'g-font-size-14  text-center' : 'g-font-size-16' ?> g-line-height-1_5 mb-3"><?= ucfirst($pwm_description_welcome_lang) ?></h3>
+							    <?php else: ?>
+							    <h3
 									class="g-color-black-opacity-0_7 <?= $this->agent->is_mobile() ? 'g-font-size-14  text-center' : 'g-font-size-16' ?> g-line-height-1_5 mb-3"><?= ucfirst($service->service_description) ?></h3>
+							    <?php endif; ?>
 							</div>
 						</div>
 						<div class="row <?= $this->agent->is_mobile() ? 'justify-content-center pt-3 g-pb-40' : 'pt-5 g-pb-60' ?>">
 							<div class="col-md-6 col-xs-12">
-								<a class="click_scroll btn btn-info btn-block g-color-white g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-mb-10" href="<?= site_url('service/' . $service_id . '/join') ?>">
-									<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe-now')) : strtoupper(get_lang('get-proposal')))) ?>
-								</a>
+								<?php if ($service_id == 'personal-waste-management') : ?>
+    								<a class="click_scroll btn btn-info btn-block g-color-white g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-mb-10" href="https://personal.waste4change.com/?redirect=location&<?= $query_from_url ?>">
+    									<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe-now')) : strtoupper(get_lang('get-proposal')))) ?>
+    								</a>
+								<?php else: ?>
+    								<a class="click_scroll btn btn-info btn-block g-color-white g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-mb-10" href="<?= site_url('service/' . $service_id . '/join') ?>">
+    									<?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe-now')) : strtoupper(get_lang('get-proposal')))) ?>
+    								</a>
+								<?php endif; ?>
 							</div>
 							<?php if ($service->service_portfolio_url == 1): ?>
 								<div class="col-md-6 col-xs-12">
