@@ -1,0 +1,119 @@
+{
+  "service_id": "1",
+  "service_parent_id": 7,
+  "service_name": "Waste Management Scouting Study - Stakeholders Mapping and Waste Flow in Jakarta and Surabaya",
+  "service_short_name": "",
+  "service_page_url": "official/project/waste-management-scouting-study-stakeholders-mapping-and-waste-flow-in-jakarta-and-surabaya",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_join_url": "",
+  "service_subcategory_name": "Value Chain Analysis",
+  "service_client_name": "PT. Deloitte Konsultan Indonesia",
+  "service_slug": "waste-management-scouting-study-stakeholders-mapping-and-waste-flow-in-jakarta-and-surabaya",
+  "service_map_url": "",
+  "service_meta": {
+    "title": "",
+    "description_1": "Program pengelolaan sampah secara optimal beserta pelaporan alur sampah",
+    "description_2": "Program pengelolaan sampah secara optimal beserta pelaporan alur sampah",
+    "keywords": "program pengelolaan sampah, pengelolaan sampah, pengelolaan sampah dari sumber, pelaporan alur sampah, pengelolaan sampah secara optimal, pengelolaan sampah bertanggung jawab",
+    "site_url": "official/project/waste-management-scouting-study-stakeholders-mapping-and-waste-flow-in-jakarta-and-surabaya"
+  },
+  "sections": {
+    "header": {
+      "section_template": "header",
+      "section_menu_title": "",
+      "section_title": "",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "thumbnail.jpg"
+    },
+    "description": {
+      "section_template": "description",
+      "section_menu_title": "Description",
+      "section_subtitle": "",
+      "section_message": "Indonesia is the 2nd biggest contributor of plastic waste into the oceans, primarily through the mismanagement of land-based waste. In 2010, it was estimated that 3.2 million Mt/year of plastic waste were mismanaged, and that the volume would more than doubled by 2025 if no significant changes were to take place.<br>The study aimed to better understand waste management in Indonesia, map the flow of packaging waste, and identify potential key stakeholders to collaborate with in order to prevent packaging waste from ending up in the ocean.",
+      "section_title": "Description",
+      "section_image": "about.jpg"
+    },
+
+    "achievement-deliverable": {
+      "section_template": "achievement-deliverable",
+      "section_menu_title": "Deliverables",
+      "section_title": "Deliverables",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_name": "Key players and stakeholders mapping",
+          "item_icon": "mark-location-m.png"
+        },
+        {
+          "item_name": "Comprehensive waste flow analysis of Jakarta and Surabaya City",
+          "item_icon": "analysis-m.png"
+        },
+        {
+          "item_name": "Identification of recycling rate in Jakarta and Surabaya",
+          "item_icon": "report-m.png"
+        },
+        {
+          "item_name": "Solid Waste Management SWOT analysis of Jakarta and Surabaya City",
+          "item_icon": "flow-m.png"
+        }
+      ]
+    },
+    "similar-project": {
+      "section_template": "similar-project",
+      "section_menu_title": "Similar Projects",
+      "section_title": "Similar Projects",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "project_items": [
+        {
+          "service_slug": "solid-waste-management-study-at-pelabuhan-indonesia-ii-hq",
+          "service_subcategory_name": "swm research in institution"
+        },
+        {
+          "service_slug": "solid-waste-management-design-for-revitalisation-at-jami-mosque-and-kampung-beting-settlements-in-pontianak",
+          "service_subcategory_name": "swm research in municipalities/ tourism sites"
+        },
+        {
+          "service_slug": "riverine-plastic-monitoring-project-in-jakarta",
+          "service_subcategory_name": "marine debris study"
+        },
+        {
+          "service_slug": "technical-due-diligence-for-itf-sunter-jakarta",
+          "service_subcategory_name": "waste to energy"
+        }
+      ]
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Mulai <span style='font-weight:bold'>Solid Waste Management Research</span> Anda sekarang juga!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "DAPATKAN PROPOSAL",
+          "cta_url": "official/service/digital-epr/join",
+          "cta_class": "",
+          "portfolio_title": "DAPATKAN PORTOFOLIO",
+          "portfolio_url": 1,
+          "portfolio_class": ""
+        }
+      ]
+    }
+  }
+}

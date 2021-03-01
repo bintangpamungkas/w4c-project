@@ -1,0 +1,265 @@
+{
+  "service_id": 10,
+  "service_parent_id": null,
+  "service_name": "AKABIS (Waste Management Academy)",
+  "service_short_name": "AKABIS",
+  "service_page_url": "official/service/akabis-waste-management-academy",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": 1,
+  "service_proposal_url": "https://docs.google.com/forms/d/e/1FAIpQLSflGH-JUj6sEZbURhI65LCyfyP_5BA034bF5PxKi6fi2zA5Pw/viewform",
+  "service_join_url": "",
+  "service_slug": "akabis-waste-management-academy",
+  "service_map_url": "https://www.google.com/maps/d/u/4/embed?mid=1xvUoOkajgibuGD6SVt3XgFvlNHspNJmt",
+  "service_meta": {
+    "title": "",
+    "description_1": "PEdukasi dan melihat langsung pengelolaan sampah di Waste4Change",
+    "description_2": "PEdukasi dan melihat langsung pengelolaan sampah di Waste4Change",
+    "keywords": "Edukasi dan melihat langsung pengelolaan sampah di Waste4Change",
+    "site_url": "official/service/akabis-waste-management-academy"
+  },
+  "sections": {
+    "welcome": {
+      "section_template": "welcome",
+      "section_menu_title": "",
+      "section_title": "AKABIS (Waste Management Academy)",
+      "section_subtitle": "",
+      "section_message": "Akademi Bijak Sampah (AKABIS) adalah sebuah model edukasi yang dibuat oleh Waste4Change untuk meningkatkan kesadaran mengenai pentingnya menjaga lingkungan, terutama mengenai pengelolaan sampah yang bertanggung jawab.",
+      "section_image": "header.jpg"
+    },
+    "achievement": {
+      "section_template": "our-achievement",
+      "section_menu_title": "",
+      "section_title": "Pencapaian Kami",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Klien",
+          "item_subtitle": "",
+          "item_message": "53",
+          "item_image": ""
+        },
+        {
+          "item_title": "Peserta",
+          "item_subtitle": "",
+          "item_message": "4271",
+          "item_image": ""
+        },
+        {
+          "item_title": "Kota Tersedia",
+          "item_subtitle": "",
+          "item_message": "14",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "about": {
+      "section_template": "about",
+      "section_menu_title": "Tentang",
+      "section_subtitle": "Melihat Lebih Dekat Fakta Dan Solusi Pengelolaan Sampah",
+      "section_message": "Akademi Bijak Sampah (AKABIS) adalah sebuah model edukasi yang dibuat oleh Waste4Change untuk meningkatkan kesadaran mengenai pentingnya menjaga lingkungan, terutama mengenai pengelolaan sampah yang bertanggung jawab. Jika institusi Anda ingin merasakan pengalaman langsung kunjungan lapangan yang merangsang keempat indra manusia, kami bisa menawarkan Anda program AKABIS-Xperience, tur edukasional yang berlangsung selama 6 jam ke fasilitas milik Waste4Change dan TPA yang disertai dengan diskusi interaktif.<br><br>Selain itu, untuk mengakomodasi Anda yang memiliki waktu yang terbatas, kami juga menawarkan AKABIS-Class, sebuah pelatihan yang berlangsung selama 2 jam dan dilakukan di dalam ruangan, lengkap dengan diskusi mengenai pengelolaan sampah yang bertanggung jawab dan bisa dilakukan di lokasi yang dikehendaki oleh klien.",
+      "section_title": "Tentang",
+      "section_image": "about.jpg"
+    },
+
+    "we-offer": {
+      "section_template": "we-offer",
+      "section_menu_title": "Penawaran",
+      "section_title": "Kami menawarkan 2 program",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "AKABIS CLASS",
+          "item_subtitle": "",
+          "item_icon": "people-m.png",
+          "item_message": "Pelatihan dan diskusi dalam ruangan dengan durasi 2 jam<br>Diadakan di tempat klien<br>Akabis Class dapat diikuti oleh:<ul><li>Masyarakat umum, terutama masyarakat yang ingin menjadi agen perubahan demi masa depan pengelolaan sampah di Indonesia yang lebih baik lagi</li><li>Institusi</li></ul>",
+          "item_image": ""
+        },
+        {
+          "item_title": "AKABIS XPERIENCE",
+          "item_subtitle": "",
+          "item_icon": "people-m.png",
+          "item_message": "Tur edukasional dan diskusi interaktif yang berlangsung selama 6 jam<br>Kunjungan ke TPA/TPST<br>Kunjungan ke Fasilitas W4C<br>Akabis Xperience dapat diikuti oleh:<ul><li>Masyarakat umum, terutama anak muda yang menjadi agen perubahan demi masa depan pengelolaan sampah di Indonesia yang lebih baik lagi</li><li>Institusi</li></ul>",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "program-highlight": {
+      "section_template": "program-highlight",
+      "section_menu_title": "",
+      "section_title": "SOROTAN PROGRAM AKABIS",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "project_items": [
+        {
+          "service_slug": "akabis-class-for-the-embassy-of-finland-jakarta",
+          "service_subcategory_name": "AKABIS Class untuk Institusi"
+        },
+        {
+          "service_slug": "akabis-class-the-neglected-debris-paper-letter-and-waste-discussion",
+          "service_subcategory_name": "AKABIS Class untuk Umum"
+        },
+        {
+          "service_slug": "akabis-xperience-untuk-pt-bank-dbs-indonesia",
+          "service_subcategory_name": "AKABIS Xperience untuk Institusi"
+        },
+        {
+          "service_slug": "akabis-xperience-for-yseali",
+          "service_subcategory_name": "AKABIS Xperience untuk Umum"
+        }
+      ]
+    },
+    "client": {
+      "section_template": "our-client",
+      "section_menu_title": "Klien",
+      "section_title": "Klien",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "PT Sharp Electronics Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Sharp.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "PT Unilever Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Yayasan-Unilever.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "PT L'Oreal Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "L'Oreal.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "The Body Shop",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "The-Body-Shop.jpg",
+          "item_color": ""
+        }
+      ]
+    },
+    "recommendation": {
+      "section_template": "recommended_for",
+      "section_menu_title": "",
+      "section_title": "REKOMENDASI UNTUK",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Divisi HSE",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "HSE.svg",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Divisi CSR",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-medical-022 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Divisi Sustainability",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-132 u-line-icon-pro",
+          "item_color": "#a24444"
+        },
+        {
+          "item_title": "Pemerintah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-136 u-line-icon-pro",
+          "item_color": "#68a244"
+        },
+        {
+          "item_title": "Pengelola Perumahan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-070 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Pengelola Bangunan/ Kawasan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-172 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Yayasan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-009 u-line-icon-pro",
+          "item_color": "#68a244"
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "map": {
+      "section_template": "our-coverage",
+      "section_title": "AREA CAKUPAN",
+      "section_menu_title": "AREA CAKUPAN"
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Mulai <span style='font-weight:bold'>AKABIS (Waste Management Academy)</span> Anda sekarang juga!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "DAPATKAN PROPOSAL",
+          "cta_url": "official/service/digital-epr/join",
+          "cta_class": "",
+          "portfolio_title": "DAPATKAN PORTOFOLIO",
+          "portfolio_url": 1,
+          "portfolio_class": ""
+        }
+      ]
+    }
+  }
+}

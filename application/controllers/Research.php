@@ -11,7 +11,7 @@ class Research extends MY_Controller
     {
         parent::__construct();
         $this->load->model('crud_model');
-        $this->client = new GuzzleHttp\Client();
+        $this->client = new \GuzzleHttp\Client();
     }
 
     public function index()

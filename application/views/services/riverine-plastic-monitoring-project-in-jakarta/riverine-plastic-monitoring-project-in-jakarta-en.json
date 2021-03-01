@@ -1,0 +1,111 @@
+{
+  "service_id": "1",
+  "service_parent_id": 7,
+  "service_name": "Riverine Plastic Monitoring Project in Jakarta",
+  "service_short_name": "",
+  "service_page_url": "official/project/riverine-plastic-monitoring-project-in-jakarta",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_join_url": "",
+  "service_subcategory_name": "Marine Debris Study",
+  "service_client_name": "The Ocean Cleanup",
+  "service_slug": "riverine-plastic-monitoring-project-in-jakarta",
+  "service_map_url": "",
+  "service_meta": {
+    "title": "",
+    "description_1": "Program pengelolaan sampah secara optimal beserta pelaporan alur sampah",
+    "description_2": "Program pengelolaan sampah secara optimal beserta pelaporan alur sampah",
+    "keywords": "program pengelolaan sampah, pengelolaan sampah, pengelolaan sampah dari sumber, pelaporan alur sampah, pengelolaan sampah secara optimal, pengelolaan sampah bertanggung jawab",
+    "site_url": "official/project/riverine-plastic-monitoring-project-in-jakarta"
+  },
+  "sections": {
+    "header": {
+      "section_template": "header",
+      "section_menu_title": "",
+      "section_title": "",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "thumbnail.jpg"
+    },
+    "description": {
+      "section_template": "description",
+      "section_menu_title": "Description",
+      "section_subtitle": "",
+      "section_message": "TThe Ocean Cleanup is a Dutch-based non-profit organization who develops advanced technologies to rid the world's oceans of plastics. By deploying their fleet of systems, they aim to remove 50% of the Great Pacific Garbage Patch in just five years' time. By having the same mission on tackling waste problems, The Ocean Cleanup cooperates with Waste4Change as their local partner in Indonesia and conducted a riverine plastic emission study in Jakarta's rivers in April 2018.<br>During a 10-day fieldwork supported by DKI Jakarta Orange Troops, plastics were monitored at 7 river points throughout Jakarta, which includes Ciliwung and Pesanggrahan River. Plastic samples were trawled and analyzed by dividing them into different types. By having these data, hopefully appropriate measures can be done to tackle marine debris starting from the rivers, not only in Jakarta, but throughout Indonesia and in neighboring countries.",
+      "section_title": "Description",
+      "section_image": "about.jpg"
+    },
+
+    "achievement-deliverable": {
+      "section_template": "achievement-deliverable",
+      "section_menu_title": "Deliverables",
+      "section_title": "Deliverables",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_name": "Retrieved better understanding on the total amount and characteristics of plastics that lies in Jakarta's rivers, which has become a problem in the past years, as well as analyzed the best way to tackle these issues",
+          "item_icon": "idea-m.png"
+        },
+        {
+          "item_name": "Published paper regarding the project can be found in the <a href='https://theoceancleanup.com/scientific-publications/riverine-plastic-emission-from-jakarta-into-the-ocean/'>following link</a>.",
+          "item_icon": "report-m.png"
+        }
+      ]
+    },
+    "similar-project": {
+      "section_template": "similar-project",
+      "section_menu_title": "Similar Project",
+      "section_title": "Similar Project",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "project_items": [
+        {
+          "service_slug": "solid-waste-management-study-at-pelabuhan-indonesia-ii-hq",
+          "service_subcategory_name": "swm research in institution"
+        },
+        {
+          "service_slug": "solid-waste-management-design-for-revitalisation-at-jami-mosque-and-kampung-beting-settlements-in-pontianak",
+          "service_subcategory_name": "swm research in municipalities/ tourism sites"
+        },
+        {
+          "service_slug": "waste-management-scouting-study-stakeholders-mapping-and-waste-flow-in-jakarta-and-surabaya",
+          "service_subcategory_name": "value chain analysis"
+        },
+        {
+          "service_slug": "technical-due-diligence-for-itf-sunter-jakarta",
+          "service_subcategory_name": "waste to energy"
+        }
+      ]
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Start your <span style='font-weight:bold'>Solid Waste Management Research</span> now!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "GET PROPOSAL",
+          "cta_url": "",
+          "cta_class": "",
+          "portfolio_title": "GET PORTOFOLIO",
+          "portfolio_url": 1,
+          "portfolio_class": ""
+        }
+      ]
+    }
+  }
+}

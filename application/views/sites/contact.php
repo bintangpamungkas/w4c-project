@@ -20,6 +20,13 @@
                 </div>
             </div>
             <div class="media mb-2">
+                <img class="d-flex g-color-gray-dark-v5 mt-1 mr-3" src="<?= get_image(DIR_ICON . '/clock-2.png') ?>" style="width:14px;height:14px"></img>
+                <div class="media-body">
+                    <p class="g-color-gray-dark-v3"><?= get_lang('working_hour_title') ?> <span class="g-color-gray-dark-v4"><?= get_lang('working_hour') ?></span>
+                    </p>
+                </div>
+            </div>
+            <div class="media mb-2">
                 <i class="d-flex g-color-gray-dark-v5 mt-1 mr-3 icon-communication-062 u-line-icon-pro"></i>
                 <div class="media-body">
                     <p class="g-color-gray-dark-v3 mb-2">Email: <a class="g-color-gray-dark-v4" href="mailto:<?= OFFICIAL_MAIL ?>"><?= OFFICIAL_MAIL ?></a>

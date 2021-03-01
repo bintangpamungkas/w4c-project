@@ -1,0 +1,370 @@
+{
+  "service_id": "1",
+  "service_parent_id": null,
+  "service_name": "In-Store Recycling",
+  "service_short_name": "ISR",
+  "service_page_url": "official/service/in-store-recycling",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_join_url": "",
+  "service_slug": "in-store-recycling",
+  "service_map_url": "https://www.google.com/maps/d/u/4/embed?mid=1GDDIUknG99ELERykKibGPWvEUXFjzfgx",
+  "service_meta": {
+    "title": "Recycling of Brand-labeled Waste",
+    "description_1": "Recycling of Brand-labeled Waste",
+    "description_2": "Recycling of Brand-labeled Waste",
+    "keywords": "Recycling of Brand-labeled Waste",
+    "site_url": "official/service/in-store-recycling"
+  },
+  "sections": {
+    "welcome": {
+      "section_template": "welcome",
+      "section_menu_title": "",
+      "section_title": "In-Store Recycling",
+      "section_subtitle": "",
+      "section_message": "We provide a system to improve the recycling process of your brand-labeled waste so that it remains safe for the environment, supports the circular economy, and prevent it from ending up in the landfill.",
+      "section_image": "header.jpg"
+    },
+    "achievement": {
+      "section_template": "our-achievement",
+      "section_menu_title": "",
+      "section_title": "OUR ACHIEVEMENT",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Clients",
+          "item_subtitle": "",
+          "item_message": "12",
+          "item_image": ""
+        },
+        {
+          "item_title": "Residual Waste That Doesn't End Up in the Landfill (kg)",
+          "item_subtitle": "",
+          "item_message": "6570",
+          "item_image": ""
+        },
+        {
+          "item_title": "Cities Available",
+          "item_subtitle": "",
+          "item_message": "7",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "about": {
+      "section_template": "about",
+      "section_menu_title": "About",
+      "section_subtitle": "Support the Recycling of Your Brand-Labeled Waste",
+      "section_message": "Designed to increase the material processing of brand-labeled waste throughout your company's business line. What we define as brand-labeled waste might resulted from the following:<ul><li>Production process that resulted in product defect, reject, or residue from production process</li><li>Distribution process such as expired or defect products</li><li>Warehouse such as returns, second-hand, or broken</li><li>Consumer such as empty packaging or used products</li></ul>",
+      "section_title": "About",
+      "section_image": "about.jpg"
+    },
+
+    "benefit": {
+      "section_template": "benefit",
+      "section_menu_title": "Benefits",
+      "section_title": "Benefits",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Zero Waste to Landfill",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Prevent your brand-labelled products for being misused, imitated or forged",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Waste journey report",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Help to increase recycling rate",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "what-you-get": {
+      "section_template": "what-you-get",
+      "section_menu_title": "WHAT YOU WILL GET",
+      "section_title": "WHAT YOU WILL GET",
+      "section_subtitle": "For this type of service, Waste4Change provides the facilities as follows:",
+      "section_messange": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Comprehensive waste management system in the distribution line",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "distribution-m.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Responsible waste management for residual waste (waste that are difficult to be recycled) without sending it to the landfills (on demand)",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "residue-m.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Increase the number of waste that can be further processed through recycling method",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "chart-m.png",
+          "item_color": ""
+        }
+      ]
+    },
+    "waste-flow": {
+      "section_template": "waste-flow",
+      "section_menu_title": "WASTE FLOW",
+      "section_title": "WASTE FLOW",
+      "section_subtitle": "Residual Waste Treatment Using RDF Technology",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Waste segregation by consument",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "drop.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Waste storage in client's store/ storage",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "storage.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Segregated waste collection",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "transfer.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Waste processing in W4C's Material Recovery Facility (MRF)",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "process.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Residue co-processing with RDF technology",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "factory.png",
+          "item_color": ""
+        }
+      ]
+    },
+    "portofolio": {
+      "section_template": "portfolio-highlight",
+      "section_menu_title": "",
+      "section_title": "PORTFOLIO HIGHLIGHT",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_icon": "tbs.jpg",
+          "item_title": "The Body Shop - Bring Back Our Bottle (BBOB) Program",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "tbs.jpg",
+          "item_color": "",
+          "item_mou": "",
+          "item_collection_schedule": "",
+          "item_duration": "2015 Until Present",
+          "item_waste_collected": "33.477 kg"
+        },
+        {
+          "item_icon": "lizzy.jpg",
+          "item_title": "By Lizzy Parra - There is a Box for That (TIBFT)",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "lizzy.jpg",
+          "item_color": "",
+          "item_mou": "",
+          "item_collection_schedule": "",
+          "item_duration": "August - November 2019",
+          "item_waste_collected": "102 kg"
+        }
+      ]
+    },
+    "client": {
+      "section_template": "our-client",
+      "section_menu_title": "CLIENT",
+      "section_title": "CLIENT",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Trava Gannah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Trava.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Wardah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Wardah.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Gojek",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Gojek.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Tetra Pak",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Tetrapak.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Djournal",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Djournal.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Love Beauty Planet Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Love-Beauty-Planet.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Nescafe Dulce Gusto",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Nescafe-Dolce-Gusto.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Potato Family Head Jakarta",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Potato-Head.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "The Body Shop",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "The-Body-Shop.jpg",
+          "item_color": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "recommendation": {
+      "section_template": "recommended_for",
+      "section_menu_title": "",
+      "section_title": "RECOMMENDED FOR",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Distributor",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-088 u-line-icon-pro",
+          "item_color": "#a24495"
+        },
+        {
+          "item_title": "Brand",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-medical-022 u-line-icon-pro",
+          "item_color": "#a24495"
+        },
+        {
+          "item_title": "Product",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-education-031 u-line-icon-pro",
+          "item_color": "#a24495"
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "map": {
+      "section_template": "our-coverage",
+      "section_title": "Coverage Area",
+      "section_menu_title": "Coverage Area"
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Start your <span style='font-weight:bold'>In-Store Recycling</span> now!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "GET PROPOSAL",
+          "cta_url": "official/service/in-store-recycling/join",
+          "cta_class": ""
+        }
+      ]
+    }
+  }
+}

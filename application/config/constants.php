@@ -21,7 +21,7 @@ define('DIR_WRITE_MODE', 0777);
 define('TRASHPAY_ID', 'Tp');
 define('TRASH_PAY_DENOM', 10);
 
-define('OFFICIAL_ADDRESS', 'Vida Bumipala, Jl. Alun-alun Utara, Padurenan, Mustika Jaya, Kota Bekasi, Jawa Barat 17156');
+define('OFFICIAL_ADDRESS', 'Vida Bumipala, Jl. Alun-alun Utara, Padurenan, Mustika Jaya, Kota Bekasi, <br> Jawa Barat 17156');
 define('OFFICIAL_TELEPHONE', '(021) 29372308');
 define('OFFICIAL_MOBILE', '+6285655652970');
 
@@ -57,7 +57,7 @@ if (IS_ONLINE == 1) {
 	WEBSITE URL
 	*/
 
-define('W4C_URL', HOST . 'official/');
+define('W4C_URL', HOST );
 define('SEND_YOUR_WASTE_URL', HOST . 'sendyourwaste/');
 define('DROPBOX_URL', HOST . 'dropbox/');
 define('POIN_URL', HOST . 'poin/');
@@ -67,6 +67,7 @@ define('POIN_ADMIN_URL', POIN_URL . 'home/');
 define('POIN_AGENT_URL', POIN_URL . 'agent/');
 
 define('SITE_URL', W4C_URL);
+define('BASESS_URL', HOST );
 /*
 	DATABASE
 	*/

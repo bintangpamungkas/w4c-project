@@ -1,0 +1,370 @@
+{
+  "service_id": "1",
+  "service_parent_id": null,
+  "service_name": "In-Store Recycling",
+  "service_short_name": "ISR",
+  "service_page_url": "official/service/in-store-recycling",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_join_url": "",
+  "service_slug": "in-store-recycling",
+  "service_map_url": "https://www.google.com/maps/d/u/4/embed?mid=1GDDIUknG99ELERykKibGPWvEUXFjzfgx",
+  "service_meta": {
+    "title": "Daur Ulang Sampah Berlabel Merek Perusahaan",
+    "description_1": "Daur Ulang Sampah Berlabel Merek Perusahaan",
+    "description_2": "Daur Ulang Sampah Berlabel Merek Perusahaan",
+    "keywords": "Daur Ulang Sampah Berlabel Merek Perusahaan",
+    "site_url": "official/service/in-store-recycling"
+  },
+  "sections": {
+    "welcome": {
+      "section_template": "welcome",
+      "section_menu_title": "",
+      "section_title": "In-Store Recycling",
+      "section_subtitle": "",
+      "section_message": "Tingkatkan pengelolaan materi dari sampah berlabel merek di seluruh lini bisnis Anda. Baik melalui layanan daur ulang di toko maupun yang berbasis aplikasi, kami punya sistem dan solusinya!",
+      "section_image": "header.jpg"
+    },
+    "achievement": {
+      "section_template": "our-achievement",
+      "section_menu_title": "",
+      "section_title": "Pencapaian Kami",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Klien",
+          "item_subtitle": "",
+          "item_message": "12",
+          "item_image": ""
+        },
+        {
+          "item_title": "Residu yang Tidak Berakhir di TPA (Kg)",
+          "item_subtitle": "",
+          "item_message": "6570",
+          "item_image": ""
+        },
+        {
+          "item_title": "Kota Tersedia",
+          "item_subtitle": "",
+          "item_message": "7",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "about": {
+      "section_template": "about",
+      "section_menu_title": "Tentang",
+      "section_subtitle": "Mendukung Daur Ulang Sampah Berlabel Merek Anda",
+      "section_message": "Dirancang untuk meningkatkan daur ulang materi dari sampah berlabel merek dalam seluruh lini bisnis Anda. Yang kami maksud sebagai sampah berlabel merek dapat muncul sebagai hasil dari:<ul><li>Proses produksi yang menghasilkan produk gagal, cacat, atau sampah dari sisa proses produksi</li><li>Proses distribusi seperti produk yang cacat atau kadaluwarsa</li><li>Gudang, seperti barang retur,bekas, atau rusak</li><li>Konsumen, seperti kemasan kosong atau produk yang sudah selesai digunakan</li></ul>",
+      "section_title": "Tentang",
+      "section_image": "about.jpg"
+    },
+
+    "benefit": {
+      "section_template": "benefit",
+      "section_menu_title": "Kentungan",
+      "section_title": "KEUNTUNGAN",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Tidak ada sampah yang terbuang ke TPA",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Mencegah produk berlabel merek Anda agar tidak disalahgunakan, dibuat imitasinya, atau dipalsukan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Laporan tentang alur sampah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Membantu meningkatkan tingkat daur ulang",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "what-you-get": {
+      "section_template": "what-you-get",
+      "section_menu_title": "YANG ANDA DAPAT",
+      "section_title": "YANG ANDA DAPAT",
+      "section_subtitle": "Untuk jenis layanan ini, Waste4Change menyediakan fasilitas sebagai berikut:",
+      "section_messange": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Sistem pengelolaan sampah yang komprehensif di lini distribusi",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "distribution-m.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Pengelolaan sampah yang bertanggung jawab untuk sampah residu (sampah yang sulit didaur ulang) tanpa mengirimnya ke TPA (berdasarkan permintaan)",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "residue-m.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Meningkatkan jumlah sampah yang dapat diproses melalui metode daur ulang",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "chart-m.png",
+          "item_color": ""
+        }
+      ]
+    },
+    "waste-flow": {
+      "section_template": "waste-flow",
+      "section_menu_title": "ALUR SAMPAH",
+      "section_title": "ALUR SAMPAH",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Pemilahan sampah oleh klien",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "drop.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Penyimpanan sampah di titik transfer/ TPST",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "storage.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Pengumpulan sampah terpilah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "transfer.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Pengolahan sampah di Rumah Pemulihan Material W4C",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "process.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Pengelolaan residu menggunakan teknologi RDF",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "factory.png",
+          "item_color": ""
+        }
+      ]
+    },
+    "portofolio": {
+      "section_template": "portfolio-highlight",
+      "section_menu_title": "",
+      "section_title": "SOROTAN PORTFOLIO",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_icon": "tbs.jpg",
+          "item_title": "The Body Shop - Bring Back Our Bottle (BBOB) Program",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "tbs.jpg",
+          "item_color": "",
+          "item_mou": "",
+          "item_collection_schedule": "",
+          "item_duration": "2015 Sampai Sekarang",
+          "item_waste_collected": "33.477 kg"
+        },
+        {
+          "item_icon": "lizzy.jpg",
+          "item_title": "By Lizzy Parra - There is a Box for That (TIBFT)",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "lizzy.jpg",
+          "item_color": "",
+          "item_mou": "",
+          "item_collection_schedule": "",
+          "item_duration": "Agustus - November 2019",
+          "item_waste_collected": "102 kg"
+        }
+      ]
+    },
+    "client": {
+      "section_template": "our-client",
+      "section_menu_title": "Klien",
+      "section_title": "KLIEN KAMI",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Trava Gannah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Trava.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Wardah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Wardah.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Gojek",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Gojek.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Tetra Pak",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Tetrapak.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Djournal",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Djournal.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Love Beauty Planet Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Love-Beauty-Planet.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Nescafe Dulce Gusto",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Nescafe-Dolce-Gusto.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Potato Family Head Jakarta",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Potato-Head.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "The Body Shop",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "The-Body-Shop.jpg",
+          "item_color": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "recommendation": {
+      "section_template": "recommended_for",
+      "section_menu_title": "",
+      "section_title": "REKOMENDASI UNTUK",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Distribusi",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-088 u-line-icon-pro",
+          "item_color": "#a24495"
+        },
+        {
+          "item_title": "Merek",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-medical-022 u-line-icon-pro",
+          "item_color": "#a24495"
+        },
+        {
+          "item_title": "Produk",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-education-031 u-line-icon-pro",
+          "item_color": "#a24495"
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "map": {
+      "section_template": "our-coverage",
+      "section_title": "Area Cakupan",
+      "section_menu_title": "Area Cakupan"
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Mulai <span style='font-weight:bold'>In-Store Recycling</span> Anda sekarang juga!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "DAPATKAN PROPOSAL",
+          "cta_url": "official/service/responsible-waste-management/join",
+          "cta_class": ""
+        }
+      ]
+    }
+  }
+}

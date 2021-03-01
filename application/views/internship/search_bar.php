@@ -1,5 +1,5 @@
 <!-- Search Bar -->
-<section class="g-bg-gray-light-v5" style="position: relative;">
+<section class="g-bg-gray-light-v5 d-none" style="position: relative;">
 	<div style="height: 10px;position: absolute;width: 90%;margin-top: -100px"></div>
 	<div style="width:100%; <?= $this->agent->is_mobile() ? 'position: absolute; top: -50px;' : 'position: absolute; top: -70px;' ?>">
 		<div class="container">

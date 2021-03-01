@@ -1,0 +1,51 @@
+[
+  {
+    "service_id": "1",
+    "service_target_id": "1",
+    "service_slug": "responsible-waste-management",
+    "city_name": "Kota Tangerang",
+    "service_target_slug": "for-individuals",
+    "service_page_url": "service/responsible-waste-management",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Responsible Waste Management",
+    "service_description": "Sistem manajemen sampah yang 100% menyeluruh untuk perusahaan, gedung, dan pelaku bisnis dalam rangka mengurangi jumlah timbunan sampah yang berakhir di TPA.",
+    "service_category_name": "Waste Collection Services"
+  },
+  {
+    "service_id": "5",
+    "service_target_id": "1",
+    "service_slug": "in-store-recycling",
+    "city_name": "Kota Tangerang",
+    "service_page_url": "official/service/in-store-recycling",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "In-Store Recycling",
+    "service_description": "Tingkatkan pengelolaan materi dari sampah berlabel merek di seluruh lini bisnis Anda. Baik toko fisik ataupun daring, kami punya sistem dan solusinya!",
+    "service_category_name": "Extended Producer Responsibility"
+  },
+  {
+    "service_id": "7",
+    "service_target_id": "1",
+    "service_slug": "solid-waste-management-research",
+    "city_name": "Seluruh Kota di Indonesia",
+    "service_page_url": "official/service/solid-waste-management-research",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Solid Waste Management Research",
+    "service_description": "Tingkatkan pengelolaan sampah Anda dengan melakukan analisis terperinci dan mengidentifikasi program dan sistem manajemen sampah yang paling tepat.",
+    "service_category_name": "Solid Waste Management Research"
+  },
+  {
+    "service_id": "9",
+    "service_target_id": "2",
+    "service_slug": "3r-school-program",
+    "city_name": "Seluruh Kota di Indonesia",
+    "service_page_url": "official/service/3r-school-program",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "3R School Program",
+    "service_description": "Dirancang untuk meningkatkan kesadaran generasi mendatang terhadap prinsip 3R (Reduce, Reuse, Recycle) dan bagaimana menerapkannya di kehidupan sehari-hari.",
+    "service_category_name": "Community Development"
+  }
+]

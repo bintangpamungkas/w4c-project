@@ -385,7 +385,23 @@ $lang['back_to_previous_page'] = "Kembali ke Halaman Sebelumnya";
 
 $lang['loading'] = "Memproses";
 $lang['home'] = "Beranda";
+$lang['working_hour_title'] = "Jam Kerja:";
 $lang['working_hour']   = "Senin s/d Jumat 09:00 - 17:00 WIB (Kecuali Hari Libur)";
 
 //products
 $lang['products'] = 'Produk';
+
+//benefit epr
+$lang['supported'] = 'Didukung oleh internet dan perangkat digital';
+
+//newsletter 
+$lang['join'] = 'Bergabung dengan Newsletter Kami';
+$lang['subtitle_newsletter']   = 'Dapatkan berita-berita terkini seputar konten manajemen sampah dan penawaran menarik';
+$lang['subscriber'] = 'BERLANGGANAN';
+$lang['email']  = 'Surel';
+$lang['name']   = 'Nama';
+$lang['city']   = 'Kota';
+$lang['occupation'] = 'Jabatan';
+$lang['required']   = 'Wajib Diisi';
+$lang['thanks'] = 'Terima kasih sudah berlangganan!';
+$lang['content_alert'] = 'Anda akan segera mendapatkan berita-berita terbaru seputar manajemen sampah dan penawaran menarik kami!';

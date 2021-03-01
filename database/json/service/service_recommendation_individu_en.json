@@ -1,0 +1,56 @@
+[
+  {
+    "service_id": "17",
+    "service_target_id": "2",
+    "service_slug": "home-composting",
+    "city_name": "Seluruh Kota di Indonesia",
+    "service_page_url": "http://w4c.id/rumahkompos",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "0",
+    "service_name": "Home Composting",
+    "service_description": "Process your organic waste at home with Waste4Change's special composting bag and other home composting tools and equipment!",
+    "service_category_name": "General",
+    "recomendation": [
+      {
+        "name": "Personal",
+        "color": "#4489a2"
+      }
+    ]
+  },
+  {
+    "service_id": "13",
+    "service_target_id": "2",
+    "service_slug": "send-your-waste",
+    "city_name": "Kota Bekasi",
+    "service_page_url": "sendyourwaste",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Send Your Waste",
+    "service_description": "Send your inorganic waste to Waste4Change and let us recycle it for you.",
+    "service_category_name": "General",
+    "recomendation": [
+      {
+        "name": "Personal",
+        "color": "#4489a2"
+      }
+    ]
+  },
+  {
+    "service_id": "14",
+    "service_target_id": "2",
+    "service_slug": "dropbox",
+    "city_name": "Kota Bekasi",
+    "service_page_url": "dropbox",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Dropbox",
+    "service_description": "Deposit your inorganic waste in Waste4Change's dropbox and let us recycle it for you.",
+    "service_category_name": "General",
+    "recomendation": [
+      {
+        "name": "Personal",
+        "color": "#4489a2"
+      }
+    ]
+  }
+]

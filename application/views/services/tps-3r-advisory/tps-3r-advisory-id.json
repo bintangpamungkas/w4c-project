@@ -1,0 +1,111 @@
+{
+  "service_id": "1",
+  "service_parent_id": 8,
+  "service_name": "TPS 3R Advisory",
+  "service_short_name": "",
+  "service_page_url": "official/project/tps-3r-advisory",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_join_url": "",
+  "service_subcategory_name": "Community Assistance di Daerah",
+  "service_client_name": "PT. Sarana Multi Daya, PT. Multi Karadiguna Jasa, PT. Prismaita Cipta Kreasi",
+  "service_slug": "tps-3r-advisory",
+  "service_map_url": "",
+  "service_meta": {
+    "title": "",
+    "description_1": "Program pengelolaan sampah secara optimal beserta pelaporan alur sampah",
+    "description_2": "Program pengelolaan sampah secara optimal beserta pelaporan alur sampah",
+    "keywords": "program pengelolaan sampah, pengelolaan sampah, pengelolaan sampah dari sumber, pelaporan alur sampah, pengelolaan sampah secara optimal, pengelolaan sampah bertanggung jawab",
+    "site_url": "official/project/tps-3r-advisory"
+  },
+  "sections": {
+    "header": {
+      "section_template": "header",
+      "section_menu_title": "",
+      "section_title": "",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "thumbnail.jpg"
+    },
+    "description": {
+      "section_template": "description",
+      "section_menu_title": "Deskripsi",
+      "section_subtitle": "Penelitian Dan Perencanaan Dengan Mempertimbangkan Aspek Lingkungan",
+      "section_message": "Dalam rangka mencapai target nasional pengurangan sampah sebesar 30% di tahun 2030 yang telah ditetapkan pemerintah, program TPS 3R dapat menjadi salah satu solusinya. Waste4Change sebagai salah satu konsultan TPS 3R Advisory berperan dalam mendampingi, mengawasi, memonitor, serta mengevaluasi penerapan program berbasis komunitas ini.<br>Cakupan kerjanya meliputi pengoptimalisasian TPS 3R yang kemarin sudah dibangun untuk meningkatkan manajemen dan pengembangan bisnisnya, serta pengawasan TPS 3R yang baru dibangun. Waste4Change memonitor dan mengevaluasi TPS 3R yang ada di Kalimantan dan Jawa (di tahun 2017) dan di Kalimantan, Jawa, Sulawesi, Nusa Tenggara, Maluku, dan Papua (di tahun 2018).",
+      "section_title": "Deskripsi",
+      "section_image": "about.jpg"
+    },
+
+    "achievement-deliverable": {
+      "section_template": "achievement-deliverable",
+      "section_menu_title": "HASIL PEKERJAAN",
+      "section_title": "HASIL PEKERJAAN",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_name": "Laporan yang mencakup perkembangan, pelajaran yang didapat, serta contoh praktik terbaik dari TPS3R",
+          "item_icon": "video-m.png"
+        },
+        {
+          "item_name": "Catatan Workshop/ Catatan Konsinyasi",
+          "item_icon": "loadspeaker-m.png"
+        },
+        {
+          "item_name": "Video dan dokumentasi audio visual dari aktivitas Monitoring dan Evaluasi",
+          "item_icon": "loadspeaker-m.png"
+        }
+      ]
+    },
+    "similar-project": {
+      "section_template": "similar-project",
+      "section_menu_title": "Proyek Serupa",
+      "section_title": "Proyek Serupa",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "project_items": [
+        {
+          "service_slug": "3r-program-suralaya",
+          "service_subcategory_name": "Community Assistance di Institusi"
+        },
+        {
+          "service_slug": "ecoranger-in-pulau-merah-banyuwangi",
+          "service_subcategory_name": "Community Assistance di Destinasi Wisata"
+        },
+        {
+          "service_slug": "capacity-building-in-indonesias-frontline-territories",
+          "service_subcategory_name": "Community Capacity Building"
+        }
+      ]
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Mulai <span style='font-weight:bold'>Communnity Based Implementation</span> Anda sekarang juga!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "DAPATKAN PROPOSAL",
+          "cta_url": "official/service/digital-epr/join",
+          "cta_class": "",
+          "portfolio_title": "DAPATKAN PORTOFOLIO",
+          "portfolio_url": 1,
+          "portfolio_class": ""
+        }
+      ]
+    }
+  }
+}

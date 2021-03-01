@@ -1,0 +1,220 @@
+{
+  "service_id": 32,
+  "service_parent_id": null,
+  "service_name": "Custom Waste Bin",
+  "service_short_name": "CWB",
+  "service_page_url": "official/product/custom-waste-bin",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_slug": "custom-waste-bin",
+  "service_join_url": "",
+  "service_map_url": "https://www.google.com/maps/d/u/4/embed?mid=14U27pSAYe3HQIvZiTgk-NXoS6AEEu1Rp",
+  "service_meta": {
+    "title": "Tempat sampah khusus dengan petunjuk pemilahan yang tepat",
+    "description_1": "Tempat sampah khusus dengan petunjuk pemilahan yang tepat",
+    "description_2": "Tempat sampah khusus dengan petunjuk pemilahan yang tepat",
+    "keywords": "Tempat Sampah Khusus dengan Petunjuk Pemilahan yang Tepat",
+    "site_url": "official/product/custom-waste-bin"
+  },
+  "sections": {
+    "welcome": {
+      "section_template": "welcome",
+      "section_menu_title": "",
+      "section_title": "Custom Waste Bin",
+      "section_subtitle": "",
+      "section_message": "Dapatkan tempat sampah yang didesain khusus untuk pemilahan sampah untuk tingkatkan pengelolaan sampah di area Anda. Waste4Change menyediakan tempat sampah dengan bentuk dan petunjuk edukasi untuk kebutuhan pemilahan sampah. Desain dapat disesuaikan dengan frekuensi dan perilaku pemilahan sampah di area Anda.",
+      "section_image": "header.jpg"
+    },
+    "about": {
+      "section_template": "about",
+      "section_menu_title": "Tentang",
+      "section_subtitle": "Ajak Pengunjung Tingkatkan Pemilahan Sampah Dengan Petunjuk Yang Tepat",
+      "section_message": "Berikan edukasi yang tepat pada orang-orang di sekitar area Anda dengan pesan-pesan yang lebih baik pada stiker tempat sampah Anda. Ketika edukasi diberikan dengan pesan yang lebih baik, mereka akan lebih mudah memahami dan pada akhirnya dapat meningkatkan tingkat pemilahan di sekitar area Anda.",
+      "section_title": "Tentang",
+      "section_image": "about.jpg"
+    },
+
+    "benefit": {
+      "section_template": "benefit",
+      "section_menu_title": "KEUNTUNGAN",
+      "section_title": "KEUNTUNGAN",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Panduan memilah sampah untuk bantu tingkatkan pemilahan sampah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Tempat sampah yang bisa dibuat sesuai keperluan brand atau panduan desain interior",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ]
+    },
+    "waste-bin-option": {
+      "section_template": "waste-bin-option",
+      "section_menu_title": "PILIHAN WASTE BIN OPTION",
+      "section_title": "PILIHAN WASTE BIN OPTION",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_items": [
+        {
+          "item_title": "Kapsul 4-in-1",
+          "item_subtitle": "Dimensi: 140 x 35 x 75 cm <br>Bahan: Stainless Hairline",
+          "item_message": "",
+          "item_image": "wastebin-4in1.png"
+        },
+        {
+          "item_title": "Tabung",
+          "item_subtitle": "Dimensi: 30 x 65 cm <br> Bahan: Stainless Hairline",
+          "item_message": "",
+          "item_image": "wastebin-tube.png"
+        },
+        {
+          "item_title": "Kapsul 3-in-1",
+          "item_subtitle": "Dimensi: 102 x 33 x 75 cm <br> Bahan: Stainless Hairline",
+          "item_message": "",
+          "item_image": "wastebin-3in1.png"
+        },
+        {
+          "item_title": "Custom",
+          "item_subtitle": "Dimensi: Sesuai Permintaan <br> Bahan: Sesuai Permintaan",
+          "item_message": "",
+          "item_image": "wastebin-custom.png"
+        },
+        {
+          "item_title": "Kapsul 2-in-1",
+          "item_subtitle": "Dimensi: 70 x 33 x 75 cm <br> Bahan: Stainless Hairline",
+          "item_message": "",
+          "item_image": "wastebin-2in1.png"
+        }
+      ]
+    },
+    "client": {
+      "section_template": "our-client",
+      "section_menu_title": "Klien",
+      "section_title": "KLIEN KAMI",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "World Bank",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "World-Bank.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Kementrian PUPR",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "PUPR.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "IKEA",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "IKEA.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Kementrian Keuangan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "kemetrian-keuangan.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Epson",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "epson.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "DBS",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "DBS.jpg",
+          "item_color": ""
+        }
+      ]
+    },
+    "recommendation": {
+      "section_template": "recommended_for",
+      "section_menu_title": "",
+      "section_title": "DIREKOMENDASIKAN UNTUK",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Kantor",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-172 u-line-icon-pro",
+          "item_color": "#68a244"
+        },
+        {
+          "item_title": "Restoran",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-020 u-line-icon-pro",
+          "item_color": "#a24444"
+        },
+        {
+          "item_title": "Hotel",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-travel-079 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Pengelola Bangunan/ Kawasan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-172 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Perumahan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-070 u-line-icon-pro",
+          "item_color": "#4489a2"
+        }
+      ]
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Mulai <span style='font-weight:bold'>Custom Waste Bin</span> Anda sekarang juga!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "PESAN SEKARANG",
+          "cta_url": "official/service/custom-waste-bin/join",
+          "cta_class": ""
+        }
+      ]
+    }
+  }
+}

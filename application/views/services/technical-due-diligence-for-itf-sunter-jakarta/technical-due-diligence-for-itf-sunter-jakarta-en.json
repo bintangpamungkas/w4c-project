@@ -1,0 +1,115 @@
+{
+  "service_id": "1",
+  "service_parent_id": 7,
+  "service_name": "Technical Due Diligence for ITF Sunter Jakarta",
+  "service_short_name": "",
+  "service_page_url": "official/project/technical-due-diligence-for-itf-sunter-jakarta",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_join_url": "",
+  "service_subcategory_name": "Waste To Energy",
+  "service_client_name": "Ramboll Denmark A/S",
+  "service_slug": "technical-due-diligence-for-itf-sunter-jakarta",
+  "service_map_url": "",
+  "service_meta": {
+    "title": "",
+    "description_1": "Program pengelolaan sampah secara optimal beserta pelaporan alur sampah",
+    "description_2": "Program pengelolaan sampah secara optimal beserta pelaporan alur sampah",
+    "keywords": "program pengelolaan sampah, pengelolaan sampah, pengelolaan sampah dari sumber, pelaporan alur sampah, pengelolaan sampah secara optimal, pengelolaan sampah bertanggung jawab",
+    "site_url": "official/project/technical-due-diligence-for-itf-sunter-jakarta"
+  },
+  "sections": {
+    "header": {
+      "section_template": "header",
+      "section_menu_title": "",
+      "section_title": "",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "thumbnail.jpg"
+    },
+    "description": {
+      "section_template": "description",
+      "section_menu_title": "Description",
+      "section_subtitle": "",
+      "section_message": "Ramboll Danmark A/S as the main consultant was working together with Waste4Change as local consultant to conduct technical due diligence for 2,200 tpd and 35 MW Waste to Energy Plant that will be built in Sunter, North Jakarta.<br>This due diligence is done for lenders appraisal and to make sure that the Waste to Energy plant will be operating sustainably in terms of technicalities",
+      "section_title": "Description",
+      "section_image": "about.jpg"
+    },
+
+    "achievement-deliverable": {
+      "section_template": "achievement-deliverable",
+      "section_menu_title": "Deliverables",
+      "section_title": "Deliverables",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_name": "Solid Waste Characteristics and solid-waste existing system review",
+          "item_icon": "mark-location-m.png"
+        },
+        {
+          "item_name": "Solid waste supply plan review and its possible disruptions",
+          "item_icon": "analysis-m.png"
+        },
+        {
+          "item_name": "Suitability study of the current site for Waste-to-Energy facility",
+          "item_icon": "distribution-m.png"
+        }
+      ]
+    },
+    "similar-project": {
+      "section_template": "similar-project",
+      "section_menu_title": "Similar Project",
+      "section_title": "Similar Project",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "project_items": [
+        {
+          "service_slug": "solid-waste-management-study-at-pelabuhan-indonesia-ii-hq",
+          "service_subcategory_name": "swm research in institution"
+        },
+        {
+          "service_slug": "solid-waste-management-design-for-revitalisation-at-jami-mosque-and-kampung-beting-settlements-in-pontianak",
+          "service_subcategory_name": "swm research in municipalities/ tourism sites"
+        },
+        {
+          "service_slug": "waste-management-scouting-study-stakeholders-mapping-and-waste-flow-in-jakarta-and-surabaya",
+          "service_subcategory_name": "value chain analysis"
+        },
+        {
+          "service_slug": "riverine-plastic-monitoring-project-in-jakarta",
+          "service_subcategory_name": "marine debris study"
+        }
+      ]
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Start your <span style='font-weight:bold'>Solid Waste Management Research</span>now!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "GET PROPOSAL",
+          "cta_url": "official/service/digital-epr/join",
+          "cta_class": "",
+          "portfolio_title": "GET PORTOFOLIO",
+          "portfolio_url": 1,
+          "portfolio_class": ""
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,227 @@
+[
+  {
+    "service_id": "1",
+    "service_target_id": "1",
+    "service_slug": "responsible-waste-management",
+    "city_name": "Kota Tangerang",
+    "service_page_url": "service/responsible-waste-management",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Responsible Waste Management",
+    "service_description": "A 100% holistic waste management for companies, buildings, and businesses to reduce the number of waste that piles up in the landfill.",
+    "service_category_name": "Waste Collection Services",
+    "recomendation": [
+      { "name": "Tourism & Shopping Areas", "color": null },
+      { "name": "Housing", "color": "#4489a2" },
+      { "name": "Building", "color": "#4489a2" },
+      { "name": "Hotel", "color": "#4489a2" },
+      { "name": "Office", "color": "#68a244" },
+      { "name": "Restaurant", "color": "#a24444" }
+    ]
+  },
+  {
+    "service_id": "2",
+    "service_target_id": "1",
+    "service_slug": "zero-waste-to-landfill",
+    "city_name": "Kota Tangerang",
+    "service_page_url": "official/service/zero-waste-to-landfill",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Zero Waste to Landfill",
+    "service_description": "Take an active part in preventing our local landfills from being overcapacity! With our waste collection and waste recycling service, Zero Waste to Landfill, we will make sure that none of your waste ends up in the landfill!",
+    "service_category_name": "Waste Collection Services",
+    "recomendation": [
+      { "name": "Office", "color": "#68a244" },
+      { "name": "Restaurant", "color": "#a24444" },
+      { "name": "Hotel", "color": "#4489a2" },
+      { "name": "Building / Area Management", "color": "#4489a2" },
+      { "name": "Housing", "color": "#4489a2" },
+      { "name": "Retail", "color": "#a24495" },
+      { "name": "Store", "color": "#a24495" }
+    ]
+  },
+  {
+    "service_id": "3",
+    "service_target_id": "1",
+    "service_slug": "inorganic-waste-management",
+    "city_name": "Kota Tangerang",
+    "service_page_url": "official/service/responsible-waste-management",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "0",
+    "service_name": "Inorganic Waste Management",
+    "service_description": "Treat your inorganic waste the right way and make sure that your inorganic waste are recycled and included in the sustainable circular system.",
+    "service_category_name": "Waste Collection Services",
+    "recomendation": [
+      { "name": "Office", "color": "#68a244" },
+      { "name": "Restaurant", "color": "#a24444" },
+      { "name": "Hotel", "color": "#4489a2" },
+      { "name": "Building / Area Management", "color": "#4489a2" },
+      { "name": "Housing", "color": "#4489a2" },
+      { "name": "Retail", "color": "#a24495" },
+      { "name": "Store", "color": "#a24495" }
+    ]
+  },
+  {
+    "service_id": "4",
+    "service_target_id": "1",
+    "service_slug": "event-waste-management",
+    "city_name": "Kota Tangerang",
+    "service_page_url": "official/service/event-waste-management",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Event Waste Management",
+    "service_description": "Through the placement of segregated waste bins in strategic locations, as well as segregated waste collection for all of the waste that are produced during your event, we will help your event's waste management to be more well-prepared and responsible!",
+    "service_category_name": "Waste Collection Services",
+    "recomendation": [
+      { "name": "Event Organizer", "color": "#a24495" },
+      { "name": "Foundation", "color": "#68a244" },
+      { "name": "Company", "color": "#a24444" }
+    ]
+  },
+  {
+    "service_id": "5",
+    "service_target_id": "1",
+    "service_slug": "in-store-recycling",
+    "city_name": "Kota Tangerang",
+    "service_page_url": "official/service/in-store-recycling",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "In-Store Recycling",
+    "service_description": "We provide a system to improve the recycling process of your brand-labeled waste. Online or offline store-- all could join in reducing the number of waste ends up in the landfill!",
+    "service_category_name": "Extended Producer Responsibility",
+    "recomendation": [
+      { "name": "Distributor", "color": "#a24444" },
+      { "name": "Brand", "color": "#a24495" },
+      { "name": "Product", "color": "#a24495" }
+    ]
+  },
+  {
+    "service_id": "6",
+    "service_target_id": "1",
+    "service_slug": "digital-epr",
+    "city_name": "Seluruh Kota di Indonesia",
+    "service_page_url": "official/service/digital-epr",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Digital EPR",
+    "service_description": "Increasing the recycling rate of your brand-labeled waste with the support of app-integrated and web-integrated recycling system and opening even wider collaboration opportunities with other businesses and communities.",
+    "service_category_name": "Extended Producer Responsibility",
+    "recomendation": [
+      { "name": "Distributor", "color": "#a24444" },
+      { "name": "Brand", "color": "#a24495" },
+      { "name": "Product", "color": "#a24495" }
+    ]
+  },
+  {
+    "service_id": "7",
+    "service_target_id": "1",
+    "service_slug": "solid-waste-management-research",
+    "city_name": "Seluruh Kota di Indonesia",
+    "service_page_url": "official/service/solid-waste-management-research",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Solid Waste Management Research",
+    "service_description": "Improve your solid waste management by conducting a thorough analysis and identifying the most appropriate system and programs.",
+    "service_category_name": "Solid Waste Management Research",
+    "recomendation": [
+      { "name": "HSE Division", "color": "#4489a2" },
+      { "name": "Sustainability Division", "color": "#a24444" },
+      { "name": "CSR Division", "color": "#4489a2" },
+      { "name": "Government", "color": "#68a244" },
+      { "name": "Consultant", "color": "#a29244" },
+      { "name": "Housing", "color": "#4489a2" },
+      { "name": "Building / Area Management", "color": "#4489a2" }
+    ]
+  },
+  {
+    "service_id": "8",
+    "service_target_id": "1",
+    "service_slug": "community-based-implementation",
+    "city_name": "Seluruh Kota di Indonesia",
+    "service_page_url": "official/service/community-based-implementation",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Community-Based Implementation",
+    "service_description": "We help our clients to implement programs that encourage the community to act and provide real contributions to the waste crisis in Indonesia.",
+    "service_category_name": "Community Development",
+    "recomendation": [
+      { "name": "CSR Division", "color": "#4489a2" },
+      { "name": "Sustainability Division", "color": "#a24444" },
+      { "name": "Government", "color": "#68a244" },
+      { "name": "Housing", "color": "#4489a2" },
+      { "name": "Building / Area Management", "color": "#4489a2" },
+      { "name": "Foundation", "color": "#68a244" }
+    ]
+  },
+  {
+    "service_id": "9",
+    "service_target_id": "1",
+    "service_slug": "3r-school-program",
+    "city_name": "Seluruh Kota di Indonesia",
+    "service_page_url": "official/service/3r-school-program",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "3R School Program",
+    "service_description": "Designed to increase our future generations' awareness about 3R Principles (Reduce, Reuse, Recycle) and how to implement it in their everyday lives.",
+    "service_category_name": "Community Development",
+    "recomendation": [
+      { "name": "CSR Division", "color": "#4489a2" },
+      { "name": "Government", "color": "#68a244" },
+      { "name": "School Management", "color": "#4489a2" },
+      { "name": "Foundation", "color": "#68a244" }
+    ]
+  },
+  {
+    "service_id": "10",
+    "service_target_id": "1",
+    "service_slug": "akabis-waste-management-academy",
+    "city_name": "Seluruh Kota di Indonesia",
+    "service_page_url": "official/service/akabis-waste-management-academy",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "AKABIS (Waste Management Academy)",
+    "service_description": "Akademi Bijak Sampah (AKABIS) is an education model created by Waste4Change to raise awareness on the importance of protecting the environment, especially in responsible waste management.",
+    "service_category_name": "Training",
+    "recomendation": [
+      { "name": "HSE Division", "color": "#4489a2" },
+      { "name": "Sustainability Division", "color": "#a24444" },
+      { "name": "CSR Division", "color": "#4489a2" },
+      { "name": "Government", "color": "#68a244" },
+      { "name": "Foundation", "color": "#68a244" },
+      { "name": "Housing", "color": "#4489a2" },
+      { "name": "Building / Area Management", "color": "#4489a2" }
+    ]
+  },
+  {
+    "service_id": "11",
+    "service_target_id": "1",
+    "service_slug": "black-soldier-fly-learning-center",
+    "city_name": "Kabupaten Sidoarjo",
+    "service_page_url": "official/service/black-soldier-fly-learning-center",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Black Soldier Fly Learning Center",
+    "service_description": "Obtain further knowledge regarding organic waste management using Black Soldier Fly (BSF) as well as its breeding methods.",
+    "service_category_name": "Training",
+    "recomendation": [
+      { "name": "Bussiness Actor", "color": "#a29244" },
+      { "name": "Researcher", "color": "#a29244" }
+    ]
+  },
+  {
+    "service_id": "12",
+    "service_target_id": "1",
+    "service_slug": "black-soldier-fly-tools-products",
+    "city_name": "Seluruh Kota di Indonesia",
+    "service_page_url": "http://w4c.id/rumahkompos",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Black Soldier Fly Tools & Products",
+    "service_description": "We provide Black Soldier Fly larvae that is high in protein and considered as a great animal feed. For any of you who wishes to build your own BSF nursery, we have all the tools and starters needed.",
+    "service_category_name": "General",
+    "recomendation": [
+      { "name": "Bussiness Actor", "color": "#a29244" },
+      { "name": "Researcher", "color": "#a29244" }
+    ]
+  }
+]

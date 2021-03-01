@@ -61,7 +61,16 @@ class Service extends MY_Controller
 			    	$service_list[] = $service;
     			}
 			}
-			$data['services'] = $service_list;
+			if ($target == "all") {
+				$data['services'] = json_decode(file_get_contents(base_url('database/json/service/service_recommendation_'.$lang.'.json')));
+			} elseif ($target == "for-company") {
+				$data['services'] = json_decode(file_get_contents(base_url('database/json/service/service_recommendation_company_'.$lang.'.json')));
+			} elseif ($target == "for-individuals") {
+				$data['services'] = json_decode(file_get_contents(base_url('database/json/service/service_recommendation_individu_'.$lang.'.json')));
+			} else {
+				$data['services'] = json_decode(file_get_contents(base_url('database/json/service/service_recommendation_'.$lang.'.json')));
+
+			}
 
 			if (empty($data['services'])) {
 				$message = $this->crud_model->select('dictionary', QUERY_ROW, ['dictionary_content'], ['dictionary_slug' => 'no-result-found-for', 'language_code' => $lang], '', '', 1)->dictionary_content . ': <span class="g-font-weight-700">' . $input_city . '</span>';
@@ -71,7 +80,7 @@ class Service extends MY_Controller
 		}
 
 		$data['service_targets'] = $this->crud_model->select('service_target', QUERY_RESULT, ['service_target_name service_target_slug', 'dictionary.dictionary_content service_target_name', 'service_target_icon'], ['language_code' => $lang, 'deleted_at' => null], ['service_target' => ['dictionary' => 'dictionary_slug=service_target_name']]);
-		$data['coverage_cities'] = $this->crud_model->select('place_city', QUERY_RESULT, ['city_name', 'province_name'], '', ['place_city' => ['place_province' => 'province_id']]);
+		$data['coverage_cities'] = json_decode(file_get_contents(base_url('database/json/regions.json')));
 		if (!empty($input_city)) {
 			$data['search_message'] = $message;
 		}
@@ -127,9 +136,62 @@ class Service extends MY_Controller
 			redirect(site_url('service/akabis-waste-management-academy'));
 		} elseif ($service_slug == 'extended-producer-responsibility') {
 			redirect(site_url('service/in-store-recycling'));
-		} elseif ($service_slug == 'inorganic-waste-management') {
-			redirect (site_url('service/responsible-waste-management'));
-		}  else{
+		} elseif ($service_slug == 'produk-black-soldier-fly') {
+
+			$service = json_decode(file_get_contents(base_url('application/views/services/'.$service_slug.'/' . $service_slug . '-' . $lang . '.json')));
+			$sections=$service->sections;
+			$data['service'] = $service;
+			$data['sections'] = $sections;
+			// Page Information
+			$data['meta_data'] = [
+				'site_url' => $service->service_meta->site_url,
+				'description_1' => $service->service_meta->description_1,
+				'title' => $service->service_meta->title,
+				'description_2' => $service->service_meta->description_2,
+				'keywords' => $service->service_meta->keywords,
+			];
+			$data['breadcrumb'] = [
+				[
+					'title' => $this->get_lang('home'),
+					'url' => '',
+					'active' => false
+				],
+				[
+					'title' => $this->get_lang('all-services'),
+					'url' => 'service',
+					'active' => false
+				],
+				[
+					'title' => $service->service_name,
+					'url' => '#welcome',
+					'active' => true
+				]
+			];
+
+			$data['subnav'] = [];
+			foreach ($sections as $section_slug => $sec) {
+				$data['subnav'][] = (object)[
+					'deleted_at' => '',
+					'service_id' => $service->service_id,
+					'section_id' => $section_slug,
+					'section_slug' => $section_slug,
+					'section_menu_name' => $sec->section_menu_title,
+					'section_name' => $sec->section_title,
+				];
+			}
+				
+				$data['title'] = $service->service_name;
+				$data['id'] = 'service';
+				$data['subtitle'] = 'information';
+				$data['data_mode'] = 'service';
+				$data['service_id'] = $service_slug;
+				$data['service_name'] = $service->service_name;
+				$data['page_heading'] = $service->service_name;
+				$data['is_bilingual'] = true;
+
+			$this->render_page('services/details/index', $data, 'services');
+		
+		}else{
 			$service = $this->service_model->get_service($lang, $service_slug);
 			if (empty($service)) {
 				show_404();
@@ -178,8 +240,9 @@ class Service extends MY_Controller
 			$data['service'] = $service;
 			$data['sections'] = $sections;
 			// Page Information
+			$site_url = substr($service->service_page_url, 9);
 			$data['meta_data'] = [
-				'site_url' => $service->service_page_url,
+				'site_url' => $site_url,
 				'description_1' => $service->service_meta_description,
 				'title' => $service->service_meta_title,
 				'description_2' => $service->service_meta_description,
@@ -246,11 +309,54 @@ class Service extends MY_Controller
 			redirect(site_url('service/in-store-recycling/join'));
 		}
 		$lang = $this->get_language();
-
+		
 		$service = $this->service_model->get_service($lang, $service_slug);
-		if (empty($service)) {
+		if (!empty($service->service_parent_id)) {
 			show_404();
+		} 
+		$sections = $this->crud_model->select('service_section', QUERY_RESULT, ['service_section.deleted_at', 'service_section.service_id', 'section.section_id', 'section_slug', '(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_menu_name AND dictionary.language_code="' . $lang . '") as section_menu_name', '(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_name AND dictionary.language_code="' . $lang . '") as section_name'], ['service_section.service_id' => $service->service_id, 'service_section.deleted_at' => null], ['service_section' => ['section' => 'section_id']]);
+
+		$data['meta_data'] = [
+			'site_url' => $service->service_page_url . '/join',
+			'description_1' => $service->service_meta_description,
+			'title' => $service->service_meta_title,
+			'description_2' => $service->service_meta_description,
+			'keywords' => $service->service_meta_title,
+		];
+		$data['title'] = 'Join ' . $service->service_name;
+		$data['id'] = 'service';
+		$data['subtitle'] = 'information';
+		$data['data_mode'] = 'service';
+		$data['service_id'] = $service_slug;
+		$data['service_name'] = $service->service_name;
+		$data['page_heading'] = $data['service_name'];
+		$data['is_bilingual'] = true;
+
+		$data['subnav'] = $sections;
+		$data['service'] = $service;
+
+		$this->render_page('services/join', $data, 'services');
+	}
+
+	public function join_project($service_slug)
+	{
+		if ($service_slug == 'feasibility-study') {
+			redirect(site_url('service/solid-waste-management-research/join'));
+		} elseif ($service_slug == 'program-pendampingan-optimalisasi-tps3r') {
+			redirect(site_url('service/3r-school-program/join'));
+		} elseif ($service_slug == 'zero-waste-to-landfill-management') {
+			redirect(site_url('service/zero-waste-to-landfill/join'));
+		} elseif ($service_slug == 'akademi-bijak-sampah' || $service_slug == 'edukasi-bijak-sampah') {
+			redirect(site_url('service/akabis-waste-management-academy/join'));
+		} elseif ($service_slug == 'extended-producer-responsibility') {
+			redirect(site_url('service/in-store-recycling/join'));
 		}
+		$lang = $this->get_language();
+		
+		$service = $this->service_model->get_service($lang, $service_slug);
+		if (empty($service->service_parent_id)) {
+			show_404();
+		} 
 		$sections = $this->crud_model->select('service_section', QUERY_RESULT, ['service_section.deleted_at', 'service_section.service_id', 'section.section_id', 'section_slug', '(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_menu_name AND dictionary.language_code="' . $lang . '") as section_menu_name', '(SELECT dictionary_content FROM dictionary WHERE dictionary.dictionary_slug=section_name AND dictionary.language_code="' . $lang . '") as section_name'], ['service_section.service_id' => $service->service_id, 'service_section.deleted_at' => null], ['service_section' => ['section' => 'section_id']]);
 
 		$data['meta_data'] = [

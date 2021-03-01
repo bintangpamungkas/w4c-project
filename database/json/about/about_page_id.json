@@ -4,16 +4,22 @@
     "items": [
       {
         "title": "Solusi Bijak<br>Kelola Sampah",
-        "image": "1.png"
+        "image": "1.png",
+        "video": "https://www.youtube.com/embed/4ad3mhRsdFw",
+        "merge": 1
       },
       {
         "title": "Solusi Bijak<br>Kelola Sampah",
-        "image": "2.jpg"
+        "image": "2.jpg",
+        "video": "https://www.youtube.com/embed/uBTzUrWoWGk",
+        "merge": 2
       },
       {
         "title": "Solusi Bijak<br>Kelola Sampah",
-        "image": "3.jpg"
-      }      
+        "image": "3.jpg",
+        "video": "https://www.youtube.com/embed/zktHwTOmHv0",
+        "merge": 3
+      }
     ]
   },
   "history": {
@@ -82,30 +88,26 @@
     "title": "Strategi",
     "message": "Perubahan Ekosistem Pengelolaan Sampah yang Bertanggung Jawab dengan Berlandaskan Kolaborasi dan Teknologi Menuju Penerapan Ekonomi Melingkar (Circular Economy) dan Indonesia Bebas Sampah"
   },
-  "vision":{
+  "vision": {
     "title": "Visi",
     "message": "Menjadi Pemimpin dalam Menyediakan Solusi Pengelolaan Sampah yang Bertanggung Jawab",
-    "image":"vision.png"
+    "image": "vision.jpg"
   },
   "w4c": {
-    "title":"Servis-Servis Waste4change",
-    "example":"Contoh Program",
-    "items":[
+    "title": "Servis-Servis Waste4change",
+    "example": "Contoh Program",
+    "items": [
       {
         "title": "Consult",
         "description": "Menyediakan riset berbasis data serta masukan dari ahli-ahli persampahan di tingkat lokal dalam rangka mengoptimalkan solusi pengelolaan sampah ",
-        "example": [
-          "Solid Waste Management Research"
-        ],
-        "image":"consult.jpg"
+        "example": ["Solid Waste Management Research"],
+        "image": "consult.jpg"
       },
       {
         "title": "Campaign",
         "description": "Memfasilitasi program sosialisasi dan edukasi antar pemangku kepentingan untuk menciptakan perubahan ekosistem dalam rangka mewujudkan Ekonomi Sirkular  ",
-        "example": [
-          "AKABIS (Waste Management Academy)"
-        ],
-        "image":"campaign.jpg"
+        "example": ["AKABIS (Waste Management Academy)"],
+        "image": "campaign.jpg"
       },
       {
         "title": "Collect",
@@ -116,16 +118,13 @@
           "Event Waste Management",
           "Commercial Area Waste Management"
         ],
-        "image":"collect.png"
+        "image": "collect.jpg"
       },
       {
         "title": "Create",
         "description": "Memproses sampah yang terkumpul dengan cara yang bertanggung jawab untuk diubah menjadi material daur ulang",
-        "example": [
-          "Extended Producer Responsibility",
-          "In-Store Recycling"
-        ],
-        "image":"create.jpg"
+        "example": ["Extended Producer Responsibility", "In-Store Recycling"],
+        "image": "create.jpg"
       }
     ]
   },
@@ -140,7 +139,7 @@
           "6 Kedutaan dan Organisasi Internasional",
           "Lebih dari 2,000 Rumah",
           "27 Acara",
-          "Lebih dari 4,000 Orang Lulus dari AKABIS (Akademi Bijak Sampah)"          
+          "Lebih dari 4,000 Orang Lulus dari AKABIS (Akademi Bijak Sampah)"
         ]
       },
       {
@@ -149,7 +148,7 @@
         "message": [
           "2 Rumah Pemulihan Material Untuk Sampah Organik dan Anorganik",
           "49 Petugas Operator dan Pengangkut Sampah",
-          "7 Unit Truk Pengangkut Sampah "          
+          "7 Unit Truk Pengangkut Sampah "
         ]
       },
       {
@@ -157,7 +156,7 @@
         "icon": "icon-bag",
         "message": [
           "Total 5,456 ton Sampah yang telah Diangkut dan Dikelola",
-          "Kapasitas Rata-Rata Pengelolaan Sampah Sebanyak 10 Ton Per Hari"          
+          "Kapasitas Rata-Rata Pengelolaan Sampah Sebanyak 10 Ton Per Hari"
         ]
       }
     ]
@@ -222,6 +221,24 @@
     "subtitle": "Temui Orang-Orang yang Bekerja Sepenuh Hati Mencari Solusi bagi Permasalahan Sampah di Indonesia ",
     "items": [
       {
+        "name": "Martinus Devy Adrian Manorek",
+        "position": "Head of Operational Services",
+        "division": "Departemen Operational Services",
+        "image": "Martin-Manorek.jpg"
+      },
+      {
+        "name": "Meydam Gusnisar",
+        "position": "Head of Business & Development",
+        "division": "Departemen Business & Development",
+        "image": "Meydam-Gusnisar.jpg"
+      },
+      {
+        "name": "Ridho Malik Ibrahim",
+        "position": "Head of Strategic Services",
+        "division": "Departemen Strategic Services",
+        "image": "Ridh-Malik.jpg"
+      },
+      {
         "name": "Adhitya Prayoga",
         "position": "Circular Economy Strategist",
         "division": "Departemen Strategic Services",
@@ -234,7 +251,7 @@
         "image": "Saka-Dwi-Hanggara.jpg"
       },
       {
-        "name" : "Bilqis Rulista A. Z",
+        "name": "Bilqis Rulista A. Z",
         "position": "Community Development Designer",
         "division": "Departemen Strategic Services",
         "image": "Bilqis-Rulista-A.-Z.jpg"
@@ -251,29 +268,12 @@
         "division": "Departemen Operational Services",
         "image": "Muhamad-Andriansyah.jpg"
       },
-      {
-        "name": "Siti Annisa",
-        "position": "Project Coordinator",
-        "division": "Departemen Operational Services",
-        "image": "Siti-Annisa.jpg"
-      },
-      {
-        "name": "Safarina Lutfiyya Astuti",
-        "position": "Quality Assurance Supervisor",
-        "division": "Departemen Tech",
-        "image": "Safarina-Lutfiyya-Astuti.jpg"
-      },
+
       {
         "name": "Hana Nur Auliana",
         "position": "Head of Communication & Engagement",
         "division": "Departemen Communication & Engagement",
         "image": "Hana-Nur-Auliana.jpg"
-      },
-      {
-        "name": "Hera Lismayana",
-        "position": "Accounting Supervisor",
-        "division": "Departemen Finance & General Affair",
-        "image": "Hera-Lismayana.jpg"
       }
     ]
   },

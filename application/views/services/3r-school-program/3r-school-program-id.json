@@ -1,0 +1,305 @@
+{
+  "service_id": 9,
+  "service_parent_id": null,
+  "service_name": "3R School Program",
+  "service_short_name": "3R School Program",
+  "service_page_url": "official/service/3r-school-program",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": 1,
+  "service_proposal_url": "https://docs.google.com/forms/d/e/1FAIpQLSflGH-JUj6sEZbURhI65LCyfyP_5BA034bF5PxKi6fi2zA5Pw/viewform",
+  "service_join_url": "",
+  "service_slug": "3r-school-program",
+  "service_map_url": "https://www.google.com/maps/d/u/4/embed?mid=1Cyc1udMyKSqvT_8z-oAAJSlpYD5pJV4V",
+  "service_meta": {
+    "title": "",
+    "description_1": "Edukasi dan pendampingan untuk implementasi konsep 3R di Sekolah",
+    "description_2": "Edukasi dan pendampingan untuk implementasi konsep 3R di Sekolah",
+    "keywords": "Edukasi dan pendampingan untuk implementasi konsep 3R di Sekolah",
+    "site_url": "official/service/3r-school-program"
+  },
+  "sections": {
+    "welcome": {
+      "section_template": "welcome",
+      "section_menu_title": "",
+      "section_title": "3R School Program",
+      "section_subtitle": "",
+      "section_message": "Dirancang untuk meningkatkan kesadaran generasi mendatang terhadap prinsip 3R (Reduce, Reuse, Recycle) dan bagaimana menerapkannya di kehidupan sehari-hari.",
+      "section_image": "header.jpg"
+    },
+    "achievement": {
+      "section_template": "our-achievement",
+      "section_menu_title": "",
+      "section_title": "Pencapaian Kami",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Klien",
+          "item_subtitle": "",
+          "item_message": "13",
+          "item_image": ""
+        },
+        {
+          "item_title": "Peserta",
+          "item_subtitle": "",
+          "item_message": "19150",
+          "item_image": ""
+        },
+        {
+          "item_title": "Kota",
+          "item_subtitle": "",
+          "item_message": "10",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "about": {
+      "section_template": "about",
+      "section_menu_title": "Tentang",
+      "section_subtitle": "Penerapan Prinsip 3R (Reduce-Reuse-Recycle)",
+      "section_message": "3R School Program adalah program yang dirancang untuk mendorong peningkatan kesadaran warga sekolah untuk menerapkan prinsip 3R (Reduce, Reuse, Recycle) demi terwujudnya sistem pengelolaan sampah yang bertanggung jawab di sekolah-sekolah. Waste4Change berperan sebagai fasilitator dalam mendampingi penerima manfaat mencapai tujuan program yang telah ditetapkan.",
+      "section_title": "Tentang",
+      "section_image": "about.jpg"
+    },
+
+    "activites": {
+      "section_template": "activities",
+      "section_menu_title": "Aktivitas",
+      "section_title": "Aktifitas",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Tahap 1",
+          "item_subtitle": "",
+          "item_icon": "report-m.png",
+          "item_message": "Meningkatkan Kesadaran melalui AKABIS",
+          "item_image": ""
+        },
+        {
+          "item_title": "Tahap 2",
+          "item_subtitle": "",
+          "item_icon": "loadspeaker-m.png",
+          "item_message": "Pembentukan Satuan Tugas, Perencanaan, Peningkatan Kapasitas, dan Pendampingan",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "output-benefit": {
+      "section_template": "output-benefit",
+      "section_menu_title": "Hasil & Keuntungan",
+      "section_title": "Hasil & Keuntungan",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_category": "Bagi Klien",
+          "item_subtitle": "",
+          "item_icon": "",
+          "item_message": "Sebagai bentuk nyata penerapan 3R dan pengelolaan sampah yang bertanggung jawab di Indonesia, terutama di sektor pendidikan",
+          "item_image": ""
+        },
+        {
+          "item_category": "Bagi Klien",
+          "item_subtitle": "",
+          "item_icon": "",
+          "item_message": "Memperkuat citra positif perusahaan",
+          "item_image": ""
+        },
+        {
+          "item_category": "Bagi Sekolah",
+          "item_subtitle": "",
+          "item_icon": "",
+          "item_message": "Peningkatan pengetahuan dan kapasitas murid serta guru mengenai prinsip 3R",
+          "item_image": ""
+        },
+        {
+          "item_category": "Bagi Sekolah",
+          "item_subtitle": "",
+          "item_icon": "",
+          "item_message": "Sekolah dapat berkontribusi untuk mewujudkan pengelolaan sampah yang bertanggung jawab di sekolah-sekolah",
+          "item_image": ""
+        },
+        {
+          "item_category": "Bagi Sekolah",
+          "item_subtitle": "",
+          "item_icon": "",
+          "item_message": "Tersedia untuk setiap sekolah yang berlokasi di Indonesia, kami mendukung sekolah klien kami untuk menjadi contoh fasilitas pendidikan yang hijau dan berkelanjutan",
+          "item_image": ""
+        },
+        {
+          "item_category": "Bagi Sekolah",
+          "item_subtitle": "",
+          "item_icon": "",
+          "item_message": "Menjadi kandidat potensial untuk mendaftar program Sekolah ADIWIYATA",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "program-highlight": {
+      "section_template": "program-highlight",
+      "section_menu_title": "",
+      "section_title": "Sorotan Program 3R School Program",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "project_items": [
+        {
+          "service_slug": "3r-green-school",
+          "service_subcategory_name": "3R Green School"
+        }
+      ]
+    },
+    "client": {
+      "section_template": "our-client",
+      "section_menu_title": "Klien",
+      "section_title": "Klien",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "PT Unilever Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Yayasan-Unilever.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "PT NEC Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "NEC.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Yayasan Bangun Kecerdasan Bangsa",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "ybkb.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "DBS",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "DBS.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Tetra Pak",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Tetrapak.jpg",
+          "item_color": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "recommendation": {
+      "section_template": "recommended_for",
+      "section_menu_title": "",
+      "section_title": "REKOMENDASI UNTUK",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Divisi CSR",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-medical-022 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Pemerintah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-136 u-line-icon-pro",
+          "item_color": "#68a244"
+        },
+        {
+          "item_title": "Pengurus Sekolah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-education-001 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Yayasan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-009 u-line-icon-pro",
+          "item_color": "#68a244"
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "map": {
+      "section_template": "our-coverage",
+      "section_title": "AREA CAKUPAN",
+      "section_menu_title": "AREA CAKUPAN"
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Mulai <span style='font-weight:bold'>3R School Program</span> Anda sekarang juga!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "DAPATKAN PROPOSAL",
+          "cta_url": "official/service/3r-school-program/join",
+          "cta_class": "",
+          "portfolio_title": "DAPATKAN PORTOFOLIO",
+          "portfolio_url": 1,
+          "portfolio_class": ""
+        }
+      ]
+    }
+  }
+}

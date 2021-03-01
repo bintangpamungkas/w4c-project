@@ -4,16 +4,22 @@
     "items": [
       {
         "title": "Responsible<br>Waste Management<br>Solution",
-        "image": "1.png"
+        "image": "1.png",
+        "video": "https://www.youtube.com/embed/4ad3mhRsdFw",
+        "merge": 1
       },
       {
         "title": "Responsible<br>Waste Management <br>Solution",
-        "image": "2.jpg"
+        "image": "2.jpg",
+        "video": "https://www.youtube.com/embed/uBTzUrWoWGk",
+        "merge": 2
       },
       {
         "title": "Responsible <br>Waste Management <br>Solution",
-        "image": "3.jpg"
-      } 
+        "image": "3.jpg",
+        "video": "https://www.youtube.com/embed/zktHwTOmHv0",
+        "merge": 3
+      }
     ]
   },
   "history": {
@@ -85,27 +91,23 @@
   "vision": {
     "title": "Vision",
     "message": "To Become A Leader in Providing Ethical and Responsible Waste Management Solutions",
-    "image":"vision.png"
+    "image": "vision.jpg"
   },
   "w4c": {
     "title": "WASTE4CHANGE CORE SERVICES",
-    "example":"Example of Services",
+    "example": "Example of Services",
     "items": [
       {
         "title": "Consult",
         "description": "Provide data-driven analysis and local expert insights to optimize waste management solutions",
-        "example": [
-          "Solid Waste Management Research"
-        ],
-        "image":"consult.jpg"
+        "example": ["Solid Waste Management Research"],
+        "image": "consult.jpg"
       },
       {
         "title": "Campaign",
         "description": "Offer facilitation and education program across stakeholders to create ecosystem change towards Circular Economy",
-        "example": [
-          "AKABIS (Waste Management Academy)"
-        ],
-        "image":"campaign.jpg"
+        "example": ["AKABIS (Waste Management Academy)"],
+        "image": "campaign.jpg"
       },
       {
         "title": "Collect",
@@ -116,16 +118,13 @@
           "Event Waste Management",
           "Commercial Area Waste Management"
         ],
-        "image":"collect.png"
+        "image": "collect.jpg"
       },
       {
         "title": "Create",
         "description": "Process the collected waste in a responsible way to become recycled material ",
-        "example": [
-          "Extended Producer Responsibility",
-          "In-Store Recycling"
-        ],
-        "image":"create.jpg"
+        "example": ["Extended Producer Responsibility", "In-Store Recycling"],
+        "image": "create.jpg"
       }
     ]
   },
@@ -219,6 +218,24 @@
     "subtitle": "Meet The People Who are Working Passionately to Solve Indonesia's Waste Problems",
     "items": [
       {
+        "name": "Martinus Devy Adrian Manorek",
+        "position": "Head of Operational Services",
+        "division": "Department Operational Services",
+        "image": "Martin-Manorek.jpg"
+      },
+      {
+        "name": "Meydam Gusnisar",
+        "position": "Head of Business & Development",
+        "division": "Department Business & Development",
+        "image": "Meydam-Gusnisar.jpg"
+      },
+      {
+        "name": "Ridho Malik Ibrahim",
+        "position": "Head of Strategic Services",
+        "division": "Department Strategic Services",
+        "image": "Ridh-Malik.jpg"
+      },
+      {
         "name": "Adhitya Prayoga",
         "position": "Circular Economy Strategist",
         "division": "Department Strategic Services",
@@ -231,7 +248,7 @@
         "image": "Saka-Dwi-Hanggara.jpg"
       },
       {
-        "name" : "Bilqis Rulista A. Z",
+        "name": "Bilqis Rulista A. Z",
         "position": "Community Development Designer",
         "division": "Department Strategic Services",
         "image": "Bilqis-Rulista-A.-Z.jpg"
@@ -248,29 +265,12 @@
         "division": "Department Operational Services",
         "image": "Muhamad-Andriansyah.jpg"
       },
-      {
-        "name": "Siti Annisa",
-        "position": "Project Coordinator",
-        "division": "Department Operational Services",
-        "image": "Siti-Annisa.jpg"
-      },
-      {
-        "name": "Safarina Lutfiyya Astuti",
-        "position": "Quality Assurance Supervisor",
-        "division": "Department Tech",
-        "image": "Safarina-Lutfiyya-Astuti.jpg"
-      },
+
       {
         "name": "Hana Nur Auliana",
         "position": "Head of Communication & Engagement",
         "division": "Department Communication & Engagement",
         "image": "Hana-Nur-Auliana.jpg"
-      },
-      {
-        "name": "Hera Lismayana",
-        "position": "Accounting Supervisor",
-        "division": "Department Finance & General Affair",
-        "image": "Hera-Lismayana.jpg"
       }
     ]
   },

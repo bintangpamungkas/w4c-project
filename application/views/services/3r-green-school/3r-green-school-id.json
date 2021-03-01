@@ -1,0 +1,90 @@
+{
+  "service_id": 27,
+  "service_parent_id": 9,
+  "service_name": "3R Green School",
+  "service_short_name": "",
+  "service_page_url": "official/project/3r-green-school",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_join_url": "",
+  "service_subcategory_name": "3R Green School",
+  "service_client_name": "Yayasan Unilever Indonesia",
+  "service_slug": "3r-green-school",
+  "service_map_url": "",
+  "service_meta": {
+    "title": "",
+    "description_1": "Pendampingan implementasi konsep 3R (Reduce Reuse Recycle) untuk sekolah-sekolah",
+    "description_2": "Pendampingan implementasi konsep 3R (Reduce Reuse Recycle) untuk sekolah-sekolah",
+    "keywords": "Pendampingan implementasi konsep 3R (Reduce Reuse Recycle) untuk sekolah-sekolah",
+    "site_url": "official/project/3r-green-school"
+  },
+  "sections": {
+    "header": {
+      "section_template": "header",
+      "section_menu_title": "",
+      "section_title": "",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "thumbnail.jpg"
+    },
+    "description": {
+      "section_template": "description",
+      "section_menu_title": "Deskripsi",
+      "section_subtitle": "",
+      "section_message": "Wilayah-wilayah terdepan Indonesia merefleksikan kehidupan negara tersebut, termasuk tentang sistem pengelolaan sampahnya. Karena itulah, pengelolaan sampah yang bertanggung jawab di wilayah-wilayah terdepan Indonesia diperlukan demi keberlanjutannya. Program ini bertujuan untuk menerapkan sistem pengelolaan sampah yang bertanggung jawab di 7 area perbatasan Indonesia dengan negara lain. Program ini berfokus pada peningkatan kapasitas untuk mengurangi kegiatan membakar sampah atau perilaku membuang sampah sembarangan.<br>Program peningkatan kapasitas ini diharapkan mampu menanamkan pemahaman masyarakat lokal mengenai pentingnya partisipasi mereka dalam pengelolaan sampah yang bertanggung jawab, keuntungan dari penerapan sistem pengelolaan sampah yang bertanggung jawab, serta dampak langsung dari tidak adanya sistem pengelolaan sampah yang layak.",
+      "section_title": "Deskripsi",
+      "section_image": "about.jpg"
+    },
+
+    "achievement-deliverable": {
+      "section_template": "achievement-deliverable",
+      "section_menu_title": "HASIL PEKERJAAN",
+      "section_title": "HASIL PEKERJAAN",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_name": "Pembentukan Satuan Tugas. Melalui program ini, para anggota Satuan Tugas bertanggung jawab untuk mendorong timbulnya kesadaran lingkungan di kalangan warga sekolah dan menerapkan prinsip 3R di kehidupan sehari-hari. Anggota Satuan Tugas terdiri dari murid dan guru yang sudah dipilih dari setiap sekolah",
+          "item_icon": "people-m.png"
+        },
+        {
+          "item_name": "Mengadakan acara edukatif, yaitu AKADEMI BIJAK SAMPAH (AKABIS) Class and Xperience, untuk meningkatkan kesadaran dan memperkenalkan beberapa solusi dari masalah sampah yang ada",
+          "item_icon": "loadspeaker-m.png"
+        },
+        {
+          "item_name": "Setiap sekolah diharapkan mampu menjalankan aktivitas Recycle Day, dimana para murid didorong untuk menaruh sampah yang bisa didaur ulang ke dalam kantong sampah yang sesuai. Waste4Change melakukan pengawasan dan evaluasi terhadap sampah yang dihasilkan selama aktivitas berlangsung",
+          "item_icon": "loadspeaker-m.png"
+        }
+      ]
+    },
+
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Mulai <span style='font-weight:bold'>3R School Program</span> Anda sekarang juga!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "DAPATKAN PROPOSAL",
+          "cta_url": "official/service/3r-green-school/join",
+          "cta_class": "",
+          "portfolio_title": "DAPATKAN PORTOFOLIO",
+          "portfolio_url": 1,
+          "portfolio_class": ""
+        }
+      ]
+    }
+  }
+}

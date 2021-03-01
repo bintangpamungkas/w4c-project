@@ -1,0 +1,115 @@
+{
+  "service_id": 23,
+  "service_parent_id": 8,
+  "service_name": "3R Program Suralaya",
+  "service_short_name": "",
+  "service_page_url": "official/project/3r-program-suralaya",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_join_url": "",
+  "service_subcategory_name": "Community Assistance In Institutions",
+  "service_client_name": "PT Indonesia Power Up Suralaya",
+  "service_slug": "3r-program-suralaya",
+  "service_map_url": "",
+  "service_meta": {
+    "title": "",
+    "description_1": "Waste management assistance for institutions",
+    "description_2": "Waste management assistance for institutions",
+    "keywords": "Waste management assistance for institutions",
+    "site_url": "official/project/riverine-plastic-monitoring-project-in-jakarta"
+  },
+  "sections": {
+    "header": {
+      "section_template": "header",
+      "section_menu_title": "",
+      "section_title": "",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "thumbnail.jpg"
+    },
+    "description": {
+      "section_template": "description",
+      "section_menu_title": "Description",
+      "section_subtitle": "Penelitian Dan Perencanaan Dengan Mempertimbangkan Aspek Lingkungan",
+      "section_message": "Waste4Change assisted PT Indonesia Power UP Suralaya in implementing responsible waste management in both the existing office and the new buildings (Unit 5-7 and Coal Building), as well as Suralaya village itself.<br>The purpose of this assistance was to increase awareness and action on the importance of sorting out waste, and to subsequently reuse waste that is disaggregated and has value and eventually to reduce the waste disposed to Cinapol landfill.",
+      "section_title": "Description",
+      "section_image": "about.jpg"
+    },
+
+    "achievement-deliverable": {
+      "section_template": "achievement-deliverable",
+      "section_menu_title": "Deliverables",
+      "section_title": "Deliverables",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_name": "Increased awareness and action of employees towards responsible waste management",
+          "item_icon": "idea-m.png"
+        },
+        {
+          "item_name": "Increased segregation rate",
+          "item_icon": "chart-m.png"
+        },
+        {
+          "item_name": "Decreased residual waste generation",
+          "item_icon": "residue-m.png"
+        },
+        {
+          "item_name": "Increased economic incentives from composting",
+          "item_icon": "economy-m.png"
+        }
+      ]
+    },
+    "similar-project": {
+      "section_template": "similar-project",
+      "section_menu_title": "Similar Project",
+      "section_title": "Similar Project",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "project_items": [
+        {
+          "service_slug": "tps-3r-advisory",
+          "service_subcategory_name": "Community Assistance In Municipalities"
+        },
+        {
+          "service_slug": "ecoranger-in-pulau-merah-banyuwangi",
+          "service_subcategory_name": "Community Assistance in Tourism Sites"
+        },
+        {
+          "service_slug": "capacity-building-in-indonesias-frontline-territories",
+          "service_subcategory_name": "Community Capacity Building"
+        }
+      ]
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Start your <span style='font-weight:bold'>Communnity Based Implementation</span> now!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "GET PROPOSAL",
+          "cta_url": "official/service/community-based-implementation/join",
+          "cta_class": "",
+          "portfolio_title": "GET PORTOFOLIO",
+          "portfolio_url": 1,
+          "portfolio_class": ""
+        }
+      ]
+    }
+  }
+}

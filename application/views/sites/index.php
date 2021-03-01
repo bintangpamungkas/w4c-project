@@ -19,6 +19,11 @@
 					</a>
 				</div>
 			</div>
+
+			<!-- Services target navivation -->
+			
+			<!-- END Services target navivation -->
+
 		</div>
 	</div>
 
@@ -26,10 +31,41 @@
 <!-- End Promo Block -->
 
 <?php
-	// $this->load->view('sites/sections/services');
-	// $this->load->view('sites/sections/counter');
-	// $this->load->view('sites/sections/testimonial');
-	// $this->load->view('sites/sections/blog');
-	// $this->load->view('sites/sections/share');
-	// $this->load->view('sites/sections/cta');
+	// $this->load->view('sites/sections/fact-waste');
+?>
+
+<?php
+	$this->load->view('sites/sections/services');
+?>
+
+<?php
+	$this->load->view('sites/sections/counter');
+?>
+
+<?php
+//	$this->load->view('sites/sections/client');
+?>
+
+<?php
+	$this->load->view('sites/sections/testimonial');
+?>
+
+<?php
+	// $this->load->view('sites/sections/media');
+?>
+
+<?php
+	$this->load->view('sites/sections/blog');
+?>
+
+<?php
+	$this->load->view('sites/sections/share');
+?>
+
+<?php
+	$this->load->view('sites/sections/subscriber');
+?>
+
+<?php
+	$this->load->view('sites/sections/cta');
 ?>

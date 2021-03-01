@@ -1,0 +1,107 @@
+{
+  "service_id": "1",
+  "service_parent_id": 8,
+  "service_name": "Ecoranger in Pulau Merah Banyuwangi",
+  "service_short_name": "",
+  "service_page_url": "official/project/ecoranger-in-pulau-merah-banyuwangi",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_join_url": "",
+  "service_subcategory_name": "Community Assistance In Tourism Sites",
+  "service_client_name": "Greeneration Foundation, Coca-cola Foundation Indonesia",
+  "service_slug": "ecoranger-in-pulau-merah-banyuwangi",
+  "service_map_url": "",
+  "service_meta": {
+    "title": "",
+    "description_1": "Program pengelolaan sampah secara optimal beserta pelaporan alur sampah",
+    "description_2": "Program pengelolaan sampah secara optimal beserta pelaporan alur sampah",
+    "keywords": "program pengelolaan sampah, pengelolaan sampah, pengelolaan sampah dari sumber, pelaporan alur sampah, pengelolaan sampah secara optimal, pengelolaan sampah bertanggung jawab",
+    "site_url": "official/project/ecoranger-in-pulau-merah-banyuwangi"
+  },
+  "sections": {
+    "header": {
+      "section_template": "header",
+      "section_menu_title": "",
+      "section_title": "",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "thumbnail.jpg"
+    },
+    "description": {
+      "section_template": "description",
+      "section_menu_title": "Description",
+      "section_subtitle": "Penelitian Dan Perencanaan Dengan Mempertimbangkan Aspek Lingkungan",
+      "section_message": "Tourism in Indonesia is currently growing exponentially. This condition, if not properly planned, will have negative implications for the environment such as increased waste amount that will lead to health issues, environmental problems, and eventually the reluctance of tourists to visit certain destinations that are mismanaged.<br>Pulau Merah, with its astonishing sunset view and nice waves for surfing, is one of the emerging tourist destinations in Banyuwangi. It will almost likely face the said problems if there is no concrete actions to encourage a good waste management system and campaign.",
+      "section_title": "Description",
+      "section_image": "about.jpg"
+    },
+
+    "achievement-deliverable": {
+      "section_template": "achievement-deliverable",
+      "section_menu_title": "Deliverables",
+      "section_title": "Deliverables",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_name": "The formation of Eco Ranger: a group of local people that operates waste management systems and also educates tourists and locals about environmental issues.The Eco Ranger is formed to support the cleanliness and sustainability of their home-environment as one of the famous tourist destinations in Indonesia",
+          "item_icon": "wastebin-m.png"
+        },
+        {
+          "item_name": "Technical assistance, capacity building, connecting partners and funding sources, assistance in making Standard Operating Procedure, and continuous monitoring and evaluation for 3 years",
+          "item_icon": "people-m.png"
+        }
+      ]
+    },
+    "similar-project": {
+      "section_template": "similar-project",
+      "section_menu_title": "Similar Project",
+      "section_title": "Similar Project",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "project_items": [
+        {
+          "service_slug": "3r-program-suralaya",
+          "service_subcategory_name": "Community Assistance In Institutions"
+        },
+        {
+          "service_slug": "tps-3r-advisory",
+          "service_subcategory_name": "Community Assistance In Municipalities"
+        },
+        {
+          "service_slug": "capacity-building-in-indonesias-frontline-territories",
+          "service_subcategory_name": "Community Capacity Building"
+        }
+      ]
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Start your <span style='font-weight:bold'>Communnity Based Implementation</span> now!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "GET PROPOSAL",
+          "cta_url": "official/service/digital-epr/join",
+          "cta_class": "",
+          "portfolio_title": "GET PORTOFOLIO",
+          "portfolio_url": 1,
+          "portfolio_class": ""
+        }
+      ]
+    }
+  }
+}

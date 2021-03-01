@@ -20,7 +20,7 @@
 							<?php else : ?>
 								<?php foreach ($service_targets as $menu) : ?>
 					
-								<?php if (empty($menu)) : //don't have menu
+								<?php if (empty($menu->services)) : //don't have menu
 								?>
 									<li class="lvl-1 dropdown-item g-bg-blue-opacity-0_1--hover g-color-black--focus g-color-black--active ">
 									<a class="nav-link g-color-black" href="<?= get_url($menu->url) ?>" ><i class="<?= $menu->icon ?> g-mr-10"></i><?= $menu->title ?></a>
@@ -96,10 +96,10 @@
 							<?php else : ?>
 								<?php foreach ($service_targets as $menu) : ?>
 
-								<?php if (empty($menu)) : //don't have menu
+								<?php if (empty($menu->services)) : //don't have menu
 								?>
 									<li class="lvl-1 dropdown-item g-bg-blue-opacity-0_1--hover g-color-blue-dark-v2--focus g-color-blue-dark-v2--active">								
-										<a class="nav-link g-color-black g-color-blue-dark-v2--hover  text-uppercase" href="<?= get_url($menu->url) ?>#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--others">
+										<a class="nav-link g-color-black g-color-blue-dark-v2--hover  text-uppercase" href="<?= get_url($menu->url) ?>" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--others">
 											<i class="<?= $menu->icon ?> g-mr-10"></i>
 											<img class="g-mr-10 g-grayscale-100x g-grayscale-0--parent-hover" src="<?= get_image(DIR_ICON . $menu->icon) ?>" alt="<?= $menu->title ?> icon" style="max-width: 30px; max-height: 30px;">
 											<?= $menu->title ?>

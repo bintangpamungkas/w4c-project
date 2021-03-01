@@ -1,0 +1,390 @@
+{
+  "service_id": "2",
+  "service_parent_id": null,
+  "service_name": "Zero Waste to Landfill",
+  "service_short_name": "ZWTL",
+  "service_page_url": "official/service/zero-waste-to-landfill",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_join_url": "",
+  "service_map_url": "https://www.google.com/maps/d/u/4/embed?mid=14U27pSAYe3HQIvZiTgk-NXoS6AEEu1Rp",
+  "service_meta": {
+    "title": "Program Pengelolaan Sampah secara Optimal beserta Pelaporan Alur Sampah",
+    "description_1": "Program pengelolaan sampah secara optimal beserta pelaporan alur sampah",
+    "description_2": "Program pengelolaan sampah secara optimal beserta pelaporan alur sampah",
+    "keywords": "program pengelolaan sampah, pengelolaan sampah, pengelolaan sampah dari sumber, pelaporan alur sampah, pengelolaan sampah secara optimal, pengelolaan sampah bertanggung jawab",
+    "site_url": "official/service/responsible-waste-management"
+  },
+  "sections": {
+    "welcome": {
+      "section_template": "welcome",
+      "section_menu_title": "",
+      "section_title": "Zero Waste To Landfill",
+      "section_subtitle": "",
+      "section_message": "Ambil peran aktif untuk membantu mencegah TPS dan TPA agar tidak kelebihan kapasitas! Melalui layanan pengangkutan dan daur ulang sampah yang dinamakan Zero Waste to Landfill, kami akan memastikan bahwa tidak ada sampah Anda yang berakhir di TPA!",
+      "section_image": "header.jpg"
+    },
+    "achievement": {
+      "section_template": "our-achievement",
+      "section_menu_title": "",
+      "section_title": "Pencapaian Kami",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Klien",
+          "item_subtitle": "",
+          "item_message": "47",
+          "item_image": ""
+        },
+        {
+          "item_title": "Residu yang Tidak Berakhir di TPA(Kg)",
+          "item_subtitle": "",
+          "item_message": "282288",
+          "item_image": ""
+        },
+        {
+          "item_title": "Kota Tersedia",
+          "item_subtitle": "",
+          "item_message": "7",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "about": {
+      "section_template": "about",
+      "section_menu_title": "Tentang",
+      "section_subtitle": "Tidak Ada Lagi Sampah Yang Berakhir Di TPA",
+      "section_message": "Setiap harinya, masyarakat Indonesia menghasilkan 175,000 ton sampah. Hal ini yang menyebabkan banyak TPA di banyak tempat di Indonesia mengalami kondisi darurat. Bahkan Bantar Gerbang yang menampung sampah warga Jakarta diperkirakan akan menjadi kelebihan kapasitas di tahun 2022.<br><br>Sampah merupakan tanggung jawab semua orang, tapi beberapa sektor seperti komersial, perusahaan, dan pelaku bisnis perlu berkontribusi dan menaruh perhatian pada manajemen sampah dan siklus produk mereka untuk memastikan aspek keberlanjutan lingkungan dari bisnis mereka sendiri. Melalui layanan ZWTL, Waste4Change memastikan bahwa semua sampah akan dikelola secara bertanggung jawab dan tidak ada sampah yang dibuang ke TPA.",
+      "section_title": "Tentang",
+      "section_image": "about.jpg"
+    },
+
+    "benefit": {
+      "section_template": "benefit",
+      "section_menu_title": "KEUNTUNGAN",
+      "section_title": "KEUNTUNGAN",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Pendekatan manajemen sampah yang 100% terpilah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Meningkatkan citra perusahaan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Menaati Peraturan Pemerintah (PP) No. 81 Tahun 2012 tentang Pengelolaan Sampah Rumah Tangga dan Sampah Sejenis Rumah Tangga, serta mendukung Peraturan Presiden Nomor 97 Tahun 2017 (JAKSTRANAS)",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Mengurangi timbulan sampah yang dibuang ke TPA",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "what-you-get": {
+      "section_template": "what-you-get",
+      "section_menu_title": "YANG ANDA DAPAT",
+      "section_title": "YANG ANDA DAPAT",
+      "section_subtitle": "Untuk jenis layanan ini, Waste4Change menyediakan fasilitas sebagai berikut:",
+      "section_messange": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Kantong sampah yang akan mendukung pemilahan sampah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "wastebin-m.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Pengangkutan sampah dalam kondisi terpilahi",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "mark-location-m.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Laporan Tentang Alur Sampah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "report-m.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Sesi training implementasi teknis",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "report-m.png",
+          "item_color": ""
+        }
+      ]
+    },
+    "waste-flow": {
+      "section_template": "waste-flow",
+      "section_menu_title": "ALUR SAMPAH",
+      "section_title": "ALUR SAMPAH",
+      "section_subtitle": "Pengelolaan Sampah Residu di TPA",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Pemilahan sampah oleh klien",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "drop.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Penyimpanan sampah di titik transfer/ TPST",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "storage.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Pengumpulan sampah terpilah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "transfer.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Pengolahan sampah di Rumah Pemulihan Material W4C",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "process.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Pengelolaan residu menggunakan teknologi RDF",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "landfill.png",
+          "item_color": ""
+        }
+      ]
+    },
+    "portofolio": {
+      "section_template": "portfolio-highlight",
+      "section_menu_title": "",
+      "section_title": "SOROTAN PORTOFOLIO",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_icon": "tbs.jpg",
+          "item_title": "The Body Shop",
+          "item_subtitle": "Sentosa Building 2 Lt. 1, Bintaro Jaya Central Business District, Kota Tangerang Selatan",
+          "item_message": "",
+          "item_image": "tbs.jpg",
+          "item_color": "",
+          "item_mou": "2018-01-01",
+          "item_collection_schedule": "Setiap Hari",
+          "item_duration": "1 Tahun",
+          "item_waste_collected": "776.5 kg/bulan"
+        },
+        {
+          "item_icon": "pupr.jpg",
+          "item_title": "PUPR",
+          "item_subtitle": "Jalan Pattimura No. 20, Jakarta Selatan",
+          "item_message": "",
+          "item_image": "pupr.jpg",
+          "item_color": "",
+          "item_mou": "2019-02-01",
+          "item_collection_schedule": "Setiap Hari",
+          "item_duration": "4 Bulan",
+          "item_waste_collected": "26.575 kg/bulan"
+        }
+      ]
+    },
+    "client": {
+      "section_template": "our-client",
+      "section_menu_title": "Klien",
+      "section_title": "KLIEN KAMI",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Danone",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Danone.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Gojek",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Gojek.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "IKEA",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "IKEA.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Kementrian PUPR",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Binus-School.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Javara",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Javara.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Mang Kabayan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Mang-Kabayan.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Vida Bekasi",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Vida-Bekasi.jpg",
+          "item_color": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "recommendation": {
+      "section_template": "recommended_for",
+      "section_menu_title": "",
+      "section_title": "DIREKOMENDASIKAN UNTUK",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Komplek Perkantoran",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-172 u-line-icon-pro",
+          "item_color": "#68a244"
+        },
+        {
+          "item_title": "Restoran",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-020 u-line-icon-pro",
+          "item_color": "#a24444"
+        },
+        {
+          "item_title": "Hotel",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-travel-079 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Pengelola Bangunan/ Kawasan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-172 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Pengelola Perumahan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-070 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Retail",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-education-031 u-line-icon-pro",
+          "item_color": "#a24495"
+        },
+        {
+          "item_title": "Toko",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-172 u-line-icon-pro",
+          "item_color": "#a24495"
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "map": {
+      "section_template": "our-coverage",
+      "section_title": "Area Cakupan",
+      "section_menu_title": "Area Cakupan"
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Mulai <span style='font-weight:bold'>Zero Waste To Landfill</span> Anda sekarang juga!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "DAPATKAN PROPOSAL",
+          "cta_url": "official/service/zero-waste-to-landfill/join",
+          "cta_class": ""
+        }
+      ]
+    }
+  }
+}

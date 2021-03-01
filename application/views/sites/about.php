@@ -2,6 +2,30 @@
   .owl-carousel .active span {
     background: #17A2B8 !important;
   }
+
+  .modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
+  }
+
+  .modal-body {
+    position:relative;
+    padding:0px;
+  }
+  .close {
+    position:absolute;
+    right:-30px;
+    top:0;
+    z-index:999;
+    font-size:2rem;
+    font-weight: normal;
+    color:#fff;
+    opacity:1;
+  }
+
+  .video-btn {
+    padding : inherit;
+  }
 </style>
 <!-- Slider -->
 <section class="g-bg-white g-pb-40">
@@ -10,7 +34,7 @@
       <?php if ($this->agent->is_mobile()) : //mobile ?>
       <!-- Items Iteration -->        
       <?php foreach ($copy->slide->items as $item) : ?>
-          <div class="u-bg-overlay g-bg-img-hero g-color-white g-font-size-14 g-mx-10" style="background-image: url(<?= get_image(DIR_BG . 'about/banner/' . $item->image) ?>); background-position-x: right;">
+         <div class="u-bg-overlay g-bg-img-hero g-color-white g-font-size-14 g-mx-10" style="background-image: url(<?= get_image(DIR_BG . 'about/banner/' . $item->image) ?>); background-position-x: right;">
             <div style="height: 220px; background-image: linear-gradient( 100deg , rgba(255, 255, 255,0.9) 0%, rgba(255, 255, 255, 0.65) 60%, rgba(255, 255, 255,0) 90%);">
               <div class="container u-bg-overlay__inner g-color-white g-height-100x">
                 <div class="row align-items-center g-height-100x">
@@ -33,6 +57,7 @@
               </div>
             </div>
           </div>
+
         <?php endforeach; ?>
         <!-- End Items Iteration -->
       <?php endif; ?>
@@ -43,12 +68,11 @@
     $(window).ready(function() {
       var element_id = '#slide-carousel';
       $(element_id).owlCarousel({
-        loop: true,
+        loop: false,
         margin: 0,
         dots: true,
         nav: true,
-        autoplay: true,
-        autoplayTimeout: 1500,
+        autoplay: false,
         autoplayHoverPause: true,
         responsive: {
           0: {
@@ -71,6 +95,13 @@
           ]
         <?php endif; ?>
       });
+      var video = '#slide-carousel .video-banner';
+      var iframe = 'iframe';
+      if (video != 'active') {
+        $('.video-banner').find('video').each(function() {
+            this.pause();
+        });
+      }
       var margin_side = 30
 			var top=$(element_id + ' .owl-stage-outer').height()/2;
 			var width=$(element_id + ' .owl-stage-outer').width()-(margin_side*4);
@@ -86,6 +117,199 @@
   </script>
 </section>
 <!-- End Slider -->
+
+
+<!-- Section Video -->
+    <section class="g-bg-gray-light-v5 <?= $this->agent->is_mobile() ? 'g-pt-60 g-pb-40' : 'g-bg-white g-pb-70 g-pt-90' ?>" style="margin-top:-30px">
+      <div class="container">
+        <h2 class="g-font-asap g-color-black text-uppercase text-center g-font-weight-600 g-font-size-<?= $this->agent->is_mobile() ? '24' : '35 g-mb-10' ?>">FEATURED VIDEO</h2>
+        <hr class="g-width-70 g-mt-20 g-mb-0 g-brd-2 w4c-brd-blue">
+      </div>
+
+<?php if($this->agent->is_mobile())  :?>
+<style>
+#video-flow-carousel .owl-next {
+  margin-top : 120px;
+  margin-right : 15px;
+}
+
+#video-flow-carousel .owl-stage-outer {
+  height : 350px;
+}
+#video-flow-carousel .owl-prev {
+  margin-top : 120px;
+}
+
+#video-flow-carousel .owl-dots {
+  margin-left : 20px;
+}
+
+.close {
+  margin-right : 70px;
+  margin-top: -36px;
+}
+</style>
+    <div class="container mx-auto mt-5"> 
+      <div class="row">
+        <div id="video-flow-carousel" class="owl-carousel owl-theme" style="margin: 0 0 30px 0!important;">
+            <div class="col-md-12">
+              <div class="card" style="width: 100%;height:100%;box-shadow: 0 1px 8px 0 rgb(0 0 0 / 8%), 0 7px 10px 0 rgb(0 0 0 / 4%);" >
+                  <button type="button" class="btn btn-default video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/4ad3mhRsdFw" data-target="#myModal">
+                      <img src="<?= get_image(DIR_BG . 'about/video/introduction.jpg') ?>" class="card-img-top" alt="...">
+                  </button>
+                    <div class="card-body g-bg-white">
+                      <h5 class="card-title text-left" style="font-size: 18px;font-weight: 600;color: black">Waste4Change Introduction: Responsible Waste Management In Indonesia</h5>
+                      <p class="card-text text-left" style="font-size :15px;color :#757575;font-weight: 400">We are here to be part of the solution in solid waste management of Indonesia. </p>
+                    </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="card" style="width: 100%;height:100%;box-shadow: 0 1px 8px 0 rgb(0 0 0 / 8%), 0 7px 10px 0 rgb(0 0 0 / 4%);" >
+                  <button type="button" class="btn btn-default video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/4ad3mhRsdFw" data-target="#myModal">
+                      <img src="<?= get_image(DIR_BG . 'about/video/solution.jpg') ?>" class="card-img-top" alt="...">
+                  </button>
+                    <div class="card-body g-bg-white">
+                      <h5 class="card-title text-left" style="font-size: 18px;font-weight: 600;color: black">Waste4Change Introduction: Responsible Waste Management In Indonesia</h5>
+                      <p class="card-text text-left" style="font-size :15px;color :#757575;font-weight: 400">We are here to be part of the solution in solid waste management of Indonesia. </p>
+                    </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="card" style="width: 100%;height:100%;box-shadow: 0 1px 8px 0 rgb(0 0 0 / 8%), 0 7px 10px 0 rgb(0 0 0 / 4%);" >
+                  <button type="button" class="btn btn-default video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/4ad3mhRsdFw" data-target="#myModal">
+                      <img src="<?= get_image(DIR_BG . 'about/video/akabis.jpg') ?>" class="card-img-top" alt="...">
+                  </button>
+                    <div class="card-body g-bg-white">
+                      <h5 class="card-title text-left" style="font-size: 18px;font-weight: 600;color: black">Waste4Change Introduction: Responsible Waste Management In Indonesia</h5>
+                      <p class="card-text text-left" style="font-size :15px;color :#757575;font-weight: 400">We are here to be part of the solution in solid waste management of Indonesia. </p>
+                    </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+     <script>
+        $(window).ready(function() {
+          var element_id = '#video-flow-carousel';
+          $(element_id).owlCarousel({
+            loop: true,
+            margin: 0,
+            dots: true,
+            nav: true,
+            autoplay: false,
+            autoplayTimeout: 1500,
+            autoplayHoverPause: true,
+            responsive: {
+              0: {
+                items: 1
+              },
+              600: {
+                items: 1
+              },
+              1000: {
+                items: 2
+              }
+            },
+            navText: [
+              '<i class="<?= $this->agent->is_mobile() ? ' fa fa-angle-left g-color-gray-light-v1 nav-arrow-left ' : ' fa fa-angle-left g-color-w4c-blue-v1 ' ?>" aria-hidden="true" style="transform: scale(<?= $this->agent->is_mobile() ? '  2 ' : ' 4 ' ?>)"></i>', '<i class="<?= $this->agent->is_mobile() ? 'fa fa-angle-right g-color-gray-light-v1 nav-arrow-right ' : ' fa fa-angle-right g-color-w4c-blue-v1 ' ?>" aria-hidden="true" style="transform: scale(<?= $this->agent->is_mobile() ? '  2 ' : '  4 ' ?>)"></i>'
+            ]
+          });
+
+          //$('#waste-carousel .owl-item').attr('style', 'width: 289px;margin-right: 0px;');
+          $(element_id + ' .owl-controls').attr('style', 'margin-top: 30px;');
+          var screen_display = <?= $this->agent->is_mobile() ? "screen.width" : "$(element_id).width()" ?>;
+          // console.log(screen_display);
+          var margin_side = (screen_display - screen_display * (<?= $this->agent->is_mobile() ? '69' : '98.5' ?>) / 100) / 2;
+          //console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
+          $(element_id + ' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 260px;width: 74%;right: ' + margin_side + 'px;')
+          //Hide last item after carousel init because if hide first courosel not working
+        });
+      </script>
+
+<?php else : ?>
+     <div class="container mx-auto mt-5">
+        <div class="row">
+          <div class="col-lg-4">
+            <!-- Button trigger modal -->
+            <div class="card g-bg-white" style="width: 100%;height:100%;box-shadow: 0 1px 8px 0 rgb(0 0 0 / 8%), 0 7px 10px 0 rgb(0 0 0 / 4%);" >
+              <button type="button" class="btn btn-default video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/4ad3mhRsdFw" data-target="#myModal">
+                  <img src="<?= get_image(DIR_BG . 'about/video/introduction.jpg') ?>" class="card-img-top" alt="...">
+              </button>
+                <div class="card-body g-bg-white">
+                  <h5 class="card-title text-left" style="font-size: 18px;font-weight: 600;color: black">Waste4Change Introduction: Responsible Waste Management In Indonesia</h5>
+                  <p class="card-text text-left" style="font-size :15px;color :#757575;font-weight: 400">We are here to be part of the solution in solid waste management of Indonesia. </p>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <!-- Button trigger modal -->
+            <div class="card" style="width: 100%;height:100%;box-shadow: 0 1px 8px 0 rgb(0 0 0 / 8%), 0 7px 10px 0 rgb(0 0 0 / 4%);">
+              <button type="button" class="btn btn-default video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/4ad3mhRsdFw" data-target="#myModal">
+                  <img src="<?= get_image(DIR_BG . 'about/video/solution.jpg') ?>" class="card-img-top" alt="...">
+              </button>
+                <div class="card-body g-bg-white">
+                  <h5 class="card-title text-left" style="font-size: 18px;font-weight: 600;color: black">Solusi Pengolahan Sampah di Rumah - Personal Waste Management Waste4Change</h5>
+                  <p class="card-text text-left" style="font-size :15px;color :#757575;font-weight: 400">#BijakKelolaSampah sambil tetap <br> #PhysicalDistancing, yuk!</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <!-- Button trigger modal -->
+            <div class="card g-bg-white" style="width: 100%;height:100%;box-shadow: 0 1px 8px 0 rgb(0 0 0 / 8%), 0 7px 10px 0 rgb(0 0 0 / 4%);">
+              <button type="button" class="btn btn-default video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/4ad3mhRsdFw" data-target="#myModal">
+                  <img src="<?= get_image(DIR_BG . 'about/video/akabis.jpg') ?>" class="card-img-top" alt="...">
+              </button>
+                <div class="card-body g-bg-white">
+                  <h5 class="card-title text-left" style="font-size: 18px;font-weight: 600;color: black">Akademi Bijak Sampah Waste4Change</h5>
+                  <p class="card-text text-left" style="font-size :15px;color :#757575;font-weight: 400">Akademi Bijak Sampah is an education program for schools, society, up to offices.</p>
+                </div>
+            </div>
+          </div>
+          
+         
+        </div>
+
+<?php endif; ?>
+          
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+
+          
+          <div class="modal-body">
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">
+                <img src="<?= get_image(DIR_BG . 'about/video/close_video.png') ?>" style="margin-right:-50px;width: <?= $this->agent->is_mobile() ? '30px' : '' ?>" alt="" srcset="">
+              </span>
+            </button>        
+            <!-- 16:9 aspect ratio -->
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="" id="video"  allowfullscreen="allowfullscreen" allowscriptaccess="always" allow="autoplay"></iframe>
+   
+    </div>
+            
+            
+          </div>
+
+        </div>
+      </div>
+    </div> 
+      
+      
+      
+    </div>
+</section>
+<script>
+  // function playVideo(){
+    $('.ytp-large-play-button').trigger('click');
+  // }
+</script>
+
+
+
+<!-- End section video -->
 
 <!-- History -->
 <section class="g-bg-white <?= $this->agent->is_mobile() ? 'g-pt-60 g-pb-40' : 'g-bg-white g-pb-50 g-pt-100' ?>">
@@ -308,6 +532,7 @@
 </section>
 <!-- End History -->
 
+
 <!-- Strategy & Vision -->
 <section class="g-pt-60 g-pb-50" style="background: linear-gradient(270deg, #F9F9F9 0%, #F9F9F9 100%);">
   <?php if ($this->agent->is_mobile()) : ?>
@@ -331,24 +556,22 @@
         </div>
         <div class="col-12">
           <img src="<?= get_image(DIR_BG . 'about/' . $copy->vision->image) ?>" alt="vision" style="width: 100%; object-fit: cover;">
-          <div class="g-font-size-12 g-mt-5 g-line-height-1_2 text-right">-M. Bijaksana Junerosano,<br> Managing Director Waste4Change</div>
 
         </div>
       </div>
     </div>
   <?php else : ?>
-    <div class="col-md-5 col-12 float-right g-pa-0">
-      <div class="">
+    <div class="col-md-5 col-12 float-right" style="padding:0px">
+      <div class="col">
 
-        <img src="<?= get_image(DIR_BG . 'about/' . $copy->vision->image) ?>" alt="vision" style="height: 100%; object-fit: cover; float: right;">
-        <div class="g-font-size-16" style="position: absolute; bottom: -30px;right: 10px; ">-M. Bijaksana Junerosano, Managing Director Waste4Change</div>
+        <img src="<?= get_image(DIR_BG . 'about/' . $copy->vision->image) ?>" alt="vision" style="height: 485px;width:100% ;object-fit: cover; float: right;">
       </div>
 
     </div>
     <div class="container">
       <div class="row no-gutters g-font-asap ">
-        <div class="col-md col-12">
-          <div class="g-pt-40 g-pb-30 g-pl-50 g-pr-35" style="background: linear-gradient(270deg, #F6F6F6 0%, #FFFFFF 57.76%); box-shadow: -4px 0px 20px rgba(0, 0, 0, 0.02);">
+        <div class="col-md col-12" >
+          <div class="g-pt-40 g-pb-30 g-pl-50" style="background: linear-gradient(270deg, #F6F6F6 0%, #FFFFFF 57.76%); box-shadow: -4px 0px 20px rgba(0, 0, 0, 0.02);margin-left:-3px">
             <div class="w4c-color-blue g-font-size-36 g-font-weight-600 g-mb-20">
               <?= $copy->mission->title ?>
             </div>
@@ -802,6 +1025,33 @@
 
     <script>
       $(window).ready(function() {
+        $(document).ready(function() {
+
+      // Gets the video src from the data-src on each button
+
+        var $videoSrc;  
+        $('.video-btn').click(function() {
+            $videoSrc = $(this).data( "src" );
+        });
+        console.log($videoSrc);
+          
+        // when the modal is opened autoplay it  
+        $('#myModal').on('shown.bs.modal', function (e) {
+            
+        // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+        $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+        })
+          
+        // stop playing the youtube video when I close the modal
+        $('#myModal').on('hide.bs.modal', function (e) {
+            // a poor man's stop video
+            $("#video").attr('src',$videoSrc); 
+        }) 
+            
+      });
+
+
+
         var element_id = '#team-carousel';
         $(element_id).owlCarousel({
           loop: true,

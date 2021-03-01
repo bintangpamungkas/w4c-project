@@ -1,0 +1,111 @@
+{
+  "service_id": "1",
+  "service_parent_id": 10,
+  "service_name": "AKABIS-CLASS for The Embassy of Finland - Jakarta",
+  "service_short_name": "",
+  "service_page_url": "official/project/akabis-class-for-the-embassy-of-finland-jakarta",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_join_url": "",
+  "service_subcategory_name": "AKABIS Class For Institution",
+  "service_client_name": "Embassy of Finland in Indonesia",
+  "service_slug": "akabis-class-for-the-embassy-of-finland-jakarta",
+  "service_map_url": "",
+  "service_meta": {
+    "title": "",
+    "description_1": "Waste management educational class for institutions",
+    "description_2": "Waste management educational class for institutions",
+    "keywords": "Waste management educational class for institutions",
+    "site_url": "official/project/akabis-class-for-the-embassy-of-finland-jakarta"
+  },
+  "sections": {
+    "header": {
+      "section_template": "header",
+      "section_menu_title": "",
+      "section_title": "",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "thumbnail.jpg"
+    },
+    "description": {
+      "section_template": "description",
+      "section_menu_title": "Description",
+      "section_subtitle": "",
+      "section_message": "Knowledge about responsible solid waste management and the 3R (Reduce- Reuse, Recycle) Concept is very important, especially for institutions. Waste4Change facilitates institutions to be agents of change so they can encourage responsible solid waste management in their environments.<br>As a country with a strong foundation in sustainability, the Embassy of Finland wants to play its role in waste management in Indonesia through green office practices. They were keen to implement solid waste management in their office in order to reduce waste transported to TPST Bantar Gebang.<br>Akabis Class in the Embassy of Finland was held in 2018 and around 20 employees from different sectors joined the training session.",
+      "section_title": "Description",
+      "section_image": "about.jpg"
+    },
+
+    "achievement-deliverable": {
+      "section_template": "achievement-deliverable",
+      "section_menu_title": "Deliverables",
+      "section_title": "Deliverables",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_name": "Sharing Session: why we need to be responsible for our solid waste management?",
+          "item_icon": "chat-m.png"
+        },
+        {
+          "item_name": "Presentation Session: how can we conduct responsible solid waste management starting from our office?",
+          "item_icon": "loadspeaker-m.png"
+        },
+        {
+          "item_name": "Interactive Games",
+          "item_icon": "games-m.png"
+        }
+      ]
+    },
+    "similar-project": {
+      "section_template": "similar-project",
+      "section_menu_title": "Similar Project",
+      "section_title": "Similar Project",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "project_items": [
+        {
+          "service_slug": "akabis-class-the-neglected-debris-paper-letter-and-waste-discussion",
+          "service_subcategory_name": "AKABIS Class for public"
+        },
+        {
+          "service_slug": "akabis-xperience-untuk-pt-bank-dbs-indonesia",
+          "service_subcategory_name": "AKABIS Xperience for institution"
+        },
+        {
+          "service_slug": "akabis-xperience-for-yseali",
+          "service_subcategory_name": "AKABIS Xperience for public"
+        }
+      ]
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Start your <span style='font-weight:bold'>AKABIS (Waste Management Academy)</span> now!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "GET PROPOSAL",
+          "cta_url": "official/service/digital-epr/join",
+          "cta_class": "",
+          "portfolio_title": "GET PORTOFOLIO",
+          "portfolio_url": 1,
+          "portfolio_class": ""
+        }
+      ]
+    }
+  }
+}

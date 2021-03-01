@@ -1,0 +1,90 @@
+{
+  "service_id": 27,
+  "service_parent_id": 9,
+  "service_name": "3R Green School",
+  "service_short_name": "",
+  "service_page_url": "official/project/3r-green-school",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_join_url": "",
+  "service_subcategory_name": "3R Green School",
+  "service_client_name": "Yayasan Unilever Indonesia",
+  "service_slug": "3r-green-school",
+  "service_map_url": "",
+  "service_meta": {
+    "title": "",
+    "description_1": "Program assistance for 3Rs (Reduce Reuse Recycle) implementation in schools",
+    "description_2": "Program assistance for 3Rs (Reduce Reuse Recycle) implementation in schools",
+    "keywords": "Program assistance for 3Rs (Reduce Reuse Recycle) implementation in schools",
+    "site_url": "official/project/3r-green-school"
+  },
+  "sections": {
+    "header": {
+      "section_template": "header",
+      "section_menu_title": "",
+      "section_title": "",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "thumbnail.jpg"
+    },
+    "description": {
+      "section_template": "description",
+      "section_menu_title": "Description",
+      "section_subtitle": "",
+      "section_message": "The Unilever Foundation along with Waste4Change organized a 3R Green School program that aimed to educate students in nine schools in Tangerang about responsible waste management through 3R principles, as well as to encourage them about environmental awareness.In this program, students are informed to understand the problem of waste, and the methods of sorting waste and processing waste by applying 3R principles in order to reduce the waste disposal to landfill in South Tangerang.<br>At the end of the program, students from each of the selected school have a better understanding on the importance of environmental awareness and are expected to consistently commit in handling their waste responsibly.",
+      "section_title": "Description",
+      "section_image": "about.jpg"
+    },
+
+    "achievement-deliverable": {
+      "section_template": "achievement-deliverable",
+      "section_menu_title": "Deliverables",
+      "section_title": "Deliverables",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_name": "Forming the Task Force which in charge of increasing the environmental awareness and 3R principle application amongst other school residents. The Task Force members are consist of selected teachers and students from each school",
+          "item_icon": "people-m.png"
+        },
+        {
+          "item_name": "Organizing education events, which are AKABIS Class and AKABIS Xperience, to increase awareness and introduce several solutions to overcome the waste problem",
+          "item_icon": "loadspeaker-m.png"
+        },
+        {
+          "item_name": "Each school was expected to be able to carry on the Recycle Day activities independently, in which students are encouraged to put recyclable waste in the designated bin to be recycled. Waste4Change conducted monitoring and evaluation of the waste generated during the activities",
+          "item_icon": "loadspeaker-m.png"
+        }
+      ]
+    },
+
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Start your <span style='font-weight:bold'>3R School Program</span> now!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "GET PROPOSAL",
+          "cta_url": "official/service/3r-green-school/join",
+          "cta_class": "",
+          "portfolio_title": "GET PORTOFOLIO",
+          "portfolio_url": null,
+          "portfolio_class": ""
+        }
+      ]
+    }
+  }
+}

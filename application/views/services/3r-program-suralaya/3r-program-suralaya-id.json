@@ -1,0 +1,115 @@
+{
+  "service_id": 23,
+  "service_parent_id": 8,
+  "service_name": "3R Program Suralaya",
+  "service_short_name": "",
+  "service_page_url": "official/project/3r-program-suralaya",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_join_url": "",
+  "service_subcategory_name": "Community Assistance di Institusi",
+  "service_client_name": "PT Indonesia Power Up Suralaya",
+  "service_slug": "3r-program-suralaya",
+  "service_map_url": "",
+  "service_meta": {
+    "title": "",
+    "description_1": "Pendampingan materi terkait pengelolaan sampah untuk institusi",
+    "description_2": "Pendampingan materi terkait pengelolaan sampah untuk institusi",
+    "keywords": "Pendampingan Materi Terkait Pengelolaan Sampah untuk Institusi",
+    "site_url": "official/project/riverine-plastic-monitoring-project-in-jakarta"
+  },
+  "sections": {
+    "header": {
+      "section_template": "header",
+      "section_menu_title": "",
+      "section_title": "",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "thumbnail.jpg"
+    },
+    "description": {
+      "section_template": "description",
+      "section_menu_title": "Deskripsi",
+      "section_subtitle": "Penelitian Dan Perencanaan Dengan Mempertimbangkan Aspek Lingkungan",
+      "section_message": "Waste4Change membantu PT Indonesia Power UP Suralaya dalam menerapkan pengelolaan sampah yang bertanggung jawab di kantor lama sekaligus di gedung barunya (Unit 5-7 dan Coal Building), dan di desa Suralaya sendiri.<br>Tujuan dari pendampingan ini adalah untuk meningkatkan kesadaran dan perilaku masyarakat mengenai pentingnya memilah sampah, untuk menggunakan kembali sampah yang telah dipisahkan sesuai bahannya dan masih memiliki nilai, serta mengurangi jumlah timbulan sampah yang dibuang di TPA Cinapol.",
+      "section_title": "Deskripsi",
+      "section_image": "about.jpg"
+    },
+
+    "achievement-deliverable": {
+      "section_template": "achievement-deliverable",
+      "section_menu_title": "HASIL PEKERJAAN",
+      "section_title": "HASIL PEKERJAAN",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_name": "Peningkatan kesadaran dan perilaku para pegawai terhadap konsep pengelolaan sampah yang bertanggung jawab",
+          "item_icon": "idea-m.png"
+        },
+        {
+          "item_name": "Bertambahnya tingkat daur ulang sampah",
+          "item_icon": "chart-m.png"
+        },
+        {
+          "item_name": "Berkurangnya produksi sampah residu",
+          "item_icon": "residue-m.png"
+        },
+        {
+          "item_name": "Penambahan insentif ekonomi dari hasil mengkompos",
+          "item_icon": "economy-m.png"
+        }
+      ]
+    },
+    "similar-project": {
+      "section_template": "similar-project",
+      "section_menu_title": "Proyek Serupa",
+      "section_title": "Proyek Serupa",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "project_items": [
+        {
+          "service_slug": "tps-3r-advisory",
+          "service_subcategory_name": "COMMUNITY ASSISTANCE DI DAERAH"
+        },
+        {
+          "service_slug": "ecoranger-in-pulau-merah-banyuwangi",
+          "service_subcategory_name": "COMMUNITY ASSISTANCE DI DAERAH"
+        },
+        {
+          "service_slug": "capacity-building-in-indonesias-frontline-territories",
+          "service_subcategory_name": "COMMUNITY ASSISTANCE DI DAERAH"
+        }
+      ]
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Mulai <span style='font-weight:bold'>Communnity Based Implementation</span> Anda sekarang juga!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "DAPATKAN PROPOSAL",
+          "cta_url": "official/service/community-based-implementation/join",
+          "cta_class": "",
+          "portfolio_title": "DAPATKAN PORTOFOLIO",
+          "portfolio_url": 1,
+          "portfolio_class": ""
+        }
+      ]
+    }
+  }
+}

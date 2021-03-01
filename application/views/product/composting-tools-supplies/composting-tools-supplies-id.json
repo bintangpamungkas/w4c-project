@@ -1,0 +1,108 @@
+{
+  "service_id": 32,
+  "service_parent_id": null,
+  "service_name": "Peralatan & Perlengkapan Mengompos",
+  "service_short_name": "Composting Tools",
+  "service_page_url": "official/product/composting-tools-supplies",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_join_url": "",
+  "service_slug": "composting-tools-supplies",
+  "service_map_url": "https://www.google.com/maps/d/u/4/embed?mid=1Gps2QciOKXTLqrt_pLKM5tvw0EJI-iLg",
+  "service_meta": {
+    "title": "Kurangi Produksi Sampah Organik dengan Mengompos",
+    "description_1": "Kurangi Produksi Sampah Organik dengan Mengompos",
+    "description_2": "Kurangi Produksi Sampah Organik dengan Mengompos",
+    "keywords": "Kurangi Produksi Sampah Organik dengan Mengompos",
+    "site_url": "official/product/composting-tools-supplies"
+  },
+  "sections": {
+    "welcome": {
+      "section_template": "welcome",
+      "section_menu_title": "",
+      "section_title": "Peralatan & Perlengkapan Mengompos",
+      "section_subtitle": "",
+      "section_message": "Waste4Change menyediakan peralatan dan perlengkapan pengomposan mandiri di rumah untuk Anda yang ingin bantu optimalkan pengelolaan sampah organik.",
+      "section_image": "2-header.jpg"
+    },
+    "about": {
+      "section_template": "about",
+      "section_menu_title": "Tentang",
+      "section_subtitle": "Selamatkan Sampah Organik Dari TPA Dengan Mengompos",
+      "section_message": "Setelah sampah organik sudah dipilah dan dipisahkan dari seluruh sampah lainnya, materialnya akan menjadi bernilai. Nilai dari material organik yang terkandung di dalamnya dapat ditingkatkan melalui proses mengompos. Peralatan kompos Waste4Change dapat membantu Anda menghasilkan kompos secara aerobic (dengan bantuan oksigen) menggunakan Composting Bag Waste4Change. Atau Anda pun juga dapat belajar untuk mengelola sampah organik menggunakan Black Soldier Flies (BSF) dengan mendaftar pada pelatihan di BSF Learning Center.",
+      "section_title": "Tentang",
+      "section_image": "2-about.jpg"
+    },
+
+    "benefit": {
+      "section_template": "benefit",
+      "section_menu_title": "KEUNTUNGAN",
+      "section_title": "KEUNTUNGAN",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Mengurangi timbulan sampah yang dibuang ke TPA",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Membuat kompos skala kecil yang bisa digunakan di pot/ kebun sendiri",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ]
+    },
+    "recommendation": {
+      "section_template": "recommended_for",
+      "section_menu_title": "",
+      "section_title": "Rekomandasi Untuk",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Perusahaan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-052 u-line-icon-pro",
+          "item_color": "#a24444"
+        },
+        {
+          "item_title": "Individu",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-014 u-line-icon-pro",
+          "item_color": "#a24495"
+        }
+      ]
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Mulai <span style='font-weight:bold'>Mengompos</span> Anda sekarang juga!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "PESAN SEKARNG",
+          "cta_url": "official/service/composting-tools-supplies/join",
+          "cta_class": ""
+        }
+      ]
+    }
+  }
+}

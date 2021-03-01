@@ -1,0 +1,108 @@
+{
+  "service_id": 32,
+  "service_parent_id": null,
+  "service_name": "Composting Tools & Supplies",
+  "service_short_name": "Composting Tools",
+  "service_page_url": "official/product/composting-tools-supplies",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_join_url": "",
+  "service_slug": "composting-tools-supplies",
+  "service_map_url": "https://www.google.com/maps/d/u/4/embed?mid=1Gps2QciOKXTLqrt_pLKM5tvw0EJI-iLg",
+  "service_meta": {
+    "title": "Reduce your organic waste through home composting",
+    "description_1": "Reduce your organic waste through home composting",
+    "description_2": "Reduce your organic waste through home composting",
+    "keywords": "Reduce your organic waste through home composting",
+    "site_url": "official/product/composting-tools-supplies"
+  },
+  "sections": {
+    "welcome": {
+      "section_template": "welcome",
+      "section_menu_title": "",
+      "section_title": "Composting Tools & Supplies",
+      "section_subtitle": "",
+      "section_message": "Waste4Change provides home-composting equipment and supplies for those of you who want to help optimize organic waste management.",
+      "section_image": "2-header.jpg"
+    },
+    "about": {
+      "section_template": "about",
+      "section_menu_title": "About",
+      "section_subtitle": "Divert Organic Waste From Landfill With Composting",
+      "section_message": "Once the organic waste has already been segregated from the rest of the waste, it becomes valuable. The value of the organic materials can be enhanced for your garden by processing it through composting. One of the benefits of waste segregation is to increase the number of valuable materials for recycling purposes and circular economy. Or you can also learn to manage organic waste using Black Soldier Flies (BSF) by enrolling in our BSF Training Class at BSF Learning Center",
+      "section_title": "About",
+      "section_image": "2-about.jpg"
+    },
+
+    "benefit": {
+      "section_template": "benefit",
+      "section_menu_title": "BENEFITS",
+      "section_title": "BENEFITS",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Reducing waste that ends up in the landfill",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Making simple compost that you can use in your own planter/ garden",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ]
+    },
+    "recommendation": {
+      "section_template": "recommended_for",
+      "section_menu_title": "",
+      "section_title": "RECOMMENDED FOR",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Company",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-052 u-line-icon-pro",
+          "item_color": "#a24444"
+        },
+        {
+          "item_title": "Individual",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-014 u-line-icon-pro",
+          "item_color": "#a24495"
+        }
+      ]
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Start your <span style='font-weight:bold'>Composting</span> now!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "GET IT NOW",
+          "cta_url": "official/service/composting-tools-supplies/join",
+          "cta_class": ""
+        }
+      ]
+    }
+  }
+}

@@ -12,7 +12,7 @@
 							<div class="g-color-black g-bg-white--hover text-left g-rounded-10 g-transition-0_3 g-px-40 g-py-10">
 								<div class="row">
 									<div class="col-4 d-inline">
-										<img class="img-fluid u-block-hover__main--zoom-v1 animated zoomIn " src="<?= get_image(DIR_ICON . 'requirements/' . $item->image) ?>" alt="<?= $copy->requirements->title . ' ' . $item->title ?>" style="width: 55px;height:70px">
+										<img src="<?= get_image(DIR_ICON . 'requirements/' . $item->image) ?>" alt="<?= $copy->requirements->title . ' ' . $item->title ?>" >
 									</div>
 									<div class="col-8 d-inline">
 										<div class="g-color-black pt-1 g-font-weight-300 mb-4 g-font-size-15" style="margin-bottom: 5px!important;">
@@ -76,7 +76,7 @@
 							<div class="g-color-black g-bg-white--hover text-left g-rounded-10 g-transition-0_3 g-pa-0 g-pt-20">
 								<div class="row">
 									<div class="col-md-2 d-inline">
-										<img class="img-fluid u-block-hover__main--zoom-v1 animated zoomIn " src="<?= get_image(DIR_ICON . 'requirements/' . $item->image) ?>" alt="<?= $copy->requirements->title . ' ' . $item->title ?>" style="width: 55px;height:<?= $item->height ?>">
+										<img  src="<?= get_image(DIR_ICON . 'requirements/' . $item->image) ?>" alt="<?= $copy->requirements->title . ' ' . $item->title ?>" >
 									</div>
 									<div class="col-md-10 d-inline">
 									<!-- <div class="g-pa-15 "> -->

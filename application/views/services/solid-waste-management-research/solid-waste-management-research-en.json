@@ -1,0 +1,382 @@
+{
+  "service_id": 7,
+  "service_parent_id": null,
+  "service_name": "Solid Waste Management Research",
+  "service_short_name": "SWMR",
+  "service_page_url": "official/service/solid-waste-management-research",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": 1,
+  "service_proposal_url": "https://docs.google.com/forms/d/e/1FAIpQLScGCw668xdQjji7zRsCRQ-50524A4XLOWS7-up1q4F_KDWhNw/viewform",
+  "service_join_url": "",
+  "service_slug": "solid-waste-management-research",
+  "service_map_url": "https://www.google.com/maps/d/u/4/embed?mid=1kyIBPS8Js-umo5K7RxtYM8TlEm6Ok-_N",
+  "service_meta": {
+    "title": "",
+    "description_1": "Program pengelolaan sampah secara optimal beserta pelaporan alur sampah",
+    "description_2": "Program pengelolaan sampah secara optimal beserta pelaporan alur sampah",
+    "keywords": "program pengelolaan sampah, pengelolaan sampah, pengelolaan sampah dari sumber, pelaporan alur sampah, pengelolaan sampah secara optimal, pengelolaan sampah bertanggung jawab",
+    "site_url": "official/service/solid-waste-management-research"
+  },
+  "sections": {
+    "welcome": {
+      "section_template": "welcome",
+      "section_menu_title": "",
+      "section_title": "Solid Waste Management Research",
+      "section_subtitle": "",
+      "section_message": "Improve your solid waste management by conducting a thorough analysis and identifying the most appropriate system and programs.",
+      "section_image": "header.jpg"
+    },
+    "achievement": {
+      "section_template": "our-achievement",
+      "section_menu_title": "",
+      "section_title": "OUR ACHIEVEMENT",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Clients",
+          "item_subtitle": "",
+          "item_message": "35",
+          "item_image": ""
+        },
+        {
+          "item_title": "Project Finished",
+          "item_subtitle": "",
+          "item_message": "44",
+          "item_image": ""
+        },
+        {
+          "item_title": "Cities & Regencies",
+          "item_subtitle": "",
+          "item_message": "37",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "about": {
+      "section_template": "about",
+      "section_menu_title": "About",
+      "section_subtitle": "Research And Planning With Environment In Mind",
+      "section_message": "Waste4Change provides consultation through Solid Waste Management (SWM) Research that aims to improve solid waste management by conducting a thorough analysis and identifying the most appropriate system and programs in cities, regions, building, or any other private/commercial institutions.<br>It also aims to harness the advantages borne out of implementing responsible waste management.",
+      "section_title": "About",
+      "section_image": "about.jpg"
+    },
+
+    "expertise-and-experience": {
+      "section_template": "expertise-and-experience",
+      "section_menu_title": "EXPERTISE AND EXPERIENCE",
+      "section_title": "EXPERTISE AND EXPERIENCE",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Solid Waste Management Feasibility Study",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Waste Audit",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Technical and Operational Design of SWM",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "SWM Regulatory Analysis",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Behavior Change Analysis",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Financial Analysis",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Institutional Analysis",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Stakeholders Mapping",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Recycling Value Chain Analysis",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Material Flow Analysis/ VCA",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Marine Debris Study",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Waste to Energy Feasibility Study",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "PTMP (Technical Planning and Solid Waste Management) / Waste Masterplan at City or District scale",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "program-highlight": {
+      "section_template": "program-highlight",
+      "section_menu_title": "",
+      "section_title": "Research Highlight",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "project_items": [
+        {
+          "service_slug": "solid-waste-management-study-at-pelabuhan-indonesia-ii-hq",
+          "service_subcategory_name": "swm research in institution"
+        },
+        {
+          "service_slug": "solid-waste-management-design-for-revitalisation-at-jami-mosque-and-kampung-beting-settlements-in-pontianak",
+          "service_subcategory_name": "swm research in municipalities/ tourism sites"
+        },
+        {
+          "service_slug": "waste-management-scouting-study-stakeholders-mapping-and-waste-flow-in-jakarta-and-surabaya",
+          "service_subcategory_name": "value chain analysis"
+        },
+        {
+          "service_slug": "riverine-plastic-monitoring-project-in-jakarta",
+          "service_subcategory_name": "marine debris study"
+        },
+        {
+          "service_slug": "technical-due-diligence-for-itf-sunter-jakarta",
+          "service_subcategory_name": "waste to energy"
+        }
+      ]
+    },
+    "client": {
+      "section_template": "our-client",
+      "section_menu_title": "Client",
+      "section_title": "Client",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Kemenko Maritim",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Kemenko-Maritim.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "KLHK RI",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "KLHK-RI.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "PT Nestle Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "PT-Nestle-Indonesia.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "PT Tirta Inverstama",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "PT-Tirta-Inverstama.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Kementrian PUPR",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "PUPR.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "World Bank",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "World-Bank.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "PT. Pelabuhan Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "PT.-Pelabuhan-Indonesia-II.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Bappenas",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Bappenas.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Deloitte",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Deloitte.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "GA Circular",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "GA-Circular.jpg",
+          "item_color": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "recommendation": {
+      "section_template": "recommended_for",
+      "section_menu_title": "",
+      "section_title": "Recommended for",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "HSE Division",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "HSE.svg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Sustainability Division",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-132 u-line-icon-pro",
+          "item_color": "#a24444"
+        },
+        {
+          "item_title": "CSR Division",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-medical-022 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Government",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-136 u-line-icon-pro",
+          "item_color": "#68a244"
+        },
+        {
+          "item_title": "Consultant",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-finance-218 u-line-icon-pro",
+          "item_color": "#a29244"
+        },
+        {
+          "item_title": "Residential Area/ Housing",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-070 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-172 u-line-icon-pro",
+          "item_color": "#4489a2"
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "map": {
+      "section_template": "our-coverage",
+      "section_title": "Coverage Area",
+      "section_menu_title": "Coverage Area"
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Start your <span style='font-weight:bold'>Solid Waste Management Research</span> now!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "GET PROPOSAL",
+          "cta_url": "official/service/digital-epr/join",
+          "cta_class": "",
+          "portfolio_title": "GET PORTOFOLIO",
+          "portfolio_url": 1,
+          "portfolio_class": ""
+        }
+      ]
+    }
+  }
+}

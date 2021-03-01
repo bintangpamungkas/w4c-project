@@ -1,5 +1,5 @@
 <!-- Latest Job -->
-<section class="g-bg-gray-light-v4 <?= $this->agent->is_mobile() ? 'g-pt-80 g-pb-50' : 'g-py-90' ?>">
+<section class="g-bg-gray-light-v4 d-none <?= $this->agent->is_mobile() ? 'g-pt-80 g-pb-50' : 'g-py-90' ?>">
 	<div class="container">
 		<div class="g-mb-50">
 			<?php if (!$this->agent->is_mobile()) : ?>

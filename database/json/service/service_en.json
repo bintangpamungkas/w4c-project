@@ -12,21 +12,21 @@
         "services": {
           "responsible-waste-management": {
             "has_page": 1,
-            "url": "official/service/responsible-waste-management",
+            "url": "service/responsible-waste-management",
             "title": "Responsible Waste Management"
           },
           "event-waste-management": {
-            "url": "official/service/event-waste-management",
+            "url": "service/event-waste-management",
             "title": "Event Waste Management",
             "has_page": 1
           },
           "zero-waste-to-landfill": {
-            "url": "official/service/zero-waste-to-landfill",
+            "url": "service/zero-waste-to-landfill",
             "title": "Zero Waste to Landfill",
             "has_page": 1
           },
           "inorganic-waste-management": {
-            "url": "official/service/inorganic-waste-management",
+            "url": "service/inorganic-waste-management",
             "title": "Inorganic Waste Management",
             "has_page": 0
           }
@@ -37,12 +37,12 @@
         "url": "",
         "services": [
           {
-            "url": "official/service/in-store-recycling",
+            "url": "service/in-store-recycling",
             "title": "In-Store Recycling",
             "has_page": 1
           },
           {
-            "url": "official/service/digital-epr",
+            "url": "service/digital-epr",
             "title": "Digital EPR",
             "has_page": 1
           }
@@ -50,7 +50,7 @@
       },
       {
         "title": "Solid Waste Management Research",
-        "url": "official/service/solid-waste-management-research",
+        "url": "service/solid-waste-management-research",
         "has_page": 1,
         "service_category_id": ""
       },
@@ -59,12 +59,12 @@
         "url": "",
         "services": [
           {
-            "url": "official/service/community-based-implementation",
+            "url": "service/community-based-implementation",
             "title": "Community-Based Implementation",
             "has_page": 1
           },
           {
-            "url": "official/service/3r-school-program",
+            "url": "service/3r-school-program",
             "title": "3R School Program",
             "has_page": 1
           }
@@ -75,12 +75,12 @@
         "url": "",
         "services": [
           {
-            "url": "official/service/akabis-waste-management-academy",
+            "url": "service/akabis-waste-management-academy",
             "title": "AKABIS (Waste Management Academy)",
             "has_page": 1
           },
           {
-            "url": "official/service/black-soldier-fly-learning-center",
+            "url": "service/black-soldier-fly-learning-center",
             "title": "Black Soldier Fly Learning Center",
             "has_page": 1
           }
@@ -111,10 +111,17 @@
         "has_page": 1
       },
       {
-        "url": "official/service/personal-waste-management",
+        "url": "service/personal-waste-management",
         "title": "Personal Waste Management",
         "has_page": 1
       }
     ]
+  },
+  "sirkular": {
+    "service_target_id": null,
+    "title": "CIRCULAR",
+    "service_target_slug": null,
+    "icon": "circular-active-o.png",
+    "url": "https://demo.waste4change.com/sirkular/"
   }
 }

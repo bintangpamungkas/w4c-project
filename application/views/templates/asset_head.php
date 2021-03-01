@@ -40,7 +40,7 @@ header("Pragma: no-cache");
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <?php if (IS_ONLINE == 1) {
+  <?php if (IS_ONLINE == 0) {
     if (empty($meta_data)) {
       meta_data(true);
     } else {
@@ -80,12 +80,17 @@ header("Pragma: no-cache");
   <link rel="stylesheet" href="<?= base_url(DIR_CSS . 'unify-globals.css') ?>">
   <link rel="stylesheet" href="<?= base_url(DIR_VENDOR . 'custombox/custombox.min.css') ?>">
   <link rel="stylesheet" href="<?= base_url(DIR_VENDOR . 'jquery-ui/themes/base/jquery-ui.min.css') ?>">
+  <link
+  href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css"
+  rel="stylesheet"
+  type="text/css"
+/>
 
   <!-- CSS Customization -->
   <link rel="stylesheet" href="<?= base_url(DIR_CSS . 'custom.css') ?>">
   <script src="<?= base_url(DIR_VENDOR . 'jquery/jquery.min.js') ?>"></script>
 
-  <?php if (IS_ONLINE == 1) {
+  <?php if (IS_ONLINE == 0) {
     // Hotjar Tracking
     hotjar_tracking(true);
     // Google Analytic Tracking
@@ -102,10 +107,11 @@ header("Pragma: no-cache");
     <?php
     if ($this->uri->segment(1) == '') : ?>
        $('#PopUpModal').modal('show');
+ 
     <?php endif; ?>
     <?php
     if ($this->uri->segment(2) == 'personal-waste-management' && $this->uri->segment(3) != 'join') : ?>
-    //   $('#PopUpModalPWM').modal('show');
+      // $('#PopUpModalPWM').modal('hide');
     <?php endif; ?>
   });
   var logger = function() {
@@ -128,7 +134,7 @@ header("Pragma: no-cache");
   }();
 
   $(document).ready(function() {
-    if (<?= IS_ONLINE ?> == 1) {
+    if (<?= IS_ONLINE ?> == 0) {
       logger.disableLogger();
     } else {
       logger.enableLogger();
@@ -168,11 +174,17 @@ header("Pragma: no-cache");
         <div class="modal-content" style="border-radius: 0!important;margin-top: calc(50vh - 250px)">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute;padding: 10px 15px;background: red;z-index: 999;opacity: 1;color: white;border-radius: 50px;right: -20px;top: -20px;"><span aria-hidden="true">&times;</span>
           </button>
+          <?php if($this->uri->segment(1) == '') :?>
           <div class="modal-body welcome_list g-pa-0">
             <a class="dismiss-modal" href="<?= site_url('service/personal-waste-management') ?>">
               <img src="<?php echo base_url(DIR_IMG . 'service/personal-waste-management/pwm-story-desktop-'.$lang.'.jpg') ?>" class="img-fluid">
             </a>
           </div>
+          <?php else :?>
+            <div class="modal-body welcome_list g-pa-0 d-none">
+           
+          </div>
+          <?php endif; ?>
         </div>
       </div>
     </div>
@@ -181,9 +193,14 @@ header("Pragma: no-cache");
         <div class="modal-content" style="border-radius: 0!important;margin-top: calc(50vh - 250px)">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute;padding: 10px 15px;background: red;z-index: 999;opacity: 1;color: white;border-radius: 50px;right: -20px;top: -20px;"><span aria-hidden="true">&times;</span>
           </button>
+          <?php if($this->uri->segment(1) == '') :?>
           <div class="modal-body welcome_list g-pa-0" data-dismiss="modal" aria-label="Close">
             <img src="<?php echo base_url(DIR_IMG . 'service/personal-waste-management/pwm-story-desktop-'.$lang.'.jpg') ?>" class="img-fluid">
           </div>
+        <?php else :?>
+          <div class="modal-body welcome_list g-pa-0" data-dismiss="modal" aria-label="Close">
+          </div>
+        <?php endif;?>
         </div>
       </div>
     </div>

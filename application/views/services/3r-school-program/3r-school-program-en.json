@@ -1,0 +1,305 @@
+{
+  "service_id": 9,
+  "service_parent_id": null,
+  "service_name": "3R School Program",
+  "service_short_name": "3R School Program",
+  "service_page_url": "official/service/3r-school-program",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": 1,
+  "service_proposal_url": "https://docs.google.com/forms/d/e/1FAIpQLScmBjcHJhsI1OIOM-So0VQNhsbIGUJeKuovMe2QzVeYMnUU0g/viewform",
+  "service_join_url": "",
+  "service_slug": "3r-school-program",
+  "service_map_url": "https://www.google.com/maps/d/u/4/embed?mid=10BE1aJSuB03vNPzXygpWxPUrlOkRXzBi",
+  "service_meta": {
+    "title": "",
+    "description_1": "Education and assistance in order to implement the 3Rs (Reduce, Reuse, Recycle) concept at school",
+    "description_2": "Education and assistance in order to implement the 3Rs (Reduce, Reuse, Recycle) concept at school",
+    "keywords": "Education and assistance in order to implement the 3Rs (Reduce, Reuse, Recycle) concept at school",
+    "site_url": "official/service/3r-school-program"
+  },
+  "sections": {
+    "welcome": {
+      "section_template": "welcome",
+      "section_menu_title": "",
+      "section_title": "3R School Program",
+      "section_subtitle": "",
+      "section_message": "Designed to increase our future generations' awareness about 3R Principles (Reduce, Reuse, Recycle) and how to implement it in their everyday lives.",
+      "section_image": "header.jpg"
+    },
+    "achievement": {
+      "section_template": "our-achievement",
+      "section_menu_title": "",
+      "section_title": "Our Achievement",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Clients",
+          "item_subtitle": "",
+          "item_message": "13",
+          "item_image": ""
+        },
+        {
+          "item_title": "Beneficiaries",
+          "item_subtitle": "",
+          "item_message": "19150",
+          "item_image": ""
+        },
+        {
+          "item_title": "Cities",
+          "item_subtitle": "",
+          "item_message": "10",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "about": {
+      "section_template": "about",
+      "section_menu_title": "About",
+      "section_subtitle": "Optimal Implementation Of 3R (Reduce-Reuse-Recycle) Principles",
+      "section_message": "3R School Program is a program designed to encourage the increasing awareness of school residents to apply 3R Principles (Reduce, Reuse, Recycle) for the creation of responsible waste management system in schools. The aims of this program is to assist schools. Waste4Change acts as a facilitator in assisting beneficiaries to achieve the objectives of the program.",
+      "section_title": "About",
+      "section_image": "about.jpg"
+    },
+
+    "activites": {
+      "section_template": "activities",
+      "section_menu_title": "Activities",
+      "section_title": "Activities",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Phase 1",
+          "item_subtitle": "",
+          "item_icon": "report-m.png",
+          "item_message": "Raising Awareness through AKABIS",
+          "item_image": ""
+        },
+        {
+          "item_title": "Phase 2",
+          "item_subtitle": "",
+          "item_icon": "loadspeaker-m.png",
+          "item_message": "Forming Task Force, Planning, Capacity Building, and Assistance",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "output-benefit": {
+      "section_template": "output-benefit",
+      "section_menu_title": "Output & Benefit",
+      "section_title": "Output & Benefit",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_category": "For Clients",
+          "item_subtitle": "",
+          "item_icon": "",
+          "item_message": "The real action in encouraging the implementation of 3R and responsible waste management in Indonesia, especially in the educational sector",
+          "item_image": ""
+        },
+        {
+          "item_category": "For Clients",
+          "item_subtitle": "",
+          "item_icon": "",
+          "item_message": "Supporting the green concept of our clients' brand image",
+          "item_image": ""
+        },
+        {
+          "item_category": "For Schools",
+          "item_subtitle": "",
+          "item_icon": "",
+          "item_message": "Increased knowledge and capacity of students and teachers about the 3R concept",
+          "item_image": ""
+        },
+        {
+          "item_category": "For Schools",
+          "item_subtitle": "",
+          "item_icon": "",
+          "item_message": "Schools can contribute to supporting and executing a responsible waste management system in their facility",
+          "item_image": ""
+        },
+        {
+          "item_category": "For Schools",
+          "item_subtitle": "",
+          "item_icon": "",
+          "item_message": "Available for every school located in Indonesia, we support our client's school to become an example of a green and sustainable educational facility",
+          "item_image": ""
+        },
+        {
+          "item_category": "For Schools",
+          "item_subtitle": "",
+          "item_icon": "",
+          "item_message": "For schools located in Jakarta, we help to support the school to become a potential candidate to apply for the Sekolah ADIWIYATA program",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "program-highlight": {
+      "section_template": "program-highlight",
+      "section_menu_title": "",
+      "section_title": "PROGRAM HIGHLIGHT 3R SCHOOL PROGRAM",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "project_items": [
+        {
+          "service_slug": "3r-green-school",
+          "service_subcategory_name": "3R Green School"
+        }
+      ]
+    },
+    "client": {
+      "section_template": "our-client",
+      "section_menu_title": "Client",
+      "section_title": "Client",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "PT Unilever Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Yayasan-Unilever.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "PT NEC Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "NEC.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Yayasan Bangun Kecerdasan Bangsa",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "ybkb.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "DBS",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "DBS.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Tetra Pak",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Tetrapak.jpg",
+          "item_color": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "recommendation": {
+      "section_template": "recommended_for",
+      "section_menu_title": "",
+      "section_title": "Recommended For",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "CSR Division",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-medical-022 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Government",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-136 u-line-icon-pro",
+          "item_color": "#68a244"
+        },
+        {
+          "item_title": "School Management",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-education-001 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Foundation",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-009 u-line-icon-pro",
+          "item_color": "#68a244"
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "map": {
+      "section_template": "our-coverage",
+      "section_title": "Coverage Area",
+      "section_menu_title": "Coverage Area"
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Start your <span style='font-weight:bold'>3R School Program</span> now!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "GET PROPOSAL",
+          "cta_url": "official/service/3r-school-program/join",
+          "cta_class": "",
+          "portfolio_title": "GET PORTOFOLIO",
+          "portfolio_url": 1,
+          "portfolio_class": ""
+        }
+      ]
+    }
+  }
+}

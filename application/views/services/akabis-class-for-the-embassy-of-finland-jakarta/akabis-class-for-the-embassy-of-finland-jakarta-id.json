@@ -1,0 +1,111 @@
+{
+  "service_id": "1",
+  "service_parent_id": 10,
+  "service_name": "AKABIS Class untuk Kedutaan Finlandia di Jakarta",
+  "service_short_name": "",
+  "service_page_url": "official/project/akabis-class-for-the-embassy-of-finland-jakarta",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_join_url": "",
+  "service_subcategory_name": "AKABIS Class untuk Institusi",
+  "service_client_name": "Kedutaan Finlandia",
+  "service_slug": "akabis-class-for-the-embassy-of-finland-jakarta",
+  "service_map_url": "",
+  "service_meta": {
+    "title": "",
+    "description_1": "Kelas edukasi manajemen sampah untuk institusi",
+    "description_2": "Kelas edukasi manajemen sampah untuk institusi",
+    "keywords": "Kelas edukasi manajemen sampah untuk institusi",
+    "site_url": "official/project/akabis-class-for-the-embassy-of-finland-jakarta"
+  },
+  "sections": {
+    "header": {
+      "section_template": "header",
+      "section_menu_title": "",
+      "section_title": "",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "thumbnail.jpg"
+    },
+    "description": {
+      "section_template": "description",
+      "section_menu_title": "Deskripsi",
+      "section_subtitle": "",
+      "section_message": "Pengetahuan mengenai pengelolaan sampah yang bertanggung jawab dan konsep 3R (Reduce- Reuse, Recycle) sangatlah penting, terutama bagi institusi. Waste4Change memfasilitasi institusi untuk menjadi agen perubahan agar mereka bisa mendorong terciptanya sistem pengelolaan sampah yang bertanggung jawab d kantor mereka sendiri. Sebagai negara yang memiliki landasan kuat dalam aspek berkelanjutan, Kedutaan Finlandia ingin menjalankan perannya dalam pengelolaan sampah di Indonesia melalui praktik kantor hijau. Mereka bersemangat untuk menerapkan pengelolaan sampah di kantor mereka demi mengurangi jumlah timbulan sampah yang berakhir di TPST Bantar Gebang.<br>AKABIS-Class di Kedutaan Finlandia dilaksanakan di tahun 2018 dan sekitar 20 pegawai dari berbagai sektor mengikuti sesi edukasi tersebut.",
+      "section_title": "Deskripsi",
+      "section_image": "about.jpg"
+    },
+
+    "achievement-deliverable": {
+      "section_template": "achievement-deliverable",
+      "section_menu_title": "HASIL PEKERJAAN",
+      "section_title": "HASIL PEKERJAAN",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_name": "Sesi Sharing: kenapa kita harus menerapkan pengelolaan sampah yang bertanggung jawab?",
+          "item_icon": "chat-m.png"
+        },
+        {
+          "item_name": "Sesi Presentasi: bagaimana kita bisa menerapkan pengelolaan sampah yang bertanggung jawab dimulai dari kantor sendiri?",
+          "item_icon": "loadspeaker-m.png"
+        },
+        {
+          "item_name": "Permainan Interaktif",
+          "item_icon": "games-m.png"
+        }
+      ]
+    },
+    "similar-project": {
+      "section_template": "similar-project",
+      "section_menu_title": "Proyek Serupa",
+      "section_title": "Proyek Serupa",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "project_items": [
+        {
+          "service_slug": "akabis-class-the-neglected-debris-paper-letter-and-waste-discussion",
+          "service_subcategory_name": "AKABIS Class untuk Umum"
+        },
+        {
+          "service_slug": "akabis-xperience-untuk-pt-bank-dbs-indonesia",
+          "service_subcategory_name": "AKABIS Xperience untuk Institusi"
+        },
+        {
+          "service_slug": "akabis-xperience-for-yseali",
+          "service_subcategory_name": "AKABIS Xperience untuk Umum"
+        }
+      ]
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Mulai <span style='font-weight:bold'>AKABIS (Waste Management Academy)</span> Anda sekarang juga!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "DAPATKAN PROPOSAL",
+          "cta_url": "official/service/digital-epr/join",
+          "cta_class": "",
+          "portfolio_title": "DAPATKAN PORTOFOLIO",
+          "portfolio_url": 1,
+          "portfolio_class": ""
+        }
+      ]
+    }
+  }
+}

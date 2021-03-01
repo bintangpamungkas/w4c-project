@@ -1,0 +1,220 @@
+{
+  "service_id": 32,
+  "service_parent_id": null,
+  "service_name": "Custom Waste Bin",
+  "service_short_name": "CWB",
+  "service_page_url": "official/product/custom-waste-bin",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_slug": "custom-waste-bin",
+  "service_join_url": "",
+  "service_map_url": "https://www.google.com/maps/d/u/4/embed?mid=14U27pSAYe3HQIvZiTgk-NXoS6AEEu1Rp",
+  "service_meta": {
+    "title": "Custom waste bins with clear and precise waste segregation guide",
+    "description_1": "Custom waste bins with clear and precise waste segregation guide",
+    "description_2": "Custom waste bins with clear and precise waste segregation guide",
+    "keywords": "Custom waste bins with clear and precise waste segregation guide",
+    "site_url": "official/product/custom-waste-bin"
+  },
+  "sections": {
+    "welcome": {
+      "section_template": "welcome",
+      "section_menu_title": "",
+      "section_title": "Custom Waste Bin",
+      "section_subtitle": "",
+      "section_message": "Get the special waste bins designed specifically to support waste segregation to improve waste management in your area. Waste4Change provides special waste bins with educational instructions for waste-sorting needs. The design can be adjusted to the frequency and behavior of waste segregation in your area.",
+      "section_image": "header.jpg"
+    },
+    "about": {
+      "section_template": "about",
+      "section_menu_title": "About",
+      "section_subtitle": "Custom waste bins with clear and precise waste segregation guide",
+      "section_message": "Educate people around your area with a better message on your waste bin stickers. With better awareness and education, it will be easier for you to improve the waste segregation rate in your area. You can also request a design based on your brand guidelines or interior design.",
+      "section_title": "About",
+      "section_image": "about.jpg"
+    },
+
+    "benefit": {
+      "section_template": "benefit",
+      "section_menu_title": "BENEFITS",
+      "section_title": "BENEFITS",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "A better waste management guidelines to improve waste segregation",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Custom design based on your brand guidelines or interior design",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ]
+    },
+    "waste-bin-option": {
+      "section_template": "waste-bin-option",
+      "section_menu_title": "WASTE BIN OPTION",
+      "section_title": "WASTE BIN OPTION",
+      "section_subtitle": "To improve waste segregation, the following are the types of segregated bins that can be selected",
+      "section_message": "",
+      "section_items": [
+        {
+          "item_title": "4 in 1 Capsule",
+          "item_subtitle": "Dimension: 140 x 35 x 75 cm <br> Material: Stainless Hairline",
+          "item_message": "",
+          "item_image": "wastebin-4in1.png"
+        },
+        {
+          "item_title": "Tube",
+          "item_subtitle": "Dimension: 30 x 65 cm <br> Material: Stainless Hairline",
+          "item_message": "",
+          "item_image": "wastebin-tube.png"
+        },
+        {
+          "item_title": "3 in 1 Capsule",
+          "item_subtitle": "Dimension: 102 x 33 x 75 cm <br> Material: Stainless Hairline",
+          "item_message": "",
+          "item_image": "wastebin-3in1.png"
+        },
+        {
+          "item_title": "Customizable",
+          "item_subtitle": "Dimension: Requested by client <br> Material: Requested by client",
+          "item_message": "",
+          "item_image": "wastebin-custom.png"
+        },
+        {
+          "item_title": "2 in 1 Capsule",
+          "item_subtitle": "Dimension: 70 x 33 x 75 cm <br> Material: Stainless Hairline",
+          "item_message": "",
+          "item_image": "wastebin-2in1.png"
+        }
+      ]
+    },
+    "client": {
+      "section_template": "our-client",
+      "section_menu_title": "CLIENT",
+      "section_title": "CLIENT",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "World Bank",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "World-Bank.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Kementrian PUPR",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "PUPR.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "IKEA",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "IKEA.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Kementrian Keuangan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "kemetrian-keuangan.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Epson",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "epson.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "DBS",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "DBS.jpg",
+          "item_color": ""
+        }
+      ]
+    },
+    "recommendation": {
+      "section_template": "recommended_for",
+      "section_menu_title": "",
+      "section_title": "RECOMMENDED FOR",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Office",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-172 u-line-icon-pro",
+          "item_color": "#68a244"
+        },
+        {
+          "item_title": "Restaurant",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-020 u-line-icon-pro",
+          "item_color": "#a24444"
+        },
+        {
+          "item_title": "Hotel",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-travel-079 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Building / Area Management",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-172 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Housing",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-070 u-line-icon-pro",
+          "item_color": "#4489a2"
+        }
+      ]
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Start your <span style='font-weight:bold'>Custom Waste Bin</span> now!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "GET IT NOW",
+          "cta_url": "official/service/custom-waste-bin/join",
+          "cta_class": ""
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,518 @@
+[
+  {
+    "service_id": "1",
+    "service_target_id": "1",
+    "service_slug": "responsible-waste-management",
+    "city_name": "Kota Tangerang",
+    "service_page_url": "service/responsible-waste-management",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Responsible Waste Management",
+    "service_description": "Sistem manajemen sampah yang 100% menyeluruh untuk perusahaan, gedung, dan pelaku bisnis dalam rangka mengurangi jumlah timbunan sampah yang berakhir di TPA.",
+    "service_category_name": "Waste Collection Services",
+    "recomendation": [
+      {
+        "name": "Kawasan Pariwisata & Perbelanjaan",
+        "color": null
+      },
+      {
+        "name": "Perumahan",
+        "color": "#4489a2"
+      },
+      {
+        "name": "Gedung",
+        "color": "#4489a2"
+      },
+      {
+        "name": "Hotel",
+        "color": "#4489a2"
+      },
+      {
+        "name": "Kantor",
+        "color": "#68a244"
+      },
+      {
+        "name": "Restoran",
+        "color": "#a24444"
+      }
+    ]
+  },
+  {
+    "service_id": "2",
+    "service_target_id": "1",
+    "service_slug": "zero-waste-to-landfill",
+    "city_name": "Kota Tangerang",
+    "service_page_url": "official/service/zero-waste-to-landfill",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Zero Waste to Landfill",
+    "service_description": "Ambil peran aktif untuk membantu mencegah TPS dan TPA agar tidak kelebihan kapasitas! Melalui layanan pengangkutan dan daur ulang sampah yang dinamakan Zero Waste to Landfill, kami akan memastikan bahwa tidak ada sampah Anda yang berakhir di TPA!",
+    "service_category_name": "Waste Collection Services",
+    "recomendation": [
+      {
+        "name": "Kantor",
+        "color": "#68a244"
+      },
+      {
+        "name": "Restoran",
+        "color": "#a24444"
+      },
+      {
+        "name": "Hotel",
+        "color": "#4489a2"
+      },
+      {
+        "name": "Pengelola Bangunan/ Kawasan",
+        "color": "#4489a2"
+      },
+      {
+        "name": "Perumahan",
+        "color": "#4489a2"
+      },
+      {
+        "name": "Retail",
+        "color": "#a24495"
+      },
+      {
+        "name": "Toko",
+        "color": "#a24495"
+      }
+    ]
+  },
+  {
+    "service_id": "3",
+    "service_target_id": "1",
+    "service_slug": "inorganic-waste-management",
+    "city_name": "Kota Tangerang",
+    "service_page_url": "official/service/responsible-waste-management",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "0",
+    "service_name": "Inorganic Waste Management",
+    "service_description": "Kelola sampah anorganik Anda dengan cara yang tepat dan pastikan bahwa sampah anorganik tersebut didaur ulang dan masuk ke dalam siklus yang berkelanjutan.",
+    "service_category_name": "Waste Collection Services",
+    "recomendation": [
+      {
+        "name": "Kantor",
+        "color": "#68a244"
+      },
+      {
+        "name": "Restoran",
+        "color": "#a24444"
+      },
+      {
+        "name": "Hotel",
+        "color": "#4489a2"
+      },
+      {
+        "name": "Pengelola Bangunan/ Kawasan",
+        "color": "#4489a2"
+      },
+      {
+        "name": "Perumahan",
+        "color": "#4489a2"
+      },
+      {
+        "name": "Retail",
+        "color": "#a24495"
+      },
+      {
+        "name": "Toko",
+        "color": "#a24495"
+      }
+    ]
+  },
+  {
+    "service_id": "4",
+    "service_target_id": "1",
+    "service_slug": "event-waste-management",
+    "city_name": "Kota Tangerang",
+    "service_page_url": "official/service/event-waste-management",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Event Waste Management",
+    "service_description": "Melalui penempatan tempat sampah terpilah di lokasi-lokasi yang strategis, serta pengangkutan sampah terpilah selama acara berlangsung, kami akan membantu acara Anda mempersiapkan pengelolaan sampah yang bertanggung jawab!",
+    "service_category_name": "Waste Collection Services",
+    "recomendation": [
+      {
+        "name": "Event Organizer",
+        "color": "#a24495"
+      },
+      {
+        "name": "Yayasan",
+        "color": "#68a244"
+      },
+      {
+        "name": "Perusahaan",
+        "color": "#a24444"
+      }
+    ]
+  },
+  {
+    "service_id": "5",
+    "service_target_id": "1",
+    "service_slug": "in-store-recycling",
+    "city_name": "Kota Tangerang",
+    "service_page_url": "official/service/in-store-recycling",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "In-Store Recycling",
+    "service_description": "Tingkatkan pengelolaan materi dari sampah berlabel merek di seluruh lini bisnis Anda. Baik toko fisik ataupun daring, kami punya sistem dan solusinya!",
+    "service_category_name": "Extended Producer Responsibility",
+    "recomendation": [
+      {
+        "name": "Distribusi",
+        "color": "#a24444"
+      },
+      {
+        "name": "Merek",
+        "color": "#a24495"
+      },
+      {
+        "name": "Produk",
+        "color": "#a24495"
+      }
+    ]
+  },
+  {
+    "service_id": "6",
+    "service_target_id": "1",
+    "service_slug": "digital-epr",
+    "city_name": "Seluruh Kota di Indonesia",
+    "service_page_url": "official/service/digital-epr",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Digital EPR",
+    "service_description": "Tingkatkan pengelolaan materi dari sampah berlabel merek Anda dengan bantuan sistem daur ulang berbasis aplikasi dan website, sekaligus membuka semakin banyak peluang kolaborasi dengan pelaku bisnis dan komunitas lain.",
+    "service_category_name": "Extended Producer Responsibility",
+    "recomendation": [
+      {
+        "name": "Distribusi",
+        "color": "#a24444"
+      },
+      {
+        "name": "Merek",
+        "color": "#a24495"
+      },
+      {
+        "name": "Produk",
+        "color": "#a24495"
+      }
+    ]
+  },
+  {
+    "service_id": "7",
+    "service_target_id": "1",
+    "service_slug": "solid-waste-management-research",
+    "city_name": "Seluruh Kota di Indonesia",
+    "service_page_url": "official/service/solid-waste-management-research",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Solid Waste Management Research",
+    "service_description": "Tingkatkan pengelolaan sampah Anda dengan melakukan analisis terperinci dan mengidentifikasi program dan sistem manajemen sampah yang paling tepat.",
+    "service_category_name": "Solid Waste Management Research",
+    "recomendation": [
+      {
+        "name": "Divisi HSE",
+        "color": "#4489a2"
+      },
+      {
+        "name": "Divisi Sustainability",
+        "color": "#a24444"
+      },
+      {
+        "name": "Divisi CSR",
+        "color": "#4489a2"
+      },
+      {
+        "name": "Pemerintah",
+        "color": "#68a244"
+      },
+      {
+        "name": "Konsultan",
+        "color": "#a29244"
+      },
+      {
+        "name": "Perumahan",
+        "color": "#4489a2"
+      },
+      {
+        "name": "Pengelola Bangunan/ Kawasan",
+        "color": "#4489a2"
+      }
+    ]
+  },
+  {
+    "service_id": "8",
+    "service_target_id": "1",
+    "service_slug": "community-based-implementation",
+    "city_name": "Seluruh Kota di Indonesia",
+    "service_page_url": "official/service/community-based-implementation",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Community-Based Implementation",
+    "service_description": "Kami membantu klien kami untuk menerapkan program-program yang mendorong komunitas untuk ikut bertindak dan memberikan kontribusi nyata terhadap krisis pengelolaan sampah di Indonesia",
+    "service_category_name": "Community Development",
+    "recomendation": [
+      {
+        "name": "Divisi CSR",
+        "color": "#4489a2"
+      },
+      {
+        "name": "Divisi Sustainability",
+        "color": "#a24444"
+      },
+      {
+        "name": "Pemerintah",
+        "color": "#68a244"
+      },
+      {
+        "name": "Perumahan",
+        "color": "#4489a2"
+      },
+      {
+        "name": "Pengelola Bangunan/ Kawasan",
+        "color": "#4489a2"
+      },
+      {
+        "name": "Yayasan",
+        "color": "#68a244"
+      }
+    ]
+  },
+  {
+    "service_id": "9",
+    "service_target_id": "1",
+    "service_slug": "3r-school-program",
+    "city_name": "Seluruh Kota di Indonesia",
+    "service_page_url": "official/service/3r-school-program",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "3R School Program",
+    "service_description": "Dirancang untuk meningkatkan kesadaran generasi mendatang terhadap prinsip 3R (Reduce, Reuse, Recycle) dan bagaimana menerapkannya di kehidupan sehari-hari.",
+    "service_category_name": "Community Development",
+    "recomendation": [
+      {
+        "name": "Divisi CSR",
+        "color": "#4489a2"
+      },
+      {
+        "name": "Pemerintah",
+        "color": "#68a244"
+      },
+      {
+        "name": "Pengurus Sekolah",
+        "color": "#4489a2"
+      },
+      {
+        "name": "Yayasan",
+        "color": "#68a244"
+      }
+    ]
+  },
+  {
+    "service_id": "10",
+    "service_target_id": "1",
+    "service_slug": "akabis-waste-management-academy",
+    "city_name": "Seluruh Kota di Indonesia",
+    "service_page_url": "official/service/akabis-waste-management-academy",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "AKABIS (Waste Management Academy)",
+    "service_description": "Akademi Bijak Sampah (AKABIS) adalah sebuah model edukasi yang dibuat oleh Waste4Change untuk meningkatkan kesadaran mengenai pentingnya menjaga lingkungan, terutama mengenai pengelolaan sampah yang bertanggung jawab.",
+    "service_category_name": "Training",
+    "recomendation": [
+      {
+        "name": "Divisi HSE",
+        "color": "#4489a2"
+      },
+      {
+        "name": "Divisi Sustainability",
+        "color": "#a24444"
+      },
+      {
+        "name": "Divisi CSR",
+        "color": "#4489a2"
+      },
+      {
+        "name": "Pemerintah",
+        "color": "#68a244"
+      },
+      {
+        "name": "Yayasan",
+        "color": "#68a244"
+      },
+      {
+        "name": "Perumahan",
+        "color": "#4489a2"
+      },
+      {
+        "name": "Pengelola Bangunan/ Kawasan",
+        "color": "#4489a2"
+      }
+    ]
+  },
+  {
+    "service_id": "11",
+    "service_target_id": "1",
+    "service_slug": "black-soldier-fly-learning-center",
+    "city_name": "Kabupaten Sidoarjo",
+    "service_page_url": "official/service/black-soldier-fly-learning-center",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Black Soldier Fly Learning Center",
+    "service_description": "Dapatkan informasi lebih lanjut mengenai pengolahan material organik dengan BlackrnSoldier Fly (BSF) serta teknis budidayanya.",
+    "service_category_name": "Training",
+    "recomendation": [
+      {
+        "name": "Pelaku Bisnis",
+        "color": "#a29244"
+      },
+      {
+        "name": "Peneliti",
+        "color": "#a29244"
+      }
+    ]
+  },
+  {
+    "service_id": "12",
+    "service_target_id": "1",
+    "service_slug": "black-soldier-fly-tools-products",
+    "city_name": "Seluruh Kota di Indonesia",
+    "service_page_url": "http://w4c.id/rumahkompos",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Black Soldier Fly Tools & Products",
+    "service_description": "Kami menjual larva Black Soldier Fly yang tinggi protein dan bagus untuk digunakan sebagai pakan ternak. Untuk siapapun yang ingin merintis peternakan BSFnya sendiri, kami menyediakan semua perlengkapan dan alat yang diperlukan.",
+    "service_category_name": "General",
+    "recomendation": [
+      {
+        "name": "Pelaku Bisnis",
+        "color": "#a29244"
+      },
+      {
+        "name": "Peneliti",
+        "color": "#a29244"
+      }
+    ]
+  },
+  {
+    "service_id": "17",
+    "service_target_id": "2",
+    "service_slug": "home-composting",
+    "city_name": "Seluruh Kota di Indonesia",
+    "service_page_url": "http://w4c.id/rumahkompos",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "0",
+    "service_name": "Home Composting",
+    "service_description": "Kelola sampah organik Anda di rumah dengan menggunakan tas kompos dari Waste4Change beserta perlengkapan kompos lainnya!",
+    "service_category_name": "General",
+    "recomendation": [
+      {
+        "name": "Personal",
+        "color": "#4489a2"
+      }
+    ]
+  },
+  {
+    "service_id": "32",
+    "service_target_id": null,
+    "service_slug": "custom-waste-bin",
+    "city_name": null,
+    "service_page_url": "official/service/custom-waste-bin",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "0",
+    "service_name": "Custom Waste Bin",
+    "service_description": "Dapatkan tempat sampah yang didesain khusus untuk pemilahan sampah untuk tingkatkan pengelolaan sampah di area Anda. Waste4Change menyediakan tempat sampah dengan bentuk dan petunjuk edukasi untuk kebutuhan pemilahan sampah. Desain dapat disesuaikan dengan frekuensi dan perilaku pemilahan sampah di area Anda.",
+    "service_category_name": null,
+    "recomendation": [
+      {
+        "name": "Kantor",
+        "color": "#68a244"
+      },
+      {
+        "name": "Restoran",
+        "color": "#a24444"
+      },
+      {
+        "name": "Hotel",
+        "color": "#4489a2"
+      },
+      {
+        "name": "Pengelola Bangunan/ Kawasan",
+        "color": "#4489a2"
+      },
+      {
+        "name": "Perumahan",
+        "color": "#4489a2"
+      }
+    ]
+  },
+  {
+    "service_id": "13",
+    "service_target_id": "2",
+    "service_slug": "send-your-waste",
+    "city_name": "Kota Bekasi",
+    "service_page_url": "sendyourwaste",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Send Your Waste",
+    "service_description": "Kirim sampah anorganik Anda ke Waste4Change untuk didaur ulang.",
+    "service_category_name": "General",
+    "recomendation": [
+      {
+        "name": "Personal",
+        "color": "#4489a2"
+      }
+    ]
+  },
+  {
+    "service_id": "14",
+    "service_target_id": "2",
+    "service_slug": "dropbox",
+    "city_name": "Kota Bekasi",
+    "service_page_url": "dropbox",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Dropbox",
+    "service_description": "Setor sampah anorganik Anda ke dalam dropbox Waste4Change untuk didaur ulang.",
+    "service_category_name": "General",
+    "recomendation": [
+      {
+        "name": "Personal",
+        "color": "#4489a2"
+      }
+    ]
+  },
+  {
+    "service_id": "33",
+    "service_target_id": "2",
+    "service_slug": "personal-waste-management",
+    "city_name": "Kota Adm. Jakarta Selatan",
+    "service_page_url": "official/service/personal-waste-management",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Personal Waste Management",
+    "service_description": "Memastikan bahwa sampah anorganik Anda didaur ulang kini menjadi lebih mudah dengan layanan Personal Waste Management dari Waste4Change. Cukup pilah sampah anorganik sesuai kategori, dan Waste4Change akan menjemput secara rutin sampah yang terpilah langsung ke rumah Anda! Untuk saat ini, layanan ini hanya tersedia di wilayah Jakarta, Tangerang Selatan, dan Kota Bekasi < /strong>.",
+    "service_category_name": "General",
+    "recomendation": [
+      { "name": "Individu", "color": "#68a244" },
+      { "name": "Rumah Tangga", "color": "#68a244" }
+    ]
+  },
+  {
+    "service_id": "34",
+    "service_target_id": "2",
+    "service_slug": "composting-tools-supplies",
+    "city_name": null,
+    "service_page_url": "official/service/composting-tools-supplies",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "0",
+    "service_name": "Peralatan & Perlengkapan Mengompos",
+    "service_description": "Waste4Change menyediakan peralatan dan perlengkapan pengomposan mandiri di rumah untuk Anda yang ingin bantu optimalkan pengelolaan sampah organik.",
+    "service_category_name": "General",
+    "recomendation": [
+      { "name": "Perusahaan", "color": "#a24444" },
+      { "name": "Individu", "color": "#68a244" }
+    ]
+  }
+]

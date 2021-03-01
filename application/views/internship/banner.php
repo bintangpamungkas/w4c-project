@@ -17,11 +17,11 @@
 						<?php endforeach; ?>
 					</div>
 				<div class="row align-items-center mt-5" style="height:100%;">
-					<div class="col-12" style="margin-bottom: <?= $this->agent->is_mobile() ? '0px' : '70px' ?>">
+					<div class="col-12">
 						<div class="text-center g-color-white g-font-asap g-font-weight-700 g-line-height-1_3 g-font-size-<?= $this->agent->is_mobile() ? '24 g-px-12' : '35' ?>">
 							<?= $copy->banner->title ?>
 						</div>
-						<div class="text-center g-color-white g-font-weight-300 g-line-height-1_3 g-font-size-<?= $this->agent->is_mobile() ? '15 g-px-12' : '18' ?>" style="font-family:'Open Sans'">
+						<div class="text-center g-color-white g-font-weight-300 g-line-height-1_3 g-font-size-<?= $this->agent->is_mobile() ? '15 g-px-12' : '18' ?> pt-3" style="font-family:'Open Sans'">
 							<?= $copy->banner->description ?>
 						</div>
 					</div>

@@ -73,6 +73,27 @@
     "subtitle": "Hear What Our Employees Have to Say throughout their Career with Waste4Change",
     "items": [
       {
+        "name": "Martinus Devy Adrian Manorek",
+        "position": "Head of Operational Services",
+        "division": "Department Operational Services",
+        "message": "When I first joined the company, it never crossed my mind that I would spend 6 years here at Waste4Change. The vibrant working atmosphere and the sincerity to give real contributions towards the existing waste problems are what keeps me around. Clearly, Waste4Change accommodates my idealisms and dreams. It is suitable for individuals with young-spirited souls and a lot of energy who aspire to embody their ideas of environmental conservation into something real and concrete. ",
+        "image": "Martin-Manorek.jpg"
+      },
+      {
+        "name": "Meydam Gusnisar",
+        "position": "Head of Business & Development",
+        "division": "Department Business & Development",
+        "message": "Waste4Change is the right place for anyone who wants to give positive impacts towards Indonesia's waste management. The working dynamics here are what enabled me to improve my abilities. I also feel like I am contributing in creating waste management solutions for an even better Indonesia.",
+        "image": "Meydam-Gusnisar.jpg"
+      },
+      {
+        "name": "Ridho Malik Ibrahim",
+        "position": "Head of Strategic Services",
+        "division": "Department Strategiuc Services",
+        "message": "Getting the chance to witness and join Waste4Change since its very first journey is a valuable learning curve for me. Those times were not easy, but I went through it with joy. For me, Waste4change is not a mere working place, but also a home that I want to continue building in order to embrace and accommodate many more people who are determined to give waste solutions for Indonesia and even the world.",
+        "image": "Ridh-Malik.jpg"
+      },
+      {
         "name": "Adhitya Prayoga",
         "position": "Circular Economy Strategist",
         "division": "Department Strategic Services",
@@ -100,33 +121,13 @@
         "message": "Working in Waste4Change has enabled me to gain a holistic understanding about the recycling industry, as well as learning about its business process from upstream to downstream. Moreover I also managed to obtain knowledge regarding the business opportunity in waste management sector, all while contributing to the environment",
         "image": "Muhamad-Andriansyah.jpg"
       },
-      {
-        "name": "Siti Annisa",
-        "position": "Project Coordinator",
-        "division": "Department Operational Services",
-        "message": "Waste4Change has become one of the places in which I can contribute both in knowledge and concrete actions to initiate real environmental changes. As a graduate from Environmental Engineering, it is very thrilling to be able to work in Waste4Change. This is because I get to know many colleagues and friends who are very supportive towards each other, while at the same time, I am given the opportunity (and the luxury) to implement the knowledge that I have obtained",
-        "image": "Siti-Annisa.jpg"
-      },
-      {
-        "name": "Safarina Lutfiyya Astuti",
-        "position": "Quality Assurance Supervisor",
-        "division": "Department Tech",
-        "message": "I found a place where I can learn new things and develop myself along with Waste4Change, which is also developing rapidly. It's an opportunity that should not be taken for granted, especially becoming a part of the IT team. Moreover, working with Waste4Change trained me to develop a critical and sensitive mindset",
-        "image": "Safarina-Lutfiyya-Astuti.jpg"
-      },
+
       {
         "name": "Hana Nur Auliana",
         "position": "Head of Communication & Engagement",
         "division": "Department Communication & Engagement",
-        "message":"Waste4Change is a full package! It does not only serve as a place to develop a professional career, but also to channel all my ideas in order to contribute to the solution of Indonesia's waste problem. If you have an ambition to initiate big changes on Indonesia's waste management system, this is the place you are looking for! Experiment together with us and witness how your works became amplified as Waste4Change grows too.",
+        "message": "Waste4Change is a full package! It does not only serve as a place to develop a professional career, but also to channel all my ideas in order to contribute to the solution of Indonesia's waste problem. If you have an ambition to initiate big changes on Indonesia's waste management system, this is the place you are looking for! Experiment together with us and witness how your works became amplified as Waste4Change grows too.",
         "image": "Hana-Nur-Auliana.jpg"
-      },
-      {
-        "name": "Hera Lismayana",
-        "position": "Accounting Supervisor",
-        "division": "Department Finance & General Affair",
-        "message":"With a background in Accounting, I am thrilled to be able to work according to major. Moreover, even though my work focuse on the company's finance and administration aspect,  I also learn the importance of responsible waste management. By working at Waste4Change, I am proud to contribute and be a part of the solution to Indonesia's waste problem.",
-        "image": "Hera-Lismayana.jpg"
       }
     ]
   },
@@ -143,19 +144,18 @@
       {
         "message": "The whole experience taught me a lot of things, starting with interpersonal communication, teamwork, and problem solving. The company's work ambience is very appreciative, and you'll find them always being supportive of each other. I took part mostly in assisting the optimization of the TPS 3R project, which was challenging, but I learned a lot and am still learning more about it",
         "name": "Amira R. Nadhifa",
-        "image":"Amira-R-Nadhifa.jpg"
+        "image": "Amira-R-Nadhifa.jpg"
       },
       {
         "message": "Working in a social enterprise that focuses on giving Servicess in responsible waste management taught me a whole new lesson. I learned a lot of new skills, especially about business and waste management, which was the most exciting thing that I never had before. I can express and sharpen my skills in event and project management, partnership, teamwork, and public speaking",
         "name": "Fanny Ramadhanti",
-        "image":"Fanny-Ramadhanti.jpg"
+        "image": "Fanny-Ramadhanti.jpg"
       },
       {
         "message": "This internship provided me with valuable hands-on experience and a better idea about what knowledge areas and skills I should develop. I learned various types of HR functions and responsibilities, such as recruitment process, people development and designing performance appraisal. This is also my first time working with an output-based mechanism, which means we are not tied with regular office hours, but instead focusing on the project's goals and timelines. In order to adapt, I learned how to work effectively, produced a high quality output, and set priorities.",
         "name": "Ivanna Zahra",
-        "image":"Ivanna-Zahra.jpg"
+        "image": "Ivanna-Zahra.jpg"
       }
-      
     ]
   },
   "latest_job": {

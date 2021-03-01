@@ -1,0 +1,111 @@
+{
+  "service_id": "1",
+  "service_parent_id": 8,
+  "service_name": "Capacity Building in Indonesia's Frontline Territories",
+  "service_short_name": "",
+  "service_page_url": "official/project/capacity-building-in-indonesias-frontline-territories",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_join_url": "",
+  "service_subcategory_name": "Community Capacity Building",
+  "service_client_name": "PT. Idee Murni Pratama, PT. Wijaya Karya, PT. Hutama Karya, PT. Waskita Karya, PT. Brantas Abipraya, PT. Adhi Karya, PT. Basuki Rahmanta Putra",
+  "service_slug": "capacity-building-in-indonesias-frontline-territories",
+  "service_map_url": "",
+  "service_meta": {
+    "title": "",
+    "description_1": "Program pengelolaan sampah secara optimal beserta pelaporan alur sampah",
+    "description_2": "Program pengelolaan sampah secara optimal beserta pelaporan alur sampah",
+    "keywords": "program pengelolaan sampah, pengelolaan sampah, pengelolaan sampah dari sumber, pelaporan alur sampah, pengelolaan sampah secara optimal, pengelolaan sampah bertanggung jawab",
+    "site_url": "official/project/capacity-building-in-indonesias-frontline-territories"
+  },
+  "sections": {
+    "header": {
+      "section_template": "header",
+      "section_menu_title": "",
+      "section_title": "",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "thumbnail.jpg"
+    },
+    "description": {
+      "section_template": "description",
+      "section_menu_title": "Desciption",
+      "section_subtitle": "Penelitian Dan Perencanaan Dengan Mempertimbangkan Aspek Lingkungan",
+      "section_message": "Indonesia's frontline areas reflect the life of the country, including its waste management. Therefore, a responsible waste management in the frontline areas is a necessity to develop a sustainable frontline. This program aims to implement responsible waste management system in 7 Indonesian borderline areas. This program focuses on community capacity building so that waste burning and the behavior of unethical waste dumping can be reduced.<br><br>This capacity building program is expected to nurture an understanding in the local community about the importance of their involvement in a waste management system, the benefits of responsible waste management implementation and the direct impact of not implementing a proper waste management.",
+      "section_title": "Desciption",
+      "section_image": "about.jpg"
+    },
+
+    "achievement-deliverable": {
+      "section_template": "achievement-deliverable",
+      "section_menu_title": "Deliverables",
+      "section_title": "Deliverables",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_name": "Waste Management Education to local communities and stakeholders",
+          "item_icon": "loadspeaker-m.png"
+        },
+        {
+          "item_name": "Technical guideline of organic and inorganic waste handling",
+          "item_icon": "wastebin-m.png"
+        },
+        {
+          "item_name": "Formation of organization and follow-up work plan",
+          "item_icon": "flow-m.png"
+        }
+      ]
+    },
+    "similar-project": {
+      "section_template": "similar-project",
+      "section_menu_title": "Similar Project",
+      "section_title": "Similar Project",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "project_items": [
+        {
+          "service_slug": "3r-program-suralaya",
+          "service_subcategory_name": "Community Assistance In Institutions"
+        },
+        {
+          "service_slug": "tps-3r-advisory",
+          "service_subcategory_name": "Community Assistance In Municipalities"
+        },
+        {
+          "service_slug": "ecoranger-in-pulau-merah-banyuwangi",
+          "service_subcategory_name": "Community Assistance in Tourism Sites"
+        }
+      ]
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Start your <span style='font-weight:bold'>Communnity Based Implementation</span> now!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "GET PROPOSAL",
+          "cta_url": "official/service/digital-epr/join",
+          "cta_class": "",
+          "portfolio_title": "GET PORTOFOLIO",
+          "portfolio_url": 1,
+          "portfolio_class": ""
+        }
+      ]
+    }
+  }
+}

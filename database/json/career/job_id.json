@@ -1,12 +1,535 @@
 {
+  "finance-manager": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Finance Manager",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Menyusun, menyiapkan, dan menafsirkan laporan, anggaran, akun, komentar, dan laporan keuangan.",
+      "Melakukan analisis strategis dan membantu dengan perencanaan strategis.",
+      "Mengontrol pendapatan, arus kas, dan pengeluaran.",
+      "Mengembangkan dan mengelola sistem / model keuangan.",
+      "Melakukan pemodelan bisnis dan penilaian risiko.",
+      "Memberikan laporan keuangan dan menafsirkan informasi keuangan kepada staf manajerial serta merekomendasikan tindakan lanjutan.",
+      "Memberi saran tentang kegiatan investasi dan memberikan strategi yang harus diambil perusahaan",
+      "Menjaga kesehatan keuangan organisasi.",
+      "Menghasilkan laporan keuangan terkait dengan anggaran, hutang dagang, piutang dagang, pengeluaran dll",
+      "Meninjau, memantau, dan mengelola anggaran",
+      "Mengembangkan strategi yang berfungsi untuk meminimalkan risiko keuangan"
+    ],
+    "requirement": [
+      "Min S1 Keuangan dan Akuntansi, Magister / Pasca Sarjana di bidang Keuangan dan Akuntansi lebih baik",
+      "Setidaknya 3 sampai 4 tahun pengalaman memimpin tim sebelumnya di bidang Akuntansi / Keuangan.",
+      "Kompetensi yang kuat di bidang Akuntansi dan Keuangan, termasuk Laporan Keuangan, Pajak, Buku Besar, AR / AP Lanjutan, dan semacamnya.",
+      "Mampu beradaptasi di lingkungan yang fast paced.",
+      "Perhatian yang tinggi terhadap detail dan akurasi."
+    ],
+    "talentaUrl": ""
+  },
+  "river-debris": {
+    "is_new": 1,
+    "status": 1,
+    "title": "River Debris Field Officer",
+    "category": "wmo",
+    "type": 2,
+    "location": ["Jabodetabek"],
+    "description": [
+      "Melakukan on ground sampling di beberapa sungai jabodetabek",
+      "Menginput data harian",
+      "Melakukan samling komposisi",
+      "Koordinasi dengan project manager terkait perizinan, hal teknis, dan pelaporan"
+    ],
+    "requirement": [
+      "Semester akhir Jurusan Teknik Lingkungan / Teknik Kelautan",
+      "Memahami penggunaan pivot dalam Ms. Excel & membuat Ms. Powerpoint",
+      "Memiliki motor atau mobil pribadi dikarenakan pekerjaannya yang mengharuskan mobile ke beberapa lokasi",
+      "Memiliki laptop pribadi",
+      "Mampu bekerja secara tim",
+      "Jujur dan bertanggung jawab atas data hasil sampling"
+    ],
+    "talentaUrl": ""
+  },
+  "accounting-manager": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Accounting Manager",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Mengawasi, mengarahkan, dan meninjau operasi harian tim keuangan",
+      "Meninjau entri jurnal sehari-hari dan memastikan entri jurnal yang diposting lengkap dan akurat untuk Perusahaan Waste4Change.",
+      "Bertanggung jawab untuk akuntansi, pembukuan dan administrasi setiap hari dan penutupan keuangan tepat waktu setiap bulan.",
+      "Memantau dan menganalisis data akuntansi dan menghasilkan laporan atau laporan keuangan untuk Waste4Change, pemegang saham, pajak, badan pengatur, dan kelompok keuangan lainnya yang berkaitan dengan keuangan perusahaan",
+      "Menetapkan dan menegakkan metode, kebijakan, dan prinsip akuntansi yang tepat",
+      "Mengkoordinasikan dan menyelesaikan audit tahunan",
+      "Memperbaiki sistem dan prosedur dan memulai tindakan korektif",
+      "Mengawasi laporan anggaran, persiapan anggaran, dan analisis anggaran",
+      "Mendokumentasikan serta menafsirkan informasi keuangan yang mudah dipahami para manajer dan eksekutif",
+      "Memberikan saran tentang prosedur dan manajemen keuangan serta mengembangkan kebijakan",
+      "Melakukan monitoring atas penuaan hutang dan likuiditas.",
+      "Memastikan kelengkapan akrual dan provisi pada penutupan bulanan",
+      "Memenuhi tujuan akuntansi keuangan"
+    ],
+    "requirement": [
+      "Min S1 Keuangan dan Akuntansi, Magister / Pasca Sarjana di bidang Keuangan dan Akuntansi lebih baik",
+      "Setidaknya 3 sampai 4 tahun pengalaman memimpin tim sebelumnya di bidang Akuntansi / Keuangan.",
+      "Kompetensi yang kuat di bidang Akuntansi dan Keuangan, termasuk Laporan Keuangan, Pajak, Buku Besar, AR / AP Lanjutan, dan semacamnya.",
+      "Mampu beradaptasi di lingkungan yang fast paced.",
+      "Perhatian yang tinggi terhadap detail dan akurasi."
+    ],
+    "talentaUrl": ""
+  },
+  "hc-admin": {
+    "is_new": 1,
+    "status": 1,
+    "title": "HC Admin",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Melakukan pengelolaan, memperbarui, dan memaintain database karyawan",
+      "Mengakomodir dokumen-dokumen yang berkaitan dengan SDM dan melakukan pengarsipan data karyawan.",
+      "Melakukan kegiatan dengan update database dan prosedur administrasi kepegawaian.",
+      "Terlibat dalam penyusunan dan pemberian SP, dan Pemutusan Hubungan Kerja karyawan",
+      "Membantu karyawan selama periode off-boarding (exit interview)",
+      "Menjalankan komunikasi internal dan mensosialisasikan setiap kebijakan perusahaan, SOP, dll.",
+      "Melakukan perhitungan payroll"
+    ],
+    "requirement": [
+      "Minimal Pendidikan S1 Manajemen Sumber Daya Manusia/ Hukum",
+      "Berpengalaman dalam bidang yang sama minimal 1 tahun",
+      "Memahami UU Ketenagakerjaan 13 dan peraturan terbarunya",
+      "Memiliki pengetahuan tentang pengelolaan Sumber Daya Manusia atau operasional oganisasi atau struktur sebuah kebijakan.",
+      "Memiliki Keahlian manajemen waktu yang baik dan kemampuan untuk multitasking",
+      "Memiliki kemampuan berkomunikasi dengan baik",
+      "Tekun dan teliti",
+      "Mampu bekerja secara tim dan individu",
+      "Memiliki Laptop Pribadi"
+    ],
+    "talentaUrl": ""
+  },
+  "people-operation": {
+    "is_new": 1,
+    "status": 1,
+    "title": "People Operation",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Membantu melakukan proses seleksi dan rekrutmen karyawan",
+      "Menangani administrasi yang berhubungan dengan karyawan",
+      "Melakukan pengarsipan dokumen perusahaan",
+      "Membantu pendaftaran asuransi karyawan",
+      "Terlibat dalam pekerjaan Human Capital Departement"
+    ],
+    "requirement": [
+      "Minimal pendidikan SMA Sederajat Pengalaman minimal 2 tahun / S1 Freshgraduate",
+      "Mahir menggunakan komputer dan MS Office",
+      "Memiliki koneksi dan jaringan yang luas di bidang lingkungan dan media",
+      "Memiliki pengetahuan mengenai prosedur dan proses rekrutmen",
+      "Memiliki Keahlian manajemen waktu yang baik dan kemampuan untuk multitasking",
+      "Detail Oriented dan menyukai kegiatan administrasi",
+      "Keahlian komunikasi tertulis dan verbal yang baik",
+      "Memiliki kemampuan bahasa inggris",
+      "Memiliki Laptop Pribadi"
+    ],
+    "talentaUrl": ""
+  },
+  "partnership-digital-marketing-manager": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Partnership & Digital Marketing Manager",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Memetakan stakeholder-stakeholder dalam isu manajemen sampah (media, pemerintah, asosiasi, dll) untuk mengidentifikasi potensi kerja sama yang bisa dilakukan",
+      "Membangun dan memelihara relasi yang baik dengan partner baru maupun lama",
+      "Percaya diri dan mumpuni dalam menyampaikan presentasi sebagai pembicara dan juga business pitch untuk keperluan potensi kerja sama",
+      "Mendukung tim marketing dalam mempersiapkan acara dan mampu memberikan ide atau rencana baru untuk persiapan acara",
+      "Bertanggung jawab terhadap seluruh kanal Digital perusahaan (baik yang berbayar maupun yang organik)",
+      "Mengkomunikasikan tujuan yang ingin dicapai dengan tim kreatif, konten, marketing, dan operasional"
+    ],
+    "requirement": [
+      "Minimal Lulusan S1 dari jurusan Komunikasi atau Marketing",
+      "Memiliki pengalaman minimal 2-3 tahun sebagai partnership manajer dan/atau digital marketing",
+      "Memiliki koneksi dan jaringan yang luas di bidang lingkungan dan media",
+      "Memiliki kemampuan analisa yang baik, terutama dalam konteks Digital Marketing",
+      "Kandidat yang berpengalaman menangani media dan relasi publik akan memiliki nilai tambah"
+    ],
+    "talentaUrl": ""
+  },
+  "videographer-photographer": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Videographer / Photographer",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Merekam audio, video, dan foto untuk kebutuhan asset.",
+      "Mengedit video dan audio dan foto untuk kebutuhan konten.",
+      "Membantu manajemen asset foto, audio, dan video."
+    ],
+    "requirement": [
+      "Pendidikan min. D3, diutamakan jurusan Desain Komunikasi Visual atau Seni",
+      "Menyertakan portfolio.",
+      "Memiliki kemampuan merekam dan mengedit video dengan software Premiere pro/Final cut, Adobe Audition, dan foto mengedit pencahayaan dengan Ligthroom/Photoshop.",
+      "Memiliki laptop untuk bekerja.",
+      "Mampu bekerja dalam tim dan sesuai deadline.",
+      "Bersedia untuk bekerja berpindah tempat dan waktu yang fleksibel.",
+      "Memiliki pengalaman Production House/Filming merupakan nilai tambah",
+      "Mampu menggunakan Adobe Photoshop, Adobe Illustrator, dan Adobe InDesign untuk graphic design merupakan nilai tambah.",
+      "Memiliki minimal SIM C atau sertifikat pilot drone merupakan nilai tambah."
+    ],
+    "talentaUrl": ""
+  },
+  "customer-services": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Customer Services",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Menanggapi pertanyaan dari setiap pelanggan",
+      "Menyelesaikan masalah pelanggan terkait pelayanan yang diberikan",
+      "Menyimpan catatan interaksi pelanggan, transaksi, komentar dan keluhan",
+      "Memberikan umpan balik tentang efisiensi proses layanan pelanggan",
+      "Pastikan kepuasan pelanggan dan berikan dukungan pelanggan profesional"
+    ],
+    "requirement": [
+      "Pendidikan Min. SMA/SMK (diutamakan jurusan Sosial/Pariwisata/Perhotelan)",
+      "Diutamakan memiliki pengalaman pada bidang yang sama",
+      "Memiliki kemampuan komunikasi dan interpersonal yang baik",
+      "Diutamakan dapat berbahasa inggris (minimal tulisan)",
+      "Jujur, ulet, bertanggung jawab",
+      "Mampu mengoperasikan Windows Microsoft Office",
+      "Mampu bekerja diawah tekanan",
+      "Memiliki Laptop Pribadi"
+    ],
+    "talentaUrl": ""
+  },
+  "legal-officer": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Legal Officer",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Melakukan semua pekerjaan berkaitan dengan legal",
+      "Melalukan review kontrak/perjanjian",
+      "Pengurusan perizinan dan dokumen lainnya",
+      "Legal opinion",
+      "Mengurus Badan Hukum perusahaan",
+      "Membuat laporan operasional dan keuangan cabang",
+      "Mengawal dan mengaupdate peraturan terbaru"
+    ],
+    "requirement": [
+      "Min Pendidikan S-1 Hukum",
+      "Berpengalaman min 2 tahun sebagai inhouse legal team",
+      "Mahir Berbahasa Inggris"
+    ],
+    "talentaUrl": ""
+  },
+  "site-manager-bali": {
+    "is_new": 0,
+    "status": 0,
+    "title": "Site Manager Bali",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Bali"],
+    "description": [
+      "Membuat perencanaan kebutuhan sumber daya atas operasional cabang",
+      "Bertanggung jawab terhadap seluruh kegiatan operasional yang ada",
+      "Bertanggung jawab atas ketercapaian target penjualan perusahaan",
+      "Bertanggung jawab atas urusan administrasi perusahaan",
+      "Memastikan kesesuaian penggunaan anggaran operasional cabang",
+      "Membuat laporan operasional dan keuangan cabang",
+      "Menjaga nama baik Waste4Change di cabang"
+    ],
+    "requirement": [
+      "Minimal S1 segala jurusan",
+      "Laki-laki, maksimal berusia 35 tahun",
+      "Memiliki pengalaman memimpin tim minimal 3 tahun",
+      "Terbiasa menggunakan MS. Office",
+      "Memiliki jiwa kepemimpinan, jujur, ulet, dan dapat berkerja di bawah tekanan",
+      "Dapat berbahasa inggris aktif",
+      "Penempatan di Bali",
+      "Bersedia training di Bekasi",
+      "Memiliki laptop sendiri",
+      "Memiliki sim A yang aktif"
+    ],
+    "talentaUrl": ""
+  },
+  "project-development-officer": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Project Development Officer",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Mendata sales leads yang masuk",
+      "Melakukan pitching ke client baru",
+      "Merancang project dalam bentuk proposal (project and budget design)",
+      "Mengawasi marketing strategy",
+      "Memelihara komunikasi dengan client dan troubleshoot isu administrasi selama project berjalan"
+    ],
+    "requirement": [
+      "Minimal S1 dengan pengalaman bekerja di bidang marketing atau project management",
+      "Mahir dalam berkomunikasi dengan Bahasa Inggirs",
+      "Mahir membuat presentasi dan proposal dengan menggunakan Google Slides atau Microsoft PowerPoint",
+      "Mampu menggunakan Excel dan paham fungsi pivot di Excel",
+      "Punya pengalaman community development dan persampahan",
+      "Mobilisasi tinggi",
+      "Mengerti perancangan dan implementasi marketing strategy"
+    ],
+    "talentaUrl": ""
+  },
+  "admin-pwm": {
+    "is_new": 0,
+    "status": 0,
+    "title": "Admin PWM",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": ["Bertanggung jawab untuk melakukan administrasi PWM"],
+    "requirement": [
+      "Minimal SMK lulusan Administrasi dan Akuntansi",
+      "Pria atau wanita maksimal berumur 25 tahun",
+      "Domisili di Bekasi atau sekitarnya (untuk penempatan Bekasi)",
+      "Berprilaku jujur, teliti dan rapih",
+      "Mampu bekerja sama dalam tim",
+      "Memiliki laptop pribadi",
+      "Memahami word, excel, dan ppt dasar"
+    ],
+    "talentaUrl": ""
+  },
+  "secretary-to-managing-director": {
+    "is_new": 0,
+    "status": 0,
+    "title": "Secretary to Managing Director",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Mengurus jadwal agenda rapat dan janji pertemuan serta dokumen - dokumen yang diperlukan",
+      "Melakukan notulensi dalam kegiatan rapat direktur",
+      "Menunjang kegiatan administratif seperti pengelolaan dan pengarsipan surat, data serta dokumen",
+      "Mengikuti kegiatan direktur",
+      "Menjadi perantara pihak - pihak yang ingin berhubungan dengan direktur",
+      "Mengamankan data dan informasi dengan pengelolaan database"
+    ],
+    "requirement": [
+      "Diutamakan lulusan SMK administrasi perkantoran atau kesekretariatan",
+      "Memiliki pengalaman kerja bidang administrasi  1-2 tahun",
+      "Mampu mengoperasikan Ms. Office atau program lain yang menunjang pekerjaan",
+      "Mampu bekerja dibawah tekanan dan cekatan",
+      "Memiliki laptop pribadi"
+    ],
+    "talentaUrl": ""
+  },
+  "extended-producer-responsibility-officer": {
+    "is_new": 0,
+    "status": 0,
+    "title": "Extended Producer Responsibility Officer",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Tangerang"],
+    "description": [
+      "Mencari field surveyor",
+      "Mengkoordinir field surveyor",
+      "Mengakuisi bank sampah untuk bergabung dalam program InspirACTion",
+      "Membentuk skema pengangkutan UBC (waktu penjemputan, armada, dll)",
+      "Melakukan pendataan timbulan UBC yang terkumpul",
+      "Monitoring hadiah dan kompetisi berjalan",
+      "Ikut serta dan mengawal produksi fasilitas publik berbahan daur ulang UBC",
+      "Mengkoordinir acara serah terima fasilitas bantuan"
+    ],
+    "requirement": [
+      "S1 dari Teknik Lingkungan/Komunikasi/Antropologi/Sosiologi/Ekonomi",
+      "Memiliki pengalaman memimpin tim dan manajemen tim",
+      "Memahami Project Management",
+      "Memahami konsep EPR (Extended Producer Responsibility)",
+      "Memahami konsep bank sampah dan jual beli material",
+      "Memiliki mobilitas tinggi"
+    ],
+    "talentaUrl": ""
+  },
+  "stakeholder-engagement-officer": {
+    "is_new": 0,
+    "status": 0,
+    "title": "Stakeholder Engagement Officer",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Tangerang"],
+    "description": [
+      "Membangun hubungan dengan DLH Kota Tangerang, Kecamatan, dan Kelurahan untuk kolaborasi program",
+      "Menyusun MoU kepada pihak-pihak yang berkaitan",
+      "Memetakan jaringan bank sampah di Kota Tangerang",
+      "Memetakan jaringan pengumpul UBC (Used Beverage Carton) yang ada",
+      "Membangun jaringan dan relasi terhadap stakeholder yang terkait dalam program, baik Pemerintah Kota, DLH, asosiasi bank sampah, pelapak, dll",
+      "Mengakuisisi sektor komersil (warung minuman dan kafe) penghasil UBC untuk berpartisipasi dalam program"
+    ],
+    "requirement": [
+      "S1 dari Teknik Lingkungan/Komunikasi/Antropologi/Sosiologi/Ekonomi",
+      "Paham mengenai Project Management",
+      "Memiliki pengalaman dalam Government Relations",
+      "Memahami isu persampahan, terutama mengenai EPR (Extended Producer Responsibility)",
+      "Memahami Life Cycle Material"
+    ],
+    "talentaUrl": ""
+  },
+  "project-officer-esr": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Project Officer (ESR)",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Bertanggung jawab terhadap operasional yang ada dalam project",
+      "Memastikan dan bertanggung jawab terhadap keuangan",
+      "Mampu mengelola dan mengontrol seluruh aspek project",
+      "Membuat laporan project"
+    ],
+    "requirement": [
+      "Laki-laki/perempuan, maksimal berusia 27 tahun",
+      "Diutamakan memiliki pengalaman berkerja minimal 1 tahun di Project Management",
+      "Memiliki jiwa kepemimpinan, jujur, ulet, dan dapat berkerja di bawah tekanan",
+      "Critical Analytical Thinking",
+      "Fasih dalam berbicara dan membuat laporan dalam bahasa inggris (harap mencamtukan bukti seperti sertifikat TOEFL/IELTS)",
+      "Memiliki laptop pribadi"
+    ],
+    "talentaUrl": ""
+  },
+  "site-manager-bandung": {
+    "is_new": 0,
+    "status": 0,
+    "title": "Site Manager Bandung",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Bandung"],
+    "description": [
+      "Membuat perencanaan kebutuhan sumber daya atas operasional cabang",
+      "Bertanggung jawab terhadap seluruh kegiatan operasional yang ada",
+      "Bertanggung jawab atas ketercapaian target penjualan perusahaan",
+      "Bertanggung jawab atas urusan administrasi perusahaan",
+      "Memastikan kesesuaian penggunaan anggaran operasional cabang",
+      "Membuat laporan operasional dan keuangan cabang",
+      "Menjaga nama baik Waste4Change di cabang"
+    ],
+    "requirement": [
+      "Laki-laki, maksimal berusia 35 tahun",
+      "Memiliki pengalaman memimpin tim minimal 3 tahun",
+      "Terbiasa menggunakan MS. Office",
+      "Memiliki jiwa kepemimpinan, jujur, ulet, dan dapat berkerja di bawah tekanan",
+      "Dapat berbahasa inggris aktif",
+      "Penempatan di Bandung",
+      "Bersedia training di Bekasi",
+      "Memiliki laptop sendiri",
+      "Memiliki sim A yang aktif"
+    ],
+    "talentaUrl": ""
+  },
+  "site-manager-sidoarjo": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Site Manager Sidoarjo",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Sidoarjo"],
+    "description": [
+      "Membuat perencanaan kebutuhan sumber daya atas operasional cabang",
+      "Bertanggung jawab terhadap seluruh kegiatan operasional yang ada",
+      "Bertanggung jawab atas ketercapaian target penjualan perusahaan",
+      "Bertanggung jawab atas urusan administrasi perusahaan",
+      "Memastikan kesesuaian penggunaan anggaran operasional cabang",
+      "Membuat laporan operasional dan keuangan cabang",
+      "Menjaga nama baik Waste4Change di cabang"
+    ],
+    "requirement": [
+      "Laki-laki, maksimal berusia 35 tahun",
+      "Memiliki pengalaman memimpin tim minimal 3 tahun",
+      "Terbiasa menggunakan MS. Office",
+      "Memiliki jiwa kepemimpinan, jujur, ulet, dan dapat berkerja di bawah tekanan",
+      "Dapat berbahasa inggris aktif",
+      "Penempatan di Sidoarjo",
+      "Bersedia training di Bekasi",
+      "Memiliki laptop sendiri",
+      "Memiliki sim A yang aktif"
+    ],
+    "talentaUrl": ""
+  },
+  "koordinator-medan": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Koordinator Medan",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Medan"],
+    "description": [
+      "Membuat perencanaan kebutuhan sumber daya atas operasional cabang",
+      "Bertanggung jawab terhadap seluruh kegiatan operasional yang ada",
+      "Bertanggung jawab atas ketercapaian target penjualan perusahaan",
+      "Bertanggung jawab atas urusan administrasi perusahaan",
+      "Memastikan kesesuaian penggunaan anggaran operasional cabang",
+      "Membuat laporan operasional dan keuangan cabang",
+      "Menjaga nama baik Waste4Change di cabang"
+    ],
+    "requirement": [
+      "Laki-laki, maksimal berusia 35 tahun",
+      "Pendidikan minimal lulusan S1 segala jurusan",
+      "Memiliki pengalaman memimpin tim minimal 1 tahun",
+      "Mampu mengoperasikan komputer",
+      "Memiliki jiwa kepemimpinan, jujur, ulet, dan dapat berkerja di bawah tekanan",
+      "Dapat berbahasa inggris aktif, mendapatkan nilai plus",
+      "Penempatan di Medan",
+      "Bersedia training di Bekasi"
+    ],
+    "talentaUrl": ""
+  },
+  "koordinator-semarang": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Koordinator Semarang",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Semarang"],
+    "description": [
+      "Membuat perencanaan kebutuhan sumber daya atas operasional cabang",
+      "Bertanggung jawab terhadap seluruh kegiatan operasional yang ada",
+      "Bertanggung jawab atas ketercapaian target penjualan perusahaan",
+      "Bertanggung jawab atas urusan administrasi perusahaan",
+      "Memastikan kesesuaian penggunaan anggaran operasional cabang",
+      "Membuat laporan operasional dan keuangan cabang",
+      "Menjaga nama baik Waste4Change di cabang"
+    ],
+    "requirement": [
+      "Laki-laki, maksimal berusia 35 tahun",
+      "Memiliki pengalaman memimpin tim minimal 3 tahun",
+      "Terbiasa menggunakan MS. Office",
+      "Memiliki jiwa kepemimpinan, jujur, ulet, dan dapat berkerja di bawah tekanan",
+      "Dapat berbahasa inggris aktif, menjadi nilai plus",
+      "Penempatan di Semarang",
+      "Bersedia training di Bekasi",
+      "Memiliki laptop sendiri",
+      "Memiliki sim A yang aktif"
+    ],
+    "talentaUrl": ""
+  },
   "ux-researcher": {
+    "is_new": 0,
     "status": 0,
     "title": "UX Researcher",
     "category": "tech",
     "type": 1,
-    "location": [
-      "Semarang"
-    ],
+    "location": ["Semarang"],
     "description": [
       "Mengelola dan melakukan user research dan pengembangan konsep",
       "Riset dan menganalisa user persona & karakteristiknya",
@@ -22,16 +545,15 @@
       "Memiliki pengalaman dalam membuat riset user ",
       "Memiliki kemampuan desain UI website dan aplikasi menggunakan prototype tools (Figma, Adobe XD, Sketch, Marvel, dll)"
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/NC9xUENJZTNyV29lUllGczEzdlJWUT09"
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/NC9xUENJZTNyV29lUllGczEzdlJWUT09"
   },
   "product-ui-ux-designer": {
-    "status": 1,
+    "is_new": 0,
+    "status": 0,
     "title": "Product UI/UX Designer",
     "category": "tech",
     "type": 1,
-    "location": [
-      "Semarang"
-    ],
+    "location": ["Semarang"],
     "description": [
       "Membuat desain UI & Flow produk ",
       "Berkolaborasi dengan tim lainnya untuk merancang dan mengimplementasikan solusi untuk software direction, visual dan experience ",
@@ -44,16 +566,15 @@
       "Memiliki pemahaman dalam proses desain produk (Design Thinking, User Story, Product Requirement, dll)",
       "Memiliki pengetahuan dalam desain UI UX, desain visual yang baik dengan sensitivitas terhadap interaksi user-system"
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/bHVxajdxVUZ2T0RJeWZzZVdaeE1wZz09"
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/bHVxajdxVUZ2T0RJeWZzZVdaeE1wZz09"
   },
   "fullstack-wordpress-web-engineer": {
-    "status": 1,
+    "is_new": 0,
+    "status": 0,
     "title": "Fullstack & Wordpress Web Engineer",
     "category": "tech",
     "type": 1,
-    "location": [
-      "Semarang"
-    ],
+    "location": ["Semarang"],
     "description": [
       "Merancang desain sistem dan rencana pengembangan produk",
       "Membangun produk yang baik dengan scratch dan wordpress ",
@@ -68,16 +589,15 @@
       "Memiliki kemampuan kepemimpinan dan etos kerja yang baik ",
       "Mengetahui pengembangan terbaru dalam industri terkait dan memiliki semangat belajar yang tinggi"
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/eG9tWWdVc0ZNUzA2MnM1RklDMFgzdz09"
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/eG9tWWdVc0ZNUzA2MnM1RklDMFgzdz09"
   },
   "hse-officer": {
+    "is_new": 0,
     "status": 1,
     "title": "HSE Officer",
     "category": "wmo",
     "type": 1,
-    "location": [
-      "Bekasi"
-    ],
+    "location": ["Bekasi"],
     "description": [
       "Bertanggung jawab menyusun & menganalisa perbaikan/peningkatan standar SMK3",
       "Bertanggung Jawab memberikan edukasi internal (training) kepada karyawan yang berkaitan dengan SMK3",
@@ -92,19 +612,15 @@
       "Diutamakan berdomisili Bekasi/Jakarta",
       "Memiliki laptop pribadi"
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/NWpGRklydUdMZjgrNFRPWjg1dHFHQT09"
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/NWpGRklydUdMZjgrNFRPWjg1dHFHQT09"
   },
   "surveyor": {
+    "is_new": 0,
     "status": 1,
     "title": "Surveyor",
     "category": "wmo",
     "type": 2,
-    "location": [
-      "Jawa Barat",
-      "Surabaya",
-      "Mojokerto",
-      "Babat-Lamongan"
-    ],
+    "location": ["Jawa Barat", "Surabaya", "Mojokerto", "Babat-Lamongan"],
     "description": [
       "Melakukan sampling lapangan 3 hari dalam seminggu",
       "Menginput data harian",
@@ -118,17 +634,16 @@
       "Memiliki laptop pribadi",
       "Jujur dan bertanggung jawab atas data hasil sampling"
     ],
-    "talentaUrl":"",
-    "formUrl":"https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
+    "talentaUrl": "",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
   },
   "po-tetrapak": {
+    "is_new": 0,
     "status": 0,
     "title": "PO Tetrapak",
     "category": "wmo",
     "type": 1,
-    "location": [
-      "Bekasi"
-    ],
+    "location": ["Bekasi"],
     "description": [
       "Bertanggung jawab atas keberlangsungan Project Tetrapak terkait Collection",
       "Melakukan koordinasi dengan Mitra Eksisting",
@@ -144,16 +659,15 @@
       "Diutamakan memiliki wawasan mengenai daur ulang sampah",
       "Memiliki kemampuan negosiasi dan komunikasi yang baik"
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/Y2lLZFVhMWcxR0tvTEx4dk1RZ3gwdz09"
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/Y2lLZFVhMWcxR0tvTEx4dk1RZ3gwdz09"
   },
   "collect-supervisor": {
-    "status": 1,
+    "is_new": 0,
+    "status": 0,
     "title": "Collect Supervisor",
     "category": "wmo",
     "type": 1,
-    "location": [
-      "Bekasi"
-    ],
+    "location": ["Bekasi"],
     "description": [
       "Merencanakan atau melaksanakan manajemen sistem arus jasa pengangkutan",
       "Meningkatkan efisiensi dan efektivitas terkait arus jasa pengangkutan",
@@ -166,16 +680,15 @@
       "Memiliki kemampuan dalam memimpin tim",
       "Memiliki kemampuan komunikasi yang baik"
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/a2JNdDVackF4SFJFb2RjdWpSdm5XZz09"
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/a2JNdDVackF4SFJFb2RjdWpSdm5XZz09"
   },
   "recruiter": {
+    "is_new": 0,
     "status": 0,
     "title": "Recruiter",
     "category": "cf",
     "type": 1,
-    "location": [
-      "Bekasi"
-    ],
+    "location": ["Bekasi"],
     "description": [
       "Bertanggung jawab mengelola dan mengembangkan sumber daya manusia termasuk perencanaan, pelaksanaan dan pengawasan sumber daya manusia dan pengembangan kualitas sumber daya manusia.",
       "Membuat sistem HR yang efektif dan efisien seperti training and development system dll.",
@@ -196,16 +709,15 @@
       "Bersedia ditempatkan di Kantor Waste4Change Bekasi",
       "Memilik Laptop pribadi"
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/WVIwN3ZVRnYrZ0R4QmllL05HOFBMQT09"
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/WVIwN3ZVRnYrZ0R4QmllL05HOFBMQT09"
   },
   "innovation-officer": {
+    "is_new": 0,
     "status": 1,
     "title": "Innovation Officer",
     "category": "wmo",
     "type": 1,
-    "location": [
-      "Bekasi"
-    ],
+    "location": ["Bekasi"],
     "description": [
       "Melakukan koordinasi dengan pihak luar yang hendak melakukan kerjasama dengan perusahaan berkaitan dengan pengadaan barang dan jasa untuk aktivitas riset dan pengembangan perusahaan",
       "Melakukan analisa dan mengembangkan lini jasa perusahaan ",
@@ -218,16 +730,15 @@
       "Memiliki kemampuan analisis dan pemecahan masalah yang kuat",
       "Memiliki laptop pribadi dan mengoperasikannya dengan baik"
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/UlMzU0xvdzhEZ0JrNTRVdjVTbUNEQT09"
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/UlMzU0xvdzhEZ0JrNTRVdjVTbUNEQT09"
   },
   "office-administration-and-procurement-officer": {
+    "is_new": 0,
     "status": 0,
     "title": "Office Administration and Procurement Officer",
     "category": "cf",
     "type": 1,
-    "location": [
-      "Bekasi"
-    ],
+    "location": ["Bekasi"],
     "description": [
       "Membuat prosedur dan sistem pengadaan ",
       "Menjalankan prosedur pembelian barang ",
@@ -247,16 +758,15 @@
       "Berjiwa kepemimpinan dan dapat bekerja dalam team",
       "Memiliki laptop pribadi"
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/WlJkOEg4MmRxWXZNdmQ5ZjZSWUNRQT09"
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/WlJkOEg4MmRxWXZNdmQ5ZjZSWUNRQT09"
   },
   "customer-service": {
+    "is_new": 0,
     "status": 0,
     "title": "Customer Service",
     "category": "wmo",
     "type": 1,
-    "location": [
-      "Bekasi"
-    ],
+    "location": ["Bekasi"],
     "description": [
       "Menanggapi pertanyaan dari setiap pelanggan",
       "Selesaikan masalah pelanggan",
@@ -274,9 +784,10 @@
       "Mampu bekerja diawah tekanan",
       "Memiliki Laptop Pribadi"
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/NXZrc3Qxem1Fa3d3WmlIVUpwcGw1dz09"
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/NXZrc3Qxem1Fa3d3WmlIVUpwcGw1dz09"
   },
   "enumerator": {
+    "is_new": 0,
     "status": 1,
     "title": "Enumerator",
     "category": "wmce",
@@ -297,17 +808,16 @@
       "Bersedia ditempatkan di Kedungwaringin, Bekasi ",
       "Bersedia bekerja pada periode 3 Agustus - 7 September 2020"
     ],
-    "talentaUrl":"",
-    "formUrl":"https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
+    "talentaUrl": "",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
   },
   "salesmanager": {
-    "status": 1,
+    "is_new": 0,
+    "status": 0,
     "title": "Sales Manager",
     "category": "wmo",
     "type": 1,
-    "location": [
-      "Bekasi"
-    ],
+    "location": ["Bekasi"],
     "description": [
       "Mengembangkan dan mengelola peluang bisnis baru dengan pelanggan yang ada dan calon pelanggan.",
       " Memimpin fungsi penjualan Departemen Operational Services.",
@@ -322,18 +832,16 @@
       "Memiliki pengalaman kerja selama sebagai Sales Manager dengan keberhasilan yang ditunjukkan sebagai pemain yang kuat, lebih disukai dalam bidang waste management services ",
       "Memiliki kemampuan analisis, negosiasi, dan Manajerial yang baik"
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/TFZ6ZmkvNGRpdFMvNUxSK1BBVC92dz09",
-    "formUrl":"https://docs.google.com/forms/d/e/1FAIpQLSfsKEjFEBp2PwxabPRitcIGNTB-ONspRvJCpbgxCwWZWZpBRA/viewform?usp=sf_link"
-
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/TFZ6ZmkvNGRpdFMvNUxSK1BBVC92dz09",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfsKEjFEBp2PwxabPRitcIGNTB-ONspRvJCpbgxCwWZWZpBRA/viewform?usp=sf_link"
   },
   "po-product-manager-digital": {
+    "is_new": 0,
     "status": 1,
     "title": "PO Product Manager Digital",
     "category": "cf",
     "type": 1,
-    "location": [
-      "Bekasi"
-    ],
+    "location": ["Bekasi"],
     "description": [
       "Melakukan riset terkait user persona",
       "Berdiskusi bersama product owner lintas produk, tim untuk menentukan arah pengembangan produk layanan digital",
@@ -353,16 +861,15 @@
       "Memiliki ketertarikan untuk mengembangkan produk digital untuk solusi persampahan",
       "Memiliki laptop pribadi"
     ],
-    "talentaUrl":""
+    "talentaUrl": ""
   },
-   "digital-marketing-executive": {
+  "digital-marketing-executive": {
+    "is_new": 0,
     "status": 0,
     "title": "Digital Marketing Executive",
     "category": "cf",
     "type": 1,
-    "location": [
-      "Bekasi"
-    ],
+    "location": ["Bekasi"],
     "description": [
       "Melakukan riset trend, kompetitor, dan kondisi pasar",
       "Merencanakan strategi digital marketing dan campaign bulanan berdasar target bisnis (leads)",
@@ -383,9 +890,10 @@
       "Memiliki ketertarikan kuat untuk memberi solusi pengelolaan sampah yang lebih baik",
       "Memiliki laptop pribadi"
     ],
-    "talentaUrl":""
+    "talentaUrl": ""
   },
   "surveyor-jawa-barat": {
+    "is_new": 0,
     "status": 0,
     "title": "Surveyor Jawa Barat",
     "category": "wmo",
@@ -418,16 +926,15 @@
       "Diutamakan berasal dari Kabupaten / Kota pendampingan",
       "Memiliki laptop pribadi"
     ],
-    "talentaUrl":""
+    "talentaUrl": ""
   },
-   "organizational-development-specialist": {
-    "status": 1,
+  "organizational-development-specialist": {
+    "is_new": 0,
+    "status": 0,
     "title": "Organizational Development Specialist",
     "category": "cf",
     "type": 1,
-    "location": [
-      "Bekasi"
-    ],
+    "location": ["Bekasi"],
     "description": [
       "Melakukan review struktur organisasi dan rekomendasi penyesuaian dengan kondisi dan kebutuhan perusahaan",
       "Melakukan evaluasi dan rekomendasi bisnis proses saat ini",
@@ -446,16 +953,15 @@
       "Mampu dalam mendemonstrasikan pengetahuan terkini tentang teori dan praktik yang baik dalam OD",
       "Bersedia ditempatkan di Bekasi"
     ],
-    "talentaUrl":""
+    "talentaUrl": ""
   },
   "po-project-based": {
-    "status": 1,
+    "is_new": 0,
+    "status": 0,
     "title": "PO Project Based",
     "category": "wmo",
     "type": 2,
-    "location": [
-      "Bekasi"
-    ],
+    "location": ["Bekasi"],
     "description": [
       "Melakukan perencanaan project riset atau program sesuai dengan yang arahan perusahaan",
       "Melakukan pengembangan project riset atau program yang berkaitan dengan waste management",
@@ -473,41 +979,15 @@
       "Fasih dalam Bahasa inggris",
       "Bersedia ditempatkan dimana saja"
     ],
-    "talentaUrl":""
+    "talentaUrl": ""
   },
-  "secretary-to-managing-director": {
+  "surveyor-food-loss": {
+    "is_new": 0,
     "status": 0,
-    "title": "Secretary to Managing Director",
-    "category": "cf",
-    "type": 1,
-    "location": [
-      "Bekasi"
-    ],
-    "description": [
-      "Mengurus jadwal agenda rapat dan janji pertemuan serta dokumen - dokumen yang diperlukan",
-      "Melakukan notulensi dalam kegiatan rapat direktur",
-      "Menunjang kegiatan administratif seperti pengelolaan dan pengarsipan surat, data serta dokumen",
-      "Mengikuti kegiatan direktur",
-      " Menjadi perantara pihak - pihak yang ingin berhubungan dengan direktur",
-      "Mengamankan data dan informasi dengan pengelolaan database"
-    ],
-    "requirement": [
-      "Diutamakan lulusan SMK administrasi perkantoran atau kesekretariatan",
-      "Memiliki pengalaman kerja bidang administrasi  1-2 tahun",
-      "Mampu mengoperasikan Ms. Office atau program lain yang menunjang pekerjaan",
-      "Mampu bekerja dibawah tekanan dan cekatan",
-      "Memiliki laptop pribadi"
-    ],
-    "talentaUrl":""
-  },
-   "surveyor-food-loss": {
-    "status": 1,
     "title": "Surveyor Food Loss",
     "category": "wmo",
     "type": 1,
-    "location": [
-      "Remote"
-    ],
+    "location": ["Remote"],
     "description": [
       "Mengumpulkan informasi mengenai food loss dari berbagai pemangku kepentingan dalam rantai pasok makanan melalui proses wawancara dan observasi lapangan",
       "Mengolah data yang dikumpulkan dan merangkumnya dalam penyajian yang siap digunakan untuk analisis",
@@ -525,18 +1005,15 @@
       "Familiar dengan konsep remote working",
       "Durasi pekerjaan maksimal 2 bulan"
     ],
-    "talentaUrl":""
+    "talentaUrl": ""
   },
   "surveyor-food-waste": {
-    "status": 1,
+    "is_new": 0,
+    "status": 0,
     "title": "Surveyor Food Waste",
     "category": "wmo",
     "type": 4,
-    "location": [
-      "Bandung",
-      "Pekanbaru",
-      "Bali"
-    ],
+    "location": ["Bandung", "Pekanbaru", "Bali"],
     "description": [
       "Melakukan sampling sampah di lokasi yang ditentukan",
       "Mewawancara pemangku kepentingan di lokasi sampling terkait timbulan food waste yang dihasilkan lokasi tersebut",
@@ -552,16 +1029,15 @@
       "Domisili di Bandung/Pekanbaru/Bali",
       "Durasi pekerjaan 8-10 hari"
     ],
-    "talentaUrl":""
+    "talentaUrl": ""
   },
   "foreman-pemilahan": {
-    "status": 1,
+    "is_new": 0,
+    "status": 0,
     "title": "Foreman Pemilahan",
     "category": "wmo",
     "type": 1,
-    "location": [
-      "Bekasi"
-    ],
+    "location": ["Bekasi"],
     "description": [
       "Mengawasi operator pilah berkerja",
       "Menganalisa data pilah",
@@ -576,16 +1052,15 @@
       "Memiliki sertifikasi K3 adalah nilai tambah",
       "Memiliki laptop pribadi"
     ],
-    "talentaUrl":""
+    "talentaUrl": ""
   },
   "business-development-specialist": {
-    "status": 1,
+    "is_new": 0,
+    "status": 0,
     "title": "Business Development Specialist",
     "category": "cf",
     "type": 1,
-    "location": [
-      "Bekasi"
-    ],
+    "location": ["Bekasi"],
     "description": [
       "Menganalisa dan melakukan riset pasar",
       "Mengidentifikasi dan mengembangkan pasar",
@@ -604,16 +1079,15 @@
       "Terbiasa untuk melakukan perencanaan bisnis",
       "Berpengalaman untuk berhadapan dengan manajemen, bernegosiasi dan memberi pendapat kepada calon klien sehubungan dengan kebutuhan manajemen ataupun transaksi strategis"
     ],
-    "talentaUrl":""
+    "talentaUrl": ""
   },
   "waste-sampling-field-officer": {
-    "status": 1,
+    "is_new": 0,
+    "status": 0,
     "title": "Waste Sampling Field Officer",
     "category": "wmo",
     "type": 4,
-    "location": [
-      "Mojokerto"
-    ],
+    "location": ["Mojokerto"],
     "description": [
       "Mengumpulkan informasi mengenai produksi sampah kota Mojokerto melalui metode sampling, wawancara, dan observasi lapangan",
       "Mengolah data yang telah dikumpulkan dan merangkumnya menjadi bentuk yang siap dianalisa",
@@ -630,6 +1104,161 @@
       "Mahir berbahasa Inggris",
       "Durasi pekerjaan maksimal adalah 3 minggu"
     ],
-    "talentaUrl":""
+    "talentaUrl": ""
+  },
+  "waste-management-expert-assistant": {
+    "is_new": 0,
+    "status": 0,
+    "title": "Waste Management Expert Assistant",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Mojokerto"],
+    "description": [
+      "Melakukan perencanaan pemetaan sampah",
+      "Membantu Field Officer melakukan sampling timbulan sampah",
+      "Membuat proyeksi pertumbuhan timbulan sampah",
+      "Merancang sistem pengumpulan data untuk sampling sampah",
+      "Melakukan sampling sampah di lapangan",
+      "Menganalisa karakteristik limbah, aliran material, dan rantai nilai",
+      "Menginstruksikan dan membantu Field Officer dalam pengumpulan data"
+    ],
+    "requirement": [
+      "Perempuan/Laki laki",
+      "Maksimal usia 28 tahun",
+      "Lulusan S1 dari jurusan Teknik Lingkungan dengan minimal satu tahun pengalaman bekerja",
+      "Kandidat yang memahami survei produksi sampah lebih diutamakan",
+      "Memiliki pengalaman memimpin tim",
+      "Memiliki pengalaman mengenai riset sampah padat atau mengenai rantai nilai",
+      "Kandidat dengan pengalaman sebagai surveyor lebih diutamakan",
+      "Kandidat yang merupakan warga asli kota Mojokerto lebih diutamakan",
+      "Mahir menggunakan Ms. Office",
+      "Mahir berbahasa Inggris",
+      "Durasi pekerjaan maksimal adalah 3 bulan"
+    ],
+    "talentaUrl": ""
+  },
+  "corporate-relations-officer-CRO": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Corporate Relations Officer (CRO)",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Menjual produk dan jasa Waste4Change kepada klien",
+      "Membangun relasi dengan klien",
+      "Menjembatani komunikasi antara klien dengan tim Operasional"
+    ],
+    "requirement": [
+      "Min D3 semua jurusan",
+      "Terbiasa berbicara di depan umum dan melakukan persuasi",
+      "Fasih mengoperasikan Komputer (Word, Excel, Power Point)",
+      "Mampu bekerjasama dengan tim kerja lainnya",
+      "Mampu  berkomunikasi  dengan jelas, baik lisan maupun tulisan"
+    ],
+    "talentaUrl": ""
+  },
+  "ticketing-support-IT": {
+    "is_new": 0,
+    "status": 0,
+    "title": "Ticketing Support IT",
+    "category": "tech",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Berkomunikasi dengan semua divisi guna mengetahui isu yang ditemukan",
+      "Menyampaikan isu yang ditemukan ke PIC dari Tim IT",
+      "Berkolaborasi dengan tim IT guna menyediakan solusi yang tepat",
+      "Mendokumentasikan tiket keluhan pelanggan",
+      "Membuat laporan periodik perihal tiket keluhan pelanggan"
+    ],
+    "requirement": [
+      "Minimal SMK Teknologi atau Sistem Informasi",
+      "Memiliki pengetahuan tentang IT dan kemampuan pemecahan masalah (Hardware & Software)",
+      "Kandidat dengan pengetahuan tentang sprint/scrum lebih diutamakan",
+      "Kandidat dengan pengetahuan tentang siklus hidup pengembangan perangkat lunak lebih diutamakan",
+      "Memiliki kemampuan komunikasi yang baik",
+      "Tipe yang generalis dan bisa menyerap ilmu baru dengan cepat"
+    ],
+    "talentaUrl": ""
+  },
+  "software-engineer": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Software Engineer",
+    "category": "tech",
+    "type": 1,
+    "location": ["Remote"],
+    "description": [
+      "Menganalisis sistem untuk tahap pra-pengembangan",
+      "Merancang skema sistem (Database, API Route, Infrastruktur)",
+      "Mengembangkan dan merawat sistem",
+      "Memecahkan masalah/gangguan yang ditemukan pada sistem",
+      "Menerapkan prosedur keamanan",
+      "Membuat dan melakukan dokumentasi berkala menggunakan alat pengembangan (Developer Tools)"
+    ],
+    "requirement": [
+      "Minimal S1 dari jurusan Ilmu Komputer",
+      "Kandidat yang memiliki pengalaman dalam mengembangkan sistem IT lebih diutamakan",
+      "Bisa mengoperasikan PHP CodeIgniter & Laravel atau NodeJS",
+      "Terbiasa menggunakan JQuery & React JS, HTML, CSS",
+      "Tahu/Terbiasa menggunakan Rest API (Consume & Build)",
+      "Bisa menggunakan Git, Composer, DBMS (MySQL, PostgreSQL, NoSQL)",
+      "Familiar dengan manajemen server (VPS/Serverless : Apache, NginX)",
+      "Pengetahuan dasar soal pengembangan aplikasi pada handphone (Kotlin)"
+    ],
+    "talentaUrl": ""
+  },
+  "po-in-house": {
+    "is_new": 0,
+    "status": 1,
+    "title": "PO In-House",
+    "category": "tech",
+    "type": 1,
+    "location": ["Semarang / Remote"],
+    "description": [
+      "Menyusun requirement system dalam software development",
+      "Membuat dokumentasi quality assurance",
+      "Mengelola backlog dan berkoordinasi dengan para stakeholder dalam proyek",
+      "Bertanggung jawab terhadap kualitas produk melalui tahapan software testing"
+    ],
+    "requirement": [
+      "Diploma/Sarjana Informatika",
+      "Berpengalaman dalam proyek pengembangan software untuk role yang sama atau lainnya, min 1 Tahun",
+      "Memiliki wawasan tentang SDLC (Software Dev Life Cycle) khususnya software testing manual dan automation",
+      "Memiliki wawasan tentang Design Sprint, Design Thinking & Scrum Methodology",
+      "Memiliki pengetahuan programming dasar dan product design (UIUX)",
+      "Memiliki kemampuan leadership dan komunikasi yang baik"
+    ],
+    "talentaUrl": ""
+  },
+  "koordinator-pu": {
+    "is_new": 0,
+    "status": 0,
+    "title": "Koordinator PU",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Jakarta"],
+    "description": [
+      "Membuat perencanaan kebutuhan sumber daya atas operasional cabang",
+      "Bertanggung jawab terhadap seluruh kegiatan operasional yang ada",
+      "Bertanggung jawab atas ketercapaian target penjualan perusahaan",
+      "Bertanggung jawab atas urusan administrasi perusahaan",
+      "Memastikan kesesuaian penggunaan anggaran operasional cabang",
+      "Membuat laporan operasional dan keuangan cabang",
+      "Menjaga nama baik Waste4Change di cabang"
+    ],
+    "requirement": [
+      "Laki-laki, maksimal berusia 35 tahun",
+      "Memiliki pengalaman memimpin tim minimal 1 tahun",
+      "Terbiasa menggunakan MS. Office",
+      "Memiliki jiwa kepemimpinan, jujur, ulet, dan dapat berkerja di bawah tekanan",
+      "Dapat berbahasa inggris aktif",
+      "Penempatan di PU",
+      "Bersedia training di Bekasi",
+      "Memiliki laptop sendiri",
+      "Memiliki sim A yang aktif"
+    ],
+    "talentaUrl": ""
   }
 }

@@ -1,5 +1,268 @@
 {
+  "finance-manager": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Finance Manager",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Draft, prepare, and interpret reports, budget, accounts, comments, and financial report",
+      "Perform strategic analysis and assist the strategic planning",
+      "Control revenues, cash flow and expenses",
+      "Develop and manage the financial system/model",
+      "Conduct business modeling and risks analysis",
+      "Provide financial report and interpret the financial information to the managerial staffs as well as give recommendations in terms of the next action",
+      "Provide inputs and recommendation regarding investment activity, and adivse the strategy that the company needs to take",
+      "Maintain the organization's financial well-being",
+      "Make financial report regarding budgets, accounts payable, accounts receivable, expenses, etc",
+      "Review, supervise, and manage the budget",
+      "Develop strategies that will minimize financial risks"
+    ],
+    "requirement": [
+      "Candidate must possess at least a Bachelor's Degree in Accounting and/Finance. Candidates with Master's Degree/Post Graduate Degree in Finance and Accounting are preferred",
+      "At least 3 to 4 years supervisory experience in the Accounting/Financial area.",
+      "Strong competency in Accounting and Financial, including Financial Statement, Tax, Ledger, Advance AR/AP, and such.",
+      "High ability to thrive in a fast-paced setting.",
+      "High attention to detail and accuracy."
+    ],
+    "talentaUrl": ""
+  },
+  "river-debris": {
+    "is_new": 1,
+    "status": 1,
+    "title": "River Debris Field Officier",
+    "category": "wmo",
+    "type": 2,
+    "location": ["Jabodetabek"],
+    "description": [
+      "Perform on-ground sampling in several rivers in Jabodetabek",
+      "Input data on daily basis",
+      "Perform composition sampling",
+      "Coordinate with the project manager regarding technical issues, and reporting"
+    ],
+    "requirement": [
+      "At least a Final Year student from Environment/Marine Engineering",
+      "Good understanding of the pivot feature in Ms. Excel and Ms. Powerpoint",
+      "Have a personal vehicle (car/motorcycle) since the job will require high mobilization to several places",
+      "Have a personal laptop",
+      "Able to work in a team",
+      "Honest and is fully responsible for the sampling data"
+    ],
+    "talentaUrl": ""
+  },
+  "accounting-manager": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Accounting Manager",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Oversee, direct and review the daily operations of the finance team",
+      "Review daily journal entries and ensure posted journal entries are complete and accurate for Waste4Change Company.",
+      "Monitor and analyze accounting data and produce financial reports or reports for Waste4Change, shareholders, taxes, regulatory agencies, and other financial groups related to company finances",
+      "Establish and enforce appropriate accounting methods, policies and principles",
+      "Coordinate and complete annual audits",
+      "Improve systems and procedures and initiate corrective action",
+      "Oversee budget reports, budget preparation, and budget analysis",
+      "Provide advice on financial management and procedures and develop policies",
+      "Monitor debt aging and liquidity",
+      "Meet financial accounting objectives"
+    ],
+    "requirement": [
+      "Candidate must possess at least a Bachelor's Degree, Master's Degree/Post Graduate Degree in Finance and Accounting",
+      "At least 3 to 4 years prior supervisory experience in the Accounting/Financial area.",
+      "Strong competency in Accounting and Financial, including Financial Statement, Tax, Ledger, Advance AR/AP, and such.",
+      "High ability to thrive in a fast-paced setting.",
+      "High attention to detail and accuracy."
+    ],
+    "talentaUrl": ""
+  },
+  "hc-admin": {
+    "is_new": 1,
+    "status": 1,
+    "title": "HC Admin",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Manage, update, and maintain employee database",
+      "Accommodate documents relating to human resources and perform filling for employees' data",
+      "Conduct activities with updated database and employee's administration procedure",
+      "Be involved in drafting and giving a warning letter, as well as regarding work termination",
+      "Assist employees during the off-boarding period (exit interview)",
+      "Perform internatl communication and socialize every company's regulations/SOP, etc",
+      "Perform payroll calculation"
+    ],
+    "requirement": [
+      "At least a Bachelor's Degree from Human Resources/Law",
+      "A minimum of 1-year experience in the same field",
+      "Understand about the Labor Law No.13 as well as the newest regulations",
+      "Have knowledge regarding human resources management/organizational operation/regulation structure",
+      "Good communication skills",
+      "Diligent and thorough",
+      "Able to work individually or in a team",
+      "Have a personal laptop"
+    ],
+    "talentaUrl": ""
+  },
+  "people-operation": {
+    "is_new": 1,
+    "status": 1,
+    "title": "People Operation",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Assist in employee's recruitment and selection processes",
+      "Handle administrative duties related to employees",
+      "Help archive the company's documents",
+      "Assist employees' insurance registration process",
+      "Be involved in the overall work of the Human Capital Departement"
+    ],
+    "requirement": [
+      "At least a High School graduate with a minimum of 2-year exprience or a Bachelor's Degree",
+      "Proficient in operating computer and MS Office",
+      "Good knowledge in recruitment process and procedure",
+      "Good management skills and capable of multitasking",
+      "Detail-oriented and do not mind adminitrative duties",
+      "Good written and verbal communication",
+      "Proficient in English",
+      "Have a personal laptop"
+    ],
+    "talentaUrl": ""
+  },
+  "partnership-digital-marketing-manager": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Partnership & Digital Marketing Manager",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Create and identify stakeholder mapping related to waste issues (media, government, association, etc) for potential partnership",
+      "Building and maintaining positive relationship with new and existing key partners",
+      "Comfortable in delivering presentation as speakers and business decks for partnership potential",
+      "Supporting marketing team for organizing event and able to propose new ideas and plan for event",
+      "Responsible for whole Digital Channel (both paid & organic channel)",
+      "Coordinate objectives with creative, content, marketing & operational team"
+    ],
+    "requirement": [
+      "Bachelor's degree (or above) from Communication or Marketing are preferred",
+      "Min 2-3 years experience as manager of partnership and/or Digital Marketing",
+      "Have existing network and relationships in various environmental issues and media",
+      "Have good analytical skills preferably on Digital Marketing",
+      "Preferred to have experience on media handling & relations"
+    ],
+    "talentaUrl": ""
+  },
+  "videographer-photographer": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Videographer / Photographer",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Record audio, video, and take pictures for the company's assets.",
+      "Edit footages, audio, as well as photographs for content making.",
+      "Assist in managing and archiving the photographs, audio, and video"
+    ],
+    "requirement": [
+      "At least a Diploma degree, preferrably from Visual Communication Design or Arts.",
+      "Willing to submit their protfolios",
+      "Able to record and edit videos using software such as Premiere pro/Final cut, Adobe Audition, and perform photo editing using Ligthroom/Photoshop.",
+      "Have a personal laptop",
+      "Able to work in a team and adhere to deadlines.",
+      "Willing to work with high mobility and flexible working time",
+      "Candidates with experience in Production House/Filming is a plus",
+      "Able to use Adobe Photoshop, Adobe Illustrator, as well as Adobe InDesign for graphic design is also a plus.",
+      "Have at least driving license C, candidates having a certificate as drone pilot is a plus."
+    ],
+    "talentaUrl": ""
+  },
+  "customer-services": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Customer Services",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Respond to every question/inquiry from consumers",
+      "Solve the customer's problem regarding the services that are being provided",
+      "Record the interaction between customers, transactions, comments, as well as complaints.",
+      "Give review and feedback regarding the efficiency of the customer service processes",
+      "Ensure customer's satisfaction and give professional support for customers"
+    ],
+    "requirement": [
+      "At least High School/Vocational High School graduate, preferred from Social/Tourism/Hospitality major",
+      "Candidates with previous experience in the same field are preferred",
+      "Good communication and interpersonal skills",
+      "Preferrably with good English (at least written skill)",
+      "Honest, responsible, tenacious",
+      "Able to operate Windows and Microsoft Office",
+      "Able to work under pressure",
+      "Have a personal laptop"
+    ],
+    "talentaUrl": ""
+  },
+  "legal-officer": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Legal Officer",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Perform all duties related to legal matters",
+      "Review contracts/agreements",
+      "Handle licensing and other necessary documents",
+      "Legal opinion",
+      "Handle the company's legal entity",
+      "Handle the company's legal entity",
+      "Oversee and update the newest rules and regulations"
+    ],
+    "requirement": [
+      "At least a Bachelor's Degree from Law Major",
+      "A minimum of 2-year experience as in-house legal team",
+      "Proficient in English"
+    ],
+    "talentaUrl": ""
+  },
+  "site-manager-bali": {
+    "is_new": 0,
+    "status": 0,
+    "title": "Site Manager Bali",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Bali"],
+    "description": [
+      "Make plans for resources necessity in the branch's operation",
+      "Be in charge of all the operational activies",
+      "Be in charge of the company's target sales achievement",
+      "Be responsible for the company's administration",
+      "Ensure the conformity of the branch's operational budget allocation",
+      "Make operational and financial report of the branch company",
+      "Maintain Waste4Change's good reputation at the branch"
+    ],
+    "requirement": [
+      "At least a Bachelor's Degree from any major",
+      "Male, maximum 35 years old",
+      "At least 3-year experience in leading a team",
+      "Familiar with using Ms. Office",
+      "Have leadership skills, perseverance, honest, and able to work under pressure",
+      "Proficient in English",
+      "Will be placed in Bali",
+      "Willing to follow training program in Bekasi",
+      "Have a personal laptop",
+      "Have an active driving license (SIM) A"
+    ],
+    "talentaUrl": ""
+  },
   "ux-researcher": {
+    "is_new": 0,
     "status": 0,
     "title": "UX Researcher",
     "category": "tech",
@@ -24,10 +287,11 @@
       "Willing to be placed in the Waste4Change Semarang Office",
       "Have experiences regarding user research, prototyping, design sprint & communication"
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/NC9xUENJZTNyV29lUllGczEzdlJWUT09"
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/NC9xUENJZTNyV29lUllGczEzdlJWUT09"
   },
   "product-ui-ux-designer": {
-    "status": 1,
+    "is_new": 0,
+    "status": 0,
     "title": "Product UI/UX Designer",
     "category": "tech",
     "type": 1,
@@ -44,10 +308,11 @@
       "Good understanding of product design process (Design Thinking, User Story, Product Requirement, etc)",
       "Have knowledge regarding UI UX Design, excellent visual design skills with sensitivity to user-system interaction"
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/bHVxajdxVUZ2T0RJeWZzZVdaeE1wZz09"
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/bHVxajdxVUZ2T0RJeWZzZVdaeE1wZz09"
   },
   "fullstack-wordpress-web-engineer": {
-    "status": 1,
+    "is_new": 0,
+    "status": 0,
     "title": "Fullstack & Wordpress Web Engineer",
     "category": "tech",
     "type": 1,
@@ -66,9 +331,10 @@
       "Have good leadership and work attitude",
       "Stay up to date with the industry development and have a good learning spirit"
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/eG9tWWdVc0ZNUzA2MnM1RklDMFgzdz09"
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/eG9tWWdVc0ZNUzA2MnM1RklDMFgzdz09"
   },
   "hse-officer": {
+    "is_new": 0,
     "status": 1,
     "title": "HSE Officer",
     "category": "wmo",
@@ -88,9 +354,10 @@
       "Candidates who are based in either Bekasi/Jakarta will be prioritized ",
       "Have a personal laptop"
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/NWpGRklydUdMZjgrNFRPWjg1dHFHQT09"
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/NWpGRklydUdMZjgrNFRPWjg1dHFHQT09"
   },
   "surveyor": {
+    "is_new": 0,
     "status": 1,
     "title": "Surveyor",
     "category": "wmo",
@@ -109,11 +376,11 @@
       "Have a personal laptop",
       "Honest and responsible for the sampling data "
     ],
-    "talentaUrl":"",
-    "formUrl":"https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
-
+    "talentaUrl": "",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
   },
   "po-tetrapak": {
+    "is_new": 0,
     "status": 0,
     "title": "PO Tetrapak",
     "category": "wmo",
@@ -134,10 +401,11 @@
       "Preferred candidates with extensive knowledge in recycling",
       "Good negotiation and communication skill"
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/Y2lLZFVhMWcxR0tvTEx4dk1RZ3gwdz09"
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/Y2lLZFVhMWcxR0tvTEx4dk1RZ3gwdz09"
   },
   "collect-supervisor": {
-    "status": 1,
+    "is_new": 0,
+    "status": 0,
     "title": "Collect Supervisor",
     "category": "wmo",
     "type": 1,
@@ -154,9 +422,10 @@
       "Experienced in leading a team",
       "Good communication skill"
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/a2JNdDVackF4SFJFb2RjdWpSdm5XZz09"
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/a2JNdDVackF4SFJFb2RjdWpSdm5XZz09"
   },
   "recruiter": {
+    "is_new": 0,
     "status": 0,
     "title": "Recruiter",
     "category": "cf",
@@ -180,9 +449,10 @@
       "Have a personal laptop",
       "Will be placed in Bekasi"
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/WVIwN3ZVRnYrZ0R4QmllL05HOFBMQT09"
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/WVIwN3ZVRnYrZ0R4QmllL05HOFBMQT09"
   },
   "innovation-officer": {
+    "is_new": 0,
     "status": 1,
     "title": "Innovation Officer",
     "category": "wmo",
@@ -200,9 +470,10 @@
       "Good analytic and problem-solving skills",
       "Have a personal laptop and is able to operate it well "
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/UlMzU0xvdzhEZ0JrNTRVdjVTbUNEQT09"
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/UlMzU0xvdzhEZ0JrNTRVdjVTbUNEQT09"
   },
   "office-administration-and-procurement-officer": {
+    "is_new": 0,
     "status": 0,
     "title": "Office Administration and Procurement Officer",
     "category": "cf",
@@ -227,9 +498,10 @@
       "Have leadership skills and able to work in a team",
       "Have a personal laptop "
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/WlJkOEg4MmRxWXZNdmQ5ZjZSWUNRQT09"
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/WlJkOEg4MmRxWXZNdmQ5ZjZSWUNRQT09"
   },
   "customer-service": {
+    "is_new": 0,
     "status": 0,
     "title": "Customer Service",
     "category": "wmo",
@@ -252,16 +524,15 @@
       "Good communication, negotiation, presentation, and interpersonal skills,Give feedback regarding the customer service process and eficiency",
       "Ensure customers' satisfaction and provide professional customer support "
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/NXZrc3Qxem1Fa3d3WmlIVUpwcGw1dz09"
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/NXZrc3Qxem1Fa3d3WmlIVUpwcGw1dz09"
   },
   "enumerator": {
+    "is_new": 0,
     "status": 1,
     "title": "Enumerator",
     "category": "wmce",
     "type": 2,
-    "location": [
-        "Bekasi"
-    ],
+    "location": ["Bekasi"],
     "description": [
       "Interview respondents using the questionnare that has been provided",
       "Perform coding based on the interview results",
@@ -277,12 +548,12 @@
       "Willing to be placed in Kedungwaringin, Bekasi",
       "Willing to work between the period from 3rd August until 7th September 2020"
     ],
-    "talentaUrl":"",
-    "formUrl":"https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
-
+    "talentaUrl": "",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSed9-Mdxy9qzOGOEz0joDQ5tiKAk_48vGfu9Om_ff9NZg0gMg/viewform?usp=sf_link"
   },
   "salesmanager": {
-    "status": 1,
+    "is_new": 0,
+    "status": 0,
     "title": "Sales Manager",
     "category": "wmo",
     "type": 1,
@@ -301,10 +572,11 @@
       "Have experience as a Sales Manager with proven successes as a strong player; candidates with a specific focus in waste management services are more preferred",
       "Good analysis, negotiation, and managerial skills"
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/TFZ6ZmkvNGRpdFMvNUxSK1BBVC92dz09",
-    "formUrl":"https://docs.google.com/forms/d/e/1FAIpQLSfsKEjFEBp2PwxabPRitcIGNTB-ONspRvJCpbgxCwWZWZpBRA/viewform?usp=sf_link"
+    "talentaUrl": "https://recruitment.talenta.co/waste4change/TFZ6ZmkvNGRpdFMvNUxSK1BBVC92dz09",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfsKEjFEBp2PwxabPRitcIGNTB-ONspRvJCpbgxCwWZWZpBRA/viewform?usp=sf_link"
   },
   "po-product-manager-digital": {
+    "is_new": 0,
     "status": 1,
     "title": "PO Product Manager Digital",
     "category": "cf",
@@ -329,9 +601,10 @@
       "Interested in developing digital products for waste solutions",
       "Have a personal laptop"
     ],
-    "talentaUrl":""
+    "talentaUrl": ""
   },
   "digital-marketing-executive": {
+    "is_new": 0,
     "status": 0,
     "title": "Digital Marketing Executive",
     "category": "cf",
@@ -357,9 +630,10 @@
       "Strong interests to come up with solutions for better waste management",
       "Have a personal laptop"
     ],
-    "talentaUrl":""
+    "talentaUrl": ""
   },
   "surveyor-jawa-barat": {
+    "is_new": 0,
     "status": 0,
     "title": "Surveyor Jawa Barat",
     "category": "wmo",
@@ -374,7 +648,7 @@
       "Kab. Purwakarta",
       "Kab. Karawang",
       "Kab. Bekasi"
-        ],
+    ],
     "description": [
       "Conduct suverys regarding the needs of the TPS 3R on program sites",
       "Conduct socialization for the local communities/government regarding the TPS 3R program",
@@ -392,16 +666,15 @@
       "Candidates from the district/city where the programs will take place wil be preferred",
       "Have a personal laptop"
     ],
-    "talentaUrl":""
+    "talentaUrl": ""
   },
-   "organizational-development-specialist": {
-    "status": 1,
+  "organizational-development-specialist": {
+    "is_new": 0,
+    "status": 0,
     "title": "Organizational Development Specialist",
     "category": "cf",
     "type": 1,
-    "location": [
-      "Bekasi"
-    ],
+    "location": ["Bekasi"],
     "description": [
       "Conduct review regarding the organization's current structure and provide recommendation for adjustment in regards with the company's condition and necessity",
       "Perform evaluation and provide recommendation for the current business process",
@@ -420,16 +693,15 @@
       "Capable of demonstrating current knowledge regarding the best theories and practices in OD",
       "Willing to be placed in Bekasi"
     ],
-    "talentaUrl":""
+    "talentaUrl": ""
   },
   "po-project-based": {
-    "status": 1,
+    "is_new": 0,
+    "status": 0,
     "title": "PO Project Based",
     "category": "wmo",
     "type": 2,
-    "location": [
-      "Bekasi"
-    ],
+    "location": ["Bekasi"],
     "description": [
       "Conduct planning for research project or other programs according to the direction from the company",
       " Develop research project or programs related with waste management",
@@ -447,9 +719,10 @@
       "Proficient in English",
       "Willing to be placed anywhere"
     ],
-    "talentaUrl":""
+    "talentaUrl": ""
   },
   "secretary-to-managing-director": {
+    "is_new": 0,
     "status": 0,
     "title": "Secretary to Managing Director",
     "category": "cf",
@@ -464,16 +737,17 @@
       "Secure data and information by managing the database"
     ],
     "requirement": [
-      "Preferred candidates from office administration or secretarial vocational school",
+      "Candidates with a background in office administration or secretarial vocational school are preferred",
       "Have 1-2 years work experience in administration",
       "Able to operate Ms. Office or other supporting programs",
       "Agile and able to work under pressure",
       "Have personal laptop"
     ],
-    "talentaUrl":""
+    "talentaUrl": ""
   },
   "surveyor-food-loss": {
-    "status": 1,
+    "is_new": 0,
+    "status": 0,
     "title": "Surveyor Food Loss",
     "category": "wmo",
     "type": 1,
@@ -495,17 +769,15 @@
       "Familiar with the concept of remote working",
       "Maximum duration of work is 2 months"
     ],
-    "talentaUrl":""
+    "talentaUrl": ""
   },
   "surveyor-food-waste": {
-    "status": 1,
+    "is_new": 0,
+    "status": 0,
     "title": "Surveyor Food Waste",
     "category": "wmo",
     "type": 4,
-    "location": ["Bandung",
-                 "Pekanbaru",
-                 "Bali"
-                 ],
+    "location": ["Bandung", "Pekanbaru", "Bali"],
     "description": [
       "Perform waste sampling on the predetermined locations",
       "Interview stakeholders on the waste-sampling sites regarding the food waste that were generated on that location",
@@ -521,10 +793,11 @@
       "Located in Bandung/Pekanbaru/Bali",
       "The duration of work is 8-10 days"
     ],
-    "talentaUrl":""
+    "talentaUrl": ""
   },
   "foreman-pemilahan": {
-    "status": 1,
+    "is_new": 0,
+    "status": 0,
     "title": "Foreman Pemilahan",
     "category": "wmo",
     "type": 1,
@@ -543,10 +816,11 @@
       "Having Occupational Health and Safety Certificate is an added value",
       "Have a personal laptop"
     ],
-    "talentaUrl":""
+    "talentaUrl": ""
   },
   "business-development-specialist": {
-    "status": 1,
+    "is_new": 0,
+    "status": 0,
     "title": "Business Development Specialist",
     "category": "cf",
     "type": 1,
@@ -569,10 +843,11 @@
       "Good communication and presentation skills, able to work in a team, proven skills in influencing team from various divisions",
       "Experienced in dealing with management, negotating with and give opinions to future clients regarding the management's needs or strategic transaction"
     ],
-    "talentaUrl":""
+    "talentaUrl": ""
   },
   "waste-sampling-field-officer": {
-    "status": 1,
+    "is_new": 0,
+    "status": 0,
     "title": "Waste Sampling Field Officer",
     "category": "wmo",
     "type": 4,
@@ -593,6 +868,393 @@
       "Proficient in English",
       "Maximum Duration of works is 3 weeks"
     ],
-    "talentaUrl":"https://recruitment.talenta.co/waste4change/NC9xUENJZTNyV29lUllGczEzdlJWUT09"
+    "talentaUrl": ""
+  },
+  "waste-management-expert-assistant": {
+    "is_new": 0,
+    "status": 0,
+    "title": "Waste Management Expert Assistant",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Mojokerto"],
+    "description": [
+      "Conduct planning for waste mapping",
+      "Assisting field officer to do waste generation sampling",
+      "Make a projection of waste generation growth",
+      "Design data collection system for waste sampling",
+      "Conduct on-field waste sampling",
+      "Analyze waste characteristics, material flow and value chain",
+      "Instruct and assist local field officer in data collection"
+    ],
+    "requirement": [
+      "Female/Male",
+      "Maximum 28 years old",
+      "At least Bachelor`s Degree from Environmental Engineering with 1 year experience",
+      "Have experience leading a team",
+      "Have experience in solid waste or value chain research",
+      "Preferred someone who is local people in Mojokerto City",
+      "Preferred with experience as a surveyor",
+      "Proficient in using Ms. Office",
+      "Proficient in English",
+      "Maximum Duration of works is 3 Months"
+    ],
+    "talentaUrl": ""
+  },
+  "corporate-relations-officer-CRO": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Corporate Relations Officer (CRO)",
+    "category": "cf",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Offer and sell Waste4Change's goods and services to clients",
+      "Build and maintain relations with clients",
+      "Bridge communication between clients and the Operational division"
+    ],
+    "requirement": [
+      "At least a Vocational Degree (D3) from all majors",
+      "Familiar with public speaking and persuasion",
+      "Proficient in operating Ms.Office (Word, Excel, Power Point)",
+      "Able to cooperate with other teams",
+      "Good communication, both written and oral"
+    ],
+    "talentaUrl": ""
+  },
+  "ticketing-support-IT": {
+    "is_new": 0,
+    "status": 0,
+    "title": "Ticketing Support IT",
+    "category": "tech",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Comunicate with All Division to grab Issues",
+      "Deliver Issues to PIC of IT Team",
+      "Collaborate with IT Team to Provide Right Solution",
+      "Create & Maintain Documentation of Ticketing",
+      "Provide Periodical Report of Ticketing"
+    ],
+    "requirement": [
+      "Minimum SMK Technology or Information Systems",
+      "Have IT support & problem-solving knowledge (Hardware & Software Troubleshoot)",
+      "Have sprint/scrum knowledge preferred",
+      "Software Development Life Cycle Knowledge preferred",
+      "Have a good communication skills",
+      "Generalist type & fast learner"
+    ],
+    "talentaUrl": ""
+  },
+  "software-engineer": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Software Engineer",
+    "category": "tech",
+    "type": 1,
+    "location": ["Remote"],
+    "description": [
+      "Analyse System for Pre Development Phase",
+      "Design Scheme of System (Database, API Route, Infrastructure)",
+      "Develop & Maintain the System",
+      "Troubleshooting System Bugs & Other Problems",
+      "Implement Security",
+      "Create & Maintain Documentation Using Developer Tools"
+    ],
+    "requirement": [
+      "At least a Bachelor's Degree in Computer Science",
+      "Candidate with experience in developing IT system is preferred",
+      "PHP CodeIgniter & Laravel or NodeJS",
+      "JQuery & React JS, HTML, CSS",
+      "Rest API (Consume & Build)",
+      "Git, Composer, DBMS (MySQL, PostgreSQL, NoSQL)",
+      "Server Management (VPS/Serverless : Apache, NginX)",
+      "Mobile Apps Dev (Kotlin)"
+    ],
+    "talentaUrl": ""
+  },
+  "po-in-house": {
+    "is_new": 0,
+    "status": 1,
+    "title": "PO In-House",
+    "category": "tech",
+    "type": 1,
+    "location": ["Semarang / Remote"],
+    "description": [
+      "Assemble the requirement system in software development",
+      "Make quality assurance documents",
+      "Manage backlog and coordinate with stakeholders within the project",
+      "Be in charge of the product quality through software testing phase"
+    ],
+    "requirement": [
+      "Have a Vocational/Bachelor's Degree in Informatics",
+      "Minimum 1-year experience in software development project for a similar role",
+      "Good knowledge in Software Dev Life Cycle, especially manual testing of software and automation",
+      "Good knowledge in Design Sprint, Design Thinking & Scrum Methodology",
+      "Have basic knowledge in  basic programming and product design (UI/UX)",
+      "Good communication and leadership skills"
+    ],
+    "talentaUrl": ""
+  },
+  "koordinator-pu": {
+    "is_new": 0,
+    "status": 0,
+    "title": "Koordinator PU",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Jakarta"],
+    "description": [
+      "Make plans for resources necessity in the branch's operation",
+      "Be in charge of all the operational activies",
+      "Be in charge of the company's target sales achievement",
+      "Be responsible for the company's administration",
+      "Ensure the conformity of the branch's operational budget allocation",
+      "Make operational and financial report of the branch company",
+      "Maintain Waste4Change's good image at the branch"
+    ],
+    "requirement": [
+      "Male, maximum 35 years old",
+      "At least 1-year experience in leading a team",
+      "Familiar with using MS. Office",
+      "Have leadership skills, honest, persistence, and able to work under pressure",
+      "Proficient in English",
+      "Will be placed in PU",
+      "Willing to follow training program in Bekasi",
+      "Have a personal laptop",
+      "Have an active driving license (SIM) A"
+    ],
+    "talentaUrl": ""
+  },
+  "koordinator-semarang": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Koordinator Semarang",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Semarang"],
+    "description": [
+      "Make plans for resources necessity in the branch's operation",
+      "Be in charge of all the operational activies",
+      "Be in charge of the company's target sales achievement",
+      "Be responsible for the company's administration",
+      "Ensure the conformity of the branch's operational budget allocation",
+      "Make operational and financial report of the branch company",
+      "Maintain Waste4Change's good reputation at the branch"
+    ],
+    "requirement": [
+      "Male, maximum 35 years old",
+      "Have at least 3-year experience in leading a team",
+      "Proficient in operating MS. Office",
+      "Have leadership skills, honest, perseverance, and able to work under pressure",
+      "English proficieny is a plus",
+      "Will be placed in Semarang",
+      "Willing to follow training program in Bekasi",
+      "Have a personal laptop",
+      "Have an active driving license (SIM) A"
+    ],
+    "talentaUrl": ""
+  },
+  "koordinator-medan": {
+    "is_new": 0,
+    "status": 1,
+    "title": "Koordinator Medan",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Medan"],
+    "description": [
+      "Make plans for resources necessity in the branch's operation",
+      "Be in charge of all the operational activies",
+      "Be in charge of the company's target sales achievement",
+      "Be responsible for the company's administration",
+      "Ensure the conformity of the branch's operational budget allocation",
+      "Make operational and financial report of the branch company",
+      "Maintain Waste4Change's good reputation at the branch"
+    ],
+    "requirement": [
+      "Male, maximum 35 years old",
+      "At least a Bachelor's Degree from any major",
+      "Have at least 1-year experience in leading a team",
+      "Able to operate a computer",
+      "Have leadership skills, honest, perseverance, and able to work under pressure",
+      "English proficiency is a plus",
+      "Will be placed in Medan",
+      "Willing to follow the training program in Bekasi"
+    ],
+    "talentaUrl": ""
+  },
+  "site-manager-sidoarjo": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Site Manager Sidoarjo",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Sidoarjo"],
+    "description": [
+      "Make plans for resources necessity in the branch's operation",
+      "Be in charge of all the operational activies",
+      "Be in charge of the company's target sales achievement",
+      "Be responsible for the company's administration",
+      "Ensure the conformity of the branch's operational budget allocation",
+      "Make operational and financial report of the branch company",
+      "Maintain Waste4Change's good reputation at the branch"
+    ],
+    "requirement": [
+      "Male, maximum 35 years old",
+      "Have at least 3-year experience in leading a team",
+      "Proficient in operating MS. Office",
+      "Have leadership skills, honest, perseverance, and able to work under pressure",
+      "Proficient in English",
+      "Will be placed in Sidoarjo",
+      "Willing to follow the training program in Bekasi",
+      "Have a personal laptop",
+      "Have an active driving license (SIM) A"
+    ],
+    "talentaUrl": ""
+  },
+  "site-manager-bandung": {
+    "is_new": 0,
+    "status": 0,
+    "title": "Site Manager Bandung",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Bandung"],
+    "description": [
+      "Make plans for resources necessity in the branch's operation",
+      "Be in charge of all the operational activies",
+      "Be in charge of the company's target sales achievement",
+      "Be responsible for the company's administration",
+      "Ensure the conformity of the branch's operational budget allocation",
+      "Make operational and financial report of the branch company",
+      "Maintain Waste4Change's good reputation at the branch"
+    ],
+    "requirement": [
+      "Male, maximum 35 years old",
+      "Have at least 3-year experience in leading a team",
+      "Familiar with using MS. Office",
+      "Have leadership skills, honest, perseverance, and able to work under pressure",
+      "Proficient in English",
+      "Will be placed in Bandung",
+      "Willing to follow the training program in Bekasi",
+      "Have a personal laptop",
+      "Have an active driving license (SIM) A"
+    ],
+    "talentaUrl": ""
+  },
+  "project-officer-esr": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Project Officer (ESR)",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Be responsible with the operational aspects of the project",
+      "Supervise and be responsible with the finance",
+      "Able to manage and control all of the project's aspects",
+      " Make project report"
+    ],
+    "requirement": [
+      "Male/Female, maximum 27 years old ",
+      "Candidates with a one-year experience in Project Management are preferred",
+      "Have leadership skills, honest, perseverance, and able to work under pressure",
+      "Have Critical and Analytical Thinking",
+      "Proficient in speaking and writing repor tin English (please include proof of english proficiencye e.g. TOEFL/IELTS)",
+      "Have a personal laptop"
+    ],
+    "talentaUrl": ""
+  },
+  "stakeholder-engagement-officer": {
+    "is_new": 0,
+    "status": 0,
+    "title": "Stakeholder Engagement Officer",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Tangerang"],
+    "description": [
+      "Develop relationships with Tangerang City's Environmental Agency, as well as its District and Regency for program collaboration",
+      "Create MoU with related parties/stakeholders",
+      "Map the waste bank network in Tangerang City",
+      "Map the existing parties who accept UBC (Used Beverage Carton) collection",
+      "Build networks and relations with related stakeholders within the program, be it the government, environmental agency, waste bank association, etc",
+      "Acquire the commercial sectors (beverage store and cafe) that generates UBC to participate in the program"
+    ],
+    "requirement": [
+      "At least a Bachelor's Degree from Environmental Engineering/Communication/Anthropology/Sociology/Economy major",
+      "Good knowledge in Project Management",
+      "Experienced in Government Relations",
+      "Good knowledge regarding waste issues, especially on EPR (Extended Producer Responsibility)",
+      "Familiar with the topic of Life Cycle Material"
+    ],
+    "talentaUrl": ""
+  },
+  "extended-producer-responsibility-officer": {
+    "is_new": 0,
+    "status": 0,
+    "title": "Extended Producer Responsibility Officer",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Tangerang"],
+    "description": [
+      "Look for field surveyor",
+      "Coordinate the field surveyor",
+      "Acquired waste banks to join the InspirACTion program",
+      "Create UBC collection scheme (pick-up schedule, the waste collection fleet, etc)",
+      "Collect data on the volume of UBC that has been collected",
+      "Monitor prizes and the ongoing competition",
+      "Take part and monitor the production of public facility using UBC recycled materials",
+      "Coordinate the handover of the assistance facility"
+    ],
+    "requirement": [
+      "At least a Bachelor's Degree from Environmental Engineering/Communication/Anthropology/Sociology/Economy major",
+      "Have experience in leading and managing a team",
+      "Good knowledge in Project Management",
+      "Good understanding about the concept of EPR (Extended Producer Responsibility)",
+      "Familiar with the concept of waste bank and materials trading",
+      "Have high mobility"
+    ],
+    "talentaUrl": ""
+  },
+  "admin-pwm": {
+    "is_new": 0,
+    "status": 0,
+    "title": "Admin PWM",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": ["Be responsible with the administration affairs of PWM"],
+    "requirement": [
+      "At least a graduate from Vocational School of Administration and Accounting",
+      "Male/Female max. 25 years old",
+      "Live in Bekasi or the surrounding areas (for placement in Bekasi)",
+      "Honest, thorough, and neat",
+      "Able to work in a team",
+      "Have a personal laptop",
+      "Good knowledge in Ms.Word, Excel, and PowerPoint"
+    ],
+    "talentaUrl": ""
+  },
+  "project-development-officer": {
+    "is_new": 1,
+    "status": 1,
+    "title": "Project Development Officer",
+    "category": "wmo",
+    "type": 1,
+    "location": ["Bekasi"],
+    "description": [
+      "Record and input sales leads",
+      "Perform pitching to new clients",
+      "Design project in a form of proposal (project and budget design)",
+      "Supervise the marketing strategy",
+      "Maintain communication with client and troubleshoot the administration problems during the duration of the project"
+    ],
+    "requirement": [
+      "At least a Bachelor's Degree with work experience in marketing or project management ",
+      "Proficient at communicating in English",
+      "Good ability in creating presentation slides and proposals using Google Slides or Microsoft PowerPoint",
+      "Able to operate Excel and understand the function of pivot in Excel",
+      "Have experience in community development and waste issue",
+      "Have high mobility",
+      "Understand the design and implementation of marketing strategy"
+    ],
+    "talentaUrl": ""
   }
 }

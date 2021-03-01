@@ -4,7 +4,7 @@
   "service_name": "Produk Black Soldier Fly (BSF)",
   "service_short_name": "Produk BSF",
   "service_page_url": "official/service/larva-black-soldier-fly",
-  "service_thumbnail": "larva.png",
+  "service_thumbnail": "larva.jpg",
   "service_portfolio_url": "",
   "service_proposal_url": "https://docs.google.com/forms/d/e/1FAIpQLSdydu6Ar9mGKppAI4V2fevcWkLSpTpiSwdbpv0moPU4-_o3NQ/viewform",
   "service_join_url": "",
@@ -22,7 +22,14 @@
       "section_title": "Produk Black Soldier Fly (BSF)",
       "section_subtitle": "",
       "section_message": "Pakan alternatif organdsik yang tinggi protein, baik dan aman untuk konsumsi hewan ternak & hewan kesayangan Anda. Tersedia dalam berbagai varian: <br> <span class='g-font-weight-900 w4c-color-blue g-mr-10'>&#8226</span>Produk siklus BSF (larva segar, pupae, prepupae, telur, dll)<br> <span class='g-font-weight-900 w4c-color-blue g-mr-10'>&#8226</span>Produk olahan lanjut larva BSF (PRO-POP, PRO-FLAKES, PRO-CRUMB, dll)",
-      "section_image": "larva.png"
+      "section_image": "larva.jpg",
+      "section_ctas": [
+        {
+          "cta_title": "PESAN SEKARANG",
+          "cta_url": "https://www.tokopedia.com/w4c-sda",
+          "cta_class": ""
+        }
+      ]
     },
     "about": {
       "section_template": "about",
@@ -237,7 +244,7 @@
       "section_title": "Dapatkan pakan BSF tinggi protein untuk hewan Anda yang berharga!",
       "section_subtitle": "",
       "section_message": "",
-      "section_image": "larva.png",
+      "section_image": "larva.jpg",
       "section_items": [
         {
           "item_title": "",

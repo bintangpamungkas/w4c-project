@@ -1,0 +1,265 @@
+{
+  "service_id": 10,
+  "service_parent_id": null,
+  "service_name": "AKABIS (Waste Management Academy)",
+  "service_short_name": "AKABIS",
+  "service_page_url": "official/service/akabis-waste-management-academy",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": 1,
+  "service_proposal_url": "https://docs.google.com/forms/d/e/1FAIpQLSflGH-JUj6sEZbURhI65LCyfyP_5BA034bF5PxKi6fi2zA5Pw/viewform",
+  "service_join_url": "",
+  "service_slug": "akabis-waste-management-academy",
+  "service_map_url": "https://www.google.com/maps/d/u/4/embed?mid=1xvUoOkajgibuGD6SVt3XgFvlNHspNJmt",
+  "service_meta": {
+    "title": "",
+    "description_1": "Educational program and field visit to see the waste management process at Waste4Change",
+    "description_2": "Educational program and field visit to see the waste management process at Waste4Change",
+    "keywords": "Educational program and field visit to see the waste management process at Waste4Change",
+    "site_url": "official/service/akabis-waste-management-academy"
+  },
+  "sections": {
+    "welcome": {
+      "section_template": "welcome",
+      "section_menu_title": "",
+      "section_title": "AKABIS (Waste Management Academy)",
+      "section_subtitle": "",
+      "section_message": "Akademi Bijak Sampah (AKABIS) is an education model created by Waste4Change to raise awareness on the importance of protecting the environment, especially in responsible waste management.",
+      "section_image": "header.jpg"
+    },
+    "achievement": {
+      "section_template": "our-achievement",
+      "section_menu_title": "",
+      "section_title": "Our Achievement",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Client",
+          "item_subtitle": "",
+          "item_message": "53",
+          "item_image": ""
+        },
+        {
+          "item_title": "Benficiaries",
+          "item_subtitle": "",
+          "item_message": "4271",
+          "item_image": ""
+        },
+        {
+          "item_title": "Cities Available",
+          "item_subtitle": "",
+          "item_message": "14",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "about": {
+      "section_template": "about",
+      "section_menu_title": "About",
+      "section_subtitle": "Take A Closer Look At Waste Management Facts And Solutions",
+      "section_message": "Akademi Bijak Sampah (AKABIS) is an education model created by Waste4Change to raise awareness on the importance of protecting the environment, especially in responsible waste management. If your institution is willing to experience first-hand field visits that stimulate all 4 senses, we can provide you with Akabis Xperience, a 6-hour educational tour to our facilities and landfill with interactive discussion.<br><br>To accommodate those with time limitation, we can also provide you with Akabis Class, a 2-hour In-class training and discussion on responsible waste management that can be carried out at the client's preferred location.",
+      "section_title": "About",
+      "section_image": "about.jpg"
+    },
+
+    "we-offer": {
+      "section_template": "we-offer",
+      "section_menu_title": "Offer",
+      "section_title": "We Offer 2 Programs",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "AKABIS CLASS",
+          "item_subtitle": "",
+          "item_icon": "people-m.png",
+          "item_message": "A 2-hour In-class training and discussion<br>Held in client's institution<br>Akabis Class can be attended by:<ul><li>The general public, especially people who wish to be the agents of change and to prepare for a better future of waste management in Indonesia</li><li>Institution</li></ul>",
+          "item_image": ""
+        },
+        {
+          "item_title": "AKABIS XPERIENCE",
+          "item_subtitle": "",
+          "item_icon": "people-m.png",
+          "item_message": "A 6-hour educational tour and interactive discussion<br>Visit to landfill<br>Visit to W4C Facility<br>Akabis Xperience can be attended by:<ul><li>The general public who are the agents of change for a better future of waste management in Indonesia</li><li>Institution</li></ul>",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "program-highlight": {
+      "section_template": "program-highlight",
+      "section_menu_title": "",
+      "section_title": "PROGRAM HIGHLIGHT AKABIS",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "project_items": [
+        {
+          "service_slug": "akabis-class-for-the-embassy-of-finland-jakarta",
+          "service_subcategory_name": "AKABIS CLASS FOR INSTITUTION"
+        },
+        {
+          "service_slug": "akabis-class-the-neglected-debris-paper-letter-and-waste-discussion",
+          "service_subcategory_name": "AKABIS Class For Public"
+        },
+        {
+          "service_slug": "akabis-xperience-untuk-pt-bank-dbs-indonesia",
+          "service_subcategory_name": "AKABIS Xperience For Institution"
+        },
+        {
+          "service_slug": "akabis-xperience-for-yseali",
+          "service_subcategory_name": "AKABIS Xperience For Public"
+        }
+      ]
+    },
+    "client": {
+      "section_template": "our-client",
+      "section_menu_title": "Client",
+      "section_title": "Client",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "PT Sharp Electronics Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Sharp.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "PT Unilever Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Yayasan-Unilever.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "PT L'Oreal Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "L'Oreal.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "The Body Shop",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "The-Body-Shop.jpg",
+          "item_color": ""
+        }
+      ]
+    },
+    "recommendation": {
+      "section_template": "recommended_for",
+      "section_menu_title": "",
+      "section_title": "Recommended For",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "HSE Division",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "HSE.svg",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Sustainability Division",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-medical-022 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "CSR Division",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-132 u-line-icon-pro",
+          "item_color": "#a24444"
+        },
+        {
+          "item_title": "Government",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-136 u-line-icon-pro",
+          "item_color": "#68a244"
+        },
+        {
+          "item_title": "Foundation",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-070 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Residential Area/ Housing",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-172 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Building / Area Management",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-009 u-line-icon-pro",
+          "item_color": "#68a244"
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "map": {
+      "section_template": "our-coverage",
+      "section_title": "Coverage Area",
+      "section_menu_title": "Coverage Area"
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Start your <span style='font-weight:bold'>AKABIS (Waste Management Academy)</span> now!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "GET PROPOSAL",
+          "cta_url": "official/service/digital-epr/join",
+          "cta_class": "",
+          "portfolio_title": "GET PORTOFOLIO",
+          "portfolio_url": 1,
+          "portfolio_class": ""
+        }
+      ]
+    }
+  }
+}

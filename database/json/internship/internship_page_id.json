@@ -28,46 +28,51 @@
       {
         "title": "Minimal berstatus pelajar tingkat akhir D3/S1 pada saat masa magang dimulai",
         "image": "student.png",
-        "height": "70px"
+        "height": "",
+        "width": ""
       },
       {
         "title": "Menyertakan dokumen yang disyaratkan: CV, motivation letter, dan portofolio untuk bidang keahlian terkait desain",
         "image": "document.png",
-        "height": "70px"
+        "height": "",
+        "width": ""
       },
       {
         "title": "Pengalaman kerja, riset, organisasi, atau catatan keikutsertaan seminar/workshop terkait bidang kerja yang dilamar nantinya akan menjadi nilai tambah",
         "image": "achievement.png",
-        "height": "70px"
+        "height": "",
+        "width": ""
       },
       {
         "title": "Bersedia untuk bekerja selama masa magang yang disyaratkan",
         "image": "calendar.png",
-        "height": "60px"
+        "height": "",
+        "width": ""
       },
       {
         "title": "Memiliki laptop untuk bekerja",
         "image": "LAPTOP.png",
-        "height": "70px"
+        "height": "",
+        "width": ""
       }
     ]
   },
   "card_batch2": {
-    "title": "WIP Batch #2 2020",
-    "subtitle": "Magang Aman di Tengah Pandemi",
-    "time": "September - Desember 2020",
-    "person": "32 Peserta",
+    "title": "WIP Batch #1 2021",
+    "subtitle": "",
+    "time": "Februari - Mei 2021",
+    "person": "34 Peserta",
     "info": "Registration Closed",
-    "image": "batch2_2020.jpg"
+    "image": "batch1_2021.jpg"
   },
 
   "card_batch1": {
-    "title": "WIP Batch #1 2021",
-    "subtitle": "Registrasi & Pengiriman Berkas: <br>Desember 2020 - Januari 2021",
-    "time": "Februari - Mei 2021",
-    "image": "batch1_2021.jpg",
-    "info": "Registration Open",
-    "button": "DAFTAR DISINI"
+    "title": "WIP Batch #2 2021",
+    "subtitle": "Registrasi & Pengiriman Berkas: <br>Juni - Juli 2021",
+    "time": "Agustus - November 2021",
+    "image": "batch2_2021.jpg",
+    "info": "Coming Soon",
+    "button": "INGATKAN SAYA"
   },
 
   "highlights": {

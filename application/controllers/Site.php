@@ -44,7 +44,7 @@ class Site extends MY_Controller
 		}
 
 		$data['input_city'] = $input_city;
-		$data['coverage_cities'] = $this->crud_model->select('place_city', QUERY_RESULT, ['city_name', 'province_name'], '', ['place_city' => ['place_province' => 'province_id']]);
+		$data['coverage_cities'] = json_decode(file_get_contents(base_url('database/json/regions.json')));
 		$data['testimonials'] = $this->crud_model->select('testimonial', QUERY_RESULT, '', ['language_code' => $lang, 'deleted_at' => null, 'service_id' => null]);
 		$data['blogs'] = $this->blog_model->get_blog();
 
@@ -205,7 +205,12 @@ class Site extends MY_Controller
 		$service_target_id = $this->input->post('target');
 		$lang = $this->get_language();
 		$service_target = [];
-		$services = $this->service_model->service_list_by_coverage($lang, '', '', $service_target_id, true);
+		if ($service_target_id == 1) {
+			$services = json_decode(file_get_contents(base_url('database/json/home/service_home_id.json')));
+			# code...
+		} elseif ($service_target_id == 2) {
+			$services = json_decode(file_get_contents(base_url('database/json/home/service_home_individu_id.json')));
+		}
 
 		if ($this->agent->is_mobile()) { //Mobile View
 ?>
@@ -323,32 +328,56 @@ class Site extends MY_Controller
 					}
 				} //End foreach($target->list as $service)
 				?>
-				<div class="col-md-4 col-sm-6">
-					<div class="g-mb-5 g-bg-white align-height-item <?= $this->agent->is_mobile() ? 'g-mt-10' : 'g-mt-25' ?> box-shadow-down">
-						<div class="text-center bg-white g-mx-20 g-px-30 g-py-20">
-							<div class="g-my-20">
-								<div class="g-font-weight-700 g-font-size-20 mb-5 text-center">
-									<?= get_lang('cant-found-the-solution-you-are-looking-for?') ?>
-								</div>
-								<div class="row justify-content-center">
-									<!-- 12 6 4 -->
-									<div class="col-md-12 mb-2">
-										<a class="btn btn-info btn-block g-color-white  g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9" href="<?= site_url('service') ?>"><?= strtoupper(get_lang('all-services')) ?> </a>
+				<?php if($service_target_id == 1) : ?>
+					<div class="col-md-4 col-sm-6">
+						<div class="g-mb-5 g-bg-white align-height-item <?= $this->agent->is_mobile() ? 'g-mt-10' : 'g-mt-25' ?> box-shadow-down">
+							<div class="text-center bg-white g-mx-20 g-px-30 g-py-20">
+								<div class="g-my-20">
+									<div class="g-font-weight-700 g-font-size-20 mb-5 text-center">
+										<?= get_lang('cant-found-the-solution-you-are-looking-for?') ?>
 									</div>
-									<div class="col-md-12 mb-2">
-										<a class="btn btn-outline-info btn-block g-brd-2 g-font-size-13 g-rounded-50  g-px-30 g-py-9" href="<?= site_url('contact') ?>"><?= strtoupper(get_lang('talk-to-our-expert')) ?></a>
+									<div class="row justify-content-center">
+										<!-- 12 6 4 -->
+										<div class="col-md-12 mb-2">
+											<a class="btn btn-info btn-block g-color-white  g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9" href="<?= site_url('service') ?>"><?= strtoupper(get_lang('all-services')) ?> </a>
+										</div>
+										<div class="col-md-12 mb-2">
+											<a class="btn btn-outline-info btn-block g-brd-2 g-font-size-13 g-rounded-50  g-px-30 g-py-9" href="<?= site_url('contact') ?>"><?= strtoupper(get_lang('talk-to-our-expert')) ?></a>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				<?php else : ?>
+					<div class="col-md-12 col-sm-6" >
+						<div class="g-mb-5  <?= $this->agent->is_mobile() ? 'g-mt-10' : 'g-mt-70' ?> " >
+							<div class="text-center g-mx-20 g-px-30 g-py-20">
+								<div class="g-my-20">
+									<div class="g-font-weight-700 g-font-size-20 mb-5 text-center">
+										<?= get_lang('cant-found-the-solution-you-are-looking-for?') ?>
+									</div>
+									<div class="row justify-content-center">
+										<!-- 12 6 4 -->
+										<div class="col-md-6 mb-2" style="padding: 0px 0px 0px 290px;">
+											<a class="btn btn-info btn-block g-color-white  g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9" href="<?= site_url('service') ?>" style="width:217px"><?= strtoupper(get_lang('all-services')) ?> </a>
+										</div>
+										<div class="col-md-6 mb-2">
+											<a class="btn btn-outline-info btn-block g-brd-2 g-font-size-13 g-rounded-50  g-px-30 g-py-9" href="<?= site_url('contact') ?>" style="width:217px"><?= strtoupper(get_lang('talk-to-our-expert')) ?></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<?php endif; ?>
 				<?= '</div>' ?>
 			</div>
 		<?php
 		}
 		?>
 		<script>
+		//  document.getElementByClassName("tab_individual").style.height="auto!important";
 			align_height();
 		</script>
 <?php

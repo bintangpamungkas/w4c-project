@@ -1,0 +1,279 @@
+{
+  "service_id": 7,
+  "service_parent_id": null,
+  "service_name": "Community-Based Implementation",
+  "service_short_name": "CBI",
+  "service_page_url": "official/service/community-based-implementation",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": 1,
+  "service_proposal_url": "https://docs.google.com/forms/d/e/1FAIpQLSflGH-JUj6sEZbURhI65LCyfyP_5BA034bF5PxKi6fi2zA5Pw/viewform",
+  "service_join_url": "",
+  "service_slug": "community-based-implementation",
+  "service_map_url": "https://www.google.com/maps/d/u/4/embed?mid=1Cyc1udMyKSqvT_8z-oAAJSlpYD5pJV4V",
+  "service_meta": {
+    "title": "",
+    "description_1": "Edukasi dan pendampingan untuk kurangi sampah dari sumber",
+    "description_2": "Edukasi dan pendampingan untuk kurangi sampah dari sumber",
+    "keywords": "Edukasi dan pendampingan untuk kurangi sampah dari sumber",
+    "site_url": "official/service/community-based-implementation"
+  },
+  "sections": {
+    "welcome": {
+      "section_template": "welcome",
+      "section_menu_title": "",
+      "section_title": "Community-Based Implementation",
+      "section_subtitle": "",
+      "section_message": "Kami membantu klien kami untuk menerapkan program-program yang mendorong komunitas untuk ikut bertindak dan memberikan kontribusi nyata terhadap krisis pengelolaan sampah di Indonesia",
+      "section_image": "header.jpg"
+    },
+    "achievement": {
+      "section_template": "our-achievement",
+      "section_menu_title": "",
+      "section_title": "Pencapaian Kami",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Klien",
+          "item_subtitle": "",
+          "item_message": "25",
+          "item_image": ""
+        },
+        {
+          "item_title": "Peserta",
+          "item_subtitle": "",
+          "item_message": "339714",
+          "item_image": ""
+        },
+        {
+          "item_title": "Kabupaten & Kota",
+          "item_subtitle": "",
+          "item_message": "111",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "about": {
+      "section_template": "about",
+      "section_menu_title": "Tentang",
+      "section_subtitle": "Usaha Nyata Untuk Mengurangi Produksi Sampah Dari Sumbernya",
+      "section_message": "Berdasarkan statistik dari BPS 2018, pengelolaan sampah menempati perhatian paling akhir dalam ketidakpedulian masyarakat Indonesia dibandingkan dengan isu lingkungan yang lain (energi, polusi udara, transportasi).<br><br>Kami di Waste4Change melihat hal ini sebagai sebuah tantangan untuk menerapkan program-program yang mendorong komunitas lokal untuk bertindak dan memberikan kontribusi nyata terhadap permasalahan sampah di Indonesia yang tengah berlangsung melalui layanan Community-based Implementation",
+      "section_title": "Tentang",
+      "section_image": "about.jpg"
+    },
+
+    "we-offer": {
+      "section_template": "we-offer",
+      "section_menu_title": "Penawaran",
+      "section_title": "Kami menawarkan 2 program",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Community Assistance",
+          "item_subtitle": "",
+          "item_icon": "people-m.png",
+          "item_message": "Perencanaan dan pendampingan operasional selama minimal 6 bulan untuk memastikan keberlanjutan dari program SWM di suatu daerah/area tertentu<br>Mendorong aspirasi dari komunitas lokal dan membantu mereka untuk mengambil tindakan nyata dalam program pengelolaan sampah yang bertanggung jawab di lingkungan mereka masing-masing<br>Dirancang untuk perumahan, kota, dan perkantoran",
+          "item_image": ""
+        },
+        {
+          "item_title": "Community Capacity Building",
+          "item_subtitle": "",
+          "item_icon": "people-m.png",
+          "item_message": "Community Based Capacity Building adalah sebuah pelatihan selama 3 hari untuk organisasi sampah di tingkat lokal<br>Bertujuan untuk memperdalam pemahaman mereka terhadap konsep manajemen institusi dalam sektor persampahan dan membantu mereka untuk membuat rencana aksi yang berkelanjutan<br>Dirancang untuk memberdayakan Aktivis Sampah, Bank Sampah, Pemerintah, Kelompok Masyarakat Sipil, dan Institusi Pendidikan untuk ikut menerapkan pengelolaan sampah yang bertanggung jawab di komunitas mereka.",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "program-highlight": {
+      "section_template": "program-highlight",
+      "section_menu_title": "",
+      "section_title": "Sorotan Program",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "project_items": [
+        {
+          "service_slug": "3r-program-suralaya",
+          "service_subcategory_name": "Community Assistance di Institusi"
+        },
+        {
+          "service_slug": "tps-3r-advisory",
+          "service_subcategory_name": "Community Assistance di Daerah"
+        },
+        {
+          "service_slug": "ecoranger-in-pulau-merah-banyuwangi",
+          "service_subcategory_name": "Community Assistance di Destinasi Wisata"
+        },
+        {
+          "service_slug": "capacity-building-in-indonesias-frontline-territories",
+          "service_subcategory_name": "Community Capacity Building"
+        }
+      ]
+    },
+    "client": {
+      "section_template": "our-client",
+      "section_menu_title": "Klien",
+      "section_title": "Klien",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "PT Bank Negara Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "BNI.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "PT Indonesia Power Suralaya",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Indonesia-Power.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "PT Nestle Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "PT-Nestle-Indonesia.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "AHT Group AG",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "AHT-Group.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Kementrian PUPR",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "PUPR.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "GA Circular",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "GA-Circular.jpg",
+          "item_color": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "recommendation": {
+      "section_template": "recommended_for",
+      "section_menu_title": "",
+      "section_title": "REKOMENDASI UNTUK",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Divisi CSR",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-medical-022 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Divisi Sustainability",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-132 u-line-icon-pro",
+          "item_color": "#a24444"
+        },
+        {
+          "item_title": "Pemerintah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-136 u-line-icon-pro",
+          "item_color": "#68a244"
+        },
+        {
+          "item_title": "Pengelola Perumahan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-070 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Pengelola Bangunan/ Kawasan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-172 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Yayasan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-009 u-line-icon-pro",
+          "item_color": "#68a244"
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "map": {
+      "section_template": "our-coverage",
+      "section_title": "AREA CAKUPAN",
+      "section_menu_title": "AREA CAKUPAN"
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Mulai <span style='font-weight:bold'>Community Based Implementation</span> Anda sekarang juga!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "DAPATKAN PROPOSAL",
+          "cta_url": "official/service/community-based-implementation/join",
+          "cta_class": "",
+          "portfolio_title": "DAPATKAN PORTOFOLIO",
+          "portfolio_url": null,
+          "portfolio_class": ""
+        }
+      ]
+    }
+  }
+}

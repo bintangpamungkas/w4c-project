@@ -8,7 +8,7 @@
 				<div class="row justify-content-center g-mt-30">
 					<div class="col-md-3 col-10">
 						<div class="row justify-content-center">
-							<?php foreach ($section->section_ctas as $ctaI=>$cta): ?>
+							<?php foreach ($section->section_ctas as $cta): ?>
 								<div class="col-12">
 								<a class="btn btn-block btn-info g-color-white g-font-size-13 g-rounded-50 g-px-30 g-py-9 g-mb-10 " href="<?= empty($cta->cta_url) ? site_url('service/' . $service_id . '/join') : $cta->cta_url ?>">
 									<?= $cta->cta_title ?>

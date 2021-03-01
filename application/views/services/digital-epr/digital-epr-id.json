@@ -1,0 +1,357 @@
+{
+  "service_id": "1",
+  "service_parent_id": null,
+  "service_name": "Digital EPR",
+  "service_short_name": "EWM",
+  "service_page_url": "official/service/digital-epr",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_join_url": "",
+  "service_slug": "digital-epr",
+  "service_map_url": "https://www.google.com/maps/d/u/4/embed?mid=1Gps2QciOKXTLqrt_pLKM5tvw0EJI-iLg",
+  "service_meta": {
+    "title": "Program Pengelolaan Sampah secara Optimal beserta Pelaporan Alur Sampah",
+    "description_1": "Program pengelolaan sampah secara optimal beserta pelaporan alur sampah",
+    "description_2": "Program pengelolaan sampah secara optimal beserta pelaporan alur sampah",
+    "keywords": "program pengelolaan sampah, pengelolaan sampah, pengelolaan sampah dari sumber, pelaporan alur sampah, pengelolaan sampah secara optimal, pengelolaan sampah bertanggung jawab",
+    "site_url": "official/service/digital-epr"
+  },
+  "sections": {
+    "welcome": {
+      "section_template": "welcome",
+      "section_menu_title": "",
+      "section_title": "Digital EPR",
+      "section_subtitle": "",
+      "section_message": "Tingkatkan pengelolaan materi dari sampah berlabel merek Anda dengan bantuan sistem daur ulang berbasis aplikasi dan website, sekaligus membuka semakin banyak peluang kolaborasi dengan pelaku bisnis dan komunitas lain.",
+      "section_image": "header.jpg"
+    },
+    "achievement": {
+      "section_template": "our-achievement",
+      "section_menu_title": "",
+      "section_title": "Pencapaian Kami",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Klien",
+          "item_subtitle": "",
+          "item_message": "2",
+          "item_image": ""
+        },
+        {
+          "item_title": "Sampah Terdaur Ulang (kg)",
+          "item_subtitle": "",
+          "item_message": "1722",
+          "item_image": ""
+        },
+        {
+          "item_title": "Kabupaten & Kota",
+          "item_subtitle": "",
+          "item_message": "10",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "about": {
+      "section_template": "about",
+      "section_menu_title": "Tentang",
+      "section_subtitle": "Daur Ulang Sampah Berlabel Merek Dengan Lebih Efektif Dan Berkelanjutan",
+      "section_message": "Kami menyediakan sistem daur ulang yang terintegrasi dengan website dan aplikasi handphone untuk semakin meningkatkan tingkat daur ulang dari sampah berlabel merek Anda.<br><br>Pengintegrasian teknologi dalam sistem daur ulang tidak hanya akan mendukung pengelolaan sampah yang bertanggung jawab untuk sampah berlabel merek Anda, tetapi juga membuka peluang untuk berkolaborasi dengan banyak pelaku bisnis dan mitra daur ulang yang lain.<br><br>Sistem daur ulang sampah yang terintegrasi juga mendukung program di bidang edukasi dan kampanye dari merek/perusahaan Anda, sehingga harapannya layanan ini akan mampu menjangkau dan memenuhi kebutuhan konsumen dari merek Anda di semakin banyak tempat di Indonesia.",
+      "section_title": "Tentang",
+      "section_image": "about.jpg"
+    },
+
+    "benefit": {
+      "section_template": "benefit",
+      "section_menu_title": "KEUNTUNGAN",
+      "section_title": "KEUNTUNGAN",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Mengurangi jumlah sampah yang berakhir di TPA",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Mencegah produk berlabel merek Anda agar tidak disalahgunakan (sesuai yang diatur oleh Peraturan Pemerintah Indonesia No.81 Tahun 2012 tentang Peran Produsen)",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Jangkauan yang Lebih Luas",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Melayani kebutuhan pelanggan merek Anda di lebih banyak tempat di Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Laporan tentang alur sampah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Membantu meningkatkan tingkat daur ulang",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "what-you-get": {
+      "section_template": "what-you-get",
+      "section_menu_title": "YANG ANDA DAPAT",
+      "section_title": "YANG ANDA DAPAT",
+      "section_subtitle": "Untuk jenis layanan ini, Waste4Change menyediakan fasilitas sebagai berikut:",
+      "section_messange": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Sistem pengelolaan sampah yang komprehensif di lini distribusi",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "distribution-m.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Pengelolaan sampah yang bertanggung jawab untuk sampah residu (sampah yang sulit didaur ulang) tanpa mengirimnya ke TPA (berdasarkan permintaan)",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "residue-m.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Meningkatkan jumlah sampah yang dapat diproses melalui metode daur ulang",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "chart-m.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Proses pengangkutan dan pendaur ulangan sampah yang lebih mudah dengan didukung website dan aplikasi handphone",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "report-m.png",
+          "item_color": ""
+        }
+      ]
+    },
+    "waste-flow": {
+      "section_template": "waste-flow",
+      "section_menu_title": "ALUR SAMPAH",
+      "section_title": "ALUR SAMPAH",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Lokasi setor sampah di banyak lokasi di seluruh Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "wasteflow-epr-1.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Pengguna dapat menyetor sampah mereka ke partner daur ulang Waste4Change dengan mendaftarkan diri di website untuk mendapat kode unik",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "wasteflow-epr-2.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Pengguna akan mendapatkan poin sebagai hadiah karena sudah mendaur ulang",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "wasteflow-epr-3.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Sampah dikelola secara bertanggung jawab oleh partner daur ulang kami",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "wasteflow-epr-4.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Material dikirim ke industri up-cycling dan recycling untuk mendukung Circular Economy",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "wasteflow-epr-5.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Kami memastikan sampah brand Anda tidak berakhir di TPA",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "wasteflow-epr-6.png",
+          "item_color": ""
+        }
+      ]
+    },
+    "portofolio": {
+      "section_template": "portfolio-highlight",
+      "section_menu_title": "",
+      "section_title": "SOROTAN PORTOFOLIO",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_icon": "lifebuoy.jpg",
+          "item_title": "Lifebuoy Ramadhan Berkah 2019",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "lifebuoy.jpg",
+          "item_color": "",
+          "item_mou": "",
+          "item_audience": "16000",
+          "item_collection_schedule": "",
+          "item_start": "",
+          "item_end": "",
+          "item_agent_involve": "227",
+          "item_city_count": "41 Kota di Indonesia",
+          "item_duration": "1 Mei - 30 Juni 2019",
+          "item_waste_collected": "7.177 pcs"
+        },
+        {
+          "item_icon": "ades.jpg",
+          "item_title": "Ades #NiatMurni 2019",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "ades.jpg",
+          "item_color": "",
+          "item_mou": "",
+          "item_audience": "",
+          "item_collection_schedule": "",
+          "item_start": "",
+          "item_end": "",
+          "item_duration": "31 Oktober 2019 - Sekarang",
+          "item_agent_involve": "130",
+          "item_city_count": "Jakarta, Bandung, Semarang, Surabaya, Makassar, Medan",
+          "item_waste_collected": "1.650 pcs"
+        }
+      ]
+    },
+    "client": {
+      "section_template": "our-client",
+      "section_menu_title": "KLIEN",
+      "section_title": "KLIEN",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Lifebuoy",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Lifebuoy.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Ades",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Ades.jpg",
+          "item_color": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "recommendation": {
+      "section_template": "recommended_for",
+      "section_menu_title": "",
+      "section_title": "Rekomandasi Untuk",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Distribusi",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-088 u-line-icon-pro",
+          "item_color": "#a24444"
+        },
+        {
+          "item_title": "Merek",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-medical-022 u-line-icon-pro",
+          "item_color": "#a24495"
+        },
+        {
+          "item_title": "Produk",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-education-031 u-line-icon-pro",
+          "item_color": "#a24495"
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "map": {
+      "section_template": "our-coverage",
+      "section_title": "Area Cakupan",
+      "section_menu_title": "Area Cakupan"
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Mulai <span style='font-weight:bold'>Digital EPR</span> Anda sekarang juga!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "DAPATKAN PROPOSAL",
+          "cta_url": "official/service/digital-epr/join",
+          "cta_class": ""
+        }
+      ]
+    }
+  }
+}

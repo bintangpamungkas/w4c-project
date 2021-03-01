@@ -43,7 +43,7 @@ define('VERSION', ''); //asset folder version
 define('IS_ONLINE', 0); //0 = local, 1 = server
 define('IS_UNDER_MAINTENANCE', 0); //0 = live, 1 = under maintenance
 define('MODE', 'dev'); //define develope status (dev,demo,beta,live)
-define('HOST', 'http://localhost/w4c/');
+define('HOST', 'http://w4c.test/');
 define('PREFIX_TABLE', '');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');

@@ -21,7 +21,7 @@ class Product extends MY_Controller
             redirect (site_url('service'));
         } elseif ($service_slug == 'produk-black-soldier-fly') {
 
-			$service = json_decode(file_get_contents(base_url('database/json/service/service_detail/produk-black-soldier-fly/' . $service_slug . '-' . $lang . '.json')));
+			$service = json_decode(file_get_contents(base_url('application/views/product/'.$service_slug.'/' . $service_slug . '-' . $lang . '.json')));
 			$sections=$service->sections;
 			$data['service'] = $service;
 			$data['sections'] = $sections;
@@ -72,7 +72,7 @@ class Product extends MY_Controller
 				$data['page_heading'] = $service->service_name;
 				$data['is_bilingual'] = true;
 
-			$this->render_page('services/details/index', $data, 'services');
+			$this->render_page('product/'.$service_slug.'/index', $data, 'services');
 		
 		}  else {
 			$service = $this->service_model->get_service($lang, $service_slug);

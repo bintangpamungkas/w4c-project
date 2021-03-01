@@ -19,7 +19,12 @@
 						?>
 						<article class="g-bg-white" style="box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.1)">
 							<figure class="g-pos-rel">
-								<div class="img-fluid w-100 g-min-height-200" style="background: url(<?= $blog->blog_image ?>);background-size: cover;background-position: center;"></div>
+							<?php 
+								$image = substr($blog->blog_image,44);
+							?>
+								<div class="img-fluid w-100 g-min-height-200" style="background: url(https://waste4change.com/blog/wp-content/uploads/<?= $image ?>);background-size: cover;background-position: center;"></div>
+
+								<!-- <div class="img-fluid w-100 g-min-height-200" style="background: url('https://waste4change.com/blog/wp-content/uploads/Ultah-6th-06-1160x1160.jpg');background-size: cover;background-position: center;"></div>							 -->
 								<figcaption class="text-uppercase text-center g-line-height-1_2 g-color-white g-pos-abs g-top-20 g-px-15 g-py-10 bg-w4c-green-v1">
 									<span class="d-block"><?= date('F d, Y', strtotime($blog->blog_date)) ?></span>
 								</figcaption>
@@ -96,7 +101,11 @@
 				<div class="col-lg-4 g-mb-30">
 					<article class="g-bg-white" style="box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.1)">
 						<figure class="g-pos-rel">
-							<div class="img-fluid w-100 g-min-height-200" style="background: url(<?= $blog->blog_image ?>);background-size: cover;background-position: center;"></div>
+							<?php 
+								$image = substr($blog->blog_image,44);
+							?>
+							<div class="img-fluid w-100 g-min-height-200" style="background: url(https://waste4change.com/blog/wp-content/uploads/<?= $image ?>);background-size: cover;background-position: center;"></div>
+						
 							<figcaption class="text-uppercase text-center g-line-height-1_2 g-color-white g-pos-abs g-top-20 g-px-15 g-py-10 bg-w4c-green-v1">
 								<span class="d-block"><?= date('F d, Y', strtotime($blog->blog_date)) ?></span>
 							</figcaption>

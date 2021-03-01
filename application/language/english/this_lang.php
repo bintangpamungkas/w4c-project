@@ -388,7 +388,23 @@ $lang['back_to_previous_page'] = "Back to Previous Page";
 
 $lang['loading'] = "Loading";
 $lang['home'] = "Home";
-$lang['working_hour']   = "Monday to Friday 09:00 - 17:00 WIB (Except holidays)";
+$lang['working_hour_title'] = "Working Hours:";
+$lang['working_hour']   = "Monday to Friday 09:00 - 17:00 AM (Except holidays)";
 
 //products
 $lang['products'] = 'Products';
+
+//benefit epr
+$lang['supported'] = 'Supported by internet and platform digital';
+
+//newsletter 
+$lang['join'] = 'Join Our Newsletter';
+$lang['subtitle_newsletter']   = 'Get an exclusive access to our latest waste-related contents and discounts';
+$lang['subscriber'] = 'SUBSCRIBER';
+$lang['email']  = 'Email';
+$lang['name']   = 'Name';
+$lang['city']   = 'City';
+$lang['occupation'] = 'Occupation';
+$lang['required']   = 'Required';
+$lang['thanks'] = 'Thank you for subscribing!';
+$lang['content_alert'] = 'You will soon get an exclusive access to our latest waste-related news and special offers!';

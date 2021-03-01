@@ -1,0 +1,185 @@
+{
+  "service_id": 11,
+  "service_parent_id": null,
+  "service_name": "Black Soldier Fly Learning Center",
+  "service_short_name": "CBI",
+  "service_page_url": "official/service/black-soldier-fly-learning-center",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": null,
+  "service_proposal_url": "https://docs.google.com/forms/d/e/1FAIpQLSc7hGAdWLlFqt5qa38-7fMwA9Nsp2ev9lUk7Qi8Xwe_z3lYfg/viewform",
+  "service_join_url": "",
+  "service_slug": "black-soldier-fly-learning-center",
+  "service_map_url": "https://www.google.com/maps/d/u/4/embed?mid=1yuVnbriDYDMIZbKRRW9bk4hwejRiMTRO",
+  "service_meta": {
+    "title": "",
+    "description_1": "Educational session on organic waste decomposition using Black Soldier Fly (BSF)",
+    "description_2": "Educational session on organic waste decomposition using Black Soldier Fly (BSF)",
+    "keywords": "Educational session on organic waste decomposition using Black Soldier Fly (BSF)",
+    "site_url": "official/service/black-soldier-fly-learning-center"
+  },
+  "sections": {
+    "welcome": {
+      "section_template": "welcome",
+      "section_menu_title": "",
+      "section_title": "Black Soldier Fly Learning Center",
+      "section_subtitle": "",
+      "section_message": "Obtain further knowledge regarding organic waste management using Black Soldier Fly (BSF) as well as its breeding methods.",
+      "section_image": "header.jpg"
+    },
+    "achievement": {
+      "section_template": "our-achievement",
+      "section_menu_title": "",
+      "section_title": "Our Achievement",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Participants",
+          "item_subtitle": "",
+          "item_message": "135",
+          "item_image": ""
+        }
+      ]
+    },
+    "about": {
+      "section_template": "about",
+      "section_menu_title": "About",
+      "section_subtitle": "Effective Organic Waste Solution",
+      "section_message": "Through BSF Learning Center, you will receive in-depth information regarding organic waste processing using Black Soldier Flies (BSF), as well as the cultivation and breeding methods of BSF.",
+      "section_title": "About",
+      "section_image": "about.jpg"
+    },
+
+    "we-offer": {
+      "section_template": "we-offer",
+      "section_menu_title": "Offer",
+      "section_title": "We Offer 3 Programs",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "One-day Visit",
+          "item_subtitle": "",
+          "item_icon": "people-m.png",
+          "item_message": "Tour and introduction of BSF cultivation and breeding facilities to see the maintenance methods as well as the decomposition process of food waste using BSF",
+          "item_image": ""
+        },
+        {
+          "item_title": "Five-day Visit",
+          "item_subtitle": "",
+          "item_icon": "people-m.png",
+          "item_message": "Engage in a more detailed exploration through direct practice of breeding and cultivating BSF for 5 days in our facility",
+          "item_image": ""
+        },
+        {
+          "item_title": "21 Days of Intensive Program",
+          "item_subtitle": "",
+          "item_icon": "loadspeaker-m.png",
+          "item_message": "This is suitable for business actors who aspire to develop their very own BSF breeding and cultivation facilities. We will help you to design and plan your own BSF cultivation and breeding facilities in your city/area",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "client": {
+      "section_template": "our-client",
+      "section_menu_title": "Client",
+      "section_title": "Client",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Eawag",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "eawag.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Milano",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "milano.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Puspa Agro",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "puspa-argo.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "USAID",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "USAID.jpg",
+          "item_color": ""
+        }
+      ]
+    },
+    "recommendation": {
+      "section_template": "recommended_for",
+      "section_menu_title": "",
+      "section_title": "Recommended For",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Bussiness Actor",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-finance-024 u-line-icon-pro",
+          "item_color": "#a29244"
+        },
+        {
+          "item_title": "Researcher",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-finance-002 u-line-icon-pro",
+          "item_color": "#a29244"
+        }
+      ]
+    },
+    "map": {
+      "section_template": "our-coverage",
+      "section_title": "Coverage Area",
+      "section_menu_title": "Coverage Area"
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Start your <span style='font-weight:bold'>Black Soldier Fly Learning Center</span> now!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "ENROLL THE CLASS",
+          "cta_url": "official/service/digital-epr/join",
+          "cta_class": "",
+          "portfolio_title": "",
+          "portfolio_url": null,
+          "portfolio_class": ""
+        }
+      ]
+    }
+  }
+}

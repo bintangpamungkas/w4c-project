@@ -1,0 +1,88 @@
+[
+  {
+    "service_id": "17",
+    "service_target_id": "2",
+    "service_slug": "home-composting",
+    "city_name": "Seluruh Kota di Indonesia",
+    "service_page_url": "http://w4c.id/rumahkompos",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "0",
+    "service_name": "Home Composting",
+    "service_description": "Kelola sampah organik Anda di rumah dengan menggunakan tas kompos dari Waste4Change beserta perlengkapan kompos lainnya!",
+    "service_category_name": "General",
+    "recomendation": [
+      {
+        "name": "Personal",
+        "color": "#4489a2"
+      }
+    ]
+  },
+  {
+    "service_id": "13",
+    "service_target_id": "2",
+    "service_slug": "send-your-waste",
+    "city_name": "Kota Bekasi",
+    "service_page_url": "sendyourwaste",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Send Your Waste",
+    "service_description": "Kirim sampah anorganik Anda ke Waste4Change untuk didaur ulang.",
+    "service_category_name": "General",
+    "recomendation": [
+      {
+        "name": "Personal",
+        "color": "#4489a2"
+      }
+    ]
+  },
+  {
+    "service_id": "14",
+    "service_target_id": "2",
+    "service_slug": "dropbox",
+    "city_name": "Kota Bekasi",
+    "service_page_url": "dropbox",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Dropbox",
+    "service_description": "Setor sampah anorganik Anda ke dalam dropbox Waste4Change untuk didaur ulang.",
+    "service_category_name": "General",
+    "recomendation": [
+      {
+        "name": "Personal",
+        "color": "#4489a2"
+      }
+    ]
+  },
+  {
+    "service_id": "33",
+    "service_target_id": "2",
+    "service_slug": "personal-waste-management",
+    "city_name": "Kota Adm. Jakarta Selatan",
+    "service_page_url": "official/service/personal-waste-management",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Personal Waste Management",
+    "service_description": "Memastikan bahwa sampah anorganik Anda didaur ulang kini menjadi lebih mudah dengan layanan Personal Waste Management dari Waste4Change. Cukup pilah sampah anorganik sesuai kategori, dan Waste4Change akan menjemput secara rutin sampah yang terpilah langsung ke rumah Anda! Untuk saat ini, layanan ini hanya tersedia di wilayah Jakarta, Tangerang Selatan, dan Kota Bekasi < /strong>.",
+    "service_category_name": "General",
+    "recomendation": [
+      { "name": "Individu", "color": "#68a244" },
+      { "name": "Rumah Tangga", "color": "#68a244" }
+    ]
+  },
+  {
+    "service_id": "34",
+    "service_target_id": "2",
+    "service_slug": "composting-tools-supplies",
+    "city_name": null,
+    "service_page_url": "official/service/composting-tools-supplies",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "0",
+    "service_name": "Peralatan & Perlengkapan Mengompos",
+    "service_description": "Layanan pengangkutan sampah anorganik langsung dari rumah klien.",
+    "service_category_name": "General",
+    "recomendation": [
+      { "name": "Perusahaan", "color": "#a24444" },
+      { "name": "Individu", "color": "#68a244" }
+    ]
+  }
+]

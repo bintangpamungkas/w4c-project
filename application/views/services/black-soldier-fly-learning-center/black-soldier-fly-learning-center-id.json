@@ -1,0 +1,185 @@
+{
+  "service_id": 11,
+  "service_parent_id": null,
+  "service_name": "Black Soldier Fly Learning Center",
+  "service_short_name": "CBI",
+  "service_page_url": "official/service/black-soldier-fly-learning-center",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": null,
+  "service_proposal_url": "https://docs.google.com/forms/d/e/1FAIpQLSflGH-JUj6sEZbURhI65LCyfyP_5BA034bF5PxKi6fi2zA5Pw/viewform",
+  "service_join_url": "",
+  "service_slug": "black-soldier-fly-learning-center",
+  "service_map_url": "https://www.google.com/maps/d/u/4/embed?mid=1yuVnbriDYDMIZbKRRW9bk4hwejRiMTRO",
+  "service_meta": {
+    "title": "",
+    "description_1": "Edukasi penguraian sampah organik menggunakan Black Soldier Fly (BSF)",
+    "description_2": "Edukasi penguraian sampah organik menggunakan Black Soldier Fly (BSF)",
+    "keywords": "Edukasi penguraian sampah organik menggunakan Black Soldier Fly (BSF)",
+    "site_url": "official/service/black-soldier-fly-learning-center"
+  },
+  "sections": {
+    "welcome": {
+      "section_template": "welcome",
+      "section_menu_title": "",
+      "section_title": "Black Soldier Fly Learning Center",
+      "section_subtitle": "",
+      "section_message": "Dapatkan informasi lebih lanjut mengenai pengolahan material organik dengan Black Soldier Fly (BSF) serta teknis budidayanya.",
+      "section_image": "header.jpg"
+    },
+    "achievement": {
+      "section_template": "our-achievement",
+      "section_menu_title": "",
+      "section_title": "Pencapaian Kami",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Peserta",
+          "item_subtitle": "",
+          "item_message": "135",
+          "item_image": ""
+        }
+      ]
+    },
+    "about": {
+      "section_template": "about",
+      "section_menu_title": "Tentang",
+      "section_subtitle": "Solusi Sampah Organik Yang Efektif",
+      "section_message": "Melalui program BSF Learning Center, Anda akan mendapatkan informasi yang mendalam mengenai pengolahan sampah organik dengan menggunakan Black Soldier Fly (BSF), sekaligus mengenai metode pembudidayaan dan pengembangbiakan BSF.",
+      "section_title": "Tentang",
+      "section_image": "about.jpg"
+    },
+
+    "we-offer": {
+      "section_template": "we-offer",
+      "section_menu_title": "Penawaran",
+      "section_title": "Kami menawarkan 3 program",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Kunjungan 1 Hari",
+          "item_subtitle": "",
+          "item_icon": "people-m.png",
+          "item_message": "Tur dan pengenalan fasilitas pengembangbiakan dan pembudidayaan BSF untuk melihat metode pemeliharaan dan proses pembusukan sampah makanan menggunakan BSF",
+          "item_image": ""
+        },
+        {
+          "item_title": "Kunjungan 5 Hari",
+          "item_subtitle": "",
+          "item_icon": "people-m.png",
+          "item_message": "Eksplorasi yang lebih mendetail dalam bentuk berlatih langsung membudidayakan dan beternak BSF selama 5 hari di fasilitas kami",
+          "item_image": ""
+        },
+        {
+          "item_title": "Program Intensif Selama 21 Hari",
+          "item_subtitle": "",
+          "item_icon": "loadspeaker-m.png",
+          "item_message": "Program ini cocok untuk pelaku bisnis yang ingin mengembangkan peternakan dan budidaya BSFnya sendiri. Kami akan membantu Anda untuk merancang dan merencanakan fasilitas budidaya dan penembangbiakan BSF di kota/domisili Anda",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "client": {
+      "section_template": "our-client",
+      "section_menu_title": "Klien",
+      "section_title": "Klien",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Eawag",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "eawag.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Milano",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "milano.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Puspa Agro",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "puspa-argo.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "USAID",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "USAID.jpg",
+          "item_color": ""
+        }
+      ]
+    },
+    "recommendation": {
+      "section_template": "recommended_for",
+      "section_menu_title": "",
+      "section_title": "REKOMENDASI UNTUK",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Pelaku Bisnis",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-finance-024 u-line-icon-pro",
+          "item_color": "#a29244"
+        },
+        {
+          "item_title": "Peneliti",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-finance-002 u-line-icon-pro",
+          "item_color": "#a29244"
+        }
+      ]
+    },
+    "map": {
+      "section_template": "our-coverage",
+      "section_title": "AREA CAKUPAN",
+      "section_menu_title": "AREA CAKUPAN"
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Mulai <span style='font-weight:bold'>Black Soldier Fly Learning Center</span> Anda sekarang juga!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "MULAI KELAS",
+          "cta_url": "official/service/digital-epr/join",
+          "cta_class": "",
+          "portfolio_title": "",
+          "portfolio_url": null,
+          "portfolio_class": ""
+        }
+      ]
+    }
+  }
+}

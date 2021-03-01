@@ -1,0 +1,382 @@
+{
+  "service_id": 7,
+  "service_parent_id": null,
+  "service_name": "Solid Waste Management Research",
+  "service_short_name": "SWMR",
+  "service_page_url": "official/service/solid-waste-management-research",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": 1,
+  "service_proposal_url": "https://docs.google.com/forms/d/e/1FAIpQLScGCw668xdQjji7zRsCRQ-50524A4XLOWS7-up1q4F_KDWhNw/viewform",
+  "service_join_url": "",
+  "service_slug": "solid-waste-management-research",
+  "service_map_url": "https://www.google.com/maps/d/u/4/embed?mid=1kyIBPS8Js-umo5K7RxtYM8TlEm6Ok-_N",
+  "service_meta": {
+    "title": "",
+    "description_1": "Penelitian pengelolaan sampah dengan mempertimbangkan aspek lingkungan",
+    "description_2": "Penelitian pengelolaan sampah dengan mempertimbangkan aspek lingkungan",
+    "keywords": "Penelitian pengelolaan sampah dengan mempertimbangkan aspek lingkungan",
+    "site_url": "official/service/solid-waste-management-research"
+  },
+  "sections": {
+    "welcome": {
+      "section_template": "welcome",
+      "section_menu_title": "",
+      "section_title": "Solid Waste Management Research",
+      "section_subtitle": "",
+      "section_message": "Tingkatkan pengelolaan sampah Anda dengan melakukan analisis terperinci dan mengidentifikasi program dan sistem manajemen sampah yang paling tepat.",
+      "section_image": "header.jpg"
+    },
+    "achievement": {
+      "section_template": "our-achievement",
+      "section_menu_title": "",
+      "section_title": "Pencapaian Kami",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Klien",
+          "item_subtitle": "",
+          "item_message": "35",
+          "item_image": ""
+        },
+        {
+          "item_title": "Projek Diselesaikan",
+          "item_subtitle": "",
+          "item_message": "44",
+          "item_image": ""
+        },
+        {
+          "item_title": "Kabupaten & Kota",
+          "item_subtitle": "",
+          "item_message": "37",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "about": {
+      "section_template": "about",
+      "section_menu_title": "Tentang",
+      "section_subtitle": "Penelitian Dan Perencanaan Dengan Mempertimbangkan Aspek Lingkungan",
+      "section_message": "Waste4Change menyediakan konsultasi melalui layanan Solid Waste Management (SWM) Research yang bertujuan meningkatkan pengelolaan sampah dengan melakukan analisis terperinci dan mengidentifikasi program dan sistem yang paling tepat, baik di kota, provinsi, bangunan, atau institusi publik dan komersial lainnya.<br><br>Layanan ini juga bertujuan untuk memaksimalkan keuntungan yang didapat dari menerapkan pengelolaan sampah yang bertanggung jawab.",
+      "section_title": "Tentang",
+      "section_image": "about.jpg"
+    },
+
+    "expertise-and-experience": {
+      "section_template": "expertise-and-experience",
+      "section_menu_title": "KEAHLIAN DAN PENGALAMAN",
+      "section_title": "KEAHLIAN DAN PENGALAMAN",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Studi Kelayakan Pengelolaan Sampah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Audit Sampah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Desain Operasional dan Teknis Pengelolaan Sampah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Analisis Peraturan Pengelolaan Sampah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Analisis Perubahan Perilaku",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Analisis Finansial",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Analisis Institusional",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Pemetaan Pemangku Kepentingan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Analisis Rantai Nilai Daur Ulang",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Analisis Alur Material (VCA)",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Studi Sampah Sungai dan Laut",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Studi Kelayakan Waste to Energy",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "PTMP (Perencanaan Teknis dan Manajemen Persampahan) / Masterplan Persampahan skala Kota atau Kabupaten",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "program-highlight": {
+      "section_template": "program-highlight",
+      "section_menu_title": "",
+      "section_title": "Sorotan Penelitian",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "project_items": [
+        {
+          "service_slug": "solid-waste-management-study-at-pelabuhan-indonesia-ii-hq",
+          "service_subcategory_name": "swm research di institusi"
+        },
+        {
+          "service_slug": "solid-waste-management-design-for-revitalisation-at-jami-mosque-and-kampung-beting-settlements-in-pontianak",
+          "service_subcategory_name": "swm research di daerah/ destinasi wisata"
+        },
+        {
+          "service_slug": "waste-management-scouting-study-stakeholders-mapping-and-waste-flow-in-jakarta-and-surabaya",
+          "service_subcategory_name": "analisis rantai nilai"
+        },
+        {
+          "service_slug": "riverine-plastic-monitoring-project-in-jakarta",
+          "service_subcategory_name": "studi sampah sungai dan lain"
+        },
+        {
+          "service_slug": "technical-due-diligence-for-itf-sunter-jakarta",
+          "service_subcategory_name": "waste to energy"
+        }
+      ]
+    },
+    "client": {
+      "section_template": "our-client",
+      "section_menu_title": "Klien",
+      "section_title": "Klien",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Kemenko Maritim",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Kemenko-Maritim.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "KLHK RI",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "KLHK-RI.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "PT Nestle Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "PT-Nestle-Indonesia.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "PT Tirta Inverstama",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "PT-Tirta-Inverstama.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Kementrian PUPR",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "PUPR.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "World Bank",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "World-Bank.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "PT. Pelabuhan Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "PT.-Pelabuhan-Indonesia-II.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Bappenas",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Bappenas.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Deloitte",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Deloitte.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "GA Circular",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "GA-Circular.jpg",
+          "item_color": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "recommendation": {
+      "section_template": "recommended_for",
+      "section_menu_title": "",
+      "section_title": "REKOMENDASI UNTUK",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Divisi HSE",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "HSE.svg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Divisi Sustainability",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-132 u-line-icon-pro",
+          "item_color": "#a24444"
+        },
+        {
+          "item_title": "Divisi CSR",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-medical-022 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Pemerintah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-136 u-line-icon-pro",
+          "item_color": "#68a244"
+        },
+        {
+          "item_title": "Konsultan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-finance-218 u-line-icon-pro",
+          "item_color": "#a29244"
+        },
+        {
+          "item_title": "Pengelola Perumahan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-070 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Pengelola Bangunan/ Kawasan",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-172 u-line-icon-pro",
+          "item_color": "#4489a2"
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "map": {
+      "section_template": "our-coverage",
+      "section_title": "AREA CAKUPAN",
+      "section_menu_title": "AREA CAKUPAN"
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Mulai <span style='font-weight:bold'>Solid Waste Management Research</span> Anda sekarang juga!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "DAPATKAN PROPOSAL",
+          "cta_url": "official/service/digital-epr/join",
+          "cta_class": "",
+          "portfolio_title": "DAPATKAN PORTOFOLIO",
+          "portfolio_url": 1,
+          "portfolio_class": ""
+        }
+      ]
+    }
+  }
+}

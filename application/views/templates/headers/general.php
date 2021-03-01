@@ -110,9 +110,15 @@
 									<div class="<?= empty($service->service_parent_id) ? 'd-none' : 'd-block' ?>" data-header-fix-moment-exclude="<?= empty($service->service_parent_id) ? 'd-none' : 'd-block' ?>" data-header-fix-moment-classes="d-block">
 										<div class="row no-gutters justify-content-end">
 											<div class="col<?= $service->service_id == 33 ? '-auto' : '' ?>">
-												<a class="click_scroll btn btn-info btn-block g-color-white g-brd-white-opacity-0_2 g-font-size-13 g-rounded-50 g-px-30 g-py-9" href="<?= $service->service_id == 41 ? $service->sections->{"cta"}->section_ctas{0}->cta_url : site_url('service/' . $service_id . '/join') ?>"> <?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe')) : ($service->service_id == 41 ? $service->sections->{"cta"}->section_ctas{0}->cta_title	 : strtoupper(get_lang('get-proposal'))) )) ?>
-													<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3"> <i class="fa fa-info"></i> </span>
-												</a>
+												<?php if(empty($service->service_parent_id)) : ?>
+													<a class="click_scroll btn btn-info btn-block g-color-white g-brd-white-opacity-0_2 g-font-size-13 g-rounded-50 g-px-30 g-py-9" href="<?= $service->service_id == 41 ? $service->sections->{"cta"}->section_ctas{0}->cta_url : site_url('service/' . $service_id . '/join') ?>"> <?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe')) : ($service->service_id == 41 ? $service->sections->{"cta"}->section_ctas{0}->cta_title	 : strtoupper(get_lang('get-proposal'))) )) ?>
+														<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3"> <i class="fa fa-info"></i> </span>
+													</a>
+												<?php else : ?>
+													<a class="click_scroll btn btn-info btn-block g-color-white g-brd-white-opacity-0_2 g-font-size-13 g-rounded-50 g-px-30 g-py-9" href="<?= $service->service_id == 41 ? $service->sections->{"cta"}->section_ctas{0}->cta_url : site_url('project/' . $service_id . '/join') ?>"> <?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe')) : ($service->service_id == 41 ? $service->sections->{"cta"}->section_ctas{0}->cta_title	 : strtoupper(get_lang('get-proposal'))) )) ?>
+														<span class="align-middle u-icon-v3 d-none g-width-16 g-height-16 g-color-black-opacity-0_5 g-bg-white g-font-size-11 rounded-circle ml-3"> <i class="fa fa-info"></i> </span>
+													</a>
+												<?php endif; ?>
 											</div>
 											<?php if (empty($parent_service->service_portfolio_url)) { ?>
 												<?php if ($service->service_portfolio_url == 1) { ?>

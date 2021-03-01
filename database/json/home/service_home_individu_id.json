@@ -1,0 +1,15 @@
+[
+  {
+    "service_id": "1",
+    "service_target_id": "2",
+    "service_slug": "responsible-waste-management",
+    "city_name": "Kota Tangerang",
+    "service_target_slug": "for-individuals",
+    "service_page_url": "service/responsible-waste-management",
+    "service_thumbnail_image": "thumbnail.jpg",
+    "has_page": "1",
+    "service_name": "Responsible Waste Management",
+    "service_description": "Sistem manajemen sampah yang 100% menyeluruh untuk perusahaan, gedung, dan pelaku bisnis dalam rangka mengurangi jumlah timbunan sampah yang berakhir di TPA.",
+    "service_category_name": "Waste Collection Services"
+  }
+]

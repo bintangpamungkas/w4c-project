@@ -4,9 +4,9 @@
   "service_name": "Black Soldier Fly (BSF) Products",
   "service_short_name": "BSF Products",
   "service_page_url": "official/service/larva-black-soldier-fly",
-  "service_portfolio_url":"",
-  "service_proposal_url":"",
-  "service_join_url":"",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_join_url": "",
   "service_meta": {
     "title": "Black Soldier Fly is a Good Protein Source and Safe to be Consumed by Poultry and Fish",
     "description_1": "Black Soldier Fly is a good souce of protein and safe to be consumed by both bpoultry and fish",
@@ -21,7 +21,7 @@
       "section_title": "Black Soldier Fly (BSF) Products",
       "section_subtitle": "",
       "section_message": "Alternative organic feed contained with high protein which good and safe for your pets and animal farm. Available in various variants :<br> <span class='g-font-weight-900 w4c-color-blue g-mr-10'>&#8226</span>BSF cycle product (fresh larvae, pupae, prepupae, eggies, etc) <br><span  class='g-font-weight-900 w4c-color-blue g-mr-10'>&#8226</span>BSF post-processing product (PRO-POP, PRO-FLAKES, PRO-CRUMB, etc)",
-      "section_image": "larva.png"
+      "section_image": "larva.jpg"
     },
     "about": {
       "section_template": "about",
@@ -38,11 +38,11 @@
       "section_subtitle": "Obtain further knowledge regarding organic waste management using Black Soldier Fly (BSF) as well as its breeding methods.",
       "section_message": "",
       "section_image": "bsf2.png",
-      "section_ctas":[
+      "section_ctas": [
         {
-          "cta_title":"BSF LEARNING CENTER",
-          "cta_url":"official/service/black-soldier-fly-learning-center",
-          "cta_class":""
+          "cta_title": "BSF LEARNING CENTER",
+          "cta_url": "official/service/black-soldier-fly-learning-center",
+          "cta_class": ""
         }
       ]
     },
@@ -53,15 +53,19 @@
       "section_subtitle": "",
       "section_message": "Elit labore id irure reprehenderit voluptate incididunt eiusmod proident velit sunt incididunt. Esse cupidatat id fugiat ea do. Laboris et ut cillum reprehenderit incididunt sit consectetur veniam. Labore occaecat nostrud id ullamco excepteur cupidatat. Ipsum eu adipisicing ex officia excepteur nostrud ex occaecat non in tempor. Anim veniam dolor nisi duis.",
       "section_image": "9f5e2fb66f7e138ef28cde02b7d786cd.png",
-      "section_items": [{
-        "item_title": "",
-        "item_image": ""
-      }],
-      "section_ctas": [{
-        "cta_title": "VISIT THE WEBSITE",
-        "cta_url": "https://www.pro-bsf.com/",
-        "cta_class": ""
-      }]
+      "section_items": [
+        {
+          "item_title": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "VISIT THE WEBSITE",
+          "cta_url": "https://www.pro-bsf.com/",
+          "cta_class": ""
+        }
+      ]
     },
     "cycle": {
       "section_template": "bsf_cycle",
@@ -70,7 +74,8 @@
       "section_subtitle": "BSF Larvae harvested on 15-17 days old to be processed into alternative feed for your pet or animal farm. It can be processed to be directly and fresh or processed further for dried & post processing product.",
       "section_message": "",
       "section_image": "cycle.png",
-      "section_items": [{
+      "section_items": [
+        {
           "item_title": "Material organik sisa",
           "item_image": "1.png"
         },
@@ -115,11 +120,13 @@
           "item_image": "9.png"
         }
       ],
-      "section_ctas": [{
-        "cta_title": "",
-        "cta_url": "",
-        "cta_class": ""
-      }]
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
     },
     "testimony": {
       "section_template": "testimony",
@@ -128,7 +135,8 @@
       "section_subtitle": "",
       "section_message": "Testimonials and Other Info",
       "section_image": "",
-      "section_items": [{
+      "section_items": [
+        {
           "item_title": "FAJAR",
           "item_subtitle": "Owner of Star Aquatic",
           "item_message": "Pakan BSF ini terhitung baru, tapi saya coba saja kemarin, penasaran. Ternyata cukup disukai bebek yang saya pelihara.",
@@ -156,7 +164,8 @@
       "section_subtitle": "",
       "section_message": "",
       "section_image": "",
-      "section_items": [{
+      "section_items": [
+        {
           "item_title": "High in protein and great for consumption poultry and fish",
           "item_subtitle": "",
           "item_message": "",
@@ -175,11 +184,13 @@
           "item_image": "redy.png"
         }
       ],
-      "section_ctas": [{
-        "cta_title": "",
-        "cta_url": "",
-        "cta_class": ""
-      }]
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
     },
     "recommendation": {
       "section_template": "recommended_for",
@@ -188,7 +199,8 @@
       "section_subtitle": "",
       "section_message": "",
       "section_image": "",
-      "section_items": [{
+      "section_items": [
+        {
           "item_title": "Individual/Hobbyist",
           "item_subtitle": "",
           "item_message": "",
@@ -210,11 +222,13 @@
           "item_color": ""
         }
       ],
-      "section_ctas": [{
-        "cta_title": "",
-        "cta_url": "",
-        "cta_class": ""
-      }]
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
     },
     "cta": {
       "section_template": "cta",
@@ -222,18 +236,22 @@
       "section_title": "Get a high protein feed for your precious livestock!",
       "section_subtitle": "",
       "section_message": "",
-      "section_image": "larva.png",
-      "section_items": [{
-        "item_title": "",
-        "item_subtitle": "",
-        "item_message": "",
-        "item_image": ""
-      }],
-      "section_ctas": [{
-        "cta_title": "ORDER NOW",
-        "cta_url": "https://www.tokopedia.com/w4c-sda",
-        "cta_class": ""
-      }]
+      "section_image": "larva.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "ORDER NOW",
+          "cta_url": "https://www.tokopedia.com/w4c-sda",
+          "cta_class": ""
+        }
+      ]
     }
   }
 }

@@ -1,0 +1,357 @@
+{
+  "service_id": "1",
+  "service_parent_id": null,
+  "service_name": "Digital EPR",
+  "service_short_name": "EWM",
+  "service_page_url": "official/service/digital-epr",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_join_url": "",
+  "service_slug": "digital-epr",
+  "service_map_url": "https://www.google.com/maps/d/u/4/embed?mid=1Gps2QciOKXTLqrt_pLKM5tvw0EJI-iLg",
+  "service_meta": {
+    "title": "",
+    "description_1": "Program pengelolaan sampah secara optimal beserta pelaporan alur sampah",
+    "description_2": "Program pengelolaan sampah secara optimal beserta pelaporan alur sampah",
+    "keywords": "program pengelolaan sampah, pengelolaan sampah, pengelolaan sampah dari sumber, pelaporan alur sampah, pengelolaan sampah secara optimal, pengelolaan sampah bertanggung jawab",
+    "site_url": "official/service/digital-epr"
+  },
+  "sections": {
+    "welcome": {
+      "section_template": "welcome",
+      "section_menu_title": "",
+      "section_title": "Digital EPR",
+      "section_subtitle": "",
+      "section_message": "Increasing the recycling rate of your brand-labeled waste with the support of app-integrated and web-integrated recycling system and opening even wider collaboration opportunities with other businesses and communities.",
+      "section_image": "header.jpg"
+    },
+    "achievement": {
+      "section_template": "our-achievement",
+      "section_menu_title": "",
+      "section_title": "Pencapaian Kami",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Clients",
+          "item_subtitle": "",
+          "item_message": "2",
+          "item_image": ""
+        },
+        {
+          "item_title": "Residual Waste That Doesn't End Up in the Landfill (kg)",
+          "item_subtitle": "",
+          "item_message": "1722",
+          "item_image": ""
+        },
+        {
+          "item_title": "Cities & Regencies",
+          "item_subtitle": "",
+          "item_message": "10",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "about": {
+      "section_template": "about",
+      "section_menu_title": "About",
+      "section_subtitle": "More Effective And Sustainable Brand-Labeled Waste Recycling Management",
+      "section_message": "We provide a waste recycling system that is integrated with web and mobile applications to further increase the amount of waste labeled your brand that is recycled.<br><br>The integration of technology in the waste recycling system not only supports responsible waste management for your brand-labeled waste but also opens opportunities for collaboration with many businesses and other recycling partners.<br><br>The integrated waste recycling system also supports the education and campaign aspects of your brand program, so it is expected to be able to reach and meet the needs of your brand consumers in more locations in Indonesia.",
+      "section_title": "About",
+      "section_image": "about.jpg"
+    },
+
+    "benefit": {
+      "section_template": "benefit",
+      "section_menu_title": "Benefits",
+      "section_title": "Benefits",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Zero Waste to Landfill",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Prevent your brand-labelled products for being misused, imitated or forged",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Wider reach",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Meet the needs of your brand customers in more locations in Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Waste journey report",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Help to increase recycling rate",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "what-you-get": {
+      "section_template": "what-you-get",
+      "section_menu_title": "WHAT YOU WILL GET",
+      "section_title": "WHAT YOU WILL GET",
+      "section_subtitle": "For this type of service, Waste4Change provides the facilities as follows:",
+      "section_messange": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Comprehensive waste management system in the distribution line",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "distribution-m.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Responsible waste management for residual waste (waste that are difficult to be recycled) without sending it to the landfills (on demand)",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "residue-m.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Increase the number of waste that can be further processed through recycling method",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "chart-m.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Easy waste collection and recycling system supported by web and mobile applications",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "report-m.png",
+          "item_color": ""
+        }
+      ]
+    },
+    "waste-flow": {
+      "section_template": "waste-flow",
+      "section_menu_title": "WASTE FLOW",
+      "section_title": "WASTE FLOW",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Dropping locations in more location across Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "wasteflow-epr-1.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "User can send or drop their waste to Waste4Change's partner by registering to get a unique code from website",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "wasteflow-epr-2.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "User will get points as a reward for recycling their waste",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "wasteflow-epr-3.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Waste responsibly managed by our partner",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "wasteflow-epr-4.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Material transported to up-cycling and recycling industry to support Circular Economy",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "wasteflow-epr-5.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "We ensure that your brand-labeled was not ends up in environment",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "wasteflow-epr-6.png",
+          "item_color": ""
+        }
+      ]
+    },
+    "portofolio": {
+      "section_template": "portfolio-highlight",
+      "section_menu_title": "",
+      "section_title": "PORTFOLIO HIGHLIGHT",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_icon": "lifebuoy.jpg",
+          "item_title": "Lifebuoy Ramadhan Berkah 2019",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "lifebuoy.jpg",
+          "item_color": "",
+          "item_mou": "",
+          "item_audience": "16000",
+          "item_collection_schedule": "",
+          "item_start": "",
+          "item_end": "",
+          "item_agent_involve": "227",
+          "item_city_count": "41 cities across Indonesia",
+          "item_duration": "1st May - 30th June 2019",
+          "item_waste_collected": "7.177 pcs"
+        },
+        {
+          "item_icon": "ades.jpg",
+          "item_title": "Ades #NiatMurni 2019",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "ades.jpg",
+          "item_color": "",
+          "item_mou": "",
+          "item_audience": "",
+          "item_collection_schedule": "",
+          "item_start": "",
+          "item_end": "",
+          "item_duration": "31st October 2019 - present",
+          "item_agent_involve": "130",
+          "item_city_count": "Jakarta, Bandung, Semarang, Surabaya, Makassar, Medan",
+          "item_waste_collected": "1.650 pcs"
+        }
+      ]
+    },
+    "client": {
+      "section_template": "our-client",
+      "section_menu_title": "CLIENT",
+      "section_title": "CLIENT",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Lifebuoy",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Lifebuoy.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Ades",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Ades.jpg",
+          "item_color": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "recommendation": {
+      "section_template": "recommended_for",
+      "section_menu_title": "",
+      "section_title": "RECOMMENDED FOR",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Distributor",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-088 u-line-icon-pro",
+          "item_color": "#a24444"
+        },
+        {
+          "item_title": "Brand",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-medical-022 u-line-icon-pro",
+          "item_color": "#a24495"
+        },
+        {
+          "item_title": "Product",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-education-031 u-line-icon-pro",
+          "item_color": "#a24495"
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "map": {
+      "section_template": "our-coverage",
+      "section_title": "Coverage Area",
+      "section_menu_title": "Coverage Area"
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Start youe <span style='font-weight:bold'>Digital EPR</span> now!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "GET PROPOSAL",
+          "cta_url": "official/service/digital-epr/join",
+          "cta_class": ""
+        }
+      ]
+    }
+  }
+}

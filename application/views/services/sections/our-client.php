@@ -73,7 +73,7 @@
                       //console.log('screen : '+screen_display+'nav : '+screen_display*<?//= $this->agent->is_mobile() ? '8' : '9' ?>//0/100+'batas : '+margin_side);
 										<?php
 										if ($this->agent->is_mobile()) {
-											echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 175px;width: 74%;right: '+margin_side+'px;')";
+											echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 190px;width: 74%;right: '+margin_side+'px;')";
 										} else {
 											echo "$(element_id+' .owl-nav').attr('style', 'position: absolute;top: 0px;margin-top: 60px;width: 101.5%;right: '+margin_side+'px;')";
 										}

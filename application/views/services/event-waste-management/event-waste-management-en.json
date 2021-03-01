@@ -1,0 +1,382 @@
+{
+  "service_id": "1",
+  "service_parent_id": null,
+  "service_name": "Event Waste Management",
+  "service_short_name": "EWM",
+  "service_page_url": "official/service/event-waste-management",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": "",
+  "service_proposal_url": "",
+  "service_slug": "event-waste-management",
+  "service_join_url": "",
+  "service_map_url": "https://www.google.com/maps/d/u/4/embed?mid=1UfoOowGLVWxHt5w_SLy6zHfNUobfOlkd",
+  "service_meta": {
+    "title": "Segregated and responsible waste management and waste education for events",
+    "description_1": "Segregated and responsible waste management and waste education for events",
+    "description_2": "Segregated and responsible waste management and waste education for events",
+    "keywords": "Segregated and Responsible Waste Management and Waste Education for Events ",
+    "site_url": "official/service/event-waste-management"
+  },
+  "sections": {
+    "welcome": {
+      "section_template": "welcome",
+      "section_menu_title": "",
+      "section_title": "Event Waste Management",
+      "section_subtitle": "",
+      "section_message": "Melalui penempatan tempat sampah terpilah di lokasi-lokasi yang strategis, serta pengangkutan sampah terpilah selama acara berlangsung, kami akan membantu acara Anda mempersiapkan pengelolaan sampah yang bertanggung jawab!",
+      "section_image": "header.jpg"
+    },
+    "achievement": {
+      "section_template": "our-achievement",
+      "section_menu_title": "",
+      "section_title": "OUR ACHIEVEMENT",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Events",
+          "item_subtitle": "",
+          "item_message": "27",
+          "item_image": ""
+        },
+        {
+          "item_title": "Recycled Wasted (kg)",
+          "item_subtitle": "",
+          "item_message": "1722",
+          "item_image": ""
+        },
+        {
+          "item_title": "Cities Available",
+          "item_subtitle": "",
+          "item_message": "10",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "about": {
+      "section_template": "about",
+      "section_menu_title": "About",
+      "section_subtitle": "Great Events Take Their Waste Management Seriously And Is Well-Prepared Beforehand",
+      "section_message": "Waste generation during an event is inevitable. In a place where participants are allowed to eat, drink, and take notes, especially if it's super crowded, it's not easy to make sure that everyone's doing their part to be responsible for their waste.<br><br>Through our service called Event Waste Management (EWM), we will provide your event with special trash bags designated to encourage people to segregate their waste. Waste4Change will also guarantee that your waste will be handled and processed responsibly to reduce the number of waste that ends up in the landfill.",
+      "section_title": "About",
+      "section_image": "about.jpg"
+    },
+
+    "benefit": {
+      "section_template": "benefit",
+      "section_menu_title": "Benefits",
+      "section_title": "Benefits",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "100% holistic-approach on waste management",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Reduce volume of waste into landfill",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Supports and in line with Peraturan Pemerintah No.81 Tahun 2012 and Peraturan Presiden Nomor 97 Tahun 2017 (JAKSTRANAS)",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Adding sustainable and environmental-friendly value to client's brand image",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        },
+        {
+          "item_title": "Increasing audience's awareness of waste issues",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "what-you-get": {
+      "section_template": "what-you-get",
+      "section_menu_title": "WHAT YOU WILL GET",
+      "section_title": "WHAT YOU WILL GET",
+      "section_subtitle": "For this type of service, Waste4Change provides the facilities as follows:",
+      "section_messange": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Trash bag designated to support waste segregation",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "wastebin-m.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Waste collection in a segregated state",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "segregation-bin-m.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Waste journey report",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "report-m.png",
+          "item_color": ""
+        }
+      ]
+    },
+    "waste-flow": {
+      "section_template": "waste-flow",
+      "section_menu_title": "WASTE FLOW",
+      "section_title": "WASTE FLOW",
+      "section_subtitle": "Residual Waste Treatment Using RDF Technology",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Waste segregation by client",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "drop.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Waste storage in transfer point/ TPST",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "storage.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Segregated waste collection",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "transfer.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Waste processing in W4C's Material Recovery Facility (MRF)",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "process.png",
+          "item_color": ""
+        },
+        {
+          "item_title": "Residue co-processing with RDF technology",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "factory.png",
+          "item_color": ""
+        }
+      ]
+    },
+    "portofolio": {
+      "section_template": "portfolio-highlight",
+      "section_menu_title": "",
+      "section_title": "PORTFOLIO HIGHLIGHT",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_icon": "playfest2019.jpg",
+          "item_title": "Playfest 2019",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "playfest2019.jpg",
+          "item_color": "",
+          "item_mou": "",
+          "item_audience": "16000",
+          "item_collection_schedule": "",
+          "item_start": "2019-08-24",
+          "item_end": "2019-08-25",
+          "item_duration": "",
+          "item_waste_collected": "1.141 kg"
+        },
+        {
+          "item_icon": "milo.jpg",
+          "item_title": "Milo Jakarta International Run 10K 2018",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "milo.jpg",
+          "item_color": "",
+          "item_mou": "",
+          "item_audience": "6000",
+          "item_collection_schedule": "",
+          "item_start": "2018-07-15",
+          "item_end": null,
+          "item_duration": "",
+          "item_waste_collected": "626 Kg"
+        }
+      ]
+    },
+    "client": {
+      "section_template": "our-client",
+      "section_menu_title": "CLIENT",
+      "section_title": "CLIENT",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Jakarta Fashion Week",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Jakarta-Fashion-Week.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Jakpro",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Jakpro.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Narasi TV",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Narasi-TV.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "PT Nestle Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Nestle.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Pertamina PHE WMO",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Pertamina.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "The Body Shop",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "The-Body-Shop.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Wardah",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Wardah.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "CIMB Niaga",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Cimb-Niaga.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Ismaya Group",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Ismaya-Group.jpg",
+          "item_color": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "recommendation": {
+      "section_template": "recommended_for",
+      "section_menu_title": "",
+      "section_title": "RECOMMENDED FOR",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Event Organizer",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-056 u-line-icon-pro",
+          "item_color": "#a24495"
+        },
+        {
+          "item_title": "Foundation",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-009 u-line-icon-pro",
+          "item_color": "#68a244"
+        },
+        {
+          "item_title": "Company",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-052 u-line-icon-pro",
+          "item_color": "#a24444"
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "map": {
+      "section_template": "our-coverage",
+      "section_title": "Coverage Area",
+      "section_menu_title": "Coverage Area"
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Start your <span style='font-weight:bold'>Event Waste Management</span> now!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "GET PROPOSAL",
+          "cta_url": "official/service/event-waste-management/join",
+          "cta_class": ""
+        }
+      ]
+    }
+  }
+}

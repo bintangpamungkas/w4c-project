@@ -15,7 +15,7 @@ date_default_timezone_set('Asia/Jakarta');
 |
 */
 
-$config['base_url'] = SITE_URL;
+$config['base_url'] = 'http://w4c.test/';
 
 /*
 |--------------------------------------------------------------------------

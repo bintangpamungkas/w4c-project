@@ -1,0 +1,279 @@
+{
+  "service_id": 8,
+  "service_parent_id": null,
+  "service_name": "Community-Based Implementation",
+  "service_short_name": "CBI",
+  "service_page_url": "official/service/community-based-implementation",
+  "service_thumbnail": "thumbnail.jpg",
+  "service_portfolio_url": 1,
+  "service_proposal_url": "https://docs.google.com/forms/d/e/1FAIpQLSflGH-JUj6sEZbURhI65LCyfyP_5BA034bF5PxKi6fi2zA5Pw/viewform",
+  "service_join_url": "",
+  "service_slug": "community-based-implementation",
+  "service_map_url": "https://www.google.com/maps/d/u/4/embed?mid=1Cyc1udMyKSqvT_8z-oAAJSlpYD5pJV4V",
+  "service_meta": {
+    "title": "",
+    "description_1": "Education and assistance to reduce waste from the source",
+    "description_2": "Education and assistance to reduce waste from the source",
+    "keywords": "Education and assistance to reduce waste from the source",
+    "site_url": "official/service/community-based-implementation"
+  },
+  "sections": {
+    "welcome": {
+      "section_template": "welcome",
+      "section_menu_title": "",
+      "section_title": "Community-Based Implementation",
+      "section_subtitle": "",
+      "section_message": "We help our clients to implement programs that encourage the community to act and provide real contributions to the waste crisis in Indonesia.",
+      "section_image": "header.jpg"
+    },
+    "achievement": {
+      "section_template": "our-achievement",
+      "section_menu_title": "",
+      "section_title": "OUR ACHIEVEMENT",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Clients",
+          "item_subtitle": "",
+          "item_message": "25",
+          "item_image": ""
+        },
+        {
+          "item_title": "Beneficiaries",
+          "item_subtitle": "",
+          "item_message": "339714",
+          "item_image": ""
+        },
+        {
+          "item_title": "Cities & Regency",
+          "item_subtitle": "",
+          "item_message": "111",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "about": {
+      "section_template": "about",
+      "section_menu_title": "About",
+      "section_subtitle": "Solid Effort To Reduce Waste Generation From The Source",
+      "section_message": "According to recent BPS statistics, waste management ranks the lowest when compared to other environmental issues (energy, air pollution, transportation).<br>At Waste4Change, we see this as a challenge to implement programs that encourages the community to act and give real contributions to the ongoing waste crisis in Indonesia through Community-based Implementation.",
+      "section_title": "About",
+      "section_image": "about.jpg"
+    },
+
+    "we-offer": {
+      "section_template": "we-offer",
+      "section_menu_title": "Offer",
+      "section_title": "We Offer 2 Programs",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "Community Assistance",
+          "item_subtitle": "",
+          "item_icon": "people-m.png",
+          "item_message": "Planning and operational assistance for a minimum duration of 6 months to ensure the sustainability of the SWM program's within a certain area.<br>Encourage communities' aspiration and assist them to take actions on responsible solid waste management programs within their neighborhood.<br>Designed for neighborhood, city, offices.",
+          "item_image": ""
+        },
+        {
+          "item_title": "Community Capacity Building",
+          "item_subtitle": "",
+          "item_icon": "people-m.png",
+          "item_message": "Community Based Capacity Building is a 3-days training activities for local waste organization's.<br>Deepen their understanding towards institutional management concept in waste sector and assist them to make a sustainable action plan.<br>Designed to empower Solid Waste Activists, Waste Banks, Government, Civil Society Group (TPS 3R managers), Communities and Academic Institutional to perform implement responsible waste management in their communities.",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "program-highlight": {
+      "section_template": "program-highlight",
+      "section_menu_title": "",
+      "section_title": "Program Highlight",
+      "section_subtitle": "",
+      "section_messange": "",
+      "section_image": "",
+      "project_items": [
+        {
+          "service_slug": "3r-program-suralaya",
+          "service_subcategory_name": "Community Assistance In Institutions"
+        },
+        {
+          "service_slug": "tps-3r-advisory",
+          "service_subcategory_name": "Community Assistance In Municipalities"
+        },
+        {
+          "service_slug": "ecoranger-in-pulau-merah-banyuwangi",
+          "service_subcategory_name": "Community Assistance in Tourism Sites"
+        },
+        {
+          "service_slug": "capacity-building-in-indonesias-frontline-territories",
+          "service_subcategory_name": "Community Capacity Building"
+        }
+      ]
+    },
+    "client": {
+      "section_template": "our-client",
+      "section_menu_title": "Client",
+      "section_title": "Client",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "PT Bank Negara Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "BNI.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "PT Indonesia Power Suralaya",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "Indonesia-Power.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "PT Nestle Indonesia",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "PT-Nestle-Indonesia.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "AHT Group AG",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "AHT-Group.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "Kementrian PUPR",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "PUPR.jpg",
+          "item_color": ""
+        },
+        {
+          "item_title": "GA Circular",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_logo": "GA-Circular.jpg",
+          "item_color": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "recommendation": {
+      "section_template": "recommended_for",
+      "section_menu_title": "",
+      "section_title": "Recommended For",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "",
+      "section_items": [
+        {
+          "item_title": "CSR Division",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-medical-022 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Sustainability Division",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-132 u-line-icon-pro",
+          "item_color": "#a24444"
+        },
+        {
+          "item_title": "Government",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-136 u-line-icon-pro",
+          "item_color": "#68a244"
+        },
+        {
+          "item_title": "Housing",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-070 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Building / Area Management",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-hotel-restaurant-172 u-line-icon-pro",
+          "item_color": "#4489a2"
+        },
+        {
+          "item_title": "Foundation",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": "icon-real-estate-009 u-line-icon-pro",
+          "item_color": "#68a244"
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "",
+          "cta_url": "",
+          "cta_class": ""
+        }
+      ]
+    },
+    "map": {
+      "section_template": "our-coverage",
+      "section_title": "Coverage Area",
+      "section_menu_title": "Coverage Area"
+    },
+    "cta": {
+      "section_template": "cta",
+      "section_menu_title": "",
+      "section_title": "Start your <span style='font-weight:bold'>Community Based Implementation</span> now!",
+      "section_subtitle": "",
+      "section_message": "",
+      "section_image": "conversion-service.jpg",
+      "section_items": [
+        {
+          "item_title": "",
+          "item_subtitle": "",
+          "item_message": "",
+          "item_image": ""
+        }
+      ],
+      "section_ctas": [
+        {
+          "cta_title": "GET PROPOSAL",
+          "cta_url": "official/service/community-based-implementation/join",
+          "cta_class": "",
+          "portfolio_title": "GET PORTOFOLIO",
+          "portfolio_url": 1,
+          "portfolio_class": ""
+        }
+      ]
+    }
+  }
+}

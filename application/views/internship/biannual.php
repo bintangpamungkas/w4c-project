@@ -1,5 +1,5 @@
 <!-- Internship Program -->
-<section class="g-bg-white g-py-80 <?= $this->agent->is_mobile() ? '' : 'g-px-30' ?>" style="margin-top : 100px">
+<section class="g-bg-white g-py-80 <?= $this->agent->is_mobile() ? '' : 'g-px-30' ?>" >
 	<?php if ($this->agent->is_mobile()) : ?>
 		<div class="g-font-asap g-color-black text-uppercase text-center g-font-weight-600 g-font-size-24 g-mb-10"><?= $copy->internship_program->title ?></div>
 		<hr class="g-width-70 g-mt-20 g-mb-40 g-brd-2 w4c-brd-blue">

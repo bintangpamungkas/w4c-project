@@ -22,46 +22,51 @@
       {
         "title": "At least a Final Year college/vocational student when the internship period started",
         "image": "student.png",
-        "height": "70px"
+        "height": "70px",
+        "width": "55px"
       },
       {
         "title": "Submit necessary documents such as CV, Motivation letter, and portfolios if the candidate is applying for positions relating to design",
         "image": "document.png",
-        "height": "70px"
+        "height": "57px",
+        "width": "55px"
       },
       {
         "title": "Work/research/organizational experience and/or proof of participation in seminar/workshops relating to the field the candidates are applying for will become an added value",
         "image": "achievement.png",
-        "height": "70px"
+        "height": "70px",
+        "width": "55px"
       },
       {
         "title": "Willing to work according to the required internship period",
         "image": "calendar.png",
-        "height": "60px"
+        "height": "52px",
+        "width": "55px"
       },
       {
         "title": "Have a personal laptop for working",
         "image": "LAPTOP.png",
-        "height": "70px"
+        "height": "60px",
+        "width": "66px"
       }
     ]
   },
   "card_batch2": {
-    "title": "WIP Batch #2 2020",
-    "subtitle": "Safe Internship in the Middle of the Pandemic",
+    "title": "WIP Batch #1 2021",
+    "subtitle": "",
     "time": "September - December 2020",
-    "person": "32 Participants",
+    "person": "34 Participants",
     "info": "Registration Closed",
-    "image": "batch2_2020.jpg"
+    "image": "batch1_2021.jpg"
   },
 
   "card_batch1": {
-    "title": "WIP Batch #1 2021",
-    "subtitle": "Registration & Documents Submission: <br>December 2020 - January 2021",
-    "time": "February - May 2021",
-    "image": "batch1_2021.jpg",
-    "info": "Registration Open",
-    "button": "APPLY HERE"
+    "title": "WIP Batch #2 2021",
+    "subtitle": "Registration & Documents Submission: <br>June - July 2021",
+    "time": "August - November 2021",
+    "image": "batch2_2021.jpg",
+    "info": "Registration Closed",
+    "button": "REMIND ME"
   },
   "highlights": {
     "title": "INTERNSHIP HIGHLIGHTS",

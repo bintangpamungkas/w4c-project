@@ -1,6 +1,6 @@
 {
   "product-designer": {
-    "is_new": 1,
+    "is_new": 0,
     "status": 1,
     "title": "Product Designer",
     "category": "tech",
@@ -21,7 +21,7 @@
     "talentaUrl": "https://recruitment.talenta.co/waste4change/NC9xUENJZTNyV29lUllGczEzdlJWUT09"
   },
   "product-researcher": {
-    "is_new": 1,
+    "is_new": 0,
     "status": 1,
     "title": "Product Researcher",
     "category": "tech",
@@ -156,7 +156,7 @@
     "talentaUrl": "https://recruitment.talenta.co/waste4change/WVIwN3ZVRnYrZ0R4QmllL05HOFBMQT09"
   },
   "content-writer": {
-    "is_new": 1,
+    "is_new": 0,
     "status": 1,
     "title": "Content Writer",
     "category": "ce",
@@ -173,8 +173,8 @@
     ],
     "talentaUrl": "https://recruitment.talenta.co/waste4change/UlMzU0xvdzhEZ0JrNTRVdjVTbUNEQT09"
   },
-  "event-&-partnership": {
-    "is_new": 0,
+  "event-partnership": {
+    "is_new": 1,
     "status": 1,
     "title": "Event & Partnership",
     "category": "ce",
@@ -252,7 +252,7 @@
     "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfsKEjFEBp2PwxabPRitcIGNTB-ONspRvJCpbgxCwWZWZpBRA/viewform?usp=sf_link"
   },
   "warehouse-operation": {
-    "is_new": 1,
+    "is_new": 0,
     "status": 1,
     "title": "Warehouse Operation",
     "category": "os",
@@ -272,7 +272,7 @@
     "talentaUrl": ""
   },
   "industrial-relation": {
-    "is_new": 0,
+    "is_new": 1,
     "status": 1,
     "title": "Industrial Relation",
     "category": "hc",
@@ -318,7 +318,7 @@
   "legal": {
     "is_new": 0,
     "status": 1,
-    "title": "Organizational Development Specialist",
+    "title": "Legal",
     "category": "finance",
     "type": 1,
     "location": ["Bekasi"],
@@ -337,7 +337,7 @@
     "talentaUrl": ""
   },
   "interior-designer": {
-    "is_new": 1,
+    "is_new": 0,
     "status": 1,
     "title": "Interior Designer",
     "category": "finance",
@@ -357,7 +357,7 @@
     "talentaUrl": ""
   },
   "project-development": {
-    "is_new": 0,
+    "is_new": 1,
     "status": 1,
     "title": "Project Development",
     "category": "ss",
@@ -380,7 +380,7 @@
     ],
     "talentaUrl": ""
   },
-  "training-&-education-organizer": {
+  "training-education-organizer": {
     "is_new": 0,
     "status": 1,
     "title": "Training & Education Organizer",
@@ -403,7 +403,7 @@
     "talentaUrl": ""
   },
   "business-development": {
-    "is_new": 0,
+    "is_new": 1,
     "status": 1,
     "title": "Business Development",
     "category": "business development",
@@ -512,7 +512,7 @@
     "talentaUrl": "https://recruitment.talenta.co/waste4change/NC9xUENJZTNyV29lUllGczEzdlJWUT09"
   },
   "operation-services": {
-    "is_new": 0,
+    "is_new": 1,
     "status": 1,
     "title": "Operation Services",
     "category": "os",
@@ -535,7 +535,7 @@
     ],
     "talentaUrl": "https://recruitment.talenta.co/waste4change/NC9xUENJZTNyV29lUllGczEzdlJWUT09"
   },
-  "innovation-&-process-improvement": {
+  "innovation-process-improvement": {
     "is_new": 0,
     "status": 1,
     "title": "Innovation & Process Improvement",

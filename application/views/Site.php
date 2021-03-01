@@ -335,11 +335,11 @@
 										<?= get_lang('cant-found-the-solution-you-are-looking-for?') ?>
 									</div>
 									<div class="row justify-content-center">
-										<div class="<?= (3 - ($service_count % 3)) == 1 ? 'col-md-12 mb-2' : 'col-md-3' ?>">
+										<div class="<?= (3 - ($service_count % 3)) == 1 ? 'col-md-6 mb-2' : 'col-md-3' ?>">
 											<a class="btn btn-info btn-block g-color-white  g-brd-2 g-font-size-13 g-rounded-50 g-px-30 g-py-9"
 											   href="<?= site_url('service') ?>"><?= strtoupper(get_lang('all-services')) ?> </a>
 										</div>
-										<div class="<?= (3 - ($service_count % 3)) == 1 ? 'col-md-12 mb-2' : 'col-md-3' ?>">
+										<div class="<?= (3 - ($service_count % 3)) == 1 ? 'col-md-6 mb-2' : 'col-md-3' ?>">
 											<a class="btn btn-outline-info btn-block g-brd-2 g-font-size-13 g-rounded-50  g-px-30 g-py-9"
 											   href="<?= site_url('contact') ?>"><?= strtoupper(get_lang('talk-to-our-expert')) ?></a>
 										</div>
