@@ -46,5 +46,13 @@
     "url": "official/career",
     "icon": "",
     "items": ""
+  },
+  "government": {
+    "status": true,
+    "title": "Karir",
+    "is_new": false,
+    "url": "official/government",
+    "icon": "",
+    "items": ""
   }
 }

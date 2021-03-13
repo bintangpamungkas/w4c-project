@@ -42,13 +42,13 @@ date_default_timezone_set('Asia/Jakarta');
 define('VERSION', ''); //asset folder version
 define('IS_ONLINE', 0); //0 = local, 1 = server
 define('IS_UNDER_MAINTENANCE', 0); //0 = live, 1 = under maintenance
-define('MODE', 'dev'); //define develope status (dev,demo,beta,live)
-define('HOST', 'http://w4c.test/');
+define('MODE', 'development'); //define develope status (dev,demo,beta,live)
+define('HOST', 'http://localhost/w4c-official-static/');
 define('PREFIX_TABLE', '');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', 'root');
-define('DB_DATABASE', 'w4c_official_demo');
+define('DB_DATABASE', 'w4c');
 if  (IS_ONLINE == 1 && MODE != 'live' && $_COOKIE['W4CALLDEVMOD'] != 'Y'){
 	header('Location:https://waste4change.com/');
 exit();

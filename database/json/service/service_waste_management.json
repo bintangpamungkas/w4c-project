@@ -1,0 +1,103 @@
+{
+  "tentang": {
+    "title": "tentang",
+    "subTitle": "Tidak Ada Lagi Sampah Yang Tercampur",
+    "desc": "Produksi sampah merupakan sesuatu yang tidak bisa dihindari. Mengurangi sampah sendiri bukanlah perkara yang mudah. Hal yang paling sederhana, mudah, dan penting yang dapat kita lakukan setelah menghasilkan sampah adalah memisahkan sampah organik dan sampah anorganik. Dengan layanan kami yang bernama Responsible Waste Management (RWM), Waste4Change menyediakan manajemen sampah untuk mengurangi jumlah timbulan sampah yang menumpuk di TPA."
+  },
+  "keuntungan": [
+    {
+      "value": "Pendekatan manajemen sampah yang 100% terpilah"
+    },
+    {
+      "value": "Meningkatkan citra perusahaan"
+    },
+    {
+      "value": "Mengurangi timbulan sampah yang dibuang ke TPA"
+    },
+    {
+      "value": "Menaati Peraturan Pemerintah (PP) No. 81 Tahun 2012 tentang Pengelolaan Sampah Rumah Tangga dan Sampah Sejenis Rumah Tangga, serta mendukung Peraturan Presiden Nomor 97 Tahun 2017 (JAKSTRANAS)"
+    },
+    {
+      "value": "Meningkatkan kepedulian pegawai tentang isu sampah"
+    }
+  ],
+  "ygDidapat": {
+    "title": "yang anda dapat",
+    "desc": "Untuk jenis layanan ini, Waste4Change menyediakan fasilitas sebagai berikut:",
+    "index": [
+      {
+        "value": "Kantong sampah yang akan mendukung pemilahan sampah",
+        "img": "https://waste4change.com/official/2.8.assets/img/icons/what-you-get/wastebin-m.png"
+      },
+      {
+        "value": "Pengangkutan sampah dalam kondisi terpilah",
+        "img": "https://waste4change.com/official/2.8.assets/img/icons/what-you-get/mark-location-m.png"
+      },
+      {
+        "value": "Pelatihan induksi teknis sebanyak satu kali",
+        "img": "https://waste4change.com/official/2.8.assets/img/icons/what-you-get/loadspeaker-m.png"
+      },
+      {
+        "value": "Laporan tentang alur sampah",
+        "img": "https://waste4change.com/official/2.8.assets/img/icons/what-you-get/report-m.png"
+      }
+    ]
+  },
+  "alurSampah": {
+    "title": "alur sampah",
+    "desc": "Pengelolaan Sampah Residu di TPA",
+    "index": [
+      {
+        "value": "Pemilahan sampah oleh konsumen",
+        "img": "https://waste4change.com/official/2.8.assets/img/icons/flow/drop.png"
+      },
+      {
+        "value": "Penyimpanan sampah di gudang/toko klien",
+        "img": "https://waste4change.com/official/2.8.assets/img/icons/flow/storage.png"
+      },
+      {
+        "value": "Pengumpulan sampah terpilah",
+        "img": "https://waste4change.com/official/2.8.assets/img/icons/flow/transfer.png"
+      },
+      {
+        "value": "Pengolahan sampah di Rumah Pemulihan Material W4C",
+        "img": "https://waste4change.com/official/2.8.assets/img/icons/flow/process.png"
+      },
+      {
+        "value": "Residu dikirim ke TPA",
+        "img": "https://waste4change.com/official/2.8.assets/img/icons/flow/landfill.png"
+      }
+    ]
+  },
+  "direkomendasikan": {
+    "title": "direkomendasikan untuk",
+    "desc": "",
+    "index": [
+      {
+        "value": "Kawasan Pariwisata & Perbelanjaan",
+        "img": "https://waste4change.com/official/2.8.assets/img/icons/kawasanbelanja.png"
+      },
+      {
+        "value": "Hotel",
+        "img": "<i class='icon-travel-079 u-line-icon-pro'></i>"
+      },
+      {
+        "value": "Perumahan",
+        "img": "<i class='icon-real-estate-070 u-line-icon-pro'></i>"
+      },
+      {
+        "value": "Kantor",
+        "img": "<i class='icon-hotel-restaurant-172 u-line-icon-pro'></i>"
+      },
+      {
+        "value": "Gedung",
+        "img": "<i class='icon-hotel-restaurant-172 u-line-icon-pro'></i>"
+      },
+      {
+        "value": "Restoran",
+        "img": "<i class='icon-hotel-restaurant-020 u-line-icon-pro'></i>"
+      }
+    ]
+  }
+
+}

@@ -373,7 +373,10 @@ $lang['internship'] = "Magang";
 $lang['intern_list'] = "Daftar Magang";
 $lang['internhip_opening'] = "Internhip Opening";
 $lang['internship_detail'] = "Detail Magang";
-
+// $lang['government'] = "Pemerintahan";
+$lang['government_list'] = "Daftar Pemerintahan";
+$lang['government_opening'] = "Government Opening";
+$lang['government_detail'] = "Detail Pemerintahan";
 //pricing
 $lang['pricing'] = "Harga";
 $lang['order_now'] = "Pilih Paket";

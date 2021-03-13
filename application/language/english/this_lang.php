@@ -373,6 +373,9 @@ $lang['career'] = "career";
 $lang['internship'] = "Internship";
 $lang['intern_list'] = "Internship List";
 $lang['internship_detail'] = "Internship Detail";
+$lang['government'] = "Government";
+$lang['government_list'] = "Government List";
+$lang['government_detail'] = "Government Detail";
 //Pricing
 $lang['pricing'] = "Pricing";
 $lang['order_now'] = "Order Now";

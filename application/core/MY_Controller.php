@@ -162,7 +162,35 @@ class MY_Controller extends CI_Controller
 				'is_new' => false,
 				'menu' => '',
 			],
+			[
+				'title' => $this->get_lang('government'),
+				'for' => 'menu',
+				'visible' => true,
+				'number' => '7',
+				'url' => site_url('government'),
+				'type' => '',
+				'submenu_type' => 'list',
+				'icon' => '',
+				'is_new' => false,
+				'menu' => '',
+			],
+			[
+				'title' => $this->get_lang('responsibleWasteManagement'),
+				'for' => 'menu',
+				'visible' => true,
+				'number' => '7',
+				'url' => site_url('waste-management'),
+				'type' => '',
+				'submenu_type' => 'list',
+				'icon' => '',
+				'is_new' => false,
+				'menu' => '',
+			],
 		];
+		// echo "<pre>";
+		// var_dump($data['navigation_array']);
+		// echo "</pre>";
+		// die;
 		if ($this->session->userdata('login_email')) {
 			//$login_value = $this->session->userdata('login_email');
 			//$this->load->model('account_model');

@@ -60,6 +60,9 @@ $route['career/job/(:any)'] = "Career/job_detail/$1";
 $route['internship'] = "Internship/index";
 $route['internship/intern-list'] = "Internship/intern_list";
 $route['internship/intern-list/(:any)'] = "Internship/intern_detail/$1";
+$route['government'] = "Government/index";
+$route['waste-management'] = "Management/responsibleWasteManagement/index";
+$route['service-waste-management'] = "ServiceWasteManagement/index";
 
 $route['trial_form/(:any)'] = "Site/trial_form/$1";
 $route['(:any)'] = "Brand/index/$1";

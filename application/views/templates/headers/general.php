@@ -114,10 +114,9 @@
 							</div>
 							<?php if (!$this->agent->is_mobile()) { // desktop view only 
 							?>
-								<div <?= empty($parent_service->service_portfolio_url) && $service->service_portfolio_url != 1 ? 'class="col-3' : 'class="col-5' ?>">
+								<div <?= empty($parent_service->service_portfolio_url) && $service->service_portfolio_url != 1 ? 'class="col-3"' : 'class="col-5"' ?> >
 									<div class="<?= empty($service->service_parent_id) ? 'd-none' : 'd-block' ?>" data-header-fix-moment-exclude="<?= empty($service->service_parent_id) ? 'd-none' : 'd-block' ?>" data-header-fix-moment-classes="d-block">
 										<div class="row no-gutters justify-content-end">
-<<<<<<< HEAD
 											<div class="col<?= $service->service_id == 33 ? '-auto' : '' ?>">
 												<?php if(empty($service->service_parent_id)) : ?>
 													<a class="click_scroll btn btn-info btn-block g-color-white g-brd-white-opacity-0_2 g-font-size-13 g-rounded-50 g-px-30 g-py-9" href="<?= $service->service_id == 41 ? $service->sections->{"cta"}->section_ctas{0}->cta_url : site_url('service/' . $service_id . '/join') ?>"> <?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe')) : ($service->service_id == 41 ? $service->sections->{"cta"}->section_ctas{0}->cta_title	 : strtoupper(get_lang('get-proposal'))) )) ?>
@@ -129,7 +128,6 @@
 													</a>
 												<?php endif; ?>
 											</div>
-=======
 											<?php if ($service_id == 'personal-waste-management') : ?>
 												<div class="col<?= $service->service_id == 33 ? '-auto' : '' ?>">
 													<a class="click_scroll btn btn-info btn-block g-color-white g-brd-white-opacity-0_2 g-font-size-13 g-rounded-50 g-px-30 g-py-9" href="https://personal.waste4change.com/?redirect=location&<?= $query_from_url ?>"> <?= $service->service_id == 11 ? strtoupper(get_lang('enroll-the-class')) : (($service->service_id == 32 || $service->service_id == 34) ? strtoupper(get_lang('get-it-now')) : ($service->service_id == 33 ? strtoupper(get_lang('subscribe')) : strtoupper(get_lang('get-proposal')))) ?>
@@ -143,7 +141,6 @@
 													</a>
 												</div>
                     						<?php endif; ?>
->>>>>>> 1e160e3296840a5a571a445adcb9ff9447f0e1f4
 											<?php if (empty($parent_service->service_portfolio_url)) { ?>
 												<?php if ($service->service_portfolio_url == 1) { ?>
 													<div class="col">
