@@ -43,9 +43,9 @@ define('VERSION', ''); //asset folder version
 define('IS_ONLINE', 0); //0 = local, 1 = server
 define('IS_UNDER_MAINTENANCE', 0); //0 = live, 1 = under maintenance
 define('MODE', 'development'); //define develope status (dev,demo,beta,live)
-define('HOST', 'http://localhost/w4c-official-static/');
+define('HOST', 'https://w4c.herokuapp.com/');
 define('PREFIX_TABLE', '');
-define('DB_HOSTNAME', 'localhost');
+define('DB_HOSTNAME', 'mysql-23252-0.cloudclusters.net:23296');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', 'rahasia123');
 define('DB_DATABASE', 'w4c');
